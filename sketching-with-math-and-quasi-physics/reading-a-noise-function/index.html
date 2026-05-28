@@ -1,0 +1,365 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Reading a Noise Function</title><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/katex.min.css" crossorigin="anonymous"><script async src="//www.instagram.com/embed.js"></script><script>
+    (function() {
+      var f = localStorage.getItem('font-mode') || 'serif';
+      document.documentElement.setAttribute('data-font', f);
+    })();
+  </script><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Noto+Sans+JP:wght@300;400;500;600;700&family=Noto+Serif+JP:wght@400;500;600;700&family=Sora:wght@300;400;500;600;700&family=Google+Sans+Code:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="/writing/assets/_slug_.D03YcXSX.css"><script type="module">const r="sidebar-open",n=document.getElementById("app-shell"),l=document.getElementById("sidebar-toggle"),m=document.getElementById("sidebar-backdrop");function s(t){n.classList.toggle("sidebar-open",t),localStorage.setItem(r,String(t))}const p=localStorage.getItem(r);n.classList.add("no-transition");s(p==="true");requestAnimationFrame(()=>n.classList.remove("no-transition"));l.addEventListener("click",()=>{s(!n.classList.contains("sidebar-open"))});m.addEventListener("click",()=>s(!1));document.addEventListener("click",t=>{if(!n.classList.contains("sidebar-open"))return;!document.querySelector(".sidebar").contains(t.target)&&!l.contains(t.target)&&s(!1)});const d="font-mode",g=document.getElementById("font-btn-serif"),u=document.getElementById("font-btn-sans");function a(t){document.documentElement.setAttribute("data-font",t),localStorage.setItem(d,t),g.classList.toggle("active",t==="serif"),u.classList.toggle("active",t==="sans")}a(localStorage.getItem(d)||"serif");g.addEventListener("click",()=>a("serif"));u.addEventListener("click",()=>a("sans"));document.querySelectorAll(".prose img").forEach(t=>{t.style.cursor="zoom-in",t.addEventListener("click",e=>{e.preventDefault(),e.stopPropagation(),window.open(t.src,"_blank","noopener")})});document.querySelectorAll(".st").forEach(t=>{t.addEventListener("click",e=>{if(e.target.tagName==="A")return;const o=t.closest(".si")?.querySelector(":scope > .sc"),i=t.querySelector(".sa");if(!o||!i)return;const c=o.classList.contains("open");o.classList.toggle("open",!c),t.setAttribute("aria-expanded",String(!c)),i.textContent=c?"+":"−"})});
+</script></head> <body> <header class="topbar"> <div class="topbar-controls topbar-controls-left"> <button class="topbar-toggle" id="sidebar-toggle" aria-label="Toggle sidebar"> <svg width="18" height="14" viewBox="0 0 18 14" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"> <line x1="0" y1="1" x2="18" y2="1"></line> <line x1="0" y1="7" x2="18" y2="7"></line> <line x1="0" y1="13" x2="18" y2="13"></line> </svg> </button> </div> <div class="topbar-controls topbar-controls-right"> <div class="topbar-font-switcher"> <button class="font-opt" id="font-btn-serif" style="font-family:'Lora','Noto Serif JP',serif">Serif</button> <span class="font-sep">|</span> <button class="font-opt" id="font-btn-sans" style="font-family:'Sora','Noto Sans JP',sans-serif">Sans</button> </div> </div> </header> <div class="shell" id="app-shell"> <div class="sidebar-backdrop" id="sidebar-backdrop"></div> <nav class="sidebar" aria-label="Site navigation"> <ul class="sc open" style="padding-left:0"> <li class="si"> <button class="st" data-slug="drawing-with-code" aria-expanded="false" style="padding-left:14px"> <span class="sa">+</span> <a href="/drawing-with-code" class="sl">Drawing with code</a> </button> <ul class="sc"><li class="si"><a href="/drawing-with-code/building-my-own-tools" class="sl" style="padding-left:50px">Building my own tools</a></li><li class="si"><a href="/drawing-with-code/codifying-human-1" class="sl" style="padding-left:50px">Codifying human (1)</a></li><li class="si"><a href="/drawing-with-code/codifying-human-2" class="sl" style="padding-left:50px">Codifying human (2)</a></li><li class="si"><a href="/drawing-with-code/codifying-materials-1" class="sl" style="padding-left:50px">Codifying materials (1)</a></li><li class="si"><a href="/drawing-with-code/codifying-materials-2" class="sl" style="padding-left:50px">Codifying materials (2)</a></li></ul> </li><li class="si active"> <button class="st active" data-slug="sketching-with-math-and-quasi-physics" aria-expanded="true" style="padding-left:14px"> <span class="sa">−</span> <a href="/sketching-with-math-and-quasi-physics" class="sl">Sketching with Math and Quasi Physics</a> </button> <ul class="sc open">
+        <li class="si">
+          <button class="st" data-slug="sketching-with-math-and-quasi-physics/2d-feedback-systems" aria-expanded="false" style="padding-left:28px">
+            <span class="sa">+</span><a href="/sketching-with-math-and-quasi-physics/2d-feedback-systems" class="sl">2D Feedback Systems 2次元フィードバックシステム</a>
+          </button>
+          <ul class="sc"><li class="si"><a href="/sketching-with-math-and-quasi-physics/2d-feedback-systems/fluid-simulation" class="sl" style="padding-left:64px">Fluid Simulation 流体シミュレーション</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/2d-feedback-systems/reaction-diffusion-model" class="sl" style="padding-left:64px">Reaction-diffusion model 反応拡散モデル</a></li></ul>
+        </li>
+        <li class="si">
+          <button class="st" data-slug="sketching-with-math-and-quasi-physics/calculus-for-makers" aria-expanded="false" style="padding-left:28px">
+            <span class="sa">+</span><a href="/sketching-with-math-and-quasi-physics/calculus-for-makers" class="sl">Calculus for Makers作るための微積分</a>
+          </button>
+          <ul class="sc"><li class="si"><a href="/sketching-with-math-and-quasi-physics/calculus-for-makers/differentiation" class="sl" style="padding-left:64px">Differentiation 微分</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/calculus-for-makers/diffusion" class="sl" style="padding-left:64px">Diffusion 拡散</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/calculus-for-makers/integration" class="sl" style="padding-left:64px">Integration 積分</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/calculus-for-makers/summation" class="sl" style="padding-left:64px">Summation 総和</a></li></ul>
+        </li><li class="si"><a href="/sketching-with-math-and-quasi-physics/camera-in-action" class="sl" style="padding-left:50px">Camera in Action 働くカメラ</a></li>
+        <li class="si">
+          <button class="st" data-slug="sketching-with-math-and-quasi-physics/chaos-theory" aria-expanded="false" style="padding-left:28px">
+            <span class="sa">+</span><a href="/sketching-with-math-and-quasi-physics/chaos-theory" class="sl">Chaos Theory カオス理論</a>
+          </button>
+          <ul class="sc"><li class="si"><a href="/sketching-with-math-and-quasi-physics/chaos-theory/extra-math-on-chaos" class="sl" style="padding-left:64px">(Extra) Math on Chaos（さらに）カオスの数学</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/chaos-theory/logistic-mapping" class="sl" style="padding-left:64px">Logistic Mapping ロジスティック写像</a></li>
+        <li class="si">
+          <button class="st" data-slug="sketching-with-math-and-quasi-physics/chaos-theory/physical-chaos" aria-expanded="false" style="padding-left:42px">
+            <span class="sa">+</span><a href="/sketching-with-math-and-quasi-physics/chaos-theory/physical-chaos" class="sl">Physical Chaos 物理的なカオス</a>
+          </button>
+          <ul class="sc"><li class="si"><a href="/sketching-with-math-and-quasi-physics/chaos-theory/physical-chaos/derivation-of-the-equations-by-ai" class="sl" style="padding-left:78px">Derivation of the equations (by AI)</a></li></ul>
+        </li><li class="si"><a href="/sketching-with-math-and-quasi-physics/chaos-theory/strange-attractor" class="sl" style="padding-left:64px">Strange Attractor ストレンジアトラクター</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/chaos-theory/stretch-and-fold" class="sl" style="padding-left:64px">Stretch and Fold 引き伸ばしと折り畳み</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/chaos-theory/what-is-randomness" class="sl" style="padding-left:64px">What is Randomness? ランダムさとは</a></li></ul>
+        </li>
+        <li class="si">
+          <button class="st" data-slug="sketching-with-math-and-quasi-physics/colors-and-numbers" aria-expanded="false" style="padding-left:28px">
+            <span class="sa">+</span><a href="/sketching-with-math-and-quasi-physics/colors-and-numbers" class="sl">Colors and Numbers 色と数値</a>
+          </button>
+          <ul class="sc"><li class="si"><a href="/sketching-with-math-and-quasi-physics/colors-and-numbers/cie-color-spaces" class="sl" style="padding-left:64px">CIE Color spaces CIE色空間</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/colors-and-numbers/computing-colors" class="sl" style="padding-left:64px">Computing Colors 色を計算する</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/colors-and-numbers/spectrum-and-cones" class="sl" style="padding-left:64px">Spectrum and Cones スペクトルと錐体</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/colors-and-numbers/various-color-models" class="sl" style="padding-left:64px">Various Color Models 様々なカラーモデル</a></li></ul>
+        </li>
+        <li class="si">
+          <button class="st" data-slug="sketching-with-math-and-quasi-physics/curves" aria-expanded="false" style="padding-left:28px">
+            <span class="sa">+</span><a href="/sketching-with-math-and-quasi-physics/curves" class="sl">Curves 曲線</a>
+          </button>
+          <ul class="sc"><li class="si"><a href="/sketching-with-math-and-quasi-physics/curves/be" class="sl" style="padding-left:64px">Bézier and Spline ベジェとスプライン</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/curves/controlling-curves" class="sl" style="padding-left:64px">Controlling curves 曲線のコントロール</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/curves/cumulative-curves" class="sl" style="padding-left:64px">Cumulative Curves 積み重ねによる曲線</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/curves/parametric-approaches" class="sl" style="padding-left:64px">Parametric Approaches パラメトリックアプローチ</a></li></ul>
+        </li><li class="si"><a href="/sketching-with-math-and-quasi-physics/detecting-collision" class="sl" style="padding-left:50px">Detecting Collision 衝突判定</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/dimensions" class="sl" style="padding-left:50px">Dimensions 次元</a></li>
+        <li class="si">
+          <button class="st" data-slug="sketching-with-math-and-quasi-physics/distance" aria-expanded="false" style="padding-left:28px">
+            <span class="sa">+</span><a href="/sketching-with-math-and-quasi-physics/distance" class="sl">Distance 距離</a>
+          </button>
+          <ul class="sc"><li class="si"><a href="/sketching-with-math-and-quasi-physics/distance/signed-distance-functions" class="sl" style="padding-left:64px">Signed distance functions 符号付き距離関数</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/distance/various-distances" class="sl" style="padding-left:64px">Various distances さまざまな距離</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/distance/visualizing-distances" class="sl" style="padding-left:64px">Visualizing Distances 距離を視覚化する</a></li></ul>
+        </li><li class="si"><a href="/sketching-with-math-and-quasi-physics/drawing-landscape" class="sl" style="padding-left:50px">Drawing Landscape</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/filling-space-with-colors" class="sl" style="padding-left:50px">Filling Space with Colors 空間を色で満たす</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/fourier-series" class="sl" style="padding-left:50px">Fourier Series フーリエ級数</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/geometric-drawings" class="sl" style="padding-left:50px">Geometric Drawings 幾何学ドローイング</a></li>
+        <li class="si">
+          <button class="st" data-slug="sketching-with-math-and-quasi-physics/image-processing" aria-expanded="false" style="padding-left:28px">
+            <span class="sa">+</span><a href="/sketching-with-math-and-quasi-physics/image-processing" class="sl">Image Processing 画像処理</a>
+          </button>
+          <ul class="sc"><li class="si"><a href="/sketching-with-math-and-quasi-physics/image-processing/color-processing" class="sl" style="padding-left:64px">Color Processing カラープロセッシング</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/image-processing/convolution" class="sl" style="padding-left:64px">Convolution コンボリューション</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/image-processing/deformation-and-feedback" class="sl" style="padding-left:64px">Deformation and Feedback 変形とフィードバック</a></li></ul>
+        </li><li class="si"><a href="/sketching-with-math-and-quasi-physics/interpolation-and-animation" class="sl" style="padding-left:50px">Interpolation and Animation 補間とアニメーション</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/kinematics" class="sl" style="padding-left:50px">Kinematics キネマティクス</a></li>
+        <li class="si">
+          <button class="st" data-slug="sketching-with-math-and-quasi-physics/light" aria-expanded="false" style="padding-left:28px">
+            <span class="sa">+</span><a href="/sketching-with-math-and-quasi-physics/light" class="sl">Light 光</a>
+          </button>
+          <ul class="sc">
+        <li class="si">
+          <button class="st" data-slug="sketching-with-math-and-quasi-physics/light/illuminating-objects" aria-expanded="false" style="padding-left:42px">
+            <span class="sa">+</span><a href="/sketching-with-math-and-quasi-physics/light/illuminating-objects" class="sl">Illuminating objects 物体を照らす</a>
+          </button>
+          <ul class="sc"><li class="si"><a href="/sketching-with-math-and-quasi-physics/light/illuminating-objects/classic-3d-rendering" class="sl" style="padding-left:78px">Classic 3D Rendering 古典的 3D レンダリング</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/light/illuminating-objects/somewhat-more-physically-based-rendering" class="sl" style="padding-left:78px">(Somewhat more) Physically based rendering 物理的に（もう少し）正しいレンダリング</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/light/illuminating-objects/specular-reflections-and-diffuse-light" class="sl" style="padding-left:78px">Specular reflections and diffuse light 鏡面反射と拡散光</a></li></ul>
+        </li><li class="si"><a href="/sketching-with-math-and-quasi-physics/light/light-and-2d-graphics" class="sl" style="padding-left:64px">Light and 2D Graphics 光と2Dグラフィックス</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/light/reflection-and-refraction" class="sl" style="padding-left:64px">Reflection and Refraction 反射と屈折</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/light/what-is-light" class="sl" style="padding-left:64px">What is light? 光とは何か</a></li></ul>
+        </li>
+        <li class="si">
+          <button class="st" data-slug="sketching-with-math-and-quasi-physics/many-intros-for-sketching-with-code" aria-expanded="false" style="padding-left:28px">
+            <span class="sa">+</span><a href="/sketching-with-math-and-quasi-physics/many-intros-for-sketching-with-code" class="sl">Many intros for Sketching with Code</a>
+          </button>
+          <ul class="sc"><li class="si"><a href="/sketching-with-math-and-quasi-physics/many-intros-for-sketching-with-code/about-colors" class="sl" style="padding-left:64px">About Colors 色について</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/many-intros-for-sketching-with-code/about-interpolation" class="sl" style="padding-left:64px">About Interpolation 補間について</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/many-intros-for-sketching-with-code/about-motion" class="sl" style="padding-left:64px">About Motion 動きについて</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/many-intros-for-sketching-with-code/about-patterns" class="sl" style="padding-left:64px">About Patterns パターンについて</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/many-intros-for-sketching-with-code/about-perception" class="sl" style="padding-left:64px">About Perception 知覚について</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/many-intros-for-sketching-with-code/about-shapes" class="sl" style="padding-left:64px">About Shapes 形について</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/many-intros-for-sketching-with-code/about-space" class="sl" style="padding-left:64px">About Space  空間について</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/many-intros-for-sketching-with-code/about-wave" class="sl" style="padding-left:64px">About Wave 波について</a></li></ul>
+        </li>
+        <li class="si">
+          <button class="st" data-slug="sketching-with-math-and-quasi-physics/mapping" aria-expanded="false" style="padding-left:28px">
+            <span class="sa">+</span><a href="/sketching-with-math-and-quasi-physics/mapping" class="sl">Mapping 写像</a>
+          </button>
+          <ul class="sc">
+        <li class="si">
+          <button class="st" data-slug="sketching-with-math-and-quasi-physics/mapping/continuous-mapping" aria-expanded="false" style="padding-left:42px">
+            <span class="sa">+</span><a href="/sketching-with-math-and-quasi-physics/mapping/continuous-mapping" class="sl">Continuous Mapping 連続的な写像</a>
+          </button>
+          <ul class="sc"><li class="si"><a href="/sketching-with-math-and-quasi-physics/mapping/continuous-mapping/gaussian-elimination" class="sl" style="padding-left:78px">Gaussian Elimination ガウスの消去法</a></li></ul>
+        </li><li class="si"><a href="/sketching-with-math-and-quasi-physics/mapping/discrete-mapping" class="sl" style="padding-left:64px">Discrete Mapping 離散的な写像</a></li></ul>
+        </li>
+        <li class="si">
+          <button class="st" data-slug="sketching-with-math-and-quasi-physics/math-snippets" aria-expanded="false" style="padding-left:28px">
+            <span class="sa">+</span><a href="/sketching-with-math-and-quasi-physics/math-snippets" class="sl">Math Snippets</a>
+          </button>
+          <ul class="sc"><li class="si"><a href="/sketching-with-math-and-quasi-physics/math-snippets/bowls-and-pringles" class="sl" style="padding-left:64px">Bowls and Pringles お椀とプリングルス</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/math-snippets/complex-exponentiation" class="sl" style="padding-left:64px">Complex Exponentiation 複素数の累乗</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/math-snippets/complex-mappings" class="sl" style="padding-left:64px">Complex Mappings 複素数のマッピング</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/math-snippets/complex-multiplication" class="sl" style="padding-left:64px">Complex Multiplication 複素数の掛け算</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/math-snippets/galton-pegboards" class="sl" style="padding-left:64px">Galton Pegboards ガルトン・ボード</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/math-snippets/gift-wrapping" class="sl" style="padding-left:64px">Gift Wrapping ギフトラッピング</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/math-snippets/non-euclidean-spaces" class="sl" style="padding-left:64px">Non-Euclidean Spaces 非ユークリッド空間</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/math-snippets/principal-component-analysis" class="sl" style="padding-left:64px">Principal Component Analysis 主成分分析</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/math-snippets/riemann-circle-projection" class="sl" style="padding-left:64px">Riemann Circle Projection リーマン円周への射影</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/math-snippets/visualizing-graphs" class="sl" style="padding-left:64px">Visualizing Graphs グラフの可視化</a></li>
+        <li class="si">
+          <button class="st" data-slug="sketching-with-math-and-quasi-physics/math-snippets/zeta-function" aria-expanded="false" style="padding-left:42px">
+            <span class="sa">+</span><a href="/sketching-with-math-and-quasi-physics/math-snippets/zeta-function" class="sl">Zeta Function ゼータ関数</a>
+          </button>
+          <ul class="sc"><li class="si"><a href="/sketching-with-math-and-quasi-physics/math-snippets/zeta-function/the-proof-of-the-euler-product-formula" class="sl" style="padding-left:78px">The proof of the Euler Product Formula</a></li></ul>
+        </li></ul>
+        </li><li class="si"><a href="/sketching-with-math-and-quasi-physics/mixing-colors" class="sl" style="padding-left:50px">Mixing Colors 色を混ぜる</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/neural-network" class="sl" style="padding-left:50px">Neural Network ニューラルネットワーク</a></li>
+        <li class="si">
+          <button class="st" data-slug="sketching-with-math-and-quasi-physics/newton-and-vectors" aria-expanded="false" style="padding-left:28px">
+            <span class="sa">+</span><a href="/sketching-with-math-and-quasi-physics/newton-and-vectors" class="sl">Newton and Vectors ニュートンとベクトル</a>
+          </button>
+          <ul class="sc"><li class="si"><a href="/sketching-with-math-and-quasi-physics/newton-and-vectors/building-ragdolls" class="sl" style="padding-left:64px">Building Ragdolls ラグドールを作る</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/newton-and-vectors/continuous-time-and-discrete-time" class="sl" style="padding-left:64px">Continuous Time and Discrete Time 連続した時間とバラバラな時間</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/newton-and-vectors/newtonian-mechanics" class="sl" style="padding-left:64px">Newtonian mechanics ニュートン力学</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/newton-and-vectors/vector" class="sl" style="padding-left:64px">Vector ベクトル</a></li></ul>
+        </li><li class="si"><a href="/sketching-with-math-and-quasi-physics/numbers-and-intervals" class="sl" style="padding-left:50px">Numbers and Intervals   数と音程</a></li>
+        <li class="si">
+          <button class="st" data-slug="sketching-with-math-and-quasi-physics/patterns" aria-expanded="false" style="padding-left:28px">
+            <span class="sa">+</span><a href="/sketching-with-math-and-quasi-physics/patterns" class="sl">Patterns パターン</a>
+          </button>
+          <ul class="sc"><li class="si"><a href="/sketching-with-math-and-quasi-physics/patterns/fractal" class="sl" style="padding-left:64px">Fractal フラクタル</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/patterns/repetition" class="sl" style="padding-left:64px">Repetition 繰り返し</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/patterns/tiling" class="sl" style="padding-left:64px">Tiling タイリング</a></li></ul>
+        </li><li class="si"><a href="/sketching-with-math-and-quasi-physics/pencils-brushes-and-paints" class="sl" style="padding-left:50px">Pencils, Brushes and Paints 鉛筆、筆、絵の具</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/physical-values-and-human-perception" class="sl" style="padding-left:50px">Physical values and human perception  物理的な値と人間の知覚</a></li>
+        <li class="si">
+          <button class="st" data-slug="sketching-with-math-and-quasi-physics/projection-and-3d-rendering" aria-expanded="false" style="padding-left:28px">
+            <span class="sa">+</span><a href="/sketching-with-math-and-quasi-physics/projection-and-3d-rendering" class="sl">Projection and 3D Rendering プロジェクションと3Dレンダリング</a>
+          </button>
+          <ul class="sc"><li class="si"><a href="/sketching-with-math-and-quasi-physics/projection-and-3d-rendering/3d-rendering-with-ray-marching" class="sl" style="padding-left:64px">3D Rendering with Ray Marching レイマーチングによる3Dレンダリング</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/projection-and-3d-rendering/designing-3d-world" class="sl" style="padding-left:64px">Designing 3D world 3Dのデザイン</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/projection-and-3d-rendering/projection" class="sl" style="padding-left:64px">Projection プロジェクション</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/projection-and-3d-rendering/ray-marching" class="sl" style="padding-left:64px">Ray Marching レイマーチング</a></li></ul>
+        </li><li class="si cur"><a href="/sketching-with-math-and-quasi-physics/reading-a-noise-function" class="sl current" style="padding-left:50px">Reading a Noise Function</a></li>
+        <li class="si">
+          <button class="st" data-slug="sketching-with-math-and-quasi-physics/reading" aria-expanded="false" style="padding-left:28px">
+            <span class="sa">+</span><a href="/sketching-with-math-and-quasi-physics/reading" class="sl">Reading “Raymarching - Primitives”</a>
+          </button>
+          <ul class="sc"><li class="si"><a href="/sketching-with-math-and-quasi-physics/reading/abstract-introduction-and-background" class="sl" style="padding-left:64px">Abstract, Introduction and Background 概要、序論と背景</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/reading/architecture-overview" class="sl" style="padding-left:64px">Architecture Overview アーキテクチャの概要</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/reading/attention-mechanism" class="sl" style="padding-left:64px">Attention Mechanism アテンション機構</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/reading/breakdown-of-the-setcamera-function-setcamera" class="sl" style="padding-left:64px">Breakdown of the setCamera function setCamera関数の解説</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/reading/conclusions-and-applications" class="sl" style="padding-left:64px">Conclusions and Applications 結論と応用</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/reading/other-key-layers" class="sl" style="padding-left:64px">Other Key Layers その他の重要なレイヤー</a></li>
+        <li class="si">
+          <button class="st" data-slug="sketching-with-math-and-quasi-physics/reading/rendering-process-overview" aria-expanded="false" style="padding-left:42px">
+            <span class="sa">+</span><a href="/sketching-with-math-and-quasi-physics/reading/rendering-process-overview" class="sl">Rendering Process Overview レンダリングプロセスの概要</a>
+          </button>
+          <ul class="sc"><li class="si"><a href="/sketching-with-math-and-quasi-physics/reading/rendering-process-overview/ambient-occlusion" class="sl" style="padding-left:78px">Ambient occlusion アンビエントオクルージョン</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/reading/rendering-process-overview/atmospheric-perspective" class="sl" style="padding-left:78px">Atmospheric Perspective 空気遠近法</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/reading/rendering-process-overview/backlight" class="sl" style="padding-left:78px">Backlight バックライト</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/reading/rendering-process-overview/drawing-the-checker-pattern" class="sl" style="padding-left:78px">Drawing the checker pattern チェック模様を描く</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/reading/rendering-process-overview/normal-calculation" class="sl" style="padding-left:78px">Normal calculation 法線の計算</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/reading/rendering-process-overview/ray-casting" class="sl" style="padding-left:78px">Ray casting レイキャスティング</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/reading/rendering-process-overview/sky-light" class="sl" style="padding-left:78px">Sky light 空からの光</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/reading/rendering-process-overview/soft-shadow" class="sl" style="padding-left:78px">Soft shadow ソフトシャドウ</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/reading/rendering-process-overview/subsurface-scattering" class="sl" style="padding-left:78px">Subsurface scattering サブサーフェススキャッタリング</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/reading/rendering-process-overview/sunlight" class="sl" style="padding-left:78px">Sunlight 太陽光</a></li></ul>
+        </li></ul>
+        </li><li class="si"><a href="/sketching-with-math-and-quasi-physics/resolution" class="sl" style="padding-left:50px">Resolution 解像度</a></li>
+        <li class="si">
+          <button class="st" data-slug="sketching-with-math-and-quasi-physics/rotation" aria-expanded="false" style="padding-left:28px">
+            <span class="sa">+</span><a href="/sketching-with-math-and-quasi-physics/rotation" class="sl">Rotation 回転</a>
+          </button>
+          <ul class="sc"><li class="si"><a href="/sketching-with-math-and-quasi-physics/rotation/quaternion" class="sl" style="padding-left:64px">Quaternion クォータニオン</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/rotation/rotation-and-trigonometry" class="sl" style="padding-left:64px">Rotation and Trigonometry 回転と三角関数</a></li></ul>
+        </li><li class="si"><a href="/sketching-with-math-and-quasi-physics/taming-randomness" class="sl" style="padding-left:50px">Taming Randomness ランダムさを手なづける</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/vector-operations" class="sl" style="padding-left:50px">Vector Operations ベクトルの操作</a></li>
+        <li class="si">
+          <button class="st" data-slug="sketching-with-math-and-quasi-physics/wave" aria-expanded="false" style="padding-left:28px">
+            <span class="sa">+</span><a href="/sketching-with-math-and-quasi-physics/wave" class="sl">Wave 波</a>
+          </button>
+          <ul class="sc"><li class="si"><a href="/sketching-with-math-and-quasi-physics/wave/direction-of-the-waves" class="sl" style="padding-left:64px">Direction of the waves 波の向き</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/wave/pitch-and-frequency" class="sl" style="padding-left:64px">Pitch and Frequency 音高と周波数</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/wave/sine-waves-and-additive-synthesis" class="sl" style="padding-left:64px">Sine waves and Additive Synthesis サイン波と加算合成</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/wave/sound-visualization" class="sl" style="padding-left:64px">Sound visualization 音の視覚化</a></li><li class="si"><a href="/sketching-with-math-and-quasi-physics/wave/vibration-and-propagation" class="sl" style="padding-left:64px">Vibration and Propagation 振動と伝搬</a></li></ul>
+        </li></ul> </li><li class="si"> <a href="/the-secrets-of-sound-for-kids" class="sl" style="padding-left:36px">The secrets of sound (for kids)</a> </li><li class="si"> <button class="st" data-slug="category-theory-and-code" aria-expanded="false" style="padding-left:14px"> <span class="sa">+</span> <a href="/category-theory-and-code" class="sl">Category Theory and Code 圏論とコード</a> </button> <ul class="sc"><li class="si"><a href="/category-theory-and-code/category-basics" class="sl" style="padding-left:50px">Category Basics圏の基本</a></li><li class="si"><a href="/category-theory-and-code/category-theory-and-functional-programming" class="sl" style="padding-left:50px">Category Theory and Functional Programming 圏論と関数型プログラミング</a></li><li class="si"><a href="/category-theory-and-code/double-dual" class="sl" style="padding-left:50px">Double Dual 二重双対</a></li><li class="si"><a href="/category-theory-and-code/everything-as-an-arrow" class="sl" style="padding-left:50px">Everything as an Arrowすべては矢印</a></li><li class="si"><a href="/category-theory-and-code/functor" class="sl" style="padding-left:50px">Functor 関手</a></li><li class="si"><a href="/category-theory-and-code/generics-and-category-theory" class="sl" style="padding-left:50px">Generics and Category Theory ジェネリクスと圏論</a></li><li class="si"><a href="/category-theory-and-code/monads" class="sl" style="padding-left:50px">Monads モナド</a></li><li class="si"><a href="/category-theory-and-code/natural-transformation" class="sl" style="padding-left:50px">Natural Transformation 自然変換</a></li><li class="si"><a href="/category-theory-and-code/products-coproducts-universality-and-duality" class="sl" style="padding-left:50px">Products, Coproducts, Universality and Duality 積、余積、普遍性と双対性</a></li></ul> </li><li class="si"> <a href="/on-prototyping-prototyping-is-sketching" class="sl" style="padding-left:36px">On Prototyping (Prototyping is sketching)</a> </li><li class="si"> <a href="/faq" class="sl" style="padding-left:36px">FAQs</a> </li> </ul> <!-- Global styles so they apply to both JSX-rendered and set:html content -->   </nav> <main class="main-wrap"> <div class="main-inner"> <article class="prose"> <nav class="content-breadcrumb" aria-label="Breadcrumb"> <span style="display:contents">  <a href="/">Home</a> </span><span style="display:contents"> <span class="cb-sep">/</span> <a href="/sketching-with-math-and-quasi-physics">Sketching with Math and Quasi Physics</a> </span> </nav>  <h1 class="page-title">Reading a Noise Function</h1> <p>On this page, we are going to read a simple noise function. Noise functions are one of the most common tools in computer graphics to create complex or realistic patterns like this landscape. Because they are so common, many tools and frameworks give us various implementations of noise functions for free, and we tend to take them for granted without having to understand how they work.</p>
+<p>このページでは、シンプルなノイズ関数について解説していきます。ノイズ関数は、この風景のように複雑でリアルなパターンを生成するために使える、コンピューターグラフィックスの基本的なツールの1つです。その汎用性の高さから、多くのツールやフレームワークには様々なノイズ関数の標準で実装されていて、原理を理解しなくても当たり前のように使うことができます。</p>
+<p><a href="/sketching-with-math-and-quasi-physics/drawing-landscape">Drawing Landscape</a></p>
+<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/ZYEVRGN?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<p>And, we have AI these days. About 50% of my code day-to-day is already written by AI, and I’m totally fine when I know what it is doing. I’m happy not to repeat boilerplate and stuff. But I feel a little anxiety when I use a piece of code I don’t fully understand. Sometimes, it is useful to deep dive into something you don’t know and explore until you feel good.</p>
+<p>さらに、最近はAIがあります。自分の場合、日常的なコードの50%くらいはすでにAIが書いていて、それが何をしているのか理解できる限り全く問題は感じません。定型的な作業などを繰り返さなくて良いのは幸せです。ですが完全に理解していないコードを使うときには、少し不安になります。時には、知らないことついて深く掘り下げて、納得いくまで探求することも役に立ちます。</p>
+<p>For writing this page, I asked an AI to read the example and directly quote the explanations. AI can be a great tool to help you learn, rather than a black box that makes people dumb.</p>
+<p>このページではAIにサンプルを読ませ、その説明を直接引用しました。AIは、人々を考えなくするブラックボックスではなく、学習を助ける優れたツールになり得りえます。</p>
+<blockquote>
+<p>This page (or all of my articles in general) is written for someone like me, who is more visually and scrappy prototyping oriented rather than a trained programmer or mathematician. If you have a computer science degree, this might not be for you.</p>
+<p>このページ（他の記事も）は、コンピューターサイエンスの学位を持つような専門的な技術者や数学者ではなく、自分を含めた見た目やざっくりとしたプロトタイピングを優先する人向けに書かれています。コンピューターサイエンスの学位を持った人にはこのページはあまり参考にならないかもしれません。</p>
+</blockquote>
+<h1 id="1d-noise-function">1D noise function</h1>
+<p>This is our sample code (written by AI as well). It is a simple <a href="/sketching-with-math-and-quasi-physics/taming-randomness">value noise function</a> that takes a float number as input and returns another float number.</p>
+<p>これがサンプルコードです（これもAIが書きました）。これは単純な<a href="/sketching-with-math-and-quasi-physics/taming-randomness">バリューノイズ関数</a>で、浮動小数点数を入力として受け取り、別の浮動小数点数を返します。</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="glsl"><code><span class="line"></span>
+<span class="line"><span style="color:#F97583">float</span><span style="color:#B392F0"> hash</span><span style="color:#E1E4E8">(</span><span style="color:#F97583">float</span><span style="color:#FFAB70"> n</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#E1E4E8">{</span></span>
+<span class="line"><span style="color:#6A737D">    // Deterministic pseudo‑random number in [0,1)</span></span>
+<span class="line"><span style="color:#F97583">    return</span><span style="color:#B392F0"> fract</span><span style="color:#E1E4E8">(</span><span style="color:#B392F0">sin</span><span style="color:#E1E4E8">(n) </span><span style="color:#F97583">*</span><span style="color:#79B8FF"> 43758.5453123</span><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">float</span><span style="color:#B392F0"> noise</span><span style="color:#E1E4E8">(</span><span style="color:#F97583">float</span><span style="color:#FFAB70"> x</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#E1E4E8">{</span></span>
+<span class="line"><span style="color:#6A737D">    // Integer lattice points on either side of x</span></span>
+<span class="line"><span style="color:#F97583">    float</span><span style="color:#E1E4E8"> i0 </span><span style="color:#F97583">=</span><span style="color:#B392F0"> floor</span><span style="color:#E1E4E8">(x);</span></span>
+<span class="line"><span style="color:#F97583">    float</span><span style="color:#E1E4E8"> i1 </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> i0 </span><span style="color:#F97583">+</span><span style="color:#79B8FF"> 1.0</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6A737D">    // Fractional position within the cell</span></span>
+<span class="line"><span style="color:#F97583">    float</span><span style="color:#E1E4E8"> f  </span><span style="color:#F97583">=</span><span style="color:#B392F0"> fract</span><span style="color:#E1E4E8">(x);</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6A737D">    // Hash values at the two endpoints</span></span>
+<span class="line"><span style="color:#F97583">    float</span><span style="color:#E1E4E8"> a </span><span style="color:#F97583">=</span><span style="color:#B392F0"> hash</span><span style="color:#E1E4E8">(i0);</span></span>
+<span class="line"><span style="color:#F97583">    float</span><span style="color:#E1E4E8"> b </span><span style="color:#F97583">=</span><span style="color:#B392F0"> hash</span><span style="color:#E1E4E8">(i1);</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6A737D">    // Smoothstep weight for C¹ continuity</span></span>
+<span class="line"><span style="color:#F97583">    float</span><span style="color:#E1E4E8"> u </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> f </span><span style="color:#F97583">*</span><span style="color:#E1E4E8"> f </span><span style="color:#F97583">*</span><span style="color:#E1E4E8"> (</span><span style="color:#79B8FF">3.0</span><span style="color:#F97583"> -</span><span style="color:#79B8FF"> 2.0</span><span style="color:#F97583"> *</span><span style="color:#E1E4E8"> f);</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6A737D">    // Linear interpolation</span></span>
+<span class="line"><span style="color:#F97583">    return</span><span style="color:#B392F0"> mix</span><span style="color:#E1E4E8">(a, b, u);</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span>
+<span class="line"></span></code></pre>
+<p>The first step is to visualize the function. The demo below maps the horizontal axis to the range of <code>x=0.0</code> to <code>x=10.0</code>. The vertical axis, or the height of the white area, represents the return value in the range of 0.0 to 1.0.</p>
+<p>まずは関数を可視化してみましょう。下のデモは、横軸が<code>x=0.0</code>から<code>x=10.0</code>の範囲に対応します。垂直軸、つまり白い領域の高さは、0.0から1.0の範囲での戻り値を表しています。</p>
+<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/WbbBawy?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<h1 id="lattice-points">Lattice points</h1>
+<h1 id="格子点">格子点</h1>
+<p>Let’s break it down. Ok AI, what are the first two lines doing.</p>
+<p>分解して見ていきましょう。AIに、最初の2行が何をしているのか聞いてみます。</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="glsl"><code><span class="line"><span style="color:#F97583">    float</span><span style="color:#E1E4E8"> i0 </span><span style="color:#F97583">=</span><span style="color:#79B8FF"> floor</span><span style="color:#E1E4E8">(x);</span></span>
+<span class="line"><span style="color:#F97583">    float</span><span style="color:#E1E4E8"> i1 </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> i0 </span><span style="color:#F97583">+</span><span style="color:#79B8FF"> 1.0</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"></span></code></pre>
+<blockquote>
+<p>This lines are <strong>splitting the input</strong> <code>x</code> <strong>into two adjacent integer lattice points</strong> that define the “cell” <code>x</code> is inside.</p>
+<p>Let’s say <code>x = 3.42</code>.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="glsl"><code><span class="line"><span style="color:#E1E4E8">i0 </span><span style="color:#F97583">=</span><span style="color:#79B8FF"> floor</span><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">3.42</span><span style="color:#E1E4E8">);</span><span style="color:#6A737D"> // → 3.0 (left end of the interval)</span></span>
+<span class="line"><span style="color:#E1E4E8">i1 </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> i0 </span><span style="color:#F97583">+</span><span style="color:#79B8FF"> 1.0</span><span style="color:#E1E4E8">;</span><span style="color:#6A737D">    // → 4.0 (right end of the interval</span></span>
+<span class="line"></span></code></pre>
+<p>So <code>x</code> is somewhere between <code>i0 = 3</code> and <code>i1 = 4</code>.</p>
+<p>この行は入力値の<code>x</code>を、その値を含む「セル」を定義する<strong>隣接する2つの整数格子点に分割します</strong>。</p>
+<p><code>x = 3.42</code>とした場合を例に見てみましょう。</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="glsl"><code><span class="line"><span style="color:#E1E4E8">i0 </span><span style="color:#F97583">=</span><span style="color:#79B8FF"> floor</span><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">3.42</span><span style="color:#E1E4E8">);</span><span style="color:#6A737D"> // → 3.0 (区間の左端)</span></span>
+<span class="line"><span style="color:#E1E4E8">i1 </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> i0 </span><span style="color:#F97583">+</span><span style="color:#79B8FF"> 1.0</span><span style="color:#E1E4E8">;</span><span style="color:#6A737D">    // → 4.0 (区間の右端)</span></span>
+<span class="line"></span></code></pre>
+<p>つまり<code>x</code>は<code>i0 = 3</code>と<code>i1 = 4</code>の間のどこかにあるということです。</p>
+</blockquote>
+<p>In other words, <code>i0</code> is the integer number to the left of x and <code>i1</code> is to the right.</p>
+<p>言い換えると、<code>i0</code>はxの左側にある整数の値で、<code>i1</code>は右側にある整数の値です。</p>
+<p>It also helps to sketch on paper your understanding as you go.</p>
+<p>理解を助けるために、紙にスケッチしながら進めていくと良いでしょう。</p>
+<p><a href="/images/reading-a-noise-function.jpg"><img src="/images/reading-a-noise-function.jpg" alt=""></a></p>
+<h1 id="fractional-part">Fractional part</h1>
+<h1 id="小数部分">小数部分</h1>
+<blockquote>
+<p>This line extracts the <strong>fractional part</strong> of <code>x</code>. In other words, it gives you how far <code>x</code> is between the two integer lattice points:</p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mi>r</mi><mi>a</mi><mi>c</mi><mi>t</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mi>x</mi><mo>−</mo><mi>f</mi><mi>l</mi><mi>o</mi><mi>o</mi><mi>r</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">fract(x)=x−floor(x)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal">a</span><span class="mord mathnormal">c</span><span class="mord mathnormal">t</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal" style="margin-right:0.02778em;">oor</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mclose">)</span></span></span></span></p>
+<p>If <code>x = 3.42</code>:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="glsl"><code><span class="line"><span style="color:#E1E4E8">i0 </span><span style="color:#F97583">=</span><span style="color:#79B8FF"> floor</span><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">3.42</span><span style="color:#E1E4E8">);</span><span style="color:#6A737D"> // 3.0</span></span>
+<span class="line"><span style="color:#E1E4E8">f  </span><span style="color:#F97583">=</span><span style="color:#79B8FF"> fract</span><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">3.42</span><span style="color:#E1E4E8">);</span><span style="color:#6A737D"> // 0.42</span></span>
+<span class="line"></span></code></pre>
+<p>So <code>f = 0.42</code> tells you that <code>x</code> is <strong>42% of the way</strong> from <code>i0</code> to <code>i1</code>.</p>
+<p>この行は<code>x</code>の<strong>小数部分</strong>を抽出します。つまり、2つの整数格子点の間での<code>x</code>の位置を示します：</p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mi>r</mi><mi>a</mi><mi>c</mi><mi>t</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mi>x</mi><mo>−</mo><mi>f</mi><mi>l</mi><mi>o</mi><mi>o</mi><mi>r</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">fract(x)=x−floor(x)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal">a</span><span class="mord mathnormal">c</span><span class="mord mathnormal">t</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal" style="margin-right:0.02778em;">oor</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mclose">)</span></span></span></span></p>
+<p><code>x = 3.42</code>の場合：</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="glsl"><code><span class="line"><span style="color:#E1E4E8">i0 </span><span style="color:#F97583">=</span><span style="color:#79B8FF"> floor</span><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">3.42</span><span style="color:#E1E4E8">);</span><span style="color:#6A737D"> // 3.0</span></span>
+<span class="line"><span style="color:#E1E4E8">f  </span><span style="color:#F97583">=</span><span style="color:#79B8FF"> fract</span><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">3.42</span><span style="color:#E1E4E8">);</span><span style="color:#6A737D"> // 0.42</span></span>
+<span class="line"></span></code></pre>
+<p>つまり<code>f = 0.42</code>は、<code>x</code>が<code>i0</code>から<code>i1</code>までの間を<strong>42%進んだ位置</strong>にあることを示しています。</p>
+</blockquote>
+<p><a href="/images/reading-a-noise-function-1.jpg"><img src="/images/reading-a-noise-function-1.jpg" alt=""></a></p>
+<h1 id="hash">Hash</h1>
+<h1 id="ハッシュ">ハッシュ</h1>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="glsl"><code><span class="line"><span style="color:#F97583">    float</span><span style="color:#E1E4E8"> a </span><span style="color:#F97583">=</span><span style="color:#B392F0"> hash</span><span style="color:#E1E4E8">(i0);</span></span>
+<span class="line"><span style="color:#F97583">    float</span><span style="color:#E1E4E8"> b </span><span style="color:#F97583">=</span><span style="color:#B392F0"> hash</span><span style="color:#E1E4E8">(i1);</span></span>
+<span class="line"></span></code></pre>
+<blockquote>
+<p>The <code>hash()</code> function in this code is a <strong>simple pseudo-random number generator</strong>.</p>
+<p>It turns a float input <code>n</code> (usually an integer) into a <strong>repeatable random-looking value between 0 and 1</strong>.</p>
+<ol>
+<li>
+<p><code>sin(n)</code> maps the number <code>n</code> to a float between –1 and 1, in a nonlinear way.</p>
+</li>
+<li>
+<p>Multiply by a big constant (<code>43758.5453123</code>) to spread out the result—this gives a wide range of outputs.</p>
+</li>
+<li>
+<p><code>fract(...)</code> takes the fractional part, so the final value is between 0 and 1.</p>
+</li>
+</ol>
+<p>この<code>hash()</code>関数は<strong>シンプルな疑似乱数生成器</strong>です。<code>n</code>という浮動小数点数の入力（通常は整数）を、<strong>0から1の間の再現可能な乱数のような値</strong>に変換します。</p>
+<ol>
+<li>
+<p><code>sin(n)</code>は数値<code>n</code>を非線形的に-1から1の間の浮動小数点数に変換します。</p>
+</li>
+<li>
+<p>大きな定数（<code>43758.5453123</code>）を掛けることで結果を広く分散させ、幅広い出力値を得ています。</p>
+</li>
+<li>
+<p><code>fract(...)</code>は小数部分を取り出すので、最終的な値は0から1の間になります。</p>
+</li>
+</ol>
+</blockquote>
+<p>So it is basically a pseudo-random function. Then:</p>
+<p>つまりこれは疑似的な乱数関数というわけです。</p>
+<blockquote>
+<p>These two lines:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="glsl"><code><span class="line"><span style="color:#F97583">float</span><span style="color:#E1E4E8"> a </span><span style="color:#F97583">=</span><span style="color:#B392F0"> hash</span><span style="color:#E1E4E8">(i0);</span></span>
+<span class="line"><span style="color:#F97583">float</span><span style="color:#E1E4E8"> b </span><span style="color:#F97583">=</span><span style="color:#B392F0"> hash</span><span style="color:#E1E4E8">(i1);</span></span>
+<span class="line"></span></code></pre>
+<p>generate <strong>pseudo-random values at the two neighboring integer lattice points</strong>—<code>i0</code> and <code>i1</code>—that surround the input <code>x</code>.</p>
+<p>Let’s say your input is <code>x = 3.42</code>:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="glsl"><code><span class="line"><span style="color:#E1E4E8">i0 </span><span style="color:#F97583">=</span><span style="color:#79B8FF"> floor</span><span style="color:#E1E4E8">(x);</span><span style="color:#6A737D">      // → 3.0</span></span>
+<span class="line"><span style="color:#E1E4E8">i1 </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> i0 </span><span style="color:#F97583">+</span><span style="color:#79B8FF"> 1.0</span><span style="color:#E1E4E8">;</span><span style="color:#6A737D">      // → 4.0</span></span>
+<span class="line"></span></code></pre>
+<p>Then:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="glsl"><code><span class="line"><span style="color:#E1E4E8">a </span><span style="color:#F97583">=</span><span style="color:#B392F0"> hash</span><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">3.0</span><span style="color:#E1E4E8">);</span><span style="color:#6A737D">      // → random value at the left end of the cell</span></span>
+<span class="line"><span style="color:#E1E4E8">b </span><span style="color:#F97583">=</span><span style="color:#B392F0"> hash</span><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">4.0</span><span style="color:#E1E4E8">);</span><span style="color:#6A737D">      // → random value at the right end of the cell</span></span>
+<span class="line"></span></code></pre>
+<p>These values <code>a</code> and <code>b</code> are <strong>not truly random</strong>, but they <em>look</em> random and are always the same for the same input. That’s because <code>hash()</code> is a <strong>deterministic pseudo-random function</strong>.</p>
+</blockquote>
+<p>The AI rightly touched upon a very important point. The hash function returns exactly the same value for the same input. Because a shader runs its processes in parallel for each pixel, we want the return values of the functions to be consistent across all the processes.</p>
+<p>AIはとても大事な点を指摘してくれました。ハッシュ関数は同一の入力に対して必ず同じ値を返します。シェーダーは各ピクセルで並列に処理を実行するため、すべての処理で関数の戻り値が一貫している必要があります。</p>
+<p><a href="/images/reading-a-noise-function-2.jpg"><img src="/images/reading-a-noise-function-2.jpg" alt=""></a></p>
+<p>Here is the visualization of the <code>hash</code> function.</p>
+<p>下は<code>hash</code>関数を可視化したものです。</p>
+<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/RNNmEYa?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<h1 id="smoothstep-and-c-continuity">Smoothstep and C¹ continuity</h1>
+<h1 id="スムースステップとc連続性">スムースステップとC¹連続性</h1>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="glsl"><code><span class="line"><span style="color:#F97583">float</span><span style="color:#E1E4E8"> u </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> f </span><span style="color:#F97583">*</span><span style="color:#E1E4E8"> f </span><span style="color:#F97583">*</span><span style="color:#E1E4E8"> (</span><span style="color:#79B8FF">3.0</span><span style="color:#F97583"> -</span><span style="color:#79B8FF"> 2.0</span><span style="color:#F97583"> *</span><span style="color:#E1E4E8"> f);</span></span>
+<span class="line"></span></code></pre>
+<blockquote>
+<p>This line computes a <strong>smooth interpolation weight</strong> using a <strong>smoothstep function</strong>.</p>
+<p>This is a classic <strong>cubic Hermite polynomial</strong>, often called <strong>smoothstep</strong>:</p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><mn>3</mn><msup><mi>f</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><msup><mi>f</mi><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">u = 3f^2 - 2f^3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">u</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.0085em;vertical-align:-0.1944em;"></span><span class="mord">3</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.0085em;vertical-align:-0.1944em;"></span><span class="mord">2</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span></span></span></span></span></span></span></span></p>
+<p>It maps the input <code>f</code> (from 0 to 1) to another number in [0, 1], but with <strong>smoothed acceleration</strong> at the ends. That means:</p>
+<ul>
+<li>
+<p><code>u = 0</code> when <code>f = 0</code></p>
+</li>
+<li>
+<p><code>u = 1</code> when <code>f = 1</code></p>
+</li>
+<li>
+<p><strong>Derivative is 0</strong> at both ends → no sharp corners or sudden jump</p>
+</li>
+</ul>
+<p>If you just used <code>mix(a, b, f)</code> with a linear weight, the transition between <code>a</code> and <code>b</code> would be continuous but <strong>not smooth</strong>—you’d get noticeable slope changes.</p>
+<p>Using this <code>u</code> instead gives you <strong>C¹ continuity</strong>—both value and slope are smooth across intervals.</p>
+<p>That’s why it’s widely used in <strong>value noise</strong>, <strong>animation easing</strong>, and <strong>procedural shading</strong>.</p>
+<p>この行は<strong>スムースステップ関数</strong>を使用して<strong>滑らかな補間の重み</strong>を計算します。</p>
+<p>これは<strong>三次エルミート多項式</strong>の典型的な例で、<strong>スムースステップ</strong>とも呼ばれています：</p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><mn>3</mn><msup><mi>f</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><msup><mi>f</mi><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">u = 3f^2 - 2f^3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">u</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.0085em;vertical-align:-0.1944em;"></span><span class="mord">3</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.0085em;vertical-align:-0.1944em;"></span><span class="mord">2</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span></span></span></span></span></span></span></span></p>
+<p>この関数は入力値<code>f</code>（0から1の範囲）を[0, 1]の範囲の別の数値に変換しますが、両端で<strong>加速度が滑らかに変化</strong>します。つまり：</p>
+<ul>
+<li>
+<p><code>f = 0</code>のとき<code>u = 0</code></p>
+</li>
+<li>
+<p><code>f = 1</code>のとき<code>u = 1</code></p>
+</li>
+<li>
+<p>両端で<strong>導関数が0</strong>となる → 急激な変化や不連続な飛びがない</p>
+</li>
+</ul>
+<p>もし線形の重みで<code>mix(a, b, f)</code>を使用した場合、<code>a</code>と<code>b</code>の間の遷移は連続的ではあるものの<strong>滑らかではなく</strong>、傾きの変化が目立ってしまいます。</p>
+<p>代わりにこの<code>u</code>を使用することで<strong>C¹連続性</strong>が得られ、値と傾きの両方が区間全体で滑らかになります。</p>
+<p>そのため、この関数は<strong>バリューノイズ</strong>、<strong>アニメーションのイージング</strong>、<strong>プロシージャルシェーディング</strong>で広く使用されています。</p>
+</blockquote>
+<p>This is a visualization of the function. You can ask AI more about what C¹ continuity means, or the following page explains more about the concept of continuity.</p>
+<p>下はこの関数を可視化したものです。C¹連続性の意味についてさらにAIに聞いても良いですし、連続性については下記のページでも少し解説しています。</p>
+<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/LEEoMKE?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<h1 id="linear-interpolation">Linear interpolation</h1>
+<h1 id="線形補間">線形補間</h1>
+<p>The last part is just to <a href="/sketching-with-math-and-quasi-physics/interpolation-and-animation">interpolate</a> the two random values with <code>u</code> to smoothly connect them.</p>
+<p>最後の部分は、2つのランダムな値なめらかに繋げるために<code>u</code>を使って補間しているだけです。</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="glsl"><code><span class="line"><span style="color:#F97583">  return</span><span style="color:#79B8FF"> mix</span><span style="color:#E1E4E8">(a, b, u);</span></span>
+<span class="line"></span></code></pre>
+<p>Here is the final picture of my understanding of the code.</p>
+<p>下の図がコードについての最終的な理解を示したものです。</p>
+<p><a href="/images/reading-a-noise-function-3.jpg"><img src="/images/reading-a-noise-function-3.jpg" alt=""></a></p>
+<p>How was it? I hope this gave you a small taste of what it’s like to read and understand code. If you feel comfortable with the simple noise function, try reading this slightly more advanced version from <a href="/sketching-with-math-and-quasi-physics/drawing-landscape">Drawing Landscape</a>.</p>
+<p>どうだったでしょう。コードの読み方について何か掴めたでしょうか。このシンプルなノイズ関数に慣れたら、<a href="/sketching-with-math-and-quasi-physics/drawing-landscape">Drawing Landscape</a>から、もう少し進化したこのバージョンにも挑戦してみてください。</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="glsl"><code><span class="line"><span style="color:#F97583">vec3</span><span style="color:#B392F0"> noised</span><span style="color:#E1E4E8">(in vec2 </span><span style="color:#FFAB70">st</span><span style="color:#E1E4E8">) {</span></span>
+<span class="line"><span style="color:#E1E4E8">    vec2 i </span><span style="color:#F97583">=</span><span style="color:#B392F0"> floor</span><span style="color:#E1E4E8">(st);</span></span>
+<span class="line"><span style="color:#E1E4E8">    vec2 f </span><span style="color:#F97583">=</span><span style="color:#B392F0"> fract</span><span style="color:#E1E4E8">(st);</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">    float</span><span style="color:#E1E4E8"> a </span><span style="color:#F97583">=</span><span style="color:#B392F0"> random</span><span style="color:#E1E4E8">(i);</span></span>
+<span class="line"><span style="color:#F97583">    float</span><span style="color:#E1E4E8"> b </span><span style="color:#F97583">=</span><span style="color:#B392F0"> random</span><span style="color:#E1E4E8">(i </span><span style="color:#F97583">+</span><span style="color:#B392F0"> vec2</span><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">1.0</span><span style="color:#E1E4E8">, </span><span style="color:#79B8FF">0.0</span><span style="color:#E1E4E8">));</span></span>
+<span class="line"><span style="color:#F97583">    float</span><span style="color:#E1E4E8"> c </span><span style="color:#F97583">=</span><span style="color:#B392F0"> random</span><span style="color:#E1E4E8">(i </span><span style="color:#F97583">+</span><span style="color:#B392F0"> vec2</span><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">0.0</span><span style="color:#E1E4E8">, </span><span style="color:#79B8FF">1.0</span><span style="color:#E1E4E8">));</span></span>
+<span class="line"><span style="color:#F97583">    float</span><span style="color:#E1E4E8"> d </span><span style="color:#F97583">=</span><span style="color:#B392F0"> random</span><span style="color:#E1E4E8">(i </span><span style="color:#F97583">+</span><span style="color:#B392F0"> vec2</span><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">1.0</span><span style="color:#E1E4E8">, </span><span style="color:#79B8FF">1.0</span><span style="color:#E1E4E8">));</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">    vec2 u </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> f </span><span style="color:#F97583">*</span><span style="color:#E1E4E8"> f </span><span style="color:#F97583">*</span><span style="color:#E1E4E8"> (</span><span style="color:#79B8FF">3.0</span><span style="color:#F97583"> -</span><span style="color:#79B8FF"> 2.0</span><span style="color:#F97583"> *</span><span style="color:#E1E4E8"> f);</span><span style="color:#6A737D"> // smoothstep(f)</span></span>
+<span class="line"><span style="color:#E1E4E8">    vec2 du </span><span style="color:#F97583">=</span><span style="color:#79B8FF"> 6.0</span><span style="color:#F97583"> *</span><span style="color:#E1E4E8"> f </span><span style="color:#F97583">*</span><span style="color:#E1E4E8"> (</span><span style="color:#79B8FF">1.0</span><span style="color:#F97583"> -</span><span style="color:#E1E4E8"> f);</span><span style="color:#6A737D">    // derivative of smoothstep(f)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">    float</span><span style="color:#E1E4E8"> value </span><span style="color:#F97583">=</span><span style="color:#B392F0"> mix</span><span style="color:#E1E4E8">(a, b, u.x) </span><span style="color:#F97583">+</span></span>
+<span class="line"><span style="color:#E1E4E8">                  (c </span><span style="color:#F97583">-</span><span style="color:#E1E4E8"> a) </span><span style="color:#F97583">*</span><span style="color:#E1E4E8"> u.y </span><span style="color:#F97583">*</span><span style="color:#E1E4E8"> (</span><span style="color:#79B8FF">1.0</span><span style="color:#F97583"> -</span><span style="color:#E1E4E8"> u.x) </span><span style="color:#F97583">+</span></span>
+<span class="line"><span style="color:#E1E4E8">                  (d </span><span style="color:#F97583">-</span><span style="color:#E1E4E8"> b) </span><span style="color:#F97583">*</span><span style="color:#E1E4E8"> u.x </span><span style="color:#F97583">*</span><span style="color:#E1E4E8"> u.y;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">    float</span><span style="color:#E1E4E8"> dx </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> (b </span><span style="color:#F97583">-</span><span style="color:#E1E4E8"> a) </span><span style="color:#F97583">*</span><span style="color:#E1E4E8"> du.x </span><span style="color:#F97583">*</span><span style="color:#E1E4E8"> (</span><span style="color:#79B8FF">1.0</span><span style="color:#F97583"> -</span><span style="color:#E1E4E8"> u.y) </span><span style="color:#F97583">+</span></span>
+<span class="line"><span style="color:#E1E4E8">               (d </span><span style="color:#F97583">-</span><span style="color:#E1E4E8"> c </span><span style="color:#F97583">-</span><span style="color:#E1E4E8"> b </span><span style="color:#F97583">+</span><span style="color:#E1E4E8"> a) </span><span style="color:#F97583">*</span><span style="color:#E1E4E8"> du.x </span><span style="color:#F97583">*</span><span style="color:#E1E4E8"> u.y;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">    float</span><span style="color:#E1E4E8"> dy </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> (c </span><span style="color:#F97583">-</span><span style="color:#E1E4E8"> a) </span><span style="color:#F97583">*</span><span style="color:#E1E4E8"> du.y </span><span style="color:#F97583">*</span><span style="color:#E1E4E8"> (</span><span style="color:#79B8FF">1.0</span><span style="color:#F97583"> -</span><span style="color:#E1E4E8"> u.x) </span><span style="color:#F97583">+</span></span>
+<span class="line"><span style="color:#E1E4E8">               (d </span><span style="color:#F97583">-</span><span style="color:#E1E4E8"> b </span><span style="color:#F97583">-</span><span style="color:#E1E4E8"> c </span><span style="color:#F97583">+</span><span style="color:#E1E4E8"> a) </span><span style="color:#F97583">*</span><span style="color:#E1E4E8"> du.y </span><span style="color:#F97583">*</span><span style="color:#E1E4E8"> u.x;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">    return</span><span style="color:#B392F0"> vec3</span><span style="color:#E1E4E8">(value, dx, dy);</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span>
+<span class="line"></span></code></pre>  </article> <footer class="site-footer"> <div class="site-footer-left"> <a href="/">Index</a> <a href="/faq">FAQs</a> </div> <div class="site-footer-right"> <a href="https://www.kynd.info/" target="_blank" rel="noopener">kynd.info</a> <a href="https://www.instagram.com/kyndinfo/" target="_blank" rel="noopener">Instagram</a> <a href="https://vimeo.com/kynd" target="_blank" rel="noopener">Vimeo</a> <a href="https://bsky.app/profile/kyndinfo.bsky.social" target="_blank" rel="noopener">Bluesky</a> <a href="https://www.threads.net/@kyndinfo" target="_blank" rel="noopener">Threads</a> <a href="https://twitter.com/kyndinfo" target="_blank" rel="noopener">Twitter</a> </div> </footer> </div> </main> </div>  </body> </html>
