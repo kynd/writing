@@ -63,10 +63,12 @@ function buildTree(docs: typeof allDocs): TreeNode {
 
 const tree = buildTree(allDocs);
 
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
 function buildBreadcrumbs(slug: string, docs: typeof allDocs) {
   const parts = slug.split('/').filter(Boolean);
   const crumbs: { label: string; href: string }[] = [
-    { label: 'Home', href: '/' },
+    { label: 'Home', href: base || '/' },
   ];
 
   let cumulative = '';
@@ -75,7 +77,7 @@ function buildBreadcrumbs(slug: string, docs: typeof allDocs) {
     const match = docs.find((d) => d.slug === cumulative || d.slug === `${cumulative}/index`);
     crumbs.push({
       label: match?.data.title || parts[i],
-      href: `/${cumulative}`,
+      href: `${base}/${cumulative}`,
     });
   }
   return crumbs;
@@ -577,8 +579,8 @@ const breadcrumbs = buildBreadcrumbs(slug, allDocs);
         </article>
         <footer class="site-footer">
           <div class="site-footer-left">
-            <a href="/">Index</a>
-            <a href="/faq">FAQs</a>
+            <a href={base || '/'}>Index</a>
+            <a href={`${base}/faq`}>FAQs</a>
           </div>
           <div class="site-footer-right">
             <a href="https://www.kynd.info/" target="_blank" rel="noopener">kynd.info</a>

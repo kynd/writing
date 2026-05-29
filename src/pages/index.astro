@@ -36,7 +36,7 @@ const topLevel = allDocs
       <ul class="index-list">
         {topLevel.map((doc) => (
           <li>
-            <a href={`/${doc.slug.replace(/\/index$/, '')}`}>
+            <a href={`${import.meta.env.BASE_URL}${doc.slug.replace(/\/index$/, '')}`}>
               {doc.data.title}
             </a>
           </li>

@@ -11,6 +11,7 @@ interface Props {
 }
 
 const { tree, currentSlug } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 // Recursive HTML string renderer for nested levels
 function renderTree(node: TreeNode, depth = 0): string {
@@ -31,12 +32,12 @@ function renderTree(node: TreeNode, depth = 0): string {
       return `
         <li class="si${activeClass}">
           <button class="st${activeClass}" data-slug="${child.slug}" aria-expanded="${isActive}" style="padding-left:${indent}px">
-            <span class="sa">${isActive ? '−' : '+'}</span><a href="/${child.slug}" class="sl${currentClass}">${child.label}</a>
+            <span class="sa">${isActive ? '−' : '+'}</span><a href="${base}/${child.slug}" class="sl${currentClass}">${child.label}</a>
           </button>
           <ul class="sc${isActive ? ' open' : ''}">${inner}</ul>
         </li>`;
     } else {
-      return `<li class="si${currentClass ? ' cur' : ''}"><a href="/${child.slug}" class="sl${currentClass}" style="padding-left:${indent + 22}px">${child.label}</a></li>`;
+      return `<li class="si${currentClass ? ' cur' : ''}"><a href="${base}/${child.slug}" class="sl${currentClass}" style="padding-left:${indent + 22}px">${child.label}</a></li>`;
     }
   }).join('');
 }
@@ -58,7 +59,7 @@ function renderTree(node: TreeNode, depth = 0): string {
             style="padding-left:14px"
           >
             <span class="sa">{isActive ? '−' : '+'}</span>
-            <a href={`/${child.slug}`} class={`sl${isCurrentPage ? ' current' : ''}`}>{child.label}</a>
+            <a href={`${base}/${child.slug}`} class={`sl${isCurrentPage ? ' current' : ''}`}>{child.label}</a>
           </button>
           <ul class={`sc${isActive ? ' open' : ''}`} set:html={renderTree(child, 1)} />
         </li>
@@ -66,7 +67,7 @@ function renderTree(node: TreeNode, depth = 0): string {
     } else {
       return (
         <li class={`si${isCurrentPage ? ' cur' : ''}`}>
-          <a href={`/${child.slug}`} class={`sl${isCurrentPage ? ' current' : ''}`} style="padding-left:36px">{child.label}</a>
+          <a href={`${base}/${child.slug}`} class={`sl${isCurrentPage ? ' current' : ''}`} style="padding-left:36px">{child.label}</a>
         </li>
       );
     }
