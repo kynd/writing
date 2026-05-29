@@ -1,7 +1,7 @@
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  site: 'https://kynd.github.io',
+  site: 'https://www.kynd.info',
   base: '/writing',
   output: 'static',
   build: {
