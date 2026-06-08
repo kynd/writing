@@ -11,11 +11,15 @@ Delving into human beings is a bottomless rabbit hole, but let's think about thi
 
 [![](https://lh3.googleusercontent.com/G80La5YcILszdeZOKOUDYcq9_gpk-ZOH0w5WUVJsyx0d5EDWQVqK3pfItE0iMuJ2MfU93Jta-d-HRd5JsZ1AsORzAXNs9ELGi0rtV8ZqsSIAzH8WfK3snRbpl6EEwYfAA4c0K0ELhH40CRam5TvR7g4)](https://lh3.googleusercontent.com/G80La5YcILszdeZOKOUDYcq9_gpk-ZOH0w5WUVJsyx0d5EDWQVqK3pfItE0iMuJ2MfU93Jta-d-HRd5JsZ1AsORzAXNs9ELGi0rtV8ZqsSIAzH8WfK3snRbpl6EEwYfAA4c0K0ELhH40CRam5TvR7g4)
 
+<div></div>
+
 丸を描いてみる。普通の人には正円や直線は書けない。歪んだり震えたり。どれくらいの速さで手を動かすのかによってもずれ方が違う
 
 Try drawing a circle. Most of us can't draw a regular circle or a straight line. The shapes get distorted or shaky. The way lines deviate can be affected by how fast you move your hand.
 
 [![](https://lh3.googleusercontent.com/IVFjNYMTnGyvzhif6Ipc2WYpx94AqXmy-SN3IojAVxl2bXyD87YXbauPd--ATk7trY1q29oN7t9T_gYqIVspl4nv4ahgASlYHGRXD51Imm4Ip8LVuGvqEM2J9-oWV6j_oIRuvVSpYhyX_eKOd5ioDzyBaugrU5wyshsVXB186eU28kSX5apztMNgRA)](https://lh3.googleusercontent.com/IVFjNYMTnGyvzhif6Ipc2WYpx94AqXmy-SN3IojAVxl2bXyD87YXbauPd--ATk7trY1q29oN7t9T_gYqIVspl4nv4ahgASlYHGRXD51Imm4Ip8LVuGvqEM2J9-oWV6j_oIRuvVSpYhyX_eKOd5ioDzyBaugrU5wyshsVXB186eU28kSX5apztMNgRA)
+
+<div></div>
 
 線を描くモデルは無数にありえるが、例えば線の動きを速度と回転、それぞれに対するノイズとずれを元に戻そうとする力などに分けて考えてみる。このバランスを変えると勢いの良い線からためらいの感じられる線など、様々なバリエーションが作れる。
 
@@ -35,17 +39,23 @@ Once the model is created, I can test if it can produce the kind of tones that a
 
 [![](https://lh3.googleusercontent.com/-vwEsj4vnUkdIQDnJ5Z24-2w6umYFBQS7cauBXy2nAW1Vv7OBbQXnDSrtOW6nM4GT4nYMuwA_mbTUHLepM0w-07Dq9SwR5_ZEv94hNefHV5FSSWfXLfG4davUkNIoO6MVVJc-tiGkegVZMizK3Oe7xvUhNn6VHTW7t9VzMZ3sjKZ8KEu1Om9cLZEwA)](https://lh3.googleusercontent.com/-vwEsj4vnUkdIQDnJ5Z24-2w6umYFBQS7cauBXy2nAW1Vv7OBbQXnDSrtOW6nM4GT4nYMuwA_mbTUHLepM0w-07Dq9SwR5_ZEv94hNefHV5FSSWfXLfG4davUkNIoO6MVVJc-tiGkegVZMizK3Oe7xvUhNn6VHTW7t9VzMZ3sjKZ8KEu1Om9cLZEwA)
 
+<div></div>
+
 よくデッサンの基礎として教えられる経験則について考えてみる。明るい側から暗い側に移り変わるエリアは斜めから光が当たり表面の凸凹が出やすいので、ザラザラなトーンで描く。その下のエリアは床からの反射は面光源の役割を果たすのでソフトな潰れたトーンで描く。などなど。
 
 Let's consider heuristics often taught as a basic drawing technique. The area where the light side meets the dark side should be drawn in a rough tone because the light from an angle highlights the roughness details of the surface. The dark area below should be filled with a soft, muted tone because reflection from the floor serves as area light. And so on.
 
 [![](https://lh3.googleusercontent.com/TkKykHYhRo81NkPw_cIG3lXmOkWx7QLnQ1kN22Nz7G-L-gS9S5q_yPVVWgkHqz9gAFinXy6GhsjGPIre1nSNOeAVh7HOT0cLIG1QLZ_OiNeXmV4Rhqa0dRjMVGran1H7v0yHne7rhaLe-0uP3XgFfJs)](https://lh3.googleusercontent.com/TkKykHYhRo81NkPw_cIG3lXmOkWx7QLnQ1kN22Nz7G-L-gS9S5q_yPVVWgkHqz9gAFinXy6GhsjGPIre1nSNOeAVh7HOT0cLIG1QLZ_OiNeXmV4Rhqa0dRjMVGran1H7v0yHne7rhaLe-0uP3XgFfJs)
 
+<div></div>
+
 ある程度モデルが頭に浮かんだら、コードに落としてパラメータで調整できるようにする。実際に絵を描くときは少しずつ書きながらバランスを取るが、コードで描くときは一瞬で出力が出て、全部のバランスを一気に書き換える感じになるのが面白い。
 
 Once I have some idea of what the model could be, I put it into code and make it adjustable with parameters. It is interesting that it takes steps and iterative adjustment to balance everything out when drawing with physical tools, but when drawing with code, the output can be instantaneous, and it is like refreshing the balance of everything at once.
 
 [![](https://lh4.googleusercontent.com/h9uF3FOi7J3zgrZeK-OgnhglHVERMOH5d4XXG5imS975QHQqERssGfMv8aG6lTIA45EwIKSBsA0lu0XY9vtm-xVXP1OFH9PbTN3UuoVLvIgVf3gK1tNywUqPAfjwagkea2rkysMMymoIlvtLIbPbr1I)](https://lh4.googleusercontent.com/h9uF3FOi7J3zgrZeK-OgnhglHVERMOH5d4XXG5imS975QHQqERssGfMv8aG6lTIA45EwIKSBsA0lu0XY9vtm-xVXP1OFH9PbTN3UuoVLvIgVf3gK1tNywUqPAfjwagkea2rkysMMymoIlvtLIbPbr1I)
+
+<div></div>
 
 立体的な奥行きを鉛筆や木炭のようなトーンで表現する実験。絵の表現は必ずしもフォトリアリスティックである必要はなく、例えば形のエッジに強い線を引くだけで遠近が見えたりする。普通の3Dレンダリングとは全然違う発想で画面を作れたりする。明暗、白黒のトーンだけでもずっと遊べる。
 
@@ -55,6 +65,8 @@ An experiment in conveying three-dimensional depth with pencil and charcoal-like
 
 [![](/images/codifying-human-1.png)](/images/codifying-human-1.png)
 
+<div></div>
+
 絵の教科書やYoutubeの解説ビデオで、人が自分のテクニックをどう説明するのかを見るのも凄く面白い。例えば植物画の描き方の本を見て、葉や花びらの描き方をコードで模写してみる。
 
 It is also very interesting to see how people explain their techniques in books and Youtube videos. For example, this is a study to copy the way leaves and petals are drawn in a book on botanical paintings in code.
@@ -63,11 +75,15 @@ It is also very interesting to see how people explain their techniques in books 
 
 [![](https://lh4.googleusercontent.com/DuI8VygSvutuY1SfFlAuxmHeaF45rE74ls-fhDGQFVYLIfQDG8rYNBx2vWPFn4XVbyJTlwc3QyZdy55tFBiO1YbZEzKbT1Tt_h4MK29vBOPPx5UiwRIicBOtA01DcoYaask0RLEkRs8ShvXHKqSOHAcPGGapPMudsXUkgclUAmCi5jfBohIqYv7EVg)](https://lh4.googleusercontent.com/DuI8VygSvutuY1SfFlAuxmHeaF45rE74ls-fhDGQFVYLIfQDG8rYNBx2vWPFn4XVbyJTlwc3QyZdy55tFBiO1YbZEzKbT1Tt_h4MK29vBOPPx5UiwRIicBOtA01DcoYaask0RLEkRs8ShvXHKqSOHAcPGGapPMudsXUkgclUAmCi5jfBohIqYv7EVg)
 
+<div></div>
+
 部分の拡大。さっきのパラメータ化されたストロークと引きずる絵の具の合体。コード化された道具を自由に組み合わせて使った例でもある。
 
 Zooming into detail. The parameterized strokes and trailing paint from earlier are used together. This is also an example of freely combining coded tools.
 
 [![](https://lh3.googleusercontent.com/AU8CceAOCSIqX3XMdc-DAk86ym9t3RSXk2fwbx2FyhdwRsn70fUH083vKUsrPE-ya-sS1en6kWsPpfn5QOE9DuxaedNSHVJumhrSAzGSGW9SjvIEk6S0pZWGdDGliiHKAvlAhdLUOKA9I_Nw1iPjqRU)](https://lh3.googleusercontent.com/AU8CceAOCSIqX3XMdc-DAk86ym9t3RSXk2fwbx2FyhdwRsn70fUH083vKUsrPE-ya-sS1en6kWsPpfn5QOE9DuxaedNSHVJumhrSAzGSGW9SjvIEk6S0pZWGdDGliiHKAvlAhdLUOKA9I_Nw1iPjqRU)
+
+<div></div>
 
 部品の描き方が見えてきたので、組み合わせて全体を描いてみる。3Dモデルを元に人間らしいぶれを加えて筆の動きのデータに変換する。ここまでくると全自動化できるので夜中ずっと植物図鑑を描き続けるようなプログラムも書ける。
 
@@ -77,7 +93,7 @@ Now that I know how to draw the parts, I can combine them and draw the whole thi
 
 [![](https://lh5.googleusercontent.com/XOP8u9SuSDeZTNrIm7kfrYAyZwRq4jRXVeHEwEwPaQMnXgcn5j7-msrvVHwjco5mmz2p_a34i0Iz3NVv2z4HtqTveH006AV1wNFk7weu8r83E7qeLYBr79CT3ODnEEKwv2GtCv3HNV-wog-8mgYKhG4)](https://lh5.googleusercontent.com/XOP8u9SuSDeZTNrIm7kfrYAyZwRq4jRXVeHEwEwPaQMnXgcn5j7-msrvVHwjco5mmz2p_a34i0Iz3NVv2z4HtqTveH006AV1wNFk7weu8r83E7qeLYBr79CT3ODnEEKwv2GtCv3HNV-wog-8mgYKhG4)
 
-<div class="instagram-wrap"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CE641AxnUxi/" data-instgrm-version="14" style="width:100%;max-width:540px;margin:0;border:none;border-radius:4px;padding:0;"></blockquote></div>
+[https://www.instagram.com/p/CE641AxnUxi/](https://www.instagram.com/p/CE641AxnUxi/)
 
 パラメータやツールを切り替えて表情を変えてみる。空気感や風景を感じさせる要素を入れてみた。
 

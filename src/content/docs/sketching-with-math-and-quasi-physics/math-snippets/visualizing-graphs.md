@@ -40,7 +40,7 @@ The demo below lets you generate different types of data structures and choose d
 
 下のデモでは、さまざまな種類のデータ構造を生成し、それらを描くためのレイアウト手法を選ぶことができます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/yyVydXw?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="yyVydXw" data-user="kynd" data-preview="true"></p></div>
 
 # Layout methods
 # レイアウトの手法

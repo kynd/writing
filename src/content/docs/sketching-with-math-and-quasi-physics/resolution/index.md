@@ -40,9 +40,11 @@ Devices like microscope or telescope can enhance our ability to distinguish the 
 
 顕微鏡や望遠鏡のような機器は、私たちの詳細を識別する能力を強化してくれます。例えば顕微鏡を使うと、印刷物を構成するインクの点をはっきりと見ることができます。顕微鏡の解像度は通常、マイクロメートル（µm）やナノメートル（nm）といった単位で表され、これは2つの点を別々のものとして区別できる最小距離です
 
-[![](/images/resolution.jpg)](/images/resolution.jpg)
+[![](/images/resolution.jpg "50")](/images/resolution.jpg)
 
-[![](/images/resolution.png)](/images/resolution.png)
+[![](/images/resolution.png "50")](/images/resolution.png)
+
+<div></div>
 
 Seeing things at a very small scale (microscope) or very far away (telescope) is not just about magnifying the image. Capturing and interpreting the light or other signals accurately can be very challenging at these scales, as they can be affected by interference, atmospheric conditions, or other distortions. Nowadays, we have various methods to observe things beyond visible light. For instance, electron microscopes use electrons instead of light to achieve higher resolutions for tiny objects. In astronomy, scientists also utilize different types of radiation beyond visible light, such as gamma-rays and radio waves, to observe space.
 
@@ -61,25 +63,29 @@ It's not uncommon to see a constraint of the technology yield unique aesthetics 
 
 [![](/images/matrix-style-text-from-the-matrix-page-on-the-book-of-shad.gif)](/images/matrix-style-text-from-the-matrix-page-on-the-book-of-shad.gif)
 
+<div></div>
+
 "Matrix" style text from the [Matrix page on the book of shaders](https://thebookofshaders.com/08/).
 
 The demo below emulates low resolution by dividing an image into cells and sampling the center of each cell.
 
 下のデモは、画像を碁盤状のセルに分割し、各セルの中心をサンプリングすることで、低解像度の状態を再現します。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/Babomoo?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="Babomoo" data-user="kynd" data-preview="true"></p></div>
 
 As you can see, from a certain point, it becomes difficult to recognize what is in the image. For lower resolution, symbolic pictures can often work better than a photorealistic approach. The picture below lacks all the nuanced details, but it can convey a key concept (there are several trees) much clearer with a lot fewer pixels.
 
 見ての通り、ある時点から画像の中に何があるのか判断するのが難しくなります。低解像度の場合、写実的なアプローチよりも象徴的な絵の方がよく機能することが多々あります。下の画像は、一切のディテールを欠いていますが、はるかに少ないピクセルで要点（何本かの木がある）をずっと明確に伝えることができます。
 
-[![](/images/resolution-1.png)](/images/resolution-1.png)
+[![](/images/resolution-1.png "75")](/images/resolution-1.png)
+
+<div></div>
 
 By the way, no real pixels are actually square except for some black and white LCDs. They consist of tiny segments of red, green, and blue lights. So what we think as “pixel art” like the woods above is a idealized picture of pixels.
 
 ところで、実際のピクセルは実際には正方形ではありません。ピクセルは、赤、緑、青の微細な光のセグメントから成り立っています。我々が「ピクセルアート」と呼んでいるもの、例えば上の森の画像のようなものは、ピクセルを理想化した表現です。
 
-[![](/images/geometry-of-color-elements-of-various-crt-and-lcd-displays.jpg)](/images/geometry-of-color-elements-of-various-crt-and-lcd-displays.jpg)
+[![](/images/geometry-of-color-elements-of-various-crt-and-lcd-displays.jpg "75")](/images/geometry-of-color-elements-of-various-crt-and-lcd-displays.jpg)
 
 [Geometry of color elements of various CRT and LCD displays - Wikimedia](https://en.wikipedia.org/wiki/Pixel#/media/File:Pixel_geometry_01_Pengo.jpg)
 
@@ -92,9 +98,10 @@ Printing also breaks down an image into tiny dots. Unlike screens that are made 
 
   
 The demo below simulates CMYK printing.  
+
 以下のデモはCMYK印刷をシミュレートしたものです。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/abMBMVN?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="abMBMVN" data-user="kynd" data-preview="true"></p></div>
 
 ## Image resolution and human perception
 ## 画像の解像度と人の知覚
@@ -105,7 +112,7 @@ There is something really intriguing about how our brain always tries to compens
 
 [![](/images/resolution-2.png)](/images/resolution-2.png)
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/gOEavMB?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="gOEavMB" data-user="kynd" data-preview="true"></p></div>
 
 There is a duality between the picture we see and the medium. The examples above suggest that even when seeing the same image, we both see the forest - what is depicted, and the pixels - the medium that was used to picture the forest.
 
@@ -135,7 +142,7 @@ This demo below takes a pixelated image of the forest and applies [noise-based](
 
 下のデモではピクセル解像度を落とした森の画像に、[ノイズを元にした](/sketching-with-math-and-quasi-physics/taming-randomness)[画像処理](/sketching-with-math-and-quasi-physics/image-processing)を適用し、筆で大ざっぱに描いたかのように見せています。このエフェクトは、欠如した情報を趣のある「タッチ」を加えることで補い、脳を騙して（幻を見せるかのように）元の荒いピクセルの画像には存在しなかった詳細までも感じさせる事ができます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/PoLZywR?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="PoLZywR" data-user="kynd" data-preview="true"></p></div>
 
 > 
 > 
@@ -156,7 +163,7 @@ Most computer displays today support 8-bit per channel, which means each color c
 
 今のコンピュータの画面の多くは8ビットチャンネルに対応していて、それぞれのチャンネル（赤、緑、青）に256段階の明るさ（0から255）があります。下のデモは、3ビット（8段階）から8ビット（256段階）までの異なる色深度を再現します。はっきりと色がブロックに分かれた状態から滑らかなグラデーションまで変化する様子が見られます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/zYbwVWe?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="zYbwVWe" data-user="kynd" data-preview="true"></p></div>
 
 But even 8-bit, with 255 levels, is still not sufficient to create a truly smooth gradient. Considering the number of pixels on today's displays (the display I'm working on now has about 3000px horizontally), you would still see jumps between different shades, causing the [Mach banding effect](https://en.wikipedia.org/wiki/Mach_bands), which emphasizes the line where the level changes.
 
@@ -173,7 +180,9 @@ Similarly to low-resolution images, low color depths have created their own aest
 
 低解像度の画像と同じく、低色深度も独自の美学を生み出しました。例えば、マッハバンド効果を避けるためによく使われるディザリングという技術があります。ディザリングは、画像の色の変化や変わり目を目立たなくするために、多少のノイズを加える手法です。この技術には、ベイヤーマトリックスと呼ばれる特定のパターンがよく使われます。
 
-[![](/images/a-gray-scale-bayer-matrix-pattern.png)](/images/a-gray-scale-bayer-matrix-pattern.png)
+[![](/images/a-gray-scale-bayer-matrix-pattern.png "75")](/images/a-gray-scale-bayer-matrix-pattern.png)
+
+<div></div>
 
 A gray scale Bayer matrix pattern
 
@@ -181,22 +190,22 @@ The demo below applies the dithering effect to the grayscale gradients. Compare 
 
 下のデモでは、グレースケールのグラデーションにディザリングを適用しています。上のデモと比較してみましょう。このデモではディザリングを見やすくするためにピクセル解像度も低くしています。コードの中でピクセルサイズ `float pixelSize = 8.0` を変えると、低い色深度でもディザリングによってかなり滑らかなグラデーションが得られることがわかります。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/LYaWMge?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="LYaWMge" data-user="kynd" data-preview="true"></p></div>
 
 By applying this to an image, you can achieve a classic gaming console vibe.
 
 これを画像に適用すると、クラシックなゲーム機の感じを出すことができます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/abMWgMe?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="abMWgMe" data-user="kynd" data-preview="true"></p></div>
 
 # Animation
 # アニメーション
 
 After space and depth, comes time. Let’s think about the resolution on the axis of time. The demo shows the three black circles animated with different frame rate, which is the number of time the graphics is updated within a second. The first circle on the top should be animating at the default frame rate of your environment, the second circle is at the half rate, and the third ball at the one fifth. The first one appears to be quite smooth. The second one is not bad but I see some flickering and afterimages. And with the third one, I can clearly see individual frames.
 
-空間と深度のつぎは時間です。時間軸の解像度について考えてみましょう。デモでは、フレームレートが異なる3つの黒い円のアニメーションが表示されています。フレームレートとは、1秒間にグラフィックが更新される回数のことです。1番上の円は、再生環境のデフォルトのフレームレートで表示され、2つ目の円はその半分のレート、3つ目の球はその5分の1になります。最初のものはかなりスムーズに見えます。2つ目は悪くないですが、ちらつきと残像を感じます。3つ目では、個々のフレームがはっきりと認識できます。
+空間と深度のつぎは時間です。時間軸の解像度について考えてみましょう。デモでは、フレームレートが異なる3つの黒い円のアニメーションが表示されています。フレームレートとは、1秒間にグラフィックが更新される回数のことです。1番上の円は、再生環境のデフォルトのフレームレートで表示され、2つ目の円はその半分のレート、3つ目の円はその5分の1になります。最初のものはかなりスムーズに見えます。2つ目は悪くないですが、ちらつきと残像を感じます。3つ目では、個々のフレームがはっきりと認識できます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/poYwQVp?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="poYwQVp" data-user="kynd" data-preview="true"></p></div>
 
 There is a concept very related to the frame rate called [Flicker fusion threshold](https://en.wikipedia.org/wiki/Flicker_fusion_threshold). Imagine a light bulb flickering at a certain rate. When it is slow, you can see it is flickering but at a certain point at about 60 flickers per second (60 Hz) the light start to look continuous. In fact, all the fluorescent lights and LEDs are flickering, but we barely notice it.
 
@@ -247,7 +256,7 @@ The demo below illustrates this concept with very simple examples. You can click
 > Click on "Run Pen", then click one more time to play the sound.  
 > 「Run Pen」をクリックした後もう一度クリックすると音が再生されます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/jOJLoRP?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="jOJLoRP" data-user="kynd" data-preview="true"></p></div>
 
 > 
 > 
@@ -263,19 +272,19 @@ Switching the topic to [sound as data](/sketching-with-math-and-quasi-physics/wa
 
 It's interesting to think about this in analogy to pixel resolution. Both determine the fidelity to reproduce physical phenomena, but while we can directly see pixels, we never hear individual samples, nor do we directly experience the change in pressure (except for extremely low and loud sounds). Instead, we experience various qualities of sound, such as pitch or timbre. A low sampling rate largely affects the quality of the sound.Let's see (and listen to) this with examples.
 
-これをピクセル解像度と比較すると面白いでしょう。どちらも物理的な現象を再現する際の忠実性に関わりますが、ピクセルは直接見えるのできるのに対し、個々のサンプルを聞いたり、気圧の変化を直接経験することはありません（極端に低くて大きな音を除きます）。その代わり、人は音高や音色などの、さまざまな音の特性を経験します。低いサンプリングレートは音の品質に大きな影響を与えます。例を見て（聞いて）てみましょう。
+これをピクセル解像度と比較すると面白いでしょう。どちらも物理的な現象を再現する際の忠実性に関わりますが、ピクセルは直接見ることができるのに対し、個々のサンプルを聞いたり、気圧の変化を直接経験することはありません（極端に低くて大きな音を除きます）。その代わり、人は音高や音色などの、さまざまな音の特性を経験します。低いサンプリングレートは音の品質に大きな影響を与えます。例を見て（聞いて）みましょう。
 
 The first demo below is from the page on [Sound Visualization](/sketching-with-math-and-quasi-physics/wave/sound-visualization). If you click on the canvas, it will play sine wave sounds at random frequencies.
 
 以下の最初のデモは、[音の視覚化](/sketching-with-math-and-quasi-physics/wave/sound-visualization)のページからです。キャンバスをクリックすると、ランダムな周波数のサイン波の音が再生されます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/yLZrBGJ?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="yLZrBGJ" data-user="kynd" data-preview="true"></p></div>
 
 The next demo does essentially the same thing, except it emulates a lower sampling rate. As you can see, the lower the resolution, the less smooth the waves become, appearing like staircases.
 
 次のデモは基本的に同じですが、低いサンプリングレートの音を再現します。見てわかる通り、解像度が低いほど、波は滑らかさを失い、階段のように見えます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/XWGbeXR?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="XWGbeXR" data-user="kynd" data-preview="true"></p></div>
 
 A low sampling rate is rarely used as it not only impairs the quality of sound but also makes it impossible to reproduce the range of sound we can hear, particularly at higher frequencies. This can be easily understood if you imagine having to draw ten cycles of a wave but you can only use five points to plot. But when fidelity is not the primary goal, you may discover interesting applications for it, such as sound effectors known as [bitcrushers](https://en.wikipedia.org/wiki/Bitcrusher) that essentially employ this concept.
 
@@ -292,7 +301,7 @@ A common standard is to use 16bit per sample. There are formats with higher fide
 
 一般的な標準は、サンプルあたり16ビットです。32ビットオーディオのように、より高い再現性を持つフォーマットもあります。しかしもう予想がついていると思いますが、次のデモではビット深度を減らして、その働きや影響を示します。デモでは、サンプルあたりたった4ビットを使った状態を再現します。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/oNVoOyr?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="oNVoOyr" data-user="kynd" data-preview="true"></p></div>
 
 > 
 > 

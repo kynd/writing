@@ -37,7 +37,7 @@ To follow the discussions, you need to understand the basics of 3D rendering wit
 > co += cd * max(dot(n, normalize(lp - sp)), 0.0);
 > ```
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/dyxzyjV?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="dyxzyjV" data-user="kynd" data-preview="true"></p></div>
 
 # The demo
 # デモ
@@ -48,27 +48,13 @@ Above is the demo ported to CodePen. The shader part is basically the same as th
 
 1.  I've simplified the code where possible, and renamed variables for clarity.
 
-2.  I removed the antialiasing to simplify the `main()` function. You can find a version with
-    
-    
-
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/oNKQqMb?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
-
-    
-    which takes multiple samples with slight offsets for each pixel and averages the results to soften the ragged edges.
+2.  I removed the antialiasing to simplify the `main()` function. You can find a version with [antialiasing here,](https://codepen.io/kynd/pen/oNKQqMb?editors=0010) which takes multiple samples with slight offsets for each pixel and averages the results to soften the ragged edges.
 
 3.  I've added toggles for various rendering techniques to make it easy to isolate and study each, seeing how they contribute to the final result.
 
 1.  可能な場所ではコードを簡略化し、明確さのために変数名を変更しました。
 
-2.  `main()`関数を簡略化するためにアンチエイリアシングを削除しました。
-    
-    
-
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/oNKQqMb?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
-
-    
-    。これはピクセルごとに場所を少しずつずらした複数のサンプルを取り、結果を平均化することでギザギザのエッジを滑らかにします。
+2.  `main()`関数を簡略化するためにアンチエイリアシングを削除しました。[アンチエイリアス付きのバージョンはここで確認できます](https://codepen.io/kynd/pen/oNKQqMb?editors=0010)。これはピクセルごとに場所を少しずつずらした複数のサンプルを取り、結果を平均化することでギザギザのエッジを滑らかにします。
 
 3.  様々なレンダリングテクニックに対してON/OFF切り替えをつけて、それぞれが最終結果にどのように貢献しているかを見ながら個別に研究できるようにしました。
 
@@ -111,6 +97,8 @@ The camera rotates around the object. `cameraPosition` represents the camera's p
 
 [![](/images/the-world-space.jpg)](/images/the-world-space.jpg)
 
+<div></div>
+
 The World Space ワールド空間
 
 ```glsl
@@ -123,25 +111,19 @@ vec3 cameraPosition = cameraTarget + vec3(4.5 * cos(cameraAngle), 2.2, 4.5 * sin
 ## Primary ray direction
 ## 主となるレイの方向
 
-The most fundamental idea of ray marching is to
+The most fundamental idea of ray marching is to [cast rays from the camera toward the scene to detect objects](https://codepen.io/kynd/pen/eYxYRBy?editors=0010). Each ray is defined by the origin, which is the position of the camera and the direction the ray points to or head toward.
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/eYxYRBy?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+レイマーチングの最も基本的な考え方は、[カメラからシーンに向かってレイを飛ばしてオブジェクトを検出する](https://codepen.io/kynd/pen/eYxYRBy?editors=0010)ことです。それぞれのレイは、カメラの位置である原点と、レイが向かう方向によって定義されます。
 
-. Each ray is defined by the origin, which is the position of the camera and the direction the ray points to or head toward.
-
-レイマーチングの最も基本的な考え方は、
-
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/eYxYRBy?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
-
-ことです。それぞれのレイは、カメラの位置である原点と、レイが向かう方向によって定義されます。
-
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/eYxYRBy?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="eYxYRBy" data-user="kynd" data-preview="true"></p></div>
 
 The `main()` function first defines the direction of the ray in another coordinate system than the World Space. This system has the camera's position as its origin, and the z-axis aligns with the camera's viewing direction.
 
 `main()`関数はまず、ワールド空間とは異なる座標系でレイの方向を定義します。この座標系では、カメラの位置が原点となり、z軸がカメラの視線方向と一致します。
 
 [![](/images/camera-space.jpg)](/images/camera-space.jpg)
+
+<div></div>
 
 Camera Space カメラ空間
 

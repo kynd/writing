@@ -6,11 +6,9 @@ These are candies that have a graphic or a picture all the way through their len
 
 ブライトンロックやブラックプールロックといったイギリスのロックキャンディーや日本の金太郎飴を見たことがあるでしょうか。長い飴の全体に絵柄や画像が入っていて、切ると中の絵が現れるお菓子です。
 
-[![](/images/blackpool-rock-hazel-scott-cc-by-2-0.jpg)](/images/blackpool-rock-hazel-scott-cc-by-2-0.jpg)
+[![](/images/kintar-ame-akio-watanabe-cc-by-sa-3-0.jpeg "75")](/images/kintar-ame-akio-watanabe-cc-by-sa-3-0.jpeg)
 
-[Blackpool rock](https://en.wikipedia.org/wiki/Rock_\(confectionery\)#/media/File:Blackpool_Rock_\(15107520364\).jpg) [Hazel Scott](https://www.flickr.com/people/73715185@N00) [CC BY 2.0](https://creativecommons.org/licenses/by/2.0)
-
-[![](/images/kintar-ame-akio-watanabe-cc-by-sa-3-0.jpeg)](/images/kintar-ame-akio-watanabe-cc-by-sa-3-0.jpeg)
+<div></div>
 
 _[Kintarō-ame](https://en.wikipedia.org/wiki/Rock_\(confectionery\)#/media/File:%E9%87%91%E5%A4%AA%E9%83%8E%E9%A3%B4.JPG)_ [Akio WATANABE](https://commons.wikimedia.org/w/index.php?title=User:Akio_WATANABE&action=edit&redlink=1)  [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0)
 
@@ -20,7 +18,7 @@ When I thought about how to interpret Fangor's paintings for a digital medium, I
 
 # Fangor ファンゴル
 
-> **Wojciech Bonawentura Fangor** (15 November 1922 – 25 October 2015), also known as Voy Fangor, was a Polish [painter](https://en.wikipedia.org/wiki/Painting), [graphic artist](https://en.wikipedia.org/wiki/Graphic_artist), and [sculptor](https://en.wikipedia.org/wiki/Sculpture). Described as "one of the most distinctive painters to emerge from postwar Poland", Fangor has been associated with [Op art](https://en.wikipedia.org/wiki/Op_art) and [Color field](https://en.wikipedia.org/wiki/Color_field) movements and recognized as a key figure in the history of Polish postwar [abstract art](https://en.wikipedia.org/wiki/Abstract_art). ([wikipedia](https://en.wikipedia.org/wiki/Wojciech_Fangor))
+> Wojciech Bonawentura Fangor (15 November 1922 – 25 October 2015), also known as Voy Fangor, was a Polish [painter](https://en.wikipedia.org/wiki/Painting), [graphic artist](https://en.wikipedia.org/wiki/Graphic_artist), and [sculptor](https://en.wikipedia.org/wiki/Sculpture). Described as "one of the most distinctive painters to emerge from postwar Poland", Fangor has been associated with [Op art](https://en.wikipedia.org/wiki/Op_art) and [Color field](https://en.wikipedia.org/wiki/Color_field) movements and recognized as a key figure in the history of Polish postwar [abstract art](https://en.wikipedia.org/wiki/Abstract_art). ([wikipedia](https://en.wikipedia.org/wiki/Wojciech_Fangor))
 
 > ヴォイチェフ・ボナヴェントゥラ・ファンゴル（1922年11月15日 - 2015年10月25日）は、Voy Fangorとしても知られる、ポーランドの[画家](https://en.wikipedia.org/wiki/Painting)、[グラフィックアーティスト](https://en.wikipedia.org/wiki/Graphic_artist)、そして[彫刻家](https://en.wikipedia.org/wiki/Sculpture)です。ファンゴルは「戦後ポーランドから登場した最も独特な画家の一人」と評され、[オプ・アート](https://en.wikipedia.org/wiki/Op_art)と[カラー・フィールド](https://en.wikipedia.org/wiki/Color_field)運動に関連し、ポーランドの戦後[抽象芸術](https://en.wikipedia.org/wiki/Abstract_art)の歴史における重要人物として認識されています。（[ウィキペディア](https://en.wikipedia.org/wiki/Wojciech_Fangor)）
 
@@ -28,17 +26,17 @@ Fangor is a captivating artist. His paintings have a meditative quality; as you 
 
 ファンゴルは魅力的な画家です。ファンゴルの瞑想的な質を持った絵画は、見ていると色が溶け合い振動し始め、深みへと引き込まれるような感じがします。
 
-This year (13 July – 11 November 2024), Krupa Art Foundation is hosting a monographic exhibition featuring Fangor's masterpieces, titled **[Wojciech Fangor: American Dream](https://krupaartfoundation.pl/en/wojciech-fangor-wystawa/)****.** And I had an invitation to [exhibit my works alongside in the KAF Digital space.](https://krupaartfoundation.pl/en/pozytywna-przestrzen-immersyjna/)
+This year (13 July – 11 November 2024), Krupa Art Foundation is hosting a monographic exhibition featuring Fangor's masterpieces, titled [Wojciech Fangor: American Dream](https://krupaartfoundation.pl/en/wojciech-fangor-wystawa/). And I had an invitation to [exhibit my works alongside in the KAF Digital space.](https://krupaartfoundation.pl/en/pozytywna-przestrzen-immersyjna/)
 
-今年（2024年7月13日〜11月11日）、クルパ・アート財団がファンゴルの傑作を取り上げた個展「**[ヴォイチェフ・ファンゴル：アメリカン・ドリーム](https://krupaartfoundation.pl/en/wojciech-fangor-wystawa/)**」を開催するにあたり、併設の[KAF Digital spaceで作品を展示する](https://krupaartfoundation.pl/en/pozytywna-przestrzen-immersyjna/)オファーを受けました。
+今年（2024年7月13日〜11月11日）、クルパ・アート財団がファンゴルの傑作を取り上げた個展「[ヴォイチェフ・ファンゴル：アメリカン・ドリーム](https://krupaartfoundation.pl/en/wojciech-fangor-wystawa/)」を開催するにあたり、併設の[KAF Digital spaceで作品を展示する](https://krupaartfoundation.pl/en/pozytywna-przestrzen-immersyjna/)オファーを受けました。
 
 [![](/images/wojciech-fangor-american-dream-shot-by-alicja-kielan.jpg)](/images/wojciech-fangor-american-dream-shot-by-alicja-kielan.jpg)
 
-**[Wojciech Fangor: American Dream](https://krupaartfoundation.pl/en/wojciech-fangor-wystawa/)****.** Shot by Alicja Kielan
+[Wojciech Fangor: American Dream](https://krupaartfoundation.pl/en/wojciech-fangor-wystawa/). Shot by Alicja Kielan
 
 [![](/images/wojciech-fangor-american-dream-shot-by-alicja-kielan-1.jpg)](/images/wojciech-fangor-american-dream-shot-by-alicja-kielan-1.jpg)
 
-**[Wojciech Fangor: American Dream](https://krupaartfoundation.pl/en/wojciech-fangor-wystawa/)****.** Shot by Alicja Kielan
+[Wojciech Fangor: American Dream](https://krupaartfoundation.pl/en/wojciech-fangor-wystawa/). Shot by Alicja Kielan
 
 # Field of Colors 色の場（フィールド）
 
@@ -64,13 +62,13 @@ vec3 sphereColor(vec3 p) {
 }
 ```
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/zYgKwjP?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="zYgKwjP" data-user="kynd" data-preview="true"></p></div>
 
 We can animate the shape over time to make it more interesting, based on Fangor's favorite motif—fuzzy concentric circles.
 
 時間とともに形状をアニメーションさせて、より面白くものにすることもできます。これはファンゴルがよく用いる、ぼやけた同心円状のモチーフを元にしています。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/PorVGwY?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="PorVGwY" data-user="kynd" data-preview="true"></p></div>
 
 This function can be anything—there's nothing technically special about it. It's simply a mapping from a 3D vector to another.
 
@@ -84,7 +82,7 @@ This is another demo based on another of Fangor's recursive motifs—waves.
 
 下は、ファンゴルが繰り返し用いるもうひとつモチーフである波をベースにしたデモです。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/vYqbXEP?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="vYqbXEP" data-user="kynd" data-preview="true"></p></div>
 
 # Renderings レンダリング
 
@@ -106,13 +104,19 @@ A great advantage of this approach is that it is easy to ensure seamless connect
 
 <div class="instagram-wrap"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/C__gftiSeHh/" data-instgrm-version="14" style="width:100%;max-width:540px;margin:0;border:none;border-radius:4px;padding:0;"></blockquote></div>
 
-[https://www.instagram.com/reel/DHIE0WQgVlb/?utm\_source=ig\_web\_copy\_link&igsh=MzRlODBiNWFlZA==](https://www.instagram.com/reel/DHIE0WQgVlb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==)
-
 These works are exhibited along with the pieces by Zach Lieberman and Yoshi Sodeoka.
 
 この作品は Zach Lieberman や Yoshi Sodeoka の作品と一緒に展示されています。
 
 [The Positive Immersive Space - KAF Digital](https://krupaartfoundation.pl/en/pozytywna-przestrzen-immersyjna/)
+
+[![](/images/kynd-circles-4-2-ph-alicja-kielan.jpg)](/images/kynd-circles-4-2-ph-alicja-kielan.jpg)
+
+[![](/images/kynd-waves-2-4-ph-alicja-kielan.jpg)](/images/kynd-waves-2-4-ph-alicja-kielan.jpg)
+
+<div></div>
+
+Photo by [Alicja Kielan](https://www.instagram.com/alicja.kielan/)
 
 # Slicing multi-dimensional spaces 多次元空間をスライスする
 

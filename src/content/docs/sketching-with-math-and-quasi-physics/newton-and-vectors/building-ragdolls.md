@@ -53,7 +53,7 @@ class VerletPoint {
 }
 ```
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/BRMmGO?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="BRMmGO" data-user="kynd" data-preview="true"></p></div>
 
 [You can find these equations below on Wikipedia](https://en.wikipedia.org/wiki/Verlet_integration#Verlet_integration_\(without_velocities\)). The first equation approximates the equations of motion, which can be transformed into the second equation for finding the future position by using the difference between past and present positions.
 
@@ -112,13 +112,13 @@ class VerletStick {
 }
 ```
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/aWXVPZ?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="aWXVPZ" data-user="kynd" data-preview="true"></p></div>
 
 Repeating short sticks can emulate a soft material like a string.
 
 短い棒を繰り返し繋ぐことで、紐のような柔らかい素材を再現することもできます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/pPGdqX?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="pPGdqX" data-user="kynd" data-preview="true"></p></div>
 
 # Ragdoll
 # ラグドール
@@ -131,15 +131,17 @@ Here, instead of having the character get hurt and fall, let's make it dance wit
 
 ここでは傷つき倒れる代わりに元気よく踊ってもらいましょう。ラグドールは関節や筋肉の向きを考慮しないのでリアルなグラフィックだと不自然に見えがちですが点と線だけの人形劇なら問題になりません（操り人形は少し悲しくぎこちなく、それで美しいものです）。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/dWaZaR?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="dWaZaR" data-user="kynd" data-preview="true"></p></div>
 
 This technique can be easily extended to 3D; just add z-coordinates and it works exactly the same way.
 
 この手法は簡単に3Dに拡張できます。z座標を追加するだけで全く同じように動作します。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/ZKwaPY?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="ZKwaPY" data-user="kynd" data-preview="true"></p></div>
 
 [![](/images/on-citadel-of-erbil-kurdistan-2022.gif)](/images/on-citadel-of-erbil-kurdistan-2022.gif)
+
+<div></div>
 
 On citadel of Erbil, Kurdistan, 2022
 

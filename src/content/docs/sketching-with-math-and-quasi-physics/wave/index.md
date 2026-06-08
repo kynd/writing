@@ -7,6 +7,8 @@ Waves are everywhere. I suppose the word originally meant just waves on the wate
 
 [![](/images/konarski-cc0-via-wikimedia-commons-https-commons-wikimed.jpg)](/images/konarski-cc0-via-wikimedia-commons-https-commons-wikimed.jpg)
 
+<div></div>
+
 Konarski, CC0, via Wikimedia Commons [https://commons.wikimedia.org/wiki/File:Dachówka\_mnich\_mniszka.jpg](https://commons.wikimedia.org/wiki/File:Dach%C3%B3wka_mnich_mniszka.jpg)
 
 In physics and mathematics, a wave is the propagation of a spatially distributed pattern of physical quantities. For example, the phenomenon in which highs and lows on the water surface traverse away is a wave. Light and radio waves are waves in this sense, but even when we know that, we never truly feel them as such. In the everyday sense, we tend to think that waves should be clearly visible patterns of repetitive shapes, like Bridget Riley's paintings.
@@ -19,6 +21,8 @@ This is not that either is right or wrong, but it is helpful to understand the c
 
 [![](/images/shisma-cc-by-sa-4-0-https-creativecommons-org-licenses-by.png)](/images/shisma-cc-by-sa-4-0-https-creativecommons-org-licenses-by.png)
 
+<div></div>
+
 Shisma, CC BY-SA 4.0 [https://creativecommons.org/licenses/by-sa/4.0](https://creativecommons.org/licenses/by-sa/4.0), via Wikimedia Commons  
 [https://commons.wikimedia.org/wiki/File:Japanese\_Wave\_Pattern.svg](https://commons.wikimedia.org/wiki/File:Japanese_Wave_Pattern.svg)
 
@@ -27,6 +31,8 @@ Let's review some basic terms related to waves in physics.
 物理学で使う基本的な用語を確認しておきましょう。
 
 [![](/images/wave.png)](/images/wave.png)
+
+<div></div>
 
 The maximum height of the wave, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">a</span></span></span></span> in the figure, is called amplitude, and the length of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">b</span></span></span></span> is called wavelength. Or if the horizontal axis of the graph is time, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">b</span></span></span></span> is the period, which is the time it takes for each  oscillation. Frequency is the number of oscillations per second, which is one second divided by the period, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>=</mo><mn>1</mn><mi mathvariant="normal">/</mi><mi>T</mi></mrow><annotation encoding="application/x-tex">f = 1 /T</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1/</span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span></span></span></span>, where <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi></mrow><annotation encoding="application/x-tex">T</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span></span></span></span> represents the period.
 

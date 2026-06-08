@@ -14,7 +14,7 @@ Let's focus on the color of a single pixel. We can think of color processing as 
 
 1つピクセルの色だけに注目してみましょう。カラープロセッシングは、このピクセルの色の値を異なる値に変換する関数だと考えることができます。このページでは、各ピクセルに赤（R）、緑（G）、青（B）の3つのチャンネルがあり、値は0.0から1.0までの範囲にあると仮定します。
 
-[![](/images/color-processing.png)](/images/color-processing.png)
+[![](/images/color-processing.png "50")](/images/color-processing.png)
 
 # Brightness and Contrast 明るさとコントラスト
 
@@ -24,31 +24,33 @@ Consider a simple function as shown below. <span class="katex"><span class="kate
 
 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>C</mi><mrow><mi>a</mi><mi>f</mi><mi>t</mi><mi>e</mi><mi>r</mi></mrow></msub><mo stretchy="false">(</mo><mi>R</mi><mo separator="true">,</mo><mi>G</mi><mo separator="true">,</mo><mi>B</mi><mo stretchy="false">)</mo><mo>=</mo><msub><mi>C</mi><mrow><mi>b</mi><mi>e</mi><mi>f</mi><mi>o</mi><mi>r</mi><mi>e</mi></mrow></msub><mo stretchy="false">(</mo><mi>R</mi><mo separator="true">,</mo><mi>G</mi><mo separator="true">,</mo><mi>B</mi><mo stretchy="false">)</mo><mo>∗</mo><mn>0.75</mn></mrow><annotation encoding="application/x-tex">C_{after} (R, G, B) = C_{before} (R, G, B) * 0.75</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0361em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.0715em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">a</span><span class="mord mathnormal mtight" style="margin-right:0.10764em;">f</span><span class="mord mathnormal mtight">t</span><span class="mord mathnormal mtight" style="margin-right:0.02778em;">er</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">G</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.0361em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.0715em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">b</span><span class="mord mathnormal mtight">e</span><span class="mord mathnormal mtight" style="margin-right:0.10764em;">f</span><span class="mord mathnormal mtight">ore</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">G</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0.75</span></span></span></span>
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/abRpeOP?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="abRpeOP" data-user="kynd" data-preview="true"></p></div>
 
 This function multiplies the red, green, and blue (R, G, B) values of each pixel by 0.75, resulting in a darker image. The line to the right in the resulting image is the graph of the function, where the x-axis corresponds to the original value and the y-axis to the result. Drawing a graph in this way can help visually understand what the function is doing.
 
 この関数は、各ピクセルの赤、緑、青(R、G、B)の値に0.75を掛けて画像を暗くします。右側にある結果画像の上の線は、関数のグラフです。x軸が元の値、y軸が結果に対応します。このようにグラフを描くことと、関数の動作を視覚的に理解する助けになります。
 
-[![](/images/color-processing-1.png)](/images/color-processing-1.png)
+[![](/images/color-processing-1.png "50")](/images/color-processing-1.png)
+
+<div></div>
 
 By moving your mouse over the demo below, you can see the contrast of the image change. Consider why the color changes in this manner by examining the slope of the graph.
 
 下のデモではマウスを動かすと、画像のコントラストが変化します。グラフの傾きを見ながら、なぜこのように色が変化するのか考えてみましょう。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/BaqpXRR?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="BaqpXRR" data-user="kynd" data-preview="true"></p></div>
 
 The function does not have to be linear. In the example below, a cubic Bézier curve is applied to the image. The result ranges from fine adjustments to drastic effects that resemble the [Sabattier effect](https://en.wikipedia.org/wiki/Sabattier_effect). You may have noticed that this is exactly what tone curve feature does in Adobe Photoshop or other image processing tools.
 
 使用する関数は必ずしも線形である必要はありません。以下の例では、三次ベジエ曲線を画像に適用することで、微調整から[ソラリゼーション](https://ja.wikipedia.org/wiki/%E3%82%BD%E3%83%A9%E3%83%AA%E3%82%BC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3)のような劇的な効果まで幅広い調整が可能です。これはAdobe Photoshopや他の画像処理ツールで行われるトーンカーブ機能とまったく同じことに気づいた方もいるでしょう。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/QWZpLmR?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="QWZpLmR" data-user="kynd" data-preview="true"></p></div>
 
 You can apply different functions to each channel of the R, G, and B channels to change the balance between them.
 
 RGBの各チャンネルに異なる関数を適用して、バランスを変えることもできます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/eYPvObZ?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="eYPvObZ" data-user="kynd" data-preview="true"></p></div>
 
 # Converting to monochrome
 # モノクロームに変換する
@@ -63,7 +65,7 @@ Probably the simplest and most naive way to calculate brightness is by taking th
 
 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>B</mi><mrow><mi>r</mi><mi>i</mi><mi>g</mi><mi>h</mi><mi>t</mi><mi>n</mi><mi>e</mi><mi>s</mi><mi>s</mi></mrow></msub><mo>=</mo><mo stretchy="false">(</mo><mi>R</mi><mo>+</mo><mi>G</mi><mo>+</mo><mi>B</mi><mo stretchy="false">)</mo><mi mathvariant="normal">/</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">B_{rightness} = (R + G + B) / 3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9694em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.0502em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.02778em;">r</span><span class="mord mathnormal mtight">i</span><span class="mord mathnormal mtight" style="margin-right:0.03588em;">g</span><span class="mord mathnormal mtight">h</span><span class="mord mathnormal mtight">t</span><span class="mord mathnormal mtight">n</span><span class="mord mathnormal mtight">ess</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">G</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mclose">)</span><span class="mord">/3</span></span></span></span>
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/rNqxooG?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="rNqxooG" data-user="kynd" data-preview="true"></p></div>
 
 It looks successful at first glance. However, do you notice that the yellow and yellow-green parts are darker than the surrounding areas? In the original image, you would probably feel that the yellow below the nose is brighter than the blue part, but the difference is not well-reflected in the converted image. (Perception of colors can vary from person to person. There is nothing wrong if you don't feel the same way.)
 
@@ -75,27 +77,24 @@ One common fix for this issue is to use the Y value from the [CIE XYZ model](/sk
 
 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>B</mi><mrow><mi>r</mi><mi>i</mi><mi>g</mi><mi>h</mi><mi>t</mi><mi>n</mi><mi>e</mi><mi>s</mi><mi>s</mi></mrow></msub><mo>=</mo><mn>0.2126729</mn><mi>R</mi><mo>+</mo><mn>0.7151522</mn><mi>G</mi><mo>+</mo><mn>0.0721750</mn><mi>B</mi></mrow><annotation encoding="application/x-tex">B_{rightness} = 0.2126729R + 0.7151522G + 0.0721750B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9694em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.0502em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.02778em;">r</span><span class="mord mathnormal mtight">i</span><span class="mord mathnormal mtight" style="margin-right:0.03588em;">g</span><span class="mord mathnormal mtight">h</span><span class="mord mathnormal mtight">t</span><span class="mord mathnormal mtight">n</span><span class="mord mathnormal mtight">ess</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord">0.2126729</span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord">0.7151522</span><span class="mord mathnormal">G</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">0.0721750</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span></span></span></span>
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/YzJwdGv?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="YzJwdGv" data-user="kynd" data-preview="true"></p></div>
 
 If you want a monochrome image with a color other than grayscale, you can choose a base color, then mix it with white using the brightness obtained via the method above.
 
 もしグレースケール以外のモノクロ画像が欲しい場合は、まずベースカラーを選んで、上記の方法で得た明度を用いて白色と混ぜることができます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/QWZpwVr?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="QWZpwVr" data-user="kynd" data-preview="true"></p></div>
 
 However, this method limits the saturation or chroma of the resulting image because the "base color" must be the darkest color, and the saturation can never exceed that of the base color. There are different ways to work around this limitation. In the demo below, [umber (0.39, 0.19, 0.27)](https://en.wikipedia.org/wiki/Umber#Burnt_umber) and [ochre (0.59, 0.33, 0.2)](https://en.wikipedia.org/wiki/Ochre) are mixed with black and white proportionally to their brightness. This is not strictly "monochrome," but it looks richer for precisely that reason.
 
 ただし、この方法はベースカラーが最も暗い色でなければならず、中間色の彩度がベースカラーを超えることができないために、結果として得られる画像の彩度を制限してしまいます。この制限に対処するためには、様々な方法がありますが、下のデモでは、[アンバー(0.39、0.19、0.27)、](https://en.wikipedia.org/wiki/Umber#Burnt_umber)[オーカー(0.59、0.33、0.2)](https://en.wikipedia.org/wiki/Ochre)、白と黒を明るさに応じて混ぜています。これは厳密には「モノクロ」ではありませんが、そのおかげでより表情豊かに見えます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/PoypqYO?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="PoypqYO" data-user="kynd" data-preview="true"></p></div>
 
-[![](/images/ochre-pigment-wikimedia-commons.jpg)](/images/ochre-pigment-wikimedia-commons.jpg)
-
-[Ochre pigment(wikimedia commons)](https://commons.wikimedia.org/wiki/File:Hellocker-_Pigment.JPG)
-
-[![](/images/umber-pigment-wikimedia-commons.jpg)](/images/umber-pigment-wikimedia-commons.jpg)
-
-[Umber pigment(wikimedia commons)](https://en.wikipedia.org/wiki/File:Terra_ombra_naturale_umber.jpg)
+<div class="image-row">
+<figure><a href="/images/ochre-pigment-wikimedia-commons.jpg"><img src="/images/ochre-pigment-wikimedia-commons.jpg" alt="" /></a><figcaption><a href="https://commons.wikimedia.org/wiki/File:Hellocker-_Pigment.JPG">Ochre pigment (wikimedia commons)</a></figcaption></figure>
+<figure><a href="/images/umber-pigment-wikimedia-commons.jpg"><img src="/images/umber-pigment-wikimedia-commons.jpg" alt="" /></a><figcaption><a href="https://en.wikipedia.org/wiki/File:Terra_ombra_naturale_umber.jpg">Umber pigment (wikimedia commons)</a></figcaption></figure>
+</div>
 
 > 
 > 
@@ -113,12 +112,12 @@ As a simple example, we will modify the hue and saturation of the colors in the 
 
 簡単な例として、HSVモデルを使用して画像の色相と彩度を変化させます。デモの上でカーソルを動かしてみましょう。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/eYPvegg?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="eYPvegg" data-user="kynd" data-preview="true"></p></div>
 
 The following is the same idea, but using CIE LCh instead. Can you see the difference? To me, HSV tends to look more neon, and different parts of the drawing change hues at different rates. Colors change more evenly in CIE LCh. Also, there is a significant difference if you compare both when desaturated. In general, LCh seems to create a more natural look. However, this does not necessarily mean one model is better or worse, but you can choose a model based on the effect you want.
 
 下記は同じアイデアをもとにCIE LChを使ったものです。違いがわかるでしょうか。HSVの方がよりネオンぽい配色になりがちで、それぞれの部分の色相が異なる速度で変わっているように見えます。CIE LChでは色がより均等に変化します。また、色相が低い状態には大きな差が見られます。全体としてLChの方がより自然な結果になるようです。ただしこれは必ずしも一方が良いとか悪いとかいう話ではないので、欲しい効果に合ったモデルを選ぶと良いでしょう。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/ExdXYQY?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="ExdXYQY" data-user="kynd" data-preview="true"></p></div>
 
 [Convolution コンボリューション](/sketching-with-math-and-quasi-physics/image-processing/convolution)

@@ -11,7 +11,10 @@ At their core, colors on digital platforms are mere numbers. Although our eyes a
 
 [![](/images/your-paints-don-t-have-to-follow-the-reality.png)](/images/your-paints-don-t-have-to-follow-the-reality.png)
 
+<div></div>
+
 Your paints don’t have to follow the reality  
+
 あなたの絵具が現実に従う必要はありません
 
 # Mixing RGB Colors
@@ -49,13 +52,13 @@ See the demo below to see this in action. You can randomize the colors by clicki
 
 下のデモを見てみましょう。キャンバスをクリックすると色がランダムに変わります。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/VwqKRyq?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="VwqKRyq" data-user="kynd" data-preview="true"></p></div>
 
 Linear interpolation ensures that the sum of the multipliers for each color remains consistent (equal to 1), but it doesn’t have to be. Imagine you have a green light and a red light, and you can control their intensities individually from 0% to 100%. You can mix them in any amounts. The demo below showcases this idea. Note that a screen has a maximum intensity for each color channel, and the RGB values will be clipped at 1. This is actually the same as the "Add" blend mode we'll look at below.
 
 線形補間は、それぞれの色の割合の合計を一定の値に（1に）保ちますが、必ずそうする必要はありません。緑色の光源と赤色の光源があって、それぞれの強度を0％から100％の間で制御できると考えてみてください。2つの色を任意の割合で混ぜることができます。下のデモはこの考え方を実装したものです。ただし画面には色チャンネルごとに出せる最大の明るさが決まっていて、RGB値は1で頭打ちになります。実は、これは後述する「加算」ブレンドモードと同じです。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/oNJBPwm?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="oNJBPwm" data-user="kynd" data-preview="true"></p></div>
 
 # Blending Modes
 # ブレンドモード
@@ -68,7 +71,7 @@ Take a look at the demo below. You can select different blend modes from the dro
 
 下のデモを見てください。ドロップメニューからはブレンドモードを選べます。キャンバスをクリックして色をランダムに変更することもできます。左右にあるのが混色前の元の色で、中央が色を混ぜたものです。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/QWzBPPb?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="QWzBPPb" data-user="kynd" data-preview="true"></p></div>
 
 Here is the explanation of the blending mode in the demo. Once you understand the concept, you can study [more examples](https://en.wikipedia.org/wiki/Blend_modes) or even create your own functions. For all the examples, we assume that each R, G, and B value is within the range of zero to one.
 
@@ -116,6 +119,7 @@ function add(color0, color1, t) {
 ## スクリーン
 
 The Screen blending mode may look a little confusing in code, but it is essentially the opposite of Multiply. It first inverts both colors, multiplies them, and then inverts the result again, typically resulting in a brighter color. Screening with white results in white, while screening with black leaves the color unchanged.  
+
 コードは少しわかりにくいかもしれませんが、スクリーンブレンドモードは実質乗算の逆です。両方の色を反転させ、それを乗算し、結果を再び反転させることで、通常はより明るい色になります。白でスクリーン合成すると白になり、黒でスクリーン合成すると色は変わりません。
 
 ```jsx
@@ -156,7 +160,7 @@ As discussed in [Computing Colors](/sketching-with-math-and-quasi-physics/colors
 
 [「色を計算する」](/sketching-with-math-and-quasi-physics/colors-and-numbers/computing-colors)で見たように、様々なカラーモデルを用いると異なる結果が得られます。2つの色を混ぜる様々な計算方法を学んだので、線形補間以外を使って混色できるか考えてましょう。一部の方法はモデルによってはあまり意味をなさないかもしれません（例えば、HSBやLchモデルで2つの色相を加算するとはどういう意味になるでしょう。）、が彩度の最大値を取るなど、面白いアイデアを思いつくかもしれません。アプローチに正解や不正解はありません。様々なアイデアを試してみれば、驚くような結果が得られるかもしれません。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/QwWdYXJ?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="QwWdYXJ" data-user="kynd" data-preview="true"></p></div>
 
 # Kubelka-Munk
 # クベルカ・ムンク
@@ -166,6 +170,8 @@ If you're looking for something more physically accurate, you might be intereste
 より物理的に正確なものを探している場合は、クベルカ・ムンクやその関連の理論が面白いかもしれません。この理論は、混合物中の顔料の特性をシミュレートして、実際の絵の具に近い色を予測するために使われます。例えば、RGBを使って青と黄を混ぜるとくすんだ灰色っぽい色になりますが、クベルカ・ムンクの手法では、実際の絵の具を混ぜた時のように、はるかに明るい緑が得られます（または違った振る舞いを見せる、異なる特性を持つ絵の具を作ることもできます）。
 
 [![](/images/mixing-colors.png)](/images/mixing-colors.png)
+
+<div></div>
 
 I have to admit that I don't fully grasp this topic. I found that it is quite a rabbit hole as I went through several documents. Rather than delving into the details, I will provide a high-level overview and a simple example implementation that I have pieced together from the materials I have reviewed. Any suggestions for improvement or corrections are greatly appreciated.
 
@@ -207,9 +213,11 @@ and apply an adjustment called Saunderson correction, which takes into account t
 
 [![](/images/mixing-colors-1.png)](/images/mixing-colors-1.png)
 
+<div></div>
+
 Looking at these formulas may not make intuitive sense (they didn’t for me), and when math equations don't make much sense, it's time to visualize them! Run the demo to see the chart that shows how <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi></mrow><annotation encoding="application/x-tex">K</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">K</span></span></span></span>, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi></mrow><annotation encoding="application/x-tex">S</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span></span></span></span>, and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi></mrow><annotation encoding="application/x-tex">R</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span></span></span></span> are related. A few takeaways are:
 
-これらの式を見てもピンとこないかもしれませんが（自分はよく分かりませんでした）、数式が意味がよくからない時は視覚化です。デモを実行して、<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi></mrow><annotation encoding="application/x-tex">K</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">K</span></span></span></span>、<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi></mrow><annotation encoding="application/x-tex">S</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span></span></span></span>、<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi></mrow><annotation encoding="application/x-tex">R</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span></span></span></span>の関係を示す表を見てください。いくつか気づくことがあります。
+これらの式を見てもピンとこないかもしれませんが（自分はよく分かりませんでした）、数式の意味がよくわからない時は視覚化です。デモを実行して、<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi></mrow><annotation encoding="application/x-tex">K</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">K</span></span></span></span>、<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi></mrow><annotation encoding="application/x-tex">S</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span></span></span></span>、<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi></mrow><annotation encoding="application/x-tex">R</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span></span></span></span>の関係を示す表を見てください。いくつか気づくことがあります。
 
 -   R is totally dependent on the ratio between <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi></mrow><annotation encoding="application/x-tex">K</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">K</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi></mrow><annotation encoding="application/x-tex">S</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span></span></span></span> (`k/s`)
 
@@ -223,17 +231,19 @@ Roughly speaking, the darker the color, the higher the absorption (<span class="
 
 大まかに見れば吸収（<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi></mrow><annotation encoding="application/x-tex">K</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">K</span></span></span></span>）が大きいほど暗く、散乱（<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi></mrow><annotation encoding="application/x-tex">S</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span></span></span></span>）が大きいほど明るくなるので、納得感があります。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/VwqKMdy?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="VwqKMdy" data-user="kynd" data-preview="true"></p></div>
 
 <div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/scottonanski/embed/NWeeKLQ?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
 
 <div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/scottonanski/embed/NWeeKLQ?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+
+<div></div>
 
 Let's see color mixing in action. The demo has eight pre-defined pigments, and mixes a couple of them at a time. You can click on the canvas to shuffle the colors.
 
 実際に色を混ぜてみましょう。デモでは予め定義された8つの顔料を2つずつ混ぜます。キャンバスをクリックすると色をシャッフルできます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/RwEGgvb?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="RwEGgvb" data-user="kynd" data-preview="true"></p></div>
 
 To keep it simple, this demo defines pigments directly in terms of RGB, instead of the entire spectrum of visible light.
 

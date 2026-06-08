@@ -5,7 +5,7 @@ Patterns are a major element of decorative and graphic design. Since ancient tim
 
 パターンは装飾やグラフィックデザインにとって大事な要素です。太古の昔から、人々は視覚的な要素を繰り返したり、特定のルールに従って空間を分割することで魅力的なパターンを作り出してきました。
 
-In geometry, a tessellation or tiling refers to covering a space with one or more geometric shapes without overlaps and gaps. We can consider tessellation for any number of dimensions, but we will focus on 2D on this page.
+In geometry, a **tessellation** or tiling refers to covering a space with one or more geometric shapes without overlaps and gaps. We can consider tessellation for any number of dimensions, but we will focus on 2D on this page.
 
 幾何学では、重複や隙間なしに空間を1つまたはそれ以上の幾何学的形状で覆うことをテッセレーション、またはタイリングと呼びます。テッセレーションはどんな次元数についても考えることができますが、このページでは2次元に集中します。  
 
@@ -25,13 +25,13 @@ The demo below draws a checker pattern by dividing the tiles into two groups, th
 
 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>Group&nbsp;id</mtext><mo>=</mo><mo stretchy="false">(</mo><mi>i</mi><mo>+</mo><mi>j</mi><mo stretchy="false">)</mo><mspace></mspace><mspace width="0.6667em"></mspace><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">d</mi></mrow><mtext> </mtext><mtext> </mtext><mn>2</mn></mrow><annotation encoding="application/x-tex">\text{Group id} = (i + j) \mod 2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord text"><span class="mord">Group&nbsp;id</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">i</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.05724em;">j</span><span class="mclose">)</span><span class="mspace allowbreak"></span><span class="mspace" style="margin-right:0.6667em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord"><span class="mord"><span class="mord mathrm">mod</span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">2</span></span></span></span>
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/oNOWRYK?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="oNOWRYK" data-user="kynd" data-preview="true"></p></div>
 
 Take a look at another example below. The main part (`setup()`) is identical to the demo above, except it divides the tiles into four groups instead of two. Then, the `drawTile()` function draws a different shape for each of the groups. Try tweaking the code to change how groups are assigned to each tile, and the graphics for each group. You will probably find it mind-boggling how far this seemingly simple setup can go, and sometimes it can be very tricky to predict the results.
 
 別を見てみましょう。主な部分（`setup()`）は上のデモと同じですが、タイルを2つではなく4つのグループに分けます。そして`drawTile()`関数が、それぞれのグループに対して異なる形を描きます。コードを書き換えて、グループに対するタイルの割り当てや、グループごとのグラフィック変えてみましょう。この単純なセットアップでも驚くほど様々な表現ができ、結果を予測するのがともても難しいこともあります。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/VwNbOpw?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="VwNbOpw" data-user="kynd" data-preview="true"></p></div>
 
 <div class="instagram-wrap"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CklstPTPqi1/" data-instgrm-version="14" style="width:100%;max-width:540px;margin:0;border:none;border-radius:4px;padding:0;"></blockquote></div>
 
@@ -55,6 +55,7 @@ c-6,0,-10,-1,-12,-3s-194,-422,-194,-422s-65,47,-65,47z
 M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1272em;"><span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.538em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span> of the height. To alternate the rotation, we can use modulo in the same way as the examples above. Here is a demo.
 
 コードで長方形以外の形を並べるのは少し厄介です。例えば正三角形をタイル状に並べるには、高さと底辺の長さの関係を調べ、形を互い違いに回転する必要があります。ピタゴラスの定理を使えば、底辺の長さが高さの<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>2</mn><msqrt><mn>3</mn></msqrt></mfrac></mrow><annotation encoding="application/x-tex">\frac{2}{\sqrt{3}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.3831em;vertical-align:-0.538em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8451em;"><span style="top:-2.551em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord sqrt mtight"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9128em;"><span class="svg-align" style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mtight" style="padding-left:0.833em;"><span class="mord mtight">3</span></span></span><span style="top:-2.8728em;"><span class="pstrut" style="height:3em;"></span><span class="hide-tail mtight" style="min-width:0.853em;height:1.08em;"><svg xmlns="http://www.w3.org/2000/svg" width="400em" height="1.08em" viewBox="0 0 400000 1080" preserveAspectRatio="xMinYMin slice"><path d="M95,702
+
 c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,-10,-9.5,-14
 c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54
 c44.2,-33.3,65.8,-50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10
@@ -65,33 +66,36 @@ c5.3,-9.3,12,-14,20,-14
 H400000v40H845.2724
 s-225.272,467,-225.272,467s-235,486,-235,486c-2.7,4.7,-9,7,-19,7
 c-6,0,-10,-1,-12,-3s-194,-422,-194,-422s-65,47,-65,47z
+
 M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1272em;"><span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.538em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span>だとわかります。交互に回転させるには、上の例と同じくモジュロが使えます。下のデモを見てみましょう。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/Pogpemw?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="Pogpemw" data-user="kynd" data-preview="true"></p></div>
 
 [![](/images/tiling.png)](/images/tiling.png)
+
+<div></div>
 
 The demo below is an example with regular octagons and squares. Notice that the offset of the tile is also calculated using Pythagorean theorem.
 
 下のデモは、正八角形と正方形を並べています。この例でもタイル間の距離の計算にピタゴラスの定理を用いました。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/zYXZjEa?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="zYXZjEa" data-user="kynd" data-preview="true"></p></div>
 
 <div class="instagram-wrap"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/C4wBGkLybUF/" data-instgrm-version="14" style="width:100%;max-width:540px;margin:0;border:none;border-radius:4px;padding:0;"></blockquote></div>
 
-There's a very interesting type of tiling known as [aperiodic tiling](https://en.wikipedia.org/wiki/Aperiodic_tiling), which means the pattern doesn’t repeat in a regular, predictable way. Penrose tiling is one of the most famous examples of this. The demo below uses just two different quadrilaterals, green and yellow. But unlike regular patterns, where you can slide the entire pattern in one direction and it will still match up with itself, in Penrose tiling, no matter how you try to slide it, the pattern never exactly repeats.”
+There's a very interesting type of tiling known as [aperiodic tiling](https://en.wikipedia.org/wiki/Aperiodic_tiling), which means the pattern doesn’t repeat in a regular, predictable way. **Penrose tiling** is one of the most famous examples of this. The demo below uses just two different quadrilaterals, green and yellow. But unlike regular patterns, where you can slide the entire pattern in one direction and it will still match up with itself, in Penrose tiling, no matter how you try to slide it, the pattern never exactly repeats.”
 
 [非周期なタイリング](https://en.wikipedia.org/wiki/Aperiodic_tiling)という非常に面白い種類のタイリングがあります。非周期とは、パターンが決まった予測可能な決まったサイクルで繰り返されないという意味で、ぺンローズタイルは最も有名な例の1つです。下のデモは、緑と黄色の2種類の四角形だけ構成されていますが、通常のパターンとは異なり、パターン全体を特定の方向にスライドさせてもそれ自身とピッタリ重なることはありません。ペンローズタイル張りでは、どのようにスライドしてみても、パターンは決して正確に繰り返されません。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/NWmpKNY?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="NWmpKNY" data-user="kynd" data-preview="true"></p></div>
 
 This demo is based on an article by Jeff Preshing, [Penrose Tiling Explained](https://preshing.com/20110831/penrose-tiling-explained/). The basic idea of the method is to subdivide triangles into smaller triangles following a simple set of rules. I won’t repeat the explanation as the original article is very detailed and easy to follow. Highly recommended if you are interested.
 
 このデモは、Jeff Preshingによる[ペンローズタイリングの説明](https://preshing.com/20110831/penrose-tiling-explained/)を基にしました。簡単なルールに沿って3角形をより小さな3角形に細分化するのが、この方法の基本的な考え方です。元の記事がとても詳しく分かりやいので、ここで説明を繰り返すことはしませんが、興味がある場合はぜひ元記事を読んでみましょう。
 
-[![](/images/tiling-1.png)](/images/tiling-1.png)
+[![](/images/tiling-1.png "50")](/images/tiling-1.png)
 
-[![](/images/tiling-2.png)](/images/tiling-2.png)
+[![](/images/tiling-2.png "50")](/images/tiling-2.png)
 
 [![](/images/tiling-3.png)](/images/tiling-3.png)
 
@@ -101,7 +105,7 @@ Truchet tiles are a type of tile designed to create complex patterns by rotating
 
 トルシェタイルは、回転させてながら並べて複雑なパターンを作り出すようデザインされたタイルです。トルシェタイルは下のデモのように対角線で分割されたタイルをデザインした、ドミニコ会の司祭、セバスチャン・トルシェの名前を元に付けられました。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/vYMGNPm?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="vYMGNPm" data-user="kynd" data-preview="true"></p></div>
 
 This pattern is made of just a single tile divided diagonally into two colors, but when the tiles are placed side by side, they can create many different shapes. Generally, a Truchet tile pattern consists of one or several tiles that can be rotated and connected to the other tiles in the set.
 
@@ -111,7 +115,7 @@ Let's take a look at another example. This one is also made of just a single til
 
 別の例を見てみましょう。このパターンも2つの四分円が描かれたタイル一種類だけで作られています。しかし、個々のタイルよりは波状の線や多くの円が連結した帯などもっと複雑なパターンが前面に見えるのではないでしょうか。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/zYbVYWe?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="zYbVYWe" data-user="kynd" data-preview="true"></p></div>
 
 You can find many examples by searching for "[Truchet tiles](https://www.google.com/search?q=truchet+tiles&tbm=isch)". You can also create your own patterns. Try modifying the `drawTile` functions in the demo. You're not limited to squares - feel free to use triangles, hexagons, or any other shapes that can fill a plane and rotate.
 
@@ -137,13 +141,15 @@ Suppose you begin with square tiles. When you move a point of the square (A), th
 
 正方形のタイルから始める場合を考えます。 正方形の点（A）を移動させるには、周囲の正方形も同じように変形しなければなりません。 こう考えると、向かい側の点（B）が同じ分だけ移動しなければならないと気付くでしょう。
 
-[![](/images/tiling.jpg)](/images/tiling.jpg)
+[![](/images/tiling.jpg "75")](/images/tiling.jpg)
+
+<div></div>
 
 The demo below creates random patterns using this method. Try sketching some ideas by yourself moving your hands! You can start from any shape or combination of shapes that can repeat periodically.
 
 下のデモでは、この手法を使ってランダムなパターンを作成します。自分の手を動かしてアイデアをスケッチしてみましょう。周期的に繰り返すことができる形や形の組み合わせならなんでも使うことができます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/mdgyMRN?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="mdgyMRN" data-user="kynd" data-preview="true"></p></div>
 
 # Voronoi ボロノイ
 
@@ -168,7 +174,7 @@ The demo below is taken from the [Cellular Noise page of the Book of Shaders](ht
 
 以下のデモは、[Book of shadersのセルラーノイズのページ](https://thebookofshaders.com/12/?lan=jp)を元にしました。同ページには、より詳しい説明や例があります。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/ZEZLQLo?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="ZEZLQLo" data-user="kynd" data-preview="true"></p></div>
 
 <div class="instagram-wrap"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CboO5qOF5Bu/" data-instgrm-version="14" style="width:100%;max-width:540px;margin:0;border:none;border-radius:4px;padding:0;"></blockquote></div>
 

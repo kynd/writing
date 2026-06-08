@@ -1,7 +1,7 @@
 ---
 title: "Riemann Circle Projection リーマン円周への射影"
 ---
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/myrjeGd?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="myrjeGd" data-user="kynd" data-preview="true"></p></div>
 
 Compactification is the process of embedding a space into a closed and bounded space.
 

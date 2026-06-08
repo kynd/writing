@@ -12,7 +12,7 @@ From ancient cave drawings to paintings, cartography, cinema, and more recently,
 
 # Perspective Projection 透視投影
 
-In 3D graphics, two primary types of projections are frequently used: perspective projection and parallel projection.
+In 3D graphics, two primary types of projections are frequently used: **perspective projection** and parallel projection.
 
 3Dグラフィックスでは、主に2つのタイプの投影が使われます。透視投影と平行投影です。
 
@@ -21,6 +21,8 @@ Perspective projection is a type of projection that creates an illusion of depth
 透視投影は、物体が視点から遠ざかるにつれて小さく見えるようにして、遠近感を生み出す投影の一種です。理解のために、視点から物体の両端に向かって描かれた2本の線を想像してください。この2本の線の間の角度は、物体が目に近づくほど広がり、遠ざかるほど狭まります。これが、距離によって物体が大きく見えたり小さく見えたりする理由です。
 
 [![](/images/projection.png)](/images/projection.png)
+
+<div></div>
 
 One way to illustrate perspective projection is to visualize a screen positioned between the viewer (like an eyeball or camera) and the objects to be depicted. When you draw a line from the viewpoint to a point on an object, the line will intersect the screen at a single point. This is where the point on the object is "projected" onto the screen.
 
@@ -40,7 +42,7 @@ The demo below illustrates this concept from a side view, with the z-axis runnin
 
 デモは、このコンセプトを横から見た図で示しています。水平方向がz軸、垂直方向がx軸です。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/YzdbpJq?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="YzdbpJq" data-user="kynd" data-preview="true"></p></div>
 
 > 
 > 
@@ -56,6 +58,8 @@ In parallel projection, all projection lines are parallel to each other. This me
 
 [![](/images/projection-1.png)](/images/projection-1.png)
 
+<div></div>
+
 To create a picture with parallel projection, we can also imagine a screen positioned in front of the objects. But instead of drawing lines towards a single viewpoint, we draw parallel lines that are perpendicular to the screen.
 
 平行投影で画像を作る場合にも対象の前に置されたスクリーンを考えますが、単一の視点に向かって線を引く代わりにスクリーンに垂直な平行線を引きます。
@@ -64,11 +68,13 @@ If the screen is perpendicular to the z-axis, a point <span class="katex"><span 
 
 スクリーンがz軸に垂直な場合、点 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mi>x</mi><mo separator="true">,</mo><mi>y</mi><mo separator="true">,</mo><mi>z</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[x,y,z]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord mathnormal">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.04398em;">z</span><span class="mclose">]</span></span></span></span> は単純に2Dスクリーン上の <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mi>x</mi><mo separator="true">,</mo><mi>y</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[x,y]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord mathnormal">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mclose">]</span></span></span></span> に投影されます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/QWzRGzr?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="QWzRGzr" data-user="kynd" data-preview="true"></p></div>
 
 # Map Projections 地図投影法
 
 [![](/images/projection-2.png)](/images/projection-2.png)
+
+<div></div>
 
 Maps are a classic example of projections. While maps of small regions can be easily approximated as a flat plane, representing the entire Earth on a plane is not straightforward. Numerous projection techniques have been invented for different purposes, since there is no perfect solution. These methods are called cartographic projections.
 
@@ -84,9 +90,13 @@ The circles on the two maps below are called Tissot’s Indicatrix, which show h
 
 [![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Tissot_indicatrix_world_map_Mercator_proj.svg/2560px-Tissot_indicatrix_world_map_Mercator_proj.svg.png)](https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Tissot_indicatrix_world_map_Mercator_proj.svg/2560px-Tissot_indicatrix_world_map_Mercator_proj.svg.png)
 
+<div></div>
+
 Map of the world in a [Mercator projection](https://en.wikipedia.org/wiki/Mercator_projection) (cropped at 85° of latitude) with [Tissot's Indicatrix](https://en.wikipedia.org/wiki/Tissot%27s_Indicatrix) of deformation. Each red circle/ellipse has a radius of 500 km. Scale : 1:5,000,000 - Wikimedia Commons
 
 [![](https://upload.wikimedia.org/wikipedia/commons/c/cb/Tissot_indicatrix_world_map_Lambert_cyl_equal-area_proj.svg)](https://upload.wikimedia.org/wikipedia/commons/c/cb/Tissot_indicatrix_world_map_Lambert_cyl_equal-area_proj.svg)
+
+<div></div>
 
 Map of the world in a [Lambert cylindrical equal-area projection](https://en.wikipedia.org/wiki/Lambert_cylindrical_equal-area_projection) with [Tissot's Indicatrix](https://en.wikipedia.org/wiki/Tissot%27s_Indicatrix) of deformation. Each red circle/ellipse has a radius of 500 km. Scale : 1:5,000,000 - Wikimedia Commons
 

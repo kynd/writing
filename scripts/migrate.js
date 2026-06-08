@@ -62,6 +62,17 @@ function titleToSlug(rawName) {
   return toSlug(extractEnglishPart(stripNotionId(rawName)));
 }
 
+// --- Image sizing -----------------------------------------------------------
+
+const NOTION_CONTENT_WIDTH = 708;
+
+function widthToBucket(px) {
+  const ratio = px / NOTION_CONTENT_WIDTH;
+  if (ratio > 0.875) return null; // >= ~620px → 100%, no title
+  if (ratio > 0.600) return '75'; // >= ~425px → 75%
+  return '50';                     // < ~425px → 50%
+}
+
 // --- Image naming -----------------------------------------------------------
 
 /**
@@ -303,6 +314,18 @@ function convertFile(htmlPath, linkMap, usedImageNames) {
     // Rewrite src to public URL
     $(imgEl).attr('src', `/images/${finalName}`);
 
+    // Read pixel width, bucket to 50/75/100, set as title for Turndown to emit
+    const imgStyle = $(imgEl).attr('style') || '';
+    const widthMatch = imgStyle.match(/width:\s*([\d.]+)px/);
+    const px = widthMatch ? parseFloat(widthMatch[1]) : NOTION_CONTENT_WIDTH;
+    const bucket = widthToBucket(px);
+    if (bucket) {
+      $(imgEl).attr('title', bucket);
+    } else {
+      $(imgEl).removeAttr('title');
+    }
+    $(imgEl).removeAttr('style');
+
     // Also fix the parent <a> href if it wraps this image
     const parentA = $(imgEl).closest('a');
     if (parentA.length) {
@@ -337,19 +360,25 @@ function convertFile(htmlPath, linkMap, usedImageNames) {
   }
 
   // ---- CodePen links → embeds ----
+  // Only converts standalone CodePen links (inside a <figure> block, or bare URL link text).
+  // Skips inline prose links like <a href="codepen.io/...">descriptive text</a>.
   {
     const toReplace = [];
     article.find('a[href]').each((_, aEl) => {
       const href = $(aEl).attr('href') || '';
       const m = href.match(/^https?:\/\/codepen\.io\/([^/]+)\/pen\/([^/?#]+)/);
       if (!m) return;
+      const figure = $(aEl).closest('figure');
+      if (!figure.length) {
+        // Not in a figure — only embed if the link text IS the URL (bare link)
+        const linkText = $(aEl).text().trim();
+        if (!linkText.match(/^https?:\/\/codepen\.io\//)) return;
+      }
       const user = m[1];
       const penId = m[2];
-      const src = `https://codepen.io/${user}/embed/${penId}?default-tab=result`;
-      const iframe = `<div class="codepen-wrap"><iframe title="CodePen" src="${src}" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>`;
+      const iframe = `<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="${penId}" data-user="${user}" data-preview="true"></p></div>`;
       const placeholder = `VIDEOWRAP${videoPlaceholders.length}END`;
       videoPlaceholders.push(iframe);
-      const figure = $(aEl).closest('figure');
       toReplace.push({ target: figure.length ? figure : $(aEl), placeholder });
     });
     for (const { target, placeholder } of toReplace) target.replaceWith(`<p>${placeholder}</p>`);
@@ -454,6 +483,32 @@ function convertFile(htmlPath, linkMap, usedImageNames) {
       bookmarkPlaceholders.push(cardHtml);
       const figure = $(aEl).closest('figure');
       toReplace.push({ target: figure.length ? figure : $(aEl), placeholder: `BOOKMARK${idx}END` });
+    });
+    for (const { target, placeholder } of toReplace) target.replaceWith(`<p>${placeholder}</p>`);
+  }
+
+  // ---- Local video files → <video> embeds ----
+  // Handles Notion "file" blocks: <figure><div class="source"><a href="local.mov">
+  {
+    const VIDEO_EXTS = /\.(mp4|mov|webm|ogg|m4v)$/i;
+    const MIME = { mp4: 'video/mp4', mov: 'video/mp4', webm: 'video/webm', ogg: 'video/ogg', m4v: 'video/mp4' };
+    const VIDEOS_DIR = path.join(ROOT, 'public', 'videos');
+    const toReplace = [];
+    article.find('figure > div.source > a').each((_, aEl) => {
+      const href = $(aEl).attr('href') || '';
+      const m = href.match(VIDEO_EXTS);
+      if (!m) return;
+      const ext = m[1].toLowerCase();
+      const absPath = path.resolve(path.dirname(htmlPath), decodeURIComponent(href));
+      if (!fs.existsSync(absPath)) return;
+      const filename = path.basename(absPath);
+      fs.mkdirSync(VIDEOS_DIR, { recursive: true });
+      fs.copyFileSync(absPath, path.join(VIDEOS_DIR, filename));
+      const mime = MIME[ext] || 'video/mp4';
+      const videoHtml = `<div class="local-video-wrap"><video controls><source src="/videos/${filename}" type="${mime}"></video></div>`;
+      const placeholder = `VIDEOWRAP${videoPlaceholders.length}END`;
+      videoPlaceholders.push(videoHtml);
+      toReplace.push({ target: $(aEl).closest('figure'), placeholder });
     });
     for (const { target, placeholder } of toReplace) target.replaceWith(`<p>${placeholder}</p>`);
   }

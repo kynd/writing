@@ -5,17 +5,17 @@ Fluid simulation is a great example of simulating natural phenomena using a feed
 
 流体シミュレーションはフィードバックシステムを用いた自然現象のシミュレーションの良い例です。解くことが非常に難しい方程式で表された現象を、複数の比較的シンプルなステップに分解して近似することで、複雑で美しい動きを作り出すことができます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/jOXZXWB?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="jOXZXWB" data-user="kynd" data-preview="true"></p></div>
 
 On this page, we will build a fluid simulation step by step. The demo above is written with GLSL shaders to ensure high performance. However, for learning purposes, we will create a miniature simulation using p5.js.
 
-このページでは流体シミュレーションを、ステップに分けて組み立てます。上のデモはパフォーマンスのためにGLSLシェーダーで書かれていますが、学習用にはp5.jsを使っててミニチュアのシミュレーションを作成します。
+このページでは流体シミュレーションを、ステップに分けて組み立てます。上のデモはパフォーマンスのためにGLSLシェーダーで書かれていますが、学習用にはp5.jsを使ってミニチュアのシミュレーションを作成します。
 
 Explaining fluid simulation can involve a lot of math and physics, but I will try to keep it at a high level and intuitive as much as possible. For more detailed explanation, I highly recommend reading Jamie Wong's article, "[Fluid Simulation (with WebGL demo)](https://jamie-wong.com/2016/08/05/webgl-fluid-simulation/)”, which provides a more precise yet friendly breakdown of the topic.
 
 流体シミュレーションを説明するにはかなりの数学と物理が必要ですが、ここではできるだけ直感的に説明しようと思います。より詳しく知りたい方は、Jamie Wongの記事「[Fluid Simulation (with WebGL demo)](https://jamie-wong.com/2016/08/05/webgl-fluid-simulation/)」がとても正確かつ親切なのでオススメです。
 
-# Moving colors(paints)
+# Moving colors (paints)
 # 色（絵の具）を動かす
 
 First, we will define the space as a grid of cells. We want to smoothly move paints, or different colors, around in this space. To do this, we will use two maps, specifically two 2D arrays, to capture the information for each cell. The **color map** stores the color values of each cell, while the **velocity map** stores a vector that represents the velocity, i.e. the information about the speed and direction of the water flow in each cell.
@@ -26,7 +26,7 @@ To move the colors, we will add the opposite vector of the velocity to the posit
 
 色を移動するためには、各セルの位置に速度のベクトルを逆にしたものを加え、その点から色をサンプリングします。ここではサンプリングした場所の色が、次のフレームでセルの位置に移動するものと考えています。たいていサンプリングする点は四つのセルの間になるので、セル間の色を[補間](/sketching-with-math-and-quasi-physics/interpolation-and-animation)して色を求めます。この実装では、上端と下端、左端と右端が繋がっていると仮定しています。つまり、サンプリング位置がキャンバスの外に出た場合は、反対側に折り返します。
 
-[![](/images/fluid-simulation.png)](/images/fluid-simulation.png)
+[![](/images/fluid-simulation.png "50")](/images/fluid-simulation.png)
 
 ```jsx
 // Update the colorMap based on the velocityMap
@@ -48,7 +48,7 @@ Take a look at our first step below. The arrows represent the velocity of each c
 
 下のデモを見てください。矢印は各セルの速度を表し、その矢印に沿って色が移動していきます。キャンバスをクリックするとシミュレーションをリセットできます。`initialize()` 関数の中の初期条件を書きかえて面白いパターンが作れるか試してみましょう。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/xxmWxYP?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="xxmWxYP" data-user="kynd" data-preview="true"></p></div>
 
 # Advecting velocity
 # 速度の流れ
@@ -83,9 +83,9 @@ function updateVelocityMapAdvect() {
 
 You can see this in action in the demo below.
 
-下のデモで、実際の動きが見れます。
+下のデモで、実際の動きが見られます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/JjwLaqq?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="JjwLaqq" data-user="kynd" data-preview="true"></p></div>
 
 # Navier-Stokes equations
 # ナビエ・ストークス方程式
@@ -95,6 +95,8 @@ When you try to push water in a bathtub to the side, you will notice that the wa
 バスタブの中で水を押すとすぐに水が隙間に流れ込み、水の動きが生まれるます。水は表面の高さ一定に保とうとします。また、水はほとんど圧縮することができません。このことを考えると、セルからある方向に水が流れ出せば、他の方向から同じ質量の水がセルに流れ込んでいくはずです。
 
 [![](/images/fluid-simulation-1.png)](/images/fluid-simulation-1.png)
+
+<div></div>
 
 In physics, this concept is expressed by following formulas called Navier-Stokes equations named after two physics scientists, Claude-Louis Navier and George Gabriel Stokes.
 
@@ -137,7 +139,7 @@ These equations are really difficult to solve, and we don't really have to. We w
 
 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∇</mi><mo>⋅</mo><mi mathvariant="bold">u</mi></mrow><annotation encoding="application/x-tex">\nabla \cdot \mathbf{u}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">∇</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.4444em;"></span><span class="mord mathbf">u</span></span></span></span>は速度の**発散**で、ここではあるセルから流れ出る（または流れ込む）水の総量を表します。この値は、x軸とy軸に沿った速度の変化の合計として計算されます。この変化は、[数値微分](/sketching-with-math-and-quasi-physics/calculus-for-makers/differentiation)を用いて近似することができます。直感的には、周りの速度の矢印がセルを指していれば水が流れ込んでいて、矢印がセルと逆を向いていれば流れ出していると考えられます。発散は、これらの速度の差を計算することで、その影響の合計を測定します。方程式 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∇</mi><mo>⋅</mo><mi mathvariant="bold">u</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\nabla \cdot \mathbf{u} = 0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">∇</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.4444em;"></span><span class="mord mathbf">u</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0</span></span></span></span> は、この発散が常にゼロになるべきだという主張です。現実のシミュレーションはこの状態を完全に達成するわけではありませんが、近似することはできます。速度マップを調整するために、まず現在の発散を計算し、別のマップに保存します。
 
-[![](/images/fluid-simulation-2.png)](/images/fluid-simulation-2.png)
+[![](/images/fluid-simulation-2.png "75")](/images/fluid-simulation-2.png)
 
 ```jsx
 // Update the divergenceMap based on the velocityMap
@@ -160,7 +162,7 @@ In the demo below, the brighter the cells, the higher the divergence, and the da
 
 下のデモでは、セルが明るいほど発散の値が大きく、暗いほど低いことを示しています。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/gOZeqyv?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="gOZeqyv" data-user="kynd" data-preview="true"></p></div>
 
 # Pressure
 # 圧力
@@ -192,7 +194,7 @@ function updatePressureMap() {
 }
 ```
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/jOXzJpE?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="jOXzJpE" data-user="kynd" data-preview="true"></p></div>
 
 # Adjusting the velocity
 # 速度を補正する
@@ -217,7 +219,7 @@ This term essentially represents the fact that water flows from areas of high pr
 
 この項は基本的に、水は圧力の高い場所から低い場所へ流れることを表しています。
 
-[![](/images/fluid-simulation-3.png)](/images/fluid-simulation-3.png)
+[![](/images/fluid-simulation-3.png "75")](/images/fluid-simulation-3.png)
 
 ```jsx
 // Update the velocityMap integrating advaction and pressure
@@ -249,7 +251,7 @@ The demo below puts everything together. Enjoy the nice and smooth swirl of the 
 
 下のデモはこれまでの全てを合わせたものです。美しく滑らかな色の渦を楽しみましょう。 `rho = 0.99`は適当な数値です。値を調整すると動きを軽くしたり、重くしたりすることができます。自由にコードをいじって、どんな変化が起こるか試してみましょう。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/VwqxbaY?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="VwqxbaY" data-user="kynd" data-preview="true"></p></div>
 
 That’s it. We have covered all the basic concepts used in the GLSL version of the demo at the top. Take a look at the code and see if it makes sense. For GLSL shaders, please refer to the [Book of Shaders](https://thebookofshaders.com/) (as always).
 

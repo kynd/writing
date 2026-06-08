@@ -21,7 +21,7 @@ The demo below is a simple example of a point moving with a changing velocity. T
 
 下のデモは、移動するにつれ速度を変える点のシンプルな例です。速度のベクトルは最初は右を向いていて、フレームごとに同じ割合で向きを変えて行きます。これは結果として弧を描き、円を形作ります。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/qBGjrBg?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="qBGjrBg" data-user="kynd" data-preview="true"></p></div>
 
 > 
 > 
@@ -36,7 +36,7 @@ This example is similar to the circle but increases the magnitude of the velocit
 
 この例は円に似ていますが、速度の大きさが一定の割合で増加していきます。結果として美しい螺旋が描かれます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/abrwyvQ?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="abrwyvQ" data-user="kynd" data-preview="true"></p></div>
 
 # Random Walker
 # ランダムウォーカー
@@ -45,7 +45,7 @@ Instead of changing the velocity at the same rate, randomizing the change with t
 
 速度を一定の割合で変えるのではなく、`noise()`関数を使って変化をランダムにすると、動物や虫が動き回る道筋のように見えてきます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/xxNLObq?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="xxNLObq" data-user="kynd" data-preview="true"></p></div>
 
 # Cumulative Parabola
 # 積み重ねによる放物線
@@ -54,7 +54,7 @@ The next example simulates one of the most common curves in the physical world: 
 
 次のデモは、物理の世界で最も一般的な曲線の1つである放物線の軌道をシミュレートします。空中に打ち上げられた物体は、（空気抵抗やその他の要因を無視すると）重力の影響で放物線をたどります。この様子は点に初速度を与え、下向きに働く重力を再現するために速度を更新していくことで再現できます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/RwmZaXM?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="RwmZaXM" data-user="kynd" data-preview="true"></p></div>
 
 All the demos above are based on the same principle: tracing the path of a point moved with a velocity that changes according to some rule or algorithm (even if it's random). Most curves in the physical world are created this way, since essentially, nothing in nature happens instantaneously. They are the result of the accumulation of physical forces or various phenomena over time.
 
@@ -64,7 +64,7 @@ Take a look at another example from the [Newtonian Physics](/sketching-with-math
 
 もうひとつ、[ニュートン物理学](/sketching-with-math-and-quasi-physics/newton-and-vectors/newtonian-mechanics)ページからの例を見てみましょう。複雑さに違いはあれど、理論的には、積み重ねの手法でどんな線でも描くことができます。さまざまな曲線の例を考えて、それらを速度の変化によって表現できるか試してみましょう。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/qmGOgB?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="qmGOgB" data-user="kynd" data-preview="true"></p></div>
 
 While the cumulative approach is versatile and flexible, it can sometimes be less optimal and harder to manage, especially when you know the desired shape in advance. In such instances, defining the curve mathematically using a parametric approach often works better. We will discuss this on the next page.
 

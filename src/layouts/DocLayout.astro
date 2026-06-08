@@ -27,6 +27,45 @@ const SECTION_ORDER: Record<string, number> = {
   'faq': 5,
 };
 
+// Order for children of sketching-with-math-and-quasi-physics (matches index page)
+const SKETCHING_ORDER: Record<string, number> = {
+  'many-intros-for-sketching-with-code': 0,
+  'newton-and-vectors': 1,
+  'distance': 2,
+  'rotation': 3,
+  'wave': 4,
+  'light': 5,
+  'projection-and-3d-rendering': 6,
+  'colors-and-numbers': 7,
+  'image-processing': 8,
+  '2d-feedback-systems': 9,
+  'calculus-for-makers': 10,
+  'patterns': 11,
+  'curves': 12,
+  'mapping': 13,
+  'chaos-theory': 14,
+  'reading': 15,
+  'math-snippets': 16,
+  'geometric-drawings': 17,
+  'fourier-series': 18,
+  'taming-randomness': 19,
+  'interpolation-and-animation': 20,
+  'vector-operations': 21,
+  'detecting-collision': 22,
+  'kinematics': 23,
+  'numbers-and-intervals': 24,
+  'mixing-colors': 25,
+  'pencils-brushes-and-paints': 26,
+  'physical-values-and-human-perception': 27,
+  'resolution': 28,
+  'dimensions': 29,
+  'camera-in-action': 30,
+  'drawing-landscape': 31,
+  'reading-a-noise-function': 32,
+  'filling-space-with-colors': 33,
+  'neural-network': 34,
+};
+
 function buildTree(docs: typeof allDocs): TreeNode {
   const root: TreeNode = { label: 'root', slug: '', children: new Map() };
 
@@ -57,6 +96,17 @@ function buildTree(docs: typeof allDocs): TreeNode {
     return oa - ob;
   });
   root.children = new Map(sorted);
+
+  // Sort children of sketching-with-math-and-quasi-physics by SKETCHING_ORDER
+  const sketchingNode = root.children.get('sketching-with-math-and-quasi-physics');
+  if (sketchingNode) {
+    const sortedSketching = [...sketchingNode.children.entries()].sort(([a], [b]) => {
+      const oa = SKETCHING_ORDER[a] ?? 99;
+      const ob = SKETCHING_ORDER[b] ?? 99;
+      return oa - ob;
+    });
+    sketchingNode.children = new Map(sortedSketching);
+  }
 
   return root;
 }
@@ -94,6 +144,7 @@ const breadcrumbs = buildBreadcrumbs(slug, allDocs);
   <title>{title}</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/katex.min.css" crossorigin="anonymous" />
   <script async src="//www.instagram.com/embed.js"></script>
+  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
   <script is:inline>
     (function() {
       var f = localStorage.getItem('font-mode') || 'serif';
@@ -271,7 +322,7 @@ const breadcrumbs = buildBreadcrumbs(slug, allDocs);
     .main-inner {
       max-width: 860px;
       margin: 0 auto;
-      padding: 2.5rem 2.5rem 5rem;
+      padding: 2em 2.5rem 5rem;
     }
 
     /* ── Article Typography (is:global so it reaches markdown content) */
@@ -282,32 +333,39 @@ const breadcrumbs = buildBreadcrumbs(slug, allDocs);
       line-height: 1.15;
       margin-bottom: 3rem;
     }
+    .prose h1.page-title .title-en,
+    .prose h1.page-title .title-ja {
+      display: block;
+    }
+    .prose h1.page-title .title-ja {
+      margin-top: 0.3em;
+    }
     .prose h1 {
       font-size: 1.55rem;
       font-weight: 600;
       letter-spacing: -0.02em;
       line-height: 1.25;
       margin-top: 2.75rem;
-      margin-bottom: 0.6rem;
+      margin-bottom: 1.6rem;
     }
     .prose h2 {
       font-size: 1.25rem;
       font-weight: 600;
       letter-spacing: -0.02em;
       margin-top: 2.25rem;
-      margin-bottom: 0.6rem;
+      margin-bottom: 1.6rem;
     }
     .prose h3 {
       font-size: 1.05rem;
       font-weight: 600;
       margin-top: 1.75rem;
-      margin-bottom: 0.4rem;
+      margin-bottom: 1.2rem;
     }
-    /* Bilingual heading pairs: collapse gap between English + Japanese, generous space after */
+    /* Bilingual heading pairs: pull Japanese heading close to English, generous space after */
     .prose h1 + h1,
     .prose h2 + h2,
     .prose h3 + h3 {
-      margin-top: 0.1em;
+      margin-top: -1rem;
       margin-bottom: 1.6rem;
     }
     .prose p {
@@ -323,6 +381,15 @@ const breadcrumbs = buildBreadcrumbs(slug, allDocs);
       margin-bottom: 1rem;
     }
     .prose li { margin-bottom: 0.25rem; }
+    .katex-mathml {
+      position: absolute;
+      clip: rect(1px, 1px, 1px, 1px);
+      height: 1px;
+      width: 1px;
+      overflow: hidden;
+      padding: 0;
+      border: 0;
+    }
     .prose blockquote {
       border-left: 2px solid var(--border);
       padding-left: 1rem;
@@ -351,11 +418,43 @@ const breadcrumbs = buildBreadcrumbs(slug, allDocs);
     }
     .prose img {
       max-width: 100%;
-      width: auto !important;
-      height: auto !important;
+      width: 100%;
+      height: auto;
       display: block;
       border-radius: 4px;
-      margin: 3rem 0;
+      margin: 3rem auto;
+    }
+    .prose img[title="75"] { width: 75%; }
+    .prose img[title="50"] { width: 50%; }
+    .prose img[title="25"] { width: 25%; }
+    /* Make image-wrapping links block so % widths are relative to content area */
+    .prose a:has(> img) {
+      display: block;
+    }
+    /* Style paragraphs immediately following an image-link as captions */
+    .prose a:has(> img) + p,
+    .prose img + p,
+    .prose p:has(> a > img) + p,
+    .prose p:has(> a > img) + p:has(> a > img) + p {
+      font-size: 0.8em;
+      color: var(--fg-muted);
+      text-align: left;
+      margin-top: -1.75rem;
+      margin-bottom: 2.75rem;
+      line-height: 1.5;
+    }
+    .prose a:has(> img) + p a,
+    .prose img + p a,
+    .prose p:has(> a > img) + p a,
+    .prose p:has(> a > img) + p:has(> a > img) + p a {
+      color: var(--fg-muted);
+      text-decoration: underline;
+    }
+    .prose a:has(> img) + p a:hover,
+    .prose img + p a:hover,
+    .prose p:has(> a > img) + p a:hover,
+    .prose p:has(> a > img) + p:has(> a > img) + p a:hover {
+      color: var(--fg);
     }
     .prose .video-wrap {
       position: relative;
@@ -376,12 +475,36 @@ const breadcrumbs = buildBreadcrumbs(slug, allDocs);
       border-radius: 4px;
       overflow: hidden;
     }
+    .prose .codepen-wrap p.codepen {
+      margin: 0;
+      border: none !important;
+    }
     .prose .codepen-wrap iframe {
       display: block;
       border-radius: 4px;
+      height: 504px !important;
+    }
+    .prose .openprocessing-wrap {
+      margin: 3rem 0;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .prose .openprocessing-wrap iframe {
+      display: block;
+      width: 100%;
+      border-radius: 4px;
+    }
+    .prose .local-video-wrap {
+      margin: 3rem 0;
+    }
+    .prose .local-video-wrap video {
+      width: 100%;
+      border-radius: 4px;
+      display: block;
     }
     .prose .instagram-wrap {
-      margin: 3rem 0;
+      margin: 3rem auto;
+      max-width: 540px;
     }
     .prose .bookmark-card {
       margin: 2rem 0;
@@ -396,8 +519,7 @@ const breadcrumbs = buildBreadcrumbs(slug, allDocs);
       align-items: stretch;
       text-decoration: none;
       color: inherit;
-      min-height: 6em;
-      max-height: 9em;
+      height: 8em;
       overflow: hidden;
     }
     .prose .bookmark-info {
@@ -451,17 +573,29 @@ const breadcrumbs = buildBreadcrumbs(slug, allDocs);
       display: inline-block;
     }
     .prose .bookmark-image {
-      width: 180px !important;
-      height: 100% !important;
+      width: auto !important;
+      height: 100%;
       flex-shrink: 0;
-      object-fit: cover;
+      object-fit: contain;
       display: block;
       border-radius: 0;
       margin: 0;
-      align-self: stretch;
     }
     @media (max-width: 540px) {
       .prose .bookmark-image { display: none; }
+    }
+    .prose .image-row {
+      display: flex;
+      gap: 1em;
+      align-items: flex-start;
+    }
+    .prose .image-row figure {
+      flex: 1;
+      margin: 0;
+    }
+    .prose .image-row img {
+      width: 100%;
+      height: auto;
     }
     .prose hr {
       border: none;
@@ -480,13 +614,22 @@ const breadcrumbs = buildBreadcrumbs(slug, allDocs);
       text-align: left;
     }
     .prose th { font-weight: 600; background: #fafafa; }
+    .prose figure img { margin: 0; }
+    .prose figure { margin-bottom: 2rem; }
+    .prose figcaption {
+      font-size: 0.8em;
+      color: #666;
+      margin-top: -2rem;
+      margin-bottom: 3rem;
+      line-height: 1.5;
+    }
     .prose table.matrix-table {
       width: auto;
       font-family: var(--font-code);
       font-size: 0.85em;
     }
     .prose table.matrix-table td {
-      text-align: center;
+      text-align: left;
       padding: 0.3rem 0.75rem;
       min-width: 3rem;
     }
@@ -649,6 +792,18 @@ const breadcrumbs = buildBreadcrumbs(slug, allDocs);
         window.open(img.src, '_blank', 'noopener');
       });
     });
+  </script>
+  <script>
+    function alignCaptions() {
+      document.querySelectorAll('.prose p > a > img').forEach(img => {
+        const caption = img.closest('p')?.nextElementSibling;
+        if (!caption || caption.tagName !== 'P' || caption.querySelector('img')) return;
+        const w = img.offsetWidth;
+        if (w > 0) caption.style.maxWidth = w + 'px';
+      });
+    }
+    window.addEventListener('load', alignCaptions);
+    window.addEventListener('resize', alignCaptions);
   </script>
 </body>
 </html>

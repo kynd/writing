@@ -5,10 +5,39 @@ const BASE = '/writing';
 
 function remarkRebaseLinks() {
   return (tree) => {
-    visit(tree, 'link', (node) => {
-      if (node.url.startsWith('/') && !node.url.startsWith('//')) {
+    visit(tree, (node) => {
+      if ((node.type === 'link' || node.type === 'image') &&
+          typeof node.url === 'string' &&
+          node.url.startsWith('/') && !node.url.startsWith('//')) {
         node.url = BASE + node.url;
       }
+    });
+  };
+}
+
+// Rebases absolute src/href paths inside raw HTML nodes in markdown.
+// Raw HTML in markdown is not yet parsed into hast elements when rehype plugins run,
+// so we rewrite the string directly.
+function rehypeRebaseVideoSrc() {
+  return (tree) => {
+    visit(tree, 'raw', (node) => {
+      node.value = node.value
+        .replace(/src="\/videos\//g, `src="${BASE}/videos/`)
+        .replace(/src="\/images\//g, `src="${BASE}/images/`)
+        .replace(/href="\/images\//g, `href="${BASE}/images/`);
+    });
+  };
+}
+
+// Converts image title="100"|"75"|"50"|"33" to inline width style, removes the title.
+function rehypeImageSize() {
+  return (tree) => {
+    visit(tree, 'element', (node) => {
+      if (node.tagName !== 'img') return;
+      const title = String(node.properties?.title ?? '');
+      if (!['100', '75', '50', '33'].includes(title)) return;
+      node.properties.style = `width:${title}%`;
+      delete node.properties.title;
     });
   };
 }
@@ -16,8 +45,12 @@ function remarkRebaseLinks() {
 export default defineConfig({
   site: 'https://www.kynd.info',
   base: BASE,
+  server: {
+    port: 4321,
+  },
   markdown: {
     remarkPlugins: [remarkRebaseLinks],
+    rehypePlugins: [rehypeImageSize, rehypeRebaseVideoSrc],
   },
   output: 'static',
   build: {

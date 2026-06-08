@@ -20,13 +20,13 @@ Mathematically, the sine wave is the most fundamental wave shape. It represents 
 
 数学的には、サインカーブが最も基本的な波の形です。正弦波は中心角の変化によって変わる単位円上の点の位置を示してます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/mwbWwJ?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="mwbWwJ" data-user="kynd" data-preview="true"></p></div>
 
 A sine curve can be drawn as a result of a physical object following the [spring equation (Hooke's law,](/sketching-with-math-and-quasi-physics/wave/vibration-and-propagation) <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>=</mo><mo>−</mo><mi>k</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">F=-kx</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7778em;vertical-align:-0.0833em;"></span><span class="mord">−</span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mord mathnormal">x</span></span></span></span>[)](/sketching-with-math-and-quasi-physics/wave/vibration-and-propagation). Basically, this means if you vibrate a thing attached to a spring and plot its position over time, you get a sine curve. It is fascinating that these seemingly very different methods result in the exact same curve, which indicates that there's something special about the sine curve (yes, it is).
 
 サインカーブは、物体がバネ方程式（フックの法則、<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>=</mo><mo>−</mo><mi>k</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">F=-kx</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7778em;vertical-align:-0.0833em;"></span><span class="mord">−</span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mord mathnormal">x</span></span></span></span>）に従って動く結果としても描くことができます。つまり、バネに物を取り付けて振動させ、その位置を時間とともにプロットすると、正弦曲線が得られます。一見まったく異なる方法から、同じ曲線が得られるのはとても面白く、サインカーブには、何か特別な意味があると感じさせられます（実際にそうです）
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/WOepdE?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="WOepdE" data-user="kynd" data-preview="true"></p></div>
 
 # Vibration and Propagation 振動と伝搬
 
@@ -38,7 +38,7 @@ Waves propagate and spread in space. Many waves are mechanical, meaning they are
 
 [Vibration and Propagation 振動と伝搬](/sketching-with-math-and-quasi-physics/wave/vibration-and-propagation)
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/abGVKep?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="abGVKep" data-user="kynd" data-preview="true"></p></div>
 
 # Light 光
 
@@ -62,7 +62,7 @@ For example, electromagnetic waves are diffractive, meaning that they can go aro
 
 [What is light? 光とは何か](/sketching-with-math-and-quasi-physics/light/what-is-light)
 
-[![](/images/about-wave.png)](/images/about-wave.png)
+[![](/images/about-wave.png "75")](/images/about-wave.png)
 
 [GLSL demo](https://kynd.github.io/p5sketches/extra/wave_function/index.html)  
 
@@ -93,9 +93,9 @@ In the case of light, the frequency corresponds to the color. In sound, the freq
 
 [Sound visualization 音の視覚化](/sketching-with-math-and-quasi-physics/wave/sound-visualization)
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/yLZrBGJ?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="yLZrBGJ" data-user="kynd" data-preview="true"></p></div>
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/gOqypMj?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="gOqypMj" data-user="kynd" data-preview="true"></p></div>
 
 # Numbers and Intervals 数と音程
 
@@ -107,19 +107,21 @@ Interestingly, we don’t experience pitch as just a straight line—it feels mo
 
 面白いことに、私たちは音の高さを単純な直線としてではなく、螺旋のように感じます。例えば、440 Hz（A音）から上に向かうと、周波数がちょうど2倍の880 Hzで別のA音に到達します。これは違う音でありながら、私たちの耳には1オクターブ上がっただけの同じ音として認識されるのです。
 
-[![](/images/about-wave.jpg)](/images/about-wave.jpg)
+[![](/images/about-wave.jpg "75")](/images/about-wave.jpg)
+
+<div></div>
 
 Upon these notes, we can construct different harmonies. It is all about ratio and relative relationships, and depending on how you lay them out vertically (play at the same time) or horizontally (play in sequence), you can evoke totally different feelings from the same sets of notes, or frequencies.
 
 これらの音をもとに、様々なハーモニーが作り出せます。これは全て比率と相対的な関係の問題で、同じ音の組み合わせでも、縦方向（同時に音を鳴らす）や横方向（順番に音を鳴らす）の配置の仕方によって、まったく異なる感覚を引き出すことができます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/XWBXwgL?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="XWBXwgL" data-user="kynd" data-preview="true"></p></div>
 
 In the slightly more song-like example below, the chord (F major 9th) chord is repeated every second time. Notice how the same chord can sound different depending on the preceding chord.
 
 下のもう少し曲っぽい例では、2回に1回同じコード（Fメジャー9th）が繰り返されています。直前のコードによって同じコードが違って聞こえる様子にも注目してみてください。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/wvxGqmW?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="wvxGqmW" data-user="kynd" data-preview="true"></p></div>
 
 [Pitch and Frequency 音高と周波数](/sketching-with-math-and-quasi-physics/wave/pitch-and-frequency)
 
@@ -141,7 +143,9 @@ Let’s take a guitar string as an example. When you pluck it, the string vibrat
 
 ギターの弦を例に取りしょう。弦が出す音は1つの周波数だけではありません。弾かれると弦は一度に様々な形の振動を生み出します。主となる音の高さは基本周波数と呼ばれますが、弦の各部分も小さな区分（半分、3分の1、4分の1など）で振動していて、基本周波数の単純な倍数に当たる倍音や上音と呼ばれる音を鳴らします。
 
-[![](/images/when-you-pluck-on-a-string-the-string-vibrate-with-multiple-1.jpg)](/images/when-you-pluck-on-a-string-the-string-vibrate-with-multiple-1.jpg)
+[![](/images/when-you-pluck-on-a-string-the-string-vibrate-with-multiple-1.jpg "75")](/images/when-you-pluck-on-a-string-the-string-vibrate-with-multiple-1.jpg)
+
+<div></div>
 
 When you pluck on a string, the string vibrate with multiple frequencies mixed at the same time. 弦を弾くと、複数の周波数が同時に混ざり合って振動します
 
@@ -151,7 +155,7 @@ We can visualize this too. In the demo below, you can see the shape of the wave 
 
 [Sine waves and Additive Synthesis サイン波と加算合成](/sketching-with-math-and-quasi-physics/wave/sine-waves-and-additive-synthesis)
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/JJPWyz?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="JJPWyz" data-user="kynd" data-preview="true"></p></div>
 
 > 
 > 
@@ -182,7 +186,7 @@ The Fourier transform is widely used in various fields such as sound processing,
 
 [Fourier Series フーリエ級数](/sketching-with-math-and-quasi-physics/fourier-series)
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/ZEmXaBO?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="ZEmXaBO" data-user="kynd" data-preview="true"></p></div>
 
 # Navier-Stokes equations
 # ナビエ・ストークス方程式⁠
@@ -193,4 +197,4 @@ The Navier-Stokes equations describe the properties and behavior of media such a
 
 [Fluid Simulation 流体シミュレーション](/sketching-with-math-and-quasi-physics/2d-feedback-systems/fluid-simulation)
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/jOXZXWB?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="jOXZXWB" data-user="kynd" data-preview="true"></p></div>

@@ -7,9 +7,11 @@ Geometric drawings, especially those made using only basic tools such as rulers 
 
 [![](/images/the-first-six-books-of-the-elements-of-euclid-oliver-byrne.jpg)](/images/the-first-six-books-of-the-elements-of-euclid-oliver-byrne.jpg)
 
-**The First Six Books of the Elements of Euclid - Oliver Byrne**
+"The First Six Books of the Elements of Euclid - Oliver Byrne"
 
 [![](/images/geometric-drawings.gif)](/images/geometric-drawings.gif)
+
+<div></div>
 
 It is easy to draw line segments, circles, etc. in various environments including HTML canvas. However, it is not so easy to draw figures like those in geometry textbooks. Even a simple operation such as drawing a circle around the intersection of two straight lines requires a bit of calculation. The ability to draw a picture and the ability to handle geometry mathematically are two different things. Of course, there are many well-designed libraries out there, but it is also a good learning experience to implement basic functions by yourself. Well it was at least for myself.
 
@@ -33,6 +35,8 @@ A straight line can be defined by two points or one point and the direction of t
 直線は2つの点か、1つの点と線の向きが決まれば定義できます。点が2つあれば1つの点からもう1つの点への向きが決まるのでこの2つは同じことです。
 
 [![](/images/geometric-drawings.png)](/images/geometric-drawings.png)
+
+<div></div>
 
 The equation of a line is <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mi>x</mi><mo>+</mo><mi>b</mi><mi>y</mi><mo>+</mo><mi>c</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">ax + by + c = 0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">a</span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">b</span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">c</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0</span></span></span></span>. Although <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mi>a</mi><mi>x</mi><mo>+</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">y = ax + b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">a</span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">b</span></span></span></span> might be more common and show the slope and intercept better, the former is more versatile since the latter doesn’t work well for a line parallel to the y-axis. The latter can be easily derived from the former.
 
@@ -130,18 +134,20 @@ This demonstrates randomly moving lines and their intersections.
 
 ランダムに動く線とその交点を表示するデモです。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/jOxwVxr?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="jOxwVxr" data-user="kynd" data-preview="true"></p></div>
 
 This is a demonstration of two rotating lines and the trace of their intersections. It is amazing to see how an asymmetrical spiral pattern is created from regularly moving straight lines.
 
 回転する2本の直線とその交点の軌跡を描くデモです。規則的に動く直線から非対称な渦巻き模様のようなものが作られる様子が不思議です。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/XWqgNYz?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="XWqgNYz" data-user="kynd" data-preview="true"></p></div>
 
 # Line segments
 # 線分
 
 [![](/images/geometric-drawings-1.png)](/images/geometric-drawings-1.png)
+
+<div></div>
 
 The next is line segments. A line segment is a piece or part of a line having two endpoints.
 
@@ -179,11 +185,13 @@ The next step is to detect intersections. First, we create an intersection decis
 
 [![](/images/geometric-drawings-2.png)](/images/geometric-drawings-2.png)
 
+<div></div>
+
 Which region a point <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi></mrow><annotation encoding="application/x-tex">p</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">p</span></span></span></span> lies in with respect to the line dividing the plane can be determined by if the value when substituting the coordinates of point <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi></mrow><annotation encoding="application/x-tex">p</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">p</span></span></span></span> into the equation of the line is positive or negative. Click on different points on the canvas in the sample below.
 
 ある点<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi></mrow><annotation encoding="application/x-tex"> p</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">p</span></span></span></span>が平面を分割する直線に対してどちらの領域に存在するかは、直線の方程式に点<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi></mrow><annotation encoding="application/x-tex">p</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">p</span></span></span></span>の座標を代入した値の正負で判定ができます。下のサンプルで色々な場所をクリックしてみましょう。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/KKRyvYB?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="KKRyvYB" data-user="kynd" data-preview="true"></p></div>
 
 Whether two line segments A and B intersect can be determined by repeating the line and line segment intersection test twice.
 
@@ -229,7 +237,7 @@ This demonstrates randomly moving line segments and their intersections.
 
 ランダムに動く線分とその交点を表示するデモです。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/qmLJVe?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="qmLJVe" data-user="kynd" data-preview="true"></p></div>
 
 # Circle
 # 円
@@ -317,7 +325,7 @@ This is a demonstration of drawing a circle based on three random points.
 
 ランダムな3点を元に円を描くデモです。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/pPqxaV?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="pPqxaV" data-user="kynd" data-preview="true"></p></div>
 
 # Circle, Triangle and various centers
 # 円と三角形、様々な中心
@@ -362,7 +370,7 @@ getMidPoint() {
 
 **外心:** 外接円の中心。三角形の各辺の垂直二等分線の交点でもあります。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/xdNwBv?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="xdNwBv" data-user="kynd" data-preview="true"></p></div>
 
 ### Incircle and Incenter
 ### 内接円と内心
@@ -375,7 +383,7 @@ getMidPoint() {
 
 **内心:** 内接円の中心。三角形の各角の二等分線の交点。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/LyopoV?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="LyopoV" data-user="kynd" data-preview="true"></p></div>
 
 ### Excircles and Excenters
 ### 傍接円と傍心
@@ -388,7 +396,7 @@ getMidPoint() {
 
 **傍心:** 傍接円の中心。三角形の外角の二等分線が交差する点。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/dWEGYX?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="dWEGYX" data-user="kynd" data-preview="true"></p></div>
 
 ### Orthocenter
 ### 垂心
@@ -397,7 +405,7 @@ The intersection of the altitudes drawn from the vertices of the triangle to the
 
 三角形の3つの頂点から対辺に引いた三本の垂線の交点。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/gWJPax?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="gWJPax" data-user="kynd" data-preview="true"></p></div>
 
 ### Centroid
 ### 重心
@@ -406,7 +414,7 @@ The arithmetic mean position of all the points in a shape. The centroid of a tri
 
 ある図形内のすべての点の平均。三角形の重心は3つの中線の交点です。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/qmGbbO?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="qmGbbO" data-user="kynd" data-preview="true"></p></div>
 
 # Other drawings
 # その他
@@ -415,15 +423,15 @@ Source of the GIF image at the beginning of this article
 
 冒頭のGIF画像のソース
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/xrOMbO?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="xrOMbO" data-user="kynd" data-preview="true"></p></div>
 
 A few drawings based on geometry.
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/WjLazX?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="WjLazX" data-user="kynd" data-preview="true"></p></div>
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/vmvVrG?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="vmvVrG" data-user="kynd" data-preview="true"></p></div>
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/MmZPXq?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="MmZPXq" data-user="kynd" data-preview="true"></p></div>
 
 ### Reuleaux Triangle
 ### ルーローの三角形
@@ -432,4 +440,4 @@ A Reuleaux triangle can rotate within a square while touching all four sides of 
 
 ルーローの三角形は、正方形の4辺すべてに接したまま回転することができます。　実はこれは他の例とはあまり関係がないのですが、幾何学的でかつ楽しいのでここに残しておきます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/NjVxxM?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="NjVxxM" data-user="kynd" data-preview="true"></p></div>

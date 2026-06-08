@@ -3,6 +3,8 @@ title: "Chaos Theory カオス理論"
 ---
 [![](/images/chaos-theory.png)](/images/chaos-theory.png)
 
+<div></div>
+
 コードを用いた数学的表現に興味がある人なら、一度はローレンツ・アトラクターを描いたことがあるかもしれません。簡単なコードから複雑で美しい形が生まれるのを見るのは楽しいものです。しかし、写経を終えた後、わかったようなわからないような気分のままその先へ進む道を見失ってしまったことはないでしょうか。
 
 If you're interested in creative coding and mathematics, you've likely rendered a Lorenz attractor at least once. There's a distinct joy in seeing complex, organic beauty emerge from a few lines of code. However, after the initial excitement of "copy-pasting" wears off, you might find yourself in a state of limbo—understanding the how but not the why, unsure of where to take these forms next.
@@ -11,7 +13,8 @@ This series aims not only to run existing code based on chaos, but also to explo
 
 このシリーズではカオスに基づいた既存のコードを実行するだけでなく、その背景にあるアイデアや本質的な仕組みの部分に踏み込むことで、様々な概念を学んだり、新しいアイデアを考えるヒントになることを目指します。
 
-# What is Chaos? カオスとは何か
+# What is Chaos?
+# カオスとは何か
 
 Chaos is not merely complexity. It is unpredictable order arising from the recursion of simple rules. It refers to phenomena that follow deterministic rules, yet extremely small differences in initial conditions are exponentially amplified through recursive feedback, making long-term behavior unpredictable.
 
@@ -39,7 +42,7 @@ If we believe that the natural world at large scale (not at the scale of quantum
 > 
 > これは大まかには正しい（と思う）説明ですが、数学的にはもっと厳密な定義があります。後の方でもう少し詳しい概念に触れます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/emzWpMd?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="emzWpMd" data-user="kynd" data-preview="true"></p></div>
 
 While much of the chaos in the real world arises from the mutual interference of numerous, or countless elements, this series deals with examples where relatively simple equations give rise to chaos.
 
@@ -60,5 +63,3 @@ But the boundary between the two is not as distant as we might think. Even in ph
 [Physical Chaos 物理的なカオス](/sketching-with-math-and-quasi-physics/chaos-theory/physical-chaos)
 
 [(Extra) Math on Chaos（さらに）カオスの数学](/sketching-with-math-and-quasi-physics/chaos-theory/extra-math-on-chaos)
-
-<table class="matrix-table"><tbody><tr><td>FAQs Mini</td><td></td></tr><tr><td>License? Can I use the contents?</td><td>Yes, please! Anything from personal to educational. I'd appreciate if you can let me know where you have used them, but it's not required. Assume CC BY 4.0 unless otherwise noted. Use at your own responsibility. Read more</td></tr><tr><td>ライセンス? コンテンツを他で使っても良い？</td><td>はい、ぜひ。個人使用から教育目的まで、どのような用途でもOKです。使った場所を知せてもらえると嬉しいですが、必須ではありません。特に明記がない限り、CC BY 4.0ライセンスが適用されます。ご利用は自己責任で。詳しく</td></tr><tr><td>How can I follow the updates?</td><td>Follow me on Bluesky, Threads or other one.</td></tr><tr><td>アップデートはどこで確認できますか？</td><td>Bluesky、Threads、その他でフォローしてください。</td></tr><tr><td>Is there an index page?</td><td>Yes, here.</td></tr><tr><td>目次はありますか？</td><td>はい、ここです。</td></tr></tbody></table>

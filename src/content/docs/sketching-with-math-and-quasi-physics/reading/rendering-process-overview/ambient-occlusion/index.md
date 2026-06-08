@@ -25,7 +25,9 @@ This function calculates the ambient occlusion (AO) effect, which simulates how 
 
 この関数は、アンビエントオクルージョン（AO）効果を計算します。これは、光が他のオブジェクトの近くの表面、特に凹面や隙間、角などに到達するのが難しくなる様子をシミュレートします。
 
-[![](/images/ambient-occlusion.png)](/images/ambient-occlusion.png)
+[![](/images/ambient-occlusion.png "75")](/images/ambient-occlusion.png)
+
+<div></div>
 
 Ambient occlusion is typically applied to ambient or diffuse lighting from broad sources, like the sky, where light bounces around and reaches surfaces from multiple directions. The narrower the paths for light, the less light the surface receives.
 
@@ -35,7 +37,7 @@ In the demo, try toggling the ambient occlusion on and off to test its effect. S
 
 デモ上で、Ambient occlusionのオン/オフを切り替えて、効果を確認してみてください。アンビエントオクルージョンは Sky と Backlight の両方に適用されているので、それぞれを個別に見ると、よりわかりやすいでしょう。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/dyxzyjV?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="dyxzyjV" data-user="kynd" data-preview="true"></p></div>
 
 # Sampling
 # サンプリング
@@ -49,6 +51,7 @@ In the code, `occlusion` is the variable to accumulate the amount of the occlusi
 コード内の `occlusion` が遮蔽量を蓄積する変数です。これは0から始まります。
 
 In the `for` loop, the function moves this probe for each step.  
+
 `for` ループ内で、ステップごとにこの探査艇を移動させます。
 
 ```glsl

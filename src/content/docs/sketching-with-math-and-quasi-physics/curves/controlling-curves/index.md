@@ -79,11 +79,11 @@ The following demo approximates this as an array of Bézier curves. The `natural
 
 次のデモは、これをベジェ曲線の配列として近似します。`naturalSpline()` 関数は点（`p5.Vector`）の配列を受け取り、`Cubic` オブジェクトの配列を返します。
 
-This is based on the implementation of the [](https://github.com/d3/d3-shape/blob/main/src/curve/natural.js)`[Natural](https://github.com/d3/d3-shape/blob/main/src/curve/natural.js)` [class in d3.js](https://github.com/d3/d3-shape/blob/main/src/curve/natural.js). You can drag the points to change the shape.
+This is based on the implementation of the [`Natural`](https://github.com/d3/d3-shape/blob/main/src/curve/natural.js) class in d3.js. You can drag the points to change the shape.
 
-このデモは、[d3.js の](https://github.com/d3/d3-shape/blob/main/src/curve/natural.js) `[Natural](https://github.com/d3/d3-shape/blob/main/src/curve/natural.js)` [クラスの実装](https://github.com/d3/d3-shape/blob/main/src/curve/natural.js)を基にしました。点をドラッグすると形を変えることができます。
+このデモは、[d3.js の](https://github.com/d3/d3-shape/blob/main/src/curve/natural.js) [`Natural`](https://github.com/d3/d3-shape/blob/main/src/curve/natural.js) クラスの実装を基にしました。点をドラッグすると形を変えることができます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/mdgYNMg?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="mdgYNMg" data-user="kynd" data-preview="true"></p></div>
 
 # Hobby Curve
 # Hobby 曲線
@@ -100,17 +100,17 @@ The Hobby curve feels softer and more human, somewhat like Henri Matisse’s str
 
 Hobby曲線はより柔らかく人間的で、マティスが使うとても長い筆で描かれたストロークのように見えます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/abxrRvX?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="abxrRvX" data-user="kynd" data-preview="true"></p></div>
 
 The demo below is a comparison between the natural spline and the Hobby curve.
 
 以下のデモは、ナチュラルスプラインとHobby曲線の比較です。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/KKLKOJj?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="KKLKOJj" data-user="kynd" data-preview="true"></p></div>
 
-I used this [blog post by Jake Low](https://www.jakelow.com/blog/hobby-curves) and implementations of the `[Natural](https://github.com/d3/d3-shape/blob/main/src/curve/natural.js)` [class](https://github.com/d3/d3-shape/blob/main/src/curve/natural.js) from D3.js as references for the sections above. [D3.js also offers many other methods to draw curves with a series of points](https://d3js.org/d3-shape/curve). Take a look at these materials if you want to learn more (unfortunately, I cannot recall the exact source of the original code for the Hobby curve…).
+I used this [blog post by Jake Low](https://www.jakelow.com/blog/hobby-curves) and implementations of the [`Natural`](https://github.com/d3/d3-shape/blob/main/src/curve/natural.js) class from D3.js as references for the sections above. [D3.js also offers many other methods to draw curves with a series of points](https://d3js.org/d3-shape/curve). Take a look at these materials if you want to learn more (unfortunately, I cannot recall the exact source of the original code for the Hobby curve…).
 
-上の節を書くには[Jake Lowのブログ](https://www.jakelow.com/blog/hobby-curves)と、D3.jsの`[Natural](https://github.com/d3/d3-shape/blob/main/src/curve/natural.js)`[クラス](https://github.com/d3/d3-shape/blob/main/src/curve/natural.js)の実装を参考にしました。[D3.jsは他にも様々な方法で点の配列を元に曲線を描くことができます](https://d3js.org/d3-shape/curve)。もっと学びたい場合はこれらの資料を見てみましょう（Hobby曲線の元のコードがどこから来たのかは忘れてしましました。すみません）。
+上の節を書くには[Jake Lowのブログ](https://www.jakelow.com/blog/hobby-curves)と、D3.jsの[`Natural`](https://github.com/d3/d3-shape/blob/main/src/curve/natural.js)クラスの実装を参考にしました。[D3.jsは他にも様々な方法で点の配列を元に曲線を描くことができます](https://d3js.org/d3-shape/curve)。もっと学びたい場合はこれらの資料を見てみましょう（Hobby曲線の元のコードがどこから来たのかは忘れてしましました。すみません）。
 
 # Rounding Corners
 # 角を丸める
@@ -121,11 +121,15 @@ For a more geometric and uniform look, one of the common methods is to replace t
 
 [![](/images/controlling-curves.jpg)](/images/controlling-curves.jpg)
 
+<div></div>
+
 To find the position of the circle, you can draw a line through the corner and the center of the circle, and perpendicular lines from the center to the sides. Then you can find two congruent right triangles.
 
 円の位置を求めるには、角と円の中心を通る直線と、中心から両側の線に垂直な線を引くと、2つの合同な直角三角形を見つけることができます。
 
 [![](/images/controlling-curves-1.jpg)](/images/controlling-curves-1.jpg)
+
+<div></div>
 
 The distance from the corner to the points where the circle touches is:
 
@@ -139,9 +143,9 @@ The distance from the corner to the center is:
 
 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable rowspacing="0.25em" columnalign="right" columnspacing=""><mtr><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow><mi>b</mi><mo>=</mo><mfrac><mi>r</mi><mrow><mi>sin</mi><mo>⁡</mo><mo stretchy="false">(</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow></mfrac></mrow></mstyle></mtd></mtr></mtable><annotation encoding="application/x-tex">{\begin{aligned} b = \frac{r}{\sin(\theta)} \end{aligned}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.3436em;vertical-align:-0.9218em;"></span><span class="mord"><span class="mord"><span class="mtable"><span class="col-align-r"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.4218em;"><span style="top:-3.4218em;"><span class="pstrut" style="height:3.1076em;"></span><span class="mord"><span class="mord mathnormal">b</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.1076em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mop">sin</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.02778em;">θ</span><span class="mclose">)</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.02778em;">r</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.936em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.9218em;"><span></span></span></span></span></span></span></span></span></span></span></span>
 
-To draw this in p5.js, we could use `[arc()](https://p5js.org/reference/p5/arc/)`. But instead, the `RoundedCorner` class in the demo below takes three points and the radius and creates an array of `Cubic` objects. This way, we can treat all the different curves discussed on this page just as arrays of the same object, making it easy to connect or mix them.
+To draw this in p5.js, we could use [`arc()`](https://p5js.org/reference/p5/arc/). But instead, the `RoundedCorner` class in the demo below takes three points and the radius and creates an array of `Cubic` objects. This way, we can treat all the different curves discussed on this page just as arrays of the same object, making it easy to connect or mix them.
 
-これをp5.jsで描くには`[arc()](https://p5js.org/reference/p5/arc/)`関数が使えますが、下のデモの`RoundedCorner`クラスでは3つの点の半径をとって、`Cubic`の配列を作ります。こうすることで、このページで見てきたすべての異なる曲線を同じオブジェクトの配列として扱うことができ、繋げたり混ぜ合わせたりすることが簡単になります。
+これをp5.jsで描くには[`arc()`](https://p5js.org/reference/p5/arc/)関数が使えますが、下のデモの`RoundedCorner`クラスでは3つの点の半径をとって、`Cubic`の配列を作ります。こうすることで、このページで見てきたすべての異なる曲線を同じオブジェクトの配列として扱うことができ、繋げたり混ぜ合わせたりすることが簡単になります。
 
 To support this, the `Cubic` class has two new functions added. The `circularArc()` function creates an approximation of a circular arc as a cubic Bézier, and the `straightLine()` function let us treat a straight line segment in the same way. Note that a cubic Bézier cannot produce a circular arc precisely, but the approximation is good enough for most of our graphical needs.
 
@@ -151,13 +155,13 @@ The implementation is based [Chet Haase](https://medium.com/androiddevelopers/th
 
 実装は[Chet Haase](https://medium.com/androiddevelopers/the-shape-of-things-to-come-1c7663d9dbc0)がMediumに投稿した記事とと[Androidのコード](https://cs.android.com/androidx/platform/frameworks/support/+/androidx-main:graphics/graphics-shapes/src/commonMain/kotlin/androidx/graphics/shapes/)を元にしました。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/vYMRpzL?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="vYMRpzL" data-user="kynd" data-preview="true"></p></div>
 
 Applying this to more complex shapes, you can create various rounded shapes that still feel geometric and well-controlled.
 
 これをより複雑な形状に適用すれば、丸みがありながら、幾何学的でよくコントロールされた雰囲気の形を様々に作れます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/NWmmWoG?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="NWmmWoG" data-user="kynd" data-preview="true"></p></div>
 
 ## Smoothening of the rounded corners
 ## 丸めた角を滑らかにする

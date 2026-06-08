@@ -7,11 +7,11 @@ Tools have a significant impact on the way things are made, which can be both po
 
 そんな時は自分でツールを作ってみると様々な発見があって楽しい。思っても見ない絵ができる。例えば変な方法でテクスチャや形、質感をいじれるものベクトルドローイングツール。
 
-In such cases, creating your own tools can bring a lot of discoveries and the joy of finding unexpected images. For instance, a vector drawing tool that can manipulate textures and shapes
-
-In weird ways…
+In such cases, creating your own tools can bring a lot of discoveries and the joy of finding unexpected images. For instance, a vector drawing tool that can manipulate textures and shapes in weird ways…
 
 [![](/images/building-my-own-tools.gif)](/images/building-my-own-tools.gif)
+
+<div></div>
 
 下の絵はあるプロジェクトのために作ったツールで描いたもの。Adobe Illustratorのように操作できて、他のツールでは作成が難しい形状やイラスト的なテクスチャをさっと作ることができる。
 
@@ -19,17 +19,23 @@ These pictures below are drawn with a tool I made for a project. It works like A
 
 [![](/images/building-my-own-tools.png)](/images/building-my-own-tools.png)
 
+<div></div>
+
 なんでもできる汎用的なツールではなく、必要に応じて特化したものをさっと作る。繰り返すとより速く作れるようになっていく。
 
 Rather than a versatile tool that can do anything, I prefer to quickly create specialized tools as needed. The more I repeat this, the faster it becomes.
 
 [![](/images/building-my-own-tools-1.gif)](/images/building-my-own-tools-1.gif)
 
+<div></div>
+
 あるいはこれまで見てきたような絵の具のシミュレーションを用いて自分の作業が記録できるようなツール。
 
 Or a tool that allows you to record your work using a simulation of paint that we have been looking at so far.
 
 [![](/images/building-my-own-tools-2.gif)](/images/building-my-own-tools-2.gif)
+
+<div></div>
 
 日々のドローイングをデータとして記録する。仕事でも落書きでも毎日タブレットで絵を書いているのでそのエネルギーを再利用したい。日常の落書きを記録することで、無意識でやっていることを自分のツールに変えるようなループができるかも知れない。
 
@@ -40,6 +46,8 @@ Recording daily drawings as data. I draw on my tablet every day, for work or jus
 What if I made my own drawing tool, then doodle with it, and feed the data back to the tool.
 
 [![](https://lh4.googleusercontent.com/ycFa2FvUgYFvrHLME5lns-v_l-ZUhWihle_AIA8JjDlgn0GqHBTYp5bZfWv3BNdXll5RaOIbHfaHrj6npv31uXvXb9dtHHaxuTIpVy33A0FfaD1vZ9hCVZaFC8YhqkY8LxuxkB03r72eYSmjz0Y8eDV2svT3tqPdIfGxio05z6W6Xnb6TcWl_agZJA)](https://lh4.googleusercontent.com/ycFa2FvUgYFvrHLME5lns-v_l-ZUhWihle_AIA8JjDlgn0GqHBTYp5bZfWv3BNdXll5RaOIbHfaHrj6npv31uXvXb9dtHHaxuTIpVy33A0FfaD1vZ9hCVZaFC8YhqkY8LxuxkB03r72eYSmjz0Y8eDV2svT3tqPdIfGxio05z6W6Xnb6TcWl_agZJA)
+
+<div></div>
 
 とりあえず作ったツールで描いたもの。作業の経過がデータとして残っているので描いた手順を変化させたり、混ぜ合わせたりしながら再生できる。一度描いた線を道具を変えて描く。例えば鉛筆で描いた線を絵の具やスプレーなどで書き直してみる。蓄積したデータをランダムに組み合わせたり、ツールを混ぜたりすることで予想外のものができる。どこに辿り着くかはわからないが面白い。
 

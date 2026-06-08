@@ -25,7 +25,7 @@ In the demo, try turning off everything other than the sky, then toggle the shad
 
 デモ上で Sky 以外のすべてをオフにしてから、影のオン/オフを切り替えて、空の光だけの効果を確認してみてください。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/dyxzyjV?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="dyxzyjV" data-user="kynd" data-preview="true"></p></div>
 
 # Diffuse light
 # ディフューズ（拡散光）
@@ -43,7 +43,7 @@ Then `ambientOcclusion` is multiplied by the diffuse. We will discuss this in de
 
 次に、`ambientOcclusion`が拡散光に掛け合わされます。これについては次のページで詳しく説明します。簡単に言うと、アンビエントオクルージョンは、周囲の形状が、ある表面上の点に光が到達するのをどれだけ遮っているかを表します。これにって、他のオブジェクトに近い場所や凹面の領域、例えば面が床と接する場所や割れ目のような形の部分がより暗くなります。
 
-[![](/images/sky-light.png)](/images/sky-light.png)
+[![](/images/sky-light.png "50")](/images/sky-light.png)
 
 # Specular reflection
 # スペキュラー（鏡面反射）

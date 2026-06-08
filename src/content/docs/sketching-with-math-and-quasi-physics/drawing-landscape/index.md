@@ -1,5 +1,5 @@
 ---
-title: "Drawing Landscape"
+title: "Drawing Landscape 風景を描く"
 ---
 On this page, we will sketch a landscape like this using ray marching. Drawing shapes beyond simple geometries can provide very useful insights into applying the technique to anything.
 
@@ -15,51 +15,15 @@ I tried to keep the code as simple as possible while maintaining a good amount o
 
 [Reading “Raymarching - Primitives”](/sketching-with-math-and-quasi-physics/reading)
 
-[![](/images/drawing-landscape.png)](/images/drawing-landscape.png)
+[![](/images/drawing-landscape.png "75")](/images/drawing-landscape.png)
+
+<div></div>
 
 I also used [Inigo Quilez's Shadertoy demo](https://www.shadertoy.com/view/4ttSWf) as a reference for writing this page. I highly recommend watching his video below, and hope that this page can help with understanding the demo code too.
 
 このページを書くには[Inigo Quilezのshadertoyデモ](https://www.shadertoy.com/view/4ttSWf)も参考にしました。下の動画もぜひ見てください。このページがコードを読み解く役に立てばと思います。
 
-<div class="bookmark-card"><a href="https://www.youtube.com/watch?v=BFld4EBO2RE" target="_blank" rel="noopener" class="bookmark-link"><div class="bookmark-info"><div class="bookmark-title">Painting a Landscape with Mathematics</div><div class="bookmark-description">Today we are painting a landscape using mathematics.
-Support this channel: https://www.patreon.com/inigoquilez
-
-This is the link to the real-time rendering code (that you can edit yourself live) for the painting: https://www.shadertoy.com/view/4ttSWf
-
-Music by Bent Stamnes (https://twitter.com/gloom303).
-
-Donate: https://www.paypal.com/paypalme/SMOOTHSTEPLLC
-Subscribe: https://www.youtube.com/c/inigoquilez
-Support: https://www.patreon.com/inigoquilez
-Twitter: https://twitter.com/iquilezles
-Facebook: https://www.facebook.com/inigo.quilez
-
-0:00 Intro
-0:48 Basic Polynomial Surface (Noise)
-4:12 Fractal Surface (FBM)
-6:28 Key Lighting
-9:15 Atmospheric Coloring
-11:00 Composition and Cliffs
-12:28 Light Direction
-13:53 Sky
-15:42 Fill Lighting
-17:42 Grass
-18:31 Tree Sculpting
-23:53 A Story of Painting with Maths professionally
-24:52 Tree  Lighting and Coloring
-29:48 Highlights
-32:05 Color Touchups
-34:48 Clouds
-40:32 Conclusion
-
-Related articles I wrote:
-* Fractal Noise Summation, also known as FBM: https://iquilezles.org/articles/fbm
-* Raymarching terrains: https://iquilezles.org/articles/terrainmarching
-* Rendering SDFs: https://iquilezles.org/articles/raymarchingdf
-* Derivatives of Noise: https://iquilezles.org/articles/morenoise
-* SDF of an Ellipsoid: https://iquilezles.org/articles/ellipsoids
-* SDF Gradient: https://iquilezles.org/articles/normalsSDF
-* Soft Shadows: https://iquilezles.org/articles/rmshadows</div><div class="bookmark-url"><img src="https://www.youtube.com/s/desktop/bfe4b043/img/logos/favicon_144x144.png" class="bookmark-favicon" alt="" onerror="this.style.display='none'"><span>https://www.youtube.com/watch?v=BFld4EBO2RE</span></div></div><img src="https://i.ytimg.com/vi/BFld4EBO2RE/maxresdefault.jpg" class="bookmark-image" alt="" loading="lazy" onerror="this.style.display='none'"></a></div>
+<div class="video-wrap"><iframe width="560" height="315" src="https://www.youtube.com/embed/BFld4EBO2RE" title="Painting a Landscape with Mathematics" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
 
 # Defining the terrain
 # 地形の定義
@@ -70,7 +34,7 @@ First, we need to define the terrain. We can use multiple layers of noise to cre
 
 [Taming Randomness ランダムさを手なづける](/sketching-with-math-and-quasi-physics/taming-randomness)
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/WNJxXZb?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="WNJxXZb" data-user="kynd" data-preview="true"></p></div>
 
 The noise function I'm using here is based on an example from [The Book of Shaders](https://thebookofshaders.com/11/), but with a little tweak. To apply lighting to the surface, we need to know the direction of the surface at each point, i.e., normal. To calculate this, the `noised` function in the demo below returns not only the noise value but also the [derivatives](/sketching-with-math-and-quasi-physics/calculus-for-makers/differentiation) of the value along x and y axes, i.e., gradient of the surface. In the return value, the x component represents the noise value, while y and z represent the gradient.
 
@@ -137,7 +101,7 @@ On the left side of the demo is the visualization of the noise value (x componen
 
 デモの左側はノイズの値（x成分）、右側は勾配（yz成分）をビジュアルにしたものです。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/emYaLbR?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="emYaLbR" data-user="kynd" data-preview="true"></p></div>
 
 We can apply further modification to the data. Here, the `terrain` function is adjusting the height so that the mountains are taller closer to the center. Note that we are multiplying the gradient with the same factor so that we get the correct normals.
 
@@ -158,7 +122,7 @@ vec3 terrain(vec2 st)
 }
 ```
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/bNGymee?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="bNGymee" data-user="kynd" data-preview="true"></p></div>
 
 # Ray marching
 # レイマーチング
@@ -167,7 +131,7 @@ Now that we have our terrain. Let’s render it with ray marching. The basic is 
 
 地形ができたので、レイマーチングでレンダリングしましょう。基本的な手順は[SDF (Signed distance function)を使ったレイマーチング](/sketching-with-math-and-quasi-physics/projection-and-3d-rendering/ray-marching)と同じです。カメラからレイを飛ばし、物体との交差を調べます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/eYxYRBy?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="eYxYRBy" data-user="kynd" data-preview="true"></p></div>
 
 But there are a few key differences.
 
@@ -224,7 +188,7 @@ The demo below renders the scene by mapping the depth (i.e., the distance from t
 
 このデモはシーンの深度（カメラから地形までの距離）をグレースケールで表現します。暗い部分はカメラに近い場所を、明るい部分は遠い場所を示しています。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/XJWwxNq?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="XJWwxNq" data-user="kynd" data-preview="true"></p></div>
 
 # Shading
 # シェーディング
@@ -233,7 +197,7 @@ Let's add lights and materials to make it more realistic. The techniques here ar
 
 よりリアルな見た目にするため、ライトとマテリアルを追加しましょう。ここで使うテクニックは[Reading “Raymarching - Primitives”](/sketching-with-math-and-quasi-physics/reading)で解説したものに似ていますが、簡略化しています。以下で各要素を順に説明します。下のデモではチェックボックスを切り替えることで、それぞれの要素がシーンにどう影響するかを確認できます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/NPPWORo?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="NPPWORo" data-user="kynd" data-preview="true"></p></div>
 
 ## Base Color
 ## ベースカラー
@@ -276,7 +240,7 @@ vec3 normalAt(in vec2 st)
 }
 ```
 
-[![](/images/drawing-landscape.jpg)](/images/drawing-landscape.jpg)
+[![](/images/drawing-landscape.jpg "75")](/images/drawing-landscape.jpg)
 
 ## Sun light and Soft shadow
 ## 太陽光とソフトシャドウ
@@ -346,7 +310,7 @@ This is the final version of the demo with the camera motion added so that it lo
 > 
 > このデモはそれぞれのピクセルに対してノイズ関数を何度も繰り返すので、少し処理が重くなる可能性があります。執筆に使っているMacBook Proでは問題なく動作しますが、マシンのスペックによっては処理が遅くなるかもしれません。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/ZYEVRGN?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="ZYEVRGN" data-user="kynd" data-preview="true"></p></div>
 
 To explore more, you can try other functions to create the terrain. Think about different functions and how you could compute the derivatives and the distance to advance the ray. You could also try mixing this method with an [SDF-based approach](/sketching-with-math-and-quasi-physics/projection-and-3d-rendering/3d-rendering-with-ray-marching) (hint: calculate the distance with both methods and select the one that is closer).
 

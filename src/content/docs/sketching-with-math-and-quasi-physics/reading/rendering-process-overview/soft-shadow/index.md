@@ -30,6 +30,8 @@ This function casts a new ray from a point on the surfaces of the object in the 
 
 [![](/images/soft-shadow.jpg)](/images/soft-shadow.jpg)
 
+<div></div>
+
 The “bounding volume” part calculates the distance for the ray to hit an imaginary ceiling above the objects. This is to stop the ray marching loop when the ray goes high enough to reach an area that has no objects. Compare this to the code where it finds the distance to the floor in the `raycast()` function ([Ray casting レイキャスティング](/sketching-with-math-and-quasi-physics/reading/rendering-process-overview/ray-casting)).
 
 「bounding volume」の部分は、オブジェクトの上に天井があると想定して、レイがそれに当たるまでの距離を計算します。これは、レイがオブジェクトが存在しない領域にまで高く上がりすぎたときに、レイマーチングのループを停止するためです。`raycast()`関数で床までの距離を見つける部分のコードと比較してみてください（[Ray casting レイキャスティング](/sketching-with-math-and-quasi-physics/reading/rendering-process-overview/ray-casting)）。
@@ -52,7 +54,9 @@ The other difference is the distance we make the ray proceed. In normal ray marc
 
 もう一つの違いは、レイが進む距離です。通常のレイマーチングでは、より少ない反復回数でオブジェクトに届くように、可能な限りレイを進めます。しかし、これではレイがオブジェクトに衝突せずに最も接近する点をスキップしてしまう可能性があります。空間内で十分なポイントをサンプリングするために、`t += clamp( distance, 0.01, 0.2 );` でステップことにレイが進める距離を制限します。この数値は経験則によるものなので、必要に応じて調整することができます。
 
-[![](/images/soft-shadow-1.jpg)](/images/soft-shadow-1.jpg)
+[![](/images/soft-shadow-1.jpg "75")](/images/soft-shadow-1.jpg)
+
+<div></div>
 
 You can see the following page to learn more about the soft shadowing techniques.
 

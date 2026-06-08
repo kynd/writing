@@ -19,7 +19,7 @@ Mapping is defined in math as a rule that assigns each element from one set to a
 
 数学では、写像（マッピング）とは、ある集合の各要素を別の集合の要素に対応させるルールとして定義します。文字を別の文字に対応させる（「A」→「α」）やマイナンバーを個人に紐付けるといった離散的なものが考えられます。
 
-[![](/images/mapping.jpg)](/images/mapping.jpg)
+[![](/images/mapping.jpg "75")](/images/mapping.jpg)
 
 [Discrete Mapping 離散的な写像](/sketching-with-math-and-quasi-physics/mapping/discrete-mapping)
 

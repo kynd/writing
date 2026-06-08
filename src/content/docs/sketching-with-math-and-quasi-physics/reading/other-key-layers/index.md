@@ -40,6 +40,8 @@ Let's visualize this with [code](https://colab.research.google.com/drive/1zuPSCd
 
 [![](/images/other-key-layers-1.png)](/images/other-key-layers-1.png)
 
+<div></div>
+
 Can you see that every row (position) has a unique combination of values across the 512 dimensions? Even if the same token <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>_apple</mtext></mrow><annotation encoding="application/x-tex">\text{\_apple}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0044em;vertical-align:-0.31em;"></span><span class="mord text"><span class="mord">_apple</span></span></span></span></span> appears at position 3 and position 50, the added stamp will make them different.
 
 すべての行（位置）が512次元全体にわたって一意な値の組み合わせになっていることがわかるでしょうか。たとえ同じトークン<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>_apple</mtext></mrow><annotation encoding="application/x-tex">\text{\_apple}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0044em;vertical-align:-0.31em;"></span><span class="mord text"><span class="mord">_apple</span></span></span></span></span>が位置3と位置50に現れたとしても、加算されたスタンプによってそれらは異なるものになります。
@@ -104,7 +106,7 @@ The demo below shows how the softmax function works.
 
 下のデモは、ソフトマックス関数がどのように機能するかを示しています。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/jEreVZw?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="jEreVZw" data-user="kynd" data-preview="true"></p></div>
 
 The model then chooses the token with the highest probability, feeds it back into the bottom of the decoder, and repeats the process until it generates an <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>&lt;EOS&gt;</mtext></mrow><annotation encoding="application/x-tex">\text{&lt;EOS&gt;}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7224em;vertical-align:-0.0391em;"></span><span class="mord text"><span class="mord">&lt;EOS&gt;</span></span></span></span></span> (End of Sentence) token.
 

@@ -30,13 +30,17 @@ This part of the code calculates the color of the checkerboard pattern on the fl
 
 このコードの部分では、床のチェック模様の色を計算します。基本的な考え方としてはレイが床と交差する座標（`intersectionPoint`）を見て、その点が明るいグレーか暗いグレーのどちらの領域に属するかを決めます。ですが、レイは1ピクセルにつき1本しかないため、交差点の色は明るいか暗いかの2値になり、ギザギザしたエッジ（エイリアシング）が生じてしまいます。
 
-[![](/images/drawing-the-checker-pattern.png)](/images/drawing-the-checker-pattern.png)
+[![](/images/drawing-the-checker-pattern.png "75")](/images/drawing-the-checker-pattern.png)
+
+<div></div>
 
 Instead, we need to consider the area that each pixel covers, and give middle ground colors on the edges between two colors.
 
 そうではなく、それぞれのピクセルがカバーする領域を考え、2色の境界部分では中間な色を選ぶ必要があります。
 
-[![](/images/drawing-the-checker-pattern.jpg)](/images/drawing-the-checker-pattern.jpg)
+[![](/images/drawing-the-checker-pattern.jpg "75")](/images/drawing-the-checker-pattern.jpg)
+
+<div></div>
 
 To approximate this, we use the derivative of the pixel position and corresponding point in 3D space, i.e., how much the point in 3D changes if you move one pixel in either the x or y direction on the screen. This is what `dpdx` and `dpdy` given to the `checkersGradBox`. To get derivative between pixels, GLSL offers `dFdx()` and `dFdy()` functions, but in this demo, these are calculated from the `rayDirectionXOffset` and `rayDirectionYOffset` which represent the direction of rays for the neighboring pixels.
 

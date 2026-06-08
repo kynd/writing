@@ -35,13 +35,13 @@ For example, modulo is basically a mathematical way of saying "count to <span cl
 
 [![](/images/about-patterns.png)](/images/about-patterns.png)
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/PwwgbQx?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="PwwgbQx" data-user="kynd" data-preview="true"></p></div>
 
 This can be easily expanded to repetition of continuous values.
 
 この考え方は、連続する値の繰り返しにも簡単に応用することができます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/zYXwvGv?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="zYXwvGv" data-user="kynd" data-preview="true"></p></div>
 
 [Repetition 繰り返し](/sketching-with-math-and-quasi-physics/patterns/repetition)
 
@@ -51,7 +51,7 @@ The sine wave is another fundamental building block for repeating patterns. A mi
 
 サイン波は繰り返しパターンの基本的な構成要素の1つです。驚くべきことに、固有の周波数、振幅、位相を持つ無限個のサイン波を組み合わせると、理論上はどのようなパターンでも合成できます。繰り返しを持つパターンについてはフーリエ級数、そうでないものにはフーリエ変換を用いてこの原理が使えます。これらは非常に普遍的で実用的なため、音声処理、信号処理、そして物理学の様々な分野で活用されています。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/zzOZPM?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="zzOZPM" data-user="kynd" data-preview="true"></p></div>
 
 [Sine waves and Additive Synthesis サイン波と加算合成](/sketching-with-math-and-quasi-physics/wave/sine-waves-and-additive-synthesis)
 
@@ -67,15 +67,15 @@ The patterns can be simple repetition of the same geometric shapes to something 
 
 これらのパターンは、単純な幾何学模様の繰り返しから、M. C. エッシャーの作品のような独創的で魅力的なものまで及びます。ペンローズタイルやトルシェタイルのように、厳密な規則性や予測可能性を持たないパターンも存在します。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/zYbVYWe?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="zYbVYWe" data-user="kynd" data-preview="true"></p></div>
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/NWmpKNY?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="NWmpKNY" data-user="kynd" data-preview="true"></p></div>
 
 A Voronoi diagram is a method to create more organic patterns. Cells in Voronoi diagrams are all different, but humans can still see that they follow the same rules or a "pattern." Just like when you look through a microscope, no cells in nature are exactly the same, but we can intuitively see they are the same thing regardless.
 
 ボロノイ図は、より自然で有機的なパターンを生み出す手法です。ボロノイの各セルは異なる形を持ちますが、人間はそれらが共通のルールや「パターン」に従っていることを認識できます。自然にある細胞を顕微鏡で観察するときのように、完全に同一のものは存在しませんが、私たちは直感的にそれらが同じ種類のものだと理解できるのです。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/ZEZLQLo?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="ZEZLQLo" data-user="kynd" data-preview="true"></p></div>
 
 # Rhythm
 # リズム
@@ -89,7 +89,7 @@ Instead of dividing space, we can create musical rhythm by dividing time. Even w
 > Click on "Run Pen", then click one more time to play the sound.  
 > 「Run Pen」をクリックした後もう一度クリックすると音が再生されます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/jOJLoRP?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="jOJLoRP" data-user="kynd" data-preview="true"></p></div>
 
 > 
 > 
@@ -107,13 +107,13 @@ Let’s take a die as an example. A single throw of a fair die is completely unp
 
 サイコロを例に考えてみましょう。公平なサイコロの1回の目は完全に予測不可能で、すべての目が同じ確率で出ます。しかし2回振って合計すると、12よりも7の方が出やすくなります。振る回数を重ねるほど、合計値や平均値は特定の期待値に近づいていきます。これは[大数の法則](https://en.wikipedia.org/wiki/Law_of_large_numbers)と呼ばれています。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/vmvVNB?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="vmvVNB" data-user="kynd" data-preview="true"></p></div>
 
 You can also apply some function to random results to adjust the distribution. For example, if you take a square of a random floating number from 0.0 to 1.0, you get this shape.
 
 ランダムな結果を関数で加工して分布を調整することもできます。例えば、0.0から1.0の範囲のランダムな浮動小数点数を2乗すると、このような分布になります。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/xdmybQ?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="xdmybQ" data-user="kynd" data-preview="true"></p></div>
 
 Can you see the difference between these two cityscapes? These are made by using the exact same regular grid with two different functions that give them subtly different impressions.
 
@@ -123,11 +123,15 @@ In most cities, building heights in the suburbs show little variation because ne
 
 都市の郊外では、ほとんどの建物が数階建てであるため、建物の高さにあまり変化が見られません。一方で、町の中心部では建物の高さに大きな幅があります。多くの建物はそこそこの高さを保っていますが、点在する高層ビルは周囲を圧倒する高さにまで達します。これは多くの都市に共通して見られる「パターン」と言えます。
 
-[![](/images/height-random-1-0-1-1.png)](/images/height-random-1-0-1-1.png)
+[![](/images/height-random-1-0-1-1.png "50")](/images/height-random-1-0-1-1.png)
+
+<div></div>
 
 height = random(1) + 0.1
 
-[![](/images/height-pow-random-1-4-0-1-1.png)](/images/height-pow-random-1-4-0-1-1.png)
+[![](/images/height-pow-random-1-4-0-1-1.png "50")](/images/height-pow-random-1-4-0-1-1.png)
+
+<div></div>
 
 height = pow(random(1), 4) + 0.1
 
@@ -144,7 +148,7 @@ There are many noise function algorithms, but most major ones share a simple ide
 
 ノイズ関数のアルゴリズムには様々な種類がありますが、主要なものは「ランダムな数値を滑らかにつなぐ」という基本的なアイデアで共通しています。個々の値はランダムでありながら、ある点の近くを選ぶと似通った値が得られ、値と値の間に急激な変化や不連続性は発生しないようになっています。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/PoeWgNx?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="PoeWgNx" data-user="kynd" data-preview="true"></p></div>
 
 Noise functions are often layered by adding them together at different scales to create a more natural look. Imagine a mountain range. From far away, you see its jagged silhouette. As you hike closer, you start to see smaller ridges, and up close, you notice every rock face has tiny cracks and ledges that are similar to larger forms. It is quite a common pattern in nature for things to repeat similar shapes at many levels of zoom. You can find this in rolling clouds, breaking waves, cracked desert ground, leaf veins, and the shape of coastlines.
 
@@ -154,9 +158,9 @@ Noise functions are often layered by adding them together at different scales to
 
 [Drawing Landscape](/sketching-with-math-and-quasi-physics/drawing-landscape)
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/WNJxXZb?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="WNJxXZb" data-user="kynd" data-preview="true"></p></div>
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/ZYEVRGN?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="ZYEVRGN" data-user="kynd" data-preview="true"></p></div>
 
 # Fractal
 # フラクタル
@@ -167,19 +171,21 @@ This common pattern is called fractal. A fractal is a pattern or shape that repe
 
 [![](/images/about-patterns.jpg)](/images/about-patterns.jpg)
 
+<div></div>
+
 Layering of noise functions can be seen as a way to emulate the fractal nature of the real world with a finite number of computations (for example, the landscape demo above is made of 9 iterations of the same noise). Some mathematically defined fractals, such as the Mandelbrot set or Julia set, have literally infinite details.
 
 ノイズ関数の重ね合わせは、有限回の計算で現実の世界が持つフラクタル的な性質を真似するための方法だと考えることができます（たとえば、上の風景のデモは同じノイズを9回重ねて作られています）。一方、マンデルブロ集合やジュリア集合といった数学的フラクタルは、文字通り無限の細部を持ちます。
 
-[![](/images/julia-set-https-en-wikipedia-org-wiki-julia-set-media-fil.gif)](/images/julia-set-https-en-wikipedia-org-wiki-julia-set-media-fil.gif)
+[![](/images/julia-set-https-en-wikipedia-org-wiki-julia-set-media-fil.gif "75")](/images/julia-set-https-en-wikipedia-org-wiki-julia-set-media-fil.gif)
 
-Julia set [https://en.wikipedia.org/wiki/Julia\_set#/media/File:JSr07885.gif](https://en.wikipedia.org/wiki/Julia_set#/media/File:JSr07885.gif)
+<figcaption><a href="https://en.wikipedia.org/wiki/Julia_set#/media/File:JSr07885.gif">Julia set</a></figcaption>
 
 [![](/images/mandelbrot-set-https-en-wikipedia-org-wiki-mandelbrot-set.gif)](/images/mandelbrot-set-https-en-wikipedia-org-wiki-mandelbrot-set.gif)
 
-Mandelbrot set [https://en.wikipedia.org/wiki/Mandelbrot\_set#/media/File:Self-Similarity-Zoom.gif](https://en.wikipedia.org/wiki/Mandelbrot_set#/media/File:Self-Similarity-Zoom.gif)
+<figcaption><a href="https://en.wikipedia.org/wiki/Mandelbrot_set#/media/File:Self-Similarity-Zoom.gif">Mandelbrot set</a></figcaption>
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/WNWXRbR?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="WNWXRbR" data-user="kynd" data-preview="true"></p></div>
 
 ## Pattern Recognition and Compression
 ## パターン認識と圧縮
@@ -194,7 +200,7 @@ It works the other way around, too. When information is missing, like in a blurr
 
 [Resolution 解像度](/sketching-with-math-and-quasi-physics/resolution)
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/PoLZywR?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="PoLZywR" data-user="kynd" data-preview="true"></p></div>
 
 Does this sounds like data compression? Yes, many technologies like ZIP, JPEG, or MP3 borrow the basically same trick. They hunt for repeated structure in data, toss the redundant bits, and keep a smaller blueprint. Decompressors rebuild the original (or close enough) by reading that blueprint plus a few rules, just like our brain filling in a pixelated image.
 
@@ -223,6 +229,6 @@ At a meta level, patterns what let us make sense of the world. They are so cruci
 
 メタレベルで見ると、パターンは私たちが世界を理解するための手段です。情報を把握し整理する上で、パターンは不可欠な存在です。しかし同時に、パターンへの依存が強すぎると、重要な細部を見落とし、ステレオタイプや性急な判断に陥りやすいことにも注意が必要です。時には、慣れ親しんだパターンから意識的に離れることも大切です。
 
-A fun and useful practice is to jump between levels. Spotting big patterns while appreciating the subtle differences, nuances, and noise without falling into excessive generalizations. Master that dance and you're using your built‑in compressor to its fullest, while staying aware of both its strengths and its traps. Yes I'm taking about both life and art.
+A fun and useful practice is to jump between levels. Spotting big patterns while appreciating the subtle differences, nuances, and noise without falling into excessive generalizations. Master that move and you're using your built‑in compressor to its fullest, while staying aware of both its strengths and its traps. Yes I'm taking about both life and art.
 
-異なるレベル間を行き来することは、楽しく実り多い実践となります。過度な一般化を避けながら、大きなパターンを見出し、同時に微妙な違いやニュアンス、ノイズを楽しむ。このダンスを習得できれば、人間の持つ圧縮機能をその強みと弱点を意識しながら、最大限に活用できます。これは人生にも物作りの技にも通じます。
+異なるレベル間を行き来することは、楽しく実り多い実践となります。過度な一般化を避けながら、大きなパターンを見出し、同時に微妙な違いやニュアンス、ノイズを楽しむ。この動きを習得できれば、人間の持つ圧縮機能をその強みと弱点を意識しながら、最大限に活用できます。これは人生にも物作りの技にも通じます。

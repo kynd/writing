@@ -10,17 +10,23 @@ Draw a number line and place the number 0, or the origin, in the middle. To the 
 
 [![](/images/vector.png)](/images/vector.png)
 
+<div></div>
+
 Draw another number line vertically, orthogonal to the first one. Either direction is fine, but let's assume that the top is positive and the bottom is negative. With two real numbers, a point on a plane can be represented.
 
 最初の数直線に直交するように、縦の数直線をもう一本引きます。向きはどちらでも良いのですが、上がプラス、下がマイナスとしましょう。実数が2つあれば平面上の点を表すことができます。
 
-[![](/images/vector-1.png)](/images/vector-1.png)
+[![](/images/vector-1.png "75")](/images/vector-1.png)
+
+<div></div>
 
 By adding another line perpendicular to the first two number lines, we can now represent a point in three dimensions using three real numbers.
 
 2本の数直線に直交する垂直線をもう一本引きます。実数が3つで3次元上の点が表せるようになりました。
 
-[![](/images/vector-2.png)](/images/vector-2.png)
+[![](/images/vector-2.png "75")](/images/vector-2.png)
+
+<div></div>
 
 A vector is a tuple of several numbers put together like these, and each number in a vector is called a component.
 
@@ -34,7 +40,7 @@ Vectors don’t always have to represent positions in space. For example, the RG
 
 ベクトルが表すものは空間上の位置だけではありません。例えば色のRGBやHSBの値も3次元のベクトルだと考えることができます。逆にどんなものでも複数の数の組からなるデータであれば空間に対応させる、またはある種の空間を考えることができて、色を空間にマップしたものは色空間と呼ばれます。色と色の間の距離や向きを考えることもできます。
 
-[https://s3-us-west-2.amazonaws.com/secure.notion-static.com/910c4dbd-3b8a-445f-9713-6c2c96708329/rgb2hsv.mov](Vector%20%E3%83%99%E3%82%AF%E3%83%88%E3%83%AB/rgb2hsv.mov)
+<div class="local-video-wrap"><video controls><source src="/videos/rgb2hsv.mov" type="video/mp4"><source src="/videos/rgb2hsv.mov" type="video/quicktime"></video></div>
 
 **RGB 2 HSV conversion with grid**  
 VerbaGleb, CC BY-SA 4.0 [https://creativecommons.org/licenses/by-sa/4.0](https://creativecommons.org/licenses/by-sa/4.0), via Wikimedia Commons
@@ -46,9 +52,9 @@ A vector is often described as a quantity with direction and magnitude as well. 
 
 ベクトルは向きと大きさをもった量と説明されることもあります。ベクトルを矢印のイメージで考えて、矢印の長さが大きさ、各成分は矢印をそれぞれの軸に投影したものになります。速度や力などを考えると、このイメージが理解しやすくなります。下のデモでキャンバスをランダムにクリックしてみてください。
 
-[![](/images/vector-3.png)](/images/vector-3.png)
+[![](/images/vector-3.png "50")](/images/vector-3.png)
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/ExLpBXd?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="ExLpBXd" data-user="kynd" data-preview="true"></p></div>
 
 (I[n Euclidean space](/sketching-with-math-and-quasi-physics/distance/various-distances)) The magnitude of a vector is the square root of each component squared and added together. This is an extension of the Pythagorean theorem to multiple dimensions. This can be thought as the length of the diagonal of a rectangle, a cuboid, or an n-dimensional cuboid with each component as a side.
 
@@ -145,12 +151,14 @@ c-16-25.333-24-45-24-59z"></path></svg></span></span></span></span></span></span
 -1.333 1.333-3.167 3.5-5.5 6.5s-4 4.833-5 5.5c-1 .667-2.5 1.333-4.5 2s-4.333 1
 -7 1c-4.667 0-9.167-1.833-13.5-5.5S337 184 337 178c0-12.667 15.667-32.333 47-59
 H213l-171-1c-8.667-6-13-12.333-13-19 0-4.667 4.333-11.333 13-20h359
+
 c-16-25.333-24-45-24-59z"></path></svg></span></span></span></span></span></span></span></span></span></span> 、それから <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>b</mi><mo>⃗</mo></mover></mrow><annotation encoding="application/x-tex">\vec{b}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9774em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9774em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal">b</span></span><span style="top:-3.2634em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.2355em;"><span class="overlay" style="height:0.714em;width:0.471em;"><svg xmlns="http://www.w3.org/2000/svg" width="0.471em" height="0.714em" style="width:0.471em" viewBox="0 0 471 714" preserveAspectRatio="xMinYMin"><path d="M377 20c0-5.333 1.833-10 5.5-14S391 0 397 0c4.667 0 8.667 1.667 12 5
 3.333 2.667 6.667 9 10 19 6.667 24.667 20.333 43.667 41 57 7.333 4.667 11
 10.667 11 18 0 6-1 10-3 12s-6.667 5-14 9c-28.667 14.667-53.667 35.667-75 63
 -1.333 1.333-3.167 3.5-5.5 6.5s-4 4.833-5 5.5c-1 .667-2.5 1.333-4.5 2s-4.333 1
 -7 1c-4.667 0-9.167-1.833-13.5-5.5S337 184 337 178c0-12.667 15.667-32.333 47-59
 H213l-171-1c-8.667-6-13-12.333-13-19 0-4.667 4.333-11.333 13-20h359
+
 c-16-25.333-24-45-24-59z"></path></svg></span></span></span></span></span></span></span></span></span></span>に沿って進むと、出発点からその点までのベクトルが <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>a</mi><mo>⃗</mo></mover><mo>+</mo><mover accent="true"><mi>b</mi><mo>⃗</mo></mover></mrow><annotation encoding="application/x-tex">\vec{a} + \vec{b}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7973em;vertical-align:-0.0833em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.714em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal">a</span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.2355em;"><span class="overlay" style="height:0.714em;width:0.471em;"><svg xmlns="http://www.w3.org/2000/svg" width="0.471em" height="0.714em" style="width:0.471em" viewBox="0 0 471 714" preserveAspectRatio="xMinYMin"><path d="M377 20c0-5.333 1.833-10 5.5-14S391 0 397 0c4.667 0 8.667 1.667 12 5
 3.333 2.667 6.667 9 10 19 6.667 24.667 20.333 43.667 41 57 7.333 4.667 11
 10.667 11 18 0 6-1 10-3 12s-6.667 5-14 9c-28.667 14.667-53.667 35.667-75 63
@@ -163,9 +171,10 @@ c-16-25.333-24-45-24-59z"></path></svg></span></span></span></span></span></span
 -1.333 1.333-3.167 3.5-5.5 6.5s-4 4.833-5 5.5c-1 .667-2.5 1.333-4.5 2s-4.333 1
 -7 1c-4.667 0-9.167-1.833-13.5-5.5S337 184 337 178c0-12.667 15.667-32.333 47-59
 H213l-171-1c-8.667-6-13-12.333-13-19 0-4.667 4.333-11.333 13-20h359
+
 c-16-25.333-24-45-24-59z"></path></svg></span></span></span></span></span></span></span></span></span></span> になります。
 
-[![](/images/vector-5.png)](/images/vector-5.png)
+[![](/images/vector-5.png "50")](/images/vector-5.png)
 
 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>a</mi><mo>⃗</mo></mover><mo>=</mo><mo stretchy="false">(</mo><mn>3</mn><mo separator="true">,</mo><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\vec{a} = (3, -1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.714em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.714em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal">a</span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.2355em;"><span class="overlay" style="height:0.714em;width:0.471em;"><svg xmlns="http://www.w3.org/2000/svg" width="0.471em" height="0.714em" style="width:0.471em" viewBox="0 0 471 714" preserveAspectRatio="xMinYMin"><path d="M377 20c0-5.333 1.833-10 5.5-14S391 0 397 0c4.667 0 8.667 1.667 12 5
 3.333 2.667 6.667 9 10 19 6.667 24.667 20.333 43.667 41 57 7.333 4.667 11
@@ -201,7 +210,7 @@ A vectors can be also multiplied by a scalar. A scalar is a quantity that has no
 
 ベクトルはスカラー倍にすることもできます。スカラーというのは向きを持たない量のことで、つまりただの数です。ベクトルの長さを2倍にしたり半分にしたり、好きな数を掛けることができます。計算としては全ての成分に同じ数を掛けるだけです。
 
-[![](/images/vector-6.png)](/images/vector-6.png)
+[![](/images/vector-6.png "50")](/images/vector-6.png)
 
 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>a</mi><mo>⃗</mo></mover><mo>=</mo><mo stretchy="false">(</mo><mn>3</mn><mo separator="true">,</mo><mn>2</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\vec{a} = (3, 2)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.714em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.714em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal">a</span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.2355em;"><span class="overlay" style="height:0.714em;width:0.471em;"><svg xmlns="http://www.w3.org/2000/svg" width="0.471em" height="0.714em" style="width:0.471em" viewBox="0 0 471 714" preserveAspectRatio="xMinYMin"><path d="M377 20c0-5.333 1.833-10 5.5-14S391 0 397 0c4.667 0 8.667 1.667 12 5
 3.333 2.667 6.667 9 10 19 6.667 24.667 20.333 43.667 41 57 7.333 4.667 11

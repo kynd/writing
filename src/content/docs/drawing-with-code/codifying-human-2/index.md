@@ -3,6 +3,8 @@ title: "Codifying human (2)"
 ---
 [![](/images/codifying-human-2.png)](/images/codifying-human-2.png)
 
+<div></div>
+
 AI全盛の昨今(2022年現在）、先にアルゴリズムを考えるのではなく、実際に描いた線をデータにして分析する手法にも興味がある。上の画像はGoogleの[Quick, Draw!](https://quickdraw.withgoogle.com/)。色々な人がブラウザ上で落書きしたデータが、[オープンソースで1500万人分以上集まっている](https://quickdraw.withgoogle.com/data)。
 
 In the age of AI(as of 2022), I'm also interested in using datasets of actual hand-drawings instead of coming up with algorithms from scratch. The image above is from Google's "[Quick, Draw!](https://quickdraw.withgoogle.com/)" where people can draw various things on their browser. The data collected from over [15 million people has been made open source.](https://quickdraw.withgoogle.com/data)
@@ -14,6 +16,8 @@ This is an experiment that continues drawing indefinitely by connecting similar 
 [![](/images/codifying-human-2.gif)](/images/codifying-human-2.gif)
 
 [![](/images/fractal-of-doodling.png)](/images/fractal-of-doodling.png)
+
+<div></div>
 
 落書きのフラクタル。Fractal of doodling
 

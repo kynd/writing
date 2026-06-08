@@ -1,0 +1,221 @@
+---
+import { getCollection } from 'astro:content';
+
+const docs = await getCollection('docs');
+
+const pages = docs
+  .map((doc) => {
+    const slug = doc.slug.replace(/\/index$/, '');
+    const title = doc.data.title || slug;
+    return { slug, title };
+  })
+  .sort((a, b) => a.slug.localeCompare(b.slug));
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proofreading Checklist</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Sora', sans-serif;
+      font-size: 14px;
+      background: #fff;
+      color: #343434;
+      padding: 2rem;
+    }
+    h1 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    .meta {
+      font-size: 0.8rem;
+      color: #777;
+      margin-bottom: 2rem;
+    }
+    .meta button {
+      font-size: 0.75rem;
+      color: #777;
+      background: none;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      padding: 2px 8px;
+      cursor: pointer;
+      margin-left: 1rem;
+    }
+    .meta button:hover { border-color: #343434; color: #343434; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th {
+      text-align: left;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: #777;
+      border-bottom: 1px solid #e0e0e0;
+      padding: 0.4rem 0.5rem;
+    }
+    tr { border-bottom: 1px solid #f0f0f0; }
+    tr.done td { opacity: 0.45; }
+    td {
+      padding: 0.45rem 0.5rem;
+      vertical-align: middle;
+    }
+    td:first-child { width: 2rem; text-align: center; }
+    td:last-child { width: 38%; }
+    input[type="checkbox"] {
+      width: 15px;
+      height: 15px;
+      cursor: pointer;
+      accent-color: #343434;
+    }
+    a {
+      color: #343434;
+      text-decoration: none;
+      font-size: 0.85rem;
+    }
+    a:hover { text-decoration: underline; }
+    .slug {
+      font-size: 0.72rem;
+      color: #aaa;
+      display: block;
+    }
+    input[type="text"] {
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid #e0e0e0;
+      outline: none;
+      font-family: inherit;
+      font-size: 0.8rem;
+      color: #343434;
+      padding: 2px 0;
+      background: transparent;
+    }
+    input[type="text"]:focus { border-bottom-color: #343434; }
+    input[type="text"]::placeholder { color: #ccc; }
+    .progress {
+      font-size: 0.8rem;
+      color: #777;
+      margin-bottom: 1.5rem;
+    }
+    .progress-bar {
+      height: 4px;
+      background: #f0f0f0;
+      border-radius: 2px;
+      margin-bottom: 1.5rem;
+      overflow: hidden;
+    }
+    .progress-fill {
+      height: 100%;
+      background: #343434;
+      border-radius: 2px;
+      transition: width 0.3s;
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <h1>Proofreading Checklist</h1>
+  <p class="meta">
+    <span id="progress-text"></span>
+    <button id="clear-btn">Clear all</button>
+  </p>
+  <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
+
+  <table>
+    <thead>
+      <tr>
+        <th></th>
+        <th>Page</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody id="page-list">
+      {pages.map((page) => (
+        <tr data-slug={page.slug}>
+          <td><input type="checkbox" data-key={`check:${page.slug}`} /></td>
+          <td>
+            <a href={`/writing/${page.slug}`} target="_blank">{page.title}</a>
+            <span class="slug">{page.slug}</span>
+          </td>
+          <td>
+            <input
+              type="text"
+              placeholder="notes…"
+              maxlength="120"
+              data-key={`note:${page.slug}`}
+            />
+          </td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+
+  <script is:inline>
+    const STORAGE_KEY = 'proofread-state';
+
+    function load() {
+      try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}'); }
+      catch { return {}; }
+    }
+
+    function save(state) {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+    }
+
+    function updateProgress() {
+      const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+      const done = [...checkboxes].filter(c => c.checked).length;
+      const total = checkboxes.length;
+      document.getElementById('progress-text').textContent =
+        `${done} / ${total} done`;
+      document.getElementById('progress-fill').style.width =
+        total ? `${(done / total) * 100}%` : '0%';
+    }
+
+    function init() {
+      const state = load();
+
+      document.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+        const key = cb.dataset.key;
+        cb.checked = !!state[key];
+        const row = cb.closest('tr');
+        if (cb.checked) row.classList.add('done');
+
+        cb.addEventListener('change', () => {
+          state[key] = cb.checked;
+          save(state);
+          row.classList.toggle('done', cb.checked);
+          updateProgress();
+        });
+      });
+
+      document.querySelectorAll('input[type="text"]').forEach(input => {
+        const key = input.dataset.key;
+        input.value = state[key] || '';
+
+        input.addEventListener('input', () => {
+          state[key] = input.value;
+          save(state);
+        });
+      });
+
+      document.getElementById('clear-btn').addEventListener('click', () => {
+        if (!confirm('Clear all checks and notes?')) return;
+        localStorage.removeItem(STORAGE_KEY);
+        location.reload();
+      });
+
+      updateProgress();
+    }
+
+    init();
+  </script>
+</body>
+</html>

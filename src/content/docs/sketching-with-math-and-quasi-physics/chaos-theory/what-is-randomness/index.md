@@ -44,7 +44,7 @@ Plugging in actual values, if <span class="katex"><span class="katex-mathml"><ma
 > 
 > このページのグラフは全てPythonで作成しました。コードは全て[このGoogle Colab上で確認](https://colab.research.google.com/drive/1ezMayFgLR8mEd-1kvJ-NT9m98BTN_EOJ#scrollTo=yWxYgY8kRdcI)、実行できます。
 
-Building upon this, Shannon introduced information entropy <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi></mrow><annotation encoding="application/x-tex">H</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.08125em;">H</span></span></span></span> as a measure of how unpredictable (random) the system as a whole is, which is the expected value of these information quantities.
+Building upon this, Shannon introduced **information entropy** <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi></mrow><annotation encoding="application/x-tex">H</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.08125em;">H</span></span></span></span> as a measure of how unpredictable (random) the system as a whole is, which is the expected value of these information quantities.
 
 さらに、システム全体としてどれくらい予測不能（ランダム）かを測る尺度として、シャノンはこれらの情報量の期待値である情報エントロピー <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi></mrow><annotation encoding="application/x-tex">H</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.08125em;">H</span></span></span></span>を導入しました。
 
@@ -127,12 +127,15 @@ At <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org
 # KSエントロピー
 
 The entropy <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">H(r)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.08125em;">H</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mclose">)</span></span></span></span> we calculated so far measured the complexity of the static distribution, i.e., where in the state space the trajectory stays and how frequently it visits each location for a given parameter <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi></mrow><annotation encoding="application/x-tex">r</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span></span></span></span>. In other words, it's like looking at how much complex structure (pattern) is recorded in a single long-exposure photograph.  
+
 ここまでの計算で求めたエントロピー <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">H(r)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.08125em;">H</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mclose">)</span></span></span></span> は、あるパラメータ <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi></mrow><annotation encoding="application/x-tex">r</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span></span></span></span> において軌道がどの場所に、どのくらいの頻度で滞在するかという静的な分布の複雑さを測ったものでした。いわば、長時間露光で撮った1枚の写真の中に、どれだけ複雑な模様（構造）が記録されているかを見ていると言えます。
 
-To understand the dynamics of chaos, there is another important concept: KS entropy (Kolmogorov-Sinai entropy).  
+To understand the dynamics of chaos, there is another important concept: **KS entropy** (Kolmogorov-Sinai entropy).  
+
 カオスのダイナミクスを理解するにはもう1つ、KSエントロピー（コルモゴロフ・シナイ・エントロピー）という重要な概念があります。
 
 KS entropy defines the rate of information generation—how much new information emerges with each step forward. This concept is closely related to the Lyapunov exponent, which we'll discuss later in detail, but intuitively, think of it this way:  
+
 KSエントロピーは、1ステップ進むごとに、どれだけ新しい情報が湧き出しているかという情報の生成速度を定義します。この概念は後で触れるリアプノフ指数と密接に関連しているので詳細はそこでまた触れますが、直感的には下のように考えてみてください。
 
 1.  Divide the state space where the chaotic trajectory exists into small grids (bins).
@@ -145,7 +148,7 @@ KSエントロピーは、1ステップ進むごとに、どれだけ新しい�
 
 2.  軌道がどの箱を通ったかを記録します。箱に名前をつけると、Aの箱、Bの箱、Cの箱……という文字の並びとして表現できる。
 
-3.  A → B → Cと進んできたとき、次にどの箱に入るかを予測する。秩序的な系で次が100%予測できるなら、情報の増加は0ビット。カオスな系**で**次が予測できないならそこで情報が生まれている。例えば16通りの箱のどれかに同じ確率で分岐するならステップごとに4ビットの情報が生成されている。
+3.  A → B → Cと進んできたとき、次にどの箱に入るかを予測する。秩序的な系で次が100%予測できるなら、情報の増加は0ビット。カオスな系で次が予測できないならそこで情報が生まれている。例えば16通りの箱のどれかに同じ確率で分岐するならステップごとに4ビットの情報が生成されている。
 
 この1ステップあたりに生成される情報の平均量の極限をとったものがKSエントロピーです。
 
@@ -157,4 +160,3 @@ KS entropy is the limit of the average amount of information generated per step.
 
 [Stretch and Fold 引き伸ばしと折り畳み](/sketching-with-math-and-quasi-physics/chaos-theory/stretch-and-fold)
 
-<table class="matrix-table"><tbody><tr><td>FAQs Mini</td><td></td></tr><tr><td>License? Can I use the contents?</td><td>Yes, please! Anything from personal to educational. I'd appreciate if you can let me know where you have used them, but it's not required. Assume CC BY 4.0 unless otherwise noted. Use at your own responsibility. Read more</td></tr><tr><td>ライセンス? コンテンツを他で使っても良い？</td><td>はい、ぜひ。個人使用から教育目的まで、どのような用途でもOKです。使った場所を知せてもらえると嬉しいですが、必須ではありません。特に明記がない限り、CC BY 4.0ライセンスが適用されます。ご利用は自己責任で。詳しく</td></tr><tr><td>How can I follow the updates?</td><td>Follow me on Bluesky, Threads or other one.</td></tr><tr><td>アップデートはどこで確認できますか？</td><td>Bluesky、Threads、その他でフォローしてください。</td></tr><tr><td>Is there an index page?</td><td>Yes, here.</td></tr><tr><td>目次はありますか？</td><td>はい、ここです。</td></tr></tbody></table>

@@ -21,19 +21,19 @@ Boolean operations are a common concept used in various design tools. With SDF, 
 float opUnion( float d1, float d2 ) { return min(d1,d2); }
 ```
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/MWLyxqg?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="MWLyxqg" data-user="kynd" data-preview="true"></p></div>
 
 ```glsl
 float opSubtraction( float d1, float d2 ) { return max(-d1,d2); }
 ```
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/LYqLRYX?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="LYqLRYX" data-user="kynd" data-preview="true"></p></div>
 
 ```glsl
 float opIntersection( float d1, float d2 ) { return max(d1,d2); }
 ```
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/yLZXayX?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="yLZXayX" data-user="kynd" data-preview="true"></p></div>
 
 ## Smooth boolean operations
 ## 滑らかなブール演算
@@ -60,19 +60,19 @@ To understand what these functions do, below is a graph of the `opSmoothUnion` f
 
 これらの関数の働きを理解するために、下の`opSmoothUnion`関数のグラフを見て見ましょう。2つの入力値が`k`単位以上離れている場合、この関数は`min`関数とまったく同じように機能しまが、(`d2 - d1`)が`-k`から`k`の間の場合、形が丸くなります。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/LYqLbvy?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="LYqLbvy" data-user="kynd" data-preview="true"></p></div>
 
 Applying this to two SDFs results in a smooth connection between the two objects.
 
 これを2つのSDFに適用すると、2つの物体が滑らかに繋がります。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/mdvPoyW?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="mdvPoyW" data-user="kynd" data-preview="true"></p></div>
 
 The demo below showcases the three functions: `opSmoothUnion`, `opSmoothSubtraction`, and `opSmoothIntersection`, all together. It is important to note that the results of these three operations are connected using `opUnion`. This way, you can chain multiple operations to sculpt objects freely in the 3D world.
 
 下のデモは、3つの関数`opSmoothUnion`、`opSmoothSubtraction`、`opSmoothIntersection`が動作する様子をまとめて示しています。これらの3つの操作の結果はさらに`opUnion`を使用して合成されていることに注意してください。このように複数の操作を繋げて、3Dの世界で自由に彫刻することができます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/ZEwyLWQ?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="ZEwyLWQ" data-user="kynd" data-preview="true"></p></div>
 
 # Repeating the space
 # 空間を繰り返す
@@ -91,17 +91,17 @@ float SDF(vec3 p) {
 }
 ```
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/JjxydPq?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="JjxydPq" data-user="kynd" data-preview="true"></p></div>
 
 You might have noticed that the ray slows down when passing nearby the shapes. The more complex your design becomes, the more the rays will be affected by the various objects, which may result in visual artifacts. You might need to tweak different parameters, such as thresholds and the number of iterations for ray marching.
 
-形状の近くを通過する際にレイの進みが遅くなることに気付いたでしょうか。構成が複雑になるほど、レイはさまざまな物体によって影響を受けるので、見た目の不具合が起きることあります。レイマーチングの閾値や反復の回数など、様々なパラメータを調整する必要があるかもしれません。
+形状の近くを通過する際にレイの進みが遅くなることに気付いたでしょうか。構成が複雑になるほど、レイはさまざまな物体によって影響を受けるので、見た目の不具合が起きることがあります。レイマーチングの閾値や反復の回数など、様々なパラメータを調整する必要があるかもしれません。
 
 Here is the rendering of the 3x3 grid of the boxes in 3D.
 
 下は、3x3の直方体のグリッドを3Dでレンダリングしたものです。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/wvNejxg?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="wvNejxg" data-user="kynd" data-preview="true"></p></div>
 
 # Distorting the space
 # 空間を曲げる
@@ -110,21 +110,13 @@ You can even distort the space to create various effects. The examples below cre
 
 様々な効果を得るために、空間を歪めることもできます。下の例では、座標にサインカーブを足して波打つ形を作り出しています。このテクニックは物体にディテールを追加できて楽しいのですが、わずかな量で控えめに使いましょう。この操作はSDF全体に影響を与え、表面までの距離の表現が不正確になったり、見た目のバグを引き起こすので注意してください。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/MWLvBRe?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="MWLvBRe" data-user="kynd" data-preview="true"></p></div>
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/wvNqEwV?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="wvNqEwV" data-user="kynd" data-preview="true"></p></div>
 
 # Learn more
 # もっと学ぶ
 
-We have only scratched the surface of 3D rendering with SDF. This is a deep rabbit hole where you can spend an infinite amount of time experimenting and mastering it. It is also very handy for experimenting with various 3D rendering techniques and concepts, such as the following.
+We have only scratched the surface of 3D rendering with SDF. This is a deep rabbit hole where you can spend an infinite amount of time experimenting and mastering it. It is also very handy for experimenting with various 3D rendering techniques and concepts, such as [physically-based rendering](https://codepen.io/kynd/pen/MWLvBRe?editors=0010). To learn more, [Inigo Quilez's](https://iquilezles.org/) website, which I have cited multiple times, is the best and one of the most comprehensive resources for learning SDF-based 3D techniques. Explore the site to discover a wide range of techniques and knowledge beyond what we have covered.
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/MWLvBRe?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
-
-To learn more, [Inigo Quilez's](https://iquilezles.org/) website, which I have cited multiple times, is the best and one of the most comprehensive resources for learning SDF-based 3D techniques. Explore the site to discover a wide range of techniques and knowledge beyond what we have covered.
-
-これはSDFを使った3Dレンダリングのほんのさわりです。これは奥深い分野で、いくらでも時間をかけて実験したり、技術を磨くことができます。また、
-
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/MWLvBRe?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
-
-など、さまざまな3Dレンダリングの技術や概念の実験にも非常に便利です。SDFベースの3D技術についてさらに学ぶためには、ここまで何度も引用した[Inigo Quilez](https://iquilezles.org/)のウェブサイトが最も包括的な資料です。サイトを探索して、ここまででカバーした範囲を超えたさまざまな技術や知識を発見しましょう。
+これはSDFを使った3Dレンダリングのほんのさわりです。これは奥深い分野で、いくらでも時間をかけて実験したり、技術を磨くことができます。また、[物理ベースレンダリング](https://codepen.io/kynd/pen/MWLvBRe?editors=0010)など、さまざまな3Dレンダリングの技術や概念の実験にも非常に便利です。SDFベースの3D技術についてさらに学ぶためには、ここまで何度も引用した[Inigo Quilez](https://iquilezles.org/)のウェブサイトが最も包括的な資料です。サイトを探索して、ここまででカバーした範囲を超えたさまざまな技術や知識を発見しましょう。

@@ -24,11 +24,15 @@ They are closely related to teach other and defined by the behaviors of complex 
 
 これら2つの集合は密接に関連しており、複素関数の無限反復による振る舞いで定義されます。しかし、数学は一旦脇に置いて、これらの集合がどれだけズームインしても、自分自身に似た形を持つ無限のディティールを持っていることを観察しましょう。
 
-[![](/images/julia-set-https-en-wikipedia-org-wiki-julia-set-media-fil-1.gif)](/images/julia-set-https-en-wikipedia-org-wiki-julia-set-media-fil-1.gif)
+[![](/images/julia-set-https-en-wikipedia-org-wiki-julia-set-media-fil-1.gif "75")](/images/julia-set-https-en-wikipedia-org-wiki-julia-set-media-fil-1.gif)
+
+<div></div>
 
 Julia set [https://en.wikipedia.org/wiki/Julia\_set#/media/File:JSr07885.gif](https://en.wikipedia.org/wiki/Julia_set#/media/File:JSr07885.gif)
 
 [![](/images/mandelbrot-set-https-en-wikipedia-org-wiki-mandelbrot-set-1.gif)](/images/mandelbrot-set-https-en-wikipedia-org-wiki-mandelbrot-set-1.gif)
+
+<div></div>
 
 Mandelbrot set [https://en.wikipedia.org/wiki/Mandelbrot\_set#/media/File:Self-Similarity-Zoom.gif](https://en.wikipedia.org/wiki/Mandelbrot_set#/media/File:Self-Similarity-Zoom.gif)
 
@@ -62,13 +66,13 @@ The demo below renders the Sierpiński Carpet. Can you see how each square repea
 
 以下のデモでは、シェルピンスキーカーペットを描画します。それぞれの正方形が同じ構造を持ちながら再帰的に縮小し続ける様子を確認できるでしょう。現実ではプロセスを無限に繰り返すことは不可能なので、デモは数回のプロセスを繰り返した後、初期状態に戻ります。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/eYXXyJz?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="eYXXyJz" data-user="kynd" data-preview="true"></p></div>
 
 Instead of removing the center piece, we can remove any one piece from each 3x3 grid and repeat that indefinitely. The result is still a fractal shape with the exact same Hausdorff dimension, which we will cover in a section below. The randomness can add an organic feel to it, resembling a natural sponge or a grain texture on a rock.
 
 中心のピースを取り除く代わりに、3x3のグリッドからランダムに1つピースを取り除き、そのプロセスを無限に繰り返すこともできます。結果はまったく同じハウスドルフ次元（これについては後のセクションで説明します）を持つフラクタル形状となります。ランダムにすることで有機的な感じが加わり、天然のスポンジ（海綿）や岩の粒子などのテクスチャに似た表情になりました。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/GReeQwj?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="GReeQwj" data-user="kynd" data-preview="true"></p></div>
 
 # Koch Curve コッホ曲線
 
@@ -92,13 +96,13 @@ The Koch curve is another example of a simple fractal shape that can be drawn by
 
 4.  ステップ2に戻って、今ある線分に全てに対して、同じプロセスを繰り返します。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/abMxXzE?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="abMxXzE" data-user="kynd" data-preview="true"></p></div>
 
 Let’s make a randomized version for the Koch curve too. This starts to look like a coastline.
 
 コッホ曲線もランダムなバージョンを作ってましょう。海岸線のように見えてきました。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/poYBGbN?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="poYBGbN" data-user="kynd" data-preview="true"></p></div>
 
 # Branching Tree 木の枝分かれ
 
@@ -127,7 +131,7 @@ By changing parameters such as numbers, angles, and lengths of branches, we can 
 > Mathematically speaking, a fractal must have infinite details. But it doesn't matter much as we are more interested in using the concept to sketch something interesting.  
 > 数学的に言うとフラクタルには無限の詳細が存在する必要があります。しかし、概念を使って何か面白いものをスケッチする目的からすると、厳密さはあまり重要ではありません。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/VwNmNmw?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="VwNmNmw" data-user="kynd" data-preview="true"></p></div>
 
 If you're interested, check out [L-system](https://en.wikipedia.org/wiki/L-system#) (Lindenmayer system). An L-system is a string-based system often used to create tree-like structures with a set of rules such as 'start from A', 'replace A with AB', and 'replace B with A'. You can think of it as a fractal defined through string processing. This algorithm is frequently implemented in 3D modeling programs.
 
@@ -145,7 +149,7 @@ This section is a slight detour, as I've never used this concept in practical ap
 
 The Hausdorff dimension is a measure that captures an aspect of fractal shapes, abstracting or expanding the concept of dimensions with which we are familiar (like 2D, 3D). Among the different meanings and characteristics “dimensions” have, it specifically focuses on how the size of a shape changes with scale.
 
-ハウスドルフ次元は、フラクタルの持つ性質のある一面を図るための値で、お馴染み次元の概念（2D、3Dなど）を抽象化または拡張したものです。 「次元」が持つ様々な意味や特性の中でも、特に形状の大きさが拡大、縮小にによってどう変化するかに焦点を当てています。
+ハウスドルフ次元は、フラクタルの持つ性質のある一面を図るための値で、お馴染み次元の概念（2D、3Dなど）を抽象化または拡張したものです。 「次元」が持つ様々な意味や特性の中でも、特に形状の大きさが拡大、縮小によってどう変化するかに焦点を当てています。
 
 Imagine a square, cube, or any equivalent in a dimensional world. If you scale the length of sides by <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span>, the size of the object, i.e., the area in 2D, the volume in 3D, becomes <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>n</mi><mtext>the&nbsp;number&nbsp;of&nbsp;dimensions</mtext></msup></mrow><annotation encoding="application/x-tex">n^{\text{the number of dimensions}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8491em;"></span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8491em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord text mtight"><span class="mord mtight">the&nbsp;number&nbsp;of&nbsp;dimensions</span></span></span></span></span></span></span></span></span></span></span></span></span>. For example, if you double the sides of a cube, the volume will increase by <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mn>3</mn></msup><mo>=</mo><mn>8.</mn></mrow><annotation encoding="application/x-tex">2^3=8.</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">8.</span></span></span></span> This rule holds for any other shapes. But that mathematically true fractals with infinite steps of self-replications don't follow this rule.
 
@@ -179,11 +183,13 @@ In the examples of the Sierpiński carpet or Koch curve, we used discrete units 
 
 [![](/images/fractal.jpg)](/images/fractal.jpg)
 
+<div></div>
+
 Take a look at the demo below. The curve at the top is the sum of the three other curves below it. We start with a large wavy shape, then create a scaled-down version (or increased frequency) of the same shape and add it to the original wave, then repeat.
 
 下のデモをご覧ください。一番上に上の曲線は、その下にある3つの曲線を足し合わせたものです。大きな波形から始めて、同じ形状を縮小したもの（または周波数を増やしたもの）を作り、それを元の波に加え、それを繰り返します。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/jOREdoX?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="jOREdoX" data-user="kynd" data-preview="true"></p></div>
 
 These repetitions are called octaves, analogous to musical octaves where the frequency doubles per octave. At the top of the code, three variables define the number of octaves and how the amplitude and frequency change per octave.
 
@@ -203,7 +209,7 @@ The demo below creates 2D fractal noise with a GLSL shader. The left side shows 
 
 下のデモはGLSLシェーダーを用いて2Dのフラクタルノイズを生成します。左側には値を明るさとして直に表示し、右側では値を高さと解釈して、シンプルなディフューズライティングを用いて地形をレンダリングします。 GLSLでのノイズ関数の実装については、[Book of Shadesのノイズのページ](https://thebookofshaders.com/11/)を参照してください。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/poBWReK?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="poBWReK" data-user="kynd" data-preview="true"></p></div>
 
 <div class="instagram-wrap"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/B-kjiqSnbnt/" data-instgrm-version="14" style="width:100%;max-width:540px;margin:0;border:none;border-radius:4px;padding:0;"></blockquote></div>
 
@@ -244,10 +250,10 @@ The demo below essentially runs this process for every pixel on the canvas. Beca
 
 下のデモは実質、キャンバス上のすべてのピクセルでこのプロセスを実行します。現実には無限にステップを繰り返すことはできないので、近似値として適当な閾値 `if(length(z) > 2.0) break;` を使います。このコードは、収束の速さを測定するために、最大100回までステップを繰り返します。100回の繰り返し後も閾値を超えない場合は発散しない可能性のでピクセルを白く塗ります。閾値を超える場合にはその速さに応じて、ピクセルを暗くしていきます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/YzMNqzp?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="YzMNqzp" data-user="kynd" data-preview="true"></p></div>
 
 If you see a formula that is hard to grasp intuitively, it is a great idea to visualize it with code. Rather than applying a threshold, the demo below renders the value of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi></mrow><annotation encoding="application/x-tex">c</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">c</span></span></span></span> by mapping <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">x</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi></mrow><annotation encoding="application/x-tex">y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span></span></span></span> to the red and green channels. Can you see that it gains more fidelity and detail around the edge as the number of iterations increases? What other observations can you make from this visualization? Can you think of other ways to further investigate the Mandelbrot set?
 
 式が直感的に理解しにくい場合にはコードで視覚化してみましょう。下のデモでは閾値を適用する代わりに<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi></mrow><annotation encoding="application/x-tex">c</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">c</span></span></span></span>の値を、<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">x</span></span></span></span>と<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi></mrow><annotation encoding="application/x-tex">y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span></span></span></span>をRとG チャンネルにマッピングすることで直接レンダリングします。反復回数が増えるにつれて、形のエッジがクッキリと詳細になっていく様子が見えるでしょうか。他には何が読み取れるでしょう。マンデルブロ集合を調べる他の方法を考えてみましょう。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/WNWXRbR?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="WNWXRbR" data-user="kynd" data-preview="true"></p></div>

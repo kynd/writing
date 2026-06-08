@@ -7,7 +7,7 @@ Originally written in English in 2020.
 
 > 
 > 
-> **日本語は全てAIによる翻訳です。意味が間違っていたところを数箇所直した以外は出力をそのまま使いました。**
+> 日本語は全てAIによる翻訳です。意味が間違っていたところを数箇所直した以外は出力をそのまま使いました。
 
 This text was originally a script for a presentation with many pictures and videos of the actual projects. Since most of them were confidential, I replaced the examples with already-publicized materials and personal projects. Especially I cited multiple examples of my projects from the presentation by my teammates at the Forward Festival 2021.
 
@@ -129,7 +129,7 @@ Physical presence is one of the hard things to evaluate without actually mocking
 
 The last two points are somewhat unique to coding.
 
-**I’m lazy.**
+I’m lazy.
 
 I’m always looking for easier and faster ways to do more with less.
 
@@ -139,7 +139,7 @@ With algorithms, It is much easier to create variations and rationalize them tha
 
 最後の2点は、ややコーディングに特化したものです。
 
-**私は怠け者です。**
+私は怠け者です。
 
 私はいつも、より少ない労力でより多くのことを行うための、より簡単で迅速な方法を探しているのです。
 

@@ -11,7 +11,9 @@ These tools usually adopt parametric approaches. In the parametric approach, a s
 
 [![](/images/parametric-approaches.png)](/images/parametric-approaches.png)
 
-The most commonly used parametric curve that you probably know is the Bézier curve. But before jumping into it, let's go through several examples to get used to the idea of the parametric approach.
+<div></div>
+
+The most commonly used **parametric curve** that you probably know is the Bézier curve. But before jumping into it, let's go through several examples to get used to the idea of the parametric approach.
 
 ベジエ曲線は最も一般的に用いられるパラメトリックな曲線です。おそらくこれを読んでいる方もご存知でしょう。しかしベジェ曲線に踏み込む前に、いくつかの例を見てパラメトリックなアプローチに慣れていきましょう。
 
@@ -29,7 +31,7 @@ Take a look at the demo below.
 
 デモを見てみましょう。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/yLWpRrj?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="yLWpRrj" data-user="kynd" data-preview="true"></p></div>
 
 This is a [linear interpolation](/sketching-with-math-and-quasi-physics/interpolation-and-animation) between two-dimensional points.
 
@@ -64,7 +66,7 @@ Here, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.
 
 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi></mrow><annotation encoding="application/x-tex">t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6151em;"></span><span class="mord mathnormal">t</span></span></span></span> の範囲は <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0</span></span></span></span> から <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>π</mi></mrow><annotation encoding="application/x-tex">2 \pi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2</span><span class="mord mathnormal" style="margin-right:0.03588em;">π</span></span></span></span> です。<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi></mrow><annotation encoding="application/x-tex">t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6151em;"></span><span class="mord mathnormal">t</span></span></span></span> が変化するにつれて、<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">x(t)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">x</span><span class="mopen">(</span><span class="mord mathnormal">t</span><span class="mclose">)</span></span></span></span> と <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">y(t)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mopen">(</span><span class="mord mathnormal">t</span><span class="mclose">)</span></span></span></span> の値が円上の点を描き出します。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/qBGjrBg?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="qBGjrBg" data-user="kynd" data-preview="true"></p></div>
 
 # Lissajous Curve
 # リサージュ曲線
@@ -84,9 +86,9 @@ Compare the demo below with the circle demo above. You can randomize the values 
 
 下のデモを、上の円のデモと比べてみましょう。キャンバスをクリックすることで `A`、`B`、`a`、`b`、 `delta` の値をランダムに選び、異なるリサージュ曲線を描くことができます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/NWVXeRm?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="NWVXeRm" data-user="kynd" data-preview="true"></p></div>
 
-[![](/images/https-en-wikipedia-org-wiki-lissajous-curve-media-file-li.gif)](/images/https-en-wikipedia-org-wiki-lissajous-curve-media-file-li.gif)
+[![](/images/https-en-wikipedia-org-wiki-lissajous-curve-media-file-li.gif "75")](/images/https-en-wikipedia-org-wiki-lissajous-curve-media-file-li.gif)
 
 [https://en.wikipedia.org/wiki/Lissajous\_curve#/media/File:Lissajous\_animation.gif](https://en.wikipedia.org/wiki/Lissajous_curve#/media/File:Lissajous_animation.gif) [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0)
 
@@ -97,7 +99,7 @@ Compare the demo below with the circle demo above. You can randomize the values 
 
 アニメーションでよく用いられる[イージングカーブ](/sketching-with-math-and-quasi-physics/interpolation-and-animation)も、パラメトリックな曲線の良い例です。アニメーションの場合、パラメータ <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi></mrow><annotation encoding="application/x-tex">t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6151em;"></span><span class="mord mathnormal">t</span></span></span></span> は通常、空間座標ではなく時間に割り当てられますが、グラフに <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi></mrow><annotation encoding="application/x-tex">t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6151em;"></span><span class="mord mathnormal">t</span></span></span></span> と戻り値をプロットすると、これらの関数が異なる曲線を生み出すことがはっきりみて取れます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/qmLJeO?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="qmLJeO" data-user="kynd" data-preview="true"></p></div>
 
 If <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">f(t)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathnormal">t</span><span class="mclose">)</span></span></span></span> is an easing function, strictly speaking, here the curve is defined as a combination of two functions.
 

@@ -13,7 +13,7 @@ What we will look at on this page are the numerical and mathematical ways of cre
 
 You can use modulo to create a repeating sequence of numbers. Modulo is basically a mathematical way of saying "count to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span> then go back to one and repeat". Think of a drum pattern in which the kick drum strikes every four beats, or the days of the week that repeat every seven days. Repeating numbers can represent different things.
 
-繰り返しの数列を作るにはあなたはモジュロが使えます。モジュロは簡単にいうと「<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span>まで数えたら1に戻り繰り返す」ことを数学的に表す方法と言えます。4拍ごとのキックドラムが鳴るドラムパターンや、曜日が7日ごとに繰り返す様子を思い浮かべてください。繰り返す値はさまざまなものを表現することができます。
+繰り返しの数列を作るにはモジュロが使えます。モジュロは簡単にいうと「<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span>まで数えたら1に戻り繰り返す」ことを数学的に表す方法と言えます。4拍ごとのキックドラムが鳴るドラムパターンや、曜日が7日ごとに繰り返す様子を思い浮かべてください。繰り返す値はさまざまなものを表現することができます。
 
 To calculate a modulo, you can divide a number with another number and take the remainder.
 
@@ -37,11 +37,13 @@ You can also imagine it as a circle like a clock. Instead of a number line exten
 
 [![](/images/repetition.png)](/images/repetition.png)
 
+<div></div>
+
 In Javascript, you can use `%` for modulo. For example, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mspace></mspace><mspace width="0.6667em"></mspace><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">d</mi></mrow><mtext> </mtext><mtext> </mtext><mn>2</mn></mrow><annotation encoding="application/x-tex">4 \mod 2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">4</span><span class="mspace allowbreak"></span><span class="mspace" style="margin-right:0.6667em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord"><span class="mord"><span class="mord mathrm">mod</span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">2</span></span></span></span> can be written as `4 % 2`.
 
 JavaScriptでは、`%`を使用ってモジュロを計算できます。例えば、<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mspace></mspace><mspace width="0.6667em"></mspace><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">d</mi></mrow><mtext> </mtext><mtext> </mtext><mn>2</mn></mrow><annotation encoding="application/x-tex">4 \mod 2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">4</span><span class="mspace allowbreak"></span><span class="mspace" style="margin-right:0.6667em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord"><span class="mord"><span class="mord mathrm">mod</span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">2</span></span></span></span>は`4 % 2`と書けます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/PwwgbQx?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="PwwgbQx" data-user="kynd" data-preview="true"></p></div>
 
 > 
 > 
@@ -53,13 +55,13 @@ The demo below arranges different modulos in order from mod 1, mod 2, to mod 3, 
 
 以下のデモでは、mod 1、mod 2、mod 3などの異なるモジュロを順番に並べて、値が0のセルを黒で塗りつぶされています。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/NWmbeQz?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="NWmbeQz" data-user="kynd" data-preview="true"></p></div>
 
 The demo from the [resolution page](/sketching-with-math-and-quasi-physics/resolution) uses modulo to create repeating drum patterns. Click on the canvas to toggle between different beats.
 
 [解像度のページ](/sketching-with-math-and-quasi-physics/resolution)のデモでは、ドラムパターンの繰り返すためにモジュロを使っています。キャンバスをクリックするとビートを切り替えることができます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/jOJLoRP?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="jOJLoRP" data-user="kynd" data-preview="true"></p></div>
 
 # Repetition of Continuous Numbers 連続する値の繰り返し
 
@@ -79,31 +81,23 @@ or in mathematical notation, you can write this as:
 
 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>−</mo><mo stretchy="false">⌊</mo><mi>x</mi><mo stretchy="false">⌋</mo></mrow><annotation encoding="application/x-tex">x - \lfloor x \rfloor</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">⌊</span><span class="mord mathnormal">x</span><span class="mclose">⌋</span></span></span></span>
 
-With this function, you can obtain a series of repeating numbers between 0 and 1 (0 ≤ x < 1) at any
+With this function, you can obtain a series of repeating numbers between 0 and 1 (0 ≤ x < 1) at any [resolution](https://codepen.io/kynd/pen/zYXwvGv?editors=0010). If you want a different range, you can easily adjust it by multiplying the number to scale, or adding a number to shift. Take a look at the graph below to see what this does.
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/zYXwvGv?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+この関数を使用すると、任意の[解像度](https://codepen.io/kynd/pen/zYXwvGv?editors=0010)で0から1までの（0 ≤ x < 1）の値を繰り返す数列が得られます。異なる範囲の値が必要なら、掛け算を用いて拡大縮小したり、足し算を使って範囲をずらすなど簡単に調整できます。この手法で何ができるか、下のグラフで実際に見てみましょう。
 
-. If you want a different range, you can easily adjust it by multiplying the number to scale, or adding a number to shift. Take a look at the graph below to see what this does.
-
-この関数を使用すると、任意の
-
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/zYXwvGv?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
-
-で0から1までの（0 ≤ x < 1）の値を繰り返す数列が得られます。異なる範囲の値が必要なら、掛け算を用いて拡大縮小したり、足し算を使って範囲をずらすなど簡単に調整できます。この手法で何ができるか、下のグラフで実際に見てみましょう。
-
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/zYXwvGv?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="zYXwvGv" data-user="kynd" data-preview="true"></p></div>
 
 This may not very look interesting by itself, but the point is that you can use these repeating numbers as a basis to create more complex shapes and patterns. For example, you can apply different [easing function](/sketching-with-math-and-quasi-physics/interpolation-and-animation) to deform the shape of the slopes.
 
 これだけだと対して面白くないかもしれませんが、重要なのはこの繰り返しの数が、より複雑な形状やパターンを作る基として使えることです。例えば、様々な[イージング関数](/sketching-with-math-and-quasi-physics/interpolation-and-animation)を用いてスロープの形を変形できます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/poBPjbX?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="poBPjbX" data-user="kynd" data-preview="true"></p></div>
 
 And wrap it around a shape, for example a circle.
 
 これを何かの形、例えば円の周りに巻きつけてみましょう。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/gOyWamK?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="gOyWamK" data-user="kynd" data-preview="true"></p></div>
 
 You can use various functions to create different shapes, or use the data to drive anything, such as the gradient of colors or motion. Below are some additional examples of functions that you can use for deformation.
 
@@ -124,13 +118,13 @@ Another way to create a repeating pattern of continuous numbers is to use the si
 
 [Sine waves and Additive Synthesis サイン波と加算合成](/sketching-with-math-and-quasi-physics/wave/sine-waves-and-additive-synthesis)
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/mwbWwJ?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="mwbWwJ" data-user="kynd" data-preview="true"></p></div>
 
 The example below uses the sine function to draw a 2D pattern. It multiplies two sine waves along the x-axis and y-axis, then applies another sine function to threshold the value. This makes the pattern oscillate between a solid checker pattern and a blurry gradient.
 
 下の例では、サイン関数を用いて2次元のパターンを描いています。x軸とy軸に沿って2つのサイン波を掛け合わせ、その後に別のサイン関数を出力のための閾値として適用します。これによりパターンははっきりとしたチェック模様とぼんやりしたグラデーションの間を行ったり来たりします。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/VwNbvXQ?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="VwNbvXQ" data-user="kynd" data-preview="true"></p></div>
 
 After all, what you get from these methods are just sequences of repeating numbers, and there are infinite possibilities about how to use them. Be creative and explore different ideas.
 

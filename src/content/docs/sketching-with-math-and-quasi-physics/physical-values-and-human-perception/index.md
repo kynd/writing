@@ -7,6 +7,8 @@ In a dark room, lighting a single candle may feel like a drastic change. But in 
 
 [![](/images/physical-values-and-human-perception.png)](/images/physical-values-and-human-perception.png)
 
+<div></div>
+
 There is a theory called "[Weber-Fechner law](https://en.wikipedia.org/wiki/Weber%E2%80%93Fechner_law)" that describes this relationship between the intensity of a physical phenomenon and the perception of that stimulus. Basically, what it says is that the change in the intensity of something as perceived by humans is not directly proportional to the actual change in the intensity of the underlying phenomenon.
 
 「[ウェーバー・フェヒナーの法則](https://en.wikipedia.org/wiki/Weber%E2%80%93Fechner_law)」と呼ばれる、物理現象の強度と、その刺激の知覚との関係を説明する理論があります。この法則は基本的に、人間が知覚するものの強度の変化は、元になる実際の現象の強度の変化と比例しないと述べています。
@@ -53,7 +55,7 @@ The whisper and the speaking voice are too close, and the subway noise is far aw
 
 ささやき声と普通の声が近すぎて、地下鉄の騒音はずっと遠くにあります。これは直感と合いません。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/vYbqxGo?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="vYbqxGo" data-user="kynd" data-preview="true"></p></div>
 
 Decibel (dB) is the most common unit used to measure the loudness of sound, and it is designed with human perception in mind.
 
@@ -79,7 +81,7 @@ Doesn't this graph look more reasonable? The x-axis is <span class="katex"><span
 
 下のグラフはより妥当に見えないでしょうか。X軸は <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mi mathvariant="normal">/</mi><msup><mi>m</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">W/m^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0641em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">W</span><span class="mord">/</span><span class="mord"><span class="mord mathnormal">m</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span> で、Y軸はdBです。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/abXgZjE?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="abXgZjE" data-user="kynd" data-preview="true"></p></div>
 
 Note that it’s not that human perception strictly follows a logarithmic scale. Quantifying human perception is not that simple, and there isn’t a perfect solution. The logarithmic scale is chosen mostly for convenience, because it appears to better represent human intuition and is mathematically simple and manageable. But as long as you keep that in mind, logarithm is a great tool that can be applied to many other things, as we will see in other examples.
 
@@ -139,7 +141,7 @@ It is amazing that human eyes are so adaptive to a vast range of brightness. But
 
 -   晴れた日：<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>10</mn><mn>5</mn></msup></mrow><annotation encoding="application/x-tex">10^5</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">5</span></span></span></span></span></span></span></span></span></span></span> ルクス
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/xxMoqWB?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="xxMoqWB" data-user="kynd" data-preview="true"></p></div>
 
 ## Gamma Correction
 ## ガンマ補正
@@ -172,6 +174,8 @@ Compare two type scale examples below. The left increases the font size by 6 poi
 
 [![](/images/physical-values-and-human-perception-1.png)](/images/physical-values-and-human-perception-1.png)
 
+<div></div>
+
 In real situations, there are other ways besides size to indicate emphasis or hierarchical order, such as weight. The actual range of size can be constrained by the available real estate (e.g., mobile screen vs. magazine layout). And after all, it's up to your choice of style. However, this general principle is worth remembering.
 
 実際のデザインでは、階層的な順序を示したり、強調する方法、はウェイトなどサイズ以外にもありますし、選べるサイズの範囲は、媒体の大きさ（モバイルの画面や雑誌のレイアウトなど）によっても制約されます。最終的にはあなたのスタイルの選択次第でもあります。ですが、この一般原則は覚えておく価値があるでしょう。
@@ -191,13 +195,13 @@ Similarly, the example below illustrates different sizes of boxes defined based 
 
 同様に下の例では、16pxごとにサイズを変えたボックスと、1.2倍の比率を用いた場合を比べています。アプローチによる違いがわかるでしょうか。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/YzBoRqe?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="YzBoRqe" data-user="kynd" data-preview="true"></p></div>
 
 Below is another example comparing 48px increments to a 1.5x ratio.
 
 以下は、48pxづつの場合と1.5倍の場合を比べた例です。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/LYqKXbz?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="LYqKXbz" data-user="kynd" data-preview="true"></p></div>
 
 You can choose an approach based on your purpose. If you prefer organizing your design using a specific size as a unit, the incremental approach can work well. If you want to maintain a consistent perceptual jump between sizes, using ratios might be more suitable. Or, you can combine both approaches by using a ratio and rounding the numbers to fit multiples of a certain unit.
 

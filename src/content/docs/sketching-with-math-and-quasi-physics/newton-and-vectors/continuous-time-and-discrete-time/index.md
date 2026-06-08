@@ -24,14 +24,14 @@ Solving a problem in this way so that the values can be calculated at once is ca
 
 このように値を一度に計算できるように問題を解くことを「解析的に解く」と呼びます。この場合はどの時刻（過去でさえも）のボールの位置でも<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi></mrow><annotation encoding="application/x-tex">t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6151em;"></span><span class="mord mathnormal">t</span></span></span></span>さえ決まれば計算1回で求めることができます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/KKRGGvj?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="KKRGGvj" data-user="kynd" data-preview="true"></p></div>
 
 # Discrete time
 # バラバラな時間
 
 Not all problems can be solved analytically. In fact, if the situation becomes even slightly more complicated, or if uncertainties such as user manipulation or random values are introduced, solving the problem analytically becomes quite difficult or impossible, or even when it's possible, too wasteful.
 
-全ての問題が解析的に解けるとは限りません。実際にはちょっとでも状況が複雑になったり、ユーザの操作やランダムな値など不確定要素が入る解析的に解くのは難しいか、不可能、またはできても無駄が多すぎになります。
+全ての問題が解析的に解けるとは限りません。実際にはちょっとでも状況が複雑になったり、ユーザの操作やランダムな値など不確定要素が入ると解析的に解くのは難しいか、不可能、またはできても無駄が多すぎになります。
 
 Many simulations divide time into small steps and calculate the next state sequentially at each step. For example, a simulation may divide a second into 60 steps. It would have the initial state defined, then calculate the next state after 1/60, then next… This is called “discrete-event simulation”.
 
@@ -47,7 +47,7 @@ On the other hand, this method inevitably has some inaccuracy due to the very fa
 
 一方でこの方法は時間をバラバラに分割している分どうしても誤差が発生します。下の例を見てください。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/XWqxxEd?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="XWqxxEd" data-user="kynd" data-preview="true"></p></div>
 
 # Improved Euler method
 # 修正オイラー方
@@ -61,6 +61,8 @@ In the example above, the error is caused by approximating velocity as a straigh
 上の例の場合、実際には徐々に変化し続ける速度を真っ直ぐな直線として近似してしまうことで誤差が生じています。
 
 [![](/images/continuous-time-and-discrete-time.png)](/images/continuous-time-and-discrete-time.png)
+
+<div></div>
 
 A technique called the Improved Euler method calculates the amount of change(velocity in this example) in the next step ahead of time and averages it with the current amount of change to predict the future. In the image below, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mi>t</mi></msub></mrow><annotation encoding="application/x-tex">v_t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">v</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2806em;"><span style="top:-2.55em;margin-left:-0.0359em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">t</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> is the current velocity and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><annotation encoding="application/x-tex">v_{t+1}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6389em;vertical-align:-0.2083em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">v</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0359em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">t</span><span class="mbin mtight">+</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2083em;"><span></span></span></span></span></span></span></span></span></span> is the velocity of the next step calculated by the Euler method. Averaging these two gives a more accurate prediction.
 
@@ -79,7 +81,7 @@ position.add(p5.Vector.add(velocity, nextVelocity).mult(0.5 * t));
 velocity = nextVelocity;
 ```
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/rNvqQyz?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="rNvqQyz" data-user="kynd" data-preview="true"></p></div>
 
 The improved Euler method is also called the second-order [Runge-Kutta method](https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods). For higher accuracy, the fourth-order Runge-Kutta method (RK4) is often used. The basic idea is the same: it calculates the multiple predictions of the amount of change in future to acquire the (weighted) average of them. The modified Euler method is second-order because it uses the average of two predictions, while the RK4 method is fourth-order because it uses four.
 
@@ -109,7 +111,7 @@ let ellapsedMsec =  window.performance.now() - prevNow;
   ...
 ```
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/qmGOgB?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="qmGOgB" data-user="kynd" data-preview="true"></p></div>
 
 Since this process is essential for games, Unity, for example, has [Time.deltaTime](https://docs.unity3d.com/ScriptReference/Time-deltaTime.html) from the beginning.
 

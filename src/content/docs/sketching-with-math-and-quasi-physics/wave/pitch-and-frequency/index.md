@@ -1,7 +1,7 @@
 ---
 title: "Pitch and Frequency 音高と周波数"
 ---
-Sound is a vibration that travels through a medium such as a solid, liquid, or gas. Higher sound corresponds to higher frequency and lower sound corresponds to lower frequency. Frequency is often measured in hertz (Hz). One hertz means that an event is repeated once per second, or one cycle per second in the case of waves.
+Sound is a vibration that travels through a medium such as a solid, liquid, or gas. Higher sound corresponds to higher **frequency** and lower sound corresponds to lower frequency. Frequency is often measured in hertz (Hz). One hertz means that an event is repeated once per second, or one cycle per second in the case of waves.
 
 音は、固体、液体、気体などの媒体を伝わる振動です。高い音は高い周波数に対応し、低い音は低い周波数に対応します。周波数はヘルツ（Hz）という単位で測られます。1ヘルツは、ある事象が1秒間に1回繰り返されることを意味し、波の場合は1秒間に1回振動することを表します。
 
@@ -13,11 +13,11 @@ A note one octave higher doubles in frequency. If the frequency is tripled and l
 
 1オクターブ上の音は周波数が2倍になります。周波数を3倍にして1オクターブ下げると5度上、もしくは半音で7つ上、つまりAから数えるとEの音、Cから数えるとGの音になります。周波数を5倍にして2オクターブ下げると、3度上、もしくは半音で4つ上、つまりAから数えるとC#、ドから数えるとEの音になります。
 
-The way how overlapping pitches sound is related to the ratio of frequencies, and in general, the simpler the relationship is, the less muddy it sounds (which is not good or bad by itself).
+The way how overlapping **pitches** sound is related to the ratio of frequencies, and in general, the simpler the relationship is, the less muddy it sounds (which is not good or bad by itself).
 
 音程が重なった時の聞こえ方には、周波数の比が関係していて、一般にその関係が単純であればあるほど濁っていないように聞こえます（良し悪しには関係なく）。
 
-[![](/images/pitch-and-frequency.png)](/images/pitch-and-frequency.png)
+[![](/images/pitch-and-frequency.png "50")](/images/pitch-and-frequency.png)
 
 # Just Intonation
 # 純正調
@@ -44,7 +44,7 @@ With the [WebAudio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Aud
 
 [WebAudio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API)を使うとブラウザ上でリアルタイムに波形を作り出して音を鳴らすことができます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/gRBveJ?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="gRBveJ" data-user="kynd" data-preview="true"></p></div>
 
 # Equal Temperament
 # 平均律
@@ -57,7 +57,9 @@ From C (or you can start from any note), 5 degrees up is G, 5 degrees up is D, 5
 
 Cから（どの音からはじめても良いのですが）5度上はG、その5度上はD、さらに5度上はAと上がっていくとぐるっと回って下のCに戻ってくることができます。これは五度圏（サークル・オブ・フィフス）と呼ばる音楽理論の基本的なコンセプトで、例えばコード進行を考えるときにはこの5度の関係が重要になります。またこの円の上連続する音の並びを見ると、一般的な音階に含まれる音を見つけることができます（例えばFからBまでの並びにはハ長調、Cメジャースケールの音が全て含まれています）。
 
-[![](/images/pitch-and-frequency-1.png)](/images/pitch-and-frequency-1.png)
+[![](/images/pitch-and-frequency-1.png "50")](/images/pitch-and-frequency-1.png)
+
+<div></div>
 
 According to the calculation above, the fifth degree is 3x and the octave is 2x, so if you keep multiplying by 3, to the power of 12 (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>3</mn><mn>12</mn></msup></mrow><annotation encoding="application/x-tex">3^{12}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141em;"></span><span class="mord"><span class="mord">3</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">12</span></span></span></span></span></span></span></span></span></span></span></span>), it should coincide with some octave higher (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">2^n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6644em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6644em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span></span></span></span></span></span></span></span>) of the same note somewhere, but there is no integer <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span> that satisfies <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>3</mn><mn>12</mn></msup></mrow><annotation encoding="application/x-tex">3^{12}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141em;"></span><span class="mord"><span class="mord">3</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">12</span></span></span></span></span></span></span></span></span></span></span></span> = <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">{2^n}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6644em;"></span><span class="mord"><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6644em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span></span></span></span></span></span></span></span></span> . Trying to construct a scale using integer ratios will inevitably run into a discrepancy somewhere.
 
@@ -67,6 +69,6 @@ The twelve-tone equal temperament is one octave divided into twelve equal semito
 
 12音平均律は、1オクターブを12個の半音に均等に分けたものです。隣り合う2つの音の周波数比は、2の12乗根（<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mrow><mn>1</mn><mi mathvariant="normal">/</mi><mn>12</mn></mrow></msup><mo>≈</mo><mn>1.059463</mn></mrow><annotation encoding="application/x-tex">2^{1/12} \approx1.059463</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.888em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.888em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1/12</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1.059463</span></span></span></span>）になります。音の間の比はシンプルな値にはなりませんが、その代わりにどの音から始めても全く同じ比率が得られるので、転調したり半音階を多用しても破綻することがありません。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/EXdQEb?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="EXdQEb" data-user="kynd" data-preview="true"></p></div>
 
 [Sound visualization 音の視覚化](/sketching-with-math-and-quasi-physics/wave/sound-visualization)

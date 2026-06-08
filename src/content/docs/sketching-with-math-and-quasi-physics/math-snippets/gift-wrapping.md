@@ -1,7 +1,7 @@
 ---
 title: "Gift Wrapping ギフトラッピング"
 ---
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/QwGbegX?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="QwGbegX" data-user="kynd" data-preview="true"></p></div>
 
 We often want to understand the outside shape of a complex dataset made of scattered points—for example, for collision bounds in games, obstacle simplification in robotics, service-zone design in logistics, and shape extraction in computer vision.
 

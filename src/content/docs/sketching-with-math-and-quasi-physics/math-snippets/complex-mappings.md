@@ -1,7 +1,7 @@
 ---
 title: "Complex Mappings 複素数のマッピング"
 ---
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/yyaqGZQ?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="yyaqGZQ" data-user="kynd" data-preview="true"></p></div>
 
 On the pages below, we saw how multiplication and exponentiation can create interesting motion by adding rotation and scaling.
 

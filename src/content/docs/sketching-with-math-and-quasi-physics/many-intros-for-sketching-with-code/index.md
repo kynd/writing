@@ -1,14 +1,7 @@
 ---
 title: "Many intros for Sketching with Code"
 ---
-## TL;DR:
-
-At the bottom of this page are several introductory articles, or maps of things in my mind, to provide overviews of different topics in [Sketching with Code](/sketching-with-math-and-quasi-physics) from different angles.
-
-このページの最後に、Sketching with Codeの様々なトピックを紹介する心の地図的な記事の目次があります。
-
 ### I've been wanting to write books that are like introductory science texts but not superficial. Books that go beyond pop science explanations but aren't dry and dense like academic texts.
-
 ### ずっと、科学書の入門書のようでいて、表面的でない本を書きたいと思ってきました。イメージ優先のわかりやすさにとどまらず、それでも学術書のように無味乾燥で難解になることもない本です。
 
 Take quantum physics as an example. A pop science book might explain that the world is made of tiny particles, even smaller than atoms, and that these particles are also waves. Very intriguing. But after reading it, you realize that you still don't actually understand how to make sense of wave-particle duality, how it really works, or what it means mathematically. So I turn to a college-level book, thinking, "This will give me the answers." Instead, I find a wall of formalism. Dense derivations, little motivation, and an assumption that I already know what's important. These books explain the details, but they don't help me much, not having a real math or science background.
@@ -19,10 +12,10 @@ Take quantum physics as an example. A pop science book might explain that the wo
 
 [![](/images/my-favorite-introductory-science-book-series-found-in-a-sec.jpg)](/images/my-favorite-introductory-science-book-series-found-in-a-sec.jpg)
 
-My favorite introductory science book series, found in a secondhand bookstore in Nakameguro 中目黒の古本屋で見つけた、お気に入りの科学入門シリーズ
+<figcaption>My favorite introductory science book series, found in a secondhand bookstore in Nakameguro 中目黒の古本屋で見つけた、お気に入りの科学入門シリーズ</figcaption>
 
-## Having said this, I’ve been struggling to write a book or article that’s truly for beginners.
-## とはいえ、本当に初心者向けの本や記事を書くのは簡単ではありません。
+### Having said this, I’ve been struggling to write a book or article that’s truly for beginners.
+### とはいえ、本当に初心者向けの本や記事を書くのは簡単ではありません。
 
   
 Many of my past articles were written for relative beginners, often based on lectures, workshops, or explanatory documents I've shared with colleagues and friends. I’ve been trying to keep them more engaging rather than feel like dry textbooks. But at the same time, they are not really for beginners. Many of them assume a certain level of prior knowledge, since it is a massive effort to build up all the knowledge from scratch. There are already great resources out there. For example, I don’t think I should write yet another book on vector math, and I’m not the best person to do that.
@@ -33,9 +26,8 @@ So after contemplating this, I’ve decided to let go of the idea of perfect tho
 
 考えた末、少なくとも現時点では完璧な徹底性や一貫性への追求は手放すことにしました。それを目指したところで、世の中が本当に必要としているものは生まれず、ただ膨大な作業量に押しつぶされてしまうように思えるからです。
 
-## Instead, what I find could be more fun and uniquely valuable is externalizing the maps in my mind. The overviews, the relationships between key concepts, and the motivations behind them.
-
-## その代わり、私の頭の中にある地図を外在化する方が、より楽しく、独自の価値があるように思います。見晴らしの良い全体像や、重要な要素間のつながり、そしてそれらの背後にある動機づけを示すということです。
+### Instead, what I find could be more fun and uniquely valuable is externalizing the maps in my mind. The overviews, the relationships between key concepts, and the motivations behind them.
+### その代わり、私の頭の中にある地図を外在化する方が、より楽しく、独自の価値があるように思います。見晴らしの良い全体像や、重要な要素間のつながり、そしてそれらの背後にある動機づけを示すということです。
 
 As always, these are also an exercise for myself. They are like notes to organize and structure ideas, which might one day evolve into a more structured book. At the same time, I’m trying to create something that helps readers orient themselves better. To provide a sense of where things fit, what’s important, and what gaps they might need to fill in from somewhere else.
 

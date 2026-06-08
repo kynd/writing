@@ -1,5 +1,5 @@
 ---
-title: "Everything as an Arrowすべては矢印"
+title: "Everything as an Arrow すべては矢印"
 ---
 # Defining Objects by Relationships
 # 対象を関係で定義する
@@ -26,7 +26,7 @@ In category theory, rather than looking at individual things concretely, we try 
 
 For example, making concrete requires water and cement, and cement requires limestone. Making bread also requires water, along with flour, yeast, and other ingredients. Let's write out these relationships with arrows.
 
-例えばコンクリートを作るに水とセメントが必要で、セメントを作るには石灰石が要ります。パンを作るのにも水が必要で、他には小麦粉やイーストなどが入ります。この関係を矢印で書いてみましょう。
+例えばコンクリートを作るには水とセメントが必要で、セメントを作るには石灰石が要ります。パンを作るのにも水が必要で、他には小麦粉やイーストなどが入ります。この関係を矢印で書いてみましょう。
 
 -   石灰石 → セメント
 
@@ -40,7 +40,7 @@ For example, making concrete requires water and cement, and cement requires lime
 
 -   イースト → パン
 
-[![](/images/source-4.png)](/images/source-4.png)
+[![](/images/source-4.png "75")](/images/source-4.png)
 
 [Source](https://colab.research.google.com/drive/1PLr74pG4RC8qYrXjMoTF4IIA7eqESEeY#scrollTo=pEMytpMuEt22)
 
@@ -75,6 +75,7 @@ dot
 # 点と矢印
 
 To express this "relationship," category theory begins with just two tools.  
+
 この「関係」を表現するために、圏論ではたった2つの道具から始めます。
 
 -   **Objects**: The things themselves. Since we don't care about their concrete attributes, they are represented as mere points.
@@ -95,7 +96,7 @@ What's important here is that even without looking inside of the point called "w
   
 Let's look at a little more mathematical example. An ordered set is a collection where there is a rule between elements about "which comes first or equal." Here, arrows are the relationship "<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>≤</mo></mrow><annotation encoding="application/x-tex">\le</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7719em;vertical-align:-0.136em;"></span><span class="mrel">≤</span></span></span></span> (less than or equal to)." For instance, if we think of the world of numbers <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mn>1</mn><mo separator="true">,</mo><mn>2</mn><mo separator="true">,</mo><mn>3</mn><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{1, 2, 3\}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">2</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">3</span><span class="mclose">}</span></span></span></span> as a category, the arrows would look like as below.
 
-もう少し数学らしい例を見てみましょう。もう少し数学らしい例を見てみましょう。順序集合とは、要素の間に「どちらが先か、あるいは等しいか」というルールがある集まりのことです。ここでは、矢印は「<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>≤</mo></mrow><annotation encoding="application/x-tex">\le</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7719em;vertical-align:-0.136em;"></span><span class="mrel">≤</span></span></span></span>（以下である）」という関係です。例えば、数字の <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mn>1</mn><mo separator="true">,</mo><mn>2</mn><mo separator="true">,</mo><mn>3</mn><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{1, 2, 3\}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">2</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">3</span><span class="mclose">}</span></span></span></span> という世界を圏として捉えると、矢印は以下のようになります。
+もう少し数学らしい例を見てみましょう。順序集合とは、要素の間に「どちらが先か、あるいは等しいか」というルールがある集まりのことです。ここでは、矢印は「<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>≤</mo></mrow><annotation encoding="application/x-tex">\le</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7719em;vertical-align:-0.136em;"></span><span class="mrel">≤</span></span></span></span>（以下である）」という関係です。例えば、数字の <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mn>1</mn><mo separator="true">,</mo><mn>2</mn><mo separator="true">,</mo><mn>3</mn><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{1, 2, 3\}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">2</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">3</span><span class="mclose">}</span></span></span></span> という世界を圏として捉えると、矢印は以下のようになります。
 
 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>→</mo><mn>2</mn><mo>→</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">1 \to 2 \to 3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">3</span></span></span></span>
 
@@ -111,6 +112,7 @@ There are also cases where not all elements have an ordering relationship with e
 ## 包含関係による集合の集合（べき集合）
 
 Consider collecting all subsets of a certain set (for example, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mi>a</mi><mo separator="true">,</mo><mi>b</mi><mo separator="true">,</mo><mi>c</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{a, b, c\}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord mathnormal">a</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">b</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">c</span><span class="mclose">}</span></span></span></span>). When we define the arrows as the inclusion relation (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>⊆</mo></mrow><annotation encoding="application/x-tex">\subseteq</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7719em;vertical-align:-0.136em;"></span><span class="mrel">⊆</span></span></span></span>), it becomes an ordered set.  
+
 ある集合（例えば <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mi>a</mi><mo separator="true">,</mo><mi>b</mi><mo separator="true">,</mo><mi>c</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{a, b, c\}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord mathnormal">a</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">b</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">c</span><span class="mclose">}</span></span></span></span>）のすべての部分集合を集めたものを考えます。このとき、矢印の意味を包含関係（<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>⊆</mo></mrow><annotation encoding="application/x-tex">\subseteq</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7719em;vertical-align:-0.136em;"></span><span class="mrel">⊆</span></span></span></span>）」と定義すると順序集合になります。
 
 -   **点（対象）：** <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∅</mi><mo separator="true">,</mo><mo stretchy="false">{</mo><mi>a</mi><mo stretchy="false">}</mo><mo separator="true">,</mo><mo stretchy="false">{</mo><mi>b</mi><mo stretchy="false">}</mo><mo separator="true">,</mo><mo stretchy="false">{</mo><mi>a</mi><mo separator="true">,</mo><mi>b</mi><mo stretchy="false">}</mo><mo>…</mo></mrow><annotation encoding="application/x-tex">\emptyset, \{a\}, \{b\}, \{a, b\} \dots</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">∅</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mopen">{</span><span class="mord mathnormal">a</span><span class="mclose">}</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mopen">{</span><span class="mord mathnormal">b</span><span class="mclose">}</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mopen">{</span><span class="mord mathnormal">a</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">b</span><span class="mclose">}</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner">…</span></span></span></span>
@@ -143,7 +145,7 @@ As an exercise, let's write the inclusion relations of all subsets of the set <s
 
 練習として集合 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mo stretchy="false">{</mo><mn>1</mn><mo separator="true">,</mo><mn>2</mn><mo separator="true">,</mo><mn>3</mn><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">A = \{1, 2, 3\}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">2</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">3</span><span class="mclose">}</span></span></span></span> の全ての部分集合の包含関係をPythonで書いてみましょう。
 
-[![](/images/source-5.png)](/images/source-5.png)
+[![](/images/source-5.png "50")](/images/source-5.png)
 
 [Source](https://colab.research.google.com/drive/1PLr74pG4RC8qYrXjMoTF4IIA7eqESEeY#scrollTo=pEMytpMuEt22)
 
@@ -200,6 +202,7 @@ display(dot)
 # 命題と証明
 
 As another example, let's see the arrows as "logical proof (implies)."  
+
 もうひとつの例として、矢印を「論理的な証明（ならば）」だと考えてみます。
 
 -   **A:** Is an equilateral triangle
@@ -224,6 +227,7 @@ As another example, let's see the arrows as "logical proof (implies)."
 -   **E：** 対称軸を持つ
 
 These are connected by arrows representing mathematical proofs.  
+
 これらは数学的な証明という矢印で結ばれます。
 
 -   <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>→</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A \to B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span></span></span></span> (obvious from the definition)
@@ -246,7 +250,7 @@ These are connected by arrows representing mathematical proofs.
 
 -   <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo>→</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">C \to E</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">E</span></span></span></span> （二等辺三角形は頂角の二等分線で対称である）
 
-[![](/images/source-6.png)](/images/source-6.png)
+[![](/images/source-6.png "75")](/images/source-6.png)
 
 [Source](https://colab.research.google.com/drive/1PLr74pG4RC8qYrXjMoTF4IIA7eqESEeY#scrollTo=pEMytpMuEt22)
 
@@ -283,6 +287,7 @@ There are only two rules (axioms) for constructing a category.
 # 抽象度を上げると何が見えるか
 
 We've looked at several examples: materials, order, and proofs in geometry. To reiterate, in category theory we ignore concrete details and focus only on the relationships indicated by morphisms, treating things as essentially the same if they have the same arrow structure. For example, if there is some unknown proposition X that has exactly the same pattern of incoming and outgoing arrows as an isosceles triangle, then that X can be treated as "essentially equivalent to an isosceles triangle."  
+
 材料、順序、そして幾何学の証明といくつかの例をみてきました。繰り返しになりますが圏論では具体的なものは無視して、射によって示される関係だけに注目し、矢印の構造が同じであれば実質的に同じものとして扱います。例えば、もしある未知の命題 X があって、それが二等辺三角形と全く同じ矢印の出入りを持っているなら、その X は実質的に「二等辺三角形と同等なもの」として扱えます。
 
 In fact, all the examples given above—the category of materials, total orders, partial orders, and the category of propositions and proofs—are all partial orders, and in that sense can be considered to have the same properties.

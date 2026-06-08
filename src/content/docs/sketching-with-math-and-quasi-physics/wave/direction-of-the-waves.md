@@ -1,7 +1,7 @@
 ---
 title: "Direction of the waves 波の向き"
 ---
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/XWqzYvK?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="XWqzYvK" data-user="kynd" data-preview="true"></p></div>
 
 This is probably the most common shape when drawing a wave. This is called a sine curve and is a graphical representation of the sine function. Since the input values are moved over time <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi></mrow><annotation encoding="application/x-tex">t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6151em;"></span><span class="mord mathnormal">t</span></span></span></span>, the equation looks like this:
 
@@ -21,7 +21,7 @@ Waves that travel in the direction of their oscillations are called Longitudinal
 
 振動と同じ向きに進む波は縦波と呼びます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/abGVKep?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="abGVKep" data-user="kynd" data-preview="true"></p></div>
 
 You may have heard that earthquakes can be divided into longitudinal and transverse waves. For seismic waves, longitudinal waves are also called P(primary) waves and transverse waves are called S(secondary) waves. Longitudinal waves can travel through any material, including liquids and gases, by means of compression, while transverse waves can only travel through solids because the material must be connected in order for the force in the bending or shear direction to be transmitted. Sound is an example of longitudinal wave.
 
@@ -31,7 +31,7 @@ Not all waves are longitudinal or transverse. For example, ocean waves are a lit
 
 全ての波が縦波または横波というわけではありません。例えば、海の波はもう少し複雑です。水は下のデモのように、円や楕円を描く形で動きます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/zYjPLxo?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="zYjPLxo" data-user="kynd" data-preview="true"></p></div>
 
 The terms "longitudinal" and "transverse" are commonly used to describe physical waves. However, when discussing waves in graphics, such as gradients or waveforms, we are not limited by the constraints of physics. These graphical representations can resemble real phenomena in various ways or not at all. If you want, they can be scientifically accurate representations. For instance, it is possible to map the brightness of colors to the pressure of the air in a sound wave.
 

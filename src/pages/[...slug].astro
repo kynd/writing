@@ -17,9 +17,26 @@ export async function getStaticPaths() {
 
 const { doc, urlSlug } = Astro.props;
 const { Content } = await doc.render();
+
+function splitTitle(title: string): { en: string; ja: string | null } {
+  // Find the first Japanese/CJK character
+  const jaMatch = title.match(/[぀-鿿＀-￯]/);
+  if (!jaMatch || jaMatch.index === undefined) return { en: title, ja: null };
+  // Split at the last space before that character (handles "3Dのデザイン", "CIE色空間", etc.)
+  const lastSpace = title.lastIndexOf(' ', jaMatch.index - 1);
+  if (lastSpace === -1) return { en: title, ja: null };
+  const en = title.slice(0, lastSpace).trim();
+  const ja = title.slice(lastSpace + 1).trim();
+  return en && ja ? { en, ja } : { en: title, ja: null };
+}
+
+const { en: titleEn, ja: titleJa } = splitTitle(doc.data.title);
 ---
 
 <DocLayout title={doc.data.title} slug={urlSlug}>
-  <h1 class="page-title">{doc.data.title}</h1>
+  <h1 class="page-title">
+    <span class="title-en">{titleEn}</span>
+    {titleJa && <span class="title-ja">{titleJa}</span>}
+  </h1>
   <Content />
 </DocLayout>

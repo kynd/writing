@@ -52,4 +52,4 @@ The demo illustrates this concept. Drag to rotate the line and see how the varia
 
 下のデモはこの考え方を可視化したものです。直線をドラッグして回転させ、分散が変化を観察しましょう。“OPTIMIZE” を押すと最適な角度を見つけることができます。ランダムなデータで繰り返し試して、直感的に理解することを目指しましょう。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/dPOypvw?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="dPOypvw" data-user="kynd" data-preview="true"></p></div>

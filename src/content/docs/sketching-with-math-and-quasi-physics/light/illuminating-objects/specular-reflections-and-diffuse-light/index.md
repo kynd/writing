@@ -3,7 +3,7 @@ title: "Specular reflections and diffuse light 鏡面反射と拡散光"
 ---
 Except for transparent materials such as water and glass, we mainly see light bouncing off the surface of objects. This phenomenon can be divided into two main categories: specular and diffuse, and materials can be divided into two categories: conductors and dielectrics.
 
-水やガラスなどの透明な素材を除くと私たちは主に物体の表面で跳ね返った光を見ているこのになります。この現象は大きくスペキュラー（鏡面反射）とディフューズ（拡散光）の2つに分けることができ、また物質は導体（Conductor）と誘電体 （Dielectric）に分けて考えることができます。
+水やガラスなどの透明な素材を除くと私たちは主に物体の表面で跳ね返った光を見ていることになります。この現象は大きくスペキュラー（鏡面反射）とディフューズ（拡散光）の2つに分けることができ、また物質は導体（Conductor）と誘電体 （Dielectric）に分けて考えることができます。
 
 # Diffuse and specular reflections
 # ディフューズとスペキュラー
@@ -14,7 +14,7 @@ Reflection of light on an object can be divided into specular and diffuse. Part 
 
 [![](/images/specular-left-vs-diffuse-right.png)](/images/specular-left-vs-diffuse-right.png)
 
-Specular (left) vs Diffuse (right)
+<figcaption>Specular (left) vs Diffuse (right)</figcaption>
 
 # Conductor or dielectric
 # 導体と誘電体
@@ -30,17 +30,17 @@ Conductor has no diffuse component, only specular. Also, the specular in the con
 
 導体にはディフューズ成分がなくスペキュラーだけになります。金属は当たった光の多くを鏡面反射しますが、一旦中に入った光は（可視光線としては）出てくることがありません。また導体のスペキュラーには色が着きます。ピカピカの金の塊に周りの様子が黄色く反射しているところを思い浮かべてください。
 
-[![](/images/a-gold-sphere-floating-in-the-sky-by-stablediffusion-2-1.jpeg)](/images/a-gold-sphere-floating-in-the-sky-by-stablediffusion-2-1.jpeg)
+![](/images/a-gold-sphere-floating-in-the-sky-by-stablediffusion-2-1.jpeg "50")
 
-“a gold sphere floating in the sky” by [StableDiffusion 2.1](https://huggingface.co/spaces/stabilityai/stable-diffusion)
+<figcaption>"a gold sphere floating in the sky" by <a href="https://huggingface.co/spaces/stabilityai/stable-diffusion">StableDiffusion 2.1</a></figcaption>
 
-Because of the classic CG technique described on the next page, specular is sometimes thought to represent bright highlights but it technically refers to the directly reflected component of light. So in the image above, all reflections on the sphere are specular. The reflection will look blurry on an unpolished surface as the light will be reflected by fine irregularities, but this is also specular reflection and is different from diffuse light that we will discuss next.
+Because of the classic CG technique described on the next page, specular is sometimes thought to represent bright highlights but it technically refers to the directly reflected component of light. So in the image above, all reflections on the sphere are specular. The reflection will look blurry on an unpolished surface as the light will be reflected by fine irregularities, but this is also **specular reflection** and is different from **diffuse light** that we will discuss next.
 
 次のページで説明する[古典的なCG技法](/sketching-with-math-and-quasi-physics/light/illuminating-objects/classic-3d-rendering)のせいでスペキュラーは明るいハイライトを表現するものと思われていることがありますが、より正確には物体に当たった光が直接反射した成分を指すので、上の画像では球体に映った反射全てがスペキュラーです。表面が滑らかでなければ光は細かな凹凸に反射してぼやけて見えることになりますが、これも鏡面反射=スペキュラーで、次に見るディフーズによる拡散光とは別物です。
 
-[![](/images/a-gold-sphere-with-dull-surface-floating-in-the-sky-by-sta.jpeg)](/images/a-gold-sphere-with-dull-surface-floating-in-the-sky-by-sta.jpeg)
+![](/images/a-gold-sphere-with-dull-surface-floating-in-the-sky-by-sta.jpeg "50")
 
-“a gold sphere with dull surface floating in the sky” by [StableDiffusion 2.1](https://huggingface.co/spaces/stabilityai/stable-diffusion)
+<figcaption>"a gold sphere with dull surface floating in the sky" by <a href="https://huggingface.co/spaces/stabilityai/stable-diffusion">StableDiffusion 2.1</a></figcaption>
 
 ## Dielectric
 ## 誘電体
@@ -49,9 +49,9 @@ Dielectrics, i.e., most materials other than metals such as plastic and paper, t
 
 誘電体、つまりプラスチックや紙など金属以外のほとんどの物質ではディフューズ成分の方が多くなります。物体の色は主にこのディフューズ成分で決まります。誘電体のスペキュラーには色がつきません。つまり反射された光のスペクトル分布がそのまま残ることになります。赤いプラスチックの上に明るいハイライトが見える様子を想像してください。赤い色がディフューズ成分、ハイライトはスペキュラーなので光源の色を反映して大抵は白く見えます。
 
-[![](/images/a-red-plastic-ball-on-the-floor-by-stablediffusion-2-1.jpeg)](/images/a-red-plastic-ball-on-the-floor-by-stablediffusion-2-1.jpeg)
+![](/images/a-red-plastic-ball-on-the-floor-by-stablediffusion-2-1.jpeg "50")
 
-A “red plastic ball on the floor” by [StableDiffusion 2.1](https://huggingface.co/spaces/stabilityai/stable-diffusion)
+<figcaption>A "red plastic ball on the floor" by <a href="https://huggingface.co/spaces/stabilityai/stable-diffusion">StableDiffusion 2.1</a></figcaption>
 
 Like metal, plastic also reflects light from the entire surrounding area as specular. However, in the case of plastic, the amount of reflection is much less than that of metal, so the reflection of bright light sources stands out more.
 

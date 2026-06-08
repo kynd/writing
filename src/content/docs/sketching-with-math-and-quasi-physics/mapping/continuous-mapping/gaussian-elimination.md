@@ -208,4 +208,4 @@ The demo below visualizes the process step by step. You can click on the button 
 
 下のデモはこのプロセスをステップごとに表示します。上にあるボタンをクリックすると数値がランダムに変わります。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/GgRmeoW?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="GgRmeoW" data-user="kynd" data-preview="true"></p></div>

@@ -5,7 +5,9 @@ Let’s go over the architecture of the transformer.
 
 トランスフォーマーのアーキテクチャを見ていきましょう。
 
-[![](/images/architecture-overview.png)](/images/architecture-overview.png)
+[![](/images/architecture-overview.png "50")](/images/architecture-overview.png)
+
+<div></div>
 
 In this diagram, the left side is the encoder, and the right side is the decoder. Notice the <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>N</mtext><mo>×</mo></mrow><annotation encoding="application/x-tex">\text{N}\times</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord text"><span class="mord">N</span></span><span class="mord">×</span></span></span></span> on the side of both parts. Right below the diagram, they say both encoder and decoder consist of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>=</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">N = 6</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">6</span></span></span></span> identical layers. So the output of one stack on the encoder side goes into the next stack, repeating 6 times, and the same happens on the decoder side too.
 

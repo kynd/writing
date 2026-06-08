@@ -24,6 +24,8 @@ These sections summarize their tests and results as proof of concept. I'll skip 
 
 [![](/images/conclusions-and-applications.png)](/images/conclusions-and-applications.png)
 
+<div></div>
+
 BLEU (Bilingual Evaluation Understudy) measures machine translation quality by counting overlapping words and phrases between AI output and human references while penalizing overly short sentences to avoid cheating. It's not a perfect metric since it doesn't check the actual meaning, but it's commonly used because it can be automated. Scores range from 0 to 100, and 40–50 is considered hard to distinguish from human translation.
 
 BLEU（Bilingual Evaluation Understudy）は、AIの出力と人間の参照訳で重複する単語やフレーズを数えて機械翻訳の品質を測定します。不正を避けるため、過度に短い文にはペナルティを課します。実際の意味は評価しないため完璧な指標ではありませんが、自動化できるため広く使われています。スコアは0から100の範囲で、40〜50は人間の翻訳と区別が難しいレベルとされています。

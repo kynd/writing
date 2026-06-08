@@ -5,7 +5,7 @@ Shapes seem like an obvious topic. Since they are ubiquitous, we take them for g
 
 形は一見単純なテーマに見えます。形はどこにでもあるので、その存在を当たり前のように考えがちです。多くのツールが図形を描く機能を提供しており、下のp5.jsの関数のように、その多くはシンプルな仕組みです。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/EajxeEm?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="EajxeEm" data-user="kynd" data-preview="true"></p></div>
 
 But as soon as we look more closely, things get complicated. In fact, there are infinite ways to define and draw shapes, and most of the shapes in the wild, from industrial products to nature, have so many nuances.
 
@@ -23,27 +23,29 @@ HTML Canvasを始めとする様々な環境では簡単に線分や円を描く
 
 [Geometric Drawings 幾何学ドローイング](/sketching-with-math-and-quasi-physics/geometric-drawings)
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/qmLJVe?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="qmLJVe" data-user="kynd" data-preview="true"></p></div>
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/pPqxaV?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="pPqxaV" data-user="kynd" data-preview="true"></p></div>
 
 Understanding basic shapes gives us a foundation for drawing many other more complex shapes.
 
 基本的な図形を理解することは、より複雑な図形を描くための基礎になります。
 
-[![](/images/about-shapes.gif)](/images/about-shapes.gif)
+[![](/images/about-shapes.gif "75")](/images/about-shapes.gif)
+
+<div></div>
 
 You might have experience in drawing shapes with just a compass and ruler in math class. It is sometimes fun to limit your tools and play within the constraints. It is fascinating to see we can create pretty complex shapes just with circles and lines.
 
 数学の授業でコンパスと定規だけで図形を描いた経験があるでしょう。道具を制限し、その制約の中で遊ぶことには独特の楽しさがあります。円と直線という単純な要素だけで、驚くほど複雑な図形が作れることには驚きます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/vmvVrG?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="vmvVrG" data-user="kynd" data-preview="true"></p></div>
 
 Geometric shapes are widely used in our design. Repeating them in patterns is a major vocabulary of decorative and graphic design. Since ancient times, people have been crafting intriguing patterns by repeating graphic elements or organizing space based on specific rules.
 
 [Tiling タイリング](/sketching-with-math-and-quasi-physics/patterns/tiling)
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/NWmpKNY?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="NWmpKNY" data-user="kynd" data-preview="true"></p></div>
 
 # Detecting Collision 衝突判定
 
@@ -61,7 +63,7 @@ Various methods of checking whether figures overlap are used to detect collision
 
 [Detecting Collision 衝突判定](/sketching-with-math-and-quasi-physics/detecting-collision)
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/GEyRXg?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="GEyRXg" data-user="kynd" data-preview="true"></p></div>
 
 > 
 > 
@@ -83,9 +85,9 @@ One of the most common ways that curves occur in the physical world is through c
 
 物理的な世界で曲線が生まれる最も一般的な形の1つは、累積的な運動や蓄積、つまり何かがある地点から動き始め、時間とともにその進路を変えながら進んでいくことです。これにはフリーハンドの描画、昆虫、動物、車両が辿る経路、または植物や他の生物の成長パターンなどが含まれます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/xxNLObq?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="xxNLObq" data-user="kynd" data-preview="true"></p></div>
 
-## Parametric Approaches パラメトリックアプローチ
+Parametric Approaches パラメトリックアプローチ
 
 While the [cumulative approach is straightforward and versatile in theory](/sketching-with-math-and-quasi-physics/curves/cumulative-curves), it is often not the best for many practical use cases where you want more precise control over the overall shape and details, such as in drawing or design tools.
 
@@ -99,7 +101,7 @@ These tools usually adopt parametric approaches. In the parametric approach, a s
 
 [Parametric Approaches パラメトリックアプローチ](/sketching-with-math-and-quasi-physics/curves/parametric-approaches)
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/NWVXeRm?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="NWVXeRm" data-user="kynd" data-preview="true"></p></div>
 
 ## Bézier and Spline
 ## ベジェとスプライン
@@ -114,7 +116,7 @@ A spline curve is a mathematically defined curve that smoothly passes through or
 
 [Bézier and Spline ベジェとスプライン](/sketching-with-math-and-quasi-physics/curves/be)
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/ZEZZQro?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="ZEZZQro" data-user="kynd" data-preview="true"></p></div>
 
 ## Controlling curves 曲線のコントロール
 
@@ -122,7 +124,7 @@ When we talk about shapes, it is important to discuss their quality, not just me
 
 結局のところスケッチは何かを表現するためなので、形について語るときには手法だけでなく、その質について議論することが重要です。曲線には多様な見た目の特徴があります。例えば曲線には有機的で自然に見えるものも、より幾何学的で機械的に見えるものもあります。これらの異なる曲線の見た目はどうしたら作れるのでしょうか。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/KKLKOJj?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="KKLKOJj" data-user="kynd" data-preview="true"></p></div>
 
 # Signed distance functions 符号付き距離関数
 
@@ -152,7 +154,7 @@ M1001 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlis
 
 [Signed distance functions 符号付き距離関数](/sketching-with-math-and-quasi-physics/distance/signed-distance-functions)
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/mdLPVrE?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="mdLPVrE" data-user="kynd" data-preview="true"></p></div>
 
 This is very interesting because SDF is the technique used as basis for many mind-blowing 3D graphics demos with really small amount of code you often find on [ShaderToy](https://www.shadertoy.com/).
 
@@ -166,7 +168,7 @@ Using this method in 3D, you can create different shapes pretty flexibly with a 
 
 [Projection and 3D Rendering プロジェクションと3Dレンダリング](/sketching-with-math-and-quasi-physics/projection-and-3d-rendering)
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/ZEwyLWQ?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="ZEwyLWQ" data-user="kynd" data-preview="true"></p></div>
 
 [Reading “Raymarching - Primitives”](/sketching-with-math-and-quasi-physics/reading)
 
@@ -180,11 +182,11 @@ There isn’t really a shortcut here (as far as I know). Studying demo codes ste
 
 [Reading “Raymarching - Primitives”](/sketching-with-math-and-quasi-physics/reading)
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/dyxzyjV?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="dyxzyjV" data-user="kynd" data-preview="true"></p></div>
 
 [Drawing Landscape](/sketching-with-math-and-quasi-physics/drawing-landscape)
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/NPPWORo?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="NPPWORo" data-user="kynd" data-preview="true"></p></div>
 
 # Noise and Fractal
 # ノイズとフラクタル
@@ -203,29 +205,29 @@ This property, called self-similarity, is key to modeling many complex structure
 
 [Fractal フラクタル](/sketching-with-math-and-quasi-physics/patterns/fractal)
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/poYBGbN?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="poYBGbN" data-user="kynd" data-preview="true"></p></div>
 
 Natural shapes are also unpredictable. The ups and downs of terrain, the changes in temperature, or the directions animals wander towards all seem random, but they look smoothly connected too, and values next to each other seem to be somehow related. Noise functions are the go-to methods for this, and we often overlay multiple layers of noise functions in a fractal manner (scale and add) to get desired complexity.
 
 自然の形は予測できません。地形の起伏、温度変化、動物の移動方向などはランダムに見えますが、滑らかにつながっており、隣接する値には関連性があります。ノイズ関数はこの性質を表現するための定番の手法です。必要な複雑さに応じて、フラクタル的な方法（スケーリングと加算）で複数のノイズ関数を重ね合わせて使うことがよくあります。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/WNJxXZb?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="WNJxXZb" data-user="kynd" data-preview="true"></p></div>
 
 [Reading a Noise Function](/sketching-with-math-and-quasi-physics/reading-a-noise-function)
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/WbbBawy?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="WbbBawy" data-user="kynd" data-preview="true"></p></div>
 
 # Exploring more shapes
 
 As I said in the beginning, there are infinite ways of defining and drawing shapes. A couple of major topics I didn’t touch upon are:
 
-最初に言った通り、形状を定義したり描いたりる方法は無限にあります。下はここで触れなかった重要なトピックのうち2つです。
-
 -   Polygons: I guess you know almost all 3D gaming characters are made of a bunch of triangles. Defining 3D shapes as a collection of tiny polygons (usually triangles but can be quads or other shapes) is such a common method. I didn't cover them because it takes a lot to support 3D rendering with polygons. Studying a well-designed library or tool, such as [three.js](https://threejs.org/), is a good start, and there are plenty of books and tutorials.
 
--   ポリゴン: ご存知の通り、3Dゲームのキャラクターのほとんどはたくさんの三角形でできています。3D形状を小さなポリゴン（通常は三角形ですが、四角形やその他の形も可）の集合として定義する方法はとても一般的ですが、ポリゴンを使用した3Dレンダリングをサポートするのは大仕事なので、ここでは詳しく説明しませんでした。[three.js](https://threejs.org/)のような優れたライブラリやツールを学ぶことから始めるのが良いでしょう。多くの書籍やチュートリアルがあるので利用しましょう。
-
 -   Manual drawing and modeling: Many of human made shapes are of course made by hands, literary or figuratively. People have been drawing and sculpting shapes by hands for ages, and there are equivalents in digital tools. Covering drawing tools and modeling tools and keeping up with their frequent changes are completely beyond my scope.
+
+最初に言った通り、形状を定義したり描いたりする方法は無限にあります。下はここで触れなかった重要なトピックのうち2つです。
+
+-   ポリゴン: ご存知の通り、3Dゲームのキャラクターのほとんどはたくさんの三角形でできています。3D形状を小さなポリゴン（通常は三角形ですが、四角形やその他の形も可）の集合として定義する方法はとても一般的ですが、ポリゴンを使用した3Dレンダリングをサポートするのは大仕事なので、ここでは詳しく説明しませんでした。[three.js](https://threejs.org/)のような優れたライブラリやツールを学ぶことから始めるのが良いでしょう。多くの書籍やチュートリアルがあるので利用しましょう。
 
 -   手書きやモデリング: 人工的な形状の多くは、文字どおりあるいは比喩的な意味で、手作業によって作られます。人類は古くから手で形を描き、作り出してきましたし、現代のデジタルツールにも同様の機能が備わっています。しかし、さまざまな描画ツールやモデリングツールを解説し、その頻繁なアップデートに追従することは、ここでも守備範囲を大きく超えています。
 

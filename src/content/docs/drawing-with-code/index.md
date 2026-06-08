@@ -15,6 +15,8 @@ I have been fortunate to have been featured in several media outlets and have ha
 
 [![](/images/drawing-with-code-1.png)](/images/drawing-with-code-1.png)
 
+<div></div>
+
 最初から考えていたというよりは後付けだが、これは人間の実践をコード化することで、その実践そのものを内省し変化させる。そういう遊びだ。
 
 もう少し噛み砕いてみる。
@@ -32,6 +34,8 @@ The act of painting is full of implicit knowledge. When we actually paint a pict
 But to get this down to code, all of this has to be made explicit. I have to write all the work that I do somehow very clearly, in a form that a computer can execute. This makes me realize how much I don't know about the things I'm used to doing. I understand what I didn't know by trying to explain it to my computer.
 
 [![](/images/drawing-with-code-2.png)](/images/drawing-with-code-2.png)
+
+<div></div>
 
 もうひとつのメリット、というには当たり前だが、コード化されたものは実際に実行し、使うことができる。これは新たな表現の素材、つまり今までになかった新しい筆や絵の具を手に入れるようなものだ。一度コード化されたものは一部を書き換えたり、パラメータを変化させたりして、元々のネタを越えて変化させたり進化させることができる
 

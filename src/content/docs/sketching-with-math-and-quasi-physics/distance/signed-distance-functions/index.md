@@ -1,7 +1,7 @@
 ---
 title: "Signed distance functions 符号付き距離関数"
 ---
-“Signed distance functions”, or SDF sounds scary but it is not too crazy to understand. A SDF is a function that can tell you how far a point is from a surface of a shape, say a sphere (usually in Euclidean space)
+**”Signed distance functions”**, or SDF sounds scary but it is not too crazy to understand. A SDF is a function that can tell you how far a point is from a surface of a shape, say a sphere (usually in Euclidean space)
 
 「符号付き距離関数」（“Signed distance functions”、略してSDF）とは怖そうな名前ですが、実は割とシンプルです。SDFとは、ある点がある他の形の表面、例えば球面から（通常ユークリッド空間で）どのくらい離れているかを教えてくれる関数です。
 
@@ -41,7 +41,7 @@ function sdf(p, center, radius) {
 }
 ```
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/mdLPVrE?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="mdLPVrE" data-user="kynd" data-preview="true"></p></div>
 
 ```jsx
 function sdf(p, size, center) {
@@ -50,7 +50,7 @@ function sdf(p, size, center) {
 }
 ```
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/yLjOeMq?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="yLjOeMq" data-user="kynd" data-preview="true"></p></div>
 
 ```jsx
 function sdf(p, size, center) {
@@ -60,7 +60,7 @@ function sdf(p, size, center) {
 }
 ```
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/eYrZJBQ?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="eYrZJBQ" data-user="kynd" data-preview="true"></p></div>
 
 It will be fun to try coming up with your own new formulas and see what shapes you can draw with it. [Inigo Quilez's site](https://iquilezles.org/articles/distfunctions2d/) has great references of SDFs and functions for transforming and merging shapes.
 
@@ -74,11 +74,13 @@ Below are a couple of examples of rendering 3D shapes using SDF.
 
 [![](/images/signed-distance-functions.png)](/images/signed-distance-functions.png)
 
-<div class="video-wrap"><iframe title="ShaderToy" src="https://www.shadertoy.com/embed/cdlGWn?gui=true&t=10&paused=true" frameborder="0" allowfullscreen></iframe></div>
+<div class="bookmark-card"><a href="https://www.shadertoy.com/view/cdlGWn" target="_blank" rel="noopener" class="bookmark-link"><div class="bookmark-info"><div class="bookmark-title">Shadertoy</div><div class="bookmark-description">Build shaders, share them, and learn from the best community.</div><div class="bookmark-url"><img src="https://www.shadertoy.com/img/favicon.ico" class="bookmark-favicon" alt="" onerror="this.style.display='none'"><span>https://www.shadertoy.com/view/cdlGWn</span></div></div><img src="https://www.shadertoy.com/media/shaders/cdlGWn.jpg" class="bookmark-image" alt="" loading="lazy" onerror="this.style.display='none'"></a></div>
 
 [![](/images/signed-distance-functions-1.png)](/images/signed-distance-functions-1.png)
 
-<div class="video-wrap"><iframe title="ShaderToy" src="https://www.shadertoy.com/embed/4tlXzX?gui=true&t=10&paused=true" frameborder="0" allowfullscreen></iframe></div>
+<div class="bookmark-card"><a href="https://www.shadertoy.com/view/4tlXzX" target="_blank" rel="noopener" class="bookmark-link"><div class="bookmark-info"><div class="bookmark-title">Shadertoy</div><div class="bookmark-description">Build shaders, share them, and learn from the best community.</div><div class="bookmark-url"><img src="https://www.shadertoy.com/img/favicon.ico" class="bookmark-favicon" alt="" onerror="this.style.display='none'"><span>https://www.shadertoy.com/view/4tlXzX</span></div></div><img src="https://www.shadertoy.com/media/shaders/4tlXzX.jpg" class="bookmark-image" alt="" loading="lazy" onerror="this.style.display='none'"></a></div>
+
+<div></div>
 
 For learning about how to draw 3D graphics using SDF, take a look at the following page and web sites.
 

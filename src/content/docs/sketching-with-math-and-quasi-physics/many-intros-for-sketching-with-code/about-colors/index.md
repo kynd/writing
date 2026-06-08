@@ -11,7 +11,9 @@ Color is a fascinating topic that lies between science and human perception.
 
 色は科学と人間の知覚の間に位置する魅力的なトピックです。
 
-[![](/images/about-colors.png)](/images/about-colors.png)
+[![](/images/about-colors.png "100")](/images/about-colors.png)
+
+<div></div>
 
 Physically, we know how humans perceive colors. We have photoreceptors called cones in our eyes that react to different frequencies of light, and the levels of stimuli to these three types of cones determine what color we see. The coverage of each type of cone roughly matches with the spectrum of red, green, and blue; that's why RGB displays can show us various colors even though they have only three colors of light-emitting elements.
 
@@ -19,7 +21,7 @@ Physically, we know how humans perceive colors. We have photoreceptors called co
 
 [Spectrum and Cones スペクトルと錐体](/sketching-with-math-and-quasi-physics/colors-and-numbers/spectrum-and-cones)
 
-[![](/images/https-commons-wikimedia-org-wiki-file-cone-fundamentals-wi-1.svg)](/images/https-commons-wikimedia-org-wiki-file-cone-fundamentals-wi-1.svg)
+[![](/images/https-commons-wikimedia-org-wiki-file-cone-fundamentals-wi-1.svg "75")](/images/https-commons-wikimedia-org-wiki-file-cone-fundamentals-wi-1.svg)
 
 [https://commons.wikimedia.org/wiki/File:Cone-fundamentals-with-srgb-spectrum.svg](https://commons.wikimedia.org/wiki/File:Cone-fundamentals-with-srgb-spectrum.svg)
 
@@ -54,13 +56,13 @@ They eventually transformed the data into something called the CIE 1931 XYZ colo
 
 [CIE Color spaces CIE色空間](/sketching-with-math-and-quasi-physics/colors-and-numbers/cie-color-spaces)
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/ZYzaggx?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="ZYzaggx" data-user="kynd" data-preview="true"></p></div>
 
 Most color models today are based on this CIE color space, meaning that the values in a system can be converted to values in XYZ. The RGB color model that we use on computers today completely fits within the XYZ color space (because by definition, XYZ space has all the human-perceivable colors and even more).
 
 今日使われているほとんどのカラーモデルはこのCIE色空間に基づいていて、それぞれのシステムの値はXYZ値に変換することができます。現在のコンピュータで使用されているRGBカラーモデルは、XYZ色空間の中に完全に収まっています（XYZ空間は定義上、人間が知覚できるすべての色、そしてそれ以上の色を含むためです）。
 
-[https://www.youtube.com/watch?v=x0-qoXOCOow](https://www.youtube.com/watch?v=x0-qoXOCOow)
+<div class="video-wrap"><iframe width="560" height="315" src="https://www.youtube.com/embed/x0-qoXOCOow" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
 
 Some other ways of describing colors are based on the ways we talk about colors. When we see colors, we say which kind of colors they are (reddish, yellowish), how bright or dark they are, how saturated or vivid, or dull or grayish, etc. The Munsell color system is a system to break down colors by three attributes: hue (such as red, blue, and green), value (lightness), and chroma (vividness or purity of the color). The many color models we use on computers are similar to Munsell's model, but are designed to be able to be mapped to the RGB values on the screen and thus to XYZ values.
 
@@ -81,7 +83,7 @@ These models allow us to compute colors. For example, we can add, subtract, mult
 
 [Computing Colors 色を計算する](/sketching-with-math-and-quasi-physics/colors-and-numbers/computing-colors)
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/dPbJbNy?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="dPbJbNy" data-user="kynd" data-preview="true"></p></div>
 
 Being able to process colors to get the desired tone is a critical skill in image and video production.
 
@@ -89,19 +91,19 @@ Being able to process colors to get the desired tone is a critical skill in imag
 
 [Color Processing カラープロセッシング](/sketching-with-math-and-quasi-physics/image-processing/color-processing)
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/eYPvObZ?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="eYPvObZ" data-user="kynd" data-preview="true"></p></div>
 
 Mixing colors is its own deep world. There are so many ways to mix colors. If you are familiar with tools like Photoshop, you probably know there are a bunch of "blending modes" such as add, multiply, screen, overlay, etc. These are different ways to calculate a new color based on the input colors.
 
 色を混ぜ合わせることは、それ自体が奥深い世界です。色を混ぜる方法には様々なものがあり、例えばPhotoshopのようなツールには、加算、乗算、スクリーン、オーバーレイといった様々な「ブレンドモード」が用意されています。これらは入力された色から新しい色を計算するための異なる方法です。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/QWzBPPb?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="QWzBPPb" data-user="kynd" data-preview="true"></p></div>
 
 Most of them are defined with RGB color model. Using the other models can yield different results.
 
 これらのほとんどはRGBカラーモデルで定義されています。他のモデルを使うと、違う結果を得ることができます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/QwWdYXJ?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="QwWdYXJ" data-user="kynd" data-preview="true"></p></div>
 
 Mixing colors in the real world is even more complex, because the color mixing in the real world is the result of various materials reflecting, refracting, and absorbing light. There isn't a single formula to solve this, but the Kubelka-Munk model is known for emulating real paints consisting of a medium and different colored particles inside.
 
@@ -120,7 +122,7 @@ Light striking the retina lets us see colors. To fully understand how colors hap
 
 [Reflection and Refraction 反射と屈折](/sketching-with-math-and-quasi-physics/light/reflection-and-refraction)
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/VgWrpb?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="VgWrpb" data-user="kynd" data-preview="true"></p></div>
 
 When the light hits an object, the object absorbs some of the light and reflects the others. On transparent objects, some also passes through. Different materials behave differently. If the material absorbs red and yellow spectrums of light more than blue, then the object will look blue. Rough surfaces will scatter the light in all different directions, thus you don't see clear reflections of other objects on them, while smooth surfaces will mirror the surroundings more clearly.
 
@@ -134,11 +136,11 @@ There are many different methods to simulate this process, from very rough to mo
 
 [![](/images/specular-left-vs-diffuse-right-1.png)](/images/specular-left-vs-diffuse-right-1.png)
 
-Specular (left) vs Diffuse (right)
+<figcaption>Specular (left) vs Diffuse (right)</figcaption>
 
 [![](/images/about-colors-2.png)](/images/about-colors-2.png)
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/bGxJyZo?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="bGxJyZo" data-user="kynd" data-preview="true"></p></div>
 
 # Filling Space with Colors
 # 空間を色で満たす
@@ -147,6 +149,6 @@ The last section is just an example of using these theories in practice. This in
 
 最後のセクションは、これらの理論を実践で使った例です。[KAF Digital space](https://krupaartfoundation.pl/en/pozytywna-przestrzen-immersyjna/)のために制作したこのインスタレーションでは、上述した複数の手法を組み合わせ、ファンゴルの油絵が持つような瞑想的な質を作り出し、デジタルっぽさを抑えた色彩で空間を満たしています。
 
-[https://www.instagram.com/reel/DHIE0WQgVlb/?utm\_source=ig\_web\_copy\_link&igsh=MzRlODBiNWFlZA==](https://www.instagram.com/reel/DHIE0WQgVlb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==)
+<div class="instagram-wrap"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DHIE0WQgVlb/" data-instgrm-version="14" style="width:100%;max-width:540px;margin:0;border:none;border-radius:4px;padding:0;"></blockquote></div>
 
 [Filling Space with Colors 空間を色で満たす](/sketching-with-math-and-quasi-physics/filling-space-with-colors)

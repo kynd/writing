@@ -31,7 +31,7 @@ Despite some unevenness, you can see that all numbers occur with roughly the sam
 let v = random(1);
 ```
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/MmZPWr?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="MmZPWr" data-user="kynd" data-preview="true"></p></div>
 
 While such flat random numbers are useful for representing dice, playing cards, etc., there are not many things in nature that are purely random.
 
@@ -48,7 +48,7 @@ Let's add a little twist to the random numbers. For example, simply squaring a f
 let v = pow(random(1), 2);
 ```
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/xdmybQ?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="xdmybQ" data-user="kynd" data-preview="true"></p></div>
 
 Try powers of other than 2 as well.
 
@@ -58,17 +58,21 @@ Try powers of other than 2 as well.
 let v = pow(random(1), n);
 ```
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/MmZPwr?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="MmZPwr" data-user="kynd" data-preview="true"></p></div>
 
 Can you see the difference between these two cityscapes?
 
 この2つの街並みの違いがわかるでしょうか。
 
-[![](/images/height-random-1-0-1.png)](/images/height-random-1-0-1.png)
+[![](/images/height-random-1-0-1.png "50")](/images/height-random-1-0-1.png)
+
+<div></div>
 
 height = random(1) + 0.1
 
-[![](/images/height-pow-random-1-4-0-1.png)](/images/height-pow-random-1-4-0-1.png)
+[![](/images/height-pow-random-1-4-0-1.png "50")](/images/height-pow-random-1-4-0-1.png)
+
+<div></div>
 
 height = pow(random(1), 4) + 0.1
 
@@ -91,7 +95,7 @@ Alternatively, averaging two random numbers can yield a distribution biased towa
 let v = (random(1) + random(1)) / 2;
 ```
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/vmvVNB?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="vmvVNB" data-user="kynd" data-preview="true"></p></div>
 
 If we increase the number of random results for averaging, it starts to resemble a bell-shaped distribution called a normal distribution.
 
@@ -105,13 +109,15 @@ for (let i = 0; i < n; i ++) {
 v /= n;
 ```
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/dWwgYB?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="dWwgYB" data-user="kynd" data-preview="true"></p></div>
 
 The normal distribution, also called Gaussian distribution, is used as a model in statistics, natural science, social science, and other fields. Cases with many values near the mean and few outliers can be found in a variety of situations. For example, normal distribution can be used to determine the height and body size of a randomly generated crowd of people.
 
 正規分布はガウス分布とも呼ばれ、統計学や自然科学、社会科学などの分野でモデルとして用いられています。平均の周辺の値が多くて飛び抜けた値ほど少なくなるケースは様々な場面で見られ、例えば群衆をランダムに生成する場合に身長や体格を決めるのに使うことができます。
 
 [![](/images/taming-randomness-1.png)](/images/taming-randomness-1.png)
+
+<div></div>
 
 Repeating a random function is inefficient, so let's use a method called the [Box-Muller transform](https://en.wikipedia.org/wiki/Box%E2%80%93Muller_transform) to convert a random value to a normal distribution. In fact, normal distribution is often implemented in libraries, for example, p5.js can use [randomGaussian()](https://p5js.org/reference/#/p5/randomGaussian).
 
@@ -125,7 +131,7 @@ let v = sqrt(-2 * log(1 - random(1))) *
              cos(2 * Math.PI * Math.random(1)) * variance + mean;
 ```
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/MmZPKQ?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="MmZPKQ" data-user="kynd" data-preview="true"></p></div>
 
 # ノイズ関数
 # Noise function
@@ -144,7 +150,7 @@ An easy way is to generate multiple random numbers and smoothly interpolate betw
 
 [![](/images/taming-randomness-2.png)](/images/taming-randomness-2.png)
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/PoeWgNx?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="PoeWgNx" data-user="kynd" data-preview="true"></p></div>
 
 Another method called gradient noise uses random numbers as the amounts of changes, or slopes, instead of using random numbers as direct values.
 
@@ -152,13 +158,13 @@ Another method called gradient noise uses random numbers as the amounts of chang
 
 [![](/images/taming-randomness-3.png)](/images/taming-randomness-3.png)
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/NWMjWra?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="NWMjWra" data-user="kynd" data-preview="true"></p></div>
 
 There can be so many various ways depending on the purpose, such as changing the method of interpolating values, or the interval at which random numbers are taken, and so on.
 
 値の補間の方法を変えたり、乱数を取る間隔も変化させたりと、目的に応じて色々と考えることができます。
 
-These methods are so useful that many researchers have come up with a variety of algorithms especially for computer graphics. You may have seen menus in 3D tools to select different types of "noise" such as Perlin noise or Simplex noise.
+These methods are so useful that many researchers have come up with a variety of algorithms especially for computer graphics. You may have seen menus in 3D tools to select different types of "noise" such as **Perlin noise** or Simplex noise.
 
 こうした手法は非常に便利なので、特にコンピュータグラフィクスの分野で多くの研究者が様々なアルゴリズムを考え出しています。3Dツールで、パーリンノイズやシンプレックスノイズといった異なるタイプの「ノイズ」を選ぶメニューを見たことがあるかもしれません。
 
@@ -170,7 +176,7 @@ p5.jsの[noise()](https://p5js.org/reference/#/p5/noise)関数を見てみまし
 let v = noise(x); x += 0.01;
 ```
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/dWwgXx?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="dWwgXx" data-user="kynd" data-preview="true"></p></div>
 
 If you want more jagged ridges, you can add overlapping noises with different speed of change and amplitude. This is sometimes called “octave” because (I think) it resembles to sound overtones.
 
@@ -181,17 +187,19 @@ let v = noise(x) + noise(x * 4.0) * 0.5;
   x += 0.01;
 ```
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/WNJxXZb?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="WNJxXZb" data-user="kynd" data-preview="true"></p></div>
 
 [![](/images/taming-randomness-4.png)](/images/taming-randomness-4.png)
 
 <div class="video-wrap"><iframe title="vimeo-player" src="https://player.vimeo.com/video/396325094" width="640" height="360" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen></iframe></div>
 
+<div></div>
+
 This is just a side note, but instead of using random numbers in the gradient noise, applying regular value changes can create an interesting motion like this. The algorithm was originally designed to create unpredictable patterns, but it does not have to be used as originally intended.
 
 これは余談ですが、勾配ノイズでランダムな数を使う代わりに規則的な値の変化を用いるるとこんな動きになります。元々は予測不能なパターンを作るためなアルゴリズムですが、元々の意図通りに使わなくてはならないということはありません。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/BaxRWNV?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="BaxRWNV" data-user="kynd" data-preview="true"></p></div>
 
 # Random Walker
 # ランダムウォーカー
@@ -200,7 +208,7 @@ A random walker is literally a thing that wanders around, deciding its movements
 
 ランダムウォーカーとは文字通り、ランダムに生成した値を元に動きを決めて、ふらふら歩き回るもののことです。これまで見てきた手法を使ってランダムウォーカーを作って比べてみると、それぞれの違いがはっきりわかります。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/eWbPdK?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="eWbPdK" data-user="kynd" data-preview="true"></p></div>
 
 A fun part of sketching in code is the trial-and-error process of combining various techniques to get the flavor and nuance you want. Let's try controlling the randomness to create different kinds of behaviors.
 

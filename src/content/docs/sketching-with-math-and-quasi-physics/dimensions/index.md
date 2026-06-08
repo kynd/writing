@@ -11,6 +11,8 @@ For the Square, the three-dimensional world was totally unimaginable until he ac
 
 [![](/images/dimensions.png)](/images/dimensions.png)
 
+<div></div>
+
 Dimensionality is a crucial concept in understanding how we see and picture the world, not limited to the physical world but various kinds of data. On this page, we will journey through the simplest 1D world to higher dimensions.
 
 次元の概念は、人が世界をどのように認識し理解するかを把握する上でとても重要です。この概念は物理的な世界だけでなく、様々な種類のデータにも適用されます。このページでは、最も単純な1次元の世界から高次元まで、順に巡っていくことにしましょう。
@@ -29,7 +31,7 @@ The position in this world can be described by a single value. And the length is
 
 この世界での位置は数値ひとつで表すことができます。そして長さは、線分の両端の間の距離となります。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/wvLRYdm?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="wvLRYdm" data-user="kynd" data-preview="true"></p></div>
 
 # 2D 2次元
 
@@ -37,7 +39,7 @@ A 2D world is a plane where a position can be described by two values. Imagine t
 
 2次元世界は平面で、位置を2つの数値で表せます。互いに垂直に交わる2本の線を想像してみましょう。これらを軸と呼び、その交点を原点とします。1つ目の値は、第一軸に沿った点の原点からの距離を示し、2つ目の値は第二軸に沿った距離を表します。これらの軸はよくx軸とy軸と呼ばれますが、名称はなんでも構いません。大事なのは、軸が垂直に交わり独立している、つまり、一方の軸に沿って移動しても、他方の軸上での位置が変化しないことです。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/RwzEejg?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="RwzEejg" data-user="kynd" data-preview="true"></p></div>
 
 By the way, you can see the triangle in the demo above because you're viewing it from a 3D perspective. Just as we can only see one side of a face at a time, Flatlanders can only view shapes from the side, making everything appear as a line. As objects move, these lines might change in color or length. But similar to how we have a mental image of a full 3D shape from the experience of seeing it from different angles, Flatlanders probably are also able to have a mental picture of 2D shapes in their minds.
 
@@ -63,7 +65,9 @@ A manifold is a space that, on a small enough scale, resembles a lower-dimension
 
 多様体とは、より高次元の空間に存在するにもかかわらず、十分に小さなスケールで見ると低次元の空間に似ている空間のことです。つまり、1次元多様体は局所的に線分のように見え、2次元多様体は平面のように見えるということです。
 
-[![](/images/dimensions.jpg)](/images/dimensions.jpg)
+[![](/images/dimensions.jpg "75")](/images/dimensions.jpg)
+
+<div></div>
 
 Earth is a great example. While we know Earth is spherical, living on its surface feels like being on a 2D plane. We rarely need to consider the curvature of the surface in our daily lives. At the scale of a city, a flat paper map makes perfect sense, with north-south and east-west functioning as two perpendicular axes (except when you're near the poles).
 
@@ -73,7 +77,7 @@ The Flatland the Square lives in could be a sphere, torus, or any other 3D shape
 
 スクエアが住むフラットランドは、実際には球体、トーラス、あるいは他の3次元形状かもしれません。しかし、その形が非常に大きく、住人にとって曲率が感知できないほどであれば、彼らは自分たちの世界を単に平面として認識するでしょう。ラインランドは、実際には2次元平面上の複雑な形状の線かもしれません。この形は直線とは全く違って見えるかもしれませんが、位置を原点からの相対的な値1つで定義できるという点では、直線そっくりです。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/YzodJJx?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="YzodJJx" data-user="kynd" data-preview="true"></p></div>
 
 # Line Segment, Square, Cube 線分、正方形、立方体
 
@@ -81,7 +85,7 @@ Let's look at the relationship between different multi-dimensional worlds from a
 
 多次元世界どうしの関係を別の角度から見てみましょう。1次元の世界で有限のサイズを持つ最も基本的な（そして唯一の）形である線分から始めて、次元を増やしていきましょう。線分を垂直方向に同じ長さだけ伸ばすと、2次元の基本的な図形、正方形が作られます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/ZEgEjwa?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="ZEgEjwa" data-user="kynd" data-preview="true"></p></div>
 
 What is the equivalent of this in 3D? If you expand the square in a direction perpendicular to all its sides, you get—of course—a cube.
 
@@ -91,7 +95,7 @@ Now look at the demo below. Does the last shape look like a cube to you? Maybe y
 
 下のデモを見てみましょう。最後の形は立方体に見えるでしょうか。見えるという人も、そうでない人もいるかもしれません。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/RwXwYrP?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="RwXwYrP" data-user="kynd" data-preview="true"></p></div>
 
 # 3D and Projection 1次元と投影
 
@@ -109,7 +113,7 @@ The demo below uses a more common method called perspective projection, which pr
 
 [Projection プロジェクション](/sketching-with-math-and-quasi-physics/projection-and-3d-rendering/projection)
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/NWZeZRV?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="NWZeZRV" data-user="kynd" data-preview="true"></p></div>
 
 # Rotation 回転
 
@@ -117,7 +121,9 @@ We take another brief detour here. You have noticed that the cube in the demo ab
 
 もう一度少し寄り道をします。上のデモの立方体が回転しているのに気づいたと思いますが、ここで、空間内の点を回転させる方法について簡単に見てみましょう。
 
-[![](/images/dimensions-1.jpg)](/images/dimensions-1.jpg)
+[![](/images/dimensions-1.jpg "75")](/images/dimensions-1.jpg)
+
+<div></div>
 
 In 2D space, you can use a rotation matrix to rotate a point around the origin.
 
@@ -176,7 +182,7 @@ Compare the demo below with the 3D demo above. Can you see that the code structu
 
 下のデモと上の3Dデモを比較してみてください。コードのの構造が基本的に同じですが、このデモには1つ追加の次元、つまり各点ごとにもうひとつ1つ追加の値があます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/vYqqGmP?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="vYqqGmP" data-user="kynd" data-preview="true"></p></div>
 
 Does it give you good insights into what the 4D cube (called a tesseract) is really like? It is hard, but try imagining that the 4 lines coming out from each point are actually perpendicular to each other. Can you come up with other ways to draw a tesseract or other 4D shapes? For example, instead of just ignoring the 4th number, can you use it somehow?
 
@@ -190,7 +196,7 @@ Very roughly, ray marching is a technique where we mathematically define a shape
 
 大まかに言えば、レイマーチングとは「距離関数」を使って形を数学的に定義する手法です。この関数は、与えられた点から形状の表面までの距離を返します。関数ができたら、視点からレーザービームのような無数の光線（レイ）を発射し、視点から物体の表面、つまり、光線の先端からオブジェクトまでの距離がゼロに非常に近くなる点までの距離を測定します。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/eYxYRBy?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="eYxYRBy" data-user="kynd" data-preview="true"></p></div>
 
 Please read [Ray Marching レイマーチング](/sketching-with-math-and-quasi-physics/projection-and-3d-rendering/ray-marching) to fully understand the technique and the demo.
 
@@ -204,7 +210,7 @@ As opposed to the "projection" demo above, which forces any 4D points to project
 
 このデモは上の投影のデモとは異なり、4次元の点を2次元平面に強制的に投影する代わりに、空間を「スライス」します。立方体を平面でスライスすると、三角形から六角形までのさまざまな2次元の形が得られます。このデモ内のレイは単一の3次元空間にのみ存在するため、4次元の形のうち、その3次元空間と交差しない部分はレンダリングされません。結果として形が変化しているように見えますが、実際には同じ4次元の形状が3次元空間によってスライスされているのです。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/ExBqJwa?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="ExBqJwa" data-user="kynd" data-preview="true"></p></div>
 
 # 5D and beyond 5次元以上の空間
 
@@ -216,9 +222,9 @@ The merit of thinking of them in terms of multidimensional space is that we can 
 
 多次元空間としてこれらを考える利点は、点の間の距離や角度といったとても便利な概念を用いて類似性を測定したり、空間を圧縮したり投影したりする様々な方法を用いて、可視化したり情報を要約したりできることです。
 
-In fact, AI models like GPT-4 or Gemini encode concepts like dog, human, run, happy, etc., as hyper-dimensional vectors (for example [OpenAI's](https://openai.com/index/new-embedding-models-and-api-updates/) `[text-embedding-3-large](https://openai.com/index/new-embedding-models-and-api-updates/)` [creates embeddings with up to 3072 dimensions](https://openai.com/index/new-embedding-models-and-api-updates/)). Imagine a space where all the concepts and words are floating, sorted by similarity so that similar concepts are nearby, and opposite words are far away.
+In fact, AI models like GPT-4 or Gemini encode concepts like dog, human, run, happy, etc., as hyper-dimensional vectors (for example [OpenAI's](https://openai.com/index/new-embedding-models-and-api-updates/) [`text-embedding-3-large`](https://openai.com/index/new-embedding-models-and-api-updates/) creates embeddings with up to 3072 dimensions). Imagine a space where all the concepts and words are floating, sorted by similarity so that similar concepts are nearby, and opposite words are far away.
 
-実際、GPT-4やGeminiなどのAIモデルは、犬、人間、走る、幸せなどの概念を超高次元ベクトルとしてエンコードします（例えば、[OpenAIの](https://openai.com/index/new-embedding-models-and-api-updates/)`[text-embedding-3-large](https://openai.com/index/new-embedding-models-and-api-updates/)`[は最大3072次元のベクトル表現を生成します](https://openai.com/index/new-embedding-models-and-api-updates/)）。全ての概念や単語が類似性によって並べられ、似た概念が近くに、反対の言葉が遠くに浮かんでいるような空間を想像してみましょう。
+実際、GPT-4やGeminiなどのAIモデルは、犬、人間、走る、幸せなどの概念を超高次元ベクトルとしてエンコードします（例えば、[OpenAIの](https://openai.com/index/new-embedding-models-and-api-updates/) [`text-embedding-3-large`](https://openai.com/index/new-embedding-models-and-api-updates/) は最大3072次元のベクトル表現を生成します）。全ての概念や単語が類似性によって並べられ、似た概念が近くに、反対の言葉が遠くに浮かんでいるような空間を想像してみましょう。
 
 You can learn more about vectors and how to do various calculations in the multidimensional world on the [Vector Operations ベクトルの操作](/sketching-with-math-and-quasi-physics/vector-operations)
 

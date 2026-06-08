@@ -5,7 +5,9 @@ To render a 3D scene using ray marching, we need to shoot a ray for each pixel. 
 
 3Dシーンをレンダリングするには、それぞれのピクセルに対してレイを飛ばす必要があります。[プロジェクションの原理を思い出してください](/sketching-with-math-and-quasi-physics/projection-and-3d-rendering/ray-marching)。画面上の点（ピクセル）を選んで視点からレイを伸ばし、物体に当たるかどうかを判定してそのピクセルに何を描くかを決めます。シェーダーを使うと、[すべてのピクセルを並列に処理して](https://thebookofshaders.com/01/)全体のイメージを完成させることができます。
 
-[![](/images/3d-rendering-with-ray-marching-3d.png)](/images/3d-rendering-with-ray-marching-3d.png)
+[![](/images/3d-rendering-with-ray-marching-3d.png "50")](/images/3d-rendering-with-ray-marching-3d.png)
+
+<div></div>
 
 The following example demonstrates the idea. The starting position of the ray and the direction are determined by the viewpoint (`eye`) and the position of the current pixel (`crd`).
 
@@ -37,7 +39,7 @@ On the dark gray background, the shader only turns the pixel white if the ray in
 
 シェーダーは暗いグレーの背景の上で、レイが球体と交差する場合にだけピクセルを白くします。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/OJdJoNg?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="OJdJoNg" data-user="kynd" data-preview="true"></p></div>
 
 # Finding the normal
 # 法線を見つける
@@ -60,7 +62,7 @@ If the light source can be seen as a point light, like a small light bulb, we ca
 
 To find the normal, we can use [numeric approximation method for the gradient](/sketching-with-math-and-quasi-physics/calculus-for-makers/differentiation). In other words, by comparing the return values of the SDF for the neighboring points along each axis, we can determine the direction in which the distance increases the most. This direction corresponds to the direction in which the surface is facing.
 
-法線を求めるには、[勾配の数値な近似](/sketching-with-math-and-quasi-physics/calculus-for-makers/differentiation)が使えます。つまり、それぞれの軸の上で隣り合う点のSDFの戻り値を比較することによって、距離が最も増加する向きを求めることができます。これは表面の向きに対応しています。
+法線を求めるには、[勾配の数値的な近似](/sketching-with-math-and-quasi-physics/calculus-for-makers/differentiation)が使えます。つまり、それぞれの軸の上で隣り合う点のSDFの戻り値を比較することによって、距離が最も増加する向きを求めることができます。これは表面の向きに対応しています。
 
 ```jsx
 vec3 getNormal(vec3 P) {	
@@ -77,7 +79,7 @@ The demo below calculates [Lambertian reflectance](/sketching-with-math-and-quas
 
 このデモでは、法線と光の向きを使って[ランバート反射](/sketching-with-math-and-quasi-physics/light/illuminating-objects/classic-3d-rendering)を計算します。キャンバス上でマウスを移動すると光源の位置を変更することができます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/vYbYzpx?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="vYbYzpx" data-user="kynd" data-preview="true"></p></div>
 
 # Moving the shape
 # 形を動かす
@@ -114,7 +116,7 @@ vec3 rotate(vec3 p, float angle, vec3 axis) {
 }
 ```
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/poGoqpQ?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="poGoqpQ" data-user="kynd" data-preview="true"></p></div>
 
 You may have noticed that the demo code appears to be moving the position of the ray instead of the object. Your intuition is correct. Since positions are relative, moving the ray is equivalent to moving the object.
 
@@ -132,7 +134,7 @@ The demo below visualizes the output of the SDF function by slicing the space at
 
 下のデモでは、 SDF関数の出力を`z = 0`で空間を輪切りにして見せています。距離を見やすくするために、グラデーションに薄いストライプを追加しました。物体が移動、回転すると、物体までの距離もそれに応じて変化します。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/abXbPaO?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="abXbPaO" data-user="kynd" data-preview="true"></p></div>
 
 # Placing multiple objects
 # 複数の物体を配置する
@@ -148,7 +150,7 @@ float SDF(vec3 p) {
 }
 ```
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/rNPvbNr?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="rNPvbNr" data-user="kynd" data-preview="true"></p></div>
 
 Here is the 3D rendering with Ray Marching. To assign different colors to objects, you can compare the distances to the objects to find which object the ray has hit.
 
@@ -158,7 +160,7 @@ Here is the 3D rendering with Ray Marching. To assign different colors to object
 vec3 baseColor = sdSphere(P, 0.2) < sdOctahedron(P, 0.2) ? vec3(0.3, 0.6, 1.0) : vec3(1.0, 0.4, 0.5);
 ```
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/rNPeRWX?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="rNPeRWX" data-user="kynd" data-preview="true"></p></div>
 
 # Drawing shadows
 # 影を描く
@@ -180,7 +182,7 @@ float shadow = shadowDist >= 0.0 ? 0.0 : 1.0;
 Cd *= shadow;
 ```
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/MWLyxqg?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="MWLyxqg" data-user="kynd" data-preview="true"></p></div>
 
 # Parallel Projection
 # 並行投影
@@ -200,6 +202,6 @@ rayDir = normalize(vec3(crd, 0.0) - origin);
 float dist = raymarch(origin, rayDir);
 ```
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/RwvQMxr?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="RwvQMxr" data-user="kynd" data-preview="true"></p></div>
 
 [Designing 3D world 3Dのデザイン](/sketching-with-math-and-quasi-physics/projection-and-3d-rendering/designing-3d-world)

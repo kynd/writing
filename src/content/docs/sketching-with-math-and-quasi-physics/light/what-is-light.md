@@ -4,7 +4,7 @@ title: "What is light? 光とは何か"
 # Electromagnetic radiation
 # 電磁波
 
-Light is a type of electromagnetic radiation. The visible light that humans can see is a small part of the electromagnetic radiation, and other types include radio waves, microwaves, infrared rays, ultraviolet rays, X-rays, and gamma rays. The types of electromagnetic waves are divided by frequency, which determines how they affect matter.
+Light is a type of **electromagnetic radiation**. The visible light that humans can see is a small part of the electromagnetic radiation, and other types include radio waves, microwaves, infrared rays, ultraviolet rays, X-rays, and gamma rays. The types of electromagnetic waves are divided by frequency, which determines how they affect matter.
 
 光は人間が見ることができる電磁波の一種です。人間に見える可視光線は、電磁波のごく一部で、その他にも電波、マイクロ波、赤外線、紫外線、X線、ガンマ線などの種類があります。電磁波の種類は周波数によって分けられていて、それによって物質にどう影響するかが異なります。
 
@@ -18,7 +18,7 @@ Please take a look at this page for the frequencies and colors of visible light.
 
 [Colors and Numbers 色と数値](/sketching-with-math-and-quasi-physics/colors-and-numbers)
 
-[https://openprocessing.org/sketch/1814072](https://openprocessing.org/sketch/1814072)
+<div class="openprocessing-wrap"><iframe src="https://openprocessing.org/sketch/1814072/embed/" width="100%" height="400" frameborder="0" allowfullscreen></iframe></div>
 
 # Waves and Particles
 # 波と粒子
@@ -31,7 +31,7 @@ For example, electromagnetic waves are diffractive, meaning that they can go aro
 
 例えば電磁波は回折といって水面の波の様に障害物の裏側に回り込むことができます。アンテナとの間に障害物があってもテレビが見れたり携帯電話が繋がるのは電波が回折（と反射、散乱）するおかげです。
 
-[![](/images/what-is-light.png)](/images/what-is-light.png)
+[![](/images/what-is-light.png "75")](/images/what-is-light.png)
 
 [GLSL demo](https://kynd.github.io/p5sketches/extra/wave_function/index.html)  
 

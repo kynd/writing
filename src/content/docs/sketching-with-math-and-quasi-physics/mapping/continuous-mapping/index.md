@@ -8,7 +8,9 @@ The simplest example of continuous mapping is transforming one range of numbers 
 
 連続的な写像の最も簡単な例は、ある数値の範囲を別の範囲へと、比例関係を維持したまま変換することです。プログラミングでは線形写像はそこらじゅうで使われています。
 
-[![](/images/continuous-mapping.jpg)](/images/continuous-mapping.jpg)
+[![](/images/continuous-mapping.jpg "75")](/images/continuous-mapping.jpg)
+
+<div></div>
 
 Conversion from Celsius to Fahrenheit is a good example of a linear mapping. You'd want to map 0°C to 32°F and 100°C to 212°F.
 
@@ -94,11 +96,11 @@ Again, this can be seen as a mere calculation, but it can also be seen as a mapp
 
 > 
 > 
-> Because this is such a common operation, p5.js has its own `[map()](https://p5js.org/reference/p5/map/)` [function](https://p5js.org/reference/p5/map/). Try replacing the `linearMap()` with the `map()` and it still works exactly the same.
+> Because this is such a common operation, p5.js has its own [`map()`](https://p5js.org/reference/p5/map/) function. Try replacing the `linearMap()` with the `map()` and it still works exactly the same.
 > 
-> これはとても一般的な操作なので、p5.jsには独自の`[map()](https://p5js.org/reference/p5/map/)`[関数](https://p5js.org/reference/p5/map/)が用意されています。`linearMap()`を`map()`に置き換えて、全く同じように動くことを確かめましょう。
+> これはとても一般的な操作なので、p5.jsには独自の[`map()`](https://p5js.org/reference/p5/map/)関数が用意されています。`linearMap()`を`map()`に置き換えて、全く同じように動くことを確かめましょう。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/emOoEgO?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="emOoEgO" data-user="kynd" data-preview="true"></p></div>
 
 # Non-Linear mapping
 # 非線形写像
@@ -124,13 +126,14 @@ We have looked at examples of linear and non-linear mapping in one dimension. If
 ## 2次元空間での点の写像
 
 What if we mapped a point in a 2D space to another point in 2D space? One of the most common ways of doing this is called affine transformation, and it's widely used for transforming shapes.  
+
 2次元空間上の点を別の2次元空間上の点に写像するとどうなるでしょう。最も一般的な方法の1つは、形の変換に広く使わるアフィン変換です。
 
 Let’s look at the demo first to see what it does. Try moving your mouse to see the shape changes.
 
 まずはデモを見て、動作を確認してみましょう。マウスを動かして形が変化する様子を見てください。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/PwYraqe?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="PwYraqe" data-user="kynd" data-preview="true"></p></div>
 
 ## The Affine Transformation Formula
 ## アフィン変換の式
@@ -237,15 +240,15 @@ Let's look at another demo. This is almost identical to the demo above, but it t
 
 別のデモを見てみましょう。これは上のデモとほぼ同じですが、歪曲ではなく、図形の平行移動と回転を行います。コードを編集して、他の種類の変換も試しましょう。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/QwWjYLb?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="QwWjYLb" data-user="kynd" data-preview="true"></p></div>
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/QwWjYLb?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+[[Demo]](https://codepen.io/kynd/pen/QwWjYLb?editors=0010)
 
 We have another example in GLSL below. Since GLSL supports matrices natively, it is easy to multiply them and apply multiple transforms. Play around with this code too.
 
 下はGLSLを用いた例です。GLSLは行列を標準でサポートしているので、行列の掛け合わせて複数の変換を簡単に適用できます。このコードでも色々試してみましょう。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/OJBjQPM?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="OJBjQPM" data-user="kynd" data-preview="true"></p></div>
 
 # Radial Basis Function (RBF) Interpolation
 # 放射基底関数（RBF）補間
@@ -270,11 +273,13 @@ The function to calculate the influence of each point is called a radial basis f
 
 [![](/images/continuous-mapping.png)](/images/continuous-mapping.png)
 
+<div></div>
+
 Let’s see RBF interpolation in action. Drag the white points in the demo below to deform the shape as you want.
 
 実際のRBF補間の動作を見てみましょう。下のデモで白い点をドラッグして、好きなように変形させてください。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/VYwmrYy?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="VYwmrYy" data-user="kynd" data-preview="true"></p></div>
 
 If you look at the code, you will notice that the `RBFInterpolator` precomputes the weights rather than directly taking the weighted average of the key points. This is for two purposes:
 

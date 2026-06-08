@@ -15,6 +15,7 @@ One of the most fun parts of sketching with code is that it’s not static. Let�
 # ニュートン力学
 
 How do you move a thing? Just push it.  
+
 物はどうすれば動くでしょうか。答えは、ただ押してみることです。
 
 Sir Isaac Newton basically said that things stay at rest in the same position, or keep moving at the same velocity until you apply force to accelerate them. Position, velocity, acceleration, and force are the most fundamental concepts to understand physical motion. Emulating these concepts is extremely simple: frame by frame, just add force to acceleration to change it, then acceleration to velocity, then velocity to position.
@@ -23,11 +24,11 @@ Sir Isaac Newton basically said that things stay at rest in the same position, o
 
 [Newtonian mechanics ニュートン力学](/sketching-with-math-and-quasi-physics/newton-and-vectors/newtonian-mechanics)
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/vbGNjx?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="vbGNjx" data-user="kynd" data-preview="true"></p></div>
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/zeqvaO?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="zeqvaO" data-user="kynd" data-preview="true"></p></div>
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/YzLJOgp?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="YzLJOgp" data-user="kynd" data-preview="true"></p></div>
 
 # Differentiation and Integration
 # 微分と積分
@@ -40,11 +41,11 @@ Differentiation is the rate of change, and integration is the accumulation of ch
 
 微分は変化の割合を表し、積分は変化の蓄積を表します。例えば、速度は特定の瞬間における位置の変化量を表す量であり、位置は速度に応じた変化が時間をかけて蓄積された結果です。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/XWoMJRV?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="XWoMJRV" data-user="kynd" data-preview="true"></p></div>
 
 These subjects might have been annoying in math class. But the foundational ideas are quite simple, and luckily in sketching motion with code, you usually don't have to solve any equations, but instead can use a very rough approximation called numerical integration, which breaks down the changes into simple additions per small amount of time.
 
-数学の時間のこれらの科目は頭が痛かったもしれませんが、基本的な考え方は実にシンプルです。さらに、コードで動きのスケッチをする際には、大抵の場合方程式を解く必要すらありません。代わりに数値積分という大まかな近似法が使えます。これは単に、変化を小さな時間単位での足し算に分解する方法です。
+数学の授業では、これらの科目に頭を悩ませたかもしれません。しかし、基本的な考え方はとてもシンプルです。さらに、コードで動きをスケッチする際は、多くの場合、方程式を解く必要すらありません。代わりに、数値積分という大まかな近似法を使えます。これは、変化を小さな時間単位で区切り、足し算として積み重ねていく方法です。
 
 You probably have been using this method already without knowing it, for example, the Newtonian physics simulations above are based on a numerical approach instead of mathematically accurate methods.
 
@@ -54,13 +55,13 @@ You probably have been using this method already without knowing it, for example
 
 [Integration 積分](/sketching-with-math-and-quasi-physics/calculus-for-makers/integration)
 
-[![](/images/about-motion.png)](/images/about-motion.png)
+[![](/images/about-motion.png "75")](/images/about-motion.png)
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/Poxxoxv?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="Poxxoxv" data-user="kynd" data-preview="true"></p></div>
 
-[![](/images/about-motion-1.png)](/images/about-motion-1.png)
+[![](/images/about-motion-1.png "75")](/images/about-motion-1.png)
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/ExGwPKa?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="ExGwPKa" data-user="kynd" data-preview="true"></p></div>
 
 # Analytical Solutions and Numerical Approximation
 # 解析的な解と数値的な近似
@@ -73,11 +74,11 @@ As mentioned above, the latter is the most common and actually more useful in so
 
 上で触れたように、後者の手法がより一般的で実用的ですが、それぞれ長所と短所があるので、この2つのアプローチの関係を理解することが重要となります。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/XWqxxEd?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="XWqxxEd" data-user="kynd" data-preview="true"></p></div>
 
 The numeric approach is preferred not just because it’s easier, but because it’s also more flexible. Solving motion through equations is like predicting the future. Once solved, you know exactly what will happen at any moment. But it's often difficult or impossible to account for all variables. Even calculating the movement of three objects drawn by gravity becomes unpredictable. Any system involving external factors, like human interaction, cannot be determined in advance. Since the numeric approach calculates changes bit by bit (very often frame by frame), it is pretty easy to react to unpredictable changes by updating parameters in real time.
 
-数値的アプローチが選ばれるのは、簡単だからという理由だけでなく、柔軟性があるからです。方程式で運動を解くのは、未来を予測するようなもので、解が得られればどの瞬間の状態も正確に把握できます。しかし、多くの場合、すべての変数を考慮することは難しか、不可能ですらあります。たとえば、重力で引き合う3つの物体の動きでさえ、予測はできません。さらに、人間が操作するなど外部要因が絡むシステムは、事前に決定することができません。一方、数値的アプローチは変化を少しずつ（多くの場合フレームごとに）計算するため、パラメータをリアルタイムで更新でき、予測不可能な変化にも柔軟に対応できます。
+数値的アプローチが選ばれるのは、簡単だからという理由だけでなく、柔軟性があるからです。方程式で運動を解くのは、未来を予測するようなもので、解が得られればどの瞬間の状態も正確に把握できます。しかし、多くの場合、すべての変数を考慮することは難しく、不可能ですらあります。たとえば、重力で引き合う3つの物体の動きでさえ、予測はできません。さらに、人間が操作するなど外部要因が絡むシステムは、事前に決定することができません。一方、数値的アプローチは変化を少しずつ（多くの場合フレームごとに）計算するため、パラメータをリアルタイムで更新でき、予測不可能な変化にも柔軟に対応できます。
 
 > 
 > 
@@ -85,17 +86,18 @@ The numeric approach is preferred not just because it’s easier, but because it
 > 
 > 劉慈欣の大ヒット作「三体」で広く知られるようになった3つの物体の重力による運動の予測は、三体問題と呼ばれています。二体問題（地球と月のような）は比較的単純で、きれいな予測可能な解が得られますが、三体問題は通常、カオス的で予測不可能になります。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/qmGOgB?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="qmGOgB" data-user="kynd" data-preview="true"></p></div>
 
 A common drawback with numerical methods is their inaccuracy. Because these methods approximate smooth motion through discrete changes, the results can go slightly off from physically accurate motion. There are several ways to minimize this problem. The most popular approaches are called the Improved Euler method and [Runge-Kutta method](https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods) (the Euler method is actually a special case of Runge-Kutta).
 
 数値的な手法の主な欠点は不正確さです。これらの手法は滑らかな動きを離散的な変化で近似するため、物理的に正確な動きからわずかにずれることがあります。この問題を最小限に抑えるための方法がいくつかあり、最も一般的なのは改良オイラー法と[ルンゲ・クッタ法](https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods)です（オイラー法はルンゲ・クッタ法の特殊なケースにあたります）。
 
-[![](/images/about-motion-2.png)](/images/about-motion-2.png)
+<div class="image-row">
+<figure><a href="/images/about-motion-2.png"><img src="/images/about-motion-2.png" alt="" /></a><figcaption><code>height = random(1) + 0.1</code></figcaption></figure>
+<figure><a href="/images/about-motion-3.png"><img src="/images/about-motion-3.png" alt="" /></a><figcaption><code>height = pow(random(1), 4) + 0.1</code></figcaption></figure>
+</div>
 
-[![](/images/about-motion-3.png)](/images/about-motion-3.png)
-
-[Continuous Time and Discrete Time 連続した時間とバラバラな時間](/sketching-with-math-and-quasi-physics/newton-and-vectors/continuous-time-and-discrete-time)
+Continuous Time and Discrete Time 連続した時間とバラバラな時間
 
 # Tween
 # トゥイーン
@@ -118,7 +120,7 @@ In computer animation, we often use easing functions to control these transition
 
 [Interpolation and Animation 補間とアニメーション](/sketching-with-math-and-quasi-physics/interpolation-and-animation)
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/qmLJeO?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="qmLJeO" data-user="kynd" data-preview="true"></p></div>
 
 # Constraints 制約
 
@@ -136,29 +138,29 @@ Verlet Integration is a way to create simple physics simulations by connecting d
 
 [Building Ragdolls ラグドールを作る](/sketching-with-math-and-quasi-physics/newton-and-vectors/building-ragdolls)
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/aWXVPZ?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="aWXVPZ" data-user="kynd" data-preview="true"></p></div>
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/pPGdqX?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="pPGdqX" data-user="kynd" data-preview="true"></p></div>
 
 To control movement more precisely and intentionally, you might want to study kinematics. Forward kinematics and inverse kinematics are common techniques used in robotics, games, and so on to describe the motion of jointed parts, such as mechanical arms or human bodies.
 
 動きをより正確かつ意図的にコントロールしたい場合、キネマティクスの理解が役立ちます。フォワードキネマティクスとインバースキネマティクスは、ロボット工学やゲームなどの分野で広く使われている手法で、機械のアームや人体のような関節を持つ構造の動きを表現することができます。
 
-[![](/images/about-motion.jpg)](/images/about-motion.jpg)
+[![](/images/about-motion.jpg "75")](/images/about-motion.jpg)
+
+<div></div>
 
 Both methods handle structures made of multiple segments and joints to connect them. Forward kinematics starts from the root of the connection and propagates the posture going forward to the end. You directly manipulate the rotation of each joint, and that will determine the overall movement.
 
 どちらの手法も、複数のセグメントと関節から成る構造を用います。フォワードキネマティクスは、繋がりの根本（基点）から始めて、姿勢を端へと伝えていきます。それぞれ関節の回転を直接操作することにより、全体の動きが決まります。
 
-[Kinematics キネマティクス](/sketching-with-math-and-quasi-physics/kinematics)
-
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/qBvBvLa?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="qBvBvLa" data-user="kynd" data-preview="true"></p></div>
 
 Inverse kinematics is more goal-driven. You define where you want the endpoint to be, then the algorithm figures out the rotation of each joint that makes the desired result happen.
 
 インバースキネマティクスは、目標志向のアプローチで、最終点の位置を定義すると、アルゴリズムがその位置を実現するために必要なそれぞれの関節の回転角度を計算してくれます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/OJqNBNQ?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="OJqNBNQ" data-user="kynd" data-preview="true"></p></div>
 
 [Kinematics キネマティクス](/sketching-with-math-and-quasi-physics/kinematics)
 
@@ -171,7 +173,7 @@ Motion of objects and life in the real world is often unpredictable, and you can
 
 [Taming Randomness ランダムさを手なづける](/sketching-with-math-and-quasi-physics/taming-randomness)
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/eWbPdK?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="eWbPdK" data-user="kynd" data-preview="true"></p></div>
 
 # Camera in Motion
 # カメラの動き
@@ -182,7 +184,7 @@ While we've explored how to move objects and characters, there's one more crucia
 
 [Camera in Action 働くカメラ](/sketching-with-math-and-quasi-physics/camera-in-action)
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/OPJadKe?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="OPJadKe" data-user="kynd" data-preview="true"></p></div>
 
 # Sketching with motion
 # 動きとともに描く

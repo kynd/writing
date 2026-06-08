@@ -17,7 +17,7 @@ Subsurface scattering (SSS) is a phenomenon where light goes into the surface of
 
 サブサーフェススキャッタリング（SSS）は、光が半透明の物質（皮膚、ワックス、大理石など）の表面に入り、その内部で散乱し、異なる点から出てくる現象です。強い光源に手をかざすと、縁の周りに柔らかな赤い光が見えることに気づくでしょう。この色が表面反射とは異なるのは、過程の中で皮膚組織と血液が短い波長（青/緑）を長い波長（赤）よりも多く吸収するためです。
 
-[![](/images/davepoo2014-cc-by-sa-4-0https-en-wikipedia-org-wiki-subsu.jpg)](/images/davepoo2014-cc-by-sa-4-0https-en-wikipedia-org-wiki-subsu.jpg)
+[![](/images/davepoo2014-cc-by-sa-4-0https-en-wikipedia-org-wiki-subsu.jpg "75")](/images/davepoo2014-cc-by-sa-4-0https-en-wikipedia-org-wiki-subsu.jpg)
 
 [Davepoo2014](https://commons.wikimedia.org/w/index.php?title=User:Davepoo2014&action=edit&redlink=1) [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)  
 [https://en.wikipedia.org/wiki/Subsurface\_scattering#/media/File:Skin\_Subsurface\_Scattering.jpg](https://en.wikipedia.org/wiki/Subsurface_scattering#/media/File:Skin_Subsurface_Scattering.jpg)
@@ -34,6 +34,6 @@ This effect is subtle but adds soft lighting without making the scene too bright
 
 この効果は微細ですが、全体を明るくぼやけさせることなく、柔らかな照明を加えています。デモ上で、 Subsurface scatteringのオン/オフを切り替えてみましょう。その後、Subsurface scattering 以外のすべてをオフにして、効果を単独で確認してください。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/dyxzyjV?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="dyxzyjV" data-user="kynd" data-preview="true"></p></div>
 
 [Atmospheric Perspective 空気遠近法](/sketching-with-math-and-quasi-physics/reading/rendering-process-overview/atmospheric-perspective)

@@ -43,13 +43,14 @@ What he is saying is that we can only measure position relative to something. Wh
 # 2Dキャンバスに描く
 
 We want to draw stuff on a computer. To do that, we need to have three things: an origin (a reference point to measure the position relatively from), axes along which we measure distances, and a unit to define what distance corresponds to a number 1.  
+
 コンピューターで何かを描くには、3つの要素が必要です。原点（相対的な位置を測るための基準点）、距離を測る軸、そして数値の1が示す距離を定義する単位です
 
 In theory, you can pick them freely, but most software has its own default coordinate system. For 2D drawing, like Photoshop, Illustrator, Figma, P5.js, and openFrameworks, the origin is usually the top-left corner of a canvas, and axes are horizontal (x) and vertical (y). The unit is usually a pixel or the device unit. For example, on a Retina display Mac, 1 point corresponds to 2 or 3 (or other numbers depending on your settings) physical pixels. This factor is set so that the numbers you choose appear about the same size perceptually regardless of the actual resolution of the device.
 
 これらは理屈の上では自由に選べますが、ほとんどのソフトウェアはそれぞれデフォルトの座標系を持っています。Photoshop、Illustrator、Figma、P5.js、openFrameworksなどでは、2D描画の原点は大抵キャンバスの左上隅にあり、軸は水平（x）と垂直（y）方向です。単位は一般的にピクセルまたはデバイスユニットを使います。例えば、RetinaディスプレイのMacでは、1ポイントは2から3、設定によって他の数の物理的なピクセルに相当します。この換算によって、デバイスの実際の解像度に関係なく、選択した数値が視覚的に同じ大きさに見えるよう調整されているのです。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/vEYRKGd?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="vEYRKGd" data-user="kynd" data-preview="true"></p></div>
 
 > 
 > 
@@ -65,7 +66,7 @@ The demo below from the [Mapping 写像](/sketching-with-math-and-quasi-physics/
 
 下の[Mapping 写像](/sketching-with-math-and-quasi-physics/mapping)ページからのデモはアフィン変換という、このような座標変換を行うシンプルな手法の例です。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/PwYraqe?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="PwYraqe" data-user="kynd" data-preview="true"></p></div>
 
 [Mapping 写像](/sketching-with-math-and-quasi-physics/mapping)
 
@@ -84,16 +85,16 @@ In Newtonian physics, you start from a position, then apply velocity to move it,
 
 [Vector Operations ベクトルの操作](/sketching-with-math-and-quasi-physics/vector-operations)
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/xdNwao?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="xdNwao" data-user="kynd" data-preview="true"></p></div>
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/YzLJOgp?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="YzLJOgp" data-user="kynd" data-preview="true"></p></div>
 
 # 3D Graphics
 # 3Dグラフィックス
 
 Of course, what comes after 2D is 3D. Moving up one dimension is just simple. You define a position is a vector with 3 components instead of 2. Do the same for the velocity, acceleration, etc. as long as they are defined as vectors, the math stays basically the same.
 
-もちろん、2Dの次は3Dです。次元を1つ上げるのは簡単です。位置を定義する際に、2つのではなく3つの成分を持つベクトルを使います。速度や加速度なども同様で、ベクトルとして定義されるている限り、数学的な扱いは基本的に同じです。
+もちろん、2Dの次は3Dです。次元を1つ上げるのは簡単です。位置を定義する際に、2つではなく3つの成分を持つベクトルを使います。速度や加速度なども同様で、ベクトルとして定義されている限り、数学的な扱いは基本的に同じです。
 
 What is different, and can be a lot more challenging, is rendering. Because your canvas is 2D, you cannot just place things defined in a 3D space on it. You need to translate the points in 3D space to 2D space somehow. This is called projection, which dates back to the 15th century during Brunelleschi's time.
 
@@ -103,7 +104,7 @@ What is different, and can be a lot more challenging, is rendering. Because your
 
 <div class="instagram-wrap"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/C0QSVPLLtmA/" data-instgrm-version="14" style="width:100%;max-width:540px;margin:0;border:none;border-radius:4px;padding:0;"></blockquote></div>
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/rNPeRWX?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="rNPeRWX" data-user="kynd" data-preview="true"></p></div>
 
 Also, to make things look 3D, lighting or shading (basically the same thing — you add light to the scene, which creates shade too) plays an important role. Without light and shade, a sphere would look like just a circle. Shadows casting from one object onto another will clarify their spatial relationship.
 
@@ -117,7 +118,7 @@ Also, to make things look 3D, lighting or shading (basically the same thing — 
 > 
 > とはいえスタイルの選択は自由です。漫画っぽくフラットでに描画することもできます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/RwYqGyK?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="RwYqGyK" data-user="kynd" data-preview="true"></p></div>
 
 # Higher dimensions
 # 高次元の空間
@@ -128,8 +129,11 @@ You can go up to higher dimensions. No matter how much you go up, vectors will h
 
 [![](/images/square-from-the-flatland-meeting-with-sphere-to-find-the-exi.png)](/images/square-from-the-flatland-meeting-with-sphere-to-find-the-exi.png)
 
+<div></div>
+
 Square from the flatland meeting with Sphere to find the existence of the higher dimension  
-フラットランドのスクエア氏がが球体と出会い、高次元の存在を知る場面
+
+フラットランドのスクエア氏が球体と出会い、高次元の存在を知る場面
 
 Thinking about higher dimensions not usually for graphics, but any data that can be represented with multiple numeric parameters are thought as a vector in multi dimensional space, with each parameter corresponding to a single axis. Then you can apply familiar concepts and operations to the data, such as addition, multiplication, calculating distance and angle, etc.
 
@@ -141,7 +145,7 @@ In fact, large language models (LLM) represent concepts like "dog," "human," "ru
 
 [Dimensions 次元](/sketching-with-math-and-quasi-physics/dimensions)
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/vYqqGmP?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="vYqqGmP" data-user="kynd" data-preview="true"></p></div>
 
 # Color Spaces
 # 色空間
@@ -152,7 +156,7 @@ Colors can be represented with a series of numbers, such as R, G, and B. So they
 
 [Colors and Numbers 色と数値](/sketching-with-math-and-quasi-physics/colors-and-numbers)
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/XJrVrKx?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="XJrVrKx" data-user="kynd" data-preview="true"></p></div>
 
 # Distances
 # 距離
@@ -167,7 +171,9 @@ In a space, you can measure distances between points. The most common way is the
 > 
 > 数学には様々な種類の空間があり、その中には距離の概念を持たないものもあります。
 
-[![](/images/about-space.png)](/images/about-space.png)
+[![](/images/about-space.png "75")](/images/about-space.png)
+
+<div></div>
 
 But that is not the only distance we care about. How do you measure the distance from Tokyo to São Paulo? What you want is probably not a straight line distance between two points, but a curved length along the surface of the Earth. This is called [spherical geometry](https://en.wikipedia.org/wiki/Spherical_geometry). How about a checkerboard? How do you measure distances between two squares? Perhaps the number of moves it takes?
 
@@ -175,7 +181,9 @@ But that is not the only distance we care about. How do you measure the distance
 
 [Various distances さまざまな距離](/sketching-with-math-and-quasi-physics/distance/various-distances)
 
-[![](/images/about-space-1.png)](/images/about-space-1.png)
+[![](/images/about-space-1.png "50")](/images/about-space-1.png)
+
+<div></div>
 
 The concept of distance becomes important in various cases, for example in finding the shortest path to move characters along in game design, or dividing territories based on the distances.
 
@@ -185,13 +193,15 @@ The concept of distance becomes important in various cases, for example in findi
 
 [![](/images/about-space-2.png)](/images/about-space-2.png)
 
+<div></div>
+
 In computer graphics, functions that returns the distance from a point to the surface of object, called signed distance functions, or SDF are often used for 3D rendering.
 
 コンピューターグラフィックスでは、点からオブジェクトの表面までの距離を返す関数（符号付き距離関数、またはSDFと呼ばれる）が3Dレンダリングによく使用されます。
 
 [Signed distance functions 符号付き距離関数](/sketching-with-math-and-quasi-physics/distance/signed-distance-functions)
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/mdLPVrE?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="mdLPVrE" data-user="kynd" data-preview="true"></p></div>
 
 # So what is space?
 # で、空間とは

@@ -1,7 +1,7 @@
 ---
 title: "Complex Exponentiation 複素数の累乗"
 ---
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/GgjBMaP?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="GgjBMaP" data-user="kynd" data-preview="true"></p></div>
 
 If [complex multiplication](/sketching-with-math-and-quasi-physics/math-snippets/complex-multiplication) is a spin and a stretch, then Complex Exponentiation (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>a</mi><mi>b</mi></msup></mrow><annotation encoding="application/x-tex">a^b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8491em;"></span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8491em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">b</span></span></span></span></span></span></span></span></span></span></span>) is a spiral.
 

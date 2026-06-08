@@ -1,7 +1,7 @@
 ---
 title: "Ray Marching レイマーチング"
 ---
-Ray marching is a technique used in computer graphics to render a 3D scene by casting "rays" from the viewpoint and tracing them by moving points step by step. This method is popular for rendering complex scenes with relatively simple shader code. It is also a great tool for understanding and experimenting with various concepts behind 3D rendering, as shown in the pages on [Illuminating objects](/sketching-with-math-and-quasi-physics/light/illuminating-objects). You can find numerous more examples of ray marching on websites like [Shadertoy](https://www.shadertoy.com/).
+**Ray marching** is a technique used in computer graphics to render a 3D scene by casting "rays" from the viewpoint and tracing them by moving points step by step. This method is popular for rendering complex scenes with relatively simple shader code. It is also a great tool for understanding and experimenting with various concepts behind 3D rendering, as shown in the pages on [Illuminating objects](/sketching-with-math-and-quasi-physics/light/illuminating-objects). You can find numerous more examples of ray marching on websites like [Shadertoy](https://www.shadertoy.com/).
 
 レイマーチングは、視点からのレイ（半直線、光線）に沿って点を逐次的に移動することで、3Dシーンをレンダリングするコンピュータグラフィックスの技術です。この手法は複雑なシーンを比較的シンプルなシェーダーのコードでレンダリングするためによく用いられます。また、「[物体を照らす](/sketching-with-math-and-quasi-physics/light/illuminating-objects)」ページ のように、3Dレンダリングの背後にある様々な概念の理解や実験のための優れたツールでもあります。[Shadertoy](https://www.shadertoy.com/)などのウェブサイトには、レイマーチングの例が数多くあります。
 
@@ -54,15 +54,15 @@ We haven't made a 3D renderer yet, so let's render it on a 2D plane by slicing i
 
 まだ3Dのレンダラーを作っていないので、CTスキャンのように2D平面上でスライスしてレンダリングしましょう。下のデモでは、この関数の返り値を可視化しています。キャンバスの中心を3D空間の {x:0, y:0} に対応させ、球体をz軸に沿って前後に移動することでスライスしています。ピクセルの明るさは、関数の返り値を表していて、ピクセルが明るいほど球の表面から遠いことを意味します。球の内部では実際には値が負になることに注意してください。黄色は球の表面が存在する正確な位置を示し、返り値が0であることを表します。このSDFをスライスする方法は、デバッグや実際に何が起きているのかを目で見て調べるのに非常に便利です。このテクニックはこの先でも使用します。
 
-[![](/images/ray-marching.png)](/images/ray-marching.png)
+[![](/images/ray-marching.png "75")](/images/ray-marching.png)
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/OJrYobG?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="OJrYobG" data-user="kynd" data-preview="true"></p></div>
 
 Let’s see another example. This is an Octahedron.
 
 別の例も見てみましょう。これは正八面体です。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/VwqOGzB?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="VwqOGzB" data-user="kynd" data-preview="true"></p></div>
 
 What is great about defining a shape as a signed distance function (SDF) is that it can tell us where the surface is, and it lets us know how far we need to go to reach the surface. This is particularly valuable when moving a point along a ray.
 
@@ -88,12 +88,12 @@ With this method, the distance often doesn't reach zero. But in practice, if the
 > In this demo, the shape (sphere) is drawn in the shader, while rays are rendered using p5.js drawing functions. This may seem tricky, but note that `sdSphere` in JavaScript and GLSL is identical, and `normalizePosToScreenCrd` in JS and `screenCrdToNormalizedPos` in GLSL are the reverse of each other.  
 > このデモでは、形状（球）をシェーダーで描画し、レイをp5.jsの描画関数をでレンダリングしています。ややこしく見えるかもしれませんが、JavaScriptとGLSLの`sdSphere`が同じで、JSの`normalizePosToScreenCrd`とGLSLの`screenCrdToNormalizedPos`は互いに逆の操作だということに注目してください。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/eYxYRBy?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="eYxYRBy" data-user="kynd" data-preview="true"></p></div>
 
 For parallel projection, we cast the rays in a parallel manner. The rest of the logic can stay exactly the same.
 
 平行投影の場合、レイを平行に飛ばします。他のロジックは全く同じままです。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/NWoWLby?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="NWoWLby" data-user="kynd" data-preview="true"></p></div>
 
 [3D Rendering with Ray Marching レイマーチングによる3Dレンダリング](/sketching-with-math-and-quasi-physics/projection-and-3d-rendering/3d-rendering-with-ray-marching)

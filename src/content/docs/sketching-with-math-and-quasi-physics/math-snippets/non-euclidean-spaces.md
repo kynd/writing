@@ -1,10 +1,9 @@
 ---
 title: "Non-Euclidean Spaces 非ユークリッド空間"
 ---
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/bNBdqaX?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="bNBdqaX" data-user="kynd" data-preview="true"></p></div>
 
 # Euclid and Parallel Postulate
-
 # ユークリッドと平行線公準
 
 Around 300 BC, Euclid wrote _Elements_ and built geometry from a small set of five basic rules, like you can draw a straight line between any two points.
@@ -16,11 +15,11 @@ The fifth rule, the Parallel Postulate, is a little more complicated. It states 
 第5のルールである平行線公準は少し複雑で、1本の直線と、その上にない1点が与えられたとき、その点を通り、元の直線と決して交わらない直線がただ1本だけ引けるというものです。数学者たちは長い間、この公準が余分で、他の4つから導けるのではないかと考えていましたが、1800年代にガウス、ボヤイ、ロバチェフスキーらが、逆の結論を導き出しました。第5公準はユークリッド幾何学を成り立たせるために必要ですが、別の規則に置き換えることで、異なる種類の空間を作ることができるのです。
 
 # Geodesics, Parallels, and Angles
-
 # 測地線・平行線・角度
 
   
 To understand these spaces, we must redefine what a straight line is. In curved space, the shortest path between two points is called a geodesic. How these geodesics behave defines the shape of the universe.  
+
 これらの空間を理解するには、直線の定義するかを考え直す必要があります。曲がった空間では、2点間の最短経路を 測地線（geodesic） と呼びます。測地線の振る舞いが、その空間の形を特徴づけます。
 
 ## Euclidean Space (Zero Curvature)

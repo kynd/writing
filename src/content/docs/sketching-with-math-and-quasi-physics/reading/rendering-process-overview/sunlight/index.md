@@ -26,7 +26,7 @@ In the demo, try turning off everything other than the sunlight, then toggle the
 
 太陽光の効果を単独で確認するために、デモ上で Sun 以外すべてをオフにして、Shadow のオン/オフを切り替えてみましょう。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/dyxzyjV?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="dyxzyjV" data-user="kynd" data-preview="true"></p></div>
 
 # Diffuse light
 # ディフューズ（拡散光）
@@ -39,7 +39,7 @@ In the demo, try turning off everything other than the sunlight, then toggle the
 float diffuse = clamp(dot(normal, lightDirection), 0.0, 1.0);
 ```
 
-[![](/images/sunlight.jpg)](/images/sunlight.jpg)
+[![](/images/sunlight.jpg "75")](/images/sunlight.jpg)
 
 # Specular reflection
 # スペキュラー（鏡面反射）
@@ -52,7 +52,9 @@ float diffuse = clamp(dot(normal, lightDirection), 0.0, 1.0);
 float specular = pow(clamp(dot(normal, halfVector), 0.0, 1.0), 16.0);
 ```
 
-[![](/images/sunlight-1.jpg)](/images/sunlight-1.jpg)
+[![](/images/sunlight-1.jpg "75")](/images/sunlight-1.jpg)
+
+<div></div>
 
 Then specular is multiplied by diffuse to limit it to the area where the direct sunlight is.
 

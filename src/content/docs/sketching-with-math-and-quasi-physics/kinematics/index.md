@@ -9,7 +9,7 @@ Forward kinematics and inverse kinematics are common techniques used in robotics
 
 フォワードキネマティクスとインバースキネマティクスは、ロボット工学やゲームなどで、機械の腕や人間の体のような関節部分の動きを表現するためによく使われる技術です。デッサン用の人形のように、多くの部品が連結されて作られたキャラクターや物体のアニメーションを作る際の強力なツールです。
 
-[![](/images/kinematics.jpg)](/images/kinematics.jpg)
+[![](/images/kinematics.jpg "75")](/images/kinematics.jpg)
 
 # Forward Kinematics (FK)
 # フォワードキネマティクス（FK）
@@ -18,19 +18,21 @@ Take a look at this picture of a robot arm. Forward kinematics (FK) controls the
 
 このロボットアームの絵を見てください。フォワードキネマティクス（FK）は各関節の角度を設定してこのアームの姿勢を制御します。土台や根元から始めて、関節ごとに順に進む（advance forward）ことでポーズを決めます。
 
-[![](/images/kinematics-1.jpg)](/images/kinematics-1.jpg)
+[![](/images/kinematics-1.jpg "75")](/images/kinematics-1.jpg)
+
+<div></div>
 
 Let's see a simple model in action. This arm is defined by two sets of values: the lengths of each segment and the angle of each segment relative to its base (the segment right before it). The numbers below each joint represent its angle.
 
 シンプルなモデルを動かしてみましょう。このアームは2種類の値、各部分（セグメント）の長さと、それぞれのセグメントのその土台（ひとつ手前のセグメント）に対する角度で定義されます。各関節の下の数字はその角度を表しています。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/qBvBvLa?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="qBvBvLa" data-user="kynd" data-preview="true"></p></div>
 
 You can add any number of segments to forward kinematics. The demo below showcases a series of arms with four segments and joints, each repeating the exact same motion with a slight time offset. It's fascinating that this already starts to resemble a life form, plant, or sea creature. Forward kinematics is a powerful tool in animation, useful for everything from simple character motion to larger scales like landscapes or bizarre monsters.
 
-フォワードキネマティクスには幾つでもセグメントを追加できます。下のデモでは、4つのセグメントと関節を持ついくつものアームが、わずかにタイミングをずらして同じ動きを繰り返す様子が見れますが、これだけですでに生命体、植物または海洋生物を思わせる動きが生まれています。フォワードキネマティクスはアニメーションため用の強力なツールで、シンプルなキャラクターの動きから大規模な風景や奇妙なモンスターまで、あらゆるものに役立ちます。
+フォワードキネマティクスには幾つでもセグメントを追加できます。下のデモでは、4つのセグメントと関節を持ついくつものアームが、わずかにタイミングをずらして同じ動きを繰り返す様子が見られますが、これだけですでに生命体、植物または海洋生物を思わせる動きが生まれています。フォワードキネマティクスはアニメーションのための強力なツールで、シンプルなキャラクターの動きから大規模な風景や奇妙なモンスターまで、あらゆるものに役立ちます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/RwdaErw?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="RwdaErw" data-user="kynd" data-preview="true"></p></div>
 
 <div class="instagram-wrap"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/C2FwTISPo_p/" data-instgrm-version="14" style="width:100%;max-width:540px;margin:0;border:none;border-radius:4px;padding:0;"></blockquote></div>
 
@@ -41,13 +43,17 @@ As the name suggests, inverse kinematics (IK) is essentially the opposite of for
 
 名前が示す通り（inverse は逆という意味です）、インバースキネマティクス（IK）は基本的にフォワードキネマティクスの反対です。やはり関節で繋がった一連のセグメントを扱いますが、各関節の角度を個別に設定するのではなく、ある目標（「エフェクター」と呼ばれます）を元に、すべての関節の角度を計算することを目指します。アニメーションを作る時にはたいてい何か特定の目標（「この本をつかませたい」、「この場所に踏み込んでからジャンプしてほしい」）がありますが、すべての関節の角度を考えて正しい姿勢を作るのは非常に面倒なので、インバースキネマティクスはとても便利です。面倒な仕事はコンピュータに任せましょう。
 
-[![](/images/kinematics-2.jpg)](/images/kinematics-2.jpg)
+[![](/images/kinematics-2.jpg "75")](/images/kinematics-2.jpg)
+
+<div></div>
 
 In general, inverse kinematics is much more challenging than forward kinematics. As illustrated in the diagram below, there can be numerous postures to reach the same target. The optimal solution and method can vary depending on various conditions, such as the previous posture or different priorities. For instance, you might want to minimize movement or the amount of computation.
 
 大抵の場合、インバースキネマティクスはフォワードキネマティクスよりもずっと難しくなります。下の図で示したように、同じ目標に到達するための姿勢には無数の解があり得ます。最適な答えや手法は、前の姿勢や異なる優先順位など、さまざまな条件に左右されます。例えば、動きを最小限に抑えたり、計算量を最小限に抑えるといった具合です。
 
-[![](/images/there-are-infinite-number-of-valid-answers.jpg)](/images/there-are-infinite-number-of-valid-answers.jpg)
+[![](/images/there-are-infinite-number-of-valid-answers.jpg "75")](/images/there-are-infinite-number-of-valid-answers.jpg)
+
+<div></div>
 
 There are infinite number of valid answers
 
@@ -62,11 +68,11 @@ In the demo below, the arm tries to reach to the mouse pointer so that the tip o
 
 下のデモではアームが、最後のセグメントの先端がマウスポインタに到達するように腕を伸ばします。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/VwRaBgR?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="VwRaBgR" data-user="kynd" data-preview="true"></p></div>
 
-The `**calculateIK**` function is the core of the demo.
+The `calculateIK` function is the core of the demo.
 
-デモの中心となるのは `**calculateIK**` 関数です。
+デモの中心となるのは `calculateIK` 関数です。
 
 Since we know the length of all three sides of the triangle that the arm makes, we can use [law of cosines](https://en.wikipedia.org/wiki/Law_of_cosines) to find the angle for the lower arm（the second segment）.
 
@@ -82,7 +88,7 @@ The law of cosines relates the lengths of the sides of a triangle to the cosine 
 
 余弦定理は、三角形の各辺の長さと1つの角のコサインとの関係を示します。上記のコードと下記の式や絵を比べてください。`dx * dx + dy * dy`は、腕の根本から逆の端までの距離の2乗で、公式の <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>c</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">c^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141em;"></span><span class="mord"><span class="mord mathnormal">c</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span> に対応します。
 
-[![](/images/kinematics-3.jpg)](/images/kinematics-3.jpg)
+[![](/images/kinematics-3.jpg "75")](/images/kinematics-3.jpg)
 
 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>c</mi><mn>2</mn></msup><mo>=</mo><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><mi>a</mi><mi>b</mi><mo>⋅</mo><mi>cos</mi><mo>⁡</mo><mo stretchy="false">(</mo><mi>C</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">c^2 = a^2 + b^2 - 2ab \cdot \cos(C)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141em;"></span><span class="mord"><span class="mord mathnormal">c</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8974em;vertical-align:-0.0833em;"></span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8974em;vertical-align:-0.0833em;"></span><span class="mord"><span class="mord mathnormal">b</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord">2</span><span class="mord mathnormal">ab</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mop">cos</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mclose">)</span></span></span></span>
 
@@ -103,13 +109,15 @@ let D = upperArmLength + lowerArmLength * cos(angle2);
 let angle1 = atan2(dy, dx) - atan2(lowerArmLength * sin(angle2), D);
 ```
 
-[![](/images/kinematics-4.jpg)](/images/kinematics-4.jpg)
+[![](/images/kinematics-4.jpg "75")](/images/kinematics-4.jpg)
+
+<div></div>
 
 The picture below may seem a bit messy, but can you identify two arrows indicating angles and two right-angled triangles containing these arrows? The angle of the upper arm, `angle1`, is the sum of these two angles. Note that the second line of the code uses subtraction because the directions of the two right triangles are reversed.
 
 下の絵はややゴチャゴチャしていますが、2つの角度を示す矢印と、矢印を含む2つの直角三角形を見つけられるでしょうか。上腕の角度 `angle1` はこの2つの角度の和になります。直角三角形の向きが逆なので上のコードの2行目では引き算になっていることに注意してください。
 
-[![](/images/kinematics-5.jpg)](/images/kinematics-5.jpg)
+[![](/images/kinematics-5.jpg "75")](/images/kinematics-5.jpg)
 
 > 
 > 
@@ -123,7 +131,7 @@ It becomes much more complex when there are more segments than two, but the meth
 
 セグメントが3つ以上ある場合はずっと複雑になりますが、2つのセグメントの場合に使った方法が基礎として応用できます。前述の通り様々な方法があり得ますが、下はその中でも比較的わかりやすいと思われる方法のデモです。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/OJqNBNQ?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="OJqNBNQ" data-user="kynd" data-preview="true"></p></div>
 
 The arm in the demo has three segments, and the basic idea is to reduce this to the two segment cases by assuming a posture for the third segment.
 
@@ -137,33 +145,38 @@ For this method to work, we need an initial posture before moving the arm. The i
 
 **ステップ1：** まず第3セグメントの姿勢について、何か筋の良い仮定をする必要があります。やや恣意的ですが、キャンバス上でのセグメントの絶対角度（直前のセグメントに対する相対角度ではなく）を想定してみましょう。この仮定を元に、第1セグメントと第2セグメントの姿勢が計算できます。
 
-[![](/images/kinematics-6.jpg)](/images/kinematics-6.jpg)
+[![](/images/kinematics-6.jpg "50")](/images/kinematics-6.jpg)
+
+<div></div>
 
 **Step 2:** Another good assumption is to use the original **relative** angle of the third segment. We can apply this the posture from the previous step, then adjust it so that the end of the arm touches the target.
 
 **ステップ2:** もう1つの筋の良い仮定は、3番目のセグメントの相対的な角度を使うことです。これを前のステップで求めた姿勢に適用した上で、アームの先端がターゲットに触れるように調整します。
 
-[![](/images/kinematics-7.jpg)](/images/kinematics-7.jpg)
-
-[![](/images/kinematics-8.jpg)](/images/kinematics-8.jpg)
+<div class="image-row">
+<figure><a href="/images/kinematics-7.jpg"><img src="/images/kinematics-7.jpg" alt="" /></a></figure>
+<figure><a href="/images/kinematics-8.jpg"><img src="/images/kinematics-8.jpg" alt="" /></a></figure>
+</div>
 
 **Step 3:** As the last step, we can blend the results from the step 1 and 2 for the third segment to determine its final pose, then update the first and second segments accordingly.
 
 **ステップ3：** 最後のステップとして、ステップ1とステップ2の結果の間を取って、第3セグメントの最終的な姿勢を決め、それに応じて第1セグメントと第2セグメントを更新します。
 
-[![](/images/kinematics-9.jpg)](/images/kinematics-9.jpg)
+[![](/images/kinematics-9.jpg "50")](/images/kinematics-9.jpg)
+
+<div></div>
 
 As you can see, this method is based on very rough assumptions, and the result can sometimes be a little off. But this is often **good enough** for character animations that do not require perfect accuracy. This is especially true when updating the posture every frame. As you can see in the next demo, the defect becomes almost unnoticeable.
 
 見ての通りこの方法はかなり大雑把な仮定に基づくので、結果が少し理想からずれることもあります。ですがこの方法は大抵、完璧な精度を必要としないキャラクターのアニメーションには十分です。特にフレームごとに姿勢を更新する場合、次のデモで見られるように欠陥はほとんど気にならなくなります。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/vYPGVxJ?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="vYPGVxJ" data-user="kynd" data-preview="true"></p></div>
 
 The last demo lays out many arms in a row similar to the earlier forward kinematics example. The power of inverse kinematics is that we can control fairly complex motion with only one or few control points, or effectors.
 
 最後のデモでは、以前のフォワードキネマティクスの例と同様に、多くのアームを一列に並べて配置します。 インバースキネマティクスの利点は、1つまたは少ない数の制御点（エフェクター）だけでかなり複雑な動きを制御できることです。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/KKEzGyY?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="KKEzGyY" data-user="kynd" data-preview="true"></p></div>
 
 # To learn more
 # もっと学ぶために

@@ -27,6 +27,8 @@ The characteristics of sound waves, such as frequency and amplitude, determine h
 
 [![](/images/sound-visualization.png)](/images/sound-visualization.png)
 
+<div></div>
+
 In this picture, the maximum height of the wave, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">a</span></span></span></span> in the figure, is the amplitude, and the length of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">b</span></span></span></span> is the wavelength. Or if the horizontal axis of the graph is time, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">b</span></span></span></span> is the period, which is the time it takes for each oscillation. Frequency is the number of oscillations per second, which is one second divided by the period, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>=</mo><mn>1</mn><mi mathvariant="normal">/</mi><mi>T</mi></mrow><annotation encoding="application/x-tex">f = 1 /T</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1/</span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span></span></span></span>, where <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi></mrow><annotation encoding="application/x-tex">T</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span></span></span></span> represents the period.
 
 図の<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">a</span></span></span></span>、波の最大の振れ幅が振幅（amplitude）、<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">b</span></span></span></span>の長さが波長（wavelength）です。横軸が時間であれば<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">b</span></span></span></span>は1回の振動にかかる時間、周期（period）になります。1秒間の振動の回数が周波数（frequency）で、周期をTとすると、これは1秒を周期で割ったもの <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>=</mo><mn>1</mn><mi mathvariant="normal">/</mi><mi>T</mi></mrow><annotation encoding="application/x-tex">f = 1 / T</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1/</span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span></span></span></span> になります。
@@ -51,25 +53,25 @@ The demo below creates sounds ([sine waves](/sketching-with-math-and-quasi-physi
 > Adjust your volume before starting the sound.  
 > 再生する前にボリュームを調整しておきましょう。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/yLZrBGJ?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="yLZrBGJ" data-user="kynd" data-preview="true"></p></div>
 
 The sounds we hear in real life are not as simple as sine waves. The example below plays several (digital) instruments one by one, and then all together at the end. Notice that each instrument has a unique wave shape. When played together, these waveforms are added up to form a more complex shape, but you can still somewhat see the characteristics of the instruments. Also, these instruments have clear repetition in their waveforms, which lets us perceive the pitch of the notes.
 
 実生活で耳にする音は、正弦波ほど単純ではありません。下の例では、いくつかの（デジタル）楽器を順番に演奏し、最後に全部合わせて鳴らします。それぞれの楽器には独自の波形があります。重ねて演奏すると、これらの波形は足し合わされてより複雑な形状になりますが、それでもまだ楽器の特性が見て取れます。また、これらの楽器の波形には明確な繰り返しがあり、音の高さを知覚することができます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/gOqypMj?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="gOqypMj" data-user="kynd" data-preview="true"></p></div>
 
 The next recording plays street noise with several men shouting. The waveform looks much more random, finely grained, and lacks a clear pitch. You can still see that the amplitude corresponds to the loudness of the sound you hear.
 
 次の録音では、通りの騒音と数人の男性が大声を出す様子が聞こえます。波形はより細かくランダムで、明確な音の高さがありませんが、振幅が音の大きさに対応していることは見て取れます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/ExrJjNN?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="ExrJjNN" data-user="kynd" data-preview="true"></p></div>
 
 The sound data is simply an array of numbers, which can be applied to anything, such as colors, positions, shapes, etc. The demo below uses these values to modify the hue, brightness, and vertical length of lines. Just a few changes in the `draw()` function can create a completely different appearance.
 
 音声データは単に数値の配列なので、色、位置、形状など何にでも適用することができます。以下のデモでは、これらの値を使って、線の色相、明度、垂直方向の長さを変化させています。`draw()` 関数をちょっと書き換えるだけで、まったく異なる見た目が作り出せます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/MWLRrJP?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="MWLRrJP" data-user="kynd" data-preview="true"></p></div>
 
 # Loudness
 # 音の大きさ
@@ -104,13 +106,13 @@ The demo below calculates the RMS value for each frame, stores them in an array,
 
 下のデモでは、フレームごとにRMSを計算して配列に保存し、棒グラフとして表示します。この方法では、生の波形と比較して、長時間にわたる音データの概要をうまく示すことができます（昔ながらの2Dシューティングゲームの背景みたいで格好良い感じもあります）。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/PoVgEBJ?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="PoVgEBJ" data-user="kynd" data-preview="true"></p></div>
 
 Of course, you can get data separately for each left and right channel. Here, I have applied some feedback techniques we discussed in [Pencil, Brush and Paint](/sketching-with-math-and-quasi-physics/pencils-brushes-and-paints) to the graphics.
 
 もちろん、左チャンネルと右チャンネルのデータを個別に取得することもできます。ここでは、[Pencil, Brush and Paint](/sketching-with-math-and-quasi-physics/pencils-brushes-and-paints)で見たフィードバックの手法をグラフィックに適用しました。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/NWomyxe?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="NWomyxe" data-user="kynd" data-preview="true"></p></div>
 
 <div class="video-wrap"><iframe title="vimeo-player" src="https://player.vimeo.com/video/102100702" width="640" height="360" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen></iframe></div>
 
@@ -138,13 +140,13 @@ Fast Fourier transform (FFT) is a practical implementation of the Fourier transf
 > The actual size of the array you get will be half of the number you specified with the `analyser.fftSize`. Let me skip explaining why because it requires delving deep into the math of the Fourier transform.  
 > 実際の配列のサイズは、`analyser.fftSize` で指定した数値の半分になります。理由の説明はフーリエ変換の数学に深く立ち入る必要があるのでスキップします。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/JjxwbGZ?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="JjxwbGZ" data-user="kynd" data-preview="true"></p></div>
 
 Once we have these values, we can use them in any way. Here is an example of slicing and adding a glitchy effect to a portrait of a somber Dutch monk, making him shake his head to the music.
 
 一度値が手に入れば、自由に使うことができます。下の例では厳格なオランダ修道僧の肖像画を切り分け、壊れたようなエフェクトをかけ音楽に合わせて頭を振らせています。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/abXrQZy?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="abXrQZy" data-user="kynd" data-preview="true"></p></div>
 
 # To explore further
 # さらなる探求

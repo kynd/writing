@@ -1,7 +1,7 @@
 ---
 title: "Galton Pegboards ガルトン・ボード"
 ---
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/MYjBwwN?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="MYjBwwN" data-user="kynd" data-preview="true"></p></div>
 
 Galton Pegboards is a device invented by Sir Francis Galton to demonstrate the Central Limit Theorem, which states that if you take enough large, independent samples from almost any population, the distribution of their averages will tend to settle into a [Normal Distribution](/sketching-with-math-and-quasi-physics/taming-randomness), or the familiar bell shape.
 

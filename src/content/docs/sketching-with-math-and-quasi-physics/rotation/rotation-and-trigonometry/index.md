@@ -12,7 +12,7 @@ One of the most common uses of trigonometric functions in two-dimensional graphi
 
 2次元のグラフィクスで最も使うのは対象物の極座標、つまり角度と距離が分かっている場合にそれをx座標とy座標に変換したい場合でしょう。例えば敵が宇宙船から右斜め45度、距離100の位置にいるとするとそのxy座標は下のようになります。
 
-[![](/images/rotation-and-trigonometry.jpg)](/images/rotation-and-trigonometry.jpg)
+[![](/images/rotation-and-trigonometry.jpg "50")](/images/rotation-and-trigonometry.jpg)
 
 ```jsx
 x = cos(45deg) * 100
@@ -44,7 +44,7 @@ x = Math.cos(45 / 180 * Math.PI) * 100;
 y = Math.sin(45 / 180 * Math.PI) * 100;
 ```
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/oYVPbz?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="oYVPbz" data-user="kynd" data-preview="true"></p></div>
 
 # 2D Rotation
 # 2D回転
@@ -53,9 +53,11 @@ Sometimes we know the x and y coordinates and want to rotate them with respect t
 
 xy座標が分かっている時に、その座標をある一点を基準に回転させたいこともあります。宇宙船の周りに星が幾つもある状態で、宇宙船を旋回させます。宇宙船から見た星の座標はどのように変化するでしょうか。
 
-[![](/images/rotation-and-trigonometry-2.jpg)](/images/rotation-and-trigonometry-2.jpg)
+[![](/images/rotation-and-trigonometry-2.jpg "75")](/images/rotation-and-trigonometry-2.jpg)
 
-In this case, we can use a rotation matrix.
+<div></div>
+
+In this case, we can use a **rotation matrix**.
 
 こういう場合には回転行列が便利です。
 
@@ -96,11 +98,11 @@ function rotate2d(p, rad) {
 }
 ```
 
-In p5.js, you can use p5.Vector's `[rotate()](https://p5js.org/reference/#/p5.Vector/rotate)` function. Check if your favorite tool has a similar offer. Many tools and libraries provide some support for rotating vectors so that you don't have to manually write a function.
+In p5.js, you can use p5.Vector's [`rotate()`](https://p5js.org/reference/#/p5.Vector/rotate) function. Check if your favorite tool has a similar offer. Many tools and libraries provide some support for rotating vectors so that you don't have to manually write a function.
 
-p5.jsでは、p5.Vectorの`[rotate()](https://p5js.org/reference/#/p5.Vector/rotate)`関数を使用することができます。お気に入りのツールに同様の機能があるか確認してみましょう。多くのツールやライブラリは、わざわざ関数を書かなくても済むよう、なんらかの形でベクトルの回転をサポートしています。
+p5.jsでは、p5.Vectorの[`rotate()`](https://p5js.org/reference/#/p5.Vector/rotate)関数を使用することができます。お気に入りのツールに同様の機能があるか確認してみましょう。多くのツールやライブラリは、わざわざ関数を書かなくても済むよう、なんらかの形でベクトルの回転をサポートしています。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/vmvzVM?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="vmvzVM" data-user="kynd" data-preview="true"></p></div>
 
 For more explanation and proof of this formula, see this page: [A Gentle Primer on 2D Rotations](https://www.alanzucconi.com/2016/02/03/2d-rotations/)
 
@@ -124,7 +126,9 @@ A natural extension of what we have seen in the 2D world is to break the 3D rota
 
 2Dの世界で見たことの自然な拡張は、3D回転を2D回転の集まりに分解することです。下の飛行機の絵を見てください。飛行機はy軸の方向に進んでいます。向きを変えるには、機首をx軸周りに上下に、またはz軸周りに左右に回転できます。これらは航空用語で「ピッチ」と「ヨー」と呼ばれます。飛行機の姿勢を決めるには、さらにもう一つの回転、飛行機の向きまたはy軸周りの回転を考える必要があります。これは「ロール」と呼ばれます。この方法は「オイラー角」と呼ばれます。
 
-[![](/images/rotation-and-trigonometry.png)](/images/rotation-and-trigonometry.png)
+[![](/images/rotation-and-trigonometry.png "75")](/images/rotation-and-trigonometry.png)
+
+<div></div>
 
 The rotation around each axis can be treated exactly the same as in 2D. For example, if you want to rotate a 3D vector around the x-axis, you can ignore the x value and keep it the same, while applying the 2D rotation matrix to the y and z values. Compare the code below to the 2D function above.
 
@@ -142,7 +146,7 @@ In the demo below, you can rotate a 3D box around the x-axis by moving the mouse
 
 下のデモでは3Dのボックスを、マウスを上下に動かすことでx軸周りに、左右に動かすことでy軸周りに回転させることができます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/LYaxmbO?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="LYaxmbO" data-user="kynd" data-preview="true"></p></div>
 
 It's crucial to understand the coordinate system used in each tool. For instance, in the WEBGL mode in p5.js, as demonstrated above, the origin is at the center of the canvas. The x-axis points to the right, the y-axis points downward, and the z-axis points outward from the screen. This coordinate system is different from the airplane drawing above and many 3D tools and game engines, where the xy-plane, like the ground, is horizontal and the z-axis points upward.
 
@@ -150,11 +154,13 @@ It's crucial to understand the coordinate system used in each tool. For instance
 
 [![](/images/rotation-and-trigonometry-3.jpg)](/images/rotation-and-trigonometry-3.jpg)
 
+<div></div>
+
 The order of rotation matters too. The demo above applies rotation around the x-axis, then around the y-axis. Try flipping the order, or add rotation around the z-axis as well, and see what happens. Euler angles also have a well-known problem called "gimbal lock". To understand this intuitively, you can think of the rotation with Euler angles as similar to a mechanical gyroscope below. Having three rings (gimbals) that can spin around their own axes allows the gyro to rotate in any direction. But when two of these gimbals align, two axes become identical and the gyro loses its freedom.
 
 回転の順序は重要です。上記のデモでは、まずx軸周り、次にy軸周りに回転します。順序を逆にしたり、z軸周りの回転を足したりして、何が起こるか試してましょう。オイラー角には「ジンバルロック」というよく知られた問題もあります。これを直感的に理解するためには、オイラー角による回転を下の機械式のジャイロのようなものだと考えることができます。3つのリング（ジンバル）がそれぞれの軸周りに回転することで、ジャイロは任意の方向に回転できます。しかし、2つのジンバルの向きが揃うと、2つの軸が重なり、ジャイロは自由度を失います。
 
-[![](/images/wikimedia.gif)](/images/wikimedia.gif)
+[![](/images/wikimedia.gif "50")](/images/wikimedia.gif)
 
 [Wikimedia](https://en.wikipedia.org/wiki/Gyroscope#/media/File:Gyroscope_operation.gif)
 
@@ -167,7 +173,7 @@ It might be hard to imagine this just in your mind. If that's the case, I strong
 
 If you want to rotate an object around an arbitrary axis, not just around the x, y, and z axes, you can use [Rodrigues' rotation formula](https://en.wikipedia.org/wiki/Rodrigues%27_rotation_formula). To rotate a vector, or a point <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="bold">p</mi></mrow><annotation encoding="application/x-tex">\mathbf{p}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6389em;vertical-align:-0.1944em;"></span><span class="mord mathbf">p</span></span></span></span>, around an axis represented by a [normalized](/sketching-with-math-and-quasi-physics/vector-operations) vector <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="bold">n</mi></mrow><annotation encoding="application/x-tex">\mathbf{n}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4444em;"></span><span class="mord mathbf">n</span></span></span></span>, you can calculate the point after the rotation, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="bold">p</mi><mtext>’</mtext></mrow><annotation encoding="application/x-tex">\mathbf{p}’</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathbf">p</span><span class="mord">’</span></span></span></span>, as follows.
 
-x、y、z軸だけでなくの任意の軸の周りで物をを回転させたい場合、[ロドリゲスの回転公式](https://en.wikipedia.org/wiki/Rodrigues%27_rotation_formula)を使うことができます。ベクトルまたは点<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="bold">p</mi></mrow><annotation encoding="application/x-tex">\mathbf{p}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6389em;vertical-align:-0.1944em;"></span><span class="mord mathbf">p</span></span></span></span>を、[正規化された](/sketching-with-math-and-quasi-physics/vector-operations)ベクトル<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="bold">n</mi></mrow><annotation encoding="application/x-tex">\mathbf{n}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4444em;"></span><span class="mord mathbf">n</span></span></span></span>で表される軸の周りで回転させた点<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi mathvariant="bold">p</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup></mrow><annotation encoding="application/x-tex">\mathbf{p}'</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9463em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathbf">p</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7519em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span></span></span></span>は次のように計算できます。
+x、y、z軸だけでなく任意の軸の周りで物を回転させたい場合、[ロドリゲスの回転公式](https://en.wikipedia.org/wiki/Rodrigues%27_rotation_formula)を使うことができます。ベクトルまたは点<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="bold">p</mi></mrow><annotation encoding="application/x-tex">\mathbf{p}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6389em;vertical-align:-0.1944em;"></span><span class="mord mathbf">p</span></span></span></span>を、[正規化された](/sketching-with-math-and-quasi-physics/vector-operations)ベクトル<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="bold">n</mi></mrow><annotation encoding="application/x-tex">\mathbf{n}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4444em;"></span><span class="mord mathbf">n</span></span></span></span>で表される軸の周りで回転させた点<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi mathvariant="bold">p</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup></mrow><annotation encoding="application/x-tex">\mathbf{p}'</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9463em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathbf">p</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7519em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span></span></span></span>は次のように計算できます。
 
 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="bold">p</mi><mo>=</mo><mo stretchy="false">(</mo><msub><mi>p</mi><mi>x</mi></msub><mo separator="true">,</mo><msub><mi>p</mi><mi>y</mi></msub><mo separator="true">,</mo><msub><mi>p</mi><mi>z</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\mathbf{p} = (p_x, p_y, p_z)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6389em;vertical-align:-0.1944em;"></span><span class="mord mathbf">p</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.0361em;vertical-align:-0.2861em;"></span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">x</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.03588em;">y</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.04398em;">z</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span>
 
@@ -205,13 +211,13 @@ The demo below showcases this function. You can rotate the box around a diagonal
 
 下はこの関数のデモです。マウスを左右に動かすと、箱を対角線軸周りに回転させることができます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/GRerGvJ?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="GRerGvJ" data-user="kynd" data-preview="true"></p></div>
 
 This is an example of the Rodrigues' rotation formula in use in GLSL. You can find more examples on the [Designing 3D world](/sketching-with-math-and-quasi-physics/projection-and-3d-rendering/designing-3d-world) page.
 
 これはロドリゲスの回転公式をGLSLで使った例です。[3Dのデザイン](/sketching-with-math-and-quasi-physics/projection-and-3d-rendering/designing-3d-world)のページにはより多くの例があります。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/wvNejxg?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="wvNejxg" data-user="kynd" data-preview="true"></p></div>
 
 # Rotation Matrix
 # 回転行列

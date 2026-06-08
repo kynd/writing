@@ -7,7 +7,7 @@ On this page, we are going to read a simple noise function. Noise functions are 
 
 [Drawing Landscape](/sketching-with-math-and-quasi-physics/drawing-landscape)
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/ZYEVRGN?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="ZYEVRGN" data-user="kynd" data-preview="true"></p></div>
 
 And, we have AI these days. About 50% of my code day-to-day is already written by AI, and I'm totally fine when I know what it is doing. I'm happy not to repeat boilerplate and stuff. But I feel a little anxiety when I use a piece of code I don't fully understand. Sometimes, it is useful to deep dive into something you don’t know and explore until you feel good.
 
@@ -62,7 +62,7 @@ The first step is to visualize the function. The demo below maps the horizontal 
 
 まずは関数を可視化してみましょう。下のデモは、横軸が`x=0.0`から`x=10.0`の範囲に対応します。垂直軸、つまり白い領域の高さは、0.0から1.0の範囲での戻り値を表しています。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/WbbBawy?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="WbbBawy" data-user="kynd" data-preview="true"></p></div>
 
 # Lattice points
 # 格子点
@@ -201,11 +201,13 @@ AIはとても大事な点を指摘してくれました。ハッシュ関数は
 
 [![](/images/reading-a-noise-function-2.jpg)](/images/reading-a-noise-function-2.jpg)
 
+<div></div>
+
 Here is the visualization of the `hash` function.
 
 下は`hash`関数を可視化したものです。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/RNNmEYa?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="RNNmEYa" data-user="kynd" data-preview="true"></p></div>
 
 # Smoothstep and C¹ continuity
 # スムースステップとC¹連続性
@@ -258,7 +260,7 @@ This is a visualization of the function. You can ask AI more about what C¹ cont
 
 下はこの関数を可視化したものです。C¹連続性の意味についてさらにAIに聞いても良いですし、連続性については下記のページでも少し解説しています。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/LEEoMKE?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="LEEoMKE" data-user="kynd" data-preview="true"></p></div>
 
 # Linear interpolation
 # 線形補間
@@ -276,6 +278,8 @@ Here is the final picture of my understanding of the code.
 下の図がコードについての最終的な理解を示したものです。
 
 [![](/images/reading-a-noise-function-3.jpg)](/images/reading-a-noise-function-3.jpg)
+
+<div></div>
 
 How was it? I hope this gave you a small taste of what it's like to read and understand code. If you feel comfortable with the simple noise function, try reading this slightly more advanced version from [Drawing Landscape](/sketching-with-math-and-quasi-physics/drawing-landscape).
 

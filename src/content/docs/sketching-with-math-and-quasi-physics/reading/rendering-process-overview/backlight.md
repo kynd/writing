@@ -22,7 +22,7 @@ In the demo, try turning off everything except the backlight to observe its effe
 
 デモ上で Backlight 以外のすべてをオフにして、その効果を単独で確認してみましょう。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/dyxzyjV?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="dyxzyjV" data-user="kynd" data-preview="true"></p></div>
 
 [Subsurface scattering サブサーフェススキャッタリング](/sketching-with-math-and-quasi-physics/reading/rendering-process-overview/subsurface-scattering)
 

@@ -7,6 +7,8 @@ Painting has a physical aspect and a human aspect. Let's look at the material as
 
 [![](/images/codifying-materials-1.gif)](/images/codifying-materials-1.gif)
 
+<div></div>
+
 水彩のもつ、滲みやムラ、独特の色の混ざり方をコードで表現してみる。再現ではなくて、どちらかといえば表現だ。厳密なシミュレーションではなくて、どうしたらそれっぽくなるだろうと考えてみる。物理は便利な道具だけれどもゴールではない。
 
 大雑把に絵の具を分解すると、色を出すための顔料とそれを包む媒体、水彩の場合は水と糊の働きをするアラビアゴムなどに分解できる。水が多ければ媒体の中に顔料が浮いて、自由に動ける、というか水に流されている状態。次第に水が乾くと動きが鈍くなり、最後には顔料が紙に固着する。
@@ -23,6 +25,8 @@ Roughly speaking, watercolor can be broken down into two components: the pigment
 
 [![](/images/codifying-materials-1-1.png)](/images/codifying-materials-1-1.png)
 
+<div></div>
+
 今度は水が少ない、粘り気のあるガッシュや、柔らかく溶いた油絵具みたいなものを想像してみよう。ひとまず溶剤を無視すると、紙の上に色が置かれていて、その上で筆を動かして引きずるようなモデルになる。
 
 紙の上の色のデータ、筆先についた色のデータを用意する。筆は紙に色を置いていくのと同時にそこから色を拾うので、筆の方の色も変わっていく。このモデルは筆を動かす度の処理が重くて遅いのだが、先端の形や絵の具の混ざり具合を変えるとかなり色々な表情が出せるのでずっと使っている。
@@ -37,6 +41,8 @@ This model has the data for the color on the paper and the data for the color on
 
 [![](/images/codifying-materials-1-3.png)](/images/codifying-materials-1-3.png)
 
+<div></div>
+
 色を混ぜるだけでも色々な方法がある。例えばRGBで青と黄色を混ぜるとグレーに近い鈍い色になるのだが、異なるカラーモデルを使うと違った結果が得られる。例えばKubelka Munkという手法では顔料ごとの性質をシミュレートするので実際の絵の具や塗料に近い色になる。ただし物理的に正しいのが常にいいという訳ではないので、欲しい効果によって使い分ける。
 
 There are various ways to mix colors even just using RGB. For example, mixing blue and yellow using RGB will result in a dull grayish color, but using different color models will yield different results. For example, the Kubelka-Munk method simulates the properties of each pigment and results in colors closer to actual paints. That being said, it is not always best to be physically accurate, so I use different methods depending on the desired effect.
@@ -49,7 +55,7 @@ There are various ways to mix colors even just using RGB. For example, mixing bl
 
 [![](/images/on-citadel-of-erbil-krudistan-2022.gif)](/images/on-citadel-of-erbil-krudistan-2022.gif)
 
-**On citadel of Erbil, Krudistan, 2022**
+On citadel of Erbil, Krudistan, 2022
 
 <div class="instagram-wrap"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CEHfUGjnJ9j/" data-instgrm-version="14" style="width:100%;max-width:540px;margin:0;border:none;border-radius:4px;padding:0;"></blockquote></div>
 
@@ -60,6 +66,8 @@ Paint can be layered repeatedly or altered after it has been placed. Paint, smea
 [![](/images/codifying-materials-1-3.gif)](/images/codifying-materials-1-3.gif)
 
 [![](/images/codifying-materials-1-5.png)](/images/codifying-materials-1-5.png)
+
+<div></div>
 
 VJなどではこの手法がとても活躍する。
 

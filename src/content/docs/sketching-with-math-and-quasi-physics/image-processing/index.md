@@ -23,7 +23,7 @@ Convolution is an operation used in image processing and machine learning that i
 
 [Convolution コンボリューション](/sketching-with-math-and-quasi-physics/image-processing/convolution)
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/wvYwjwe?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="wvYwjwe" data-user="kynd" data-preview="true"></p></div>
 
 # Deformation and Feedback 変形とフィードバック
 
@@ -33,4 +33,4 @@ Deformation is the process of transforming an image by changing its shape or per
 
 [Deformation and Feedback 変形とフィードバック](/sketching-with-math-and-quasi-physics/image-processing/deformation-and-feedback)
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/xxyPagE?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="xxyPagE" data-user="kynd" data-preview="true"></p></div>

@@ -20,7 +20,7 @@ In the demo below, the origin is placed in the center, the x-axis goes from left
 
 下のデモでは原点を中央に置いて左右にx軸、上下にy軸を取ります。画面をクリックすると位置を動かすことができます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/zeqvRg?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="zeqvRg" data-user="kynd" data-preview="true"></p></div>
 
 # Velocity
 # 速度
@@ -50,7 +50,7 @@ Let's watch this in a demo. You can click on the canvas to set a new velocity to
 
 これをデモで見てみましょう。キャンバス上をクリックするとマウスに向かって新しい速度を設定することができます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/vbGNjx?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="vbGNjx" data-user="kynd" data-preview="true"></p></div>
 
 Just a note, but this "add every frame" operation is a rather crude approximation; in the real world, things change more continuously. I will explain this a bit more in the next page.
 
@@ -69,7 +69,7 @@ In the demo below, acceleration is applied toward the mouse position. As the vel
 
 下のデモではマウスの位置に向かって加速度が加わります。速度が次第に変化するので、点が曲線を描いて飛ぶようになりました。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/zeqvaO?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="zeqvaO" data-user="kynd" data-preview="true"></p></div>
 
 We have discussed three different vectors so far. To quickly recap, they were:
 
@@ -104,7 +104,7 @@ In the next demo, the larger point has sixteen times the mass of the smaller poi
 
 次のデモでは大きい点は小さい点の16倍の質量を持っています。同じように力を加えても小さい点の方がより早く加速する様子を見ることができます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/YzLJOgp?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="YzLJOgp" data-user="kynd" data-preview="true"></p></div>
 
 ## Gravity
 ## 重力
@@ -117,7 +117,7 @@ Let's drop an apple honoring the anecdote of Sir Isaac Newton. See how position,
 
 ニュートンの逸話にちなんでリンゴを落してみましょう。位置、速度、加速度それぞれが時間と共にどのように変化するかを見てください。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/xdNwao?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="xdNwao" data-user="kynd" data-preview="true"></p></div>
 
 # Universal gravitation
 # 万有引力
@@ -140,13 +140,13 @@ The demo below is a simple simulation of the universal gravitation force acting 
 
 下のデモは質量の異なる物体の間に働く万有引力の簡単なシミュレーションです。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/qmGOgB?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="qmGOgB" data-user="kynd" data-preview="true"></p></div>
 
 We are not astronomers. Our simulations don’t have to follow the reality. For example, we can create matter that repels each other, or a world where the gravity is not inversely proportional to the square of the distance. Let’s see what you can make.
 
 我々は天文学者ではないのでシミュレーションが現実に即していなくても一向に構いません。例えばお互いに反発しあう物質や、引力が距離の2乗に反比例しない世界を作ることもできます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/jOxQbKM?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="jOxQbKM" data-user="kynd" data-preview="true"></p></div>
 
 You can of-course add randomness to the movement. The movement of these ribbons in this video was created by tracing the points pulled by gravity and adding random forces to them.
 

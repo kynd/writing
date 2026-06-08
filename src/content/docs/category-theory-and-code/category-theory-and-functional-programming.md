@@ -69,7 +69,7 @@ Once data is created, it is never modified. To change a value, you create new da
 ## Functions as First-Class Objects
 ## 第一級オブジェクトとしての関数
 
-Functions can be treated like numbers and strings. You can assign them to variables, pass them as arguments, or return them as values. This enables powerful techniques like "higher-order functions" that flexibly combine operations.
+Functions can be treated like numbers and strings. You can assign them to variables, pass them as arguments, or return them as values. This enables powerful techniques like **"higher-order functions"** that flexibly combine operations.
 
 関数を数値や文字列と同じように扱えます。変数への代入、引数としての受け渡し、戻り値としての返却といった操作が可能です。これにより、処理を柔軟に組み合わせる「高階関数」などの強力な手法が使えるようになります。
 
@@ -94,7 +94,7 @@ Category theory and functional programming originated independently.
 
 圏論と関数型プログラミングは元々は異なる起源をもって生まれました。
 
-Eilenberg and Mac Lane developed category theory to rigorously describe structural similarities across different areas of mathematics, particularly algebra and topology.
+Eilenberg and MacLane developed category theory to rigorously describe structural similarities across different areas of mathematics, particularly algebra and topology.
 
 圏論はアイレンベルグとマックレーンによって、数学の異なる分野（特に代数学と位相幾何学）の間に横たわる構造的な類似性を厳密に記述することを目的に考え出されました。
 
@@ -118,7 +118,7 @@ This enabled handling side effects and complex data transformations—inherently
 
 これにより、本来は扱いにくい副作用や複雑なデータ構造の変換を、統一的なルールで扱えるようになりました。圏論の概念とFPの概念がどのように対応しているのか、概略をみてみましょう。
 
-<table class="matrix-table"><tbody><tr><td>Category Theory Concept圏論の概念</td><td>Corresponding Concept (FP)プログラミング（FP）での対応</td><td>Concrete Image具体的なイメージ</td></tr><tr><td>Object対象</td><td>Data Type型</td><td>Int, String, User etc.Int、String、User などのデータ型</td></tr><tr><td>Morphism射</td><td>Function関数</td><td>A pure function that transforms one type into anotherある型を別の型へ変換する純粋関数</td></tr><tr><td>Composition合成</td><td>Function Composition関数の合成</td><td>The operation of connecting $f$ and $g$ to create a new function$f$ と $g$ をつなげて新しい関数を作る操作</td></tr><tr><td>Functor関手</td><td>Structure with mapmap が定義可能な構造</td><td>Containers whose contents can be transformed (Arrays, Option)配列や Option 型など、中身を変換できる容器</td></tr><tr><td>Natural Transformation自然変換</td><td>Generic Functionsジェネリクス関数</td><td>Transformations that change only "structure" (e.g., reversing a list)リストを逆順にするなど、中身をいじらず「構造」だけを変える変換</td></tr><tr><td>Monadモナド</td><td>Framework for Side Effects副作用を扱う枠組み</td><td>Computations with "context" (Failure, State changes, etc.)失敗する可能性や状態変化という「文脈」を伴う計算</td></tr></tbody></table>
+<table class="matrix-table"><tbody><tr><td>Category Theory Concept圏論の概念</td><td>Corresponding Concept (FP)プログラミング（FP）での対応</td><td>Concrete Image具体的なイメージ</td></tr><tr><td>Object対象</td><td>Data Type型</td><td>Int, String, User etc.Int、String、User などのデータ型</td></tr><tr><td>Morphism射</td><td>Function関数</td><td>A pure function that transforms one type into anotherある型を別の型へ変換する純粋関数</td></tr><tr><td>Composition合成</td><td>Function Composition関数の合成</td><td>The operation of connecting f and g to create a new functionf と g をつなげて新しい関数を作る操作</td></tr><tr><td>Functor関手</td><td>Structure with mapmap が定義可能な構造</td><td>Containers whose contents can be transformed (Arrays, Option)配列や Option 型など、中身を変換できる容器</td></tr><tr><td>Natural Transformation自然変換</td><td>Generic Functionsジェネリクス関数</td><td>Transformations that change only "structure" (e.g., reversing a list)リストを逆順にするなど、中身をいじらず「構造」だけを変える変換</td></tr><tr><td>Monadモナド</td><td>Framework for Side Effects副作用を扱う枠組み</td><td>Computations with "context" (Failure, State changes, etc.)失敗する可能性や状態変化という「文脈」を伴う計算</td></tr></tbody></table>
 
 ## Monads
 ## モナド

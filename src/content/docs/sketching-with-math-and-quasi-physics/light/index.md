@@ -5,7 +5,7 @@ From 3D graphics to color theory, cameras and sensing mechanisms, learning about
 
 3Dグラフィックスから色彩理論、カメラやセンシングの仕組みまで、光について学ぶこと、ものづくりに役立つさまざまな知見が得られます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/ExezaYg?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="ExezaYg" data-user="kynd" data-preview="true"></p></div>
 
 [What is light? 光とは何か](/sketching-with-math-and-quasi-physics/light/what-is-light)
 

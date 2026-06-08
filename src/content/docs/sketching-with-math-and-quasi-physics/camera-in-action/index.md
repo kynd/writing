@@ -27,6 +27,8 @@ The world outside is full of light. [As we have seen when we are discussing envi
 
 [![](/images/camera-in-action.png)](/images/camera-in-action.png)
 
+<div></div>
+
 What the small hole does is filter out all the light except for the rays that go through the small hole. So in a camera obscura, from each point on the image on the wall, you can pinpoint where exactly the light comes from, or the other way around, only the light from a single direction from the outside will light that point. And this is how such a simple device can create a very clear image of the outside.
 
 小さな穴は、その点を通過する光線以外のすべての光を遮断するので、カメラ・オブスクラの壁に映った像のそれぞれの点に対して、光がどこから来ているのか正確に特定できます。逆に言えば、外部からの光は、ある特定の向きからでないとその点を照らすことができません。簡単な装置で外の景色をはっきりと映し出せるのはこのためです。
@@ -46,9 +48,11 @@ In computer graphics, we often use a model where the screen is placed in front o
 
 コンピューターグラフィックスでは、スクリーンを穴やレンズの後ろではなくシーンの前に置くモデルをよく使用しますが、基本的な考え方は同じです。ある一点を想像してこれを焦点と呼びます。焦点からシーンの中の物体の上の点まで線を引くと、その線とスクリーンやフィルムが交わる点が、最終的な画像上でのその点の位置となります。カメラ・オブスクラの場合、ピンホールが焦点となります。
 
-[![](/images/camera-in-action.jpg)](/images/camera-in-action.jpg)
+[![](/images/camera-in-action.jpg "75")](/images/camera-in-action.jpg)
 
-[![](/images/camera-in-action-1.jpg)](/images/camera-in-action-1.jpg)
+[![](/images/camera-in-action-1.jpg "75")](/images/camera-in-action-1.jpg)
+
+<div></div>
 
 The distance from the focal point to the screen, wall, or the film is called the focal distance. This distance essentially defines the field of view, or how wide you can see in the result. If the size of the screen, etc., is the same, a longer focal length gives you a narrower view (zoomed in), and a shorter one gives you a wider view.
 
@@ -66,7 +70,7 @@ Note that the focal distance only makes sense in relationship with the size of s
 
 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable rowspacing="0.25em" columnalign="right" columnspacing=""><mtr><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow><mrow><mi mathvariant="normal">F</mi><mi mathvariant="normal">O</mi><mi mathvariant="normal">V</mi></mrow><mo>=</mo><mn>2</mn><mo>⋅</mo><mi>arctan</mi><mo>⁡</mo><mrow><mo fence="true">(</mo><mfrac><mi>w</mi><mrow><mn>2</mn><mi>f</mi></mrow></mfrac><mo fence="true">)</mo></mrow></mrow></mstyle></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{aligned} \mathrm{FOV} = 2 \cdot \arctan \left( \frac{w}{2f} \right) \end{aligned} </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.7em;vertical-align:-1.1em;"></span><span class="mord"><span class="mtable"><span class="col-align-r"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.6em;"><span style="top:-3.6em;"><span class="pstrut" style="height:3.45em;"></span><span class="mord"><span class="mord"><span class="mord mathrm" style="margin-right:0.01389em;">FOV</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mop">arctan</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size3">(</span></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.1076em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">2</span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.02691em;">w</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.8804em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size3">)</span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.1em;"><span></span></span></span></span></span></span></span></span></span></span>
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/YzdbpJq?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="YzdbpJq" data-user="kynd" data-preview="true"></p></div>
 
 Changing the field of view changes the area you can see. The wider the view, the smaller the objects appear, and vice versa. This is what zooming in a camera does.
 
@@ -82,7 +86,7 @@ float fov = 60.0 + sin(time * PI / 6.0) * 30.0;
 float depth = 1.0 / tan(radians(fov / 2.0));
 ```
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/azbjOXM?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="azbjOXM" data-user="kynd" data-preview="true"></p></div>
 
 Compare the demo below with the one above. These might look very similar, but the one below actually moves the camera closer and further from the objects without changing the FOV. If you carefully look at the horseshoe-looking object, you'll notice that it shows more of its side as the camera moves forward.
 
@@ -98,15 +102,16 @@ float fov = 30.0;
 float depth = 1.0 / tan(radians(fov / 2.0));
 ```
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/RNwBrPQ?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="RNwBrPQ" data-user="kynd" data-preview="true"></p></div>
 
 Below is another comparison. Two faces of Walt Disney are the exact same 3D model with the same lighting, but the one on the left is shot from very close with a wide-angle (wide-FOV) camera, and the one on the right is shot from far away with a narrow-angle (narrow-FOV) camera. You can see how this choice can completely change the impression of the image.
 
-下の写真は別の比較です。ウォルト・ディズニーの顔はどちらも全く同じ3Dモデルで同じ照明を当てていますが、左側は広角（FOVが広い）カメラで近くから撮影し、右側は望遠（FOVが狭い）カメラで遠くから撮影しています。レンズの選び方で、画像の印象が全く変わってしまうことがわかります。
+下の画像は別の比較です。ウォルト・ディズニーの顔はどちらも全く同じ3Dモデルで同じ照明を当てていますが、左側は広角（FOVが広い）カメラで近くから撮影し、右側は望遠（FOVが狭い）カメラで遠くから撮影しています。レンズの選び方で、画像の印象が全く変わってしまうことがわかります。
 
-[![](/images/camera-in-action-2.jpg)](/images/camera-in-action-2.jpg)
-
-"Walt Disney Head" ([https://skfb.ly/oDYsC](https://skfb.ly/oDYsC)) by Gman The Cruise Dude is licensed under Creative Commons Attribution ([http://creativecommons.org/licenses/by/4.0/](http://creativecommons.org/licenses/by/4.0/)).
+<figure>
+<a href="/images/camera-in-action-2.jpg"><img src="/images/camera-in-action-2.jpg" style="width:100%;" /></a>
+<figcaption>"Walt Disney Head" (<a href="https://skfb.ly/oDYsC">https://skfb.ly/oDYsC</a>) by Gman The Cruise Dude is licensed under Creative Commons Attribution (<a href="http://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</a>).</figcaption>
+</figure>
 
 # Camera Motion
 # カメラの動き
@@ -135,7 +140,7 @@ vec3 cameraTarget = vec3(cos(cameraAngle) * 5.0, 0.5, sin(cameraAngle) * 5.0);
 vec3 cameraPosition = vec3(0.0, 0.5, 0.0);
 ```
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/VYYerdy?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="VYYerdy" data-user="kynd" data-preview="true"></p></div>
 
 > 
 > 
@@ -161,7 +166,7 @@ In the demo below is a scrappy character made with the same shapes as in the pan
   vec3 cameraPosition = vec3(0.0, 0.2, 2.0);
 ```
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/WbbRXNr?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="WbbRXNr" data-user="kynd" data-preview="true"></p></div>
 
 ## Tracking
 ## トラッキング
@@ -178,9 +183,9 @@ Compare the two examples below. The one above tracks the object perfectly in the
 
 下の2つの例を比べてみましょう。上の例では対象物を完璧に中央に捉え続けていますが、下ではカメラが対象物に少し遅れています。上の例が間違っているわけではなく、効果的なこともありますが、下の例の方がより自然に見えます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/RNNWoYZ?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="RNNWoYZ" data-user="kynd" data-preview="true"></p></div>
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/wBBKopm?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="wBBKopm" data-user="kynd" data-preview="true"></p></div>
 
 ## Camera Translation
 ## カメラの移動
@@ -193,7 +198,7 @@ The demo below is a simple example of the camera moving left and right. The scen
 
 下のデモは、カメラが単純に左右にする例です。シーンは先ほどのパンの例と全く同じです。両者を比べて、印象の違いを見てみましょう。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/ZYYydXb?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="ZYYydXb" data-user="kynd" data-preview="true"></p></div>
 
 ## Dolly Zoom
 ## ドリーズーム
@@ -222,7 +227,7 @@ Notice that the demo below directly sets the focal depth based on the distance o
 float depth = distance(cameraTarget, cameraPosition);
 ```
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/OPJadKe?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="OPJadKe" data-user="kynd" data-preview="true"></p></div>
 
 # To learn more
 # もっと学ぶために

@@ -31,7 +31,7 @@ float distance = sqrt(pow(p0.x - p1.x, 2.0) + pow(p0.y - p1.y, 2.0));
 
 [![](/images/visualizing-distances.png)](/images/visualizing-distances.png)
 
-<div class="video-wrap"><iframe title="ShaderToy" src="https://www.shadertoy.com/embed/flycWV?gui=true&t=10&paused=true" frameborder="0" allowfullscreen></iframe></div>
+<div></div>
 
 Drawing stripes using the Manhattan distance in the same way will result in squares rotated by 45 degrees. Let's review the Manhattan Distance formula to confirm that any point on a side on the same square is certainly equidistant from the center.
 
@@ -43,7 +43,7 @@ float distance = abs(p0.x - p1.x) + abs(p0.y - p1.y);
 
 [![](/images/visualizing-distances-1.png)](/images/visualizing-distances-1.png)
 
-<div class="video-wrap"><iframe title="ShaderToy" src="https://www.shadertoy.com/embed/NtGyDV?gui=true&t=10&paused=true" frameborder="0" allowfullscreen></iframe></div>
+<div></div>
 
 Let's modify the formula for the Euclidean distance a bit: instead of squares, we'll use powers of 4, and instead of square root, we'll use 4th root (= powers of 1/4).
 
@@ -62,7 +62,7 @@ float distance = pow(pow(p0.x - p1.x, n) + pow(p0.y - p1.y, n), 1.0 / n);
 
 [![](/images/visualizing-distances-2.png)](/images/visualizing-distances-2.png)
 
-<div class="video-wrap"><iframe title="ShaderToy" src="https://www.shadertoy.com/embed/ftGBzD?gui=true&t=10&paused=true" frameborder="0" allowfullscreen></iframe></div>
+<div></div>
 
 The example below illustrates the Chebyshev distance, where the distance is determined by the greater absolute value difference between the x-coordinates and the y-coordinates. The same applies to the multidimensional case, where the distance is the largest absolute value of the difference between each component of the coordinates.
 
@@ -74,7 +74,6 @@ float distance = max(abs(p0.x - p1.x), abs(p0.y - p1.y));
 
 [![](/images/visualizing-distances-3.png)](/images/visualizing-distances-3.png)
 
-<div class="video-wrap"><iframe title="ShaderToy" src="https://www.shadertoy.com/embed/NltfRn?gui=true&t=10&paused=true" frameborder="0" allowfullscreen></iframe></div>
 
 # Voronoi
 # ボロノイ
@@ -89,7 +88,7 @@ Familiar looking Voronoi partition using Euclidean distance
 
 [![](/images/visualizing-distances-4.png)](/images/visualizing-distances-4.png)
 
-<div class="video-wrap"><iframe title="ShaderToy" src="https://www.shadertoy.com/embed/ftdfRn?gui=true&t=10&paused=true" frameborder="0" allowfullscreen></iframe></div>
+<div></div>
 
 An example with Chebyshev distance instead of Euclidean distance
 
@@ -97,7 +96,6 @@ An example with Chebyshev distance instead of Euclidean distance
 
 [![](/images/visualizing-distances-5.png)](/images/visualizing-distances-5.png)
 
-<div class="video-wrap"><iframe title="ShaderToy" src="https://www.shadertoy.com/embed/NtdfRn?gui=true&t=10&paused=true" frameborder="0" allowfullscreen></iframe></div>
 
 <div class="instagram-wrap"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/B6wROGen8K2/" data-instgrm-version="14" style="width:100%;max-width:540px;margin:0;border:none;border-radius:4px;padding:0;"></blockquote></div>
 

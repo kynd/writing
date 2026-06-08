@@ -8,7 +8,7 @@ Mapping is defined in math as a rule that assigns each element from one set to a
 
 数学で写像（マッピング）とは、ある集合の各要素を別の集合の要素に対応させるルールとして定義されます。文字を別の文字に対応させる（「A」→「α」）、マイナンバーを個人に紐付けるといった離散的なものや、 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mi>a</mi><mi>x</mi><mo>+</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">y = ax + b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">a</span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">b</span></span></span></span>といった関数のように、値を連続的に変換するものもあります。
 
-[![](/images/discrete-mapping.jpg)](/images/discrete-mapping.jpg)
+[![](/images/discrete-mapping.jpg "75")](/images/discrete-mapping.jpg)
 
 > 
 > 
@@ -22,7 +22,7 @@ The demo below generates a mapping from the 26 alphabet letters to another rando
 
 下のデモでは、26個のアルファベットを別のランダムな文字に対応させる写像を生成します。キャンバスをクリックすると暗号がシャッフルされます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/ZYzdzVL?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="ZYzdzVL" data-user="kynd" data-preview="true"></p></div>
 
 Set of all possible input values is called domain, and the set of all possible output values is called range. In this example, the domain and range are both the set of 26 alphabets.
 
@@ -61,7 +61,7 @@ A mapping is bijective if it is both injective and surjective, meaning every out
 
 Example: The same set of characters with no overlaps.
 
-写像が全単射であるとき、その写像は、単射かつ全射であり、全ての出力にはちょうど1つの入力が対応します。これにより**可逆性、**つまり、関数の結果をもとに戻すことができることが保証されます。
+写像が全単射であるとき、その写像は、単射かつ全射であり、全ての出力にはちょうど1つの入力が対応します。これにより可逆性、つまり、関数の結果をもとに戻すことができることが保証されます。
 
 例：重複のない同じ文字の集合。
 
@@ -111,4 +111,4 @@ Try editing the text in the demo below and see how the hash changes unpredictabl
 
 下のデモでテキストを編集して、ハッシュが予測できない仕方で変わるのを見てみましょう。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/ZYEbwgo?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="ZYEbwgo" data-user="kynd" data-preview="true"></p></div>

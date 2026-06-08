@@ -13,4 +13,4 @@ In the demo, try toggling the atmospheric perspective on and off. If you increas
 
 デモ上で、Atmospheric perspective のオン/オフを切り替えてみてください。効果の強さを上げると、霧のように見えるようになります。`exp`関数内の`-0.0001`を変更すると、どうなるか試してみましょう。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/dyxzyjV?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="dyxzyjV" data-user="kynd" data-preview="true"></p></div>

@@ -67,7 +67,7 @@ Representing someone's vision for someone else is impossible, but at least under
 
 [Computing Colors 色を計算する](/sketching-with-math-and-quasi-physics/colors-and-numbers/computing-colors)
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/wBwpwde?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="wBwpwde" data-user="kynd" data-preview="true"></p></div>
 
 All of this shows that color perception is a complex mix of physical phenomena, evolutionary quirks, instinct, culture, and tools from pigments to pixels. And all of it is, in a way, somewhat arbitrary. It's just the way the world and we humans happened to turn out. Depending on the angle you look from, you can describe color in many different ways. That’s why we have so many color systems and models.
 
@@ -89,7 +89,9 @@ Interestingly, we don’t experience pitch as just a straight line—it feels mo
 
 面白いことに、私たちは音高を単純な直線としてではなく、螺旋のように感じます。例えば、440 Hz（A音）から上に向かうと、周波数がちょうど2倍の880 Hzで別のA音に到達します。これは違う音でありながら、私たちの耳には1オクターブ上がっただけの同じ音として認識されるのです。
 
-[![](/images/about-perception.jpg)](/images/about-perception.jpg)
+[![](/images/about-perception.jpg "75")](/images/about-perception.jpg)
+
+<div></div>
 
 Western music typically divides the octave into 12 pitches, each spaced evenly in terms of frequency ratio. Other musical cultures divide the octave differently. Some use more notes, some fewer, but the concept of the octave itself shows up pretty much everywhere.
 
@@ -109,7 +111,9 @@ Let’s take a guitar string as an example. The pitch depends on its length and 
 
 ギターの弦を例に取りしょう。音の高さは弦の長さと重さによって決まります。弦が長いほど、また重いほど、音は低くなりますが、弦が出す音は1つの周波数だけではありません。弾かれると弦は一度に様々な形の振動を生み出します。基本となる音の高さは基本周波数と呼ばれますが、弦の各部分も小さな区分（半分、3分の1、4分の1など）で振動していて、基本周波数の単純な倍数に当たる倍音や上音と呼ばれる音を鳴らします。
 
-[![](/images/when-you-pluck-on-a-string-the-string-vibrate-with-multiple.jpg)](/images/when-you-pluck-on-a-string-the-string-vibrate-with-multiple.jpg)
+[![](/images/when-you-pluck-on-a-string-the-string-vibrate-with-multiple.jpg "75")](/images/when-you-pluck-on-a-string-the-string-vibrate-with-multiple.jpg)
+
+<div></div>
 
 When you pluck on a string, the string vibrate with multiple frequencies mixed at the same time. 弦を弾くと、複数の周波数が同時に混ざり合って振動します
 
@@ -125,7 +129,7 @@ Understanding wave properties helps us better comprehend the relationship betwee
 
 波の性質を理解することで、物理的な振動と私たちが聞く音との関係をより深く理解し、音を使って遊んだり視覚化するなど、アイデアのスケッチができます。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/gOqypMj?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="gOqypMj" data-user="kynd" data-preview="true"></p></div>
 
 [Sound visualization 音の視覚化](/sketching-with-math-and-quasi-physics/wave/sound-visualization)
 
@@ -178,7 +182,7 @@ For example, computer displays are made of small dots. But when these dots are s
 
 例えば、コンピューターのディスプレイは小さな点で構成されています。これらの点が本を読むくらいの距離で約300 DPI（dot per inch)、つまり視角1分（1/60度）程度に十分に小さくなると、人間の目と脳は個々の点を認識するのをやめ、それらを画像や文字として捉えるようになります。映画は1秒あたりわずか24フレームですが、それでも私たちには滑らかで現実的に見えます。デジタル音声の多くは1秒の音を44,100個のサンプル、つまり、44,100個の数値で表現します。この値が選ばれたのは、人間の可聴域の上限である20,000 Hzまでの音を再現するのに十分だからです。もし人間の知覚能力が異なっていたら、これらの技術も違う形で設計されていたことでしょう。
 
-[![](/images/geometry-of-color-elements-of-various-crt-and-lcd-displays-1.jpg)](/images/geometry-of-color-elements-of-various-crt-and-lcd-displays-1.jpg)
+[![](/images/geometry-of-color-elements-of-various-crt-and-lcd-displays-1.jpg "75")](/images/geometry-of-color-elements-of-various-crt-and-lcd-displays-1.jpg)
 
 [Geometry of color elements of various CRT and LCD displays - Wikimedia](https://en.wikipedia.org/wiki/Pixel#/media/File:Pixel_geometry_01_Pengo.jpg)
 
@@ -186,13 +190,13 @@ An interesting part is even when there isn’t enough resolution, our brain ofte
 
 興味深いことに十分な解像度がなくても、人の脳は欠けている詳細を補完して連続性を見出そうとします。初期のモニターは非常に粗く、ピクセルが目立っていましたが、人々はその画質を受け入れていたし、8ビットスタイルと呼ばれる低解像度のグラフィックに愛着や懐かしさを感じさえもします。
 
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/kynd/embed/abMWgMe?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="abMWgMe" data-user="kynd" data-preview="true"></p></div>
 
 Animations, especially cartoonish ones, can utilize a lower frame rate to add unique effects. Sometimes, letting the brain fill in the gaps is better than trying to draw everything in detail and having the illusion fall apart by having discrepancies here and there.
 
 アニメーション、特にカートゥーン風のものでは、低いフレームレートを活用して独特の効果を出すことができます。時として、細部まで全てを描き込もうとして不自然さが目立ってしまうよりも、脳に隙間を補完させる方が効果的なのです。
 
-[https://codepen.io/kynd/details/gOERQNg](https://codepen.io/kynd/details/gOERQNg)
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="gOERQNg" data-user="kynd" data-preview="true"></p></div>
 
 # Embracing the differences and complexity
 # 違いと複雑さを受け入れる

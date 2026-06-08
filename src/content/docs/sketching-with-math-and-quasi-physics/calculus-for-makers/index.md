@@ -1,5 +1,5 @@
 ---
-title: "Calculus for Makers作るための微積分"
+title: "Calculus for Makers 作るための微積分"
 ---
 In "making" things, be it cool graphics, simulations, or tangible objects, mathematical concepts often play crucial roles. However, when you encounter topics like differentiation, integration, and diffusion, they might seem daunting, bringing back memories of complex equations and rigorous proofs. Seriously, when I see those formulas on the Wikipedia pages, they are just overwhelming.
 

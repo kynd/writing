@@ -13,7 +13,7 @@ As a result, many color models and theories have been devised for different cond
 
 その結果、さまざまな条件や目的に応じて多くのカラーモデルや理論が考案されてきました。どれも素晴らしいのですが、必ずしも直感的ではなかったりします。ここでは、自分が調べたことを書き留めて頭の中を整理していこうと思います。
 
-[![](/images/colors-and-numbers.png)](/images/colors-and-numbers.png)
+[![](/images/colors-and-numbers.png "100")](/images/colors-and-numbers.png)
 
 # Spectrum and Cones
 # スペクトルと錐体
@@ -28,6 +28,7 @@ First, let's learn about the physical properties, such as the distribution of li
 # CIE XYZ と xyY
 
 CIE XYZ and xyY are often used as the basis for expressing colors perceived by humans in numerical values.  
+
 人間が知覚する色を数値で表す際の基礎としてよく用いられるのがCIE XYZとxyYです。
 
 [CIE Color spaces CIE色空間](/sketching-with-math-and-quasi-physics/colors-and-numbers/cie-color-spaces)
