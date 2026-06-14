@@ -1,5 +1,6 @@
 ---
 title: "Filling Space with Colors 空間を色で満たす"
+slug: filling-space-with-colors
 ---
 Have you ever seen British rock candy, like Brighton or Blackpool rock, or Japanese Kintarō-ame?  
 These are candies that have a graphic or a picture all the way through their lengths so that cutting them can reveal the image.
@@ -120,6 +121,6 @@ Photo by [Alicja Kielan](https://www.instagram.com/alicja.kielan/)
 
 # Slicing multi-dimensional spaces 多次元空間をスライスする
 
-It's fascinating to contemplate structures in space that exist even when we can't see them. Next time you see a circle like Fangor’s, try imagining it as a sphere. Or when you see a sphere, picture it as a slice of a 4D sphere (hypersphere). To dive deeper into this topic, jump on to [Dimensions 次元](/sketching-with-math-and-quasi-physics/dimensions).
+It's fascinating to contemplate structures in space that exist even when we can't see them. Next time you see a circle like Fangor’s, try imagining it as a sphere. Or when you see a sphere, picture it as a slice of a 4D sphere (hypersphere). To dive deeper into this topic, jump on to [Dimensions 次元](/dimensions).
 
-実際に見えなくても空間内に存在する構造について考えるのは楽しいものです。次にファンゴルの絵画のような円を見たときは、それを球体として想像してみてください。球体を見たときには、4次元球体（超球体）の断面として想像してみましょう。このトピックについて深く掘り下げるには、[Dimensions 次元](/sketching-with-math-and-quasi-physics/dimensions)をみてください。
+実際に見えなくても空間内に存在する構造について考えるのは楽しいものです。次にファンゴルの絵画のような円を見たときは、それを球体として想像してみてください。球体を見たときには、4次元球体（超球体）の断面として想像してみましょう。このトピックについて深く掘り下げるには、[Dimensions 次元](/dimensions)をみてください。

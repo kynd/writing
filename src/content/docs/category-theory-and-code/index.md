@@ -1,5 +1,6 @@
 ---
 title: "Category Theory and Code 圏論とコード"
+slug: category-theory-and-code
 ---
 # About This Series
 # このシリーズについて
@@ -73,20 +74,20 @@ By discarding the details and seeing only the essential connections, various thi
 # Index
 # 目次
 
-[Everything as an Arrow すべては矢印](/category-theory-and-code/everything-as-an-arrow)
+[Everything as an Arrow すべては矢印](/everything-as-an-arrow)
 
-[Category Basics 圏の基本](/category-theory-and-code/category-basics)
+[Category Basics 圏の基本](/category-basics)
 
-[Products, Coproducts, Universality and Duality 積、余積、普遍性と双対性](/category-theory-and-code/products-coproducts-universality-and-duality)
+[Products, Coproducts, Universality and Duality 積、余積、普遍性と双対性](/products-coproducts-universality-and-duality)
 
-[Functor 関手](/category-theory-and-code/functor)
+[Functor 関手](/functor)
 
-[Natural Transformation 自然変換](/category-theory-and-code/natural-transformation)
+[Natural Transformation 自然変換](/natural-transformation)
 
-[Double Dual 二重双対](/category-theory-and-code/double-dual)
+[Double Dual 二重双対](/double-dual)
 
-[Generics and Category Theory ジェネリクスと圏論](/category-theory-and-code/generics-and-category-theory)
+[Generics and Category Theory ジェネリクスと圏論](/generics-and-category-theory)
 
-[Category Theory and Functional Programming 圏論と関数型プログラミング](/category-theory-and-code/category-theory-and-functional-programming)
+[Category Theory and Functional Programming 圏論と関数型プログラミング](/category-theory-and-functional-programming)
 
-[Monads モナド](/category-theory-and-code/monads)
+[Monads モナド](/monads)

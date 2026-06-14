@@ -1,5 +1,6 @@
 ---
 title: "CIE Color spaces CIE色空間"
+slug: cie-color-spaces
 ---
 # CIE XYZ color space
 # CIE XYZ色空間
@@ -62,15 +63,15 @@ The colors are now more clearly separated on the plane created by x and y than i
 
 元のXYZよりも、xとyが作る面上に色がはっきり別れるようになりました。Yはシンプルに輝度（luminance）に対応している様に見えます。
 
-If we cut out only the area that can be displayed on a monitor (or more precisely the [range of sRGB](/sketching-with-math-and-quasi-physics/colors-and-numbers/various-color-models)) and look it down from above (Y-axis), it looks like this.
+If we cut out only the area that can be displayed on a monitor (or more precisely the [range of sRGB](/various-color-models)) and look it down from above (Y-axis), it looks like this.
 
-ここからモニター上で表示できる範囲（厳密には[sRGBの範囲](/sketching-with-math-and-quasi-physics/colors-and-numbers/various-color-models)）だけを切り出して真上（Y軸）方向から見下ろすとこうなります。
+ここからモニター上で表示できる範囲（厳密には[sRGBの範囲](/various-color-models)）だけを切り出して真上（Y軸）方向から見下ろすとこうなります。
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="KwPZPKX" data-user="kynd" data-preview="true"></p></div>
 
-You may have seen a diagram like the one below that illustrates the color gamut of a display or other device. The triangle in the center is the range that can be reproduced in [sRGB](/sketching-with-math-and-quasi-physics/colors-and-numbers/various-color-models), and the rounded shape around it is the entire color gamut humans can perceive. This diagram is actually drawn in the xyY color space. In this way, the XYZ and xyY color spaces are often used as the basis for defining other color spaces and models.
+You may have seen a diagram like the one below that illustrates the color gamut of a display or other device. The triangle in the center is the range that can be reproduced in [sRGB](/various-color-models), and the rounded shape around it is the entire color gamut humans can perceive. This diagram is actually drawn in the xyY color space. In this way, the XYZ and xyY color spaces are often used as the basis for defining other color spaces and models.
 
-ディスプレイなどの色域（gamut）を説明する下のような図を見たことがあるかもしれません。中央の三角形が[sRGB](/sketching-with-math-and-quasi-physics/colors-and-numbers/various-color-models)で再現できる範囲で、その周りの丸まった形が人間が知覚できる色域の全体です。この図は実はxyY色空間で描かれているのです。このようにXYZやxyY色空間は他の色空間やカラーモデルを定義するための基礎としてよく用いられます。
+ディスプレイなどの色域（gamut）を説明する下のような図を見たことがあるかもしれません。中央の三角形が[sRGB](/various-color-models)で再現できる範囲で、その周りの丸まった形が人間が知覚できる色域の全体です。この図は実はxyY色空間で描かれているのです。このようにXYZやxyY色空間は他の色空間やカラーモデルを定義するための基礎としてよく用いられます。
 
 [![](/images/https-commons-wikimedia-org-wiki-file-cie-chart-with-srgb.png "75")](/images/https-commons-wikimedia-org-wiki-file-cie-chart-with-srgb.png)
 
@@ -82,4 +83,4 @@ XYZとデバイス上のRGBの対応はこのビデオが分かりやすかっ�
 
 <div class="video-wrap"><iframe width="560" height="315" src="https://www.youtube.com/embed/x0-qoXOCOow" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
 
-[Various Color Models 様々なカラーモデル](/sketching-with-math-and-quasi-physics/colors-and-numbers/various-color-models)
+[Various Color Models 様々なカラーモデル](/various-color-models)

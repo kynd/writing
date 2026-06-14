@@ -1,5 +1,6 @@
 ---
 title: "Atmospheric Perspective 空気遠近法"
+slug: atmospheric-perspective
 ---
 ```glsl
 color = mix(color, vec3(0.7, 0.7, 0.9), 1.0 - exp(-0.0001 * distanceToSurface * distanceToSurface * distanceToSurface));

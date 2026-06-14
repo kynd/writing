@@ -1,5 +1,6 @@
 ---
 title: "Everything as an Arrow すべては矢印"
+slug: everything-as-an-arrow
 ---
 # Defining Objects by Relationships
 # 対象を関係で定義する
@@ -331,4 +332,4 @@ In the following pages, let's look more deeply at the structure of these arrows 
 > 
 > 続くページで合成などの様々な概念を学ぶと、より違いがはっきりとわかるようになります。
 
-[Category Basics 圏の基本](/category-theory-and-code/category-basics)
+[Category Basics 圏の基本](/category-basics)

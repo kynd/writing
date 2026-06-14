@@ -1,5 +1,6 @@
 ---
 title: "Signed distance functions 符号付き距離関数"
+slug: signed-distance-functions
 ---
 **”Signed distance functions”**, or SDF sounds scary but it is not too crazy to understand. A SDF is a function that can tell you how far a point is from a surface of a shape, say a sphere (usually in Euclidean space)
 
@@ -86,7 +87,7 @@ For learning about how to draw 3D graphics using SDF, take a look at the followi
 
 SDFを使って3Dグラフィックを描く方法については下記のページとサイトをご覧ください。
 
-[Projection and 3D Rendering プロジェクションと3Dレンダリング](/sketching-with-math-and-quasi-physics/projection-and-3d-rendering)
+[Projection and 3D Rendering プロジェクションと3Dレンダリング](/projection-and-3d-rendering)
 
 -   [Ray Marching and Signed Distance Functions](https://jamie-wong.com/2016/07/15/ray-marching-signed-distance-functions/)
 

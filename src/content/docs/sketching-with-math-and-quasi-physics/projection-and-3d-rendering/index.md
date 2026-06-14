@@ -1,10 +1,11 @@
 ---
 title: "Projection and 3D Rendering プロジェクションと3Dレンダリング"
+slug: projection-and-3d-rendering
 ---
-[Projection プロジェクション](/sketching-with-math-and-quasi-physics/projection-and-3d-rendering/projection)
+[Projection プロジェクション](/projection)
 
-[Ray Marching レイマーチング](/sketching-with-math-and-quasi-physics/projection-and-3d-rendering/ray-marching)
+[Ray Marching レイマーチング](/ray-marching)
 
-[3D Rendering with Ray Marching レイマーチングによる3Dレンダリング](/sketching-with-math-and-quasi-physics/projection-and-3d-rendering/3d-rendering-with-ray-marching)
+[3D Rendering with Ray Marching レイマーチングによる3Dレンダリング](/3d-rendering-with-ray-marching)
 
-[Designing 3D world 3Dのデザイン](/sketching-with-math-and-quasi-physics/projection-and-3d-rendering/designing-3d-world)
+[Designing 3D world 3Dのデザイン](/designing-3d-world)

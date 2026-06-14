@@ -1,5 +1,6 @@
 ---
 title: "Rendering Process Overview レンダリングプロセスの概要"
+slug: rendering-process-overview
 ---
 Let's break down the `render()` function. Although it's a large function, we can divide it into several key parts. Before diving into the details, let's examine the overall structure.
 
@@ -101,13 +102,13 @@ See the following page for the details of the ray casting function.
 
 レイキャスティング関数の詳細については、次のページをご覧ください。
 
-[Ray casting レイキャスティング](/sketching-with-math-and-quasi-physics/reading/rendering-process-overview/ray-casting)
+[Ray casting レイキャスティング](/ray-casting)
 
 Then, refer to the following page for details on normal calculation.
 
 次に、法線の計算の詳細については、以下のページを参照してください。
 
-[Normal calculation 法線の計算](/sketching-with-math-and-quasi-physics/reading/rendering-process-overview/normal-calculation)
+[Normal calculation 法線の計算](/normal-calculation)
 
 # Material colors
 # マテリアルの色
@@ -124,7 +125,7 @@ Then there is another section in `if (materialId < 1.5) {…}`. This part calcul
 
 次に、 `if (materialId < 1.5) {…}` の中に別のセクションがあります。この部分は`intersectionPoint` を元に、床のチェック模様の色を計算します。
 
-[Drawing the checker pattern チェック模様を描く](/sketching-with-math-and-quasi-physics/reading/rendering-process-overview/drawing-the-checker-pattern)
+[Drawing the checker pattern チェック模様を描く](/drawing-the-checker-pattern)
 
 # Lighting
 # ライティング
@@ -133,16 +134,16 @@ The remainder of the function calculates the lighting effects, breaking them dow
 
 関数の残りの部分では、光源や要素ごとに分解してライティングの効果を計算します。それぞれのステップの詳細については、以下のページを見てください。
 
-[Sunlight 太陽光](/sketching-with-math-and-quasi-physics/reading/rendering-process-overview/sunlight)
+[Sunlight 太陽光](/sunlight)
 
-[Soft shadow ソフトシャドウ](/sketching-with-math-and-quasi-physics/reading/rendering-process-overview/soft-shadow)
+[Soft shadow ソフトシャドウ](/soft-shadow)
 
-[Sky light 空からの光](/sketching-with-math-and-quasi-physics/reading/rendering-process-overview/sky-light)
+[Sky light 空からの光](/sky-light)
 
-[Ambient occlusion アンビエントオクルージョン](/sketching-with-math-and-quasi-physics/reading/rendering-process-overview/ambient-occlusion)
+[Ambient occlusion アンビエントオクルージョン](/ambient-occlusion)
 
-[Backlight バックライト](/sketching-with-math-and-quasi-physics/reading/rendering-process-overview/backlight)
+[Backlight バックライト](/backlight)
 
-[Subsurface scattering サブサーフェススキャッタリング](/sketching-with-math-and-quasi-physics/reading/rendering-process-overview/subsurface-scattering)
+[Subsurface scattering サブサーフェススキャッタリング](/subsurface-scattering)
 
-[Atmospheric Perspective 空気遠近法](/sketching-with-math-and-quasi-physics/reading/rendering-process-overview/atmospheric-perspective)
+[Atmospheric Perspective 空気遠近法](/atmospheric-perspective)

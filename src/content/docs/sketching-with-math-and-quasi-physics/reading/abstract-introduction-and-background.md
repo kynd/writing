@@ -1,5 +1,6 @@
 ---
 title: "Abstract, Introduction and Background 概要、序論と背景"
+slug: abstract-introduction-and-background
 ---
 > 
 > 
@@ -165,4 +166,4 @@ Next, we'll go through the architecture overview.
 
 次は、アーキテクチャの概要を見ていきましょう。
 
-[Architecture Overview アーキテクチャの概要](/sketching-with-math-and-quasi-physics/reading/architecture-overview)
+[Architecture Overview アーキテクチャの概要](/architecture-overview)

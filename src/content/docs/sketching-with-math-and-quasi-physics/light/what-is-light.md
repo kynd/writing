@@ -1,5 +1,6 @@
 ---
 title: "What is light? 光とは何か"
+slug: what-is-light
 ---
 # Electromagnetic radiation
 # 電磁波
@@ -16,7 +17,7 @@ Please take a look at this page for the frequencies and colors of visible light.
 
 可視光線の周波数と色についてはこちらを読んでみてください。
 
-[Colors and Numbers 色と数値](/sketching-with-math-and-quasi-physics/colors-and-numbers)
+[Colors and Numbers 色と数値](/colors-and-numbers)
 
 <div class="openprocessing-wrap"><iframe src="https://openprocessing.org/sketch/1814072/embed/" width="100%" height="400" frameborder="0" allowfullscreen></iframe></div>
 
@@ -47,4 +48,4 @@ On the next page we will look at how light travels through air and other media.
 
 次のページで、光が空気やその他の媒体の中をどのように進むかを見てみましょう。
 
-[Reflection and Refraction 反射と屈折](/sketching-with-math-and-quasi-physics/light/reflection-and-refraction)
+[Reflection and Refraction 反射と屈折](/reflection-and-refraction)

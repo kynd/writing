@@ -1,5 +1,6 @@
 ---
 title: "Visualizing Graphs グラフの可視化"
+slug: visualizing-graphs
 ---
 In a mathematical sense, graphs are just a collection of nodes connected by edges, and how you draw them does not change the data model itself. But for people to read the data, the rendering has a huge impact.
 

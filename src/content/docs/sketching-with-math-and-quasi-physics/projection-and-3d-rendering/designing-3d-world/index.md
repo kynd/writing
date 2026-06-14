@@ -1,12 +1,13 @@
 ---
 title: "Designing 3D world 3Dのデザイン"
+slug: designing-3d-world
 ---
 # Combining shapes
 # 形を組み合わせる
 
-To design complex shapes with SDF, you need to combine multiple different shapes. We have already seen [how taking the minimum of two SDFs can merge shapes](/sketching-with-math-and-quasi-physics/projection-and-3d-rendering/3d-rendering-with-ray-marching). In this section, we will explore other useful functions. These functions are all from [Inigo Quilez's article](https://iquilezles.org/articles/distfunctions/).
+To design complex shapes with SDF, you need to combine multiple different shapes. We have already seen [how taking the minimum of two SDFs can merge shapes](/3d-rendering-with-ray-marching). In this section, we will explore other useful functions. These functions are all from [Inigo Quilez's article](https://iquilezles.org/articles/distfunctions/).
 
-複雑な形状をSDFで作るには、複数の異なる形を組み合わせる必要があります。すでに[2つのSDFの最小値を取ることで形状を結合する方法](/sketching-with-math-and-quasi-physics/projection-and-3d-rendering/3d-rendering-with-ray-marching)について触れました。このセクションでは、その他の便利な関数について説明します。これらの関数はすべて、[Inigo Quilezの記事](https://iquilezles.org/articles/distfunctions/)が出典です。
+複雑な形状をSDFで作るには、複数の異なる形を組み合わせる必要があります。すでに[2つのSDFの最小値を取ることで形状を結合する方法](/3d-rendering-with-ray-marching)について触れました。このセクションでは、その他の便利な関数について説明します。これらの関数はすべて、[Inigo Quilezの記事](https://iquilezles.org/articles/distfunctions/)が出典です。
 
 ## Boolean operations
 ## ブール演算

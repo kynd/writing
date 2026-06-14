@@ -5,15 +5,17 @@ import Sidebar from '../components/Sidebar.astro';
 export interface Props {
   title: string;
   slug: string;
+  filePath: string;
 }
 
-const { title, slug } = Astro.props;
+const { title, slug, filePath } = Astro.props;
 
 const allDocs = await getCollection('docs');
 
 type TreeNode = {
   label: string;
-  slug: string;
+  path: string; // hierarchical path (from doc.id) for active-state detection
+  url: string;  // short slug URL for link hrefs
   children: Map<string, TreeNode>;
 };
 
@@ -67,23 +69,34 @@ const SKETCHING_ORDER: Record<string, number> = {
 };
 
 function buildTree(docs: typeof allDocs): TreeNode {
-  const root: TreeNode = { label: 'root', slug: '', children: new Map() };
+  const root: TreeNode = { label: 'root', path: '', url: '', children: new Map() };
+
+  // Pre-build a map from hierarchical path → short slug URL
+  const pathToUrl = new Map<string, string>();
+  for (const doc of docs) {
+    const fp = doc.id.replace(/\.md$/, '').replace(/\/index$/, '');
+    pathToUrl.set(fp, doc.slug);
+  }
 
   for (const doc of docs) {
-    if (doc.slug === 'index') continue; // homepage served at /
-    const parts = doc.slug.split('/');
+    const fp = doc.id.replace(/\.md$/, '').replace(/\/index$/, '');
+    if (fp === '') continue; // root homepage
+    const parts = fp.split('/');
     let node = root;
     for (let i = 0; i < parts.length; i++) {
       const part = parts[i];
+      const nodePath = parts.slice(0, i + 1).join('/');
       if (!node.children.has(part)) {
         node.children.set(part, {
           label: i === parts.length - 1 ? (doc.data.title || part) : part,
-          slug: parts.slice(0, i + 1).join('/'),
+          path: nodePath,
+          url: pathToUrl.get(nodePath) || nodePath,
           children: new Map(),
         });
       } else if (i === parts.length - 1) {
         const existing = node.children.get(part)!;
         existing.label = doc.data.title || existing.label;
+        existing.url = doc.slug;
       }
       node = node.children.get(part)!;
     }
@@ -115,8 +128,8 @@ const tree = buildTree(allDocs);
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
-function buildBreadcrumbs(slug: string, docs: typeof allDocs) {
-  const parts = slug.split('/').filter(Boolean);
+function buildBreadcrumbs(fp: string, docs: typeof allDocs) {
+  const parts = fp.split('/').filter(Boolean);
   const crumbs: { label: string; href: string }[] = [
     { label: 'Home', href: base || '/' },
   ];
@@ -124,16 +137,19 @@ function buildBreadcrumbs(slug: string, docs: typeof allDocs) {
   let cumulative = '';
   for (let i = 0; i < parts.length; i++) {
     cumulative += (i > 0 ? '/' : '') + parts[i];
-    const match = docs.find((d) => d.slug === cumulative || d.slug === `${cumulative}/index`);
+    const match = docs.find((d) => {
+      const dfp = d.id.replace(/\.md$/, '').replace(/\/index$/, '');
+      return dfp === cumulative;
+    });
     crumbs.push({
       label: match?.data.title || parts[i],
-      href: `${base}/${cumulative}`,
+      href: match ? `${base}/${match.slug}` : `${base}/${cumulative}`,
     });
   }
   return crumbs;
 }
 
-const breadcrumbs = buildBreadcrumbs(slug, allDocs);
+const breadcrumbs = buildBreadcrumbs(filePath, allDocs);
 ---
 
 <!DOCTYPE html>
@@ -777,7 +793,7 @@ const breadcrumbs = buildBreadcrumbs(slug, allDocs);
     <div class="sidebar-backdrop" id="sidebar-backdrop"></div>
 
     <nav class="sidebar" aria-label="Site navigation">
-      <Sidebar tree={tree} currentSlug={slug} />
+      <Sidebar tree={tree} currentSlug={filePath} />
     </nav>
 
     <main class="main-wrap">

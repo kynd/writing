@@ -1,5 +1,6 @@
 ---
 title: "About Colors 色について"
+slug: about-colors
 ---
 > 
 > 
@@ -19,7 +20,7 @@ Physically, we know how humans perceive colors. We have photoreceptors called co
 
 物理的な面を見ると、人間の色の知覚の仕組みは解明されています。目の中には錐体という光受容体があり、異なる周波数の光に反応します。3種類の錐体への刺激の強さの組み合わせによって、私たちが知覚する色が決まります。それぞれの錐体の感度は、赤、緑、青の波長域におおよそ対応しています。そのため、RGBディスプレイは3色の発光素子だけで、様々な色を表示できるのです。
 
-[Spectrum and Cones スペクトルと錐体](/sketching-with-math-and-quasi-physics/colors-and-numbers/spectrum-and-cones)
+[Spectrum and Cones スペクトルと錐体](/spectrum-and-cones)
 
 [![](/images/https-commons-wikimedia-org-wiki-file-cone-fundamentals-wi-1.svg "75")](/images/https-commons-wikimedia-org-wiki-file-cone-fundamentals-wi-1.svg)
 
@@ -54,7 +55,7 @@ They eventually transformed the data into something called the CIE 1931 XYZ colo
 
 最終的に、データはCIE 1931 XYZ色空間と呼ばれるものに変換されました。これは基本的に、負の値を取り除くために実際の光ではなく仮想の新しい「原色」を選ぶことで、測定値をマッピングし直したものです。
 
-[CIE Color spaces CIE色空間](/sketching-with-math-and-quasi-physics/colors-and-numbers/cie-color-spaces)
+[CIE Color spaces CIE色空間](/cie-color-spaces)
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="ZYzaggx" data-user="kynd" data-preview="true"></p></div>
 
@@ -68,7 +69,7 @@ Some other ways of describing colors are based on the ways we talk about colors.
 
 色を表現する他の方法として、私たちの日常的な色の表現方法に基づいたものがあります。色を見るとき、私たちは「赤みがかった」「黄色みがかった」といった色の種類や、明るさ、鮮やかさ、くすみ具合、無彩色に近いかなどで表現します。マンセルカラーシステムは、このような直感的な表現を体系化し、色を色相（赤、青、緑など）、明度（明るさ）、彩度（色の鮮やかさや純度）の3つの属性で分類します。コンピュータで使用されるカラーモデルの多くは、このマンセルのモデルに似ていますが、画面上でのRGBの値やXYZ値に変換できるように設計されています。
 
-[Various Color Models 様々なカラーモデル](/sketching-with-math-and-quasi-physics/colors-and-numbers/various-color-models)
+[Various Color Models 様々なカラーモデル](/various-color-models)
 
 [![](/images/https-commons-wikimedia-org-wiki-file-munsell-1943-color-s-1.png)](/images/https-commons-wikimedia-org-wiki-file-munsell-1943-color-s-1.png)
 
@@ -81,7 +82,7 @@ These models allow us to compute colors. For example, we can add, subtract, mult
 
 これらのモデルを使用すると色を計算できます。例えば、色の加算、減算、乗算、回転といった操作が可能です。ただし、モデルごとに有効な演算や得られる結果が異なるので、用途に合わせて適切なモデルを選ぶことが重要です。
 
-[Computing Colors 色を計算する](/sketching-with-math-and-quasi-physics/colors-and-numbers/computing-colors)
+[Computing Colors 色を計算する](/computing-colors)
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="dPbJbNy" data-user="kynd" data-preview="true"></p></div>
 
@@ -89,7 +90,7 @@ Being able to process colors to get the desired tone is a critical skill in imag
 
 画像や映像制作において、目的とする色調を実現するための色処理技術は不可欠なスキルです。
 
-[Color Processing カラープロセッシング](/sketching-with-math-and-quasi-physics/image-processing/color-processing)
+[Color Processing カラープロセッシング](/color-processing)
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="eYPvObZ" data-user="kynd" data-preview="true"></p></div>
 
@@ -111,7 +112,7 @@ Mixing colors in the real world is even more complex, because the color mixing i
 
 [![](/images/about-colors-1.png)](/images/about-colors-1.png)
 
-[Mixing Colors 色を混ぜる](/sketching-with-math-and-quasi-physics/mixing-colors)
+[Mixing Colors 色を混ぜる](/mixing-colors)
 
 # Light
 # 光
@@ -120,7 +121,7 @@ Light striking the retina lets us see colors. To fully understand how colors hap
 
 光が網膜に届くことで私たちは色を知覚できます。色の認識プロセスを完全に理解するには、光源から目までの光の経路を把握する必要があります。その過程では、光は物体の表面で跳ね返り、反射と屈折を繰り返しながら進んでいきます。
 
-[Reflection and Refraction 反射と屈折](/sketching-with-math-and-quasi-physics/light/reflection-and-refraction)
+[Reflection and Refraction 反射と屈折](/reflection-and-refraction)
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="VgWrpb" data-user="kynd" data-preview="true"></p></div>
 
@@ -132,7 +133,7 @@ There are many different methods to simulate this process, from very rough to mo
 
 このプロセスをシミュレートする手法には、おおまかなものから精密なものまで、様々な種類があります。これらを学ぶことで、物体の色の見え方についての理解が深まり、レンダリングにおける色や見た目をより効果的にコントロールできるようになります。
 
-[Illuminating objects 物体を照らす](/sketching-with-math-and-quasi-physics/light/illuminating-objects)
+[Illuminating objects 物体を照らす](/illuminating-objects)
 
 [![](/images/specular-left-vs-diffuse-right-1.png)](/images/specular-left-vs-diffuse-right-1.png)
 
@@ -151,4 +152,4 @@ The last section is just an example of using these theories in practice. This in
 
 <div class="instagram-wrap"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DHIE0WQgVlb/" data-instgrm-version="14" style="width:100%;max-width:540px;margin:0;border:none;border-radius:4px;padding:0;"></blockquote></div>
 
-[Filling Space with Colors 空間を色で満たす](/sketching-with-math-and-quasi-physics/filling-space-with-colors)
+[Filling Space with Colors 空間を色で満たす](/filling-space-with-colors)

@@ -1,5 +1,6 @@
 ---
 title: "About Space  空間について"
+slug: about-space
 ---
 We think we naturally know what space is, but do we really? In an everyday sense, space feels like a void for objects and matter to fill. We are all in space and move within space. It seems like a backdrop that exists independently of everything inside it.
 
@@ -62,13 +63,13 @@ I said "default" because in many cases, you can manipulate the space, or rather 
 
 「デフォルト」という言葉を使ったのは、多くの場合、空間や座標系を自由に操作できるからです。デザインツールではキャンバスをドラッグしたり拡大縮小したりでき、コーディングのフレームワークでは、p5.jsのtranslate()、scale()、rotate()関数のように、空間を平行移動、拡大縮小、回転させるメソッドが用意されています。座標を処理する関数を自分で書いて空間を歪めることもできます。軸は通常90°で交わりますが、これも必須ではありません。軸が平行でない（つまり独立している）限り、各軸に1つの値を選ぶことで位置を一意に表現できます。
 
-The demo below from the [Mapping 写像](/sketching-with-math-and-quasi-physics/mapping) page demonstrates affine transformation, which is a simple method to enable these kinds of coordinate transformations.
+The demo below from the [Mapping 写像](/mapping) page demonstrates affine transformation, which is a simple method to enable these kinds of coordinate transformations.
 
-下の[Mapping 写像](/sketching-with-math-and-quasi-physics/mapping)ページからのデモはアフィン変換という、このような座標変換を行うシンプルな手法の例です。
+下の[Mapping 写像](/mapping)ページからのデモはアフィン変換という、このような座標変換を行うシンプルな手法の例です。
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="PwYraqe" data-user="kynd" data-preview="true"></p></div>
 
-[Mapping 写像](/sketching-with-math-and-quasi-physics/mapping)
+[Mapping 写像](/mapping)
 
 # Newtonian mechanics in 2D
 # 2次元のニュートン力学
@@ -81,9 +82,9 @@ In Newtonian physics, you start from a position, then apply velocity to move it,
 
 ニュートン力学では位置から始めて、速度を適用して動かし、加速度を適用して速度を変化させます。これらはすべてベクトルで表現され、ベクトルとは基本的には（成分と呼ばれる）複数の値を組み合わせたものです。軸ごとに値を操作するのではなく、ベクトルとして表現することで、扱いがはるかに簡単になります。また、ベクトルには非常に便利な演算が定義されていて、便利すぎて避けては通れないほどです。
 
-[Newton and Vectors ニュートンとベクトル](/sketching-with-math-and-quasi-physics/newton-and-vectors)
+[Newton and Vectors ニュートンとベクトル](/newton-and-vectors)
 
-[Vector Operations ベクトルの操作](/sketching-with-math-and-quasi-physics/vector-operations)
+[Vector Operations ベクトルの操作](/vector-operations)
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="xdNwao" data-user="kynd" data-preview="true"></p></div>
 
@@ -100,7 +101,7 @@ What is different, and can be a lot more challenging, is rendering. Because your
 
 異なる部分、そしてより大きな課題なのがレンダリングです。キャンバスは2Dなので、3D空間で定義されたものはそのまま置けません。3Dの点を2Dになんとかして翻訳する必要があります。これをプロジェクション（投影）と呼び、15世紀のブルネレスキの時代にまで遡る技法です。
 
-[Projection and 3D Rendering プロジェクションと3Dレンダリング](/sketching-with-math-and-quasi-physics/projection-and-3d-rendering)
+[Projection and 3D Rendering プロジェクションと3Dレンダリング](/projection-and-3d-rendering)
 
 <div class="instagram-wrap"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/C0QSVPLLtmA/" data-instgrm-version="14" style="width:100%;max-width:540px;margin:0;border:none;border-radius:4px;padding:0;"></blockquote></div>
 
@@ -110,7 +111,7 @@ Also, to make things look 3D, lighting or shading (basically the same thing — 
 
 また3Dらしく見せるためには、ライティングやシェーディング（基本的に同じことで、シーンに光を加えれば影も生まれます）が重要です。光と影がなければ、球は単なる円のように見えてしまいます。物体から別の物体に落ちる影は、位置の関係をわかりやすく示してくれます。
 
-[Light 光](/sketching-with-math-and-quasi-physics/light)
+[Light 光](/light)
 
 > 
 > 
@@ -143,7 +144,7 @@ In fact, large language models (LLM) represent concepts like "dog," "human," "ru
 
 実際、大規模言語モデル（LLM）は「犬」「人間」「走る」「幸せ」といった概念を超多次元空間（例えば3072次元）上の点として表し、その間で演算を行うことで、2つの単語や文章の間の概念的な距離や類似性を測ります。これは現在のAIモデルの仕組みを把握する上でとても重要です。
 
-[Dimensions 次元](/sketching-with-math-and-quasi-physics/dimensions)
+[Dimensions 次元](/dimensions)
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="vYqqGmP" data-user="kynd" data-preview="true"></p></div>
 
@@ -154,7 +155,7 @@ Colors can be represented with a series of numbers, such as R, G, and B. So they
 
 色はR、G、Bなどの数値の組み合わせで表現できます。つまり、色はベクトルとして空間の中に存在しているのです。実際、人々は様々な目的に合わせて色を「正確に」表現するための異なる空間モデルを生み出してきました。色の関係を空間的にイメージすることで、色全体を直感的に把握できます。たとえば、色相を変えるのは回転として、色を明るくするのは上昇として捉えられます。それぞれの色モデルは独自の方法で色を整理し、異なる視点を提供します。効率よく作業をして良い結果を得るには、目的に合った適切なモデルを選ぶことが重要です。
 
-[Colors and Numbers 色と数値](/sketching-with-math-and-quasi-physics/colors-and-numbers)
+[Colors and Numbers 色と数値](/colors-and-numbers)
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="XJrVrKx" data-user="kynd" data-preview="true"></p></div>
 
@@ -179,7 +180,7 @@ But that is not the only distance we care about. How do you measure the distance
 
 しかし、距離はそれだけではありません。東京からサンパウロまでの距離はどのように測るでしょう。おそらく、2点間の直線距離ではなく、地球の表面に沿った曲線の長さを知りたいと思うでしょう。これは[球面幾何学](https://en.wikipedia.org/wiki/Spherical_geometry)と呼ばれています。チェッカーボードはどうでしょう。2つのマス目の間の距離をどのように測りますか。必要な移動回数でしょうか。
 
-[Various distances さまざまな距離](/sketching-with-math-and-quasi-physics/distance/various-distances)
+[Various distances さまざまな距離](/various-distances)
 
 [![](/images/about-space-1.png "50")](/images/about-space-1.png)
 
@@ -189,7 +190,7 @@ The concept of distance becomes important in various cases, for example in findi
 
 距離の概念は、ゲームデザインにおけるキャラクターの最短経路の探索や、領域を距離によって分けたりなど、様々な場面で重要になります。
 
-[Visualizing Distances 距離を視覚化する](/sketching-with-math-and-quasi-physics/distance/visualizing-distances)
+[Visualizing Distances 距離を視覚化する](/visualizing-distances)
 
 [![](/images/about-space-2.png)](/images/about-space-2.png)
 
@@ -199,7 +200,7 @@ In computer graphics, functions that returns the distance from a point to the su
 
 コンピューターグラフィックスでは、点からオブジェクトの表面までの距離を返す関数（符号付き距離関数、またはSDFと呼ばれる）が3Dレンダリングによく使用されます。
 
-[Signed distance functions 符号付き距離関数](/sketching-with-math-and-quasi-physics/distance/signed-distance-functions)
+[Signed distance functions 符号付き距離関数](/signed-distance-functions)
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="mdLPVrE" data-user="kynd" data-preview="true"></p></div>
 

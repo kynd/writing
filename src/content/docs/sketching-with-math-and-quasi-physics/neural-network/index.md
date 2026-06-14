@@ -1,5 +1,6 @@
 ---
 title: "Neural Network ニューラルネットワーク"
+slug: neural-network
 ---
 Neural networks are essential to AI technologies today, from classic image classifiers to the latest large language models. On this page, we'll explore the foundation of their mechanism. Since there are already many great articles and books on this topic, we'll focus on building intuition with simple examples while glossing over details.
 
@@ -356,9 +357,9 @@ The architecture of machine learning and other AI models often looks pretty abst
 
 As mentioned in the beginning, there are many great books and materials about neural networks. If you're interested, [ml4a (machine learning for artists)](https://ml4a.github.io/ml4a/neural_networks/) is a bit old but still a great resource written with artists in mind.
 
-If you're interested in the architecture of modern LLMs, I wrote up an explainer for one of the most influential papers on the topic: [Reading “Attention Is All You Need”](/sketching-with-math-and-quasi-physics/reading)
+If you're interested in the architecture of modern LLMs, I wrote up an explainer for one of the most influential papers on the topic: [Reading “Attention Is All You Need”](/reading)
 
 最初に触れたように、ニューラルネットワークについては優れた書籍や資料がたくさんあります。興味があれば、 [ml4a (machine learning for artists)](https://ml4a.github.io/ml4a/neural_networks/) はアーティストを念頭に書かれた、少し古いですが今でも素晴らしい資料です。
 
-もし現代のLLMのアーキテクチャに興味があれば、[Reading “Attention Is All You Need”](/sketching-with-math-and-quasi-physics/reading) で、最も重要な関連論文のひとつを解説しています。
+もし現代のLLMのアーキテクチャに興味があれば、[Reading “Attention Is All You Need”](/reading) で、最も重要な関連論文のひとつを解説しています。
 

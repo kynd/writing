@@ -1,5 +1,6 @@
 ---
 title: "Functor 関手"
+slug: functor
 ---
 So far, we've been observing types (objects) and functions (morphisms) within a single category—for example, the category of TypeScript types. Now let's step up to the meta-level and examine functors, which map between categories.
 
@@ -350,4 +351,4 @@ A functor is a mapping from category <span class="katex"><span class="katex-math
 
 関手とはある圏 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">C</mi></mrow><annotation encoding="application/x-tex">\mathcal{C}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathcal" style="margin-right:0.05834em;">C</span></span></span></span> から圏 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">D</mi></mrow><annotation encoding="application/x-tex">\mathcal{D}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathcal" style="margin-right:0.02778em;">D</span></span></span></span> へのマッピング（写像）のことでした。次のページでは次章では移動した後の世界どうしを繋ぐ橋である自然変換（Natural Transformation）について解説します。
 
-[Natural Transformation 自然変換](/category-theory-and-code/natural-transformation)
+[Natural Transformation 自然変換](/natural-transformation)

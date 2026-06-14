@@ -1,11 +1,12 @@
 ---
 title: "Camera in Action 働くカメラ"
+slug: camera-in-action
 ---
 > 
 > 
-> On this page, I will use SDF (signed distance function) based demos based on the code from [3D Rendering with Ray Marching レイマーチングによる3Dレンダリング](/sketching-with-math-and-quasi-physics/projection-and-3d-rendering/3d-rendering-with-ray-marching). The setup is quite complex compared to the other articles, but the only parts that change are the `map` function (where the 3D objects are placed in the scene) and the section after the comment `//camera setup` in the `main` function.
+> On this page, I will use SDF (signed distance function) based demos based on the code from [3D Rendering with Ray Marching レイマーチングによる3Dレンダリング](/3d-rendering-with-ray-marching). The setup is quite complex compared to the other articles, but the only parts that change are the `map` function (where the 3D objects are placed in the scene) and the section after the comment `//camera setup` in the `main` function.
 > 
-> このページでは、[3D Rendering with Ray Marching レイマーチングによる3Dレンダリング](/sketching-with-math-and-quasi-physics/projection-and-3d-rendering/3d-rendering-with-ray-marching)のコードを基にしたSDF（符号付き距離関数）ベースのデモを使います。セットアップは他の記事と比べて複雑ですが、変更が必要な箇所は`map`関数（3Dオブジェクトのシーン内配置）と`main`関数内の`//camera setup`コメント以降の部分のみです。
+> このページでは、[3D Rendering with Ray Marching レイマーチングによる3Dレンダリング](/3d-rendering-with-ray-marching)のコードを基にしたSDF（符号付き距離関数）ベースのデモを使います。セットアップは他の記事と比べて複雑ですが、変更が必要な箇所は`map`関数（3Dオブジェクトのシーン内配置）と`main`関数内の`//camera setup`コメント以降の部分のみです。
 > 
 > The goal of this page is to understand how cameras in 3D graphics work and how they can be configured in general, so you don’t need to understand the other details of the demo. You can find the corresponding settings and functions in various tools such as OpenFrameworks, Three.js, TouchDesigner, After Effects, Blender, etc. — almost anywhere the concept of camera is implemented.
 > 
@@ -21,9 +22,9 @@ Inside a camera obscura it is very dark, with a single tiny hole in one wall. Li
 
 カメラ・オブスクラの中はとても暗く、壁に小さな穴が1つだけ開いています。光はこの穴からだけ入ってきて、反対側の壁に外の景色を映し出します。
 
-The world outside is full of light. [As we have seen when we are discussing environmental light](/sketching-with-math-and-quasi-physics/light/illuminating-objects/somewhat-more-physically-based-rendering), light bounces off and scatters around in all directions, and objects are lit by the light from all directions mixed together.
+The world outside is full of light. [As we have seen when we are discussing environmental light](/somewhat-more-physically-based-rendering), light bounces off and scatters around in all directions, and objects are lit by the light from all directions mixed together.
 
-外の世界は光で満ちています。[環境光についての議論](/sketching-with-math-and-quasi-physics/light/illuminating-objects/somewhat-more-physically-based-rendering)で見たように、光はあらゆる向きに跳ね返って散らばり、あらゆる方向からの光が混ざり合って物体を照らしています。
+外の世界は光で満ちています。[環境光についての議論](/somewhat-more-physically-based-rendering)で見たように、光はあらゆる向きに跳ね返って散らばり、あらゆる方向からの光が混ざり合って物体を照らしています。
 
 [![](/images/camera-in-action.png)](/images/camera-in-action.png)
 
@@ -127,9 +128,9 @@ Pan is probably the most common camera movement, which is rotating the camera ho
 
 パンは最も一般的なカメラワークの1つで、カメラを水平方向に左右に回転させる動作です。スマートフォンでの撮影でも日常的に使っているでしょう。
 
-The demo below shows the camera panning between two objects at both ends. Changing the speed and [easing](/sketching-with-math-and-quasi-physics/interpolation-and-animation) can drastically change the impression from quickly turning around to slowly scanning through. Try tweaking the following part of the code and see what effect it makes.
+The demo below shows the camera panning between two objects at both ends. Changing the speed and [easing](/interpolation-and-animation) can drastically change the impression from quickly turning around to slowly scanning through. Try tweaking the following part of the code and see what effect it makes.
 
-下のデモでは、カメラが両端の2つのオブジェクト間をパンしています。速さと[イージング](/sketching-with-math-and-quasi-physics/interpolation-and-animation)を変えれば、素早い振り向きから、ゆっくり眺めるような動きまで、印象が大きく変えられます。下のコードの部分を調整して、様々な効果を試してみましょう。
+下のデモでは、カメラが両端の2つのオブジェクト間をパンしています。速さと[イージング](/interpolation-and-animation)を変えれば、素早い振り向きから、ゆっくり眺めるような動きまで、印象が大きく変えられます。下のコードの部分を調整して、様々な効果を試してみましょう。
 
 ```jsx
 // camera	setup

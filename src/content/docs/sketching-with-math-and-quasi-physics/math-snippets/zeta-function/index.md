@@ -1,5 +1,6 @@
 ---
 title: "Zeta Function ゼータ関数"
+slug: zeta-function
 ---
 The Zeta function is a famous function that is key to the Riemann Hypothesis, a famous unsolved conjecture carrying a $1 million reward for a correct proof. The function looks relatively simple, but understanding Riemann’s claim requires a bit of a deep dive.
 
@@ -25,7 +26,7 @@ The proof of this identity is fascinating. It essentially uses the Sieve of Erat
 
 この恒等式の証明はとても面白くて、素数を見つける古典的な手法であるエラトステネスの篩を、無限の代数操作に置き換えて、素数以外をふるい落とすようなイメージです。
 
-[The proof of the Euler Product Formula](/sketching-with-math-and-quasi-physics/math-snippets/zeta-function/the-proof-of-the-euler-product-formula)
+[The proof of the Euler Product Formula](/the-proof-of-the-euler-product-formula)
 
 Below is a quick visualization of the two formulas over 500 iterations.
 

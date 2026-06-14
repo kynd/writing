@@ -1,5 +1,6 @@
 ---
 title: "Diffusion 拡散"
+slug: diffusion
 ---
 **Diffusion** is the concept that explains how a drop of food coloring spreads in a glass of water, how a room fills up with the smell of perfume, or how heat conducts through a material. It is the process by which something spreads out evenly in a space where it was not previously evenly distributed. It is also used in things like fluid simulations. Diffusion is defined using derivatives and can appear very complicated when expressed in equations. However, it can be approximated with a simple calculation that compares neighboring values.
 
@@ -55,13 +56,13 @@ The more points we add, the more detailed and precise the simulation becomes. Tr
 # Diffusion in the continuous world
 # 連続的な世界での拡散
 
-In the real world, we can imagine an infinite number of points, and the distance between these points is infinitely small. We use the difference between these infinitely close points to calculate the rate of change. If you have read the page on [Differentiation](/sketching-with-math-and-quasi-physics/calculus-for-makers/differentiation), this concept should sound familiar to you. In fact, diffusion is defined upon derivatives in math.
+In the real world, we can imagine an infinite number of points, and the distance between these points is infinitely small. We use the difference between these infinitely close points to calculate the rate of change. If you have read the page on [Differentiation](/differentiation), this concept should sound familiar to you. In fact, diffusion is defined upon derivatives in math.
 
-現実世界では点は無数にあると考えることができ、その場合、点の間の距離は無限に小さくなります。この極めて近い点のどうしの差を用いて変化率を計算するわけですが、[微分](/sketching-with-math-and-quasi-physics/calculus-for-makers/differentiation)のページを読んでいれば、この考え方には覚えがあるでしょう。実際、数学において拡散は微分に基づいて定義されています。
+現実世界では点は無数にあると考えることができ、その場合、点の間の距離は無限に小さくなります。この極めて近い点のどうしの差を用いて変化率を計算するわけですが、[微分](/differentiation)のページを読んでいれば、この考え方には覚えがあるでしょう。実際、数学において拡散は微分に基づいて定義されています。
 
-You don’t need to learn the equations in this section to use the concept of diffusion in code. The discrete method explained above is usually sufficient. As explained on the [differentiation](/sketching-with-math-and-quasi-physics/calculus-for-makers/differentiation) page, it is often nearly impossible to apply the continuous equations directly. However, it would be useful to know the math if you are interested as this concept appears in many places as you explore physics simulations.
+You don’t need to learn the equations in this section to use the concept of diffusion in code. The discrete method explained above is usually sufficient. As explained on the [differentiation](/differentiation) page, it is often nearly impossible to apply the continuous equations directly. However, it would be useful to know the math if you are interested as this concept appears in many places as you explore physics simulations.
 
-実際にはコードで拡散の概念を使うために、この節で説明する方程式を覚える必要はありません。大抵は上で見た離散的な方法で事足ります。[微分](/sketching-with-math-and-quasi-physics/calculus-for-makers/differentiation)のページで触れたように、連続的な式を直接使うのはほとんど不可能ですらあります。とはいえ、この概念は物理シミュレーションの世界のあちこちに顔を出すので、興味があれば数学についても知っておくと役に立つでしょう。
+実際にはコードで拡散の概念を使うために、この節で説明する方程式を覚える必要はありません。大抵は上で見た離散的な方法で事足ります。[微分](/differentiation)のページで触れたように、連続的な式を直接使うのはほとんど不可能ですらあります。とはいえ、この概念は物理シミュレーションの世界のあちこちに顔を出すので、興味があれば数学についても知っておくと役に立つでしょう。
 
 This is the equation of diffusion.
 
@@ -95,8 +96,8 @@ In the continuous world, the rate of change of <span class="katex"><span class="
 
 連続的な世界では、時間<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi></mrow><annotation encoding="application/x-tex">t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6151em;"></span><span class="mord mathnormal">t</span></span></span></span>に関する<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi></mrow><annotation encoding="application/x-tex">u</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">u</span></span></span></span>の変化率は、『「位置<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">x</span></span></span></span>に関する<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi></mrow><annotation encoding="application/x-tex">u</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">u</span></span></span></span>の微分」の位置<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">x</span></span></span></span>に関する微分』にに比例します。対応するパターンが見て取れるでしょうか。
 
-Many books and articles start with mathematically accurate equations involving second derivatives, but I find this approach sets a high bar for understanding the such a simple idea that what matters is the difference in quantity, such as temperature, compared to the surroundings. Starting with the discrete method seems much more intuitive and practically useful. Check out the [2D Feedback Systems](/sketching-with-math-and-quasi-physics/2d-feedback-systems) page for examples.  
+Many books and articles start with mathematically accurate equations involving second derivatives, but I find this approach sets a high bar for understanding the such a simple idea that what matters is the difference in quantity, such as temperature, compared to the surroundings. Starting with the discrete method seems much more intuitive and practically useful. Check out the [2D Feedback Systems](/2d-feedback-systems) page for examples.  
 
-多くの本や記事による拡散の説明、2階微分を含む数学的に正確な方程式から始めることで理解のハードルを上げてしまっている気がします。重要なのは温度など、注目する量の周囲との差である、というシンプルな点を掴むことで、それには離散的な方法から始める方がより直感的で実用的だと思います。[2次元フィードバックシステム](/sketching-with-math-and-quasi-physics/2d-feedback-systems)のページに使用例があるので見てみましょう。
+多くの本や記事による拡散の説明、2階微分を含む数学的に正確な方程式から始めることで理解のハードルを上げてしまっている気がします。重要なのは温度など、注目する量の周囲との差である、というシンプルな点を掴むことで、それには離散的な方法から始める方がより直感的で実用的だと思います。[2次元フィードバックシステム](/2d-feedback-systems)のページに使用例があるので見てみましょう。
 
-[2D Feedback Systems 2次元フィードバックシステム](/sketching-with-math-and-quasi-physics/2d-feedback-systems)
+[2D Feedback Systems 2次元フィードバックシステム](/2d-feedback-systems)

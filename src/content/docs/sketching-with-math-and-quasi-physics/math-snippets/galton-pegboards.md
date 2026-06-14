@@ -1,11 +1,12 @@
 ---
 title: "Galton Pegboards ガルトン・ボード"
+slug: galton-pegboards
 ---
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="MYjBwwN" data-user="kynd" data-preview="true"></p></div>
 
-Galton Pegboards is a device invented by Sir Francis Galton to demonstrate the Central Limit Theorem, which states that if you take enough large, independent samples from almost any population, the distribution of their averages will tend to settle into a [Normal Distribution](/sketching-with-math-and-quasi-physics/taming-randomness), or the familiar bell shape.
+Galton Pegboards is a device invented by Sir Francis Galton to demonstrate the Central Limit Theorem, which states that if you take enough large, independent samples from almost any population, the distribution of their averages will tend to settle into a [Normal Distribution](/taming-randomness), or the familiar bell shape.
 
-ガルトン・ボード（Galton Pegboards）は、フランシス・ガルトン卿が中心極限定理（Central Limit Theorem）を示すために考案した装置です。中心極限定理とは、ほぼどんな母集団からでも、十分に大きく独立な標本を十分な数だけ取ると、それらの平均の分布が（おなじみの釣鐘型をした）[正規分布](/sketching-with-math-and-quasi-physics/taming-randomness)に近づく、というものです。
+ガルトン・ボード（Galton Pegboards）は、フランシス・ガルトン卿が中心極限定理（Central Limit Theorem）を示すために考案した装置です。中心極限定理とは、ほぼどんな母集団からでも、十分に大きく独立な標本を十分な数だけ取ると、それらの平均の分布が（おなじみの釣鐘型をした）[正規分布](/taming-randomness)に近づく、というものです。
 
 Each time a marble hits a peg, it has a 50/50 chance of going left or right. Because each bounce is independent, a marble’s path is a Random Walk. If you track how many times it bounces right (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span></span></span></span>) over N pegs (that is, how many marbles end up in the k-th bin, counting from zero), you are looking at a Binomial Distribution.
 
@@ -29,4 +30,4 @@ Thinking about this in reverse, the fact that many things in the real world roug
 
 逆に言えば、現実世界の多くのものが概ね正規分布に従うということは、世界が「ランダムに近い」決定の積み重ねで成り立っていることを示唆します。生物学的には、ある遺伝子を受け取る確率はかなりランダムです。人は理由を持って意思決定しますが、十分に大きな標本を取れば、平均からのズレはほとんどランダムとして扱えます。（ただし、これは平均がどのように決まるかを説明するものではありません。中心極限定理が示すのは、平均からどのようにずれるかだけです。）
 
-More [Math Snippets](/sketching-with-math-and-quasi-physics/math-snippets)
+More [Math Snippets](/math-snippets)

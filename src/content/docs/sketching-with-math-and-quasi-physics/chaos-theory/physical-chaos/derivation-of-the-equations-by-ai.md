@@ -1,5 +1,6 @@
 ---
 title: "Derivation of the equations (by AI)"
+slug: derivation-of-the-equations-by-ai
 ---
 Here is the full, unabbreviated derivation of the equations of motion for a double pendulum using Lagrangian mechanics, written by AI (Gemini).
 

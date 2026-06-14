@@ -1,5 +1,6 @@
 ---
 title: "The secrets of sound (for kids)"
+slug: the-secrets-of-sound-for-kids
 ---
 > 
 > 

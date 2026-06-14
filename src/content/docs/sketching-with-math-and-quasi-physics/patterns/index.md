@@ -1,5 +1,6 @@
 ---
 title: "Patterns パターン"
+slug: patterns
 ---
 The human brain is wired to recognize patterns. This is likely because it aids in survival by predicting future events and understanding the world ahead. We feel relieved when things align with our expectations and become cautious when they diverge.
 
@@ -13,8 +14,8 @@ We will explore various related concepts in the following pages. The examples ar
 
 この先のページではパターンに関連した様々な概念を見ていきます。パターンは広範なトピックなので、全ての例を網羅することはできませんが、繰り返し出てくるテーマ（それ自体もパターンとも呼べます）を理解し、自分なりのパターンを作り出すためのインスピレーションになればと思います。
 
-[Repetition 繰り返し](/sketching-with-math-and-quasi-physics/patterns/repetition)
+[Repetition 繰り返し](/repetition)
 
-[Tiling タイリング](/sketching-with-math-and-quasi-physics/patterns/tiling)
+[Tiling タイリング](/tiling)
 
-[Fractal フラクタル](/sketching-with-math-and-quasi-physics/patterns/fractal)
+[Fractal フラクタル](/fractal)

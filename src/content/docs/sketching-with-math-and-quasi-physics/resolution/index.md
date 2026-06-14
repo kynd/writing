@@ -1,5 +1,6 @@
 ---
 title: "Resolution 解像度"
+slug: resolution
 ---
 Resolution is a very intriguing concept that lies between what we can express and what we can sense.
 
@@ -138,9 +139,9 @@ Impressionism was probably the point when this started to change drastically. In
 
 この変化の始まりは、おそらく印象派に見ることができます。モネの睡蓮の絵では、水と睡蓮が明確な輪郭やディテールなしに溶け合っており、その意味では解像度が低いとも言えます。これらの絵は、光や風景の「印象」をより効果的に捉える一方で、物体の一部として描かれているというよりも生の筆跡が露わになっていることで、絵と媒体の間の二元性をも示しています。この転換は、20世紀における抽象化へのさらなる探求への道を開くものとなりましたが、その歴史的、理論的な側面は置いておいて、この観察を元にスケッチで遊んでみましょう。
 
-This demo below takes a pixelated image of the forest and applies [noise-based](/sketching-with-math-and-quasi-physics/taming-randomness) [image processing](/sketching-with-math-and-quasi-physics/image-processing) to make it look like it was roughly painted with brushes. This effect compensates for the lack of detail with nuanced 'touches,' potentially tricking our brain into perceiving (or hallucinating) details that were not present in the original pixelated image.
+This demo below takes a pixelated image of the forest and applies [noise-based](/taming-randomness) [image processing](/image-processing) to make it look like it was roughly painted with brushes. This effect compensates for the lack of detail with nuanced 'touches,' potentially tricking our brain into perceiving (or hallucinating) details that were not present in the original pixelated image.
 
-下のデモではピクセル解像度を落とした森の画像に、[ノイズを元にした](/sketching-with-math-and-quasi-physics/taming-randomness)[画像処理](/sketching-with-math-and-quasi-physics/image-processing)を適用し、筆で大ざっぱに描いたかのように見せています。このエフェクトは、欠如した情報を趣のある「タッチ」を加えることで補い、脳を騙して（幻を見せるかのように）元の荒いピクセルの画像には存在しなかった詳細までも感じさせる事ができます。
+下のデモではピクセル解像度を落とした森の画像に、[ノイズを元にした](/taming-randomness)[画像処理](/image-processing)を適用し、筆で大ざっぱに描いたかのように見せています。このエフェクトは、欠如した情報を趣のある「タッチ」を加えることで補い、脳を騙して（幻を見せるかのように）元の荒いピクセルの画像には存在しなかった詳細までも感じさせる事ができます。
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="PoLZywR" data-user="kynd" data-preview="true"></p></div>
 
@@ -169,9 +170,9 @@ But even 8-bit, with 255 levels, is still not sufficient to create a truly smoot
 
 しかし、8ビット、255段階でも、本当に滑らかなグラデーションを作るには足りません。最近のディスプレイのピクセルの多さだと（今、作業しているディスプレイは横に3000px近くあります）、まだ異なる色の間の段差が見え、色の変わり目の線が強調される[マッハバンディング効果](https://ja.wikipedia.org/wiki/%E3%83%9E%E3%83%83%E3%83%8F%E3%83%90%E3%83%B3%E3%83%89)を引き起こします。
 
-Or we can think of the range of brightness that human eyes can perceive. In terms of illuminance, a sunny day can be about [100,000 times brighter than a night with moonlight](/sketching-with-math-and-quasi-physics/physical-values-and-human-perception). This doesn't directly translate to the range we need to reproduce for a realistic viewing experience, because pupils open and close to adjust the amount of light that enters the eyes to be adequate for the range that the retina can handle. But, it's clear that 8-bit is not enough to capture a real environment. For this reason, digital cameras use the [RAW format](https://en.wikipedia.org/wiki/Raw_image_format), which can have 12 to 16-bit depth to store information. [HDRI (High Dynamic Range Imaging)](https://en.wikipedia.org/wiki/High_dynamic_range#High-dynamic-range_imaging) formats are also commonly used in 3D, film production, etc.
+Or we can think of the range of brightness that human eyes can perceive. In terms of illuminance, a sunny day can be about [100,000 times brighter than a night with moonlight](/physical-values-and-human-perception). This doesn't directly translate to the range we need to reproduce for a realistic viewing experience, because pupils open and close to adjust the amount of light that enters the eyes to be adequate for the range that the retina can handle. But, it's clear that 8-bit is not enough to capture a real environment. For this reason, digital cameras use the [RAW format](https://en.wikipedia.org/wiki/Raw_image_format), which can have 12 to 16-bit depth to store information. [HDRI (High Dynamic Range Imaging)](https://en.wikipedia.org/wiki/High_dynamic_range#High-dynamic-range_imaging) formats are also commonly used in 3D, film production, etc.
 
-または、人間の目が認識できる明るさの範囲を考えても良いでしょう。照度を測ると、晴れた日は[月明かりの夜の約100,000倍の明るさがあります](/sketching-with-math-and-quasi-physics/physical-values-and-human-perception)。瞳孔が開いたり閉じたりして目に入る光の量を、網膜に対して適切な範囲に調整してくれるので、この値がリアルな視聴体験を再現するために必要な値の範囲を直接示すわけではありません。しかし、8ビットではリアルな環境を捉えるには足りないことも明らかでしょう。このため、デジタルカメラは情報保存のために12から16ビットの深度をもつ[RAW形式](https://ja.wikipedia.org/wiki/RAW_%28%E5%BD%B1%E5%83%8F%E5%BD%A2%E5%BC%8F%29)を用います。また、[HDRI（High Dynamic Range Imaging）](https://ja.wikipedia.org/wiki/%E3%83%8F%E3%82%A4%E3%83%80%E3%82%A4%E3%83%8A%E3%83%9F%E3%83%83%E3%82%AF%E3%83%AC%E3%83%B3%E3%82%B8)形式も3Dや映画制作などで一般的に使われています。
+または、人間の目が認識できる明るさの範囲を考えても良いでしょう。照度を測ると、晴れた日は[月明かりの夜の約100,000倍の明るさがあります](/physical-values-and-human-perception)。瞳孔が開いたり閉じたりして目に入る光の量を、網膜に対して適切な範囲に調整してくれるので、この値がリアルな視聴体験を再現するために必要な値の範囲を直接示すわけではありません。しかし、8ビットではリアルな環境を捉えるには足りないことも明らかでしょう。このため、デジタルカメラは情報保存のために12から16ビットの深度をもつ[RAW形式](https://ja.wikipedia.org/wiki/RAW_%28%E5%BD%B1%E5%83%8F%E5%BD%A2%E5%BC%8F%29)を用います。また、[HDRI（High Dynamic Range Imaging）](https://ja.wikipedia.org/wiki/%E3%83%8F%E3%82%A4%E3%83%80%E3%82%A4%E3%83%8A%E3%83%9F%E3%83%83%E3%82%AF%E3%83%AC%E3%83%B3%E3%82%B8)形式も3Dや映画制作などで一般的に使われています。
 
 ## Dithering
 ## ディザリング
@@ -266,17 +267,17 @@ The demo below illustrates this concept with very simple examples. You can click
 # Sampling rate
 # サンプリングレート
 
-Switching the topic to [sound as data](/sketching-with-math-and-quasi-physics/wave/sound-visualization), we can view the resolution of time from a different angle. The majority of the sound data we hear today uses a sampling rate of 44,100 Hz (or 44.1 kHz), derived from the old standard for CDs. This means that the data divides a second into 44,100 pieces of time, capturing the pressure for each of these fragments, or samples.
+Switching the topic to [sound as data](/sound-visualization), we can view the resolution of time from a different angle. The majority of the sound data we hear today uses a sampling rate of 44,100 Hz (or 44.1 kHz), derived from the old standard for CDs. This means that the data divides a second into 44,100 pieces of time, capturing the pressure for each of these fragments, or samples.
 
-[データとしての音](/sketching-with-math-and-quasi-physics/wave/sound-visualization)に話題を写して、時間の解像度について異なる角度から見て見ましょう。今日耳にする音のデータの大半は、昔ながらのCDの標準に基づく44,100Hz（または44.1kHz）のサンプリングレートを用いています。これは、データが1秒間を44,100個の時間の断片に分割し、それぞれの断片、つまりサンプルごとの圧力レベルを記録するという意味です。
+[データとしての音](/sound-visualization)に話題を写して、時間の解像度について異なる角度から見て見ましょう。今日耳にする音のデータの大半は、昔ながらのCDの標準に基づく44,100Hz（または44.1kHz）のサンプリングレートを用いています。これは、データが1秒間を44,100個の時間の断片に分割し、それぞれの断片、つまりサンプルごとの圧力レベルを記録するという意味です。
 
 It's interesting to think about this in analogy to pixel resolution. Both determine the fidelity to reproduce physical phenomena, but while we can directly see pixels, we never hear individual samples, nor do we directly experience the change in pressure (except for extremely low and loud sounds). Instead, we experience various qualities of sound, such as pitch or timbre. A low sampling rate largely affects the quality of the sound.Let's see (and listen to) this with examples.
 
 これをピクセル解像度と比較すると面白いでしょう。どちらも物理的な現象を再現する際の忠実性に関わりますが、ピクセルは直接見ることができるのに対し、個々のサンプルを聞いたり、気圧の変化を直接経験することはありません（極端に低くて大きな音を除きます）。その代わり、人は音高や音色などの、さまざまな音の特性を経験します。低いサンプリングレートは音の品質に大きな影響を与えます。例を見て（聞いて）みましょう。
 
-The first demo below is from the page on [Sound Visualization](/sketching-with-math-and-quasi-physics/wave/sound-visualization). If you click on the canvas, it will play sine wave sounds at random frequencies.
+The first demo below is from the page on [Sound Visualization](/sound-visualization). If you click on the canvas, it will play sine wave sounds at random frequencies.
 
-以下の最初のデモは、[音の視覚化](/sketching-with-math-and-quasi-physics/wave/sound-visualization)のページからです。キャンバスをクリックすると、ランダムな周波数のサイン波の音が再生されます。
+以下の最初のデモは、[音の視覚化](/sound-visualization)のページからです。キャンバスをクリックすると、ランダムな周波数のサイン波の音が再生されます。
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="yLZrBGJ" data-user="kynd" data-preview="true"></p></div>
 

@@ -1,5 +1,6 @@
 ---
 title: "Riemann Circle Projection リーマン円周への射影"
+slug: riemann-circle-projection
 ---
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="myrjeGd" data-user="kynd" data-preview="true"></p></div>
 
@@ -27,4 +28,4 @@ This concept can be extended to any dimension. For example, can you imagine a co
 
 この考え方は、任意の次元へ拡張できます。たとえば2次元平面を球としてコンパクト化した様子を想像できるでしょうか。 3次元空間はどうなるでしょう。
 
-More [Math Snippets](/sketching-with-math-and-quasi-physics/math-snippets)
+More [Math Snippets](/math-snippets)

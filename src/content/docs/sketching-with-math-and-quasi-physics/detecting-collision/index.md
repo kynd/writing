@@ -1,5 +1,6 @@
 ---
 title: "Detecting Collision 衝突判定"
+slug: detecting-collision
 ---
 A human can tell if two figures overlap or not at a glance. But it is difficult to solve this generally with a computer, and different problems often require different tricks.
 
@@ -95,9 +96,9 @@ The distance between the center of a circle and a line is the length of a perpen
 -12.5-2.3-1.7-7.5-2.5-15.5-2.5-14 0-21 3.7-21 11 0 2 2 10.3 6 25 20.7 83.3 67
  151.7 139 205zm0 0v40h399900v-40z"></path></svg></span></span></span></span></span></span><span class="mord">∥</span></span></span></span>
 
-AP and AB are vectors and the angle between them is θ. The equation is transformed using a [two-dimensional version of cross product](/sketching-with-math-and-quasi-physics/vector-operations).
+AP and AB are vectors and the angle between them is θ. The equation is transformed using a [two-dimensional version of cross product](/vector-operations).
 
-APとABはベクトル、その間の角度がθです。[式の変形には二次元版のクロス積を使いました](/sketching-with-math-and-quasi-physics/vector-operations)。
+APとABはベクトル、その間の角度がθです。[式の変形には二次元版のクロス積を使いました](/vector-operations)。
 
 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∥</mi><mover accent="true"><mi>a</mi><mo stretchy="true">→</mo></mover><mi mathvariant="normal">∥</mi><mi mathvariant="normal">∥</mi><mover accent="true"><mi>b</mi><mo stretchy="true">→</mo></mover><mi mathvariant="normal">∥</mi><mi>sin</mi><mo>⁡</mo><mo stretchy="false">(</mo><mi>θ</mi><mo stretchy="false">)</mo><mo>=</mo><msub><mi>a</mi><mi>x</mi></msub><msub><mi>b</mi><mi>y</mi></msub><mo>−</mo><msub><mi>b</mi><mi>x</mi></msub><msub><mi>a</mi><mi>y</mi></msub></mrow><annotation encoding="application/x-tex">\|\overrightarrow{a}\|\|\overrightarrow{b}\|\sin(\theta)={a}_x{b}_y-{b}_x {a}_y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.4664em;vertical-align:-0.25em;"></span><span class="mord">∥</span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9526em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal">a</span></span><span class="svg-align" style="top:-3.4306em;"><span class="pstrut" style="height:3em;"></span><span class="hide-tail" style="height:0.522em;min-width:0.888em;"><svg xmlns="http://www.w3.org/2000/svg" width="400em" height="0.522em" viewBox="0 0 400000 522" preserveAspectRatio="xMaxYMin slice"><path d="M0 241v40h399891c-47.3 35.3-84 78-110 128
 -16.7 32-27.7 63.7-33 95 0 1.3-.2 2.7-.5 4-.3 1.3-.5 2.3-.5 3 0 7.3 6.7 11 20

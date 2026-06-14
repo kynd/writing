@@ -1,5 +1,6 @@
 ---
 title: "Codifying materials (2)"
+slug: codifying-materials-2
 ---
 油絵具には立体的な質感もある。筆の跡やペインティングナイフによる厚塗り。記憶にあるのは、美術館のようにコントロールされた光よりも、暗い廊下やアトリエの外に置かれたキャンバス。朝や夕方に斜めから光が当たっていると物質感が際立って、描かれている絵とは関係なく面白かったりする。
 
@@ -95,4 +96,4 @@ More I experiment, the more new materials get added to my toolbox.
 
 ### Next
 
-[Codifying human (1)](/drawing-with-code/codifying-human-1)
+[Codifying human (1)](/codifying-human-1)

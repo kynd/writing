@@ -1,5 +1,6 @@
 ---
 title: "Convolution コンボリューション"
+slug: convolution
 ---
 **Convolution** is an operation used in image processing and machine learning that is performed by applying a filter or a **kernel** to the source data, in the case of an image, an array of pixels. Convolution is used in blurring, sharpening, edge detection and many other image processing tasks. Let's look at a practical example.
 
@@ -48,8 +49,8 @@ We add all these numbers together (<span class="katex"><span class="katex-mathml
 
 > 
 > 
-> If you see these arrays as vectors, multiplying corresponding components and adding them all together makes their [dot product](/sketching-with-math-and-quasi-physics/vector-operations).  
-> これらの数列をベクトルと考えると、対応する成分を掛け合わせ、すべてを足し合わせた結果は[内積](/sketching-with-math-and-quasi-physics/vector-operations)となります。
+> If you see these arrays as vectors, multiplying corresponding components and adding them all together makes their [dot product](/vector-operations).  
+> これらの数列をベクトルと考えると、対応する成分を掛け合わせ、すべてを足し合わせた結果は[内積](/vector-operations)となります。
 
 Let’s repeat the same for all pixels. We assume 0 for the values where the filter extends beyond the image. The result looks like this.
 
@@ -61,9 +62,9 @@ Can you see how this array looks like a blurred version of the original square i
 
 値をグレーの明るさだと考えるとこの配列は元の正方形をぼかしたように見えるのがわかるでしょうか。これを踏まえてもう一度デモを見ると何が起こっているのかよくわかるでしょう。
 
-A filter can be any size. The demo below shows an example of a 7 x 7 filter with a [normal (Gaussian) distribution](/sketching-with-math-and-quasi-physics/taming-randomness) for its values. This is called **Gaussian Blur**.
+A filter can be any size. The demo below shows an example of a 7 x 7 filter with a [normal (Gaussian) distribution](/taming-randomness) for its values. This is called **Gaussian Blur**.
 
-フィルタの大きさは自由に決めることができます。下のデモは7×7のフィルタの値に[正規分布（ガウス分布）](/sketching-with-math-and-quasi-physics/taming-randomness)を用いた例です。これはガウシアンブラー、またはガウスぼかしなどと呼ばれます。
+フィルタの大きさは自由に決めることができます。下のデモは7×7のフィルタの値に[正規分布（ガウス分布）](/taming-randomness)を用いた例です。これはガウシアンブラー、またはガウスぼかしなどと呼ばれます。
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="QWZwzLG" data-user="kynd" data-preview="true"></p></div>
 
@@ -89,9 +90,9 @@ The filter below can be used to extract the edges from an image. Consider specif
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="oNagJzO" data-user="kynd" data-preview="true"></p></div>
 
-This operation is called the **Laplacian** and is actually the calculation of [the second-order derivative, or the change of change, which also appeared in the wave equation](/sketching-with-math-and-quasi-physics/wave/vibration-and-propagation). Let’s name the pixel of interest and its surrounding pixels.
+This operation is called the **Laplacian** and is actually the calculation of [the second-order derivative, or the change of change, which also appeared in the wave equation](/vibration-and-propagation). Let’s name the pixel of interest and its surrounding pixels.
 
-この操作はラプラシアンと呼ばれ実は[波動方程式でも登場した2階微分、つまり変化量の変化量](/sketching-with-math-and-quasi-physics/wave/vibration-and-propagation)を求める計算になっています。注目するピクセルとその周りのピクセルに名前を付けます。
+この操作はラプラシアンと呼ばれ実は[波動方程式でも登場した2階微分、つまり変化量の変化量](/vibration-and-propagation)を求める計算になっています。注目するピクセルとその周りのピクセルに名前を付けます。
 
 <table class="matrix-table"><tbody><tr><td></td><td>p<sub>0,−1</sub></td><td></td></tr><tr><td>p<sub>−1,0</sub></td><td>p<sub>0,0</sub></td><td>p<sub>1,0</sub></td></tr><tr><td></td><td>p<sub>0,1</sub></td><td></td></tr></tbody></table>
 
@@ -176,4 +177,4 @@ We have covered some of the most commonly used filters, but of course, you can c
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="OJBMygE" data-user="kynd" data-preview="true"></p></div>
 
-[Deformation and Feedback 変形とフィードバック](/sketching-with-math-and-quasi-physics/image-processing/deformation-and-feedback)
+[Deformation and Feedback 変形とフィードバック](/deformation-and-feedback)

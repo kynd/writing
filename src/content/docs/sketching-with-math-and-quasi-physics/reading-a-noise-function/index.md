@@ -1,11 +1,12 @@
 ---
 title: "Reading a Noise Function"
+slug: reading-a-noise-function
 ---
 On this page, we are going to read a simple noise function. Noise functions are one of the most common tools in computer graphics to create complex or realistic patterns like this landscape. Because they are so common, many tools and frameworks give us various implementations of noise functions for free, and we tend to take them for granted without having to understand how they work.
 
 このページでは、シンプルなノイズ関数について解説していきます。ノイズ関数は、この風景のように複雑でリアルなパターンを生成するために使える、コンピューターグラフィックスの基本的なツールの1つです。その汎用性の高さから、多くのツールやフレームワークには様々なノイズ関数の標準で実装されていて、原理を理解しなくても当たり前のように使うことができます。
 
-[Drawing Landscape](/sketching-with-math-and-quasi-physics/drawing-landscape)
+[Drawing Landscape](/drawing-landscape)
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="ZYEVRGN" data-user="kynd" data-preview="true"></p></div>
 
@@ -22,9 +23,9 @@ For writing this page, I asked an AI to read the example and directly quote the 
 
 # 1D noise function
 
-This is our sample code (written by AI as well). It is a simple [value noise function](/sketching-with-math-and-quasi-physics/taming-randomness) that takes a float number as input and returns another float number.
+This is our sample code (written by AI as well). It is a simple [value noise function](/taming-randomness) that takes a float number as input and returns another float number.
 
-これがサンプルコードです（これもAIが書きました）。これは単純な[バリューノイズ関数](/sketching-with-math-and-quasi-physics/taming-randomness)で、浮動小数点数を入力として受け取り、別の浮動小数点数を返します。
+これがサンプルコードです（これもAIが書きました）。これは単純な[バリューノイズ関数](/taming-randomness)で、浮動小数点数を入力として受け取り、別の浮動小数点数を返します。
 
 ```glsl
 
@@ -262,7 +263,7 @@ This is a visualization of the function. You can ask AI more about what C¹ cont
 # Linear interpolation
 # 線形補間
 
-The last part is just to [interpolate](/sketching-with-math-and-quasi-physics/interpolation-and-animation) the two random values with `u` to smoothly connect them.
+The last part is just to [interpolate](/interpolation-and-animation) the two random values with `u` to smoothly connect them.
 
 最後の部分は、2つのランダムな値なめらかに繋げるために`u`を使って補間しているだけです。
 
@@ -278,9 +279,9 @@ Here is the final picture of my understanding of the code.
 
 <div></div>
 
-How was it? I hope this gave you a small taste of what it's like to read and understand code. If you feel comfortable with the simple noise function, try reading this slightly more advanced version from [Drawing Landscape](/sketching-with-math-and-quasi-physics/drawing-landscape).
+How was it? I hope this gave you a small taste of what it's like to read and understand code. If you feel comfortable with the simple noise function, try reading this slightly more advanced version from [Drawing Landscape](/drawing-landscape).
 
-どうだったでしょう。コードの読み方について何か掴めたでしょうか。このシンプルなノイズ関数に慣れたら、[Drawing Landscape](/sketching-with-math-and-quasi-physics/drawing-landscape)から、もう少し進化したこのバージョンにも挑戦してみてください。
+どうだったでしょう。コードの読み方について何か掴めたでしょうか。このシンプルなノイズ関数に慣れたら、[Drawing Landscape](/drawing-landscape)から、もう少し進化したこのバージョンにも挑戦してみてください。
 
 ```glsl
 vec3 noised(in vec2 st) {

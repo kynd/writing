@@ -1,5 +1,6 @@
 ---
 title: "(Somewhat more) Physically based rendering 物理的に（もう少し）正しいレンダリング"
+slug: somewhat-more-physically-based-rendering
 ---
 > 
 > 
@@ -22,9 +23,9 @@ Let’s learn about the nature of light by learning more physically accurate ren
 # Environment Light
 # 環境光
 
-On [the page about classic methods](/sketching-with-math-and-quasi-physics/light/illuminating-objects/classic-3d-rendering), we built a simple model assuming only point light sources and uniform ambient light. In a real environment, light comes from all directions with varying colors and intensities. Light from the sun or from lighting is scattered in the atmosphere or reflected off the surface of an object, then reflected back onto another object, and so on, until the space is filled with light.
+On [the page about classic methods](/classic-3d-rendering), we built a simple model assuming only point light sources and uniform ambient light. In a real environment, light comes from all directions with varying colors and intensities. Light from the sun or from lighting is scattered in the atmosphere or reflected off the surface of an object, then reflected back onto another object, and so on, until the space is filled with light.
 
-[古典的な手法についてのページ](/sketching-with-math-and-quasi-physics/light/illuminating-objects/classic-3d-rendering)では、点光源と均一な環境光だけを想定して単純なモデルを構築しました。実際の環境では光はあらゆる方向からやってきます。太陽や照明から出た光が大気で散乱したり物体の表面で反射し、さらにその光が別の物体に反射し、と繰り返し空間は光に満たされます。
+[古典的な手法についてのページ](/classic-3d-rendering)では、点光源と均一な環境光だけを想定して単純なモデルを構築しました。実際の環境では光はあらゆる方向からやってきます。太陽や照明から出た光が大気で散乱したり物体の表面で反射し、さらにその光が別の物体に反射し、と繰り返し空間は光に満たされます。
 
 [![](/images/somewhat-more-physically-based-rendering.png)](/images/somewhat-more-physically-based-rendering.png)
 
@@ -77,9 +78,9 @@ The function that determines the proportion of light reflected at a point _<span
 # The physics of the material
 # 物質の性質
 
-Next, let's examine the objects themselves. As we learned in [Specular reflections and diffuse light](/sketching-with-math-and-quasi-physics/light/illuminating-objects/specular-reflections-and-diffuse-light), there are two types of materials: conductors and dielectrics. Conductors have no diffuse light, and their specular reflection is colored, while dielectrics have diffuse light, and their specular reflection is not colored. In many models, this property is represented by a parameter called `metallic`, which usually takes values from 1 to 0. Strictly speaking, a material is either a conductor or a dielectric, but intermediate values are also used to reproduce mixed states, such as a metal with a thin layer of paint.
+Next, let's examine the objects themselves. As we learned in [Specular reflections and diffuse light](/specular-reflections-and-diffuse-light), there are two types of materials: conductors and dielectrics. Conductors have no diffuse light, and their specular reflection is colored, while dielectrics have diffuse light, and their specular reflection is not colored. In many models, this property is represented by a parameter called `metallic`, which usually takes values from 1 to 0. Strictly speaking, a material is either a conductor or a dielectric, but intermediate values are also used to reproduce mixed states, such as a metal with a thin layer of paint.
 
-環境の次は描かれる物自体に目を向けてみましょう。[鏡面反射と拡散光](/sketching-with-math-and-quasi-physics/light/illuminating-objects/specular-reflections-and-diffuse-light)のページで見たように物質には導体（Conductor）と誘電体 （Dielectric）があり、導体は拡散光（ディフューズ）がなく鏡面反射（スペキュラー）に色がつく、誘電体には拡散光があり、鏡面反射に色が付かないという特徴があります。多くのモデルではこの性質を1から0の値をとる `metallic` というパラメータで表します。厳密には物質は導体か誘電体かのどちらかなのですが、塗料を薄く塗った金属といった混合状態を再現するのに中間の値も使われます。
+環境の次は描かれる物自体に目を向けてみましょう。[鏡面反射と拡散光](/specular-reflections-and-diffuse-light)のページで見たように物質には導体（Conductor）と誘電体 （Dielectric）があり、導体は拡散光（ディフューズ）がなく鏡面反射（スペキュラー）に色がつく、誘電体には拡散光があり、鏡面反射に色が付かないという特徴があります。多くのモデルではこの性質を1から0の値をとる `metallic` というパラメータで表します。厳密には物質は導体か誘電体かのどちらかなのですが、塗料を薄く塗った金属といった混合状態を再現するのに中間の値も使われます。
 
 [![](/images/somewhat-more-physically-based-rendering.jpeg "50")](/images/somewhat-more-physically-based-rendering.jpeg)
 
@@ -103,9 +104,9 @@ Another physically important point is the law of conservation of energy. Unless 
 # Diffuse Light
 # ディフューズ（拡散光）
 
-We will start with the diffuse component here because it is simpler. We will use Lambert's model, as described in the [Classical Methods page](/sketching-with-math-and-quasi-physics/light/illuminating-objects/classic-3d-rendering), as the BDRF for the diffuse component. If you are interested, the [Filament page](https://google.github.io/filament/Filament.html#materialsystem/diffusebrdf) touches on other models used by Disney and the Unreal Engine.
+We will start with the diffuse component here because it is simpler. We will use Lambert's model, as described in the [Classical Methods page](/classic-3d-rendering), as the BDRF for the diffuse component. If you are interested, the [Filament page](https://google.github.io/filament/Filament.html#materialsystem/diffusebrdf) touches on other models used by Disney and the Unreal Engine.
 
-ディフューズ成分の方が簡単なのでこちらから始めます。ディフューズ成分はBDRFとして[古典的な手法のページ](/sketching-with-math-and-quasi-physics/light/illuminating-objects/classic-3d-rendering)で説明したランバートのモデルを使います。[Filamentのページ](https://google.github.io/filament/Filament.html#materialsystem/diffusebrdf)にはDisneyやUnreal Engineで使われているモデルも紹介されているので興味があれば参考にしてください。
+ディフューズ成分の方が簡単なのでこちらから始めます。ディフューズ成分はBDRFとして[古典的な手法のページ](/classic-3d-rendering)で説明したランバートのモデルを使います。[Filamentのページ](https://google.github.io/filament/Filament.html#materialsystem/diffusebrdf)にはDisneyやUnreal Engineで使われているモデルも紹介されているので興味があれば参考にしてください。
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="mdGvzgq" data-user="kynd" data-preview="true"></p></div>
 
@@ -145,9 +146,9 @@ The denominator is determined by the direction of the line of sight (<span class
 
 ### D(normal distribution function)
 
-<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi></mrow><annotation encoding="application/x-tex">D</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span></span></span></span> is the normal distribution function, indicating how well the fine irregularities (micro-facets) align with the orientation of the halfway vector (the vector halfway between the direction of the light and the direction of the viewpoint). This is the same concept as seen on the [classical rendering](/sketching-with-math-and-quasi-physics/light/illuminating-objects/classic-3d-rendering) page, and the results are very similar. In the demo below, moving the mouse left or right changes the **roughness** of the surface.
+<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi></mrow><annotation encoding="application/x-tex">D</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span></span></span></span> is the normal distribution function, indicating how well the fine irregularities (micro-facets) align with the orientation of the halfway vector (the vector halfway between the direction of the light and the direction of the viewpoint). This is the same concept as seen on the [classical rendering](/classic-3d-rendering) page, and the results are very similar. In the demo below, moving the mouse left or right changes the **roughness** of the surface.
 
-<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi></mrow><annotation encoding="application/x-tex">D</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span></span></span></span>はNormal distribution function と呼ばれます。表面の細かな凹凸の向きがどれだけ、halfway vector（光源の方向と視点の方向の中間に当たるベクトル）の向きとそろっているを表します。これは[古典的レンダリングのページ](/sketching-with-math-and-quasi-physics/light/illuminating-objects/classic-3d-rendering)で見たのと同じコンセプトで、結果もよく似ています。下のデモでは左右にマウスを動かすことで表面の粗さ（roughness）が変化します。
+<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi></mrow><annotation encoding="application/x-tex">D</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span></span></span></span>はNormal distribution function と呼ばれます。表面の細かな凹凸の向きがどれだけ、halfway vector（光源の方向と視点の方向の中間に当たるベクトル）の向きとそろっているを表します。これは[古典的レンダリングのページ](/classic-3d-rendering)で見たのと同じコンセプトで、結果もよく似ています。下のデモでは左右にマウスを動かすことで表面の粗さ（roughness）が変化します。
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="QWVoEJW" data-user="kynd" data-preview="true"></p></div>
 
@@ -161,9 +162,9 @@ The denominator is determined by the direction of the line of sight (<span class
 
 ### F(fresnel equation)
 
-<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi></mrow><annotation encoding="application/x-tex">F</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span></span></span></span> is the Fresnel equation that we covered on the [Reflection and Refraction](/sketching-with-math-and-quasi-physics/light/reflection-and-refraction) page. It determines the amount of light that is specularly reflected based on the angle of incidence and refractive indices. To make it easier to observe the effect, the demo below shows both cases with and without a background.
+<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi></mrow><annotation encoding="application/x-tex">F</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span></span></span></span> is the Fresnel equation that we covered on the [Reflection and Refraction](/reflection-and-refraction) page. It determines the amount of light that is specularly reflected based on the angle of incidence and refractive indices. To make it easier to observe the effect, the demo below shows both cases with and without a background.
 
-<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi></mrow><annotation encoding="application/x-tex">F</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span></span></span></span>は反射と[屈折のページ](/sketching-with-math-and-quasi-physics/light/reflection-and-refraction)で見たフレネルの式です。入射角と屈折率から鏡面反射する光の割合を求めます。効果が分かりやすいよう、下のデモでは背景がある場合とない場合をそれぞれ表示しています。
+<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi></mrow><annotation encoding="application/x-tex">F</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span></span></span></span>は反射と[屈折のページ](/reflection-and-refraction)で見たフレネルの式です。入射角と屈折率から鏡面反射する光の割合を求めます。効果が分かりやすいよう、下のデモでは背景がある場合とない場合をそれぞれ表示しています。
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="yLxZZeq" data-user="kynd" data-preview="true"></p></div>
 
@@ -232,4 +233,4 @@ This page has become quite technical; there is endless stuff to learn as new met
 
 このページは、かなり技術的な内容になってしまいました。3Dやゲーム開発の分野では常に新しい手法が開発されており、学ぶことは無限にあります。多くの場合はツールやライブラリに実装された機能を頼ることができると思いますが、その場合でも、このページが何が起こっているのかを理解する助けになればと思います。
 
-[Light and 2D Graphics 光と2Dグラフィックス](/sketching-with-math-and-quasi-physics/light/light-and-2d-graphics)
+[Light and 2D Graphics 光と2Dグラフィックス](/light-and-2d-graphics)

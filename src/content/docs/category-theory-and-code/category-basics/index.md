@@ -1,5 +1,6 @@
 ---
 title: "Category Basics圏の基本"
+slug: category-basics
 ---
 Let's take a closer look at the structure of categories and what they mean.  
 As a quick review, only two rules (axioms) are needed to construct a category.
@@ -246,4 +247,4 @@ Just like commutativity, isomorphism helps with code refactoring and design.
 - **リファクタリング**: 内部のデータ構造を置き換えても、同型性があれば外部のロジックを壊さないことが数学的に保証されます。
 - **インターフェースの設計**: APIの仕様に合わせてデータ形式を変換する際、「情報の欠落がないか」をチェックする指標になります。
 
-[Products, Coproducts, Universality and Duality 積、余積、普遍性と双対性](/category-theory-and-code/products-coproducts-universality-and-duality)
+[Products, Coproducts, Universality and Duality 積、余積、普遍性と双対性](/products-coproducts-universality-and-duality)

@@ -6,16 +6,17 @@ export async function getStaticPaths() {
   const docs = await getCollection('docs');
 
   return docs.map((doc) => {
-    // Strip trailing "/index" for URL purposes
     const urlSlug = doc.slug.replace(/\/index$/, '');
+    // Hierarchical path from the file system (for sidebar/breadcrumbs)
+    const filePath = doc.id.replace(/\.md$/, '').replace(/\/index$/, '');
     return {
       params: { slug: urlSlug || undefined },
-      props: { doc, urlSlug },
+      props: { doc, urlSlug, filePath },
     };
   });
 }
 
-const { doc, urlSlug } = Astro.props;
+const { doc, urlSlug, filePath } = Astro.props;
 const { Content } = await doc.render();
 
 function splitTitle(title: string): { en: string; ja: string | null } {
@@ -33,7 +34,7 @@ function splitTitle(title: string): { en: string; ja: string | null } {
 const { en: titleEn, ja: titleJa } = splitTitle(doc.data.title);
 ---
 
-<DocLayout title={doc.data.title} slug={urlSlug}>
+<DocLayout title={doc.data.title} slug={urlSlug} filePath={filePath}>
   <h1 class="page-title">
     <span class="title-en">{titleEn}</span>
     {titleJa && <span class="title-ja">{titleJa}</span>}

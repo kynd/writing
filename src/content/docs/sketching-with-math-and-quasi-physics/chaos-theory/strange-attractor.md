@@ -1,7 +1,8 @@
 ---
 title: "Strange Attractor ストレンジアトラクター"
+slug: strange-attractor
 ---
-[Chaos Theory カオス理論](/sketching-with-math-and-quasi-physics/chaos-theory)
+[Chaos Theory カオス理論](/chaos-theory)
 
 For those in the visual arts, chaos usually means strange attractors.
 
@@ -113,7 +114,7 @@ Since the velocity changes whenever the position changes even slightly, these eq
 
 位置が少しでも変わると速度も変わるのでこの式はステップごとではなく連続的な変化を示したものになります。ただし数式は連続でも、コンピュータ上では離散的なステップの繰り返しとして実装する必要があります。
 
-[Differentiation 微分](/sketching-with-math-and-quasi-physics/calculus-for-makers/differentiation).
+[Differentiation 微分](/differentiation).
 
 Because the Lorenz attractor is chaotic, there is no way to predict the outcome other than actually running the system, and since it is impossible to run the system with infinite precision, the only option is to approximate by calculating the movement of points in short time intervals. This demo uses Euler's method, multiplying the velocity at each step by a short time interval to move the point.
 
@@ -128,7 +129,7 @@ this.y += dy;
 this.z += dz;
 ```
 
-[Continuous Time and Discrete Time 連続した時間とバラバラな時間](/sketching-with-math-and-quasi-physics/newton-and-vectors/continuous-time-and-discrete-time)
+[Continuous Time and Discrete Time 連続した時間とバラバラな時間](/continuous-time-and-discrete-time)
 
 Let's examine the equations in more detail.
 
@@ -174,5 +175,5 @@ The strange attractor examples on this page are presented in succinct mathematic
 
 このページで見たストレンジアトラクターの例はカオスを簡潔な数式で、ある種理想的で意図的な形で表現したものと言えるでしょう。次のページではより自然発生的なカオスについて見ていきます。
 
-[Physical Chaos 物理的なカオス](/sketching-with-math-and-quasi-physics/chaos-theory/physical-chaos)
+[Physical Chaos 物理的なカオス](/physical-chaos)
 

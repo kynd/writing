@@ -1,5 +1,6 @@
 ---
 title: "Codifying materials (1)"
+slug: codifying-materials-1
 ---
 絵画には物質的な側面と人間の行為の側面がある。物質側について見てみよう。
 
@@ -77,4 +78,4 @@ This technique is very effective in VJ performances and similar occasions.
 
 ### Next
 
-[Codifying materials (2)](/drawing-with-code/codifying-materials-2)
+[Codifying materials (2)](/codifying-materials-2)

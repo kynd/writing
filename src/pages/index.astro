@@ -27,7 +27,7 @@ const topLevel = allDocs
   .sort((a, b) => a.data.title.localeCompare(b.data.title));
 ---
 
-<DocLayout title={title} slug="">
+<DocLayout title={title} slug="" filePath="">
   {Content ? (
     <Content />
   ) : (

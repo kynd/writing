@@ -1,5 +1,6 @@
 ---
 title: "Double Dual 二重双対"
+slug: double-dual
 ---
 The concept of the double dual in vector spaces is an important example that catalyzed the birth of the term "natural transformation."
 
@@ -202,4 +203,4 @@ That these two routes coincide for all <span class="katex"><span class="katex-ma
 
 この2つが全ての <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi></mrow><annotation encoding="application/x-tex">f</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span></span></span></span> に対して一致することは、この変換が中身の具体的な数値によらず、構造（代入という関係性）だけを保存していることを証明しています。
 
-[Generics and Category Theory ジェネリクスと圏論](/category-theory-and-code/generics-and-category-theory)
+[Generics and Category Theory ジェネリクスと圏論](/generics-and-category-theory)

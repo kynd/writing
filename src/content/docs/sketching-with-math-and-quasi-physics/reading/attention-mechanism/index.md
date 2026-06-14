@@ -1,5 +1,6 @@
 ---
 title: "Attention Mechanism アテンション機構"
+slug: attention-mechanism
 ---
 Now that we understand the overall architecture, let's explore the paper's most important concept—the attention mechanism. The diagram shows three orange boxes labeled "attention." Each serves a different purpose, but all share the same structure.
 
@@ -143,7 +144,7 @@ In the encoder, this is called self-attention because it finds relationships bet
 > 
 > この概念に馴染みがない場合、仕組みは次のとおりです。トレーニングの間、モデルには多くのタスクが与えられ、出力が期待される答えにどれだけ近いかに基づいてスコアが付けられます。結果が間違っている場合、どれだけ、どの方向にずれているかを計算し、ネットワークを逆にたどってエラーを伝播させ、値を調整します。
 > 
-> [Neural Network ニューラルネットワーク](/sketching-with-math-and-quasi-physics/neural-network)
+> [Neural Network ニューラルネットワーク](/neural-network)
 
 # Multihead attention
 # マルチヘッドアテンション
@@ -248,9 +249,9 @@ All parameters (<span class="katex"><span class="katex-mathml"><math xmlns="http
 
 すべてのパラメータ（<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>W</mi><mn>1</mn></msub><mo separator="true">,</mo><msub><mi>W</mi><mn>2</mn></msub><mo separator="true">,</mo><msub><mi>b</mi><mn>1</mn></msub><mo separator="true">,</mo><msub><mi>b</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">W_1, W_2, b_1, b_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">W</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">W</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">b</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">b</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>）は学習可能です。同じプロセスとパラメータが全てのベクトルに適用されるため、モデルは文中の単語の位置に関係なく、一貫した学習済みのルールを使用します。次のページで見るように、位置の情報はロジック側の仕組みではなくトークン自体にエンコードされており、パラメータはこの情報にも反応します。
 
-If the attention layers are to handle contextual processing looking at all the tokens at once, these feed-forward layers form the core of the model's brain that looks at each token individually in depth. Because they're generic, it's hard to describe exactly what they do, but all these parameters are adjusted through training to process the information toward generating the expected outcomes (see [Neural Network ニューラルネットワーク](/sketching-with-math-and-quasi-physics/neural-network) for the general architecture of neural networks).
+If the attention layers are to handle contextual processing looking at all the tokens at once, these feed-forward layers form the core of the model's brain that looks at each token individually in depth. Because they're generic, it's hard to describe exactly what they do, but all these parameters are adjusted through training to process the information toward generating the expected outcomes (see [Neural Network ニューラルネットワーク](/neural-network) for the general architecture of neural networks).
 
-アテンション層がすべてのトークンを一度に見て文脈を処理するのに対し、フィードフォワード層はそれぞれのトークンを個別に詳しく見るモデルの中核を成します。汎用的な仕組みなので、正確に何をしているかを説明するのは難しいですが、これらのパラメータはトレーニングを通じて調整され、期待される結果を生成するように情報を処理します（ニューラルネットワークの一般的なアーキテクチャについては[Neural Network ニューラルネットワーク](/sketching-with-math-and-quasi-physics/neural-network)を参照してください）。
+アテンション層がすべてのトークンを一度に見て文脈を処理するのに対し、フィードフォワード層はそれぞれのトークンを個別に詳しく見るモデルの中核を成します。汎用的な仕組みなので、正確に何をしているかを説明するのは難しいですが、これらのパラメータはトレーニングを通じて調整され、期待される結果を生成するように情報を処理します（ニューラルネットワークの一般的なアーキテクチャについては[Neural Network ニューラルネットワーク](/neural-network)を参照してください）。
 
 # So what?
 # 結局どうなるのか
@@ -269,4 +270,4 @@ On the next page, we'll cover the other key layers we left out: the positional e
 
 次のページでは、ここで触れなかった他の重要な層について説明します。冒頭の位置エンコーディングと、最後の線形層とソフトマックスです。
 
-[Other Key Layers その他の重要なレイヤー](/sketching-with-math-and-quasi-physics/reading/other-key-layers)
+[Other Key Layers その他の重要なレイヤー](/other-key-layers)

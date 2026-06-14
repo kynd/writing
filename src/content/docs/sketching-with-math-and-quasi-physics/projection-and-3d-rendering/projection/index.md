@@ -1,5 +1,6 @@
 ---
 title: "Projection プロジェクション"
+slug: projection
 ---
 From ancient cave drawings to paintings, cartography, cinema, and more recently, computer graphics, people have sought to depict the world around them on two-dimensional surfaces. Projection is a fundamental concept and method used in these endeavors, involving the transformation of 3D objects into 2D representations.
 
@@ -117,4 +118,4 @@ Keep in mind that the ways you represent 3D scenes on a 2D surface don't have to
 
 <div class="instagram-wrap"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/C0QSVPLLtmA/" data-instgrm-version="14" style="width:100%;max-width:540px;margin:0;border:none;border-radius:4px;padding:0;"></blockquote></div>
 
-[Ray Marching レイマーチング](/sketching-with-math-and-quasi-physics/projection-and-3d-rendering/ray-marching)
+[Ray Marching レイマーチング](/ray-marching)

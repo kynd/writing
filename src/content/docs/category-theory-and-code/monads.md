@@ -1,5 +1,6 @@
 ---
 title: "Monads モナド"
+slug: monads
 ---
 We saw the fundamental principles of functional programming: referential transparency (the same input always returns the same output) and the absence of side effects (not changing external variables or state). However, these principles make it difficult to write practical operations like input/output (I/O) or state management. If we mix these operations directly into functions, the program becomes unpredictable, and the predictability advantage of functional programming collapses.
 

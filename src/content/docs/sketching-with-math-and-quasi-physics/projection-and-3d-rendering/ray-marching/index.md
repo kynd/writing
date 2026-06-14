@@ -1,9 +1,10 @@
 ---
 title: "Ray Marching レイマーチング"
+slug: ray-marching
 ---
-**Ray marching** is a technique used in computer graphics to render a 3D scene by casting "rays" from the viewpoint and tracing them by moving points step by step. This method is popular for rendering complex scenes with relatively simple shader code. It is also a great tool for understanding and experimenting with various concepts behind 3D rendering, as shown in the pages on [Illuminating objects](/sketching-with-math-and-quasi-physics/light/illuminating-objects). You can find numerous more examples of ray marching on websites like [Shadertoy](https://www.shadertoy.com/).
+**Ray marching** is a technique used in computer graphics to render a 3D scene by casting "rays" from the viewpoint and tracing them by moving points step by step. This method is popular for rendering complex scenes with relatively simple shader code. It is also a great tool for understanding and experimenting with various concepts behind 3D rendering, as shown in the pages on [Illuminating objects](/illuminating-objects). You can find numerous more examples of ray marching on websites like [Shadertoy](https://www.shadertoy.com/).
 
-レイマーチングは、視点からのレイ（半直線、光線）に沿って点を逐次的に移動することで、3Dシーンをレンダリングするコンピュータグラフィックスの技術です。この手法は複雑なシーンを比較的シンプルなシェーダーのコードでレンダリングするためによく用いられます。また、「[物体を照らす](/sketching-with-math-and-quasi-physics/light/illuminating-objects)」ページ のように、3Dレンダリングの背後にある様々な概念の理解や実験のための優れたツールでもあります。[Shadertoy](https://www.shadertoy.com/)などのウェブサイトには、レイマーチングの例が数多くあります。
+レイマーチングは、視点からのレイ（半直線、光線）に沿って点を逐次的に移動することで、3Dシーンをレンダリングするコンピュータグラフィックスの技術です。この手法は複雑なシーンを比較的シンプルなシェーダーのコードでレンダリングするためによく用いられます。また、「[物体を照らす](/illuminating-objects)」ページ のように、3Dレンダリングの背後にある様々な概念の理解や実験のための優れたツールでもあります。[Shadertoy](https://www.shadertoy.com/)などのウェブサイトには、レイマーチングの例が数多くあります。
 
 > 
 > 
@@ -12,7 +13,7 @@ title: "Ray Marching レイマーチング"
 
 > 
 > 
-> 英語のRayには[光を含む放射エネルギーの線](/sketching-with-math-and-quasi-physics/light/what-is-light)や数学における反直線などの意味があります。日本語では「レイ」と書くことにします。レイマーチングについて考える時は、ある一点から何かを真っ直ぐに飛ばすイメージで捉えると良いでしょう。
+> 英語のRayには[光を含む放射エネルギーの線](/what-is-light)や数学における反直線などの意味があります。日本語では「レイ」と書くことにします。レイマーチングについて考える時は、ある一点から何かを真っ直ぐに飛ばすイメージで捉えると良いでしょう。
 
 # What is ray marching?
 # レイマーチングとは
@@ -31,9 +32,9 @@ The method is called ray "marching" because we move points forward step by step 
 
 # SDF (Signed distance functions)
 
-Before shooting rays, we need to understand how to define the shapes of the objects we want to draw. We will use functions called SDF (signed distance functions) for this purpose. SDF functions take a point in space as input and return the distance to the closest point on the surface of the object. It is called “signed” because the function returns a positive value if the point is outside the shape and a negative value if the point is inside the shape. We have already seen a few examples [here](/sketching-with-math-and-quasi-physics/distance/signed-distance-functions).
+Before shooting rays, we need to understand how to define the shapes of the objects we want to draw. We will use functions called SDF (signed distance functions) for this purpose. SDF functions take a point in space as input and return the distance to the closest point on the surface of the object. It is called “signed” because the function returns a positive value if the point is outside the shape and a negative value if the point is inside the shape. We have already seen a few examples [here](/signed-distance-functions).
 
-レイを飛ばす前に、まず描画する物体の形を定義する方法を理解しましょう。これには、SDF（signed distance function - 符号付き距離関数）と呼ばれる関数を使用します。SDF関数は、空間内の点を入力として受け取り、物体の表面上の最も近い点までの距離を返します。この関数が「符号付き」と呼ばれるのは、点が形状の外部にある場合は正の値を返し、点が形状の内部にある場合は負の値を返すからです。いくつかの例は既に[このページ](/sketching-with-math-and-quasi-physics/distance/signed-distance-functions)で紹介しました。
+レイを飛ばす前に、まず描画する物体の形を定義する方法を理解しましょう。これには、SDF（signed distance function - 符号付き距離関数）と呼ばれる関数を使用します。SDF関数は、空間内の点を入力として受け取り、物体の表面上の最も近い点までの距離を返します。この関数が「符号付き」と呼ばれるのは、点が形状の外部にある場合は正の値を返し、点が形状の内部にある場合は負の値を返すからです。いくつかの例は既に[このページ](/signed-distance-functions)で紹介しました。
 
 The best resource for finding SDFs for different shapes is [Inigo Quilez’s website](https://iquilezles.org/articles/distfunctions/). We will explore various shapes and different ways to combine them in order to design more complex objects. But, let's begin by understanding how an SDF works using a sphere as an example.
 
@@ -96,4 +97,4 @@ For parallel projection, we cast the rays in a parallel manner. The rest of the 
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="NWoWLby" data-user="kynd" data-preview="true"></p></div>
 
-[3D Rendering with Ray Marching レイマーチングによる3Dレンダリング](/sketching-with-math-and-quasi-physics/projection-and-3d-rendering/3d-rendering-with-ray-marching)
+[3D Rendering with Ray Marching レイマーチングによる3Dレンダリング](/3d-rendering-with-ray-marching)

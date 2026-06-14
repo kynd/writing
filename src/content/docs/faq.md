@@ -1,5 +1,6 @@
 ---
 title: "FAQs"
+slug: faq
 ---
 **Q:** License? Can I use the contents?
 

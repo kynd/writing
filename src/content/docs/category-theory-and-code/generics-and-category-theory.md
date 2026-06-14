@@ -1,5 +1,6 @@
 ---
 title: "Generics and Category Theory ジェネリクスと圏論"
+slug: generics-and-category-theory
 ---
 We used generics on the pages on functors and natural transformations. Generics are extremely useful for implementing category-theoretic thinking, which focuses on relationships between objects rather than the characteristics of objects themselves. This single feature can express multiple different concepts in category theory.
 
@@ -153,4 +154,4 @@ Now that we've explored the connection between category theory and programming m
 
 圏論の概念とプログラミングの結びつきについて少し深掘りしたところで、次は関数型プログラミングと圏論の関係について考えてみましょう。
 
-[Category Theory and Functional Programming 圏論と関数型プログラミング](/category-theory-and-code/category-theory-and-functional-programming)
+[Category Theory and Functional Programming 圏論と関数型プログラミング](/category-theory-and-functional-programming)

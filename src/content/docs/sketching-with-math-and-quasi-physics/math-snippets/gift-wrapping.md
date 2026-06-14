@@ -1,5 +1,6 @@
 ---
 title: "Gift Wrapping ギフトラッピング"
+slug: gift-wrapping
 ---
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="QwGbegX" data-user="kynd" data-preview="true"></p></div>
 

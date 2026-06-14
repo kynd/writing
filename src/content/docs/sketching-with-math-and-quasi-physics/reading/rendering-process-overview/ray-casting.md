@@ -1,5 +1,6 @@
 ---
 title: "Ray casting レイキャスティング"
+slug: ray-casting
 ---
 ```glsl
 vec2 raycast( in vec3 rayOrigin, in vec3 rayDirection )
@@ -64,7 +65,7 @@ The next part is ray marching to check if the ray intersects with the other obje
 
 次の部分は、レイが他のオブジェクトと交差するかどうかを確認するためのレイマーチングです。
 
-[Ray Marching レイマーチング](/sketching-with-math-and-quasi-physics/projection-and-3d-rendering/ray-marching)
+[Ray Marching レイマーチング](/ray-marching)
 
 ## Rough hit check with a box
 ## 箱を使った大雑把な判定
@@ -104,7 +105,7 @@ To learn about how you can define and calculate the distance with SDF, take a lo
 
 SDFを使用して距離を定義し計算する方法について学ぶには、このページをご覧ください。
 
-[3D Rendering with Ray Marching レイマーチングによる3Dレンダリング](/sketching-with-math-and-quasi-physics/projection-and-3d-rendering/3d-rendering-with-ray-marching)
+[3D Rendering with Ray Marching レイマーチングによる3Dレンダリング](/3d-rendering-with-ray-marching)
 
 ```glsl
 vec2 map( in vec3 pos )
@@ -138,4 +139,4 @@ vec2 opU( vec2 d1, vec2 d2 )
 }
 ```
 
-[Rendering Process Overview レンダリングプロセスの概要](/sketching-with-math-and-quasi-physics/reading/rendering-process-overview)
+[Rendering Process Overview レンダリングプロセスの概要](/rendering-process-overview)

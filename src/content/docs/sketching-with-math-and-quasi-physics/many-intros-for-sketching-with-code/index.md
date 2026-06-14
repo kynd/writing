@@ -1,5 +1,6 @@
 ---
 title: "Many intros for Sketching with Code"
+slug: many-intros-for-sketching-with-code
 ---
 ### I've been wanting to write books that are like introductory science texts but not superficial. Books that go beyond pop science explanations but aren't dry and dense like academic texts.
 ### ずっと、科学書の入門書のようでいて、表面的でない本を書きたいと思ってきました。イメージ優先のわかりやすさにとどまらず、それでも学術書のように無味乾燥で難解になることもない本です。
@@ -33,18 +34,18 @@ As always, these are also an exercise for myself. They are like notes to organiz
 
 いつものように、これは自身の学びの過程でもあります。アイデアを整理し構造化するためのメモのようなもので、そのうち体系的な本へと発展するかもしれません。同時に、読者が自分の立ち位置を把握する役に立つことも目指しています。個々の要素の位置づけや重要性、そして他のリソースから補完すべき知識は何かなどといった概観を示せればと思います。
 
-[About Space 空間について](/sketching-with-math-and-quasi-physics/many-intros-for-sketching-with-code/about-space)
+[About Space 空間について](/about-space)
 
-[About Colors 色について](/sketching-with-math-and-quasi-physics/many-intros-for-sketching-with-code/about-colors)
+[About Colors 色について](/about-colors)
 
-[About Motion 動きについて](/sketching-with-math-and-quasi-physics/many-intros-for-sketching-with-code/about-motion)
+[About Motion 動きについて](/about-motion)
 
-[About Perception 知覚について](/sketching-with-math-and-quasi-physics/many-intros-for-sketching-with-code/about-perception)
+[About Perception 知覚について](/about-perception)
 
-[About Patterns パターンについて](/sketching-with-math-and-quasi-physics/many-intros-for-sketching-with-code/about-patterns)
+[About Patterns パターンについて](/about-patterns)
 
-[About Interpolation 補間について](/sketching-with-math-and-quasi-physics/many-intros-for-sketching-with-code/about-interpolation)
+[About Interpolation 補間について](/about-interpolation)
 
-[About Wave 波について](/sketching-with-math-and-quasi-physics/many-intros-for-sketching-with-code/about-wave)
+[About Wave 波について](/about-wave)
 
-[About Shapes 形について](/sketching-with-math-and-quasi-physics/many-intros-for-sketching-with-code/about-shapes)
+[About Shapes 形について](/about-shapes)

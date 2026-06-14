@@ -1,5 +1,6 @@
 ---
 title: "About Motion 動きについて"
+slug: about-motion
 ---
 One of the most fun parts of sketching with code is that it’s not static. Let’s draw both in space and time.
 
@@ -22,7 +23,7 @@ Sir Isaac Newton basically said that things stay at rest in the same position, o
 
 アイザック・ニュートン卿は、物体についてこう述べました。力を加えて加速させない限り、物体は静止したままか、同じ速度で動き続けます。位置、速度、加速度、そして力は、物理的な運動を理解する上で最も基本的な概念です。これらの概念をエミュレートするのは驚くほど簡単です。フレームごとに、力を加速度に加えて変化させ、その加速度を速度に、そして速度を位置に加えていくだけです。
 
-[Newtonian mechanics ニュートン力学](/sketching-with-math-and-quasi-physics/newton-and-vectors/newtonian-mechanics)
+[Newtonian mechanics ニュートン力学](/newtonian-mechanics)
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="vbGNjx" data-user="kynd" data-preview="true"></p></div>
 
@@ -51,9 +52,9 @@ You probably have been using this method already without knowing it, for example
 
 実際、あなたは気付かないうちにこの方法を使っているでしょう。たとえば、先ほどのニュートン物理学のシミュレーションは、数学的に厳密な方法ではなく、この数値的なアプローチを用いています。
 
-[Differentiation 微分](/sketching-with-math-and-quasi-physics/calculus-for-makers/differentiation)
+[Differentiation 微分](/differentiation)
 
-[Integration 積分](/sketching-with-math-and-quasi-physics/calculus-for-makers/integration)
+[Integration 積分](/integration)
 
 [![](/images/about-motion.png "75")](/images/about-motion.png)
 
@@ -114,11 +115,11 @@ A very common technique in motion design is called tweening, short for in-betwee
 
 モーションデザインでよく使われる手法の一つに、トゥイーニング（tweening）があります。これはイン・ビトゥイーニング（in-betweening）の略で、始めと終わりの状態を決めて、その間のフレームを補間して埋めていく手法です。この言葉は、アニメーターがキーポーズの間を手描きで埋めていた時代に由来します（他の方法では表現できない動きがあるので、今でも手書きをする人は大勢います）。
 
-In computer animation, we often use easing functions to control these transitions. Easing functions connect one value to another, changing the pace in between, like slowing in, speeding out, bouncing, etc. In motion design, you can think of an easing function as a kind of [mapping](/sketching-with-math-and-quasi-physics/mapping) between time and another value, such as position, scale, or opacity.
+In computer animation, we often use easing functions to control these transitions. Easing functions connect one value to another, changing the pace in between, like slowing in, speeding out, bouncing, etc. In motion design, you can think of an easing function as a kind of [mapping](/mapping) between time and another value, such as position, scale, or opacity.
 
 コンピューターによるアニメーションでは、こうした動きをコントロールするためにイージング関数がよく用いられます。イージング関数は、たとえば、ゆっくり始まって徐々に加速したり、跳ねるような動きを生み出したりと、ある値から別の値への変化の仕方を調整します。モーションデザインでは、イージング関数は時間と、位置やスケール、透明度といった値との間の対応付けとして考えることができます。
 
-[Interpolation and Animation 補間とアニメーション](/sketching-with-math-and-quasi-physics/interpolation-and-animation)
+[Interpolation and Animation 補間とアニメーション](/interpolation-and-animation)
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="qmLJeO" data-user="kynd" data-preview="true"></p></div>
 
@@ -136,7 +137,7 @@ Verlet Integration is a way to create simple physics simulations by connecting d
 
 ヴェレ法は、点と棒を組み合わせて2点間の距離を制約することで、簡単な物理シミュレーションを実現する手法です。単純ながら非常に柔軟な手法で、複数の点と棒を組み合わせることによって、剛体から柔らかな紐状の物体まで、様々な物体を作り出すことができます。
 
-[Building Ragdolls ラグドールを作る](/sketching-with-math-and-quasi-physics/newton-and-vectors/building-ragdolls)
+[Building Ragdolls ラグドールを作る](/building-ragdolls)
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="aWXVPZ" data-user="kynd" data-preview="true"></p></div>
 
@@ -162,7 +163,7 @@ Inverse kinematics is more goal-driven. You define where you want the endpoint t
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="OJqNBNQ" data-user="kynd" data-preview="true"></p></div>
 
-[Kinematics キネマティクス](/sketching-with-math-and-quasi-physics/kinematics)
+[Kinematics キネマティクス](/kinematics)
 
 # Random Walker
 # ランダムウォーカー
@@ -171,7 +172,7 @@ Motion of objects and life in the real world is often unpredictable, and you can
 
 現実世界の物体や生きものの動きは大抵予測できないものなので、動きの仕組みにランダムさを取り入れても良いでしょう。下は4つの異なるランダム値を生成する方法を使ったランダムウォーカーのデモです。実際の場面では、ここまで紹介したような予測可能な手法とランダムさを組み合わせた方が良いこともあるでしょう。目的に合わせて試して、良いバランスを見つけましょう。
 
-[Taming Randomness ランダムさを手なづける](/sketching-with-math-and-quasi-physics/taming-randomness)
+[Taming Randomness ランダムさを手なづける](/taming-randomness)
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="eWbPdK" data-user="kynd" data-preview="true"></p></div>
 
@@ -182,7 +183,7 @@ While we've explored how to move objects and characters, there's one more crucia
 
 これまで物体やキャラクターの動かし方を見てきましたが、忘れてはならない目に見えないもう一つの主役がいます。それはカメラです。シーンの構図や視点の動かし方によって、最終的な結果は大きく変わります。
 
-[Camera in Action 働くカメラ](/sketching-with-math-and-quasi-physics/camera-in-action)
+[Camera in Action 働くカメラ](/camera-in-action)
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="OPJadKe" data-user="kynd" data-preview="true"></p></div>
 

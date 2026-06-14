@@ -1,5 +1,6 @@
 ---
 title: "Direction of the waves 波の向き"
+slug: direction-of-the-waves
 ---
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="XWqzYvK" data-user="kynd" data-preview="true"></p></div>
 
@@ -37,4 +38,4 @@ The terms "longitudinal" and "transverse" are commonly used to describe physical
 
 「縦波」と「横波」という用語は、物理的な波を表現するために使用されます。グラフィックスにおける波、例えばグラデーションや波の形について話す際には、物理に囚われる必要はありません。これらのグラフィック表現は、さまざまな具合で実際の現象に似たり似なかったりできますし、望むなら科学的に正確な表現にもなり得ます。例えば、音波の空気の圧力に色の明るさをマッピングすることが可能です。
 
-[Vibration and Propagation 振動と伝搬](/sketching-with-math-and-quasi-physics/wave/vibration-and-propagation)
+[Vibration and Propagation 振動と伝搬](/vibration-and-propagation)

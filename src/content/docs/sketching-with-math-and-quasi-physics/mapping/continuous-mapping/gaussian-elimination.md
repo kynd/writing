@@ -1,5 +1,6 @@
 ---
 title: "Gaussian Elimination ガウスの消去法"
+slug: gaussian-elimination
 ---
 Gaussian elimination is a step-by-step method to solve systems of equations by first eliminating variables to leave just one and find its value, then working backward to find the remaining values. The name sounds intimidating, but this is basically what you probably learned in junior high school.
 

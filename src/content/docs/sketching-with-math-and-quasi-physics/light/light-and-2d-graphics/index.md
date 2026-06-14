@@ -1,9 +1,10 @@
 ---
 title: "Light and 2D Graphics 光と2Dグラフィックス"
+slug: light-and-2d-graphics
 ---
-Since the [page on 3D graphics](/sketching-with-math-and-quasi-physics/light/illuminating-objects) was very theoretical, this page is more casual and presents some ideas for applying simplified properties of light to graphics.
+Since the [page on 3D graphics](/illuminating-objects) was very theoretical, this page is more casual and presents some ideas for applying simplified properties of light to graphics.
 
-[3Dグラフィックのページ](/sketching-with-math-and-quasi-physics/light/illuminating-objects)が非常に理論的だったので、このページではもっとカジュアルに光の性質を単純化して2Dグラフィックスに応用するアイデアをいくつか紹介します。
+[3Dグラフィックのページ](/illuminating-objects)が非常に理論的だったので、このページではもっとカジュアルに光の性質を単純化して2Dグラフィックスに応用するアイデアをいくつか紹介します。
 
 # 2D Shadow
 # 2次元の影
@@ -27,9 +28,9 @@ You can check whether a location is in shadow by extending a line from that poin
 # Reflection
 # 反射
 
-This is the same demo seen on the [Reflection and Refraction](/sketching-with-math-and-quasi-physics/light/reflection-and-refraction) page, but without erasing the trails of the light.
+This is the same demo seen on the [Reflection and Refraction](/reflection-and-refraction) page, but without erasing the trails of the light.
 
-これは[反射と屈折](/sketching-with-math-and-quasi-physics/light/reflection-and-refraction)のページで見たデモと同じものですが、光の軌跡を消さずに残すようにしました。
+これは[反射と屈折](/reflection-and-refraction)のページで見たデモと同じものですが、光の軌跡を消さずに残すようにしました。
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="JjagXWp" data-user="kynd" data-preview="true"></p></div>
 
@@ -47,9 +48,9 @@ The demonstration below uses Fresnel's equation to magnify polka dots only withi
 # Normal map
 # 法線マップ
 
-When lighting an object, its brightness is largely affected by the direction of its surface (normal) and the direction of the light source. Conversely, if you have these two factors, it is possible to create a reasonably three-dimensional look. The demo below creates only the normal direction on a plane (in the `normal` function) without creating any 3D model, then applies [Lambertian reflections](/sketching-with-math-and-quasi-physics/light/illuminating-objects/classic-3d-rendering). Since no shadows are drawn, the result looks a little like trick art with a mysterious floating sensation. The method of having normal data on a plane is also used in games to create complex expressions with a small number of polygons.
+When lighting an object, its brightness is largely affected by the direction of its surface (normal) and the direction of the light source. Conversely, if you have these two factors, it is possible to create a reasonably three-dimensional look. The demo below creates only the normal direction on a plane (in the `normal` function) without creating any 3D model, then applies [Lambertian reflections](/classic-3d-rendering). Since no shadows are drawn, the result looks a little like trick art with a mysterious floating sensation. The method of having normal data on a plane is also used in games to create complex expressions with a small number of polygons.
 
-物体に照明を当てる時の明るさは、その表面の向き（法線）と光源の向きに大きく左右されます。逆に言えば、これら2つがあれば、それなりに立体感のある表現をすることができます。下のデモでは、3Dモデルなしに法線の向きだけを平面上に作り出して（`normal`関数）、そこに[ランバート反射](/sketching-with-math-and-quasi-physics/light/illuminating-objects/classic-3d-rendering)だけを適用しています。影を描いていないため、不思議な浮遊感のあるトリックアートのような雰囲気になっています。平面に法線のデータを持たせる手法は、ゲームなどで少ないポリゴン数で複雑な表情を作りたい時にも使われています。
+物体に照明を当てる時の明るさは、その表面の向き（法線）と光源の向きに大きく左右されます。逆に言えば、これら2つがあれば、それなりに立体感のある表現をすることができます。下のデモでは、3Dモデルなしに法線の向きだけを平面上に作り出して（`normal`関数）、そこに[ランバート反射](/classic-3d-rendering)だけを適用しています。影を描いていないため、不思議な浮遊感のあるトリックアートのような雰囲気になっています。平面に法線のデータを持たせる手法は、ゲームなどで少ないポリゴン数で複雑な表情を作りたい時にも使われています。
 
 [![](/images/light-and-2d-graphics-2d-1.png "75")](/images/light-and-2d-graphics-2d-1.png)
 

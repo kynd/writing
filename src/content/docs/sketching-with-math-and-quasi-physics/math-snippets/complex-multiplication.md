@@ -1,5 +1,6 @@
 ---
 title: "Complex Multiplication 複素数の掛け算"
+slug: complex-multiplication
 ---
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="PwGBJyX" data-user="kynd" data-preview="true"></p></div>
 

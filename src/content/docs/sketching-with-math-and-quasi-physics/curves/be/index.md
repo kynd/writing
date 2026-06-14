@@ -1,13 +1,14 @@
 ---
 title: "Bézier and Spline ベジェとスプライン"
+slug: be
 ---
 A spline is a curve mathematically defined by a series of control points.
 
 スプラインは、一連の制御点によって数学的に定義された曲線です。
 
-We learned about [different curves that can be defined with the parametric approach](/sketching-with-math-and-quasi-physics/curves/parametric-approaches) on the previous page. The problem is that they require different formulas for each shape. To draw various shapes more freely, we need a more flexible method.
+We learned about [different curves that can be defined with the parametric approach](/parametric-approaches) on the previous page. The problem is that they require different formulas for each shape. To draw various shapes more freely, we need a more flexible method.
 
-前のページでは[パラメトリックなアプローチで定義できるさまざまな曲線](/sketching-with-math-and-quasi-physics/curves/parametric-approaches)について学びましたが、問題は、形ごとに異なる公式が必要になってしまうことです。様々な形をより自由に描くには、より柔軟な手法が必要です。
+前のページでは[パラメトリックなアプローチで定義できるさまざまな曲線](/parametric-approaches)について学びましたが、問題は、形ごとに異なる公式が必要になってしまうことです。様々な形をより自由に描くには、より柔軟な手法が必要です。
 
 # Spline curve
 # スプライン曲線
@@ -25,8 +26,8 @@ The term "spline" comes from the fact that draftsmen used flexible strips of met
 
 > 
 > 
-> See also the [Interpolation and Animation](/sketching-with-math-and-quasi-physics/interpolation-and-animation) page.  
-> [補間とアニメーション](/sketching-with-math-and-quasi-physics/interpolation-and-animation)のページもご覧ください。
+> See also the [Interpolation and Animation](/interpolation-and-animation) page.  
+> [補間とアニメーション](/interpolation-and-animation)のページもご覧ください。
 
 Bezier curves, especially cubic Bézier curves, are widely used for drawing shapes in computer software, probably because they can be intuitively visualized with control points and "handles," which are suitable for manipulation with a GUI. For example, the image below is a screenshot from Adobe Illustrator.
 
@@ -37,9 +38,9 @@ Bezier curves, especially cubic Bézier curves, are widely used for drawing shap
 # Interpolating Interpolations
 # 補間の補間
 
-The basic idea of a Bézier curve is to repeat linear interpolations multiple times. Remember the [parametric line segment from the previous page](/sketching-with-math-and-quasi-physics/curves/parametric-approaches).
+The basic idea of a Bézier curve is to repeat linear interpolations multiple times. Remember the [parametric line segment from the previous page](/parametric-approaches).
 
-ベジェ曲線の基本的なアイデアは、線形補間を複数回繰り返すことです。前のページで触れた[線分のパラメトリックな表現](/sketching-with-math-and-quasi-physics/curves/parametric-approaches)を思い出してください。
+ベジェ曲線の基本的なアイデアは、線形補間を複数回繰り返すことです。前のページで触れた[線分のパラメトリックな表現](/parametric-approaches)を思い出してください。
 
 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>t</mi><mo stretchy="false">)</mo><msub><mi>x</mi><mn>1</mn></msub><mo>+</mo><mi>t</mi><msub><mi>x</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">x(t) = (1-t)x_1 + tx_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">x</span><span class="mopen">(</span><span class="mord mathnormal">t</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">t</span><span class="mclose">)</span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7651em;vertical-align:-0.15em;"></span><span class="mord mathnormal">t</span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>  
 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>t</mi><mo stretchy="false">)</mo><msub><mi>y</mi><mn>1</mn></msub><mo>+</mo><mi>t</mi><msub><mi>y</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">y(t) = (1-t)y_1 + ty_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mopen">(</span><span class="mord mathnormal">t</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">t</span><span class="mclose">)</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0359em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8095em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">t</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0359em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>
@@ -273,4 +274,4 @@ Below is an incomplete list of other mathematically defined curves. If you are i
 
 -   Kochanek-Bartels スプライン
 
-[Controlling curves 曲線のコントロール](/sketching-with-math-and-quasi-physics/curves/controlling-curves)
+[Controlling curves 曲線のコントロール](/controlling-curves)

@@ -1,5 +1,6 @@
 ---
 title: "Discrete Mapping 離散的な写像"
+slug: discrete-mapping
 ---
 # Mapping elements
 # 要素を対応させる

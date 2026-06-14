@@ -1,5 +1,6 @@
 ---
 title: "Drawing Landscape 風景を描く"
+slug: drawing-landscape
 ---
 On this page, we will sketch a landscape like this using ray marching. Drawing shapes beyond simple geometries can provide very useful insights into applying the technique to anything.
 
@@ -9,11 +10,11 @@ I tried to keep the code as simple as possible while maintaining a good amount o
 
 十分なディテールを残しながらコードをシンプルに保つようにしましたが、それでもこのページはかなりテクニカルです。レイマーチングを使った3Dレンダリングに馴染みがない方は、まず以下のページをお読むことをお勧めします。
 
-[Signed distance functions 符号付き距離関数](/sketching-with-math-and-quasi-physics/distance/signed-distance-functions)
+[Signed distance functions 符号付き距離関数](/signed-distance-functions)
 
-[Projection and 3D Rendering プロジェクションと3Dレンダリング](/sketching-with-math-and-quasi-physics/projection-and-3d-rendering)
+[Projection and 3D Rendering プロジェクションと3Dレンダリング](/projection-and-3d-rendering)
 
-[Reading “Raymarching - Primitives”](/sketching-with-math-and-quasi-physics/reading)
+[Reading “Raymarching - Primitives”](/reading)
 
 [![](/images/drawing-landscape.png "75")](/images/drawing-landscape.png)
 
@@ -32,11 +33,11 @@ First, we need to define the terrain. We can use multiple layers of noise to cre
 
 まずは地形を定義します。複数のノイズのレイヤーを重ねると、山が連なった複雑な起伏を作り出せます。
 
-[Taming Randomness ランダムさを手なづける](/sketching-with-math-and-quasi-physics/taming-randomness)
+[Taming Randomness ランダムさを手なづける](/taming-randomness)
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="WNJxXZb" data-user="kynd" data-preview="true"></p></div>
 
-The noise function I'm using here is based on an example from [The Book of Shaders](https://thebookofshaders.com/11/), but with a little tweak. To apply lighting to the surface, we need to know the direction of the surface at each point, i.e., normal. To calculate this, the `noised` function in the demo below returns not only the noise value but also the [derivatives](/sketching-with-math-and-quasi-physics/calculus-for-makers/differentiation) of the value along x and y axes, i.e., gradient of the surface. In the return value, the x component represents the noise value, while y and z represent the gradient.
+The noise function I'm using here is based on an example from [The Book of Shaders](https://thebookofshaders.com/11/), but with a little tweak. To apply lighting to the surface, we need to know the direction of the surface at each point, i.e., normal. To calculate this, the `noised` function in the demo below returns not only the noise value but also the [derivatives](/differentiation) of the value along x and y axes, i.e., gradient of the surface. In the return value, the x component represents the noise value, while y and z represent the gradient.
 
 ここでのノイズ関数は[The Book of Shaders](https://thebookofshaders.com/11/)からの例をもとに、少し変更を加えています。形の表面にライティングを加えるには、各点における面の方向（法線）を求める必要があります。下のデモの`noised`関数はこの計算のために、ノイズの値だけでなく、xとy軸に沿った値の微分、つまり表面の勾配も返します。戻り値のx成分がノイズ値を表し、yとz成分が勾配を表します。
 
@@ -67,9 +68,9 @@ vec3 noised(in vec2 st) {
 }
 ```
 
-Then, the `fbmd` (stands for "Fractal Brownian Motion with Derivatives") function layers the noises multiple times, scaling and rotating them to create everything from the overall shape to detail bumps and crevices of the terrain in a [fractal](/sketching-with-math-and-quasi-physics/patterns/fractal) manner.
+Then, the `fbmd` (stands for "Fractal Brownian Motion with Derivatives") function layers the noises multiple times, scaling and rotating them to create everything from the overall shape to detail bumps and crevices of the terrain in a [fractal](/fractal) manner.
 
-次に、`fbmd`（"Fractal Brownian Motion with Derivatives"の略）関数が、ノイズに対してスケーリングと回転を繰り返し重ねることで、地形の全体的な形から細かな凹凸や裂け目まで、[フラクタル](/sketching-with-math-and-quasi-physics/patterns/fractal) のような形で作り出します。
+次に、`fbmd`（"Fractal Brownian Motion with Derivatives"の略）関数が、ノイズに対してスケーリングと回転を繰り返し重ねることで、地形の全体的な形から細かな凹凸や裂け目まで、[フラクタル](/fractal) のような形で作り出します。
 
 ```jsx
 vec3 fbmd( in vec2 st )
@@ -127,9 +128,9 @@ vec3 terrain(vec2 st)
 # Ray marching
 # レイマーチング
 
-Now that we have our terrain. Let’s render it with ray marching. The basic is the same as [ray marching with SDF (Signed distance function)](/sketching-with-math-and-quasi-physics/projection-and-3d-rendering/ray-marching). We shoot rays from camera, and see where they hit objects.
+Now that we have our terrain. Let’s render it with ray marching. The basic is the same as [ray marching with SDF (Signed distance function)](/ray-marching). We shoot rays from camera, and see where they hit objects.
 
-地形ができたので、レイマーチングでレンダリングしましょう。基本的な手順は[SDF (Signed distance function)を使ったレイマーチング](/sketching-with-math-and-quasi-physics/projection-and-3d-rendering/ray-marching)と同じです。カメラからレイを飛ばし、物体との交差を調べます。
+地形ができたので、レイマーチングでレンダリングしましょう。基本的な手順は[SDF (Signed distance function)を使ったレイマーチング](/ray-marching)と同じです。カメラからレイを飛ばし、物体との交差を調べます。
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="eYxYRBy" data-user="kynd" data-preview="true"></p></div>
 
@@ -193,9 +194,9 @@ The demo below renders the scene by mapping the depth (i.e., the distance from t
 # Shading
 # シェーディング
 
-Let's add lights and materials to make it more realistic. The techniques here are similar to what we covered in [Reading “Raymarching - Primitives”](/sketching-with-math-and-quasi-physics/reading), but simplified - we will touch upon each one briefly. You can toggle the checkboxes in the demo below to see how each component affects the scene.
+Let's add lights and materials to make it more realistic. The techniques here are similar to what we covered in [Reading “Raymarching - Primitives”](/reading), but simplified - we will touch upon each one briefly. You can toggle the checkboxes in the demo below to see how each component affects the scene.
 
-よりリアルな見た目にするため、ライトとマテリアルを追加しましょう。ここで使うテクニックは[Reading “Raymarching - Primitives”](/sketching-with-math-and-quasi-physics/reading)で解説したものに似ていますが、簡略化しています。以下で各要素を順に説明します。下のデモではチェックボックスを切り替えることで、それぞれの要素がシーンにどう影響するかを確認できます。
+よりリアルな見た目にするため、ライトとマテリアルを追加しましょう。ここで使うテクニックは[Reading “Raymarching - Primitives”](/reading)で解説したものに似ていますが、簡略化しています。以下で各要素を順に説明します。下のデモではチェックボックスを切り替えることで、それぞれの要素がシーンにどう影響するかを確認できます。
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="NPPWORo" data-user="kynd" data-preview="true"></p></div>
 
@@ -258,22 +259,22 @@ if (uSunlightEnabled) {
 }
 ```
 
-This part calculates the intensity of the diffuse light as the dot product of the normal and the direction of the light, then applies the soft shadow and slightly warm color of the sunlight. For the math for the diffuse light, take a look at [Classic 3D Rendering 古典的 3D レンダリング](/sketching-with-math-and-quasi-physics/light/illuminating-objects/classic-3d-rendering). Soft shadow is explained in depth in this page: [Soft shadow ソフトシャドウ](/sketching-with-math-and-quasi-physics/reading/rendering-process-overview/soft-shadow)
+This part calculates the intensity of the diffuse light as the dot product of the normal and the direction of the light, then applies the soft shadow and slightly warm color of the sunlight. For the math for the diffuse light, take a look at [Classic 3D Rendering 古典的 3D レンダリング](/classic-3d-rendering). Soft shadow is explained in depth in this page: [Soft shadow ソフトシャドウ](/soft-shadow)
 
-この部分では、法線と光の方向のドット積としてディフューズの強さを計算し、ソフトシャドウと、太陽光の少し暖かみのある色を適用します。ディフューズの数学的な説明については [Classic 3D Rendering 古典的 3D レンダリング](/sketching-with-math-and-quasi-physics/light/illuminating-objects/classic-3d-rendering) を見てください。ソフトシャドウについては、 [Soft shadow ソフトシャドウ](/sketching-with-math-and-quasi-physics/reading/rendering-process-overview/soft-shadow)で詳しく説明しています。
+この部分では、法線と光の方向のドット積としてディフューズの強さを計算し、ソフトシャドウと、太陽光の少し暖かみのある色を適用します。ディフューズの数学的な説明については [Classic 3D Rendering 古典的 3D レンダリング](/classic-3d-rendering) を見てください。ソフトシャドウについては、 [Soft shadow ソフトシャドウ](/soft-shadow)で詳しく説明しています。
 
 > 
 > 
-> To calculate the specular reflection, we need different factors for different areas, as snow will more directly reflect the light but the woods won’t have clear direction. If you are interested, try adding this using [Classic 3D Rendering 古典的 3D レンダリング](/sketching-with-math-and-quasi-physics/light/illuminating-objects/classic-3d-rendering) as a reference.
+> To calculate the specular reflection, we need different factors for different areas, as snow will more directly reflect the light but the woods won’t have clear direction. If you are interested, try adding this using [Classic 3D Rendering 古典的 3D レンダリング](/classic-3d-rendering) as a reference.
 > 
-> スペキュラーを計算するには場所によって異なる値を求め、雪は光をより直接的に反射し、森には明確な向きを持たせないといった調整が必要です。興味があれば、 [Classic 3D Rendering 古典的 3D レンダリング](/sketching-with-math-and-quasi-physics/light/illuminating-objects/classic-3d-rendering) を参考に実装してみましょう。
+> スペキュラーを計算するには場所によって異なる値を求め、雪は光をより直接的に反射し、森には明確な向きを持たせないといった調整が必要です。興味があれば、 [Classic 3D Rendering 古典的 3D レンダリング](/classic-3d-rendering) を参考に実装してみましょう。
 
 ## Sky light
 ## 空からの光
 
-This part calculates the reflection of the blue color of the sky. Again, I'm ignoring the specular component for simplicity. The more the surface faces toward the top, the more influence the sky has on it. See [Sky light 空からの光](/sketching-with-math-and-quasi-physics/reading/rendering-process-overview/sky-light) for more details.
+This part calculates the reflection of the blue color of the sky. Again, I'm ignoring the specular component for simplicity. The more the surface faces toward the top, the more influence the sky has on it. See [Sky light 空からの光](/sky-light) for more details.
 
-この部分では空の青色の反射を計算します。ここでも簡略化のため、スペキュラー成分は無視しています。表面が上向きになるほど、空からの影響を強く受けます。詳しくは[Sky light 空からの光](/sketching-with-math-and-quasi-physics/reading/rendering-process-overview/sky-light)をご覧ください。
+この部分では空の青色の反射を計算します。ここでも簡略化のため、スペキュラー成分は無視しています。表面が上向きになるほど、空からの影響を強く受けます。詳しくは[Sky light 空からの光](/sky-light)をご覧ください。
 
 ```jsx
 // Skylight
@@ -312,6 +313,6 @@ This is the final version of the demo with the camera motion added so that it lo
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="ZYEVRGN" data-user="kynd" data-preview="true"></p></div>
 
-To explore more, you can try other functions to create the terrain. Think about different functions and how you could compute the derivatives and the distance to advance the ray. You could also try mixing this method with an [SDF-based approach](/sketching-with-math-and-quasi-physics/projection-and-3d-rendering/3d-rendering-with-ray-marching) (hint: calculate the distance with both methods and select the one that is closer).
+To explore more, you can try other functions to create the terrain. Think about different functions and how you could compute the derivatives and the distance to advance the ray. You could also try mixing this method with an [SDF-based approach](/3d-rendering-with-ray-marching) (hint: calculate the distance with both methods and select the one that is closer).
 
-研究課題として、他の関数を使って地形を生成してみましょう。どのような関数を使えば微分値の値やレイを進める距離を求められるか考えてみましょう。また、この手法を[SDFベースのアプローチ](/sketching-with-math-and-quasi-physics/projection-and-3d-rendering/3d-rendering-with-ray-marching)と組み合わせることもできます（ヒント：両方の手法で距離を計算し、短い方を採用します）。
+研究課題として、他の関数を使って地形を生成してみましょう。どのような関数を使えば微分値の値やレイを進める距離を求められるか考えてみましょう。また、この手法を[SDFベースのアプローチ](/3d-rendering-with-ray-marching)と組み合わせることもできます（ヒント：両方の手法で距離を計算し、短い方を採用します）。

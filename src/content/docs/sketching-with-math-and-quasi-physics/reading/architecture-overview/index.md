@@ -1,5 +1,6 @@
 ---
 title: "Architecture Overview アーキテクチャの概要"
+slug: architecture-overview
 ---
 Let’s go over the architecture of the transformer.
 
@@ -87,4 +88,4 @@ On the next page, we'll take a close look at the attention mechanism, which is t
 
 次のページでは、アーキテクチャの中で最も重要で革新的な部分である、アテンション機構について詳しく見ていきます。
 
-[Architecture Overview アーキテクチャの概要](/sketching-with-math-and-quasi-physics/reading/architecture-overview)
+[Architecture Overview アーキテクチャの概要](/architecture-overview)

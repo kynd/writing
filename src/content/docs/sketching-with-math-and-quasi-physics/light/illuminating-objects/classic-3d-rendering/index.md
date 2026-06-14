@@ -1,5 +1,6 @@
 ---
 title: "Classic 3D Rendering 古典的 3D レンダリング"
+slug: classic-3d-rendering
 ---
 Let's take a look at classic 3D rendering techniques that have been around for ages. These are very simplified models so that they can be computed on less powerful computers compared to today's standards, but they are easy to learn for that very reason. And depending on what you want to make, the techniques on this page are still very useful.
 
@@ -201,9 +202,9 @@ c-16-25.333-24-45-24-59z"></path></svg></span></span></span></span></span></span
 
 <div></div>
 
-Multiplying the [intensity of the light](https://en.wikipedia.org/wiki/Luminous_intensity) obtained this way by the color of the light source and the color of the object determines the color of the visible surface (See also: [Spectrum and Cones](/sketching-with-math-and-quasi-physics/colors-and-numbers/spectrum-and-cones)). The colors of light sources and objects here are technically [spectral distributions](/sketching-with-math-and-quasi-physics/colors-and-numbers/spectrum-and-cones), but we can just use RGB values in computer graphics.
+Multiplying the [intensity of the light](https://en.wikipedia.org/wiki/Luminous_intensity) obtained this way by the color of the light source and the color of the object determines the color of the visible surface (See also: [Spectrum and Cones](/spectrum-and-cones)). The colors of light sources and objects here are technically [spectral distributions](/spectrum-and-cones), but we can just use RGB values in computer graphics.
 
-こうして求めた[光の強さ](https://en.wikipedia.org/wiki/Luminous_intensity)に光源の色と物体の色を掛け算すると目に見える表面の色が決まります（[スペクトルと錐体](/sketching-with-math-and-quasi-physics/colors-and-numbers/spectrum-and-cones)も参照）。ここでいう光源と物体の色は本来[スペクトル分布](/sketching-with-math-and-quasi-physics/colors-and-numbers/spectrum-and-cones)ですが、コンピュータグラフィクスではRGB値を用います。
+こうして求めた[光の強さ](https://en.wikipedia.org/wiki/Luminous_intensity)に光源の色と物体の色を掛け算すると目に見える表面の色が決まります（[スペクトルと錐体](/spectrum-and-cones)も参照）。ここでいう光源と物体の色は本来[スペクトル分布](/spectrum-and-cones)ですが、コンピュータグラフィクスではRGB値を用います。
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="eYLLmZq" data-user="kynd" data-preview="true"></p></div>
 
@@ -239,4 +240,4 @@ If there are multiple light sources, each of them can be calculated separately a
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="dyqqPWW" data-user="kynd" data-preview="true"></p></div>
 
-[(Somewhat more) Physically based rendering 物理的に（もう少し）正しいレンダリング](/sketching-with-math-and-quasi-physics/light/illuminating-objects/somewhat-more-physically-based-rendering)
+[(Somewhat more) Physically based rendering 物理的に（もう少し）正しいレンダリング](/somewhat-more-physically-based-rendering)

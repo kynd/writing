@@ -1,13 +1,14 @@
 ---
 type TreeNode = {
   label: string;
-  slug: string;
+  path: string; // hierarchical path for active-state detection
+  url: string;  // short slug for link hrefs
   children: Map<string, TreeNode>;
 };
 
 interface Props {
   tree: TreeNode;
-  currentSlug: string;
+  currentSlug: string; // hierarchical file path of current page
 }
 
 const { tree, currentSlug } = Astro.props;
@@ -22,8 +23,8 @@ function renderTree(node: TreeNode, depth = 0): string {
 
   return children.map((child) => {
     const hasChildren = child.children.size > 0;
-    const isActive = currentSlug === child.slug || currentSlug.startsWith(child.slug + '/');
-    const isCurrentPage = currentSlug === child.slug;
+    const isActive = currentSlug === child.path || currentSlug.startsWith(child.path + '/');
+    const isCurrentPage = currentSlug === child.path;
     const activeClass = isActive ? ' active' : '';
     const currentClass = isCurrentPage ? ' current' : '';
 
@@ -31,13 +32,13 @@ function renderTree(node: TreeNode, depth = 0): string {
       const inner = renderTree(child, depth + 1);
       return `
         <li class="si${activeClass}">
-          <button class="st${activeClass}" data-slug="${child.slug}" aria-expanded="${isActive}" style="padding-left:${indent}px">
-            <span class="sa">${isActive ? '−' : '+'}</span><a href="${base}/${child.slug}" class="sl${currentClass}">${child.label}</a>
+          <button class="st${activeClass}" data-path="${child.path}" aria-expanded="${isActive}" style="padding-left:${indent}px">
+            <span class="sa">${isActive ? '−' : '+'}</span><a href="${base}/${child.url}" class="sl${currentClass}">${child.label}</a>
           </button>
           <ul class="sc${isActive ? ' open' : ''}">${inner}</ul>
         </li>`;
     } else {
-      return `<li class="si${currentClass ? ' cur' : ''}"><a href="${base}/${child.slug}" class="sl${currentClass}" style="padding-left:${indent + 22}px">${child.label}</a></li>`;
+      return `<li class="si${currentClass ? ' cur' : ''}"><a href="${base}/${child.url}" class="sl${currentClass}" style="padding-left:${indent + 22}px">${child.label}</a></li>`;
     }
   }).join('');
 }
@@ -46,20 +47,20 @@ function renderTree(node: TreeNode, depth = 0): string {
 <ul class="sc open" style="padding-left:0">
   {[...tree.children.values()].map((child) => {
     const hasChildren = child.children.size > 0;
-    const isActive = currentSlug === child.slug || currentSlug.startsWith(child.slug + '/');
-    const isCurrentPage = currentSlug === child.slug;
+    const isActive = currentSlug === child.path || currentSlug.startsWith(child.path + '/');
+    const isCurrentPage = currentSlug === child.path;
 
     if (hasChildren) {
       return (
         <li class={`si${isActive ? ' active' : ''}`}>
           <button
             class={`st${isActive ? ' active' : ''}`}
-            data-slug={child.slug}
+            data-path={child.path}
             aria-expanded={String(isActive)}
             style="padding-left:14px"
           >
             <span class="sa">{isActive ? '−' : '+'}</span>
-            <a href={`${base}/${child.slug}`} class={`sl${isCurrentPage ? ' current' : ''}`}>{child.label}</a>
+            <a href={`${base}/${child.url}`} class={`sl${isCurrentPage ? ' current' : ''}`}>{child.label}</a>
           </button>
           <ul class={`sc${isActive ? ' open' : ''}`} set:html={renderTree(child, 1)} />
         </li>
@@ -67,7 +68,7 @@ function renderTree(node: TreeNode, depth = 0): string {
     } else {
       return (
         <li class={`si${isCurrentPage ? ' cur' : ''}`}>
-          <a href={`${base}/${child.slug}`} class={`sl${isCurrentPage ? ' current' : ''}`} style="padding-left:36px">{child.label}</a>
+          <a href={`${base}/${child.url}`} class={`sl${isCurrentPage ? ' current' : ''}`} style="padding-left:36px">{child.label}</a>
         </li>
       );
     }

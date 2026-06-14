@@ -1,5 +1,6 @@
 ---
 title: "Reading “Raymarching - Primitives”"
+slug: reading
 ---
 Shaders and 3D rendering have a very steep learning curve. There isn't a common or obvious way to build knowledge step by step, and it takes learning from multiple resources and examples. Shadertoy is one of the best resources with tons of cool demos with publicly available code. However, understanding this demo code can often be daunting. There are many techniques to grasp, and it's often difficult to understand what's happening in the code at first glance.
 
@@ -9,9 +10,9 @@ On this page, we take one of [the best classic demos by Inigo Quilez](https://ww
 
 このページでは、[Inigo Quilezによる古典的な名作デモの1つ](https://www.shadertoy.com/view/Xds3zN)を取り上げ、段階的に解説していきます。このデモは10年以上前のものですが、よく構造化されている上に様々な技術が含まれているので、レンダリングの品質を上げるため技術を学ぶには今でもとても良い素材です。
 
-To follow the discussions, you need to understand the basics of 3D rendering with ray marching. If you're unfamiliar with ray marching, the [Projection and 3D Rendering プロジェクションと3Dレンダリング](/sketching-with-math-and-quasi-physics/projection-and-3d-rendering) pages may be able to help.
+To follow the discussions, you need to understand the basics of 3D rendering with ray marching. If you're unfamiliar with ray marching, the [Projection and 3D Rendering プロジェクションと3Dレンダリング](/projection-and-3d-rendering) pages may be able to help.
 
-このページで取り上げる内容を追うには、レイマーチングによる3Dレンダリングの基礎を理解している必要があります。レイマーチングに馴染みがない場合は、[Projection and 3D Rendering プロジェクションと3Dレンダリング](/sketching-with-math-and-quasi-physics/projection-and-3d-rendering)のページが参考になるかもしれません。
+このページで取り上げる内容を追うには、レイマーチングによる3Dレンダリングの基礎を理解している必要があります。レイマーチングに馴染みがない場合は、[Projection and 3D Rendering プロジェクションと3Dレンダリング](/projection-and-3d-rendering)のページが参考になるかもしれません。
 
 > 
 > 
@@ -133,7 +134,7 @@ The `setCamera` function takes the positions of the camera and the target, and r
 mat3 cameraToWorld = setCamera(cameraPosition, cameraTarget);
 ```
 
-[Breakdown of the setCamera function setCamera関数の解説](/sketching-with-math-and-quasi-physics/reading/breakdown-of-the-setcamera-function-setcamera)
+[Breakdown of the setCamera function setCamera関数の解説](/breakdown-of-the-setcamera-function-setcamera)
 
 `normalize(vec3(p, focalLength))` is the direction of the ray in the camera space, and by transforming it with the `cameraToWorld` matrix above, it is converted to the direction in the world space.
 
@@ -148,11 +149,11 @@ vec3 rayDirection = cameraToWorld * normalize(vec3(p, focalLength));
 ## Additional ray directions for ray derivatives
 ## 微分のための追加のレイの方向
 
-Two additional rays are calculated for pixels just one pixel off in both x and y directions. These are used to calculate derivatives, meaning [the rate of change](/sketching-with-math-and-quasi-physics/calculus-for-makers/differentiation) in world space relative to the offset on the screen. We will examine this more closely on the [Drawing the checker pattern チェック模様を描く](/sketching-with-math-and-quasi-physics/reading/rendering-process-overview/drawing-the-checker-pattern) page.
+Two additional rays are calculated for pixels just one pixel off in both x and y directions. These are used to calculate derivatives, meaning [the rate of change](/differentiation) in world space relative to the offset on the screen. We will examine this more closely on the [Drawing the checker pattern チェック模様を描く](/drawing-the-checker-pattern) page.
 
-x方向とy方向に1ピクセルずつずらした2つの追加レイを計算します。これらは微分、つまり画面上の位置変化に対するワールド空間での位置の[変化率](/sketching-with-math-and-quasi-physics/calculus-for-makers/differentiation)を得るために使用します。この詳細については[Drawing the checker pattern チェック模様を描く](/sketching-with-math-and-quasi-physics/reading/rendering-process-overview/drawing-the-checker-pattern)のページでさらに深く掘り下げます。
+x方向とy方向に1ピクセルずつずらした2つの追加レイを計算します。これらは微分、つまり画面上の位置変化に対するワールド空間での位置の[変化率](/differentiation)を得るために使用します。この詳細については[Drawing the checker pattern チェック模様を描く](/drawing-the-checker-pattern)のページでさらに深く掘り下げます。
 
-[Differentiation 微分](/sketching-with-math-and-quasi-physics/calculus-for-makers/differentiation)
+[Differentiation 微分](/differentiation)
 
 ```glsl
 vec2 px = (2.0 * (fragCoord + vec2(1.0, 0.0)) - uResolution.xy) / uResolution.y;
@@ -190,4 +191,4 @@ Now that we’ve seen the overall structure, let’s dive into the main renderin
 
 全体の構造が把握できたので、メインのレンダリングプロセスに踏み込んでいきましょう。
 
-[Rendering Process Overview レンダリングプロセスの概要](/sketching-with-math-and-quasi-physics/reading/rendering-process-overview)
+[Rendering Process Overview レンダリングプロセスの概要](/rendering-process-overview)

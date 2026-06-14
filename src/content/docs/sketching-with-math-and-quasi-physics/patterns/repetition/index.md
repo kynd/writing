@@ -1,5 +1,6 @@
 ---
 title: "Repetition 繰り返し"
+slug: repetition
 ---
 At the basis of patterns is repetition. We recognize patterns because the same thing happens again and again. What "the same" means can vary to a great extent though. Sometimes it's as simple as counting numbers, 1, 2, 3, 1, 2, 3. If you think about how your days go, or seasons; no two days are exactly the same, but there is a clear sense of repetition and patterns. Some patterns are even more abstract. For example, many stories from folklore to Star Wars episodes follow similar patterns. Christopher Booker argued there are [s](https://en.wikipedia.org/wiki/The_Seven_Basic_Plots)[even basic plots in his book](https://en.wikipedia.org/wiki/The_Seven_Basic_Plots).
 
@@ -57,9 +58,9 @@ The demo below arranges different modulos in order from mod 1, mod 2, to mod 3, 
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="NWmbeQz" data-user="kynd" data-preview="true"></p></div>
 
-The demo from the [resolution page](/sketching-with-math-and-quasi-physics/resolution) uses modulo to create repeating drum patterns. Click on the canvas to toggle between different beats.
+The demo from the [resolution page](/resolution) uses modulo to create repeating drum patterns. Click on the canvas to toggle between different beats.
 
-[解像度のページ](/sketching-with-math-and-quasi-physics/resolution)のデモでは、ドラムパターンの繰り返すためにモジュロを使っています。キャンバスをクリックするとビートを切り替えることができます。
+[解像度のページ](/resolution)のデモでは、ドラムパターンの繰り返すためにモジュロを使っています。キャンバスをクリックするとビートを切り替えることができます。
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="jOJLoRP" data-user="kynd" data-preview="true"></p></div>
 
@@ -87,9 +88,9 @@ With this function, you can obtain a series of repeating numbers between 0 and 1
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="zYXwvGv" data-user="kynd" data-preview="true"></p></div>
 
-This may not very look interesting by itself, but the point is that you can use these repeating numbers as a basis to create more complex shapes and patterns. For example, you can apply different [easing function](/sketching-with-math-and-quasi-physics/interpolation-and-animation) to deform the shape of the slopes.
+This may not very look interesting by itself, but the point is that you can use these repeating numbers as a basis to create more complex shapes and patterns. For example, you can apply different [easing function](/interpolation-and-animation) to deform the shape of the slopes.
 
-これだけだと対して面白くないかもしれませんが、重要なのはこの繰り返しの数が、より複雑な形状やパターンを作る基として使えることです。例えば、様々な[イージング関数](/sketching-with-math-and-quasi-physics/interpolation-and-animation)を用いてスロープの形を変形できます。
+これだけだと対して面白くないかもしれませんが、重要なのはこの繰り返しの数が、より複雑な形状やパターンを作る基として使えることです。例えば、様々な[イージング関数](/interpolation-and-animation)を用いてスロープの形を変形できます。
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="poBPjbX" data-user="kynd" data-preview="true"></p></div>
 
@@ -116,7 +117,7 @@ Another way to create a repeating pattern of continuous numbers is to use the si
 
 連続した値の反復パターンを作るには、サイン関数を使うこともできます。これについては、波や音について調べる際に多くの例を取り上げました（波は自然界で見られるパターンの最も典型的な例の一つです）。
 
-[Sine waves and Additive Synthesis サイン波と加算合成](/sketching-with-math-and-quasi-physics/wave/sine-waves-and-additive-synthesis)
+[Sine waves and Additive Synthesis サイン波と加算合成](/sine-waves-and-additive-synthesis)
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="mwbWwJ" data-user="kynd" data-preview="true"></p></div>
 
@@ -158,4 +159,4 @@ On the next page, we will explore how to repeat shapes or divide a space into sh
 
 次のページでは、形を繰り返したり、空間を形状に分割してグラフィカルなパターンを作成する方法について見ていきます。
 
-[Tiling タイリング](/sketching-with-math-and-quasi-physics/patterns/tiling)
+[Tiling タイリング](/tiling)

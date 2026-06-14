@@ -1,5 +1,6 @@
 ---
 title: "Various Color Models 様々なカラーモデル"
+slug: various-color-models
 ---
 ## RGB on devices
 ## デバイス上でのRGB
@@ -161,9 +162,9 @@ HSVは虹色のカラーホイールを描くのに便利ですが、マンセ�
 
 # CIE LAB (L\*a\*b\*)
 
-CIE LAB is a color space established in 1976 by CIE that has defined [XYZ color space](/sketching-with-math-and-quasi-physics/colors-and-numbers/cie-color-spaces), and like XYZ, it is device-independent. CIE LAB describes colors in terms of brightness (L\*) and red/green (a\*) and yellow/blue (b\*) hue values.
+CIE LAB is a color space established in 1976 by CIE that has defined [XYZ color space](/cie-color-spaces), and like XYZ, it is device-independent. CIE LAB describes colors in terms of brightness (L\*) and red/green (a\*) and yellow/blue (b\*) hue values.
 
-CIE LABは[XYZ色空間](/sketching-with-math-and-quasi-physics/colors-and-numbers/cie-color-spaces)を作ったCIEによって1976年に制定された色空間です。XYZと同じくデバイスに依存しない色空間で、明るさ (L\*) と赤/緑 (a\*) と黄/青 (b\*) の色相値で色を記述します。
+CIE LABは[XYZ色空間](/cie-color-spaces)を作ったCIEによって1976年に制定された色空間です。XYZと同じくデバイスに依存しない色空間で、明るさ (L\*) と赤/緑 (a\*) と黄/青 (b\*) の色相値で色を記述します。
 
 Like the Munsell color system, the L\* values correspond well to the brightness that humans see. It is also perceptually more even, i.e., changes in color values match well with the changes in color as perceived by humans.
 
@@ -187,7 +188,7 @@ CIELABは画面で表示できる範囲や人間が知覚できる範囲を超�
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="dPbJbpb" data-user="kynd" data-preview="true"></p></div>
 
-[Computing Colors 色を計算する](/sketching-with-math-and-quasi-physics/colors-and-numbers/computing-colors)
+[Computing Colors 色を計算する](/computing-colors)
 
 # OKLCH
 

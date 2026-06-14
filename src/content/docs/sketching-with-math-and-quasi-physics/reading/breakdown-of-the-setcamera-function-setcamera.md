@@ -1,5 +1,6 @@
 ---
 title: "Breakdown of the setCamera function setCamera関数の解説"
+slug: breakdown-of-the-setcamera-function-setcamera
 ---
 The `setCamera` function is designed to create a [transformation matrix](https://en.wikipedia.org/wiki/Transformation_matrix) that translates coordinates from **camera space** to **world space**.
 

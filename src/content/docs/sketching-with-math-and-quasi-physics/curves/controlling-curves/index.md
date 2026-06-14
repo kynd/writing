@@ -1,5 +1,6 @@
 ---
 title: "Controlling curves 曲線のコントロール"
+slug: controlling-curves
 ---
 We have explored different ways of defining and drawing curves, but we haven't discussed the quality of curves much. Curves can have various visual characteristics. For example, some curves might look more organic and natural, while others might appear more geometric and mechanical. How can we create these different looks of curves?
 
@@ -8,9 +9,9 @@ We have explored different ways of defining and drawing curves, but we haven't d
 # Cubic class
 # Cubic クラス
 
-For most of the examples on this page, we will use the same `Cubic` class that represents a [Cubic Bézier curve](/sketching-with-math-and-quasi-physics/curves/be) we discussed previously as a way to define curves as a baseline. For sketching purposes, where precision is not too important, you can combine multiple cubic Bézier curves to approximate any curve.
+For most of the examples on this page, we will use the same `Cubic` class that represents a [Cubic Bézier curve](/be) we discussed previously as a way to define curves as a baseline. For sketching purposes, where precision is not too important, you can combine multiple cubic Bézier curves to approximate any curve.
 
-このページのほとんどの例では、すでに触れた、[3次ベジェ曲線](/sketching-with-math-and-quasi-physics/curves/be)を表す `Cubic` クラスを曲線を定義する方法の基礎として使います。スケッチ目的で精度がそれほど重要でない場面では、複数の3次ベジェ曲線を組み合わせれば任意の曲線を近似できます。
+このページのほとんどの例では、すでに触れた、[3次ベジェ曲線](/be)を表す `Cubic` クラスを曲線を定義する方法の基礎として使います。スケッチ目的で精度がそれほど重要でない場面では、複数の3次ベジェ曲線を組み合わせれば任意の曲線を近似できます。
 
 ```jsx
 class Cubic {
@@ -55,9 +56,9 @@ Bézier curves give you detailed control using control points, but creating a co
 ## Continuity of Curves
 ## 曲線の連続性
 
-To understand what the natural spline is, let’s briefly discuss what being smooth means. To measure how smooth a curve is in a mathematical sense, you can take the [derivative](/sketching-with-math-and-quasi-physics/calculus-for-makers/differentiation) of the function that represents the curve. The first derivative shows the rate of change of position, and the second derivative shows the rate of change of the rate of change.
+To understand what the natural spline is, let’s briefly discuss what being smooth means. To measure how smooth a curve is in a mathematical sense, you can take the [derivative](/differentiation) of the function that represents the curve. The first derivative shows the rate of change of position, and the second derivative shows the rate of change of the rate of change.
 
-ナチュラルスプラインが何なのかを理解するために、「滑らかである」ということの意味について簡単に議論しましょう。曲線の滑らかさを数学的に測るには、その曲線を表す関数の[微分](/sketching-with-math-and-quasi-physics/calculus-for-makers/differentiation)を取ることができます。最初の微分は位置の変化率を示し、2度目の微分はその変化率の変化を示します。このようにすると、異なるレベルの連続性を考えることができます。
+ナチュラルスプラインが何なのかを理解するために、「滑らかである」ということの意味について簡単に議論しましょう。曲線の滑らかさを数学的に測るには、その曲線を表す関数の[微分](/differentiation)を取ることができます。最初の微分は位置の変化率を示し、2度目の微分はその変化率の変化を示します。このようにすると、異なるレベルの連続性を考えることができます。
 
 -   <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>C</mi><mn>0</mn></msup></mrow><annotation encoding="application/x-tex">C^0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span></span></span></span></span></span></span></span> **Continuity**: The curve itself is continuous. There are no breaks or gaps. You can imagine a line without lifting your pen. There is no gap in this line, but there can be sharp corners and turns that may not appear smooth.
 
@@ -179,9 +180,9 @@ Curves are a vast and fascinating topic with infinite ways to draw them. We've c
 
 曲線は、広大で魅力的なテーマで、その描き方も無数にあります。ここでは、いくつかの数学的な方法について説明しました。さらに詳しく知りたい方は、D3.jsの関数がとても良い出発点になるでしょう。コードはGitHubで簡単にアクセスでき、比較的理解しやすくなっています。
 
-But curves aren't just about math. They're also about aesthetics and functionality. Artists and designers have spent so much effort creating curves that are visually or tactually pleasing or express various ideas. Studying great works can teach us a lot about curves. For instance, you might be interested in how [Raymond Loewy’s streamlined design](https://www.google.com/search?&q=Raymond+Loewy+design&udm=2) reflected the fascination with progress and efficiency of the era, or you might want to explore how to emulate [Ellsworth Kelly’s soft rounded shapes](https://www.google.com/search?q=Ellsworth+kelly&udm=2) with code. You could also explore topics like the design of roads and roller coasters, aerodynamics, or use of [parametric approach](/sketching-with-math-and-quasi-physics/curves/parametric-approaches) in architecture and industrial design.
+But curves aren't just about math. They're also about aesthetics and functionality. Artists and designers have spent so much effort creating curves that are visually or tactually pleasing or express various ideas. Studying great works can teach us a lot about curves. For instance, you might be interested in how [Raymond Loewy’s streamlined design](https://www.google.com/search?&q=Raymond+Loewy+design&udm=2) reflected the fascination with progress and efficiency of the era, or you might want to explore how to emulate [Ellsworth Kelly’s soft rounded shapes](https://www.google.com/search?q=Ellsworth+kelly&udm=2) with code. You could also explore topics like the design of roads and roller coasters, aerodynamics, or use of [parametric approach](/parametric-approaches) in architecture and industrial design.
 
-しかし数学だけが曲線ではありません。曲線は美観や機能性にも関わっています。アーティストやデザイナーは、視覚や触覚に訴えたり、さまざまなアイデアを表現するための曲線を得るために、多くの努力を払ってきました。すぐれた作品について研究すれば、曲線について多くを学べます。例えば、[レイモンド・ローウィの流線型デザイン](https://www.google.com/search?&q=Raymond+Loewy+design&udm=2)がその時代の進歩や効率性へ憧れをどう反映しているか考えたり、[エルスワース・ケリーの柔らかい丸みを帯びた形](https://www.google.com/search?q=Ellsworth+kelly&udm=2)をコードで模倣する方法を探しても良いでしょう。道路やジェットコースターのデザイン、空気力学、あるいは建築や工業デザインにおける[パラメトリックなアプローチ](/sketching-with-math-and-quasi-physics/curves/parametric-approaches)の使われ方などについて調べても面白いでしょう。
+しかし数学だけが曲線ではありません。曲線は美観や機能性にも関わっています。アーティストやデザイナーは、視覚や触覚に訴えたり、さまざまなアイデアを表現するための曲線を得るために、多くの努力を払ってきました。すぐれた作品について研究すれば、曲線について多くを学べます。例えば、[レイモンド・ローウィの流線型デザイン](https://www.google.com/search?&q=Raymond+Loewy+design&udm=2)がその時代の進歩や効率性へ憧れをどう反映しているか考えたり、[エルスワース・ケリーの柔らかい丸みを帯びた形](https://www.google.com/search?q=Ellsworth+kelly&udm=2)をコードで模倣する方法を探しても良いでしょう。道路やジェットコースターのデザイン、空気力学、あるいは建築や工業デザインにおける[パラメトリックなアプローチ](/parametric-approaches)の使われ方などについて調べても面白いでしょう。
 
 The video below is a showcase of brushstrokes made with various methods, including the techniques we discussed on this page.
 

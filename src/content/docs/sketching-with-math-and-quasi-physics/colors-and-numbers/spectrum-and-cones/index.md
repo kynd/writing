@@ -1,5 +1,6 @@
 ---
 title: "Spectrum and Cones スペクトルと錐体"
+slug: spectrum-and-cones
 ---
 # Spectral distribution
 # スペクトル分布
@@ -72,4 +73,4 @@ The figure above also shows that the ranges of M- and L-cones overlap a lot. Sin
 
 <table class="matrix-table"><tbody><tr><td>Blue</td><td>(0, 0, 1)</td><td>approximately 450nm</td></tr><tr><td>Green</td><td>(0, 1, 0)</td><td>approximately 550nm</td></tr><tr><td>Red</td><td>(1, 0, 0)</td><td>approximately 700nm</td></tr></tbody></table>
 
-[CIE Color spaces CIE色空間](/sketching-with-math-and-quasi-physics/colors-and-numbers/cie-color-spaces)
+[CIE Color spaces CIE色空間](/cie-color-spaces)

@@ -1,5 +1,6 @@
 ---
 title: "Specular reflections and diffuse light 鏡面反射と拡散光"
+slug: specular-reflections-and-diffuse-light
 ---
 Except for transparent materials such as water and glass, we mainly see light bouncing off the surface of objects. This phenomenon can be divided into two main categories: specular and diffuse, and materials can be divided into two categories: conductors and dielectrics.
 
@@ -36,7 +37,7 @@ Conductor has no diffuse component, only specular. Also, the specular in the con
 
 Because of the classic CG technique described on the next page, specular is sometimes thought to represent bright highlights but it technically refers to the directly reflected component of light. So in the image above, all reflections on the sphere are specular. The reflection will look blurry on an unpolished surface as the light will be reflected by fine irregularities, but this is also **specular reflection** and is different from **diffuse light** that we will discuss next.
 
-次のページで説明する[古典的なCG技法](/sketching-with-math-and-quasi-physics/light/illuminating-objects/classic-3d-rendering)のせいでスペキュラーは明るいハイライトを表現するものと思われていることがありますが、より正確には物体に当たった光が直接反射した成分を指すので、上の画像では球体に映った反射全てがスペキュラーです。表面が滑らかでなければ光は細かな凹凸に反射してぼやけて見えることになりますが、これも鏡面反射=スペキュラーで、次に見るディフーズによる拡散光とは別物です。
+次のページで説明する[古典的なCG技法](/classic-3d-rendering)のせいでスペキュラーは明るいハイライトを表現するものと思われていることがありますが、より正確には物体に当たった光が直接反射した成分を指すので、上の画像では球体に映った反射全てがスペキュラーです。表面が滑らかでなければ光は細かな凹凸に反射してぼやけて見えることになりますが、これも鏡面反射=スペキュラーで、次に見るディフーズによる拡散光とは別物です。
 
 ![](/images/a-gold-sphere-with-dull-surface-floating-in-the-sky-by-sta.jpeg "50")
 
@@ -63,4 +64,4 @@ Like metal, plastic also reflects light from the entire surrounding area as spec
 > 
 > 人間の肌のように半透明な物体は中に入った光がより深く複雑な経路を通ることになります。この効果は[Sub Surface Scattering](https://en.wikipedia.org/wiki/Subsurface_scattering)といった技術によって再現されます。
 
-[Classic 3D Rendering 古典的 3D レンダリング](/sketching-with-math-and-quasi-physics/light/illuminating-objects/classic-3d-rendering)
+[Classic 3D Rendering 古典的 3D レンダリング](/classic-3d-rendering)

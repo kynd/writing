@@ -1,5 +1,6 @@
 ---
 title: "Category Theory and Functional Programming 圏論と関数型プログラミング"
+slug: category-theory-and-functional-programming
 ---
 You may have noticed that most of the code examples so far are examples of functional programming (FP). In fact, functional programming has evolved in close connection with category theory (or so I've read).
 
@@ -139,4 +140,4 @@ The next page tackles this concept to conclude the series.
 
 次のページではこの概念に挑戦して、シリーズを締めくくります。
 
-[Monads モナド](/category-theory-and-code/monads)
+[Monads モナド](/monads)

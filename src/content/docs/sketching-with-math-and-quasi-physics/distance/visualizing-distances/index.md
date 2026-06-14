@@ -1,5 +1,6 @@
 ---
 title: "Visualizing Distances 距離を視覚化する"
+slug: visualizing-distances
 ---
 Let's visualize distances using GLSL. A black-and-white stripe pattern like a contour line is drawn based on the distance from the center of the screen. I will leave the technical details of GLSL to [the Book of Shaders](https://thebookofshaders.com/), but let’s pay attention only to the equation that defines the distance.
 
@@ -99,4 +100,4 @@ An example with Chebyshev distance instead of Euclidean distance
 
 <div class="instagram-wrap"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/B6wROGen8K2/" data-instgrm-version="14" style="width:100%;max-width:540px;margin:0;border:none;border-radius:4px;padding:0;"></blockquote></div>
 
-[Signed distance functions 符号付き距離関数](/sketching-with-math-and-quasi-physics/distance/signed-distance-functions)
+[Signed distance functions 符号付き距離関数](/signed-distance-functions)

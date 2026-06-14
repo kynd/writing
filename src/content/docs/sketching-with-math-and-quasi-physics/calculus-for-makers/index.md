@@ -1,5 +1,6 @@
 ---
 title: "Calculus for Makers 作るための微積分"
+slug: calculus-for-makers
 ---
 In "making" things, be it cool graphics, simulations, or tangible objects, mathematical concepts often play crucial roles. However, when you encounter topics like differentiation, integration, and diffusion, they might seem daunting, bringing back memories of complex equations and rigorous proofs. Seriously, when I see those formulas on the Wikipedia pages, they are just overwhelming.
 
@@ -20,7 +21,7 @@ The summation represented by Sigma ($\\sum$) is essentially a repetition of addi
 
 シグマ (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∑</mo></mrow><annotation encoding="application/x-tex">∑</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mop op-symbol small-op" style="position:relative;top:0em;">∑</span></span></span></span>) で表される総和は要は足し算の繰り返しで、コードでは大抵単純なループを使って表現できます。総和は下で取り上げる積分や、他にもフーリエ級数などを近似する時に活躍します。
 
-[Summation 総和](/sketching-with-math-and-quasi-physics/calculus-for-makers/summation)
+[Summation 総和](/summation)
 
 # Differentiation
 # 微分
@@ -29,7 +30,7 @@ Differentiation is a very important concept in dealing with motion, shape, and s
 
 微分とはある関数の変化の割合、グラフの傾きを求めることで、動きや形を扱ったり物理のシミュレーションをする上で非常に重要な概念です。コンピュータで微分を扱うときには厳密な数式の変形ではなく、「数値微分」という数値の差を用いた近似の方が実用的なことが多くあります。微分を見たら引き算にしてしまえ、というのは数学の本には書いてないけれど、実は様々な場所で使われている（多分あなたも知らずに既に使っている）重要なテクニックです。
 
-[Differentiation 微分](/sketching-with-math-and-quasi-physics/calculus-for-makers/differentiation)
+[Differentiation 微分](/differentiation)
 
 # Integration
 # 積分
@@ -38,7 +39,7 @@ Integration is the inverse of differentiation, where it calculates the result fr
 
 積分は微分の逆の概念で、変化の割合からその結果、例えば速度を表す関数から一定時間分の位置の変化を求めることです。積分は総和を使って足し算のループとして近似することができます。ゲームやアニメーションでよく使われるオイラー法（フレームごとに速度を位置に足し合わせる手法）も足し算の繰り返しによる積分の近似と考えることができます。
 
-[Integration 積分](/sketching-with-math-and-quasi-physics/calculus-for-makers/integration)
+[Integration 積分](/integration)
 
 # Diffusion
 # 拡散
@@ -47,4 +48,4 @@ Diffusion is the concept that explains how a drop of food coloring spreads in a 
 
 拡散とは、食紅が水に広がっていく様子、部屋中に香水の匂いが充満していく様子、素材内で熱が伝っていく様子などを、不均一に分布した何かが時間の経過とともに均等に広っていく状況を説明する概念で流体のシミュレーションなどでも使われます。拡散は微分を使って定義され、数式で見ると非常にややこしく見えがちなのですが、隣り合う値同士を比べるだけの単純な計算で近似することができます。
 
-[Diffusion 拡散](/sketching-with-math-and-quasi-physics/calculus-for-makers/diffusion)
+[Diffusion 拡散](/diffusion)

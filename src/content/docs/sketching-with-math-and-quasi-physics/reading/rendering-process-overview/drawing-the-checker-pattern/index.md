@@ -1,5 +1,6 @@
 ---
 title: "Drawing the checker pattern チェック模様を描く"
+slug: drawing-the-checker-pattern
 ---
 ```glsl
 // Check if the hit was on a plane and calculate texture-based color.
@@ -48,29 +49,23 @@ To approximate this, we use the derivative of the pixel position and correspondi
 
 > 
 > 
-> For the derivative functions, [https://www.aclockworkberry.com/shader-derivative-functions/](https://www.aclockworkberry.com/shader-derivative-functions/) is a great intro.
+> For the derivative functions, [An introduction to shader derivative functions](https://www.aclockworkberry.com/shader-derivative-functions/) is a great intro.
 > 
-> 微分関数については、[https://www.aclockworkberry.com/shader-derivative-functions/](https://www.aclockworkberry.com/shader-derivative-functions/) がとても良い導入になります。
+> 微分関数については、[An introduction to shader derivative functions](https://www.aclockworkberry.com/shader-derivative-functions/) がとても良い導入になります。
 
 To roughly understand what the code is doing, think in this way:
 
+- The difference between `rayDirection` and `rayDirectionXOffset` (or `YOffset`) represents the change in ray directions from one pixel to the next.
+- To account for perspective, divide the ray directions by the y-components. A smaller y value indicates the camera is looking further away, so a slight directional difference can translate to a significant difference in world space.
+- Multiplying by the `cameraPosition.y` factors in the distance between the camera and the floor. Similar to point 2, the further the camera, the greater the effect of directional differences becomes. `pixelFootprintX` and `pixelFootprintY` are approximations of the offsets in world space corresponding to the 1-pixel offsets in screen space.
+- Pass the `intersectionPoint` and these offsets to the `checkersGradBox` (with a scaling based on how big you want the grid to be), and get a float value that represents which color the pixel belongs to, ranging from zero to one.
+
 コードの動作を大まかに理解するには、以下のように考えてみましょう。
 
-1.  The difference between `rayDirection` and `rayDirectionXOffset` (or `YOffset`) represents the change in ray directions from one pixel to the next.
-
-2.  To account for perspective, divide the ray directions by the y-components. A smaller y value indicates the camera is looking further away, so a slight directional difference can translate to a significant difference in world space.
-
-3.  Multiplying by the `cameraPosition.y` factors in the distance between the camera and the floor. Similar to point 2, the further the camera, the greater the effect of directional differences becomes. `pixelFootprintX` and `pixelFootprintY` are approximations of the offsets in world space corresponding to the 1-pixel offsets in screen space.
-
-4.  Pass the `intersectionPoint` and these offsets to the `checkersGradBox` (with a scaling based on how big you want the grid to be), and get a float value that represents which color the pixel belongs to, ranging from zero to one.
-
-1.  `rayDirection`と`rayDirectionXOffset`（または`YOffset`）の差は、隣接するピクセル間のレイの方向の変化を表します。
-
-2.  遠近法を考慮するため、レイの向きy成分で割ります。yの値が小さいほどカメラがより遠くを見ていることを示し、わずかな向きの違いが3D空間では大きな違いになります。
-
-3.  カメラと床の間の距離を考慮するために、`cameraPosition.y`を掛けます。上記と同じく、カメラが遠くなるほど、方向の違いの影響が大きくなります。`pixelFootprintX` と `pixelFootprintY` がスクリーン上での1ピクセルの移動に対応するワールド空間での移動距離の近似になります。
-
-4.  `intersectionPoint`とこれらのオフセット値を`checkersGradBox`に渡して、ピクセルがどの色に属するかを表す0から1の範囲の浮動小数点値を取得します。（渡す前に、欲しいグリッドの大きさに合わせてスケーリングします）。
+- `rayDirection`と`rayDirectionXOffset`（または`YOffset`）の差は、隣接するピクセル間のレイの方向の変化を表します。
+- 遠近法を考慮するため、レイの向きy成分で割ります。yの値が小さいほどカメラがより遠くを見ていることを示し、わずかな向きの違いが3D空間では大きな違いになります。
+- カメラと床の間の距離を考慮するために、`cameraPosition.y`を掛けます。上記と同じく、カメラが遠くなるほど、方向の違いの影響が大きくなります。`pixelFootprintX` と `pixelFootprintY` がスクリーン上での1ピクセルの移動に対応するワールド空間での移動距離の近似になります。
+- `intersectionPoint`とこれらのオフセット値を`checkersGradBox`に渡して、ピクセルがどの色に属するかを表す0から1の範囲の浮動小数点値を取得します。（渡す前に、欲しいグリッドの大きさに合わせてスケーリングします）。
 
 For the content of the `checkersGradBox` function, the original author of the shader, Inigo Quilez, has his own article about creating a checkerboard pattern. See this article for the details of the math.
 
@@ -78,4 +73,4 @@ For the content of the `checkersGradBox` function, the original author of the sh
 
 <div class="bookmark-card"><a href="https://iquilezles.org/articles/checkerfiltering/" target="_blank" rel="noopener" class="bookmark-link"><div class="bookmark-info"><div class="bookmark-title">Inigo Quilez</div><div class="bookmark-description">Articles on computer graphics, math and art</div><div class="bookmark-url"><img src="https://iquilezles.org/favicon.png" class="bookmark-favicon" alt="" onerror="this.style.display='none'"><span>https://iquilezles.org/articles/checkerfiltering/</span></div></div><img src="https://iquilezles.org/logo.jpg" class="bookmark-image" alt="" loading="lazy" onerror="this.style.display='none'"></a></div>
 
-[Rendering Process Overview レンダリングプロセスの概要](/sketching-with-math-and-quasi-physics/reading/rendering-process-overview)
+[Rendering Process Overview レンダリングプロセスの概要](/rendering-process-overview)

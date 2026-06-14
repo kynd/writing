@@ -1,5 +1,6 @@
 ---
 title: "Geometric Drawings 幾何学ドローイング"
+slug: geometric-drawings
 ---
 Geometric drawings, especially those made using only basic tools such as rulers and compasses, are not only powerful as a means of proof or explanation, but also have a unique charm for just watching and admiring.
 
@@ -19,9 +20,9 @@ HTML Canvasを始めとする様々な環境では簡単に線分や円を描く
 
 > 
 > 
-> This page deals only with the two-dimensional [Euclidean space](/sketching-with-math-and-quasi-physics/distance). If you don’t understand this sentence, you can safely ignore it for now.  
+> This page deals only with the two-dimensional [Euclidean space](/distance). If you don’t understand this sentence, you can safely ignore it for now.  
 >   
-> このページでは2次元の[ユークリッド空間](/sketching-with-math-and-quasi-physics/distance)だけを扱います。この注釈の意味が分からなければ無視して大丈夫です。
+> このページでは2次元の[ユークリッド空間](/distance)だけを扱います。この注釈の意味が分からなければ無視して大丈夫です。
 
 # Straight lines
 # 直線

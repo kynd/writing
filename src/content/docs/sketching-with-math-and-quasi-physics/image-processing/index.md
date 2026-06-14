@@ -1,5 +1,6 @@
 ---
 title: "Image Processing 画像処理"
+slug: image-processing
 ---
 Image processing is the technique used to manipulate digital images to improve, modify, or extract information from them. Learning about image processing can help you understand what tools like Adobe Photoshop are doing, enabling you to replicate or create your own effects. This knowledge also serves as a basis for understanding more advanced technologies, such as image recognition or generation.
 
@@ -12,7 +13,7 @@ Color processing involves manipulating the color channels of an image. This incl
 
 カラープロセッシングでは、色のチャンネルを操作して色のバランスやコントラストの調整、カラー画像をモノクロに変換するといった処理を行います。
 
-[Color Processing カラープロセッシング](/sketching-with-math-and-quasi-physics/image-processing/color-processing)
+[Color Processing カラープロセッシング](/color-processing)
 
 # Convolution
 # コンボリューション
@@ -21,7 +22,7 @@ Convolution is an operation used in image processing and machine learning that i
 
 コンボリューション（畳み込み）は、画像処理やマシンラーニングで用いられる演算で、フィルタ（カーネル）を元になるデータ、画像の場合はピクセルの配列に適用することで実行されます。コンボリューションはぼかし、シャープ、エッジ検出など、画像処理で幅広く使用されます。
 
-[Convolution コンボリューション](/sketching-with-math-and-quasi-physics/image-processing/convolution)
+[Convolution コンボリューション](/convolution)
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="wvYwjwe" data-user="kynd" data-preview="true"></p></div>
 
@@ -31,6 +32,6 @@ Deformation is the process of transforming an image by changing its shape or per
 
 変形とは画像の形状や視点を変えることによって画像を変換するプロセスで、カメラレンズによって引き起こされる歪みを直すといった画像補正や、画像に特殊効果を加えるためによく使用されます。またこのページでは、画像処理を反復的に適用してより複雑で面白い効果を作り出すフィードバックも扱います。
 
-[Deformation and Feedback 変形とフィードバック](/sketching-with-math-and-quasi-physics/image-processing/deformation-and-feedback)
+[Deformation and Feedback 変形とフィードバック](/deformation-and-feedback)
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="xxyPagE" data-user="kynd" data-preview="true"></p></div>

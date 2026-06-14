@@ -1,5 +1,6 @@
 ---
 title: "Interpolation and Animation 補間とアニメーション"
+slug: interpolation-and-animation
 ---
 # Linear Interpolation
 # 線形補完

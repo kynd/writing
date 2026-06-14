@@ -1,5 +1,6 @@
 ---
 title: "Differentiation 微分"
+slug: differentiation
 ---
 Differentiation is a useful tool for determining how fast something is changing, which is represented by the rate of change of a function or the slope of a graph. It's key when you're looking at movements, shapes, or physics simulations. That rate of change, or a function that stands for it, is what we call a "**derivative**". The process of finding the derivative is called "differentiation".
 
@@ -148,9 +149,9 @@ You can decide the size of <span class="katex"><span class="katex-mathml"><math 
 
 hの大きさは好きに決めて構いません。マイナスでも大丈夫です。フレームごとの作っているのであれば1フレーム先や前の値を考えても良いでしょう。この場合、数値微分は単純にフレーム間の値の差になります。前のフレームから10px動いていれば速度は10px/フレーム、となります。秒速を求めたければ、hはフレームごとの経過時間を秒で表したものにすれば良いでしょう。
 
-The following demo applies this concept to [the easing functions from the Interpolation and Animation page](/sketching-with-math-and-quasi-physics/interpolation-and-animation). The original function is on the left, the derivative is in the center, and the second derivative (derivative of the derivative) is on the right.. You can think of them as position, velocity, and acceleration.
+The following demo applies this concept to [the easing functions from the Interpolation and Animation page](/interpolation-and-animation). The original function is on the left, the derivative is in the center, and the second derivative (derivative of the derivative) is on the right.. You can think of them as position, velocity, and acceleration.
 
-下のデモでは、補間とアニメーションのページで取り上げた[イージング関数](/sketching-with-math-and-quasi-physics/interpolation-and-animation)にこの手法を適用します。オリジナルの関数が左側、一階の微分が中央、二階の微分（微分の微分）が右側です。これらはそれぞれ位置、速度、加速度に相当します。
+下のデモでは、補間とアニメーションのページで取り上げた[イージング関数](/interpolation-and-animation)にこの手法を適用します。オリジナルの関数が左側、一階の微分が中央、二階の微分（微分の微分）が右側です。これらはそれぞれ位置、速度、加速度に相当します。
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="XWoMJRV" data-user="kynd" data-preview="true"></p></div>
 
@@ -314,4 +315,4 @@ The concept of the gradient is very useful in simulating many real-world phenome
 
 勾配の概念は、多くの現実世界の現象をシミュレートするのに非常に便利で、またAIのアルゴリズムにおいても重要な役割を果たしています。ほとんどのAIアルゴリズムは、膨大な数のパラメータを持った巨大な多変数関数に基づいています。勾配は、答えの間違いを減らすための最適な方向を見つけて、これらのパラメータを徐々に最適化するために使われます。
 
-[Integration 積分](/sketching-with-math-and-quasi-physics/calculus-for-makers/integration)
+[Integration 積分](/integration)

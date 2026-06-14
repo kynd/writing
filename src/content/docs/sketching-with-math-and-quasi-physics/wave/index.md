@@ -1,5 +1,6 @@
 ---
 title: "Wave 波"
+slug: wave
 ---
 Waves are everywhere. I suppose the word originally meant just waves on the water surface, like the ocean or a lake. However, there are many other things that exhibit characteristics of waves, such as sound, earthquakes, electromagnetic waves, and light. In terms of design and graphics, wavy shapes are one of the most common patterns and are often seen in fashion, architecture, and various art and craft pieces.
 
@@ -38,12 +39,12 @@ The maximum height of the wave, <span class="katex"><span class="katex-mathml"><
 
 図の<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">a</span></span></span></span>、波の最大の振れ幅は振幅（amplitude）、<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">b</span></span></span></span>の長さは波長（wavelength）と呼ばれます。横軸が時間であれば<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">b</span></span></span></span>は1回の振動にかかる時間、周期（period）になります。1秒間の振動の回数が周波数（frequency）で、周期をTとすると、これは1秒を周期で割ったもの <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>=</mo><mn>1</mn><mi mathvariant="normal">/</mi><mi>T</mi></mrow><annotation encoding="application/x-tex">f = 1 / T</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1/</span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span></span></span></span> になります。
 
-[Direction of the waves 波の向き](/sketching-with-math-and-quasi-physics/wave/direction-of-the-waves)
+[Direction of the waves 波の向き](/direction-of-the-waves)
 
-[Vibration and Propagation 振動と伝搬](/sketching-with-math-and-quasi-physics/wave/vibration-and-propagation)
+[Vibration and Propagation 振動と伝搬](/vibration-and-propagation)
 
-[Sine waves and Additive Synthesis サイン波と加算合成](/sketching-with-math-and-quasi-physics/wave/sine-waves-and-additive-synthesis)
+[Sine waves and Additive Synthesis サイン波と加算合成](/sine-waves-and-additive-synthesis)
 
-[Pitch and Frequency 音高と周波数](/sketching-with-math-and-quasi-physics/wave/pitch-and-frequency)
+[Pitch and Frequency 音高と周波数](/pitch-and-frequency)
 
-[Sound visualization 音の視覚化](/sketching-with-math-and-quasi-physics/wave/sound-visualization)
+[Sound visualization 音の視覚化](/sound-visualization)

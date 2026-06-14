@@ -1,5 +1,6 @@
 ---
 title: "Continuous Mapping 連続的な写像"
+slug: continuous-mapping
 ---
 # Linear mapping
 # 線形写像
@@ -109,7 +110,7 @@ Of course, mapping can be non-linear, meaning the values don't change proportion
 
 もちろん、写像は非線形、つまり、値の比例による一定の変化ではなく、加速したり減速したりするような曲線的な変化である場合もあります。
 
-[Easing functions](/sketching-with-math-and-quasi-physics/interpolation-and-animation) are good examples. Let's update the map function. Try dragging the slider again and see how it feels different. The circle goes faster in the middle and slower around the edges.
+[Easing functions](/interpolation-and-animation) are good examples. Let's update the map function. Try dragging the slider again and see how it feels different. The circle goes faster in the middle and slower around the edges.
 
 イージング関数はその良い例です。写像関数を書き換えてみましょう。下のスライダーを操作すると、動きの感じ方が違うことが分かります。円は中央部分で速く、端に近づくにつれてゆっくりと動きます。
 
@@ -331,7 +332,7 @@ Using the precomputed weights, `interpolate()` returns the interpolated value fo
 > 
 > `solveLinearSystem()`関数はピボット選択を用いたガウスの消去法によって連立一次方程式を解きます。
 > 
-> [Gaussian Elimination ガウスの消去法](/sketching-with-math-and-quasi-physics/mapping/continuous-mapping/gaussian-elimination)
+> [Gaussian Elimination ガウスの消去法](/gaussian-elimination)
 
 > 
 > 

@@ -1,9 +1,10 @@
 ---
 title: "Mixing Colors 色を混ぜる"
+slug: mixing-colors
 ---
-We briefly discussed how to manipulate colors in [Computing Colors](/sketching-with-math-and-quasi-physics/colors-and-numbers/computing-colors). On this page, we will look more into the different ways of what we do quite often in making pictures and graphics - mixing colors. With code, we can emulate, experiment, and explore how colors combine beyond the limitations of the traditional palette and brush.
+We briefly discussed how to manipulate colors in [Computing Colors](/computing-colors). On this page, we will look more into the different ways of what we do quite often in making pictures and graphics - mixing colors. With code, we can emulate, experiment, and explore how colors combine beyond the limitations of the traditional palette and brush.
 
-「[色を計算する](/sketching-with-math-and-quasi-physics/colors-and-numbers/computing-colors)」で色の操作方法について簡単に説明しました。このページでは、画像やグラフィックの作成でよく使う様々な混色方法について、より詳しく見ていきます。コードを使えば、伝統的なパレットや筆の制約を超えて、色がどのように組み合わさるかを模倣、実験、研究することができます。
+「[色を計算する](/computing-colors)」で色の操作方法について簡単に説明しました。このページでは、画像やグラフィックの作成でよく使う様々な混色方法について、より詳しく見ていきます。コードを使えば、伝統的なパレットや筆の制約を超えて、色がどのように組み合わさるかを模倣、実験、研究することができます。
 
 At their core, colors on digital platforms are mere numbers. Although our eyes and brains perceive colors in a certain way, we can program various models and interpretations of these numbers. As a result, the output can range anywhere from realistic to surreal.
 
@@ -16,18 +17,18 @@ At their core, colors on digital platforms are mere numbers. Although our eyes a
 # Mixing RGB Colors
 # RGBの混色
 
-Let's start by mixing colors represented by RGB values. This is the most straightforward method because RGB aligns very well with how most of our screens display colors, as every pixel on these screens consists of tiny bits of red, green, and blue lights. Mixing colors in the RGB space is also a pretty good approximation of blending lights in the real world. You can read more about how our perception of light relates to the RGB color model in the [Spectrum and Cones](/sketching-with-math-and-quasi-physics/colors-and-numbers/spectrum-and-cones).
+Let's start by mixing colors represented by RGB values. This is the most straightforward method because RGB aligns very well with how most of our screens display colors, as every pixel on these screens consists of tiny bits of red, green, and blue lights. Mixing colors in the RGB space is also a pretty good approximation of blending lights in the real world. You can read more about how our perception of light relates to the RGB color model in the [Spectrum and Cones](/spectrum-and-cones).
 
-まず、RGB値で表された色を混ぜてみましょう。ほとんどのスクリーンは画素ごとに小さな赤、緑、青の光の点で構成されているので、RGBはスクリーン上での色の表示方法に直感的に対応しています。RGB空間での混色は、実世界での光を混ぜ合わせることのかなりよい近似でもあります。[スペクトルと錐体](/sketching-with-math-and-quasi-physics/colors-and-numbers/spectrum-and-cones)のページで、光の知覚がRGBカラーモデルとどのように関係しているかについてもっと詳しく説明しています。
+まず、RGB値で表された色を混ぜてみましょう。ほとんどのスクリーンは画素ごとに小さな赤、緑、青の光の点で構成されているので、RGBはスクリーン上での色の表示方法に直感的に対応しています。RGB空間での混色は、実世界での光を混ぜ合わせることのかなりよい近似でもあります。[スペクトルと錐体](/spectrum-and-cones)のページで、光の知覚がRGBカラーモデルとどのように関係しているかについてもっと詳しく説明しています。
 
 > 
 > 
-> Note that, however, since most display devices are [gamma-corrected](/sketching-with-math-and-quasi-physics/colors-and-numbers/various-color-models), the RGB values are not directly proportional to the brightness of the pixel.  
-> ただし、ほとんどのディスプレイデバイスは[ガンマ補正](/sketching-with-math-and-quasi-physics/colors-and-numbers/various-color-models)されているため、RGB値とピクセルの明るさは単純には比例しません。
+> Note that, however, since most display devices are [gamma-corrected](/various-color-models), the RGB values are not directly proportional to the brightness of the pixel.  
+> ただし、ほとんどのディスプレイデバイスは[ガンマ補正](/various-color-models)されているため、RGB値とピクセルの明るさは単純には比例しません。
 
-You can mix two RGB colors by simply [interpolating](/sketching-with-math-and-quasi-physics/interpolation-and-animation) each of RGB channels.
+You can mix two RGB colors by simply [interpolating](/interpolation-and-animation) each of RGB channels.
 
-RGBの色を混ぜるには、単に各RGBチャンネルを[補間](/sketching-with-math-and-quasi-physics/interpolation-and-animation)します。
+RGBの色を混ぜるには、単に各RGBチャンネルを[補間](/interpolation-and-animation)します。
 
 ```jsx
 // p5js already has the lerp function implemented, but just to be explicit.
@@ -152,9 +153,9 @@ function overlay(color0, color1, t) {
 # Using Different Color Models
 # 様々なカラーモデルを使う
 
-As discussed in [Computing Colors](/sketching-with-math-and-quasi-physics/colors-and-numbers/computing-colors), there are various color models that can be used for different results. Now that we have explored other ways of calculating the mix of two colors, think about if there are other methods, apart from linear interpolation, to mix colors in those models. While some methods may not make much sense depending on the model (e.g., what does it mean to add two hues in the HSB or Lch model? ), you may come up with other interesting ideas, such as taking the maximum of saturations. There is no right or wrong approach. Try out different ideas and you might find something that surprises you.
+As discussed in [Computing Colors](/computing-colors), there are various color models that can be used for different results. Now that we have explored other ways of calculating the mix of two colors, think about if there are other methods, apart from linear interpolation, to mix colors in those models. While some methods may not make much sense depending on the model (e.g., what does it mean to add two hues in the HSB or Lch model? ), you may come up with other interesting ideas, such as taking the maximum of saturations. There is no right or wrong approach. Try out different ideas and you might find something that surprises you.
 
-[「色を計算する」](/sketching-with-math-and-quasi-physics/colors-and-numbers/computing-colors)で見たように、様々なカラーモデルを用いると異なる結果が得られます。2つの色を混ぜる様々な計算方法を学んだので、線形補間以外を使って混色できるか考えてましょう。一部の方法はモデルによってはあまり意味をなさないかもしれません（例えば、HSBやLchモデルで2つの色相を加算するとはどういう意味になるでしょう。）、が彩度の最大値を取るなど、面白いアイデアを思いつくかもしれません。アプローチに正解や不正解はありません。様々なアイデアを試してみれば、驚くような結果が得られるかもしれません。
+[「色を計算する」](/computing-colors)で見たように、様々なカラーモデルを用いると異なる結果が得られます。2つの色を混ぜる様々な計算方法を学んだので、線形補間以外を使って混色できるか考えてましょう。一部の方法はモデルによってはあまり意味をなさないかもしれません（例えば、HSBやLchモデルで2つの色相を加算するとはどういう意味になるでしょう。）、が彩度の最大値を取るなど、面白いアイデアを思いつくかもしれません。アプローチに正解や不正解はありません。様々なアイデアを試してみれば、驚くような結果が得られるかもしれません。
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="QwWdYXJ" data-user="kynd" data-preview="true"></p></div>
 

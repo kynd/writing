@@ -1,11 +1,12 @@
 ---
 title: "About Wave 波について"
+slug: about-wave
 ---
 Waves are everywhere. I suppose the word originally meant just waves on the water surface, like the ocean or a lake. However, there are many other things that exhibit characteristics of waves, such as sound, earthquakes, electromagnetic waves, and light. In terms of design and graphics, wavy shapes are one of the most common patterns and are often seen in fashion, architecture, and various art and craft pieces.
 
 波はどこにでもあります。海や湖などの水面にできる波が言葉のもともとの意味だと思うのですが、音や、地震、電磁波、光など波としての性質を持ったものは色々あります。デザインやグラフィックスの観点でも波型は非常に一般的なパターンの1つで、ファッションや建築、アート作品や工芸品などでも良く見かけます。
 
-[Wave 波](/sketching-with-math-and-quasi-physics/wave)
+[Wave 波](/wave)
 
 > 
 > 
@@ -22,7 +23,7 @@ Mathematically, the sine wave is the most fundamental wave shape. It represents 
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="mwbWwJ" data-user="kynd" data-preview="true"></p></div>
 
-A sine curve can be drawn as a result of a physical object following the [spring equation (Hooke's law,](/sketching-with-math-and-quasi-physics/wave/vibration-and-propagation) <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>=</mo><mo>−</mo><mi>k</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">F=-kx</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7778em;vertical-align:-0.0833em;"></span><span class="mord">−</span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mord mathnormal">x</span></span></span></span>[)](/sketching-with-math-and-quasi-physics/wave/vibration-and-propagation). Basically, this means if you vibrate a thing attached to a spring and plot its position over time, you get a sine curve. It is fascinating that these seemingly very different methods result in the exact same curve, which indicates that there's something special about the sine curve (yes, it is).
+A sine curve can be drawn as a result of a physical object following the [spring equation (Hooke's law,](/vibration-and-propagation) <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>=</mo><mo>−</mo><mi>k</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">F=-kx</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7778em;vertical-align:-0.0833em;"></span><span class="mord">−</span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mord mathnormal">x</span></span></span></span>[)](/vibration-and-propagation). Basically, this means if you vibrate a thing attached to a spring and plot its position over time, you get a sine curve. It is fascinating that these seemingly very different methods result in the exact same curve, which indicates that there's something special about the sine curve (yes, it is).
 
 サインカーブは、物体がバネ方程式（フックの法則、<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>=</mo><mo>−</mo><mi>k</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">F=-kx</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7778em;vertical-align:-0.0833em;"></span><span class="mord">−</span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mord mathnormal">x</span></span></span></span>）に従って動く結果としても描くことができます。つまり、バネに物を取り付けて振動させ、その位置を時間とともにプロットすると、正弦曲線が得られます。一見まったく異なる方法から、同じ曲線が得られるのはとても面白く、サインカーブには、何か特別な意味があると感じさせられます（実際にそうです）
 
@@ -34,9 +35,9 @@ Waves propagate and spread in space. Many waves are mechanical, meaning they are
 
 波は空間を伝わって広がります。多くの波は力学的なもので、物質同士が互いに押し合うことによって生じます。たとえばギターの弦を弾くと、弦が振動して周囲の空気を押し、その空気が隣の空気を押し、という連鎖が続きます。このようにして、音は空気圧の振動となって部屋中に伝わります。地震や海の波なども同類です。
 
-[Direction of the waves 波の向き](/sketching-with-math-and-quasi-physics/wave/direction-of-the-waves)
+[Direction of the waves 波の向き](/direction-of-the-waves)
 
-[Vibration and Propagation 振動と伝搬](/sketching-with-math-and-quasi-physics/wave/vibration-and-propagation)
+[Vibration and Propagation 振動と伝搬](/vibration-and-propagation)
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="abGVKep" data-user="kynd" data-preview="true"></p></div>
 
@@ -46,11 +47,11 @@ Electromagnetic waves are a different class of wave that needs no material mediu
 
 電磁波は違う種類の波で、物質的な媒質を全く必要としません。電磁波は粒子（光子）と波の両方の性質を持ち、光、電波、マイクロ波、X線などは周波数が異なるだけの同じ現象です。振動しているのは電場（Eフィールド）と磁場（Bフィールド）そのものです。
 
-[What is light? 光とは何か](/sketching-with-math-and-quasi-physics/light/what-is-light)
+[What is light? 光とは何か](/what-is-light)
 
-Even without a medium, electromagnetic waves still obey the same wave physics, such as [reflection, refraction](/sketching-with-math-and-quasi-physics/light/reflection-and-refraction), interference, diffraction.
+Even without a medium, electromagnetic waves still obey the same wave physics, such as [reflection, refraction](/reflection-and-refraction), interference, diffraction.
 
-媒質がなくても、電磁波は[反射、屈折](/sketching-with-math-and-quasi-physics/light/reflection-and-refraction)、干渉、回折といった波動物理学の基本法則に従います。
+媒質がなくても、電磁波は[反射、屈折](/reflection-and-refraction)、干渉、回折といった波動物理学の基本法則に従います。
 
 > The concept of "wave" is an abstraction to capture these common characteristics between different things and phenomena. It’s not that they behave the same because they are waves, but we call them waves because they follow the same rules.
 > 
@@ -60,7 +61,7 @@ For example, electromagnetic waves are diffractive, meaning that they can go aro
 
 例えば、電磁波には回折性があり、水面の波のように障害物の後に回り込むことができます。この回折（と反射や散乱）のおかげで、アンテナと機器の間に障害物があっても、テレビの視聴や携帯電話の使えるのです。
 
-[What is light? 光とは何か](/sketching-with-math-and-quasi-physics/light/what-is-light)
+[What is light? 光とは何か](/what-is-light)
 
 [![](/images/about-wave.png "75")](/images/about-wave.png)
 
@@ -70,9 +71,9 @@ Electromagnetic waves between about 400–800 terahertz are what we normally thi
 
 およそ400から800テラヘルツの電磁波が普段、光だと考えているもので、人間の目で見ることができます。光は周波数によって、異なる色として知覚されます。光が目に届くまでの間の物体との関わりを理解するのは、視覚の仕組みについて考え、これらの現象をグラフィックスとして表すためのモデルを作る上で重要です。
 
-[Spectrum and Cones スペクトルと錐体](/sketching-with-math-and-quasi-physics/colors-and-numbers/spectrum-and-cones)
+[Spectrum and Cones スペクトルと錐体](/spectrum-and-cones)
 
-[Light 光](/sketching-with-math-and-quasi-physics/light)
+[Light 光](/light)
 
 [![](/images/about-wave-1.png)](/images/about-wave-1.png)
 
@@ -91,7 +92,7 @@ In the case of light, the frequency corresponds to the color. In sound, the freq
 
 音波を「見る」ことによって、音をより深く理解できます。例えば、異なる周波数のサイン波の聞こえ方や、様々な楽器が生み出す音の波形を観察することができます。
 
-[Sound visualization 音の視覚化](/sketching-with-math-and-quasi-physics/wave/sound-visualization)
+[Sound visualization 音の視覚化](/sound-visualization)
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="yLZrBGJ" data-user="kynd" data-preview="true"></p></div>
 
@@ -99,9 +100,9 @@ In the case of light, the frequency corresponds to the color. In sound, the freq
 
 # Numbers and Intervals 数と音程
 
-Musical intervals are based on frequency ratios. [The equal temperament commonly used in Western music divides an octave evenly into 12 semitones.](/sketching-with-math-and-quasi-physics/wave/pitch-and-frequency) No matter where you start on the piano keyboard, the ratio of the frequency from one note to its right neighbor (e.g., C to C#) is <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mrow><mn>1</mn><mi mathvariant="normal">/</mi><mn>12</mn></mrow></msup></mrow><annotation encoding="application/x-tex">2^{1/12}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.888em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.888em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1/12</span></span></span></span></span></span></span></span></span></span></span></span>. With the semitone as a unit, we can think of the distance between notes as a simple number relationship.
+Musical intervals are based on frequency ratios. [The equal temperament commonly used in Western music divides an octave evenly into 12 semitones.](/pitch-and-frequency) No matter where you start on the piano keyboard, the ratio of the frequency from one note to its right neighbor (e.g., C to C#) is <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mrow><mn>1</mn><mi mathvariant="normal">/</mi><mn>12</mn></mrow></msup></mrow><annotation encoding="application/x-tex">2^{1/12}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.888em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.888em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1/12</span></span></span></span></span></span></span></span></span></span></span></span>. With the semitone as a unit, we can think of the distance between notes as a simple number relationship.
 
-音程は周波数の比率に基づいています。[西洋音楽で一般的に使用される平均律](/sketching-with-math-and-quasi-physics/wave/pitch-and-frequency)では、1オクターブを12の半音に均等に分割します。ピアノの鍵盤のどこから始めても、ある音から右隣の音（例えばCからC#）までの周波数の比率は<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mrow><mn>1</mn><mi mathvariant="normal">/</mi><mn>12</mn></mrow></msup></mrow><annotation encoding="application/x-tex">2^{1/12}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.888em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.888em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1/12</span></span></span></span></span></span></span></span></span></span></span></span>となります。半音を単位として考えることで、音と音の間の距離を単純な数の関係として捉えることができます。
+音程は周波数の比率に基づいています。[西洋音楽で一般的に使用される平均律](/pitch-and-frequency)では、1オクターブを12の半音に均等に分割します。ピアノの鍵盤のどこから始めても、ある音から右隣の音（例えばCからC#）までの周波数の比率は<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mrow><mn>1</mn><mi mathvariant="normal">/</mi><mn>12</mn></mrow></msup></mrow><annotation encoding="application/x-tex">2^{1/12}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.888em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.888em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1/12</span></span></span></span></span></span></span></span></span></span></span></span>となります。半音を単位として考えることで、音と音の間の距離を単純な数の関係として捉えることができます。
 
 Interestingly, we don’t experience pitch as just a straight line—it feels more like a spiral. For example, if you start at 440 Hz (the A note) and go up, you’ll eventually hit another A at 880 Hz at exactly double the frequency. It’s not the same sound, but we hear it as the same note, just in a higher octave.
 
@@ -123,9 +124,9 @@ In the slightly more song-like example below, the chord (F major 9th) chord is r
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="wvxGqmW" data-user="kynd" data-preview="true"></p></div>
 
-[Pitch and Frequency 音高と周波数](/sketching-with-math-and-quasi-physics/wave/pitch-and-frequency)
+[Pitch and Frequency 音高と周波数](/pitch-and-frequency)
 
-[Numbers and Intervals 数と音程](/sketching-with-math-and-quasi-physics/numbers-and-intervals)
+[Numbers and Intervals 数と音程](/numbers-and-intervals)
 
 [The secrets of sound (for kids)](/the-secrets-of-sound-for-kids)
 
@@ -151,7 +152,7 @@ We can visualize this too. In the demo below, you can see the shape of the wave 
 
 これも視覚化することができます。下のデモでは、異なる周波数と振幅（円の半径）を持つサイン波を追加していくと波形が変化していく様子を見ることができます。この例では、いわゆる矩形波に近づいていきます。
 
-[Sine waves and Additive Synthesis サイン波と加算合成](/sketching-with-math-and-quasi-physics/wave/sine-waves-and-additive-synthesis)
+[Sine waves and Additive Synthesis サイン波と加算合成](/sine-waves-and-additive-synthesis)
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="JJPWyz" data-user="kynd" data-preview="true"></p></div>
 
@@ -180,9 +181,9 @@ The Fourier transform is widely used in various fields such as sound processing,
 
 フーリエ変換は、音声処理、信号処理、画像圧縮など、様々な分野で幅広く活用されています。音声データにフーリエ変換を適用すると、その中に含まれる異なる周波数の量を特定できます。これにより、特定の周波数帯域を減衰や増幅させてデータを操作することが可能になります。
 
-[Sine waves and Additive Synthesis サイン波と加算合成](/sketching-with-math-and-quasi-physics/wave/sine-waves-and-additive-synthesis)
+[Sine waves and Additive Synthesis サイン波と加算合成](/sine-waves-and-additive-synthesis)
 
-[Fourier Series フーリエ級数](/sketching-with-math-and-quasi-physics/fourier-series)
+[Fourier Series フーリエ級数](/fourier-series)
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="ZEmXaBO" data-user="kynd" data-preview="true"></p></div>
 
@@ -193,6 +194,6 @@ The Navier-Stokes equations describe the properties and behavior of media such a
 
 ナビエ・ストークス方程式は、質量の保存、運動量の保存、粘性といった、水や空気などの媒体の性質と挙動を記述します。ナビエ・ストークス方程式は、これらの媒体での波の動きを説明する基礎となり、またそれ以外の挙動もカバーしています。特にコンピューターグラフィックスの分野では、流体シミュレーションに広く活用されています。ナビエ・ストークス方程式を用いて波を理解したりシミュレーションしたりすると面白い研究課題になるでしょう。
 
-[Fluid Simulation 流体シミュレーション](/sketching-with-math-and-quasi-physics/2d-feedback-systems/fluid-simulation)
+[Fluid Simulation 流体シミュレーション](/fluid-simulation)
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="jOXZXWB" data-user="kynd" data-preview="true"></p></div>

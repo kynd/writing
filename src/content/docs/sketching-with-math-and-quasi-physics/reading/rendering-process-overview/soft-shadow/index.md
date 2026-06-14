@@ -1,5 +1,6 @@
 ---
 title: "Soft shadow ソフトシャドウ"
+slug: soft-shadow
 ---
 ```glsl
 // https://iquilezles.org/articles/rmshadows
@@ -32,9 +33,9 @@ This function casts a new ray from a point on the surfaces of the object in the 
 
 <div></div>
 
-The “bounding volume” part calculates the distance for the ray to hit an imaginary ceiling above the objects. This is to stop the ray marching loop when the ray goes high enough to reach an area that has no objects. Compare this to the code where it finds the distance to the floor in the `raycast()` function ([Ray casting レイキャスティング](/sketching-with-math-and-quasi-physics/reading/rendering-process-overview/ray-casting)).
+The “bounding volume” part calculates the distance for the ray to hit an imaginary ceiling above the objects. This is to stop the ray marching loop when the ray goes high enough to reach an area that has no objects. Compare this to the code where it finds the distance to the floor in the `raycast()` function ([Ray casting レイキャスティング](/ray-casting)).
 
-「bounding volume」の部分は、オブジェクトの上に天井があると想定して、レイがそれに当たるまでの距離を計算します。これは、レイがオブジェクトが存在しない領域にまで高く上がりすぎたときに、レイマーチングのループを停止するためです。`raycast()`関数で床までの距離を見つける部分のコードと比較してみてください（[Ray casting レイキャスティング](/sketching-with-math-and-quasi-physics/reading/rendering-process-overview/ray-casting)）。
+「bounding volume」の部分は、オブジェクトの上に天井があると想定して、レイがそれに当たるまでの距離を計算します。これは、レイがオブジェクトが存在しない領域にまで高く上がりすぎたときに、レイマーチングのループを停止するためです。`raycast()`関数で床までの距離を見つける部分のコードと比較してみてください（[Ray casting レイキャスティング](/ray-casting)）。
 
 ```glsl
 // bounding volume
@@ -42,9 +43,9 @@ float tp = (0.8-rayOrigin.y)/rayDirection.y;
 if( tp>0.0 ) tmax = min( tmax, tp );
 ```
 
-The rest of the function is basically ray marching ([Ray Marching レイマーチング](/sketching-with-math-and-quasi-physics/projection-and-3d-rendering/ray-marching)), but there are a few differences specific to the calculation of the soft shadow.
+The rest of the function is basically ray marching ([Ray Marching レイマーチング](/ray-marching)), but there are a few differences specific to the calculation of the soft shadow.
 
-関数の残りの部分は基本的にレイマーチング（[Ray Marching レイマーチング](/sketching-with-math-and-quasi-physics/projection-and-3d-rendering/ray-marching)）ですが、柔らかな影を描くための計算に特有のいくつかの違いがあります。
+関数の残りの部分は基本的にレイマーチング（[Ray Marching レイマーチング](/ray-marching)）ですが、柔らかな影を描くための計算に特有のいくつかの違いがあります。
 
 The first difference is `shadowFactor`. Instead of only checking if the ray directly hits an object, we consider how close it gets to nearby objects to adjust shadow strength. `shadowFactor` is calculated as the distance to the closest object divided by the ray’s traveled distance, which approximates an angular distance. A smaller value results in a darker shadow.
 
@@ -64,4 +65,4 @@ You can see the following page to learn more about the soft shadowing techniques
 
 <div class="bookmark-card"><a href="https://iquilezles.org/articles/rmshadows/" target="_blank" rel="noopener" class="bookmark-link"><div class="bookmark-info"><div class="bookmark-title">Inigo Quilez</div><div class="bookmark-description">Articles on computer graphics, math and art</div><div class="bookmark-url"><img src="https://iquilezles.org/favicon.png" class="bookmark-favicon" alt="" onerror="this.style.display='none'"><span>https://iquilezles.org/articles/rmshadows/</span></div></div><img src="https://iquilezles.org/logo.jpg" class="bookmark-image" alt="" loading="lazy" onerror="this.style.display='none'"></a></div>
 
-[Sky light 空からの光](/sketching-with-math-and-quasi-physics/reading/rendering-process-overview/sky-light)
+[Sky light 空からの光](/sky-light)

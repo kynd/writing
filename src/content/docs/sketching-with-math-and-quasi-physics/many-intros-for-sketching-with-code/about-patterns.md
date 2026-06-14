@@ -1,5 +1,6 @@
 ---
 title: "About Patterns パターンについて"
+slug: about-patterns
 ---
 Humans are wired to spot patterns. Our ancestors survived by recognizing various footprints to avoid danger and find food, spots and dots on fur, rotational patterns of petals, cycles of the sun, moon, stars and repeating seasons, tides, and weather.
 
@@ -43,7 +44,7 @@ This can be easily expanded to repetition of continuous values.
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="zYXwvGv" data-user="kynd" data-preview="true"></p></div>
 
-[Repetition 繰り返し](/sketching-with-math-and-quasi-physics/patterns/repetition)
+[Repetition 繰り返し](/repetition)
 
 # Sine waves サイン波
 
@@ -53,9 +54,9 @@ The sine wave is another fundamental building block for repeating patterns. A mi
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="zzOZPM" data-user="kynd" data-preview="true"></p></div>
 
-[Sine waves and Additive Synthesis サイン波と加算合成](/sketching-with-math-and-quasi-physics/wave/sine-waves-and-additive-synthesis)
+[Sine waves and Additive Synthesis サイン波と加算合成](/sine-waves-and-additive-synthesis)
 
-[Fourier Series フーリエ級数](/sketching-with-math-and-quasi-physics/fourier-series)
+[Fourier Series フーリエ級数](/fourier-series)
 
 # Tiling タイリング
 
@@ -135,7 +136,7 @@ height = random(1) + 0.1
 
 height = pow(random(1), 4) + 0.1
 
-[Taming Randomness ランダムさを手なづける](/sketching-with-math-and-quasi-physics/taming-randomness)
+[Taming Randomness ランダムさを手なづける](/taming-randomness)
 
 # Noise Functions
 # ノイズ関数
@@ -154,9 +155,9 @@ Noise functions are often layered by adding them together at different scales to
 
 より自然な見た目を作り出すため、ノイズ関数を異なるスケールで重ね合わせて使うことがよくあります。山脈を想像してみましょう。遠くから見るとギザギザとした輪郭が見え、近づくにつれてより小さな尾根が現れ、さらに近くでは岩肌に大きな形と似た小さな亀裂や段差があることに気づきます。このように様々な倍率で似たような形が繰り返されることは、自然界でよく見られるパターンです。渦を巻く雲、砕ける波、ひび割れた砂漠の地面、葉脈、海岸線の形などにも、この特徴を見ることができます。
 
-[Reading a Noise Function](/sketching-with-math-and-quasi-physics/reading-a-noise-function)
+[Reading a Noise Function](/reading-a-noise-function)
 
-[Drawing Landscape](/sketching-with-math-and-quasi-physics/drawing-landscape)
+[Drawing Landscape](/drawing-landscape)
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="WNJxXZb" data-user="kynd" data-preview="true"></p></div>
 
@@ -198,7 +199,7 @@ It works the other way around, too. When information is missing, like in a blurr
 
 この仕組みは逆の方向でも働きます。ぼやけた写真や途切れ途切れの電話のように情報が不完全な場合、脳は蓄積された馴染みのパターンを使って、その隙間を自然に埋めようとします。
 
-[Resolution 解像度](/sketching-with-math-and-quasi-physics/resolution)
+[Resolution 解像度](/resolution)
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="PoLZywR" data-user="kynd" data-preview="true"></p></div>
 

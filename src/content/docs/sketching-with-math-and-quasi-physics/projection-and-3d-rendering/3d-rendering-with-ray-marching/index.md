@@ -1,9 +1,10 @@
 ---
 title: "3D Rendering with Ray Marching レイマーチングによる3Dレンダリング"
+slug: 3d-rendering-with-ray-marching
 ---
-To render a 3D scene using ray marching, we need to shoot a ray for each pixel. [Remember how projection works](/sketching-with-math-and-quasi-physics/projection-and-3d-rendering/ray-marching). By selecting a point on the screen (a pixel), and drawing a ray from the viewpoint, we can determine if it hits an object and decide what should be drawn on that pixel. Using a shader, [we can process all the pixels in parallel](https://thebookofshaders.com/01/) to complete the whole image.
+To render a 3D scene using ray marching, we need to shoot a ray for each pixel. [Remember how projection works](/ray-marching). By selecting a point on the screen (a pixel), and drawing a ray from the viewpoint, we can determine if it hits an object and decide what should be drawn on that pixel. Using a shader, [we can process all the pixels in parallel](https://thebookofshaders.com/01/) to complete the whole image.
 
-3Dシーンをレンダリングするには、それぞれのピクセルに対してレイを飛ばす必要があります。[プロジェクションの原理を思い出してください](/sketching-with-math-and-quasi-physics/projection-and-3d-rendering/ray-marching)。画面上の点（ピクセル）を選んで視点からレイを伸ばし、物体に当たるかどうかを判定してそのピクセルに何を描くかを決めます。シェーダーを使うと、[すべてのピクセルを並列に処理して](https://thebookofshaders.com/01/)全体のイメージを完成させることができます。
+3Dシーンをレンダリングするには、それぞれのピクセルに対してレイを飛ばす必要があります。[プロジェクションの原理を思い出してください](/ray-marching)。画面上の点（ピクセル）を選んで視点からレイを伸ばし、物体に当たるかどうかを判定してそのピクセルに何を描くかを決めます。シェーダーを使うと、[すべてのピクセルを並列に処理して](https://thebookofshaders.com/01/)全体のイメージを完成させることができます。
 
 [![](/images/3d-rendering-with-ray-marching-3d.png "75")](/images/3d-rendering-with-ray-marching-3d.png)
 
@@ -18,9 +19,9 @@ vec3 eye = vec3(0.0, 0.0, -2.5);
 vec3 rayDir = normalize(vec3(crd, 0.0) - eye);
 ```
 
-The `raymarch` function is the main part of this demo, in which we move a point along the ray and use the [SDF (signed distance function)](/sketching-with-math-and-quasi-physics/projection-and-3d-rendering/ray-marching) to check if it gets close enough to the surface. The function returns the distance if it goes below the threshold, or -1.0 otherwise.
+The `raymarch` function is the main part of this demo, in which we move a point along the ray and use the [SDF (signed distance function)](/ray-marching) to check if it gets close enough to the surface. The function returns the distance if it goes below the threshold, or -1.0 otherwise.
 
-`raymarch`関数がこのデモのメインで、点をレイに沿って移動させ、[SDF（符号付き距離関数）](/sketching-with-math-and-quasi-physics/projection-and-3d-rendering/ray-marching)を使って、表面に十分に近づいたかをチェックします。この関数は、距離が閾値を下回る場合その値を返し、それ以外の場合は-1.0を返します。
+`raymarch`関数がこのデモのメインで、点をレイに沿って移動させ、[SDF（符号付き距離関数）](/ray-marching)を使って、表面に十分に近づいたかをチェックします。この関数は、距離が閾値を下回る場合その値を返し、それ以外の場合は-1.0を返します。
 
 ```jsx
 float raymarch(vec3 eye, vec3 rayDir) {
@@ -44,9 +45,9 @@ On the dark gray background, the shader only turns the pixel white if the ray in
 # Finding the normal
 # 法線を見つける
 
-This is a great step. However, the sphere looks flat because it lacks any shading. To make it look more realistic, we need to determine the direction of the surface (normal) and the light source for each point we are rendering. We discussed different ways of modeling lighting in [Illuminating Object](/sketching-with-math-and-quasi-physics/light/illuminating-objects). So let's focus on how to find these factors needed to compute the lighting.
+This is a great step. However, the sphere looks flat because it lacks any shading. To make it look more realistic, we need to determine the direction of the surface (normal) and the light source for each point we are rendering. We discussed different ways of modeling lighting in [Illuminating Object](/illuminating-objects). So let's focus on how to find these factors needed to compute the lighting.
 
-素晴らしい一歩ですが、球体は影がないために平らに見えます。よりリアルに見せるためには、レンダリングする各点について、表面の向き（法線）と光源の向きを求める必要があります。「[物体を照らす](/sketching-with-math-and-quasi-physics/light/illuminating-objects) 」で様々なライティングモデルについて触れました。ここではライティングに必要な要素を計算するための方法に焦点を当てましょう。
+素晴らしい一歩ですが、球体は影がないために平らに見えます。よりリアルに見せるためには、レンダリングする各点について、表面の向き（法線）と光源の向きを求める必要があります。「[物体を照らす](/illuminating-objects) 」で様々なライティングモデルについて触れました。ここではライティングに必要な要素を計算するための方法に焦点を当てましょう。
 
 Finding the direction of the light source is rather straight forward because with the ray marching, we can easily find the position of the surface where it intersects with the ray.
 
@@ -60,9 +61,9 @@ If the light source can be seen as a point light, like a small light bulb, we ca
 
 小さな電球のように光源を点光源として見做して良い場合、光源の位置から表面の位置を引き、ベクトルを正規化することで方向を求められます。また、太陽のように遠くにある場合は、光の方向が位置に関係なく変わらないと仮定することができます。
 
-To find the normal, we can use [numeric approximation method for the gradient](/sketching-with-math-and-quasi-physics/calculus-for-makers/differentiation). In other words, by comparing the return values of the SDF for the neighboring points along each axis, we can determine the direction in which the distance increases the most. This direction corresponds to the direction in which the surface is facing.
+To find the normal, we can use [numeric approximation method for the gradient](/differentiation). In other words, by comparing the return values of the SDF for the neighboring points along each axis, we can determine the direction in which the distance increases the most. This direction corresponds to the direction in which the surface is facing.
 
-法線を求めるには、[勾配の数値的な近似](/sketching-with-math-and-quasi-physics/calculus-for-makers/differentiation)が使えます。つまり、それぞれの軸の上で隣り合う点のSDFの戻り値を比較することによって、距離が最も増加する向きを求めることができます。これは表面の向きに対応しています。
+法線を求めるには、[勾配の数値的な近似](/differentiation)が使えます。つまり、それぞれの軸の上で隣り合う点のSDFの戻り値を比較することによって、距離が最も増加する向きを求めることができます。これは表面の向きに対応しています。
 
 ```jsx
 vec3 getNormal(vec3 P) {	
@@ -75,9 +76,9 @@ vec3 getNormal(vec3 P) {
 }
 ```
 
-The demo below calculates [Lambertian reflectance](/sketching-with-math-and-quasi-physics/light/illuminating-objects/classic-3d-rendering) using the normal and the direction of the light. You can change the position of the light source by moving the mouse on the canvas.
+The demo below calculates [Lambertian reflectance](/classic-3d-rendering) using the normal and the direction of the light. You can change the position of the light source by moving the mouse on the canvas.
 
-このデモでは、法線と光の向きを使って[ランバート反射](/sketching-with-math-and-quasi-physics/light/illuminating-objects/classic-3d-rendering)を計算します。キャンバス上でマウスを移動すると光源の位置を変更することができます。
+このデモでは、法線と光の向きを使って[ランバート反射](/classic-3d-rendering)を計算します。キャンバス上でマウスを移動すると光源の位置を変更することができます。
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="vYbYzpx" data-user="kynd" data-preview="true"></p></div>
 
@@ -187,9 +188,9 @@ Cd *= shadow;
 # Parallel Projection
 # 並行投影
 
-Lastly, let's review the different types of projections. As we have seen on [the last page](/sketching-with-math-and-quasi-physics/projection-and-3d-rendering/ray-marching), the only difference between perspective projection and parallel projection is whether we cast the rays from a single viewpoint or parallel to each other. Switching between these models is simply a matter of changing how we set the starting points and directions of rays. Run the demo below to see this in action. You can switch between the two projection models by clicking on the canvas.
+Lastly, let's review the different types of projections. As we have seen on [the last page](/ray-marching), the only difference between perspective projection and parallel projection is whether we cast the rays from a single viewpoint or parallel to each other. Switching between these models is simply a matter of changing how we set the starting points and directions of rays. Run the demo below to see this in action. You can switch between the two projection models by clicking on the canvas.
 
-最後に、異なる種類の投影について見ていきましょう。[前のページ](/sketching-with-math-and-quasi-physics/projection-and-3d-rendering/ray-marching)で見たように、透視投影と平行投影の唯一の違いは視点からレイを放射するか、互いに平行にするかです。これらのモデルを切り替えるには、光線の始点と向きの設定を変えるだけです。下のデモを実行して実際に確認しましょう。キャンバスをクリックすると、2つの投影モデルを切り替えることができます。
+最後に、異なる種類の投影について見ていきましょう。[前のページ](/ray-marching)で見たように、透視投影と平行投影の唯一の違いは視点からレイを放射するか、互いに平行にするかです。これらのモデルを切り替えるには、光線の始点と向きの設定を変えるだけです。下のデモを実行して実際に確認しましょう。キャンバスをクリックすると、2つの投影モデルを切り替えることができます。
 
 ```glsl
 vec3 origin, rayDir;
@@ -204,4 +205,4 @@ float dist = raymarch(origin, rayDir);
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="RwvQMxr" data-user="kynd" data-preview="true"></p></div>
 
-[Designing 3D world 3Dのデザイン](/sketching-with-math-and-quasi-physics/projection-and-3d-rendering/designing-3d-world)
+[Designing 3D world 3Dのデザイン](/designing-3d-world)

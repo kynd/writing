@@ -1,5 +1,6 @@
 ---
 title: "Drawing with code"
+slug: drawing-with-code
 ---
 Based on the presentations I gave [at jsgs-collab-2022](https://docs.google.com/presentation/d/e/2PACX-1vQWvzrv8zqJcSrE0WXHzeDgJG6jFdoZiBWRtCU-2jDYJcJA1FQJGJ9d43XWjpe34zKUu-gQaP3XqBvG/pub?start=false&loop=false&delayms=60000&slide=id.g12d4d1bd653_2_228) and [Think & Craft Nakame Meet up #3](https://x.com/thinkandcraft/status/1676063820878577664?s=20).
 
@@ -51,12 +52,12 @@ What is important, however, is that they are interesting to me. It is not just a
 
 <div class="video-wrap"><iframe title="vimeo-player" src="https://player.vimeo.com/video/743839860?h=0f1bf93609" width="640" height="360" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen></iframe></div>
 
-[Codifying materials (1)](/drawing-with-code/codifying-materials-1)
+[Codifying materials (1)](/codifying-materials-1)
 
-[Codifying materials (2)](/drawing-with-code/codifying-materials-2)
+[Codifying materials (2)](/codifying-materials-2)
 
-[Codifying human (1)](/drawing-with-code/codifying-human-1)
+[Codifying human (1)](/codifying-human-1)
 
-[Codifying human (2)](/drawing-with-code/codifying-human-2)
+[Codifying human (2)](/codifying-human-2)
 
-[Building my own tools](/drawing-with-code/building-my-own-tools)
+[Building my own tools](/building-my-own-tools)

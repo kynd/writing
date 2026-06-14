@@ -1,5 +1,6 @@
 ---
 title: "Cumulative Curves 積み重ねによる曲線"
+slug: cumulative-curves
 ---
 Let's start with a very basic but powerful way of thinking about curves. One of the most common ways that curves occur in the physical world is through cumulative motion or buildup, meaning a point starts moving from one location and changes its course over time. This can include freehand drawing, paths followed by insects, animals, vehicles, and the growth patterns of plants and other organisms.
 
@@ -25,9 +26,9 @@ The demo below is a simple example of a point moving with a changing velocity. T
 
 > 
 > 
-> It is technically impossible to create a perfectly smooth curve on a computer because it is digital. The example above moves the position by discrete steps, meaning the curve is an accumulation of very short line segments at the code level (see [Continuous Time and Discrete Time](/sketching-with-math-and-quasi-physics/newton-and-vectors/continuous-time-and-discrete-time)). On the screen, the line is a collection of tiny pixels. But for our purposes, it is good enough as long as it appears smooth.  
+> It is technically impossible to create a perfectly smooth curve on a computer because it is digital. The example above moves the position by discrete steps, meaning the curve is an accumulation of very short line segments at the code level (see [Continuous Time and Discrete Time](/continuous-time-and-discrete-time)). On the screen, the line is a collection of tiny pixels. But for our purposes, it is good enough as long as it appears smooth.  
 >   
-> コンピュータはデジタルなので、完全に滑らかな曲線を作成することは技術的に不可能です。上記の例では、位置を離散的なステップで移動させています。つまり曲線はコード上では非常に短い線分の積み重ねとして表現されています（[連続的な時間とバラバラな時間](/sketching-with-math-and-quasi-physics/newton-and-vectors/continuous-time-and-discrete-time)を参照）。画面上での線は小さなピクセルの集合体になりますが、見た目に滑らかであればここでの目的には十分です。
+> コンピュータはデジタルなので、完全に滑らかな曲線を作成することは技術的に不可能です。上記の例では、位置を離散的なステップで移動させています。つまり曲線はコード上では非常に短い線分の積み重ねとして表現されています（[連続的な時間とバラバラな時間](/continuous-time-and-discrete-time)を参照）。画面上での線は小さなピクセルの集合体になりますが、見た目に滑らかであればここでの目的には十分です。
 
 # Cumulative Spiral
 # 積み重ねによる螺旋
@@ -60,9 +61,9 @@ All the demos above are based on the same principle: tracing the path of a point
 
 上のデモはすべて同じ原理、つまりあるルールやアルゴリズム（たとえランダムであっても）に従って速度を変化させる点の軌跡を追跡することに基づいています。基本的に自然には何事も瞬時に起きることはないので、物理的な世界のほとんどの曲線はこの方法で生成されます。自然界の曲線は時間の経過とともに物理的な力や様々な現象が蓄積された結果なのです。
 
-Take a look at another example from the [Newtonian Physics](/sketching-with-math-and-quasi-physics/newton-and-vectors/newtonian-mechanics) page below. In theory, you can draw any curve with cumulative method, though the complexity may vary. Try coming up with different example curves and see if you can express them with a changing velocity.
+Take a look at another example from the [Newtonian Physics](/newtonian-mechanics) page below. In theory, you can draw any curve with cumulative method, though the complexity may vary. Try coming up with different example curves and see if you can express them with a changing velocity.
 
-もうひとつ、[ニュートン物理学](/sketching-with-math-and-quasi-physics/newton-and-vectors/newtonian-mechanics)ページからの例を見てみましょう。複雑さに違いはあれど、理論的には、積み重ねの手法でどんな線でも描くことができます。さまざまな曲線の例を考えて、それらを速度の変化によって表現できるか試してみましょう。
+もうひとつ、[ニュートン物理学](/newtonian-mechanics)ページからの例を見てみましょう。複雑さに違いはあれど、理論的には、積み重ねの手法でどんな線でも描くことができます。さまざまな曲線の例を考えて、それらを速度の変化によって表現できるか試してみましょう。
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="qmGOgB" data-user="kynd" data-preview="true"></p></div>
 
@@ -70,4 +71,4 @@ While the cumulative approach is versatile and flexible, it can sometimes be les
 
 積み重ねによるアプローチは汎用的で柔軟ですが、特に望む形が事前にわかっている場合には、最適でなかったり、管理が難しくなったりもします。このような場合には、パラメータを用いて曲線を数学的に定義する方が上手くいくでしょう。これについては次のページで説明します。
 
-[Parametric Approaches パラメトリックアプローチ](/sketching-with-math-and-quasi-physics/curves/parametric-approaches)
+[Parametric Approaches パラメトリックアプローチ](/parametric-approaches)

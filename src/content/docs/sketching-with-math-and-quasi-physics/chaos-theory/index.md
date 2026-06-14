@@ -1,5 +1,6 @@
 ---
 title: "Chaos Theory カオス理論"
+slug: chaos-theory
 ---
 [![](/images/chaos-theory.png)](/images/chaos-theory.png)
 
@@ -52,14 +53,14 @@ But the boundary between the two is not as distant as we might think. Even in ph
 
 しかし、両者の境界は私たちが思うほど遠くはありません。天気のように無限の変数が絡み合う現象であっても、エネルギーが一定の法則で流れる系では、驚くべきことにシステム全体の挙動が数個の支配的な変数へと凝縮されることが知られています。ローレンツ・アトラクターのような簡潔な数式は、いわば巨大な自然現象の奥に潜むエッセンスを抽出した標本だとも言えます。
 
-[Logistic Mapping ロジスティック写像](/sketching-with-math-and-quasi-physics/chaos-theory/logistic-mapping)
+[Logistic Mapping ロジスティック写像](/logistic-mapping)
 
-[What is Randomness? ランダムさとは](/sketching-with-math-and-quasi-physics/chaos-theory/what-is-randomness)
+[What is Randomness? ランダムさとは](/what-is-randomness)
 
-[Stretch and Fold 引き伸ばしと折り畳み](/sketching-with-math-and-quasi-physics/chaos-theory/stretch-and-fold)
+[Stretch and Fold 引き伸ばしと折り畳み](/stretch-and-fold)
 
-[Strange Attractor ストレンジアトラクター](/sketching-with-math-and-quasi-physics/chaos-theory/strange-attractor)
+[Strange Attractor ストレンジアトラクター](/strange-attractor)
 
-[Physical Chaos 物理的なカオス](/sketching-with-math-and-quasi-physics/chaos-theory/physical-chaos)
+[Physical Chaos 物理的なカオス](/physical-chaos)
 
-[(Extra) Math on Chaos（さらに）カオスの数学](/sketching-with-math-and-quasi-physics/chaos-theory/extra-math-on-chaos)
+[(Extra) Math on Chaos（さらに）カオスの数学](/extra-math-on-chaos)

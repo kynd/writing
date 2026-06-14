@@ -1,5 +1,6 @@
 ---
 title: "Computing Colors 色を計算する"
+slug: computing-colors
 ---
 Each color model has its own characteristics, and it is useful to choose a model according to the operation you want to perform. Below are some examples.
 
@@ -36,7 +37,7 @@ Multiplication corresponds to the case such as a yellow object appears dark when
 # Using Hue
 # 色相を使う
 
-<aside><span class="aside-icon">💡</span><div class="aside-body"><p>As of 2026, <a href="/writing/sketching-with-math-and-quasi-physics/colors-and-numbers/various-color-models/#oklch">OKLCH</a> or Google's HCT models are the most recommended for working with hue.</p><p>2026年現在、色相を扱うには<a href="/writing/sketching-with-math-and-quasi-physics/colors-and-numbers/various-color-models/#oklch">OKLCH</a>かGoogleのHCTモデルが最もおすすめです。</p><p><a href="/writing/sketching-with-math-and-quasi-physics/colors-and-numbers/various-color-models/#oklch">OKLCH →</a></p></div></aside>
+<aside><span class="aside-icon">💡</span><div class="aside-body"><p>As of 2026, <a href="/writing/various-color-models/#oklch">OKLCH</a> or Google's HCT models are the most recommended for working with hue.</p><p>2026年現在、色相を扱うには<a href="/writing/various-color-models/#oklch">OKLCH</a>かGoogleのHCTモデルが最もおすすめです。</p><p><a href="/writing/various-color-models/#oklch">OKLCH →</a></p></div></aside>
 
 The best part of HSV is probably the intuitive hue concept. It is useful in cases like when you want a variation of greenish colors, or when you want to select a set of complementary colors. On the other hand, the mismatch of the S and V values to the human perception is a bit annoying. If you need a more deliberate control of colors, you might want to choose **CIELAB**.
 

@@ -1,5 +1,6 @@
 ---
 title: "Principal Component Analysis 主成分分析"
+slug: principal-component-analysis
 ---
 Principal Component Analysis (PCA) is a technique used to simplify complex datasets.
 

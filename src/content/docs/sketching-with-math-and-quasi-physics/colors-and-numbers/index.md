@@ -1,5 +1,6 @@
 ---
 title: "Colors and Numbers 色と数値"
+slug: colors-and-numbers
 ---
 Numerically handling colors can be fairly complex.
 
@@ -22,7 +23,7 @@ First, let's learn about the physical properties, such as the distribution of li
 
 まずは周波数ごとの光の分布や、それに基づく錐体への刺激などの物理特性について知りましょう。
 
-[Spectrum and Cones スペクトルと錐体](/sketching-with-math-and-quasi-physics/colors-and-numbers/spectrum-and-cones)
+[Spectrum and Cones スペクトルと錐体](/spectrum-and-cones)
 
 # CIE XYZ and xyY
 # CIE XYZ と xyY
@@ -31,7 +32,7 @@ CIE XYZ and xyY are often used as the basis for expressing colors perceived by h
 
 人間が知覚する色を数値で表す際の基礎としてよく用いられるのがCIE XYZとxyYです。
 
-[CIE Color spaces CIE色空間](/sketching-with-math-and-quasi-physics/colors-and-numbers/cie-color-spaces)
+[CIE Color spaces CIE色空間](/cie-color-spaces)
 
 # Various Color Models
 # 様々なカラーモデル
@@ -40,7 +41,7 @@ Next, let's look at several color models often used in actual work.
 
 次に実際の作業でよく用いられるカラーモデルについて見てみましょう。
 
-[Various Color Models 様々なカラーモデル](/sketching-with-math-and-quasi-physics/colors-and-numbers/various-color-models)
+[Various Color Models 様々なカラーモデル](/various-color-models)
 
 # Computing Colors
 # 色を計算する
@@ -49,4 +50,4 @@ Let’s use different color models understanding the characteristics of each.
 
 カラーモデルごとの特徴を理解して使ってみましょう。
 
-[Computing Colors 色を計算する](/sketching-with-math-and-quasi-physics/colors-and-numbers/computing-colors)
+[Computing Colors 色を計算する](/computing-colors)

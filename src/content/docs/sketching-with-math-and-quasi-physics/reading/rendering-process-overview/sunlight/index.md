@@ -1,5 +1,6 @@
 ---
 title: "Sunlight 太陽光"
+slug: sunlight
 ---
 ```glsl
 // Sunlight contribution.
@@ -20,7 +21,7 @@ This part calculates the contribution of the sun light. This demo uses simple di
 
 この部分では太陽光が与える影響を計算します。太陽光は非常に遠くからの平行な光です。このデモでは、これを単純な拡散光と鏡面反射モデルを使って近似します。
 
-[Specular reflections and diffuse light 鏡面反射と拡散光](/sketching-with-math-and-quasi-physics/light/illuminating-objects/specular-reflections-and-diffuse-light)
+[Specular reflections and diffuse light 鏡面反射と拡散光](/specular-reflections-and-diffuse-light)
 
 In the demo, try turning off everything other than the sunlight, then toggle the shadow on and off to see the effect of the sunlight in isolation.
 
@@ -31,9 +32,9 @@ In the demo, try turning off everything other than the sunlight, then toggle the
 # Diffuse light
 # ディフューズ（拡散光）
 
-`diffuse` represents the light scattered on the surface of the object in all directions. This is calculated as the [dot product](/sketching-with-math-and-quasi-physics/vector-operations) of the direction of the light and the normal (the direction of the surface). The more aligned they are, the more light the surface receives and scatters.
+`diffuse` represents the light scattered on the surface of the object in all directions. This is calculated as the [dot product](/vector-operations) of the direction of the light and the normal (the direction of the surface). The more aligned they are, the more light the surface receives and scatters.
 
-`diffuse`は、物体の表面であらゆる方向に散乱する光を表現します。これは、光の方向と法線（表面の方向）の[ドット積](/sketching-with-math-and-quasi-physics/vector-operations)として計算されます。これらの方向が一致するほど、表面がより多くの光を受け取り、散乱させます。
+`diffuse`は、物体の表面であらゆる方向に散乱する光を表現します。これは、光の方向と法線（表面の方向）の[ドット積](/vector-operations)として計算されます。これらの方向が一致するほど、表面がより多くの光を受け取り、散乱させます。
 
 ```glsl
 float diffuse = clamp(dot(normal, lightDirection), 0.0, 1.0);
@@ -90,4 +91,4 @@ Lastly, note that `diffuse` is multiplied by the result of the `calcSoftshadow()
 
 最後に、`diffuse` と `calcSoftshadow()` 関数の結果を掛け合わせていることに注目してください。この関数は、`intersectionPoint`から光源の方向に新しいレイを投射し、そのレイが物体と交差するかどうかを確認します。交差する場合、その点はその物体の影の中にあることを意味します。
 
-[Soft shadow ソフトシャドウ](/sketching-with-math-and-quasi-physics/reading/rendering-process-overview/soft-shadow)
+[Soft shadow ソフトシャドウ](/soft-shadow)

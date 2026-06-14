@@ -1,5 +1,6 @@
 ---
 title: "The proof of the Euler Product Formula"
+slug: the-proof-of-the-euler-product-formula
 ---
 (Written by AI)
 

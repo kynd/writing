@@ -1,5 +1,6 @@
 ---
 title: "Mapping 写像"
+slug: mapping
 ---
 When exploring ideas through math and code, we often discover that seemingly different concepts share deep similarities and can be solved using the same approaches. Recognizing these patterns helps us apply techniques from one field to another, unlocking new ways to solve problems.
 
@@ -9,7 +10,7 @@ Mapping from one space to another is one of these powerful concepts. The idea is
 
 ある空間から別の空間への写像は、 そうした強力な概念の1つです。考え方はシンプルで、ある集合の要素を取ると、別の集合の対応する要素が得られます。この集合は、ダンスパーティーでのペア作りから空間内のすべての点まで、さまざまなものが当てはまります。
 
-For example, mapping an alphabet to its ASCII code (or the other way around) is one type of mapping. A color picker (like those found in design and drawing applications) is a mapping between screen position (2D space) and [a point in a color space](/sketching-with-math-and-quasi-physics/colors-and-numbers/cie-color-spaces).
+For example, mapping an alphabet to its ASCII code (or the other way around) is one type of mapping. A color picker (like those found in design and drawing applications) is a mapping between screen position (2D space) and [a point in a color space](/cie-color-spaces).
 
 例えば、アルファベットからASCIIコードへの対応（またはその逆）も写像の一種です。カラーピッカー（デザインや描画アプリケーションでよく見られるもの）は、画面上の位置（2次元空間）と色空間上の点との間の写像です。
 
@@ -21,7 +22,7 @@ Mapping is defined in math as a rule that assigns each element from one set to a
 
 [![](/images/mapping.jpg "75")](/images/mapping.jpg)
 
-[Discrete Mapping 離散的な写像](/sketching-with-math-and-quasi-physics/mapping/discrete-mapping)
+[Discrete Mapping 離散的な写像](/discrete-mapping)
 
 # Continuous Mapping 連続的な写像
 
@@ -29,4 +30,4 @@ Mapping can be a function like <span class="katex"><span class="katex-mathml"><m
 
 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mi>a</mi><mi>x</mi><mo>+</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">y = ax + b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">a</span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">b</span></span></span></span>といった関数のように、値を連続的に変換する写像もあります。実際、数学のほとんど全ての関数は、入力に対して特定の出力が割り当てられるという意味で写像だと考えられます。関数を演算ではなく、関係として捉えることで、物事のつながり方の構造を見る新しい視点が得られます。
 
-[Continuous Mapping 連続的な写像](/sketching-with-math-and-quasi-physics/mapping/continuous-mapping)
+[Continuous Mapping 連続的な写像](/continuous-mapping)

@@ -1,7 +1,8 @@
 ---
 title: "Logistic Mapping ロジスティック写像"
+slug: logistic-mapping
 ---
-[Chaos Theory カオス理論](/sketching-with-math-and-quasi-physics/chaos-theory)
+[Chaos Theory カオス理論](/chaos-theory)
 
 Let's look at a very simple example called the logistic map. What this equation does is simply update the value of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">x</span></span></span></span> at each iteration by multiplying the previous step by <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi></mrow><annotation encoding="application/x-tex">r</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(1 - x)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">x</span><span class="mclose">)</span></span></span></span>.
 
@@ -54,7 +55,7 @@ Around <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3
 
 What's interesting is that even within this chaos, periodic windows (white gaps) occasionally appear. In the midst of disorder, periodicity suddenly reemerges. If you zoom in on the white window sections, you can see a self-similar (fractal) structure, where the same structure as the entire figure appears in miniature.
 
-面白いのは、このカオスの中にも、時折白い隙間（周期的窓）が現れることです。混沌とした世界の中に、突然に周期性が復活します。白い窓の部分を拡大してみると、図全体と同じ構造がそこにミニチュアとして現れる[自己相似（フラクタル）構造](/sketching-with-math-and-quasi-physics/patterns/fractal)が見られます。
+面白いのは、このカオスの中にも、時折白い隙間（周期的窓）が現れることです。混沌とした世界の中に、突然に周期性が復活します。白い窓の部分を拡大してみると、図全体と同じ構造がそこにミニチュアとして現れる[自己相似（フラクタル）構造](/fractal)が見られます。
 
 # What is randomness?
 # ランダムさとは
@@ -63,5 +64,5 @@ We've been using the phrase "appears random" somewhat casually, but to analyze c
 
 ここまで「ランダムに見える」という言葉を何となく使ってきましたが、カオスの性質を分析するにはランダムさを数学的に扱えるように定義することが役立ちます。次のページでは情報理論の観点からランダムさという概念について詳しくみていきます。
 
-[What is Randomness? ランダムさとは](/sketching-with-math-and-quasi-physics/chaos-theory/what-is-randomness)
+[What is Randomness? ランダムさとは](/what-is-randomness)
 

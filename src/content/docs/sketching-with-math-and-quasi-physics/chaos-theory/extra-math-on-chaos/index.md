@@ -1,7 +1,8 @@
 ---
 title: "(Extra) Math on Chaos （さらに）カオスの数学"
+slug: extra-math-on-chaos
 ---
-[Chaos Theory カオス理論](/sketching-with-math-and-quasi-physics/chaos-theory)
+[Chaos Theory カオス理論](/chaos-theory)
 
 Here we will delve a bit more into some important mathematical concepts related to chaos.
 
@@ -59,7 +60,7 @@ The mathematical definition uses the derivative (slope) of the function, but her
 
 数学的な定義では関数の微分（傾き）を使いますが、ここでは実際にわずかにズレた2点を走らせてみることで近似しています。
 
-[Continuous Time and Discrete Time 連続した時間とバラバラな時間](/sketching-with-math-and-quasi-physics/newton-and-vectors/continuous-time-and-discrete-time)
+[Continuous Time and Discrete Time 連続した時間とバラバラな時間](/continuous-time-and-discrete-time)
 
 ```jsx
 function calculateLyapunov(a, b, c, d) {
@@ -134,7 +135,7 @@ With a canvas size of 800 × 800, this image represents the properties of 640,00
 
 When we introduced KS entropy, we didn't explain the calculation in details. The method of dividing space into boxes and counting is difficult to implement in practice, depending on the system's properties. But if you understand the Lyapunov exponent, you can use it as a shortcut to KS entropy.
 
-[KSエントロピーを紹介した時](/sketching-with-math-and-quasi-physics/chaos-theory/what-is-randomness)にその計算方法は詳しく説明しませんでした。空間を箱に分けて数えるという方法は実際に行おうとすると系の性質によってとても大変になるからです。ですが、リアプノフ指数の概念を知っているとそれをKSエントロピーへのショートカットとして使うことができます。
+[KSエントロピーを紹介した時](/what-is-randomness)にその計算方法は詳しく説明しませんでした。空間を箱に分けて数えるという方法は実際に行おうとすると系の性質によってとても大変になるからです。ですが、リアプノフ指数の概念を知っているとそれをKSエントロピーへのショートカットとして使うことができます。
 
 In chaotic systems, Pesin's formula (Pesin's Identity) connects the measure of how quickly trajectories diverge (Lyapunov exponent) with the measure of how quickly new information is generated (KS entropy).
 
@@ -317,6 +318,6 @@ When working with chaotic elements in graphics, existing systems like the Lorenz
 
 グラフィックスなどでカオス的なものを扱う時には既存のシステム、例えばローレンツアトラクターなどをいい感じの数値の発生器として使うこともありますが、それよりもカオス的な質感や振る舞いを得ることが目的で、系が厳密にカオスかどうかはどうでも良いことの方が多いでしょう。例えばランダムな入力やノイズを用いつつもカオス的な見た目、例えば最初は揃っていた軌道が時間と共に指数関数的にずれていく、といった特徴をうまく出すことはできるでしょうか。ここで学んだ概念をビジュアルな発想に落とせるか考えてみましょう。
 
-To learn more about the theory, search or ask AI using keywords from this page. You might also explore fractal dimensions, which measure the complexity of shapes created by chaos. See the [Fractal フラクタル](/sketching-with-math-and-quasi-physics/patterns/fractal) page as well as a reference.
+To learn more about the theory, search or ask AI using keywords from this page. You might also explore fractal dimensions, which measure the complexity of shapes created by chaos. See the [Fractal フラクタル](/fractal) page as well as a reference.
 
-もしより理論について学びたければこのページに登場するキーワードをもとに検索したりAIに聞いてみたりすると良いでしょう。カオスが作る形のスカスカ具合を数値化するフラクタル次元について調べて見るのも面白いと思います。[Fractal フラクタル](/sketching-with-math-and-quasi-physics/patterns/fractal) のページも参照してください。
+もしより理論について学びたければこのページに登場するキーワードをもとに検索したりAIに聞いてみたりすると良いでしょう。カオスが作る形のスカスカ具合を数値化するフラクタル次元について調べて見るのも面白いと思います。[Fractal フラクタル](/fractal) のページも参照してください。

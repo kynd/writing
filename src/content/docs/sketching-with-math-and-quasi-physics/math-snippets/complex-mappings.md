@@ -1,5 +1,6 @@
 ---
 title: "Complex Mappings 複素数のマッピング"
+slug: complex-mappings
 ---
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="yyaqGZQ" data-user="kynd" data-preview="true"></p></div>
 
@@ -7,9 +8,9 @@ On the pages below, we saw how multiplication and exponentiation can create inte
 
 下記のページでは、複素数の掛け算や累乗が回転と拡大を組み合わせた面白い動きを生み出す様子を見てきました。
 
-[Complex Multiplication 複素数の掛け算](/sketching-with-math-and-quasi-physics/math-snippets/complex-multiplication)
+[Complex Multiplication 複素数の掛け算](/complex-multiplication)
 
-[Complex Exponentiation 複素数の累乗](/sketching-with-math-and-quasi-physics/math-snippets/complex-exponentiation)
+[Complex Exponentiation 複素数の累乗](/complex-exponentiation)
 
 Rather than focusing on individual calculations, we can apply the same rules to every point as a function. This creates a mapping between two spaces, called a Complex Mapping.
 

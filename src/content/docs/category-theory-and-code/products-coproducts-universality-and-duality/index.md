@@ -1,5 +1,6 @@
 ---
 title: "Products, Coproducts, Universality and Duality 積、余積、普遍性と双対性"
+slug: products-coproducts-universality-and-duality
 ---
 We've explored the basic rules of categories—composition and identity morphisms—and the consistency of structure through commutativity and isomorphism. These simple rules are based only on "points and arrows," yet they enable surprisingly rich expression.
 
@@ -378,4 +379,4 @@ When you think about duality, you realize that data decomposition (product) and 
 > Try drawing diagrams to explore this further.  
 > 図を描きながら考えてみましょう。
 
-[Functor 関手](/category-theory-and-code/functor)
+[Functor 関手](/functor)

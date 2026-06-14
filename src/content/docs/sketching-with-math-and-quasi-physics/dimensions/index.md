@@ -1,5 +1,6 @@
 ---
 title: "Dimensions 次元"
+slug: dimensions
 ---
 In 1884, Edwin A. Abbott wrote a peculiar novel about people living in Flatland, a two-dimensional world. The main character, the Square, dreams about Lineland—a one-dimensional world—and eventually meets the Sphere, who takes him to Spaceland, a three-dimensional world.
 
@@ -111,7 +112,7 @@ The demo below uses a more common method called perspective projection, which pr
 
 下のデモでは、より一般的な透視投影法を使用しています。これは私たちの実際の視覚により近いと感じられるでしょう。透視投影法では、物体が視点から遠ざかるにつれて小さく見えます。これは、物体が遠くなるほど、その両端と視点との間の角度が小さくなることに対応しています。
 
-[Projection プロジェクション](/sketching-with-math-and-quasi-physics/projection-and-3d-rendering/projection)
+[Projection プロジェクション](/projection)
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="NWZeZRV" data-user="kynd" data-preview="true"></p></div>
 
@@ -160,9 +161,9 @@ function rotateBoxPoint(point, angle) {
 }
 ```
 
-You can learn more about rotation in [Rotation and Trigonometry 回転と三角関数](/sketching-with-math-and-quasi-physics/rotation/rotation-and-trigonometry).
+You can learn more about rotation in [Rotation and Trigonometry 回転と三角関数](/rotation-and-trigonometry).
 
-回転についてより詳しく知りたい場合は [Rotation and Trigonometry 回転と三角関数](/sketching-with-math-and-quasi-physics/rotation/rotation-and-trigonometry)を参照してください。
+回転についてより詳しく知りたい場合は [Rotation and Trigonometry 回転と三角関数](/rotation-and-trigonometry)を参照してください。
 
 # 4D 4次元
 
@@ -198,9 +199,9 @@ Very roughly, ray marching is a technique where we mathematically define a shape
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="eYxYRBy" data-user="kynd" data-preview="true"></p></div>
 
-Please read [Ray Marching レイマーチング](/sketching-with-math-and-quasi-physics/projection-and-3d-rendering/ray-marching) to fully understand the technique and the demo.
+Please read [Ray Marching レイマーチング](/ray-marching) to fully understand the technique and the demo.
 
-この手法とデモをより理解するためには [Ray Marching レイマーチング](/sketching-with-math-and-quasi-physics/projection-and-3d-rendering/ray-marching) を呼んでください。
+この手法とデモをより理解するためには [Ray Marching レイマーチング](/ray-marching) を呼んでください。
 
 The distance function is usually defined in 3D or 2D, but here it is defined in 4D. Our rays go in the 3D space, but they will hit the rotating 4D object and tell us where the surface is (or depending on how you interpret the code, you can think our rays are being rotated in 4D and hit the static 4D object). Can you imagine this in your head?
 
@@ -214,9 +215,9 @@ As opposed to the "projection" demo above, which forces any 4D points to project
 
 # 5D and beyond 5次元以上の空間
 
-Now we understand the pattern, we can go higher up to 5D or any number of dimensions beyond. Higher dimensions may feel too abstract and like just a thought experiment, but if you think of a point in higher dimensions as a point specified by a lot of value, or a [vector](/sketching-with-math-and-quasi-physics/newton-and-vectors/vector), multidimensional data is everywhere. You can [think of an RGB color as a point in a 3D space](/sketching-with-math-and-quasi-physics/colors-and-numbers), and statistical data consisting of 7 numbers (let's say you have data about a population and each person has 7 parameters like age, annual income, etc.), you can think of it as a point in 7-dimensional space.
+Now we understand the pattern, we can go higher up to 5D or any number of dimensions beyond. Higher dimensions may feel too abstract and like just a thought experiment, but if you think of a point in higher dimensions as a point specified by a lot of value, or a [vector](/vector), multidimensional data is everywhere. You can [think of an RGB color as a point in a 3D space](/colors-and-numbers), and statistical data consisting of 7 numbers (let's say you have data about a population and each person has 7 parameters like age, annual income, etc.), you can think of it as a point in 7-dimensional space.
 
-これまで見てきたパターンは、5次元やそれ以上の次元にも拡張できます。高次元は抽象的で単なる思考実験のように思えるかもしれませんが、高次元の点を多くの値で指定された点、つまり[ベクトル](/sketching-with-math-and-quasi-physics/newton-and-vectors/vector)として考えると、多次元のデータは至る所にあることがわかります。[RGBカラーを3次元空間の点として考えたり](/sketching-with-math-and-quasi-physics/colors-and-numbers)、7つの数字からなる統計データ（例えば、ある集団のデータで、各個人が年齢や年収などの7つのパラメータを持っているとします）を7次元空間の点として捉えることができます。
+これまで見てきたパターンは、5次元やそれ以上の次元にも拡張できます。高次元は抽象的で単なる思考実験のように思えるかもしれませんが、高次元の点を多くの値で指定された点、つまり[ベクトル](/vector)として考えると、多次元のデータは至る所にあることがわかります。[RGBカラーを3次元空間の点として考えたり](/colors-and-numbers)、7つの数字からなる統計データ（例えば、ある集団のデータで、各個人が年齢や年収などの7つのパラメータを持っているとします）を7次元空間の点として捉えることができます。
 
 The merit of thinking of them in terms of multidimensional space is that we can introduce very useful concepts like distance or angle between points to measure similarity, or various ways to collapse or project the space to create useful visualizations or summaries.
 
@@ -226,6 +227,6 @@ In fact, AI models like GPT-4 or Gemini encode concepts like dog, human, run, ha
 
 実際、GPT-4やGeminiなどのAIモデルは、犬、人間、走る、幸せなどの概念を超高次元ベクトルとしてエンコードします（例えば、[OpenAIの](https://openai.com/index/new-embedding-models-and-api-updates/) [`text-embedding-3-large`](https://openai.com/index/new-embedding-models-and-api-updates/) は最大3072次元のベクトル表現を生成します）。全ての概念や単語が類似性によって並べられ、似た概念が近くに、反対の言葉が遠くに浮かんでいるような空間を想像してみましょう。
 
-You can learn more about vectors and how to do various calculations in the multidimensional world on the [Vector Operations ベクトルの操作](/sketching-with-math-and-quasi-physics/vector-operations)
+You can learn more about vectors and how to do various calculations in the multidimensional world on the [Vector Operations ベクトルの操作](/vector-operations)
 
-多次元世界におけるベクトルとさまざまな計算方法については、[Vector Operations ベクトルの操作](/sketching-with-math-and-quasi-physics/vector-operations)ページでさらに詳しく学ぶことができます。
+多次元世界におけるベクトルとさまざまな計算方法については、[Vector Operations ベクトルの操作](/vector-operations)ページでさらに詳しく学ぶことができます。

@@ -1,5 +1,6 @@
 ---
 title: "Newtonian mechanics ニュートン力学"
+slug: newtonian-mechanics
 ---
 Let’s use basic Newtonian mechanics and vectors to move things around.
 
@@ -35,8 +36,8 @@ This concept of _amount of change_ is very important when dealing with any chang
 
 > 
 > 
-> If you are interested, please take a look at [Calculus for Makers](/sketching-with-math-and-quasi-physics/calculus-for-makers).  
-> 興味があれば、[作るための微積分](/sketching-with-math-and-quasi-physics/calculus-for-makers)を読んでください。
+> If you are interested, please take a look at [Calculus for Makers](/calculus-for-makers).  
+> 興味があれば、[作るための微積分](/calculus-for-makers)を読んでください。
 
 Velocity is a vector and has direction and magnitude (the amount without  direction is called "speed"). For example, if the velocity of a point is (60, 30), it means that the point will move 60 units along with the x-axis and 30 units along with the y-axis during a unit of time (say 1 second).
 
@@ -56,7 +57,7 @@ Just a note, but this "add every frame" operation is a rather crude approximatio
 
 ちなみにこの「毎フレームごとに足す」という操作はかなり雑な近似で、現実の世界ではもっと連続的に物事が変化します。この点については次のページでちょっと説明します。
 
-[Continuous Time and Discrete Time 連続した時間とバラバラな時間](/sketching-with-math-and-quasi-physics/newton-and-vectors/continuous-time-and-discrete-time)
+[Continuous Time and Discrete Time 連続した時間とバラバラな時間](/continuous-time-and-discrete-time)
 
 # Acceleration
 # 加速
@@ -154,4 +155,4 @@ You can of-course add randomness to the movement. The movement of these ribbons 
 
 <div class="video-wrap"><iframe title="vimeo-player" src="https://player.vimeo.com/video/102100106" width="640" height="360" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen></iframe></div>
 
-[Continuous Time and Discrete Time 連続した時間とバラバラな時間](/sketching-with-math-and-quasi-physics/newton-and-vectors/continuous-time-and-discrete-time)
+[Continuous Time and Discrete Time 連続した時間とバラバラな時間](/continuous-time-and-discrete-time)

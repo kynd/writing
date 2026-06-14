@@ -1,5 +1,6 @@
 ---
 title: "About Shapes 形について"
+slug: about-shapes
 ---
 Shapes seem like an obvious topic. Since they are ubiquitous, we take them for granted. Many tools provide ways to draw shapes, and many of them are pretty simple, like these functions in p5.js.
 
@@ -21,7 +22,7 @@ It is easy to draw line segments, circles, etc. in various environments includin
 
 HTML Canvasを始めとする様々な環境では簡単に線分や円を描くことができます。ところが幾何学の教科書に出てくるような図形を描くのは意外と難しくて、2直線の交点を中心に円を描くといったシンプルな操作にもちょっとした計算が必要になります。絵を描く機能と数学的に図形を扱う機能は別物なのです。もちろん世の中にはよく出来たライブラリがたくさんあるのですが、自分で基本的な機能を実装してみるのも良い勉強になります（なりました）。
 
-[Geometric Drawings 幾何学ドローイング](/sketching-with-math-and-quasi-physics/geometric-drawings)
+[Geometric Drawings 幾何学ドローイング](/geometric-drawings)
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="qmLJVe" data-user="kynd" data-preview="true"></p></div>
 
@@ -43,7 +44,7 @@ You might have experience in drawing shapes with just a compass and ruler in mat
 
 Geometric shapes are widely used in our design. Repeating them in patterns is a major vocabulary of decorative and graphic design. Since ancient times, people have been crafting intriguing patterns by repeating graphic elements or organizing space based on specific rules.
 
-[Tiling タイリング](/sketching-with-math-and-quasi-physics/patterns/tiling)
+[Tiling タイリング](/tiling)
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="NWmpKNY" data-user="kynd" data-preview="true"></p></div>
 
@@ -61,13 +62,13 @@ Various methods of checking whether figures overlap are used to detect collision
 
 図形が重なっているかを調べる様々な手法は物理シミュレーションやゲームなどで物体同士の衝突判定に使われます。実際のプロジェクトでは既存のツールの機能やライブラリなどに頼ることも多いと思いますが、基本的なことを知っておくと、これらのツールを理解する役にたつだけでなく、自分で必要な機能だけを素早く実装できるようになります。
 
-[Detecting Collision 衝突判定](/sketching-with-math-and-quasi-physics/detecting-collision)
+[Detecting Collision 衝突判定](/detecting-collision)
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="GEyRXg" data-user="kynd" data-preview="true"></p></div>
 
 > 
 > 
-> The linked page above ([Detecting Collision 衝突判定](/sketching-with-math-and-quasi-physics/detecting-collision)) only covers collision detection in 2D. 3D collision detection can be much more intricate, but understanding in 2D can extend and help a lot in 3D too. Below is a simple reference I found for 3D.
+> The linked page above ([Detecting Collision 衝突判定](/detecting-collision)) only covers collision detection in 2D. 3D collision detection can be much more intricate, but understanding in 2D can extend and help a lot in 3D too. Below is a simple reference I found for 3D.
 > 
 > [https://developer.mozilla.org/en-US/docs/Games/Techniques/3D\_collision\_detection?utm\_source=chatgpt.com](https://developer.mozilla.org/en-US/docs/Games/Techniques/3D_collision_detection?utm_source=chatgpt.com)
 
@@ -79,7 +80,7 @@ While straight lines are much easier to handle, curves are the norm on Earth. Na
 
 ## Cumulative Curves 積み重ねによる曲線
 
-[Cumulative Curves 積み重ねによる曲線](/sketching-with-math-and-quasi-physics/curves/cumulative-curves)
+[Cumulative Curves 積み重ねによる曲線](/cumulative-curves)
 
 One of the most common ways that curves occur in the physical world is through cumulative motion or buildup, meaning a point starts moving from one location and changes its course over time. This can include freehand drawing, paths followed by insects, animals, vehicles, and the growth patterns of plants and other organisms.
 
@@ -89,9 +90,9 @@ One of the most common ways that curves occur in the physical world is through c
 
 Parametric Approaches パラメトリックアプローチ
 
-While the [cumulative approach is straightforward and versatile in theory](/sketching-with-math-and-quasi-physics/curves/cumulative-curves), it is often not the best for many practical use cases where you want more precise control over the overall shape and details, such as in drawing or design tools.
+While the [cumulative approach is straightforward and versatile in theory](/cumulative-curves), it is often not the best for many practical use cases where you want more precise control over the overall shape and details, such as in drawing or design tools.
 
-[積み重ねによるアプローチ](/sketching-with-math-and-quasi-physics/curves/cumulative-curves)は理論上は素直で汎用的ですが、描画ツールやデザインツールなど、実際の利用シーンで、全体の形や細部をより正確に制御したい場面では必ずしも最適ではありません。
+[積み重ねによるアプローチ](/cumulative-curves)は理論上は素直で汎用的ですが、描画ツールやデザインツールなど、実際の利用シーンで、全体の形や細部をより正確に制御したい場面では必ずしも最適ではありません。
 
 These tools usually adopt parametric approaches. In the parametric approach, a shape or curve is defined mathematically using one or more parameters. By varying these parameters, you can generate points that make up the shape. For example, if the parameter is called <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi></mrow><annotation encoding="application/x-tex">t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6151em;"></span><span class="mord mathnormal">t</span></span></span></span>, you can get all the points from beginning to end by moving <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi></mrow><annotation encoding="application/x-tex">t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6151em;"></span><span class="mord mathnormal">t</span></span></span></span> within a certain range.
 
@@ -99,7 +100,7 @@ These tools usually adopt parametric approaches. In the parametric approach, a s
 
 [![](/images/about-shapes.png)](/images/about-shapes.png)
 
-[Parametric Approaches パラメトリックアプローチ](/sketching-with-math-and-quasi-physics/curves/parametric-approaches)
+[Parametric Approaches パラメトリックアプローチ](/parametric-approaches)
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="NWVXeRm" data-user="kynd" data-preview="true"></p></div>
 
@@ -114,7 +115,7 @@ A spline curve is a mathematically defined curve that smoothly passes through or
 
 スプライン曲線は、滑らかに一連の制御点を通過するか、またはその近くを通過するように数学的に定義された曲線です。これは大きなファミリーのようなもので、例えば、ベジェ曲線、Bスプライン曲線、NURBS（Non-Uniform Rational B-Splines）、カーディナルスプライン、Catmull-Rom スプライン、エルミートスプラインなどに様々なバリエーションがあります。
 
-[Bézier and Spline ベジェとスプライン](/sketching-with-math-and-quasi-physics/curves/be)
+[Bézier and Spline ベジェとスプライン](/be)
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="ZEZZQro" data-user="kynd" data-preview="true"></p></div>
 
@@ -152,7 +153,7 @@ s-109,-253,-109,-253c-72.7,-168,-109.3,-252,-110,-252c-10.7,8,-22,16.7,-34,26
 c-22,17.3,-33.3,26,-34,26s-26,-26,-26,-26s76,-59,76,-59s76,-60,76,-60z
 M1001 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3231em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span></span></span></span>
 
-[Signed distance functions 符号付き距離関数](/sketching-with-math-and-quasi-physics/distance/signed-distance-functions)
+[Signed distance functions 符号付き距離関数](/signed-distance-functions)
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="mdLPVrE" data-user="kynd" data-preview="true"></p></div>
 
@@ -166,11 +167,11 @@ Using this method in 3D, you can create different shapes pretty flexibly with a 
 
 この手法を3Dで使うと、比較的短いシェーダーのコードで様々な形状を柔軟に作ることができます。
 
-[Projection and 3D Rendering プロジェクションと3Dレンダリング](/sketching-with-math-and-quasi-physics/projection-and-3d-rendering)
+[Projection and 3D Rendering プロジェクションと3Dレンダリング](/projection-and-3d-rendering)
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="ZEwyLWQ" data-user="kynd" data-preview="true"></p></div>
 
-[Reading “Raymarching - Primitives”](/sketching-with-math-and-quasi-physics/reading)
+[Reading “Raymarching - Primitives”](/reading)
 
 Shaders and 3D rendering have a very steep learning curve. There isn't a common or obvious way to build knowledge step by step, and it takes learning from multiple resources and examples. Shadertoy is one of the best resources with tons of cool demos with publicly available code. However, understanding this demo code can often be daunting. There are many techniques to grasp, and it's often difficult to understand what's happening in the code at first glance.
 
@@ -180,11 +181,11 @@ There isn’t really a shortcut here (as far as I know). Studying demo codes ste
 
 （知る限り）ここに近道はありません。デモコードを一歩一歩、少しずつ学んでいくのが最も確実な方法です。下の2つのページは、学習の手助けのための試みです。
 
-[Reading “Raymarching - Primitives”](/sketching-with-math-and-quasi-physics/reading)
+[Reading “Raymarching - Primitives”](/reading)
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="dyxzyjV" data-user="kynd" data-preview="true"></p></div>
 
-[Drawing Landscape](/sketching-with-math-and-quasi-physics/drawing-landscape)
+[Drawing Landscape](/drawing-landscape)
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="NPPWORo" data-user="kynd" data-preview="true"></p></div>
 
@@ -203,7 +204,7 @@ This property, called self-similarity, is key to modeling many complex structure
 
 この性質は自己相似性と呼ばれ、海岸線や、山、雲、木の枝など、自然に見られる多くの複雑な構造やパターンをモデリングするため重要な概念です。自然界の物体や生命は、自己を構築する過程でしばしば、同様のパターンがより小さな、または大きなスケールで繰り返し現れる、フラクタルのような構造を形成します。この原理を理解することは、これらの現象をスケッチする役に立ちます。
 
-[Fractal フラクタル](/sketching-with-math-and-quasi-physics/patterns/fractal)
+[Fractal フラクタル](/fractal)
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="poYBGbN" data-user="kynd" data-preview="true"></p></div>
 
@@ -213,7 +214,7 @@ Natural shapes are also unpredictable. The ups and downs of terrain, the changes
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="WNJxXZb" data-user="kynd" data-preview="true"></p></div>
 
-[Reading a Noise Function](/sketching-with-math-and-quasi-physics/reading-a-noise-function)
+[Reading a Noise Function](/reading-a-noise-function)
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="WbbBawy" data-user="kynd" data-preview="true"></p></div>
 
@@ -231,6 +232,6 @@ As I said in the beginning, there are infinite ways of defining and drawing shap
 
 -   手書きやモデリング: 人工的な形状の多くは、文字どおりあるいは比喩的な意味で、手作業によって作られます。人類は古くから手で形を描き、作り出してきましたし、現代のデジタルツールにも同様の機能が備わっています。しかし、さまざまな描画ツールやモデリングツールを解説し、その頻繁なアップデートに追従することは、ここでも守備範囲を大きく超えています。
 
-That said, if you're interested, I recommend building basic tools yourself to learn the fundamentals. Even trying to render a few polygons can provide good insights (hint: [project 3D points to 2D screen](/sketching-with-math-and-quasi-physics/projection-and-3d-rendering/projection), [calculate normals using cross product of vectors](/sketching-with-math-and-quasi-physics/vector-operations), and [apply lighting](/sketching-with-math-and-quasi-physics/light/illuminating-objects/classic-3d-rendering)).
+That said, if you're interested, I recommend building basic tools yourself to learn the fundamentals. Even trying to render a few polygons can provide good insights (hint: [project 3D points to 2D screen](/projection), [calculate normals using cross product of vectors](/vector-operations), and [apply lighting](/classic-3d-rendering)).
 
-興味があれば、基礎を学ぶために基本的なツールを自分で作ってみることをお勧めします。数個のポリゴンをレンダリングしてみるだけでも、多くの気づきが得られるでしょう（ヒント：[3Dの点を2Dのスクリーンに投影し](/sketching-with-math-and-quasi-physics/projection-and-3d-rendering/projection)、[ベクトルのクロス積を使って法線（ノーマル）を求め](/sketching-with-math-and-quasi-physics/vector-operations)、[ライティングを適用します](/sketching-with-math-and-quasi-physics/light/illuminating-objects/classic-3d-rendering)）。
+興味があれば、基礎を学ぶために基本的なツールを自分で作ってみることをお勧めします。数個のポリゴンをレンダリングしてみるだけでも、多くの気づきが得られるでしょう（ヒント：[3Dの点を2Dのスクリーンに投影し](/projection)、[ベクトルのクロス積を使って法線（ノーマル）を求め](/vector-operations)、[ライティングを適用します](/classic-3d-rendering)）。

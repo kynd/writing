@@ -1,9 +1,10 @@
 ---
 title: "Illuminating objects 物体を照らす"
+slug: illuminating-objects
 ---
-We see things by catching [the light reflected or refracted by objects](/sketching-with-math-and-quasi-physics/light/reflection-and-refraction) with our eyes. Let’s look into how that works.
+We see things by catching [the light reflected or refracted by objects](/reflection-and-refraction) with our eyes. Let’s look into how that works.
 
-私たちは[物体によって反射したり屈折した光](/sketching-with-math-and-quasi-physics/light/reflection-and-refraction)を目で捉えることで物を見ています。その仕組みについて見てみましょう。
+私たちは[物体によって反射したり屈折した光](/reflection-and-refraction)を目で捉えることで物を見ています。その仕組みについて見てみましょう。
 
 > 
 > 
@@ -24,8 +25,8 @@ We see things by catching [the light reflected or refracted by objects](/sketchi
 > [Ray Marching and Signed Distance Functions](https://jamie-wong.com/2016/07/15/ray-marching-signed-distance-functions/)  
 > [wgld.org](http://wgld.org) （日本語）
 
-[Specular reflections and diffuse light 鏡面反射と拡散光](/sketching-with-math-and-quasi-physics/light/illuminating-objects/specular-reflections-and-diffuse-light)
+[Specular reflections and diffuse light 鏡面反射と拡散光](/specular-reflections-and-diffuse-light)
 
-[Classic 3D Rendering 古典的 3D レンダリング](/sketching-with-math-and-quasi-physics/light/illuminating-objects/classic-3d-rendering)
+[Classic 3D Rendering 古典的 3D レンダリング](/classic-3d-rendering)
 
-[(Somewhat more) Physically based rendering 物理的に（もう少し）正しいレンダリング](/sketching-with-math-and-quasi-physics/light/illuminating-objects/somewhat-more-physically-based-rendering)
+[(Somewhat more) Physically based rendering 物理的に（もう少し）正しいレンダリング](/somewhat-more-physically-based-rendering)

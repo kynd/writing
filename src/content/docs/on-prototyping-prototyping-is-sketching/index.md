@@ -1,5 +1,6 @@
 ---
 title: "On Prototyping (Prototyping is sketching)"
+slug: on-prototyping-prototyping-is-sketching
 ---
 Originally written in English in 2020.
 

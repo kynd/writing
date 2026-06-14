@@ -1,5 +1,6 @@
 ---
 title: "Sound visualization 音の視覚化"
+slug: sound-visualization
 ---
 “Audio-visual” is a cliché in visual coding and is still popular. By taking a sound source or input and analyzing the data, you can create various visual (and other) representations, ranging from practical visualizations to more expressive pieces. On this page, we will take a look at the fundamental structure of sound and examples of how to transform it into visuals.
 
@@ -13,9 +14,9 @@ title: "Sound visualization 音の視覚化"
 # Characteristics of sound waves
 # 音波の特性
 
-Sound is a [wave](/sketching-with-math-and-quasi-physics/wave). It starts from an object, anything from a guitar string, vocal cords, a propeller, to an popping balloon. When an object vibrates, has repetitive motion, or causes some impact, it causes the particles of the medium around it to vibrate, transferring the vibrations from one particle to the next. In air, these vibrations manifest as fluctuating air pressure; in water and solids, the particles oscillate back and forth.
+Sound is a [wave](/wave). It starts from an object, anything from a guitar string, vocal cords, a propeller, to an popping balloon. When an object vibrates, has repetitive motion, or causes some impact, it causes the particles of the medium around it to vibrate, transferring the vibrations from one particle to the next. In air, these vibrations manifest as fluctuating air pressure; in water and solids, the particles oscillate back and forth.
 
-音は[波](/sketching-with-math-and-quasi-physics/wave)です。この波はギターの弦、声帯、プロペラ、または破裂する風船など、あらゆる物体から始まります。物体が振動したり、ある動きを繰り返したり、衝撃を発生させると、その周りの媒体の粒子が振動し、振動は次の粒子へと伝わっていきます。空気中では、これらの振動は気圧の変動として現れます。水や固体では、粒子は前後に振動します。
+音は[波](/wave)です。この波はギターの弦、声帯、プロペラ、または破裂する風船など、あらゆる物体から始まります。物体が振動したり、ある動きを繰り返したり、衝撃を発生させると、その周りの媒体の粒子が振動し、振動は次の粒子へと伝わっていきます。空気中では、これらの振動は気圧の変動として現れます。水や固体では、粒子は前後に振動します。
 
 When a sound wave reaches our ears, it causes our eardrums to vibrate. These vibrations are then translated into electrical signals in the inner ear, which the brain interprets as sound. It is fascinating, as we will see, the sound wave is just a messy up-down of the pressure level. But, we can hear different pitches and harmonies, and distinguish between various instruments, human voices, and different kinds of noise.
 
@@ -44,9 +45,9 @@ On browsers, the Web Audio API provides a node called [`AnalyserNode`](https://d
 
 ブラウザ上では、Web Audio APIが提供する[`AnalyserNode`](https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode) というノードを使って再生中の音に関する情報をリアルタイムに読み取ることができます。[`getFloatTimeDomainData()`](https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode/getFloatTimeDomainData) メソッドを使用すると、音の波形を[`Float32Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array)に読み取ることができます。各値は-1から1の範囲で正規化されています。
 
-The demo below creates sounds ([sine waves](/sketching-with-math-and-quasi-physics/wave/sine-waves-and-additive-synthesis)) of different frequencies and amplitudes and uses the API to visualize the data as a graph. Notice how the shape of the graph is related to the sound you hear. You can click on the canvas to turn the sound on or off.
+The demo below creates sounds ([sine waves](/sine-waves-and-additive-synthesis)) of different frequencies and amplitudes and uses the API to visualize the data as a graph. Notice how the shape of the graph is related to the sound you hear. You can click on the canvas to turn the sound on or off.
 
-下のデモでは、異なる周波数と振幅の音（[正弦波](/sketching-with-math-and-quasi-physics/wave/sine-waves-and-additive-synthesis)）を生成し、このAPIを使ってデータをグラフとして表示します。グラフの形と聞こえる音の関係に注目してください。キャンバスをクリックすると音をオン・オフすることができます。
+下のデモでは、異なる周波数と振幅の音（[正弦波](/sine-waves-and-additive-synthesis)）を生成し、このAPIを使ってデータをグラフとして表示します。グラフの形と聞こえる音の関係に注目してください。キャンバスをクリックすると音をオン・オフすることができます。
 
 > 
 > 
@@ -108,9 +109,9 @@ The demo below calculates the RMS value for each frame, stores them in an array,
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="PoVgEBJ" data-user="kynd" data-preview="true"></p></div>
 
-Of course, you can get data separately for each left and right channel. Here, I have applied some feedback techniques we discussed in [Pencil, Brush and Paint](/sketching-with-math-and-quasi-physics/pencils-brushes-and-paints) to the graphics.
+Of course, you can get data separately for each left and right channel. Here, I have applied some feedback techniques we discussed in [Pencil, Brush and Paint](/pencils-brushes-and-paints) to the graphics.
 
-もちろん、左チャンネルと右チャンネルのデータを個別に取得することもできます。ここでは、[Pencil, Brush and Paint](/sketching-with-math-and-quasi-physics/pencils-brushes-and-paints)で見たフィードバックの手法をグラフィックに適用しました。
+もちろん、左チャンネルと右チャンネルのデータを個別に取得することもできます。ここでは、[Pencil, Brush and Paint](/pencils-brushes-and-paints)で見たフィードバックの手法をグラフィックに適用しました。
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="NWomyxe" data-user="kynd" data-preview="true"></p></div>
 
@@ -123,13 +124,13 @@ In the previous section, we summarized raw sound data into a single value (or tw
 
 前のセクションでは、生の音データを1つの値（左右のチャンネルで値を分ける場合は2つ）にまとめて、その瞬間の音の大きさを表しました。このセクションでは、高速フーリエ変換（FFT）と呼ばれるアルゴリズムを使用して、音データをスペクトルとして解析します。
 
-As discussed on the [Fourier series](/sketching-with-math-and-quasi-physics/fourier-series) page, a periodic wave, which has a repeating pattern, can be decomposed into a series of sine waves with different frequencies. The Fourier Transform extends this concept to non-periodic waves or functions (you can think of sound as a function that takes time as input and returns a value). While the Fourier series returns discrete sine waves, the Fourier Transform generates a continuous function that provides the phase and amplitude of a sine wave for any given frequency. In other words, with the Fourier transform, you can investigate the amount of different frequency components that the sound has at a given moment. (For example, does it have more low bass sound or treble sound?)
+As discussed on the [Fourier series](/fourier-series) page, a periodic wave, which has a repeating pattern, can be decomposed into a series of sine waves with different frequencies. The Fourier Transform extends this concept to non-periodic waves or functions (you can think of sound as a function that takes time as input and returns a value). While the Fourier series returns discrete sine waves, the Fourier Transform generates a continuous function that provides the phase and amplitude of a sine wave for any given frequency. In other words, with the Fourier transform, you can investigate the amount of different frequency components that the sound has at a given moment. (For example, does it have more low bass sound or treble sound?)
 
-[フーリエ級数](/sketching-with-math-and-quasi-physics/fourier-series)のページで見たように、繰り返しのパターンを持つ周期的な波は、異なる周波数を持つサイン波の級数として分解できます。フーリエ変換は、この概念を非周期的な波や関数に拡張します（音は時間を入力として値を返す関数と考えられます）。フーリエ級数は離散的なサイン波を返しますが、フーリエ変換は、任意の周波数に対してサイン波の位相と振幅を返す連続関数を生成します。言い換えると、フーリエ変換を使うと、音がある瞬間に異なる周波数成分をどれだけ含んでいるかを調べることができます（例えば低音や高音のどちらが多いのか調べることができます）。
+[フーリエ級数](/fourier-series)のページで見たように、繰り返しのパターンを持つ周期的な波は、異なる周波数を持つサイン波の級数として分解できます。フーリエ変換は、この概念を非周期的な波や関数に拡張します（音は時間を入力として値を返す関数と考えられます）。フーリエ級数は離散的なサイン波を返しますが、フーリエ変換は、任意の周波数に対してサイン波の位相と振幅を返す連続関数を生成します。言い換えると、フーリエ変換を使うと、音がある瞬間に異なる周波数成分をどれだけ含んでいるかを調べることができます（例えば低音や高音のどちらが多いのか調べることができます）。
 
 The relationship between Fourier series and Fourier transform is like the distinction between integers and real numbers. Also, the spectrum of frequency you get from the Fourier transform is analogous to the spectrum of light. In fact, we use the term "white noise" to refer to noise that contains all frequency components equally. This term came from the fact that light that contains all visible frequency components appears white.
 
-フーリエ級数とフーリエ変換の関係は、整数と実数の違いに例えられます。また、フーリエ変換から得られる周波数のスペクトルは、[光のスペクトル](/sketching-with-math-and-quasi-physics/colors-and-numbers/spectrum-and-cones)にも似ています。実際、「ホワイトノイズ」とは全ての周波数成分を等しく含むノイズを指しますが、この用語は、全ての可視周波数成分を含む光が白く見えるという観察に由来しています。
+フーリエ級数とフーリエ変換の関係は、整数と実数の違いに例えられます。また、フーリエ変換から得られる周波数のスペクトルは、[光のスペクトル](/spectrum-and-cones)にも似ています。実際、「ホワイトノイズ」とは全ての周波数成分を等しく含むノイズを指しますが、この用語は、全ての可視周波数成分を含む光が白く見えるという観察に由来しています。
 
 Fast Fourier transform (FFT) is a practical implementation of the Fourier transform. It takes sound data (or a function) as input and returns an array of numbers that represent different frequency components. It is probably easier to see it in action. In the demo below, the FFT is used to generate an array for 256 frequency bands. The number of bands (often called "bins" too) is specified in the line `analyser.fftSize = 256`. The level of each frequency is obtained with `analyser.getFloatFrequencyData(dataArray)`. Each frame, a bar graph is drawn to visualize the frequency components. The bars on the left represent low-frequency components, while the bars on the right represent high-frequency components. See if this corresponds to what you hear.
 
@@ -155,9 +156,9 @@ We have explored various methods of capturing sound as data and using that data 
 
 このページでは音をデータとして扱い、視覚的な表現を作る様々な方法を見てきました。実際のプロジェクトでは、音の同期だけに頼るとありきたりな印象になることもあるので、他のタイプのアイデアと組み合わせたり、ユニークなデータの使い方を見つけると良いかもしれません。何はともあれ、まずは楽しみながらスケッチしましょう。
 
-We have discussed the characteristics of sound as a wave in the [Wave](/sketching-with-math-and-quasi-physics/wave) pages as well.
+We have discussed the characteristics of sound as a wave in the [Wave](/wave) pages as well.
 
-音の波としての特性については[波](/sketching-with-math-and-quasi-physics/wave)のページでも取り上げています。
+音の波としての特性については[波](/wave)のページでも取り上げています。
 
 If you are interested in the implementation of FFT, [the FFT page on the Algorithm Archive](https://www.algorithm-archive.org/contents/cooley_tukey/cooley_tukey.html) can be a good starting point.
 

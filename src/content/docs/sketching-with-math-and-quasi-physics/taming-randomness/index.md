@@ -1,5 +1,6 @@
 ---
 title: "Taming Randomness ランダムさを手なづける"
+slug: taming-randomness
 ---
 Dice rolls, stock prices, human behavior, plants and animals, mountains and rivers, the shape of buildings and cities, the world is full of unpredictable things and countless variations. To handle such a kind of nature and complexity in computers, we often use random numbers
 

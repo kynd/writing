@@ -1,5 +1,6 @@
 ---
 title: "Natural Transformation 自然変換"
+slug: natural-transformation
 ---
 So far, we've called collections of objects categories, arrows between objects morphisms, and mappings from one category to another functors. Now we can consider a category where functors themselves are objects. This is called a functor category, denoted as <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mi mathvariant="script">C</mi><mo separator="true">,</mo><mi mathvariant="script">D</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[\mathcal{C}, \mathcal{D}]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord mathcal" style="margin-right:0.05834em;">C</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathcal" style="margin-right:0.02778em;">D</span><span class="mclose">]</span></span></span></span>.
 
@@ -205,4 +206,4 @@ On the next page, we'll examine the double dual as a representative example of n
 
 次のページでは数学的の世界での自然変換の代表例として、二重双対について見てみましょう。
 
-[Double Dual 二重双対](/category-theory-and-code/double-dual)
+[Double Dual 二重双対](/double-dual)

@@ -1,5 +1,6 @@
 ---
 title: "About Interpolation 補間について"
+slug: about-interpolation
 ---
 Interpolation is about estimating the values that lie between the points you already know. When you're moving a character from point A to B, you interpolate between them so you know where the character is at a given time. You know the stock price in May and July, so you interpolate between them to estimate what the price was in June. The idea is so simple, and applicable to so many things.
 
@@ -40,11 +41,11 @@ If we interpolate between points in 2D, we can draw a line segment.
 # Easing functions
 # イージング関数
 
-But things don't always change at the same pace. To manipulate the rate, we use different functions called easing functions. Easing functions are not a clearly defined category, and they can be any function that can [map](/sketching-with-math-and-quasi-physics/mapping) a range of values (usually 0 to 1) to the same range continuously, keeping the start and end the same.
+But things don't always change at the same pace. To manipulate the rate, we use different functions called easing functions. Easing functions are not a clearly defined category, and they can be any function that can [map](/mapping) a range of values (usually 0 to 1) to the same range continuously, keeping the start and end the same.
 
-しかし、物事はいつも一定の割合で変化するわけではありません。変化の様子をコントロールするために、イージング関数と呼ばれる様々な関数が使えます。イージング関数はきちんと定義されたカテゴリーではなく、ある値の範囲（通常は0から1）を同じ範囲に連続的に[写像し](/sketching-with-math-and-quasi-physics/mapping)、始点と終点を保持できる関数ならなんでも使えます。
+しかし、物事はいつも一定の割合で変化するわけではありません。変化の様子をコントロールするために、イージング関数と呼ばれる様々な関数が使えます。イージング関数はきちんと定義されたカテゴリーではなく、ある値の範囲（通常は0から1）を同じ範囲に連続的に[写像し](/mapping)、始点と終点を保持できる関数ならなんでも使えます。
 
-[Mapping 写像](/sketching-with-math-and-quasi-physics/mapping)
+[Mapping 写像](/mapping)
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="RwyvrmP" data-user="kynd" data-preview="true"></p></div>
 
@@ -60,7 +61,7 @@ One of the most common methods called Bézier curve is basically to repeat linea
 
 ベジェ曲線は、最も一般的な手法の1つで、線形補間を複数回繰り返すことで作られます。下のデモでこの考え方を見ることができます。
 
-[Bézier and Spline ベジェとスプライン](/sketching-with-math-and-quasi-physics/curves/be)
+[Bézier and Spline ベジェとスプライン](/be)
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="eYooYwG" data-user="kynd" data-preview="true"></p></div>
 
@@ -77,9 +78,9 @@ When we draw curves, we often care how smooth they are. What smooth means can va
 
 曲線を描くときには、その滑らかさが気になります。滑らかさという言葉の意味は場合によりますが、ある特定の種類の滑らかさを扱うために、連続性というとても便利な数学の概念があります。
 
-To measure how smooth a curve is in a mathematical sense, you can take the [derivative](/sketching-with-math-and-quasi-physics/calculus-for-makers/differentiation) of the function that represents the curve. The first derivative shows the rate of change of position, and the second derivative shows the rate of change of the rate of change.
+To measure how smooth a curve is in a mathematical sense, you can take the [derivative](/differentiation) of the function that represents the curve. The first derivative shows the rate of change of position, and the second derivative shows the rate of change of the rate of change.
 
-曲線の滑らかさを数学的に測るには、その曲線を表す関数の[微分](/sketching-with-math-and-quasi-physics/calculus-for-makers/differentiation)を取ることができます。最初の微分は位置の変化率を示し、2度目の微分はその変化率の変化を示します。このようにすると、異なるレベルの連続性を考えることができます。
+曲線の滑らかさを数学的に測るには、その曲線を表す関数の[微分](/differentiation)を取ることができます。最初の微分は位置の変化率を示し、2度目の微分はその変化率の変化を示します。このようにすると、異なるレベルの連続性を考えることができます。
 
 -   <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>C</mi><mn>0</mn></msup></mrow><annotation encoding="application/x-tex">C^0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span></span></span></span></span></span></span></span> **Continuity**: The curve itself is continuous. There are no breaks or gaps. You can imagine a line without lifting your pen. There is no gap in this line, but there can be sharp corners and turns that may not appear smooth.
 
@@ -105,7 +106,7 @@ While a natural spline is mathematically smooth, it may not always look like the
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="abxrRvX" data-user="kynd" data-preview="true"></p></div>
 
-[Controlling curves 曲線のコントロール](/sketching-with-math-and-quasi-physics/curves/controlling-curves)
+[Controlling curves 曲線のコントロール](/controlling-curves)
 
 # Smoothstep functions
 # スムースステップ関数
@@ -133,9 +134,9 @@ t^{\,n+1+k} \end{aligned}</annotation></semantics></math></span><span class="kat
 
 <div></div>
 
-For example, these demos for the noise functions from the [Taming Randomness ランダムさを手なづける](/sketching-with-math-and-quasi-physics/taming-randomness) page use the Hermite functions.
+For example, these demos for the noise functions from the [Taming Randomness ランダムさを手なづける](/taming-randomness) page use the Hermite functions.
 
-例えば、[Taming Randomness ランダムさを手なづける](/sketching-with-math-and-quasi-physics/taming-randomness)ページのノイズ関数のデモでエルミート関数を使われています。
+例えば、[Taming Randomness ランダムさを手なづける](/taming-randomness)ページのノイズ関数のデモでエルミート関数を使われています。
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="PoeWgNx" data-user="kynd" data-preview="true"></p></div>
 
@@ -156,7 +157,7 @@ Take a look at the demo of RBF interpolation in 2D space. You can drag white poi
 
 2次元空間でのRBF補間のデモを見てみましょう。白い点をドラッグしてみてください。
 
-[Continuous Mapping 連続的な写像](/sketching-with-math-and-quasi-physics/mapping/continuous-mapping)
+[Continuous Mapping 連続的な写像](/continuous-mapping)
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="VYwmrYy" data-user="kynd" data-preview="true"></p></div>
 
@@ -173,7 +174,7 @@ Interpolation is not just about moving things and drawing lines. Colors are anot
 > 
 > Adobe Photoshopなどのグラフィックソフトウェアで画像サイズを変更する時に、サンプリング方式を選ぶメニューを見たことがあるかもしれません。これらのソフトウェアは、近くのピクセルから色を拾って、それらの間を補間します。Photoshopの場合、「ニアレストネイバー」は補間を行わず（単純に最も近いピクセルの色を使う）、「バイリニア」は2×2の近傍を線形的にブレンドし、「バイキュービック」は三次関数を使用して<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>C</mi><mn>1</mn></msup></mrow><annotation encoding="application/x-tex">C^1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span></span></span></span></span></span></span></span>連続性を実現します。
 
-[Mixing Colors 色を混ぜる](/sketching-with-math-and-quasi-physics/mixing-colors)
+[Mixing Colors 色を混ぜる](/mixing-colors)
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="QwWdYXJ" data-user="kynd" data-preview="true"></p></div>
 

@@ -1,5 +1,6 @@
 ---
 title: "About Perception 知覚について"
+slug: about-perception
 ---
 > 
 > 
@@ -65,7 +66,7 @@ Representing someone's vision for someone else is impossible, but at least under
 
 他人の視覚体験を完全に再現することは不可能ですが、私たちが色をどのように知覚し、それらを体系的に扱えるかを理解することは、この困難かつ魅力的な問題について想像したり、アプローチを考える助けになるでしょう。
 
-[Computing Colors 色を計算する](/sketching-with-math-and-quasi-physics/colors-and-numbers/computing-colors)
+[Computing Colors 色を計算する](/computing-colors)
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="wBwpwde" data-user="kynd" data-preview="true"></p></div>
 
@@ -73,9 +74,9 @@ All of this shows that color perception is a complex mix of physical phenomena, 
 
 これら全ては、色の知覚が、物理的な現象、進化の過程で生まれた特徴、本能、文化、そして顔料からピクセルに至るまでの様々な道具が複雑に組み合わさったものだと示しています。そして、ある意味でこれらはすべて偶然の産物といえます。世界と人類がたまたまこのような形に落ち着いただけなのです。見方によって、色は様々な方法で説明することができ、そのため数多くの色彩体系やモデルが存在します。
 
-We are only scratching the surface of this topic in [Colors and Numbers 色と数値](/sketching-with-math-and-quasi-physics/colors-and-numbers), but there are tons more that we can discuss. I recommend the following book for the history of color theories and their use.
+We are only scratching the surface of this topic in [Colors and Numbers 色と数値](/colors-and-numbers), but there are tons more that we can discuss. I recommend the following book for the history of color theories and their use.
 
-この話題については[Colors and Numbers 色と数値](/sketching-with-math-and-quasi-physics/colors-and-numbers)でごく表面的に触れましたが、まだまだ議論できることがたくさんあります。色彩理論の歴史と理論がどう使われてきたかについては、以下の本を強くお勧めします。
+この話題については[Colors and Numbers 色と数値](/colors-and-numbers)でごく表面的に触れましたが、まだまだ議論できることがたくさんあります。色彩理論の歴史と理論がどう使われてきたかについては、以下の本を強くお勧めします。
 
 <div class="bookmark-card"><a href="https://www.amazon.com/History-Colour-How-understand-colour/dp/0711266794" target="_blank" rel="noopener" class="bookmark-link"><div class="bookmark-info"><div class="bookmark-title">The History of Colour: A Universe of Chromatic Phenomena</div><div class="bookmark-description">The History of Colour: A Universe of Chromatic Phenomena [Parkinson, Neil] on Amazon.com. *FREE* shipping on qualifying offers. The History of Colour: A Universe of Chromatic Phenomena</div><div class="bookmark-url"><img src="https://www.amazon.com/favicon.ico" class="bookmark-favicon" alt="" onerror="this.style.display='none'"><span>https://www.amazon.com/History-Colour-How-understand-colour/dp/0711266794</span></div></div><img src="https://m.media-amazon.com/images/I/51O3ck2Z1KL._BO30,255,255,255_UF900,850_SR1910,1000,0,C_ZA10,500,900,420,420,AmazonEmber,50,4,0,0_PIRIOFOURANDHALF-medium,BottomLeft,30,-20_QL100_.jpg" class="bookmark-image" alt="" loading="lazy" onerror="this.style.display='none'"></a></div>
 
@@ -97,7 +98,7 @@ Western music typically divides the octave into 12 pitches, each spaced evenly i
 
 西洋音楽では一般的にオクターブを12の音程に分割し、それぞれの音程は周波数の比が均等になるように配置されています。他の音楽文化ではオクターブの分割方法が異なり、より多くの音程を使うものも、少ない音程を使うものもありますが、オクターブという概念自体はほぼすべての文化圏に見られます。
 
-[Pitch and Frequency 音高と周波数](/sketching-with-math-and-quasi-physics/wave/pitch-and-frequency)
+[Pitch and Frequency 音高と周波数](/pitch-and-frequency)
 
 Not just pitch, we can also tell sounds apart based on their timbre, which is like the texture or color of a sound. That's how you can tell apart different sounds, like a bird chirping, car horns, or instruments like piano and trumpet. In Japanese, timbre is called 音色 (_on-shoku_), which literally means "sound color."
 
@@ -131,11 +132,11 @@ Understanding wave properties helps us better comprehend the relationship betwee
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="gOqypMj" data-user="kynd" data-preview="true"></p></div>
 
-[Sound visualization 音の視覚化](/sketching-with-math-and-quasi-physics/wave/sound-visualization)
+[Sound visualization 音の視覚化](/sound-visualization)
 
-[Sine waves and Additive Synthesis サイン波と加算合成](/sketching-with-math-and-quasi-physics/wave/sine-waves-and-additive-synthesis)
+[Sine waves and Additive Synthesis サイン波と加算合成](/sine-waves-and-additive-synthesis)
 
-[Fourier Series フーリエ級数](/sketching-with-math-and-quasi-physics/fourier-series)
+[Fourier Series フーリエ級数](/fourier-series)
 
 # Magnitude and Logarithm
 # 大きさと対数
@@ -156,7 +157,7 @@ This can be seen in a couple of ways. Life had to survive across wildly differen
 
 これには2つの観点から考えることができます。生命は昼の光から月明かりまで、大きく異なる環境下で生存する必要がありました。そのため、私たちの知覚システムは、これらの多様な情報を扱いやすい規模に圧縮するように進化したと考えられます。また別の見方をすると、数値が大きくなるほど、小さな変化の重要性は相対的に低下します。渋滞を思い浮かべてみましょう。10分の遅れは目的地が15分先であればおおごとに感じますが、5時間のドライブではさほど気になりません。同じように、明るい太陽の下ではろうそくの光を足してもほとんど効果がありませんが、暗い洞窟の中では大きな違いをもたらすのです。
 
-[Physical values and human perception  物理的な値と人間の知覚](/sketching-with-math-and-quasi-physics/physical-values-and-human-perception)
+[Physical values and human perception  物理的な値と人間の知覚](/physical-values-and-human-perception)
 
 > 
 > 

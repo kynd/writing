@@ -1,5 +1,6 @@
 ---
 title: "2D Feedback Systems 2次元フィードバックシステム"
+slug: 2d-feedback-systems
 ---
 Most physics simulations are based on the idea that if the state of a system at a particular moment can be represented as data, the next state can be calculated from that data. The next state is computed based on the data, which updates the data, and the process repeats. These types of systems are called feedback systems, as they form a loop where the system's output feeds back into its input.
 
@@ -7,7 +8,7 @@ Most physics simulations are based on the idea that if the state of a system at 
 
 We briefly mentioned feedback on the image processing page. Here, we will take a closer look at it from a simulation perspective. In the Image Processing page, it was stated as follows:
 
-[画像処理のページ](/sketching-with-math-and-quasi-physics/image-processing/deformation-and-feedback)でフィードバックについて軽く触れましたが、ここではシミュレーションの観点からより掘り下げてみたいと思います。画像処理のページでは下記のように述べました。
+[画像処理のページ](/deformation-and-feedback)でフィードバックについて軽く触れましたが、ここではシミュレーションの観点からより掘り下げてみたいと思います。画像処理のページでは下記のように述べました。
 
 > In the context of image processing, feedback refers to the recursive application of an effect to its output. The following demo uses the basically same effect as the sine function example above, with a slight modification to reduce the amount of translation per step. The only big difference is that instead of using the original image as input, it captures the result of the effect and uses the deformed image as input for the next frame.
 
@@ -28,7 +29,7 @@ Reaction-diffusion models are mathematical models used to describe the behavior 
   
 反応拡散（Reaction-diffusion）モデルは、化学や生物学的なプロセスなど様々なシステムの振る舞いや、反応と拡散の相互作用を記述するために使われる数学モデルです。 化学反応と拡散の効果を組み合わせて、パターンが時間と空間にわたってどのように変化するかを調べます。簡単なルールから思ってもみないような複雑なパターンを形成することができるので、コンピュータグラフィックスやジェネラティブアートの文脈でもよく用いられます。
 
-[Reaction-diffusion model 反応拡散モデル](/sketching-with-math-and-quasi-physics/2d-feedback-systems/reaction-diffusion-model)
+[Reaction-diffusion model 反応拡散モデル](/reaction-diffusion-model)
 
 # Fluid Simulation
 # 流体シミュレーション
@@ -37,4 +38,4 @@ Fluid simulation is a great example of simulating natural phenomena using a feed
 
 流体シミュレーションはフィードバックシステムを用いた自然現象のシミュレーションの良い例です。解くことが非常に難しい方程式で表された現象を、複数の比較的シンプルなステップに分解して近似することで、複雑で美しい動きを作り出すことができます。
 
-[Fluid Simulation 流体シミュレーション](/sketching-with-math-and-quasi-physics/2d-feedback-systems/fluid-simulation)
+[Fluid Simulation 流体シミュレーション](/fluid-simulation)

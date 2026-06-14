@@ -1,5 +1,6 @@
 ---
 title: "Vector Operations ベクトルの操作"
+slug: vector-operations
 ---
 This page covers various operations on vectors.
 
@@ -9,11 +10,11 @@ These calculations are sometimes too abstract to grasp by looking at the definit
 
 こうした計算は抽象的で、定義を見ただけではよくわからないことがあります。実際に使ってみると、何となく意味が見えてくることが多いものです。このページは読み物ではなく、他の場所で説明が必要になった時にリンクするために作りました。
 
-For a brief introduction to vectors, see [this page](/sketching-with-math-and-quasi-physics/newton-and-vectors/vector).
+For a brief introduction to vectors, see [this page](/vector).
 
-ベクトルについての簡単な紹介は[こちらのページ](/sketching-with-math-and-quasi-physics/newton-and-vectors/vector)を見てください。
+ベクトルについての簡単な紹介は[こちらのページ](/vector)を見てください。
 
-[Vector ベクトル](/sketching-with-math-and-quasi-physics/newton-and-vectors/vector)
+[Vector ベクトル](/vector)
 
 [THE NATURE OF CODE](https://natureofcode.com/book/chapter-1-vectors/) is also highly recommended as a reference.
 
@@ -124,9 +125,9 @@ c-16-25.333-24-45-24-59z"></path></svg></span></span></span></span></span></span
 # Magnitude
 # 大きさ
 
-(I[n Euclidean space](/sketching-with-math-and-quasi-physics/distance/various-distances)) The **magnitude** of a vector is the square root of each component squared and added together. This is an extension of the Pythagorean theorem to multiple dimensions. This can be thought as the length of the diagonal of a rectangle, a cuboid, or an n-dimensional cuboid with each component as a side.
+(I[n Euclidean space](/various-distances)) The **magnitude** of a vector is the square root of each component squared and added together. This is an extension of the Pythagorean theorem to multiple dimensions. This can be thought as the length of the diagonal of a rectangle, a cuboid, or an n-dimensional cuboid with each component as a side.
 
-（[ユークリッド空間では](/sketching-with-math-and-quasi-physics/distance/various-distances)）ベクトルの大きさは各成分を2乗して足し合わせたものの平方根を取ります。ピタゴラスの定理を多次元に拡張した形です。成分を各辺とした長方形、直方体、n次元直方体の対角線の長さを求めるイメージです。
+（[ユークリッド空間では](/various-distances)）ベクトルの大きさは各成分を2乗して足し合わせたものの平方根を取ります。ピタゴラスの定理を多次元に拡張した形です。成分を各辺とした長方形、直方体、n次元直方体の対角線の長さを求めるイメージです。
 
 The magnitude of the vector <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>a</mi><mo>⃗</mo></mover></mrow><annotation encoding="application/x-tex">\vec{a}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.714em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.714em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal">a</span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.2355em;"><span class="overlay" style="height:0.714em;width:0.471em;"><svg xmlns="http://www.w3.org/2000/svg" width="0.471em" height="0.714em" style="width:0.471em" viewBox="0 0 471 714" preserveAspectRatio="xMinYMin"><path d="M377 20c0-5.333 1.833-10 5.5-14S391 0 397 0c4.667 0 8.667 1.667 12 5
 3.333 2.667 6.667 9 10 19 6.667 24.667 20.333 43.667 41 57 7.333 4.667 11
@@ -743,10 +744,10 @@ c-16-25.333-24-45-24-59z"></path></svg></span></span></span></span></span></span
 
 Because the (magnitude of) cross product represents the area of a parallelogram that is maximum when the two vectors are perpendicular and zero when they are aligned, it can be used, to inspect the angle between vectors similarly to the dot product.
 
-Also as in the image below, it can also be used to find the distance from a straight line to a point using only multiplication and addition without using trigonometric functions (see [Collision detection between a Line and a Circle](/sketching-with-math-and-quasi-physics/detecting-collision)).
+Also as in the image below, it can also be used to find the distance from a straight line to a point using only multiplication and addition without using trigonometric functions (see [Collision detection between a Line and a Circle](/detecting-collision)).
 
 クロス積は2つのベクトルの向きが垂直な時に平行四辺形の面積が最大になり揃っている時に0になるので、ドット積と同様にベクトルの間の角度を調べるのに使えます。
 
-また、下の図のように三角関数を使わずに掛け算と足し算だけで直線からある点までの距離を調べたりするためにも使えます（[直線と円の衝突判定](/sketching-with-math-and-quasi-physics/detecting-collision)を参照）。
+また、下の図のように三角関数を使わずに掛け算と足し算だけで直線からある点までの距離を調べたりするためにも使えます（[直線と円の衝突判定](/detecting-collision)を参照）。
 
 [![](/images/vector-operations-5.png)](/images/vector-operations-5.png)

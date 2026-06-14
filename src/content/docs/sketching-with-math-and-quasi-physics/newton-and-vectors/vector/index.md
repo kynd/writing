@@ -1,5 +1,6 @@
 ---
 title: "Vector ベクトル"
+slug: vector
 ---
 # Vector as a collection of numbers
 # 数の集まりとしてのベクトル
@@ -56,9 +57,9 @@ A vector is often described as a quantity with direction and magnitude as well. 
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="ExLpBXd" data-user="kynd" data-preview="true"></p></div>
 
-(I[n Euclidean space](/sketching-with-math-and-quasi-physics/distance/various-distances)) The magnitude of a vector is the square root of each component squared and added together. This is an extension of the Pythagorean theorem to multiple dimensions. This can be thought as the length of the diagonal of a rectangle, a cuboid, or an n-dimensional cuboid with each component as a side.
+(I[n Euclidean space](/various-distances)) The magnitude of a vector is the square root of each component squared and added together. This is an extension of the Pythagorean theorem to multiple dimensions. This can be thought as the length of the diagonal of a rectangle, a cuboid, or an n-dimensional cuboid with each component as a side.
 
-（[ユークリッド空間では](/sketching-with-math-and-quasi-physics/distance/various-distances)）ベクトルの大きさは各成分を2乗して足し合わせたものの平方根を取ります。ピタゴラスの定理を多次元に拡張した形です。成分を各辺とした長方形、直方体、n次元直方体の対角線の長さを求めるイメージです。
+（[ユークリッド空間では](/various-distances)）ベクトルの大きさは各成分を2乗して足し合わせたものの平方根を取ります。ピタゴラスの定理を多次元に拡張した形です。成分を各辺とした長方形、直方体、n次元直方体の対角線の長さを求めるイメージです。
 
 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∣</mi><mover accent="true"><mi>v</mi><mo>⃗</mo></mover><mi mathvariant="normal">∣</mi><mo>=</mo><msqrt><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></msqrt></mrow><annotation encoding="application/x-tex">{|\vec{v}| ={\sqrt {x^{2}+y^{2}}}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.24em;vertical-align:-0.2822em;"></span><span class="mord"><span class="mord">∣</span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.714em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">v</span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.2077em;"><span class="overlay" style="height:0.714em;width:0.471em;"><svg xmlns="http://www.w3.org/2000/svg" width="0.471em" height="0.714em" style="width:0.471em" viewBox="0 0 471 714" preserveAspectRatio="xMinYMin"><path d="M377 20c0-5.333 1.833-10 5.5-14S391 0 397 0c4.667 0 8.667 1.667 12 5
 3.333 2.667 6.667 9 10 19 6.667 24.667 20.333 43.667 41 57 7.333 4.667 11
@@ -231,7 +232,7 @@ c-16-25.333-24-45-24-59z"></path></svg></span></span></span></span></span></span
 
 > 
 > 
-> For other operations, please take a look at [Vector operations](/sketching-with-math-and-quasi-physics/vector-operations).  
-> これ以外の操作については[ベクトルの操作](/sketching-with-math-and-quasi-physics/vector-operations)をご覧ください。
+> For other operations, please take a look at [Vector operations](/vector-operations).  
+> これ以外の操作については[ベクトルの操作](/vector-operations)をご覧ください。
 
-[Newtonian mechanics ニュートン力学](/sketching-with-math-and-quasi-physics/newton-and-vectors/newtonian-mechanics)
+[Newtonian mechanics ニュートン力学](/newtonian-mechanics)

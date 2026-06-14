@@ -1,7 +1,8 @@
 ---
 title: "What is Randomness? ランダムさとは"
+slug: what-is-randomness
 ---
-[Chaos Theory カオス理論](/sketching-with-math-and-quasi-physics/chaos-theory)
+[Chaos Theory カオス理論](/chaos-theory)
 
 We've discussed that chaos refers to phenomena following deterministic rules that nonetheless appear random and unpredictable over time. But what does it actually mean to be random or unpredictable?
 
@@ -79,9 +80,9 @@ However, just as fractal patterns can be observed in the logistic map, chaos som
 
 ただ、ロジスティック写像にフラクタルなパターンが見て取れるように、カオスにはある種のパターンが見られることがあります。というより、完全にランダムになってしまう系よりも予測不能でありながらある種のパターンが見て取れる系の方が興味をそそるし、研究やスケッチの題材として面白いという側面もあるでしょう。
 
-The graph below shows the information entropy calculated for [Logistic Mapping](/sketching-with-math-and-quasi-physics/chaos-theory/logistic-mapping).
+The graph below shows the information entropy calculated for [Logistic Mapping](/logistic-mapping).
 
-下のグラフは[ロジスティック写像](/sketching-with-math-and-quasi-physics/chaos-theory/logistic-mapping)の情報エントロピーを計算したものです。
+下のグラフは[ロジスティック写像](/logistic-mapping)の情報エントロピーを計算したものです。
 
 [![](/images/source-11.png)](/images/source-11.png)
 
@@ -158,5 +159,5 @@ KS entropy is the limit of the average amount of information generated per step.
 
 次のページではカオスを生み出す原動力とも言える引き伸ばしと折り畳みの概念について見ていきます。
 
-[Stretch and Fold 引き伸ばしと折り畳み](/sketching-with-math-and-quasi-physics/chaos-theory/stretch-and-fold)
+[Stretch and Fold 引き伸ばしと折り畳み](/stretch-and-fold)
 

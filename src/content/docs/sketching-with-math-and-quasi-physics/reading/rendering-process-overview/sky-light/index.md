@@ -1,5 +1,6 @@
 ---
 title: "Sky light 空からの光"
+slug: sky-light
 ---
 [![](/images/sky-light.jpg)](/images/sky-light.jpg)
 
@@ -17,9 +18,9 @@ if (uSkyEnabled) {
 }
 ```
 
-This section calculates the sky light's contribution to the entire scene. The sky functions similarly to ambient light (See: [Classic 3D Rendering 古典的 3D レンダリング](/sketching-with-math-and-quasi-physics/light/illuminating-objects/classic-3d-rendering)), but since the sky is a half-dome positioned above the floor, it has a stronger effect on upward-facing surfaces.
+This section calculates the sky light's contribution to the entire scene. The sky functions similarly to ambient light (See: [Classic 3D Rendering 古典的 3D レンダリング](/classic-3d-rendering)), but since the sky is a half-dome positioned above the floor, it has a stronger effect on upward-facing surfaces.
 
-このセクションは、空からの光がシーン全体に与える影響を計算します。空は環境光のように機能しますが（[Classic 3D Rendering 古典的 3D レンダリング](/sketching-with-math-and-quasi-physics/light/illuminating-objects/classic-3d-rendering)を参照）、床の上に位置する半球状の形のため、上向きの面により強い影響を与えます。
+このセクションは、空からの光がシーン全体に与える影響を計算します。空は環境光のように機能しますが（[Classic 3D Rendering 古典的 3D レンダリング](/classic-3d-rendering)を参照）、床の上に位置する半球状の形のため、上向きの面により強い影響を与えます。
 
 In the demo, try turning off everything other than the sky, then toggle the shadow on and off to see the effect of the sky light in isolation.
 
@@ -56,18 +57,18 @@ This first line uses the direction of the ray reflected on the object's surface 
 
 この最初の行は、オブジェクトの表面で反射されたレイの向きを使って、鏡面反射の領域を決定します。y成分が0より大きいということは、反射されたレイが床ではなく空に向かっていることを意味し、したがってその場所で空の反射が見えるはずです。`smoothstep`関数は反射の端をぼかすことで、表面の粗さを再現します。
 
-Then, similar to the [Sunlight 太陽光](/sketching-with-math-and-quasi-physics/reading/rendering-process-overview/sunlight), the `specular` is multiplied by the `diffuse`, and the Fresnel effect is applied. Try commenting out the code after `0.04`, you'll clearly see what this part does.
+Then, similar to the [Sunlight 太陽光](/sunlight), the `specular` is multiplied by the `diffuse`, and the Fresnel effect is applied. Try commenting out the code after `0.04`, you'll clearly see what this part does.
 
-次に、[Sunlight 太陽光](/sketching-with-math-and-quasi-physics/reading/rendering-process-overview/sunlight)と同様に、`specular`に`diffuse`を掛け合わせ、さらにフレネル効果を適用します。`0.04`以降のコードをコメントアウトしてみると、この部分が何をしているかがはっきりわかります。
+次に、[Sunlight 太陽光](/sunlight)と同様に、`specular`に`diffuse`を掛け合わせ、さらにフレネル効果を適用します。`0.04`以降のコードをコメントアウトしてみると、この部分が何をしているかがはっきりわかります。
 
 ```glsl
 specular *= diffuse;
 specular *= 0.04 + 0.96 * pow(clamp(1.0 + dot(normal, rayDirection), 0.0, 1.0), 5.0);
 ```
 
-Soft shadows are also applied to the sky light by using the reflected ray as the direction of the light source: This isn't technically a shadow in ordinary sense, but rather a check to see if other objects occlude the sky's reflection. In effect, this creates a very nice effect that looks like reflections of objects. See the [Soft shadow ソフトシャドウ](/sketching-with-math-and-quasi-physics/reading/rendering-process-overview/soft-shadow) page for the details of `calcSoftShadow` function.
+Soft shadows are also applied to the sky light by using the reflected ray as the direction of the light source: This isn't technically a shadow in ordinary sense, but rather a check to see if other objects occlude the sky's reflection. In effect, this creates a very nice effect that looks like reflections of objects. See the [Soft shadow ソフトシャドウ](/soft-shadow) page for the details of `calcSoftShadow` function.
 
-反射されたレイを光源の方向として、空の光にもソフトシャドウを適用します。これは普通に考える影というよりは、他のオブジェクトが空の反射を遮っているかどうかをチェックするものです。結果として、オブジェクトが映り込んでいるかのような非常に美しい効果が生まれます。`calcSoftShadow` 関数の詳細については、[Soft shadow ソフトシャドウ](/sketching-with-math-and-quasi-physics/reading/rendering-process-overview/soft-shadow)のページをご覧ください。
+反射されたレイを光源の方向として、空の光にもソフトシャドウを適用します。これは普通に考える影というよりは、他のオブジェクトが空の反射を遮っているかどうかをチェックするものです。結果として、オブジェクトが映り込んでいるかのような非常に美しい効果が生まれます。`calcSoftShadow` 関数の詳細については、[Soft shadow ソフトシャドウ](/soft-shadow)のページをご覧ください。
 
 ```glsl
 specular *= uShadowEnabled ? calcSoftshadow(intersectionPoint, reflectionDirection, 0.02, 2.5) : 1.0;
@@ -80,4 +81,4 @@ The last two lines add both the diffuse and specular components to the lighting.
 
 最後の2行で、ディフューズとスペキュラーの両方の要素をライティングに加えます。青みがかった色、`vec3(0.40, 0.60, 1.15)`を使って、澄んだ空の印象を出しています。
 
-[Ambient occlusion アンビエントオクルージョン](/sketching-with-math-and-quasi-physics/reading/rendering-process-overview/ambient-occlusion)
+[Ambient occlusion アンビエントオクルージョン](/ambient-occlusion)

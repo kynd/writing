@@ -1,5 +1,6 @@
 ---
 title: "Pitch and Frequency 音高と周波数"
+slug: pitch-and-frequency
 ---
 Sound is a vibration that travels through a medium such as a solid, liquid, or gas. Higher sound corresponds to higher **frequency** and lower sound corresponds to lower frequency. Frequency is often measured in hertz (Hz). One hertz means that an event is repeated once per second, or one cycle per second in the case of waves.
 
@@ -71,4 +72,4 @@ The twelve-tone equal temperament is one octave divided into twelve equal semito
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="EXdQEb" data-user="kynd" data-preview="true"></p></div>
 
-[Sound visualization 音の視覚化](/sketching-with-math-and-quasi-physics/wave/sound-visualization)
+[Sound visualization 音の視覚化](/sound-visualization)

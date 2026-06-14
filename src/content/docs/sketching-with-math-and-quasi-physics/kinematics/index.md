@@ -1,5 +1,6 @@
 ---
 title: "Kinematics キネマティクス"
+slug: kinematics
 ---
 The term "kinematics" comes from the Greek word "kinesis," which means motion, and it mainly focuses on the motion itself rather than the forces or causes behind it. This is in contrast to "dynamics," which emphasizes the role of forces ("dynamics" is derived from the Greek word "dynamis," meaning power).
 
@@ -121,8 +122,8 @@ The picture below may seem a bit messy, but can you identify two arrows indicati
 
 > 
 > 
-> `atan` stands for "arc tangent", which is the inverse of the [tangent](/sketching-with-math-and-quasi-physics/rotation/rotation-and-trigonometry). The arc tangent takes the ratio of the opposite and adjacent sides and returns the angle. The function `Math.atan()` in JavaScript does exactly this. But because it is often more convenient to provide both the opposite and adjacent sides in practice, many languages implement the equivalent of the `atan2` function we used above.  
-> `atan`は arc tangent の略で、これは [tangent](/sketching-with-math-and-quasi-physics/rotation/rotation-and-trigonometry) の逆関数です。arc tangent は、対辺（opposite）と隣辺（adjacent）の比を取り、角度を返します。JavaScript の`Math.atan()`関数がこれに対応しますが、実用上は対辺と隣辺の両方を指定する方が便利なことも多いので、多くの言語では上で使用した`atan2`関数と同等な関数も実装されています。
+> `atan` stands for "arc tangent", which is the inverse of the [tangent](/rotation-and-trigonometry). The arc tangent takes the ratio of the opposite and adjacent sides and returns the angle. The function `Math.atan()` in JavaScript does exactly this. But because it is often more convenient to provide both the opposite and adjacent sides in practice, many languages implement the equivalent of the `atan2` function we used above.  
+> `atan`は arc tangent の略で、これは [tangent](/rotation-and-trigonometry) の逆関数です。arc tangent は、対辺（opposite）と隣辺（adjacent）の比を取り、角度を返します。JavaScript の`Math.atan()`関数がこれに対応しますが、実用上は対辺と隣辺の両方を指定する方が便利なことも多いので、多くの言語では上で使用した`atan2`関数と同等な関数も実装されています。
 
 ## Inverse kinematics with more segments
 ## 多くのセグメントを持つインバースキネマティクス

@@ -1,5 +1,6 @@
 ---
 title: "Conclusions and Applications 結論と応用"
+slug: conclusions-and-applications
 ---
 # Conclusions
 # 結論

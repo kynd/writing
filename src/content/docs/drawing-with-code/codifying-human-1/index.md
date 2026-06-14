@@ -1,5 +1,6 @@
 ---
 title: "Codifying human (1)"
+slug: codifying-human-1
 ---
 物理的な素材ができたので、次にそれを使う人間について考える。
 
@@ -105,4 +106,4 @@ I can change the look by switching parameters and tools. I included elements tha
 
 ### Next
 
-[Codifying human (2)](/drawing-with-code/codifying-human-2)
+[Codifying human (2)](/codifying-human-2)

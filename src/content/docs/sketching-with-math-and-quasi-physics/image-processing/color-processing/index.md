@@ -1,5 +1,6 @@
 ---
 title: "Color Processing カラープロセッシング"
+slug: color-processing
 ---
 Color processing involves manipulating the color channels of an image. This includes adjusting the color balance, contrast, or converting a color image to monochrome.
 
@@ -71,9 +72,9 @@ It looks successful at first glance. However, do you notice that the yellow and 
 
 一見うまく変換できたように見えますが、黄色や黄緑の部分が周りよりも暗くなっていることが気にならないでしょうか。元の画像では、鼻の下の黄色の部分が青い部分よりも明るく感じると思いますが、変換された画像ではその差がよく反映されていません。（色の知覚は人によって異なります。同じように感じなくても何も問題ありません）。
 
-One common fix for this issue is to use the Y value from the [CIE XYZ model](/sketching-with-math-and-quasi-physics/colors-and-numbers/cie-color-spaces) to represent brightness. This method considers the difference in perceptual brightness between different channels. The full conversion matrix can be found on the [Various Color Models](/sketching-with-math-and-quasi-physics/colors-and-numbers/various-color-models) page, but to get only the Y value, you just need a single line. Compare the demo below with the one above.
+One common fix for this issue is to use the Y value from the [CIE XYZ model](/cie-color-spaces) to represent brightness. This method considers the difference in perceptual brightness between different channels. The full conversion matrix can be found on the [Various Color Models](/various-color-models) page, but to get only the Y value, you just need a single line. Compare the demo below with the one above.
 
-この問題を解決する一般的な方法として、明るさに[CIE XYZモデル](/sketching-with-math-and-quasi-physics/colors-and-numbers/cie-color-spaces)のY値を使用することができます。こ方法では、チャンネルごとの知覚的な明るさの違いが考慮されています。[様々なカラーモデル](/sketching-with-math-and-quasi-physics/colors-and-numbers/various-color-models)のページには変換行列の全体が載っていますが、Yの値だけを得るには1行あれば十分です。下のデモを上と比べて見ましょう。
+この問題を解決する一般的な方法として、明るさに[CIE XYZモデル](/cie-color-spaces)のY値を使用することができます。こ方法では、チャンネルごとの知覚的な明るさの違いが考慮されています。[様々なカラーモデル](/various-color-models)のページには変換行列の全体が載っていますが、Yの値だけを得るには1行あれば十分です。下のデモを上と比べて見ましょう。
 
 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>B</mi><mrow><mi>r</mi><mi>i</mi><mi>g</mi><mi>h</mi><mi>t</mi><mi>n</mi><mi>e</mi><mi>s</mi><mi>s</mi></mrow></msub><mo>=</mo><mn>0.2126729</mn><mi>R</mi><mo>+</mo><mn>0.7151522</mn><mi>G</mi><mo>+</mo><mn>0.0721750</mn><mi>B</mi></mrow><annotation encoding="application/x-tex">B_{rightness} = 0.2126729R + 0.7151522G + 0.0721750B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9694em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.0502em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.02778em;">r</span><span class="mord mathnormal mtight">i</span><span class="mord mathnormal mtight" style="margin-right:0.03588em;">g</span><span class="mord mathnormal mtight">h</span><span class="mord mathnormal mtight">t</span><span class="mord mathnormal mtight">n</span><span class="mord mathnormal mtight">ess</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord">0.2126729</span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord">0.7151522</span><span class="mord mathnormal">G</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">0.0721750</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span></span></span></span>
 
@@ -104,9 +105,9 @@ However, this method limits the saturation or chroma of the resulting image beca
 # Using different color models
 # 異なるカラーモデルを使う
 
-Using an appropriate color model can make it easier and more intuitive to control different aspects of colors. For example, if you want to work with hue and chroma, you can select a model like [HSV](/sketching-with-math-and-quasi-physics/colors-and-numbers/various-color-models) or [CIE LCh](/sketching-with-math-and-quasi-physics/colors-and-numbers/computing-colors) in which these concepts are more directly represented.
+Using an appropriate color model can make it easier and more intuitive to control different aspects of colors. For example, if you want to work with hue and chroma, you can select a model like [HSV](/various-color-models) or [CIE LCh](/computing-colors) in which these concepts are more directly represented.
 
-適切なカラーモデルを使用すると、色の異なる側面をより簡単かつ直感的に制御できるようになります。たとえば、色相と彩度を操作する場合は、[HSV](/sketching-with-math-and-quasi-physics/colors-and-numbers/various-color-models)や[CIE LCh](/sketching-with-math-and-quasi-physics/colors-and-numbers/computing-colors)のような、これらの概念がより直接的に表現されたモデルを選択できます。
+適切なカラーモデルを使用すると、色の異なる側面をより簡単かつ直感的に制御できるようになります。たとえば、色相と彩度を操作する場合は、[HSV](/various-color-models)や[CIE LCh](/computing-colors)のような、これらの概念がより直接的に表現されたモデルを選択できます。
 
 As a simple example, we will modify the hue and saturation of the colors in the image using the HSV model. Try moving your cursor on the demo.
 
@@ -120,4 +121,4 @@ The following is the same idea, but using CIE LCh instead. Can you see the diffe
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="ExdXYQY" data-user="kynd" data-preview="true"></p></div>
 
-[Convolution コンボリューション](/sketching-with-math-and-quasi-physics/image-processing/convolution)
+[Convolution コンボリューション](/convolution)

@@ -1,5 +1,6 @@
 ---
 title: "Codifying human (2)"
+slug: codifying-human-2
 ---
 [![](/images/codifying-human-2.png)](/images/codifying-human-2.png)
 
@@ -35,4 +36,4 @@ Here are a couple of videos made with Stable Diffusion. Since I'm interested in 
 
 [![](/images/codifying-human-2-2.gif)](/images/codifying-human-2-2.gif)
 
-[Building my own tools](/drawing-with-code/building-my-own-tools)
+[Building my own tools](/building-my-own-tools)

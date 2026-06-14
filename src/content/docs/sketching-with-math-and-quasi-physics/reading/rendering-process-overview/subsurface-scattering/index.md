@@ -1,5 +1,6 @@
 ---
 title: "Subsurface scattering サブサーフェススキャッタリング"
+slug: subsurface-scattering
 ---
 ```glsl
 if (uSubsurfaceEnabled) {
@@ -36,4 +37,4 @@ This effect is subtle but adds soft lighting without making the scene too bright
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="dyxzyjV" data-user="kynd" data-preview="true"></p></div>
 
-[Atmospheric Perspective 空気遠近法](/sketching-with-math-and-quasi-physics/reading/rendering-process-overview/atmospheric-perspective)
+[Atmospheric Perspective 空気遠近法](/atmospheric-perspective)

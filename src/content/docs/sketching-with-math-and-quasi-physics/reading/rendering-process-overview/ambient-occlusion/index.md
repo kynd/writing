@@ -1,5 +1,6 @@
 ---
 title: "Ambient occlusion アンビエントオクルージョン"
+slug: ambient-occlusion
 ---
 ```glsl
 // https://iquilezles.org/articles/nvscene2008/rwwtt.pdf
@@ -87,4 +88,4 @@ The last part maps `occlusion` to a brightness multiplier (1.0 means no occlusio
 return clamp(1.0 - 3.0 * occlusion, 0.0, 1.0) * (0.5 + 0.5 * normal.y);
 ```
 
-[Backlight バックライト](/sketching-with-math-and-quasi-physics/reading/rendering-process-overview/backlight)
+[Backlight バックライト](/backlight)

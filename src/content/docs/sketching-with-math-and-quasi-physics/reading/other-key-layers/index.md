@@ -1,5 +1,6 @@
 ---
 title: "Other Key Layers その他の重要なレイヤー"
+slug: other-key-layers
 ---
 Let's examine the other key layers we haven't discussed yet.
 
@@ -118,4 +119,4 @@ On the next page, we'll discuss the conclusion part of the paper and the applica
 
 次のページでは、論文の結論部分とアーキテクチャの応用について議論し、シリーズを締めくくります。
 
-[Conclusions and Applications 結論と応用](/sketching-with-math-and-quasi-physics/reading/conclusions-and-applications)
+[Conclusions and Applications 結論と応用](/conclusions-and-applications)
