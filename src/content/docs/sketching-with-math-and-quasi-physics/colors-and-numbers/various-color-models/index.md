@@ -207,3 +207,7 @@ The demos below show OKLCH as a 3D space and as a 2D mapping. In the 2D demo, hu
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="YPNGZML" data-user="kynd" data-preview="true"></p></div>
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="PwWGmPg" data-user="kynd" data-preview="true"></p></div>
+
+下の画像は、[Material Color Utility](https://github.com/material-foundation/material-color-utilities)（[NPMにもあります](https://www.npmjs.com/package/@material/material-color-utilities)）を使い、上のOKLCHデモと同じ手法でHCTモデルを可視化したものです。
+
+![HCT](/images/hct.png)

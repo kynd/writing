@@ -5,11 +5,13 @@ const docs = await getCollection('docs');
 
 const pages = docs
   .map((doc) => {
-    const slug = doc.slug.replace(/\/index$/, '');
-    const title = doc.data.title || slug;
-    return { slug, title };
+    // storageKey matches the old hierarchical slug format — preserves existing localStorage data
+    const storageKey = doc.id.replace(/\.md$/, '').replace(/\/index$/, '');
+    const urlSlug = doc.slug; // short slug for URL links
+    const title = doc.data.title || urlSlug;
+    return { storageKey, urlSlug, title };
   })
-  .sort((a, b) => a.slug.localeCompare(b.slug));
+  .sort((a, b) => a.storageKey.localeCompare(b.storageKey));
 ---
 
 <!DOCTYPE html>
@@ -138,18 +140,18 @@ const pages = docs
     </thead>
     <tbody id="page-list">
       {pages.map((page) => (
-        <tr data-slug={page.slug}>
-          <td><input type="checkbox" data-key={`check:${page.slug}`} /></td>
+        <tr data-slug={page.storageKey}>
+          <td><input type="checkbox" data-key={`check:${page.storageKey}`} /></td>
           <td>
-            <a href={`/writing/${page.slug}`} target="_blank">{page.title}</a>
-            <span class="slug">{page.slug}</span>
+            <a href={`/writing/${page.urlSlug}`} target="_blank">{page.title}</a>
+            <span class="slug">{page.urlSlug}</span>
           </td>
           <td>
             <input
               type="text"
               placeholder="notes…"
               maxlength="120"
-              data-key={`note:${page.slug}`}
+              data-key={`note:${page.storageKey}`}
             />
           </td>
         </tr>
