@@ -28,3 +28,4 @@ npm-debug.log*
 # Project-specific
 CLAUDE.md
 spelling-grammar-report.md
+src/pages/proofread.astro

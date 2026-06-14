@@ -316,7 +316,7 @@ Reflection and refraction are related to the property of light as a wave called 
 
 反射と屈折にはホイヘンスの原理という光の波としての性質が関係しています。このKhan Academyのビデオをみてみましょう。
 
-[https://www.youtube.com/watch?v=N3levs4TzTA](https://www.youtube.com/watch?v=N3levs4TzTA)
+<div class="video-embed"><iframe src="https://www.youtube.com/embed/N3levs4TzTA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 # Fresnel equations
 # フレネルの式

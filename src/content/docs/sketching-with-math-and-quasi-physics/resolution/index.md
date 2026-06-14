@@ -137,7 +137,7 @@ Looking at the history of painting, Western culture has spent a lot of time focu
 
 Impressionism was probably the point when this started to change drastically. In Monet's water lilies paintings, the water and the lilies are sort of blended together without clear outlines of details. They are at a very low resolution in that sense. One could argue that the paintings capture the "impression" of the light or the scene more effectively, but they also demonstrate the duality between the picture and the medium by exposing more raw brushstrokes that are less pretending to be a part of an object. This shift would pave the way for further explorations into abstraction in the 20th century, but leaving that aside for more historical and theoretical materials, let's see if we can play with this this observation in a sketch.
 
-この変化の始まりは、おそらく印象派に見ることができます。モネの睡蓮の絵では、水と睡蓮が明確な輪郭やディテールなしに溶け合っており、その意味では解像度が低いとも言えます。これらの絵は、光や風景の「印象」をより効果的に捉える一方で、物体の一部として描かれているというよりも生の筆跡が露わになっていることで、絵と媒体の間の二元性をも示しています。この転換は、20世紀における抽象化へのさらなる探求への道を開くものとなりましたが、その歴史的、理論的な側面は置いておいて、この観察を元にスケッチで遊んでみましょう。
+変化の始まりは、おそらく印象派に見ることができます。モネの睡蓮の絵では、水と睡蓮が明確な輪郭やディテールなしに溶け合っており、その意味では解像度が低いとも言えます。これらの絵は、光や風景の「印象」をより効果的に捉える一方で、物体の一部として描かれているというよりも生の筆跡が露わになっていることで、絵と媒体の間の二元性をも示しています。この転換は、20世紀における抽象化へのさらなる探求への道を開くものとなりましたが、その歴史的、理論的な側面は置いておいて、この観察を元にスケッチで遊んでみましょう。
 
 This demo below takes a pixelated image of the forest and applies [noise-based](/taming-randomness) [image processing](/image-processing) to make it look like it was roughly painted with brushes. This effect compensates for the lack of detail with nuanced 'touches,' potentially tricking our brain into perceiving (or hallucinating) details that were not present in the original pixelated image.
 
@@ -216,13 +216,13 @@ It doesn't mean that we always need 60 frames per second (fps) all the time. The
 
 とはいえ常に60フレーム/秒（frames per second - fps）が必要なわけではありません。映画の標準のフレームレートは24フレーム/秒ですが、普通はまったく問題を感じません。中には60 fpsは「滑らかすぎて自然に見えない」という人もいます。
 
-[https://www.youtube.com/watch?v=iVrjwy0foF4](https://www.youtube.com/watch?v=iVrjwy0foF4)
+<div class="video-embed"><iframe src="https://www.youtube.com/embed/iVrjwy0foF4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 Our brain is very good at interpreting what happens between frames. In the animation below, there isn't a frame where the circle is drawn in the middle of the canvas. In that sense, the animation is quite discontinuous. But most people would perceive a single bouncy ball moving back and forth. A low frame rate, i.e., a low time resolution, can be beneficial in this case, letting the brain read between the frames rather than drawing all the in-between pictures. You can click on the canvas to toggle the frame rate and see how the animation feels different.
 
 脳は、フレームの間で何が起こっているかを解釈するのが得意です。下のアニメーションには、キャンバスの真ん中に円が描かれているフレームは存在しません。つまり、このアニメーションはとても不連続です。にもかかわらず、ほとんどの人は1つの跳ねるボールが左右に動いている様子を見て取るでしょう。この例では、低いフレームレート、つまり低い時間解像度が助けになります。これにより、すべての中間の画像を描かなくても、脳にフレームの間を読ませることができます。キャンバスをクリックするとフレームレートを切り替え、アニメーションの感じ方の違いを観察できます。
 
-[https://codepen.io/kynd/details/gOERQNg](https://codepen.io/kynd/details/gOERQNg)
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="gOERQNg" data-user="kynd" data-preview="true"></p></div>
 
 Many cartoon animations also employ a technique that let the viewer to anticipate the motion to perceive a certain quality. In this example, squishing the ball at both ends helps create the illusion that the ball is moving really fast in the middle (See: [Twelve basic principles of animation](https://en.wikipedia.org/wiki/Twelve_basic_principles_of_animation)).
 
@@ -232,7 +232,7 @@ It’s not always better to be realistic. Sometimes, letting the brain fill in t
 
 リアルであることが良いとは限りません。すべてを細かく描くこうとしてつじつまが合わなくなり、化けの皮が剥がれてしまうよりも、脳に間を補完させた方が良い時もあるのです。
 
-[https://www.youtube.com/watch?v=bhe7GJtwmQE](https://www.youtube.com/watch?v=bhe7GJtwmQE)
+<div class="video-embed"><iframe src="https://www.youtube.com/embed/bhe7GJtwmQE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 # Sound
 # 音

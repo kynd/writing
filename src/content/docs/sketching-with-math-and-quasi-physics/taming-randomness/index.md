@@ -196,9 +196,9 @@ let v = noise(x) + noise(x * 4.0) * 0.5;
 
 <div></div>
 
-This is just a side note, but instead of using random numbers in the gradient noise, applying regular value changes can create an interesting motion like this. The algorithm was originally designed to create unpredictable patterns, but it does not have to be used as originally intended.
+This is just a side note, but instead of using random numbers in the gradient noise, applying regular value changes can create an interesting motion like this. The algorithm was originally designed to create unpredictable patterns, but it does not have to be used as intended.
 
-これは余談ですが、勾配ノイズでランダムな数を使う代わりに規則的な値の変化を用いるるとこんな動きになります。元々は予測不能なパターンを作るためなアルゴリズムですが、元々の意図通りに使わなくてはならないということはありません。
+これは余談ですが、勾配ノイズでランダムな数を使う代わりに規則的な値の変化を用いるるとこんな動きになります。元々は予測不能なパターンを作るためなアルゴリズムですが、意図通りに使わなくてはならないということはありません。
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="BaxRWNV" data-user="kynd" data-preview="true"></p></div>
 

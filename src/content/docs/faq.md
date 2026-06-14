@@ -12,7 +12,7 @@ Code examples may have code snippets by someone else. Read the comments or follo
 
 ---
 
-**Q:** ライセンス? コンテンツを他で使っても良い？
+**Q:** ライセンス。コンテンツを他で使っても良い。
 
 **A:** はい、ぜひ。個人使用から教育目的まで、どのような用途でもOKです。使った場所を知せてもらえると嬉しいですが、必須ではありません。
 
@@ -22,24 +22,12 @@ Code examples may have code snippets by someone else. Read the comments or follo
 
 ---
 
-**Q:** How can I follow the updates?
-
-Follow me on [Bluesky](https://bsky.app/profile/kyndinfo.bsky.social), [Threads](https://www.threads.net/@kyndinfo) or [other one](https://x.com/kyndinfo).
-
----
-
-**Q:** アップデートはどこで確認できますか？
-
-[Bluesky](https://bsky.app/profile/kyndinfo.bsky.social)、[Threads](https://www.threads.net/@kyndinfo)、[その他](https://x.com/kyndinfo)でフォローしてください。
-
----
-
 **Q:** Can I ask questions, point out errors, or request new contents?
 
-**A:** Yes, use the platforms above. I will reply on a best-effort basis, nothing guaranteed.
+**A:** Yes! Use [GitHub Discussions](https://github.com/kynd/writing/discussions). I will reply on a best-effort basis, nothing guaranteed.
 
 ---
 
-**Q:** 質問や誤りの指摘、新しいコンテンツのリクエストはできますか？
+**Q:** 質問や誤りの指摘、新しいコンテンツのリクエストはできますか。
 
-**A:** はい、上記のプラットフォームを使ってください。何の約束もしませんができる限りで。
+**A:** はい。[GitHub Discussions](https://github.com/kynd/writing/discussions)をご利用ください。何の約束もしませんができる限りで。

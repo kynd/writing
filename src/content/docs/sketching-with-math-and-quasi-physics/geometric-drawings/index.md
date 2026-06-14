@@ -247,7 +247,7 @@ A circle can be defined with a center and radius, a center and one point on the 
 
 円は中心と半径、中心と円周上の1点、または円周上の3点があれば定義できます。3点で円を決める方法はちょっと複雑なのでYoutubeのリンクを貼っておきます。
 
-[https://www.youtube.com/watch?v=4yCyWCGKiYY](https://www.youtube.com/watch?v=4yCyWCGKiYY)
+<div class="video-embed"><iframe src="https://www.youtube.com/embed/4yCyWCGKiYY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 ```jsx
 class Circle {
