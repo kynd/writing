@@ -11,11 +11,7 @@ At their core, colors on digital platforms are mere numbers. Although our eyes a
 
 [![](/images/your-paints-don-t-have-to-follow-the-reality.png)](/images/your-paints-don-t-have-to-follow-the-reality.png)
 
-<div></div>
-
-Your paints don’t have to follow the reality  
-
-あなたの絵具が現実に従う必要はありません
+<figcaption>Your paints don’t have to follow the reality / あなたの絵具が現実に従う必要はありません</figcaption>
 
 # Mixing RGB Colors
 # RGBの混色
@@ -232,12 +228,6 @@ Roughly speaking, the darker the color, the higher the absorption (<span class="
 大まかに見れば吸収（<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi></mrow><annotation encoding="application/x-tex">K</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">K</span></span></span></span>）が大きいほど暗く、散乱（<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi></mrow><annotation encoding="application/x-tex">S</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span></span></span></span>）が大きいほど明るくなるので、納得感があります。
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="VwqKMdy" data-user="kynd" data-preview="true"></p></div>
-
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/scottonanski/embed/NWeeKLQ?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
-
-<div class="codepen-wrap"><iframe title="CodePen" src="https://codepen.io/scottonanski/embed/NWeeKLQ?default-tab=result" height="420" style="width:100%;border:none;" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></div>
-
-<div></div>
 
 Let's see color mixing in action. The demo has eight pre-defined pigments, and mixes a couple of them at a time. You can click on the canvas to shuffle the colors.
 

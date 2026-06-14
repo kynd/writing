@@ -26,15 +26,11 @@ They are closely related to teach other and defined by the behaviors of complex 
 
 [![](/images/julia-set-https-en-wikipedia-org-wiki-julia-set-media-fil-1.gif "75")](/images/julia-set-https-en-wikipedia-org-wiki-julia-set-media-fil-1.gif)
 
-<div></div>
-
-Julia set [https://en.wikipedia.org/wiki/Julia\_set#/media/File:JSr07885.gif](https://en.wikipedia.org/wiki/Julia_set#/media/File:JSr07885.gif)
+<figcaption><a href="https://en.wikipedia.org/wiki/Julia_set#/media/File:JSr07885.gif">Julia set</a></figcaption>
 
 [![](/images/mandelbrot-set-https-en-wikipedia-org-wiki-mandelbrot-set-1.gif)](/images/mandelbrot-set-https-en-wikipedia-org-wiki-mandelbrot-set-1.gif)
 
-<div></div>
-
-Mandelbrot set [https://en.wikipedia.org/wiki/Mandelbrot\_set#/media/File:Self-Similarity-Zoom.gif](https://en.wikipedia.org/wiki/Mandelbrot_set#/media/File:Self-Similarity-Zoom.gif)
+<figcaption><a href="https://en.wikipedia.org/wiki/Mandelbrot_set#/media/File:Self-Similarity-Zoom.gif">Mandelbrot set</a></figcaption>
 
 # Sierpiński Carpet シェルピンスキーカーペット
 
@@ -47,20 +43,16 @@ Sierpiński Carpet can be made by following the steps below infinitely.
 シェルピンスキーカーペットは、以下の手順を無限に続けることで作成できます。
 
 1.  Start from a square.
+    正方形から始めます。
 
 2.  Divide the square into a 3x3 grid of smaller squares.
+    正方形を3x3のグリッドに分割します。
 
 3.  Remove the tile in the center, leaving 8 smaller squares around the perimeter.
+    中央のタイルを取り除き、周囲に8つの小さな正方形が残るようにします。
 
 4.  For all the remaining tiles, go back to the step 2 and repeat the process.
-
-1.  正方形から始めます。
-
-2.  正方形を3x3のグリッドに分割します。
-
-3.  中央のタイルを取り除き、周囲に8つの小さな正方形が残るようにします。
-
-4.  ステップ2に戻り、残るすべてのタイルに対して同じプロセスを繰り返します。
+    ステップ2に戻り、残るすべてのタイルに対して同じプロセスを繰り返します。
 
 The demo below renders the Sierpiński Carpet. Can you see how each square repeats the same structure inside, scaling down recursively? The demo below renders the Sierpiński Carpet. In reality, we cannot repeat the process infinitely, so it only applies several iterations, then reverts back to the initial state.
 
@@ -81,20 +73,16 @@ The Koch curve is another example of a simple fractal shape that can be drawn by
 コッホ曲線は、別のシンプルなフラクタル形状の例で、以下の手順に従って描くことができます。
 
 1.  Start with a straight line segment.
+    線分から始めます。
 
 2.  Divide the line segment into three equal parts.
+    線分を3等分します。
 
 3.  Remove the center part, then add two segments that form an equilateral triangle with the removed segment.
+    中央部分を取り除き、取り除いた部分と合わせて正3角形を形づくるような2つの線分を追加します。
 
 4.  For each line segment now present, go back to step 2 and repeat the process.
-
-1.  線分から始めます。
-
-2.  線分を3等分します。
-
-3.  中央部分を取り除き、取り除いた部分と合わせて正3角形を形づくるような2つの線分を追加します。
-
-4.  ステップ2に戻って、今ある線分に全てに対して、同じプロセスを繰り返します。
+    ステップ2に戻って、今ある線分に全てに対して、同じプロセスを繰り返します。
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="abMxXzE" data-user="kynd" data-preview="true"></p></div>
 
@@ -111,16 +99,13 @@ Tree is another canonical example of fractal that can be defined by a simple set
 ツリー構造も、単純な手順の繰り返しで定義できる典型的なフラクタルの例です。
 
 1.  Start from a single branch(a line segment)
+    枝一本（線分）から始めます。
 
 2.  Add a few new branches from the tip of the branch at different angles
+    枝の先端に、角度の異なる新しい枝をいくつか追加します。
 
 3.  Go back to the step 2, repeat the process for each of new branches.
-
-1.  枝一本（線分）から始めます。
-
-2.  枝の先端に、角度の異なる新しい枝をいくつか追加します。
-
-3.  ステップ2に戻り、新しい枝にそれぞれに対してプロセスを繰り返します。
+    ステップ2に戻り、新しい枝にそれぞれに対してプロセスを繰り返します。
 
 By changing parameters such as numbers, angles, and lengths of branches, we can make various look of trees. Similar to a real tree, we don't want the tree to grow infinitely. We can halt the process at an arbitrary number of steps.
 

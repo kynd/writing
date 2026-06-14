@@ -5,7 +5,7 @@ To render a 3D scene using ray marching, we need to shoot a ray for each pixel. 
 
 3Dシーンをレンダリングするには、それぞれのピクセルに対してレイを飛ばす必要があります。[プロジェクションの原理を思い出してください](/sketching-with-math-and-quasi-physics/projection-and-3d-rendering/ray-marching)。画面上の点（ピクセル）を選んで視点からレイを伸ばし、物体に当たるかどうかを判定してそのピクセルに何を描くかを決めます。シェーダーを使うと、[すべてのピクセルを並列に処理して](https://thebookofshaders.com/01/)全体のイメージを完成させることができます。
 
-[![](/images/3d-rendering-with-ray-marching-3d.png "50")](/images/3d-rendering-with-ray-marching-3d.png)
+[![](/images/3d-rendering-with-ray-marching-3d.png "75")](/images/3d-rendering-with-ray-marching-3d.png)
 
 <div></div>
 
@@ -173,7 +173,7 @@ Shadows occur on surfaces where an object blocks the light from a light source. 
 
 表面に影が生じるのは、物体が光源からの光を遮る場合です。ある点から光源への線を引き、その線が物体と交差する場合、その点は光源から見て物体の後ろにあります。これをチェックするには、視点からのレイが物体と交差する点から、光源に対して追加のレイを飛ばします。
 
-[![](/images/3d-rendering-with-ray-marching-3d-1.png)](/images/3d-rendering-with-ray-marching-3d-1.png)
+[![](/images/3d-rendering-with-ray-marching-3d-1.png "75")](/images/3d-rendering-with-ray-marching-3d-1.png)
 
 ```jsx
 // Take into account shadows

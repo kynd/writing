@@ -237,4 +237,4 @@ We have seen how various sounds are created by simple rules and relationships of
 
 この曲は[12音技法](https://ja.wikipedia.org/wiki/%E5%8D%81%E4%BA%8C%E9%9F%B3%E6%8A%80%E6%B3%95)の最初期のものだそうですが、音の関係を数で捉えることによって従来の音楽から逸脱しようとする試みが見て取れます。一方で前半6音はCメジャー、後半6音はGメジャーと調性が感じられる様になっているのが面白いところです。
 
-[https://www.youtube.com/watch?v=UrBZQPqgqbM](https://www.youtube.com/watch?v=UrBZQPqgqbM)
+<div class="video-wrap"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/UrBZQPqgqbM" frameborder="0" allowfullscreen></iframe></div>

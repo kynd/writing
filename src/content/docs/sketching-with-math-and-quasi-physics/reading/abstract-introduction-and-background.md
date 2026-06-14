@@ -85,9 +85,9 @@ This makes sense, right? It seems to mimic how humans read text. But as the auth
 
 -   **The Memory Fade:** In long sequences, the "memory" from the beginning of the text often gets diluted or lost by the time the model reaches the end.
 
--   **逐次処理による渋滞：**それぞれのステップが前のステップに依存するるため、モデルは単語を並列に処理できません。これにより、現代のハードウェアでのトレーニングが非常に遅くなります。
+-   **逐次処理による渋滞：** それぞれのステップが前のステップに依存するるため、モデルは単語を並列に処理できません。これにより、現代のハードウェアでのトレーニングが非常に遅くなります。
 
--   **記憶の減衰：**長いシーケンスでは、テキストの冒頭からの「記憶」が、モデルが末尾に到達する頃にはしばしば薄まったり失われたりします。
+-   **記憶の減衰：** 長いシーケンスでは、テキストの冒頭からの「記憶」が、モデルが末尾に到達する頃にはしばしば薄まったり失われたりします。
 
 > Recurrent models typically factor computation along the symbol positions of the input and output sequences. Aligning the positions to steps in computation time, they generate a sequence of hidden states <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mi>t</mi></msub></mrow><annotation encoding="application/x-tex">h_t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">h</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2806em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">t</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>, as a function of the previous hidden state <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub></mrow><annotation encoding="application/x-tex">h_{t−1}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9028em;vertical-align:-0.2083em;"></span><span class="mord"><span class="mord mathnormal">h</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">t</span><span class="mbin mtight">−</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2083em;"><span></span></span></span></span></span></span></span></span></span> and the input for position t. This inherently sequential nature precludes parallelization within training examples, which becomes critical at longer sequence lengths, as memory constraints limit batching across examples.
 
@@ -106,7 +106,7 @@ This can be much faster than RNNs because they can process different parts of a 
 
 -   **Struggle with long-distance relationships:** For example, if the first word of a sentence defines the meaning of the last word, a CNN has to stack many layers like building a tall pyramid just to relate these words.
 
--   **長距離の関係の扱いが苦手：**例えば、文の最初の単語が最後の単語の意味を定義する場合、CNNはこれらの単語を関連付けるためだけに高いピラミッドを建てるように、多くの層を積み重ねる必要があります。
+-   **長距離の関係の扱いが苦手：** 例えば、文の最初の単語が最後の単語の意味を定義する場合、CNNはこれらの単語を関連付けるためだけに高いピラミッドを建てるように、多くの層を積み重ねる必要があります。
 
 > In these models, the number of operations required to relate signals from two arbitrary input or output positions grows in the distance between positions, linearly for ConvS2S and logarithmically for ByteNet. This makes it more difficult to learn dependencies between distant positions.
 

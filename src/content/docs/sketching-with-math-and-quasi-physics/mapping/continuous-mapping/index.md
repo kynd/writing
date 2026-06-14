@@ -113,7 +113,7 @@ Of course, mapping can be non-linear, meaning the values don't change proportion
 
 イージング関数はその良い例です。写像関数を書き換えてみましょう。下のスライダーを操作すると、動きの感じ方が違うことが分かります。円は中央部分で速く、端に近づくにつれてゆっくりと動きます。
 
-[https://codepen.io/kynd/details/vEBwJKy](https://codepen.io/kynd/details/vEBwJKy)
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="vEBwJKy" data-user="kynd" data-preview="true"></p></div>
 
 # Affine transformation
 # アフィン変換
@@ -241,8 +241,6 @@ Let's look at another demo. This is almost identical to the demo above, but it t
 別のデモを見てみましょう。これは上のデモとほぼ同じですが、歪曲ではなく、図形の平行移動と回転を行います。コードを編集して、他の種類の変換も試しましょう。
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="QwWjYLb" data-user="kynd" data-preview="true"></p></div>
-
-[[Demo]](https://codepen.io/kynd/pen/QwWjYLb?editors=0010)
 
 We have another example in GLSL below. Since GLSL supports matrices natively, it is easy to multiply them and apply multiple transforms. Play around with this code too.
 

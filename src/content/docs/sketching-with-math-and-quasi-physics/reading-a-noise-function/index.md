@@ -9,9 +9,6 @@ On this page, we are going to read a simple noise function. Noise functions are 
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="ZYEVRGN" data-user="kynd" data-preview="true"></p></div>
 
-And, we have AI these days. About 50% of my code day-to-day is already written by AI, and I'm totally fine when I know what it is doing. I'm happy not to repeat boilerplate and stuff. But I feel a little anxiety when I use a piece of code I don't fully understand. Sometimes, it is useful to deep dive into something you don’t know and explore until you feel good.
-
-さらに、最近はAIがあります。自分の場合、日常的なコードの50%くらいはすでにAIが書いていて、それが何をしているのか理解できる限り全く問題は感じません。定型的な作業などを繰り返さなくて良いのは幸せです。ですが完全に理解していないコードを使うときには、少し不安になります。時には、知らないことついて深く掘り下げて、納得いくまで探求することも役に立ちます。
 
 For writing this page, I asked an AI to read the example and directly quote the explanations. AI can be a great tool to help you learn, rather than a black box that makes people dumb.
 
@@ -19,9 +16,9 @@ For writing this page, I asked an AI to read the example and directly quote the 
 
 > 
 > 
-> This page (or all of my articles in general) is written for someone like me, who is more visually and scrappy prototyping oriented rather than a trained programmer or mathematician. If you have a computer science degree, this might not be for you.
+> This page (or all of my articles in general) is written for someone like me, who is more visually and scrappy prototyping oriented rather than a trained programmer or mathematician.
 > 
-> このページ（他の記事も）は、コンピューターサイエンスの学位を持つような専門的な技術者や数学者ではなく、自分を含めた見た目やざっくりとしたプロトタイピングを優先する人向けに書かれています。コンピューターサイエンスの学位を持った人にはこのページはあまり参考にならないかもしれません。
+> このページ（他の記事も）は、コンピューターサイエンスの学位を持つような専門的な技術者や数学者ではなく、自分を含めた見た目やざっくりとしたプロトタイピングを優先する人向けに書かれています。
 
 # 1D noise function
 
@@ -216,45 +213,45 @@ Here is the visualization of the `hash` function.
 float u = f * f * (3.0 - 2.0 * f);
 ```
 
-> This line computes a **smooth interpolation weight** using a **smoothstep function**.
-> 
-> This is a classic **cubic Hermite polynomial**, often called **smoothstep**:  
-> 
-> <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><mn>3</mn><msup><mi>f</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><msup><mi>f</mi><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">u = 3f^2 - 2f^3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">u</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.0085em;vertical-align:-0.1944em;"></span><span class="mord">3</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.0085em;vertical-align:-0.1944em;"></span><span class="mord">2</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span></span></span></span></span></span></span></span>  
-> 
-> It maps the input `f` (from 0 to 1) to another number in \[0, 1\], but with **smoothed acceleration** at the ends. That means:
-> 
-> -   `u = 0` when `f = 0`
-> 
-> -   `u = 1` when `f = 1`
-> 
-> -   **Derivative is 0** at both ends → no sharp corners or sudden jump
-> 
-> If you just used `mix(a, b, f)` with a linear weight, the transition between `a` and `b` would be continuous but **not smooth**—you'd get noticeable slope changes.  
-> 
-> Using this `u` instead gives you **C¹ continuity**—both value and slope are smooth across intervals.
-> 
-> That’s why it’s widely used in **value noise**, **animation easing**, and **procedural shading**.
-> 
-> この行は**スムースステップ関数**を使用して**滑らかな補間の重み**を計算します。
-> 
-> これは**三次エルミート多項式**の典型的な例で、**スムースステップ**とも呼ばれています：
-> 
-> <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><mn>3</mn><msup><mi>f</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><msup><mi>f</mi><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">u = 3f^2 - 2f^3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">u</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.0085em;vertical-align:-0.1944em;"></span><span class="mord">3</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.0085em;vertical-align:-0.1944em;"></span><span class="mord">2</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span></span></span></span></span></span></span></span>
-> 
-> この関数は入力値`f`（0から1の範囲）を\[0, 1\]の範囲の別の数値に変換しますが、両端で**加速度が滑らかに変化**します。つまり：
-> 
-> -   `f = 0`のとき`u = 0`
-> 
-> -   `f = 1`のとき`u = 1`
-> 
-> -   両端で**導関数が0**となる → 急激な変化や不連続な飛びがない
-> 
-> もし線形の重みで`mix(a, b, f)`を使用した場合、`a`と`b`の間の遷移は連続的ではあるものの**滑らかではなく**、傾きの変化が目立ってしまいます。
-> 
-> 代わりにこの`u`を使用することで**C¹連続性**が得られ、値と傾きの両方が区間全体で滑らかになります。
-> 
-> そのため、この関数は**バリューノイズ**、**アニメーションのイージング**、**プロシージャルシェーディング**で広く使用されています。
+This line computes a **smooth interpolation weight** using a **smoothstep function**.
+
+This is a classic **cubic Hermite polynomial**, often called **smoothstep**:  
+
+<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><mn>3</mn><msup><mi>f</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><msup><mi>f</mi><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">u = 3f^2 - 2f^3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">u</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.0085em;vertical-align:-0.1944em;"></span><span class="mord">3</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.0085em;vertical-align:-0.1944em;"></span><span class="mord">2</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span></span></span></span></span></span></span></span>  
+
+It maps the input `f` (from 0 to 1) to another number in \[0, 1\], but with **smoothed acceleration** at the ends. That means:
+
+-   `u = 0` when `f = 0`
+
+-   `u = 1` when `f = 1`
+
+-   **Derivative is 0** at both ends → no sharp corners or sudden jump
+
+If you just used `mix(a, b, f)` with a linear weight, the transition between `a` and `b` would be continuous but **not smooth**—you'd get noticeable slope changes.  
+
+Using this `u` instead gives you **C¹ continuity**—both value and slope are smooth across intervals.
+
+That’s why it’s widely used in **value noise**, **animation easing**, and **procedural shading**.
+
+この行は**スムースステップ関数**を使用して**滑らかな補間の重み**を計算します。
+
+これは**三次エルミート多項式**の典型的な例で、**スムースステップ**とも呼ばれています：
+
+<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><mn>3</mn><msup><mi>f</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><msup><mi>f</mi><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">u = 3f^2 - 2f^3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">u</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.0085em;vertical-align:-0.1944em;"></span><span class="mord">3</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.0085em;vertical-align:-0.1944em;"></span><span class="mord">2</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span></span></span></span></span></span></span></span>
+
+この関数は入力値`f`（0から1の範囲）を\[0, 1\]の範囲の別の数値に変換しますが、両端で**加速度が滑らかに変化**します。つまり：
+
+-   `f = 0`のとき`u = 0`
+
+-   `f = 1`のとき`u = 1`
+
+-   両端で**導関数が0**となる → 急激な変化や不連続な飛びがない
+
+もし線形の重みで`mix(a, b, f)`を使用した場合、`a`と`b`の間の遷移は連続的ではあるものの**滑らかではなく**、傾きの変化が目立ってしまいます。
+
+代わりにこの`u`を使用することで**C¹連続性**が得られ、値と傾きの両方が区間全体で滑らかになります。
+
+そのため、この関数は**バリューノイズ**、**アニメーションのイージング**、**プロシージャルシェーディング**で広く使用されています。
 
 This is a visualization of the function. You can ask AI more about what C¹ continuity means, or the following page explains more about the concept of continuity.
 

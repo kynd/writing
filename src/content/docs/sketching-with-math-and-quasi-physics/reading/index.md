@@ -44,13 +44,13 @@ To follow the discussions, you need to understand the basics of 3D rendering wit
 
 Above is the demo ported to CodePen. The shader part is basically the same as the [original](https://www.shadertoy.com/view/X3SfDz), but I've made a few modifications:
 
-上にあるのは、デモをCodePenに移植したものです。シェーダー部分は基本的に[オリジナル](https://www.shadertoy.com/view/X3SfDz)と同じですが、いくつかの修正を加えています：
-
 1.  I've simplified the code where possible, and renamed variables for clarity.
 
 2.  I removed the antialiasing to simplify the `main()` function. You can find a version with [antialiasing here,](https://codepen.io/kynd/pen/oNKQqMb?editors=0010) which takes multiple samples with slight offsets for each pixel and averages the results to soften the ragged edges.
 
 3.  I've added toggles for various rendering techniques to make it easy to isolate and study each, seeing how they contribute to the final result.
+
+上にあるのは、デモをCodePenに移植したものです。シェーダー部分は基本的に[オリジナル](https://www.shadertoy.com/view/X3SfDz)と同じですが、いくつかの修正を加えています：
 
 1.  可能な場所ではコードを簡略化し、明確さのために変数名を変更しました。
 
@@ -62,8 +62,6 @@ Above is the demo ported to CodePen. The shader part is basically the same as th
 
 Let’s start from the `main()` function. The main function can be roughly separated into the sections below.
 
-`main()`関数から始めましょう。main関数は大まかに以下のセクションに分けることができます。
-
 1.  Camera set up
 
 2.  Primary ray direction
@@ -73,6 +71,8 @@ Let’s start from the `main()` function. The main function can be roughly separ
 4.  Rendering
 
 5.  Gamma correction
+
+`main()`関数から始めましょう。main関数は大まかに以下のセクションに分けることができます。
 
 1.  カメラのセットアップ
 
@@ -95,11 +95,8 @@ The camera rotates around the object. `cameraPosition` represents the camera's p
 
 カメラはオブジェクトの周りを回転します。`cameraPosition`はワールド空間におけるカメラの位置を表します。`cameraTarget`はカメラが向いている点を表し、カメラの向きを決めるのに使用されます。
 
-[![](/images/the-world-space.jpg)](/images/the-world-space.jpg)
-
-<div></div>
-
-The World Space ワールド空間
+[![](/images/the-world-space.jpg "75")](/images/the-world-space.jpg)
+<figcaption>The World Space ワールド空間</figcaption>
 
 ```glsl
 // Camera setup
@@ -121,11 +118,8 @@ The `main()` function first defines the direction of the ray in another coordina
 
 `main()`関数はまず、ワールド空間とは異なる座標系でレイの方向を定義します。この座標系では、カメラの位置が原点となり、z軸がカメラの視線方向と一致します。
 
-[![](/images/camera-space.jpg)](/images/camera-space.jpg)
-
-<div></div>
-
-Camera Space カメラ空間
+[![](/images/camera-space.jpg "75")](/images/camera-space.jpg)
+<figcaption>Camera Space カメラ空間</figcaption>
 
 The direction of the ray is first calculated in the Camera Space. `p` is based on the position of the current pixel on the screen (`fragCoord`), but is adjusted (normalized) so that the center becomes (0, 0) and the screen's left edge is at x: −1.0, and its right edge is at x: 1.0. The `focalLength` represents the distance between the camera and the screen.
 

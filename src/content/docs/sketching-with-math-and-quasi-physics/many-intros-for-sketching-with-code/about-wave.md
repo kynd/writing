@@ -145,9 +145,7 @@ Let’s take a guitar string as an example. When you pluck it, the string vibrat
 
 [![](/images/when-you-pluck-on-a-string-the-string-vibrate-with-multiple-1.jpg "75")](/images/when-you-pluck-on-a-string-the-string-vibrate-with-multiple-1.jpg)
 
-<div></div>
-
-When you pluck on a string, the string vibrate with multiple frequencies mixed at the same time. 弦を弾くと、複数の周波数が同時に混ざり合って振動します
+<figcaption>When you pluck on a string, the string vibrate with multiple frequencies mixed at the same time. 弦を弾くと、複数の周波数が同時に混ざり合って振動します</figcaption>
 
 We can visualize this too. In the demo below, you can see the shape of the wave changes as we add extra sine waves with different frequencies and amplitudes (the radius of the circle), in this case, getting closer to a so-called square wave.
 
@@ -161,7 +159,7 @@ We can visualize this too. In the demo below, you can see the shape of the wave 
 > 
 > I wish I had added sound playback to these demos. I may try later. You can compare the sound of square wave vs. sine wave on this Wikipedia page:
 > 
-> デモに音声の再生機能もツケとおけばよかったと思います。後で試してみるかもしれません。矩形波とサイン波の音の違いはこのWikipediaページで比較できます。
+> デモに音声の再生機能も付けておけばよかったと思います。後で試してみるかもしれません。矩形波とサイン波の音の違いはこのWikipediaページで比較できます。
 > 
 > 
 

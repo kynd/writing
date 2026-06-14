@@ -546,7 +546,6 @@ const breadcrumbs = buildBreadcrumbs(slug, allDocs);
       display: -webkit-box;
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
-      flex: 1;
       line-height: 1.5;
     }
     .prose .bookmark-url {
@@ -665,6 +664,10 @@ const breadcrumbs = buildBreadcrumbs(slug, allDocs);
       gap: 1rem;
       flex-wrap: wrap;
     }
+    .site-footer-feedback {
+      width: 100%;
+      line-height: 1.6;
+    }
 
     /* ── Mobile ───────────────────────────────────────────────────── */
     @media (max-width: 768px) {
@@ -724,6 +727,11 @@ const breadcrumbs = buildBreadcrumbs(slug, allDocs);
           <div class="site-footer-left">
             <a href={base || '/'}>Index</a>
             <a href={`${base}/faq`}>FAQs</a>
+            <a href="https://github.com/kynd/writing/discussions" target="_blank" rel="noopener">Feedback</a>
+          </div>
+          <div class="site-footer-feedback">
+            Questions, requests, and feedback are welcome at <a href="https://github.com/kynd/writing/discussions" target="_blank" rel="noopener">GitHub Discussions</a>.<br />
+            質問、リクエスト、フィードバックは <a href="https://github.com/kynd/writing/discussions" target="_blank" rel="noopener">GitHub Discussions</a> にお気軽にどうぞ。
           </div>
           <div class="site-footer-right">
             <a href="https://www.kynd.info/" target="_blank" rel="noopener">kynd.info</a>

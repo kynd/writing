@@ -26,15 +26,15 @@ Then you have trees, which are a subset of connected graphs but without any loop
 
 木（ツリー）は、連結グラフのうちループ（閉路）がないもので、つまり A から B へ行く道がただ 1 通りしかありません。
 
-A star graph is a special case of a tree where there is a single central node that connects to all other nodes, and there are no other connections. A ring graph is a graph where all the nodes have edges to exactly two nodes, making a single loop. A ring is connected, but it is not a tree.
-
-スターグラフは、ツリーの特殊な形で、中心ノードがすべてのノードにつながり、それ以外の接続がない。リンググラフは、全てのノードがちょうど 2 つのノードとつながり、1つの輪（ループ）を作るグラフです。リングは連結ですが、ループがあるためツリーではありません。
-
 > 
 > 
 > A family tree is not a tree in this sense. Can you see why?
 > 
 > 家系図は、この意味でのツリーではありません。なぜでしょう。
+
+A star graph is a special case of a tree where there is a single central node that connects to all other nodes, and there are no other connections. A ring graph is a graph where all the nodes have edges to exactly two nodes, making a single loop. A ring is connected, but it is not a tree.
+
+スターグラフは、ツリーの特殊な形で、中心ノードがすべてのノードにつながり、それ以外の接続がない。リンググラフは、全てのノードがちょうど 2 つのノードとつながり、1つの輪（ループ）を作るグラフです。リングは連結ですが、ループがあるためツリーではありません。
 
 The demo below lets you generate different types of data structures and choose different layout methods to visualize them.
 

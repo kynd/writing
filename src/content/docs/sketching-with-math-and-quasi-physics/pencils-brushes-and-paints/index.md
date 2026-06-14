@@ -34,7 +34,7 @@ There is a small trick in the code to compare the colors of the original pixels 
 
 We can also consider the paper, not just the drawing tool. The texture of the paper can greatly enhance the tones created by pencils. The example below adds some grainy noise (actually just [random](https://thebookofshaders.com/10/) values) to the grayscale image. Although strokes are not defined, the resulting texture resembles the gentle touch of a soft pencil on rough paper.
 
-描く道具だけでなく、紙のことも考えてみましょう。紙の質感は鉛筆のトーンにより豊かにできます。以下の例では、グレースケールの画像に粒状のノイズ（実はただの[ランダム](https://thebookofshaders.com/10/)な値）を足しています。ストロークの線は描かれてきませんが、結果の質感はざらっとした紙の上の優しく柔らかな鉛筆のタッチに似ています。
+描く道具だけでなく、紙のことも考えてみましょう。紙の質感は鉛筆のトーンをより豊かにできます。以下の例では、グレースケールの画像に粒状のノイズ（実はただの[ランダム](https://thebookofshaders.com/10/)な値）を足しています。ストロークの線は描かれてきませんが、結果の質感はざらっとした紙の上の優しく柔らかな鉛筆のタッチに似ています。
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="BaMGLNM" data-user="kynd" data-preview="true"></p></div>
 

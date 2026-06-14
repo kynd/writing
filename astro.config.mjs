@@ -1,5 +1,7 @@
 import { defineConfig } from 'astro/config';
 import { visit } from 'unist-util-visit';
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
 
 const BASE = '/writing';
 
@@ -49,8 +51,8 @@ export default defineConfig({
     port: 4321,
   },
   markdown: {
-    remarkPlugins: [remarkRebaseLinks],
-    rehypePlugins: [rehypeImageSize, rehypeRebaseVideoSrc],
+    remarkPlugins: [remarkRebaseLinks, remarkMath],
+    rehypePlugins: [rehypeImageSize, rehypeRebaseVideoSrc, rehypeKatex],
   },
   output: 'static',
   build: {
