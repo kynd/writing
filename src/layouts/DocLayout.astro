@@ -143,6 +143,7 @@ const breadcrumbs = buildBreadcrumbs(slug, allDocs);
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{title}</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/katex.min.css" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0&icon_names=link" />
   <script async src="//www.instagram.com/embed.js"></script>
   <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
   <script is:inline>
@@ -367,6 +368,58 @@ const breadcrumbs = buildBreadcrumbs(slug, allDocs);
     .prose h3 + h3 {
       margin-top: -1rem;
       margin-bottom: 1.6rem;
+    }
+
+    /* ── Anchor link icons ────────────────────────────────────────── */
+    .prose h1:not(.page-title),
+    .prose h2,
+    .prose h3 {
+      position: relative;
+    }
+    .anchor-copy-btn {
+      position: absolute;
+      left: -1.9rem;
+      width: 1.9rem; /* spans the full gap to the heading's left edge — no mouse-gap */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      pointer-events: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      color: var(--fg-muted);
+      transition: opacity 0.12s;
+    }
+    /* Center icon on the first line of each heading level.
+       top = (font-size × line-height − icon-size) / 2 */
+    .prose h1:not(.page-title) > .anchor-copy-btn {
+      top: calc((1.55rem * 1.25 - 1rem) / 2);
+    }
+    .prose h2 > .anchor-copy-btn {
+      top: calc((1.25rem * 1.7 - 1rem) / 2);
+    }
+    .prose h3 > .anchor-copy-btn {
+      top: calc((1.05rem * 1.7 - 1rem) / 2);
+    }
+    .anchor-copy-btn .material-symbols-outlined {
+      font-size: 1rem;
+      line-height: 1;
+      user-select: none;
+    }
+    .prose h1:not(.page-title):hover > .anchor-copy-btn,
+    .prose h2:hover > .anchor-copy-btn,
+    .prose h3:hover > .anchor-copy-btn,
+    .anchor-copy-btn:hover {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    /* Bilingual pairs: hide icon on the Japanese (second) heading */
+    .prose h1:not(.page-title) + h1 > .anchor-copy-btn,
+    .prose h2 + h2 > .anchor-copy-btn,
+    .prose h3 + h3 > .anchor-copy-btn {
+      display: none;
     }
     .prose p {
       margin-bottom: 2.1rem;
@@ -812,6 +865,75 @@ const breadcrumbs = buildBreadcrumbs(slug, allDocs);
     }
     window.addEventListener('load', alignCaptions);
     window.addEventListener('resize', alignCaptions);
+  </script>
+  <script>
+    (function () {
+      function slugify(text: string): string {
+        return text.trim()
+          .toLowerCase()
+          .replace(/[^\w\s-]/g, '')
+          .replace(/\s+/g, '-')
+          .replace(/^-+|-+$/g, '');
+      }
+
+      const seen: Record<string, number> = {};
+
+      function uniqueId(base: string): string {
+        if (!base) {
+          base = 'section';
+        }
+        if (!seen[base]) {
+          seen[base] = 1;
+          return base;
+        }
+        seen[base]++;
+        return base + '-' + seen[base];
+      }
+
+      document.querySelectorAll<HTMLElement>(
+        '.prose h1:not(.page-title), .prose h2, .prose h3'
+      ).forEach((heading) => {
+        const id = uniqueId(slugify(heading.textContent || ''));
+        heading.id = id;
+
+        const btn = document.createElement('button');
+        btn.className = 'anchor-copy-btn';
+        btn.setAttribute('aria-label', 'Copy link to section');
+        btn.innerHTML = '<span class="material-symbols-outlined">link</span>';
+
+        btn.addEventListener('click', (e) => {
+          e.preventDefault();
+          const url = window.location.origin + window.location.pathname + '#' + id;
+          navigator.clipboard.writeText(url).catch(() => {
+            const ta = document.createElement('textarea');
+            ta.value = url;
+            document.body.appendChild(ta);
+            ta.select();
+            document.execCommand('copy');
+            ta.remove();
+          });
+        });
+
+        heading.prepend(btn);
+      });
+
+      // Bilingual pairs: hovering the Japanese (second) heading shows the English icon
+      document.querySelectorAll<HTMLElement>(
+        '.prose h1:not(.page-title) + h1, .prose h2 + h2, .prose h3 + h3'
+      ).forEach((jaHeading) => {
+        const enHeading = jaHeading.previousElementSibling as HTMLElement | null;
+        const enBtn = enHeading?.querySelector<HTMLElement>('.anchor-copy-btn');
+        if (!enBtn) return;
+        jaHeading.addEventListener('mouseenter', () => {
+          enBtn.style.opacity = '1';
+          enBtn.style.pointerEvents = 'auto';
+        });
+        jaHeading.addEventListener('mouseleave', () => {
+          enBtn.style.opacity = '';
+          enBtn.style.pointerEvents = '';
+        });
+      });
+    })();
   </script>
 </body>
 </html>
