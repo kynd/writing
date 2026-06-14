@@ -36,6 +36,8 @@ Multiplication corresponds to the case such as a yellow object appears dark when
 # Using Hue
 # 色相を使う
 
+<aside><span class="aside-icon">💡</span><div class="aside-body"><p>As of 2026, <a href="/writing/sketching-with-math-and-quasi-physics/colors-and-numbers/various-color-models/#oklch">OKLCH</a> or Google's HCT models are the most recommended for working with hue.</p><p>2026年現在、色相を扱うには<a href="/writing/sketching-with-math-and-quasi-physics/colors-and-numbers/various-color-models/#oklch">OKLCH</a>かGoogleのHCTモデルが最もおすすめです。</p><p><a href="/writing/sketching-with-math-and-quasi-physics/colors-and-numbers/various-color-models/#oklch">OKLCH →</a></p></div></aside>
+
 The best part of HSV is probably the intuitive hue concept. It is useful in cases like when you want a variation of greenish colors, or when you want to select a set of complementary colors. On the other hand, the mismatch of the S and V values to the human perception is a bit annoying. If you need a more deliberate control of colors, you might want to choose **CIELAB**.
 
 HSVで最も便利なのはおそらく直感的な色相の概念でしょう。緑っぽい色のバリエーションが欲しい、とか補色の組み合わせを選びたいといった場合に便利です。一方で、S, Vの値と人間の感覚との不一致はちょっと厄介です。もう少し丁寧な色のコントロールが必要な場合は、CIELABを選ぶとよいかもしれません。

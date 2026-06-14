@@ -188,3 +188,21 @@ CIELABは画面で表示できる範囲や人間が知覚できる範囲を超�
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="dPbJbpb" data-user="kynd" data-preview="true"></p></div>
 
 [Computing Colors 色を計算する](/sketching-with-math-and-quasi-physics/colors-and-numbers/computing-colors)
+
+# OKLCH
+
+As of June 2026, [OKLCH](https://bottosson.github.io/posts/oklab/) (2020) is one of the best choices for perceptually accurate color work. Built on CIE L\*a\*b\*, it uses a cylindrical representation: L is perceptual lightness, C is chroma (saturation), and H is the hue angle. OKLCH addresses classic CIE issues by helping ensure that adjusting lightness or saturation doesn't distort the perceived hue. It's also natively supported in CSS, for example: `color: oklch(65% 0.18 250);`.
+
+2026年6月現在、知覚に沿って色を扱うための最も有力な選択肢のひとつは、[OKLCH](https://bottosson.github.io/posts/oklab/)（2020）です。CIE L\*a\*b\* をベースにした円筒座標表現で、L は知覚的な明度、C は彩度（クローマ）、H は色相角を表します。このモデルは古来からのCIE系の課題を緩和し、明度や彩度を調整しても見た目の色相が崩れにくくなります。CSSでもネイティブに利用でき、たとえば `color: oklch(65% 0.18 250);` のように書けます。
+
+Another strong option is Google's [HCT](https://m3.material.io/blog/science-of-color-design) (Hue, Chroma, Tone) model, which can offer even tighter perceptual accuracy but is much more computationally expensive. OKLAB and OKLCH are recommended for high-performance use cases (including fragment shaders), while HCT is better suited to scenarios where computation is less frequent, such as GUIs.
+
+もうひとつの有力な選択肢として、Googleの[HCT](https://m3.material.io/blog/science-of-color-design)（Hue, Chroma, Tone）モデルがあります。より厳密な知覚的一致を得られる場合がありますが、計算コストは高めです。OKLAB と OKLCHは（フラグメントシェーダ等を含む）高パフォーマンス用途に向き、HCTはGUIなど計算頻度が低い場面に向いています。
+
+The demos below show OKLCH as a 3D space and as a 2D mapping. In the 2D demo, hue is on the horizontal axis, luminosity on the vertical axis, and the maximum available chroma is chosen for each point.
+
+下のデモは、OKLCHを3D空間として表示したものと、2Dにマッピングしたものを紹介します。2Dデモでは横軸に色相、縦軸に明度を取り、各地点で取りうる最大の彩度を選んで可視化しています。
+
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="YPNGZML" data-user="kynd" data-preview="true"></p></div>
+
+<div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="PwWGmPg" data-user="kynd" data-preview="true"></p></div>
