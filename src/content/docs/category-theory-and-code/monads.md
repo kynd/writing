@@ -13,9 +13,8 @@ So they came up with the idea not to execute side effects directly, but to retur
 
 そこで考え出されたのが、副作用を直接実行するのではなく、副作用という文脈を持つ「箱」を返すというアイデアです。例えば、単に文字列を返すのではなく、将来、外の世界から文字列を読み取ってくる。という予定（IOモナド）を返すのです。
 
-**Function that executes side effects:** $A \to B$
-
-**副作用を実行する関数:** $A \to B$
+### Function that executes side effects: $A \to B$
+### 副作用を実行する関数: $A \to B$
 
 ```tsx
 // Impure: This function directly touches the outside world.
@@ -28,9 +27,8 @@ const processImpure = (input: string): string => {
 };
 ```
 
-**Function that adds side effects as context:** $A \to \text{IO}<B>$
-
-**副作用を文脈として追加する関数:** $A \to \text{IO}<B>$  
+### Function that adds side effects as context: $A \to \text{IO}<B>$
+### 副作用を文脈として追加する関数: $A \to \text{IO}<B>$
 
 ```tsx
 // Pure: This function only returns a "description" of what to do.
