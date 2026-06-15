@@ -136,7 +136,7 @@ In 2D space, you can use a rotation matrix to rotate a point around the origin.
 
 2次元空間では、回転行列を使って原点を中心に点を回転させることができます。
 
-${\displaystyle {\begin{bmatrix}x'\\y'\end{bmatrix}} ={\begin{bmatrix}\cos \theta &amp;-\sin \theta \\\sin \theta &amp;\cos \theta \end{bmatrix}}{\begin{bmatrix}x\\y\end{bmatrix}}}$
+${\displaystyle {\begin{bmatrix}x'\\y'\end{bmatrix}} ={\begin{bmatrix}\cos \theta &-\sin \theta \\\sin \theta &\cos \theta \end{bmatrix}}{\begin{bmatrix}x\\y\end{bmatrix}}}$
 
 ```jsx
 function rotate2D(point2D, angle) {
