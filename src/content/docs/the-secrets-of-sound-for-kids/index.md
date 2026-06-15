@@ -80,9 +80,9 @@ Here’s a fun way to see what Pythagoras discovered:
 
 **What to Do**:
 
-1.  Now pinch the rubber band in the middle and pluck one side. Do you hear the sound getting higher?
+1.  Pluck the whole rubber band and listen to the sound.
 
-2.  Pluck the whole rubber band and listen to the sound.
+2.  Now pinch the rubber band in the middle and pluck one side. Do you hear the sound getting higher?
 
 3.  Try pinching it at other spots, like one-third or one-fourth, and see how the sound changes!
 
@@ -96,7 +96,7 @@ Do you know how many notes there are in an octave? Let’s count them on a piano
 
 ## Half Steps and Whole Steps
 
-Each step between the notes is called a **half note** (or half step). If you count **two steps**, that’s called a **whole note** (or whole step). These steps are like tiny building blocks that make up all the music we hear!
+Each step between the notes is called a **half step**. If you count **two steps**, that’s called a **whole step**. These steps are like tiny building blocks that make up all the music we hear!
 
 [![](/images/the-secrets-of-sound-for-kids-5.jpg)](/images/the-secrets-of-sound-for-kids-5.jpg)
 

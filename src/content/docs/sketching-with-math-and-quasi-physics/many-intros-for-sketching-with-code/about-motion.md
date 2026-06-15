@@ -109,7 +109,7 @@ Simulations are, by nature, hard to predict precisely, because that’s the poin
 
 But this can be a problem when you want more direct control over how things move, where they end up, and when. Also sometimes, you may even want to break the laws of physics. Great animators and motion designers often exaggerate movement and timing, bending or ignoring realism to create something more expressive or impactful.
 
-しかし、物体の動きや、最終的な位置、タイミングをより直接的にコントロールしたい場合にはこれが問題になります。時には、わざと物理法則に破りたいこともあるでしょう。優れたアニメーターやモーションデザイナーは、より表現力豊かでインパクトのある作品を生み出すために、あえて現実を無視したり歪めたりして、動きやタイミングを誇張することがよくあります。
+しかし、物体の動きや、最終的な位置、タイミングをより直接的にコントロールしたい場合にはこれが問題になります。時には、わざと物理法則を破りたいこともあるでしょう。優れたアニメーターやモーションデザイナーは、より表現力豊かでインパクトのある作品を生み出すために、あえて現実を無視したり歪めたりして、動きやタイミングを誇張することがよくあります。
 
 A very common technique in motion design is called tweening, short for in-betweening. You start from defining a start and end state, then fill the intermediate frames by interpolating between them. The word comes from the days when animators hand-drew the frames that filled the gap between key poses (many still do — some expressions simply can't be captured any other way).
 
@@ -123,7 +123,8 @@ In computer animation, we often use easing functions to control these transition
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="qmLJeO" data-user="kynd" data-preview="true"></p></div>
 
-# Constraints 制約
+# Constraints
+# 制約
 
 Things don't just move freely in the real world. On Earth, everything is bound by gravity. Our body movement is constrained by the structure of bones and muscles, but this constraint is what lets us move around and lift things using our bones as levers.
 
@@ -192,6 +193,6 @@ While we've explored how to move objects and characters, there's one more crucia
 
 When you sketch with motion, you’re not just placing things in space but you are giving them life in time. Whether you follow the rules of physics, break them for expressiveness, or invent your own systems, motion opens a lot possibilities for exploration and creativity. If you’re curious, keep experimenting and see where the next movement leads.
 
-コードで動きをスケッチすると、単に空間に物を置くだけでなく、時間の中でより生き生きとした表現ができます。物理の法則に従ったり、表現のためにあえて破ったり、独自のシステムを作ったり。動きは、探究と創造の可能性を大きくに広げてくれます。興味が湧いたら、どんどん試して、その動きが向かう先を見てみましょう。
+コードで動きをスケッチすると、単に空間に物を置くだけでなく、時間の中でより生き生きとした表現ができます。物理の法則に従ったり、表現のためにあえて破ったり、独自のシステムを作ったり。動きは、探究と創造の可能性を大きく広げてくれます。興味が湧いたら、どんどん試して、その動きが向かう先を見てみましょう。
 
 <div class="instagram-wrap"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DAhoSwyvHDQ/" data-instgrm-version="14" style="width:100%;max-width:540px;margin:0;border:none;border-radius:4px;padding:0;"></blockquote></div>

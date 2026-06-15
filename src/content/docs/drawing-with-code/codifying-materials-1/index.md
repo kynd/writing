@@ -56,7 +56,7 @@ There are various ways to mix colors even just using RGB. For example, mixing bl
 
 [![](/images/on-citadel-of-erbil-krudistan-2022.gif)](/images/on-citadel-of-erbil-krudistan-2022.gif)
 
-On citadel of Erbil, Krudistan, 2022
+On citadel of Erbil, Kurdistan, 2022
 
 <div class="instagram-wrap"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CEHfUGjnJ9j/" data-instgrm-version="14" style="width:100%;max-width:540px;margin:0;border:none;border-radius:4px;padding:0;"></blockquote></div>
 

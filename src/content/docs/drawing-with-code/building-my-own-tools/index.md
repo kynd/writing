@@ -6,7 +6,7 @@ slug: building-my-own-tools
 
 Tools have a significant impact on the way things are made, which can be both positive and negative. For example, it can be enjoyable when watercolors don't turn out precisely as intended. However, it doesn't feel great, especially with digital tools, when a tool limits creativity ("I know it's not possible with After Effects, so I won't.") or when it's apparent how something was made ("Okay, this was made with that feature in Cinema4D").
 
-そんな時は自分でツールを作ってみると様々な発見があって楽しい。思っても見ない絵ができる。例えば変な方法でテクスチャや形、質感をいじれるものベクトルドローイングツール。
+そんな時は自分でツールを作ってみると様々な発見があって楽しい。思っても見ない絵ができる。例えば変な方法でテクスチャや形、質感をいじれるようなベクトルドローイングツール。
 
 In such cases, creating your own tools can bring a lot of discoveries and the joy of finding unexpected images. For instance, a vector drawing tool that can manipulate textures and shapes in weird ways…
 

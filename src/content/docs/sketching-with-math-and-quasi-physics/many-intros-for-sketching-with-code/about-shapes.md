@@ -12,7 +12,8 @@ But as soon as we look more closely, things get complicated. In fact, there are 
 
 しかし、詳しく見ようとすると、物事はそれほど単純ではないことに気づきます。実際、図形を定義し描画する方法は無限にあり、工業製品から自然界まで、身の周りの形のほとんどには、様々な繊細な特徴があります。
 
-# Geometric Drawings 幾何学ドローイング
+# Geometric Drawings
+# 幾何学ドローイング
 
 Let's start with geometric shapes that are (relatively) easier to define mathematically and handle with code.
 
@@ -48,7 +49,8 @@ Geometric shapes are widely used in our design. Repeating them in patterns is a 
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="NWmpKNY" data-user="kynd" data-preview="true"></p></div>
 
-# Detecting Collision 衝突判定
+# Detecting Collision
+# 衝突判定
 
 Not just for directly drawing shapes, we often use geometric shapes as proxies for more complex shapes as well. A good example of this is collision detection in games and 3D simulations where we want to detect object intersections. We usually use basic shapes like circles, triangles, rectangles, and combinations of them to approximate complex shapes at different precisions as needed. If you're making a NES game, Mario can be just a rectangle. If you're making a 3D fighting game, you might want boxes to represent a character's body, upper and lower arms, fists, etc. separately.
 
@@ -72,13 +74,15 @@ Various methods of checking whether figures overlap are used to detect collision
 > 
 > [https://developer.mozilla.org/en-US/docs/Games/Techniques/3D\_collision\_detection?utm\_source=chatgpt.com](https://developer.mozilla.org/en-US/docs/Games/Techniques/3D_collision_detection?utm_source=chatgpt.com)
 
-# Curves 曲線
+# Curves
+# 曲線
 
 While straight lines are much easier to handle, curves are the norm on Earth. Nature doesn't have many straight lines. Almost nothing goes straight, except for light. Curves are obviously a very essential tool for sketching. However, unlike straight lines, which can be defined with just two points and a linear formula, curves have infinite possibilities and are much harder to handle. There have been many different methods of defining or drawing curves, each with its own advantages, disadvantages, and constraints.
 
 直線の方が扱いやすいのですが、地球の上では曲線が標準です。直線は自然の中にはあまり存在せず、光をのぞいて直進するものもほとんどありません。当然ながら曲線はスケッチにおいて非常に重要ですが、2点と線形の方程式で定義できる直線に対して曲線には無限の可能性があるため、扱いがはるかに難しくなります。曲線を定義したり描画するためには様々な方法があり、それぞれに、利点、欠点や制約があります。
 
-## Cumulative Curves 積み重ねによる曲線
+## Cumulative Curves
+## 積み重ねによる曲線
 
 [Cumulative Curves 積み重ねによる曲線](/cumulative-curves)
 
@@ -119,7 +123,8 @@ A spline curve is a mathematically defined curve that smoothly passes through or
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="ZEZZQro" data-user="kynd" data-preview="true"></p></div>
 
-## Controlling curves 曲線のコントロール
+## Controlling curves
+## 曲線のコントロール
 
 When we talk about shapes, it is important to discuss their quality, not just methods, since after all, we are sketching to express something. Curves can have various visual characteristics. For example, some curves might look more organic and natural, while others might appear more geometric and mechanical. How can we create these different looks of curves?
 
@@ -127,7 +132,8 @@ When we talk about shapes, it is important to discuss their quality, not just me
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="KKLKOJj" data-user="kynd" data-preview="true"></p></div>
 
-# Signed distance functions 符号付き距離関数
+# Signed distance functions
+# 符号付き距離関数
 
 There is another very different category of defining shapes than drawing outlines.
 

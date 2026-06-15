@@ -4,7 +4,7 @@ slug: category-theory-and-functional-programming
 ---
 You may have noticed that most of the code examples so far are examples of functional programming (FP). In fact, functional programming has evolved in close connection with category theory (or so I've read).
 
-ここまで読んできて、登場するコードの例の殆どが関数型プログラミング（FP: Functional Programing）の例になっていることに気づいたかもしれません。実際、関数型プログラミングは圏論と密接に関連しながら発展してきました（してきたそうです）。
+ここまで読んできて、登場するコードの例の殆どが関数型プログラミング（FP: Functional Programming）の例になっていることに気づいたかもしれません。実際、関数型プログラミングは圏論と密接に関連しながら発展してきました（してきたそうです）。
 
 # What is Functional Programming?
 # 関数型プログラミングとは
@@ -99,9 +99,9 @@ Eilenberg and MacLane developed category theory to rigorously describe structura
 
 圏論はアイレンベルグとマックレーンによって、数学の異なる分野（特に代数学と位相幾何学）の間に横たわる構造的な類似性を厳密に記述することを目的に考え出されました。
 
-Functional programming traces back to Alonzo Church's lambda calculus—a mathematical model that expresses computation purely through defining and applying functions of the form "takes <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">x</span></span></span></span> as an argument and returns <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi></mrow><annotation encoding="application/x-tex">M</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span></span></span></span>".
+Functional programming traces back to Alonzo Church's lambda calculus—a mathematical model that expresses computation purely through defining and applying functions of the form "takes $x$ as an argument and returns $M$".
 
-関数型プログラミングの元はアロンゾ・チャーチによるラムダ計算（Lambda Calculus）で、一言で言えば、「計算」という概念を、「<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">x</span></span></span></span> を引数に取り、<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi></mrow><annotation encoding="application/x-tex">M</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span></span></span></span> を返す」という形の関数の定義と適用だけで表現した数学的モデルです。
+関数型プログラミングの元はアロンゾ・チャーチによるラムダ計算（Lambda Calculus）で、一言で言えば、「計算」という概念を、「$x$ を引数に取り、$M$ を返す」という形の関数の定義と適用だけで表現した数学的モデルです。
 
 Later mathematical discoveries revealed that category theory is remarkably effective for studying and proving programming structures. The prime example is generics, which we discussed on the previous page.
 

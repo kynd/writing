@@ -26,7 +26,7 @@ To create the up and down on a computer, we can think about how the shape can be
 
 <div></div>
 
-サインカーブの代わりに、ランダムだが連続的な数値を返すノイズ関数を関数を使ってみる。
+サインカーブの代わりに、ランダムだが連続的な数値を返すノイズ関数を使ってみる。
 
 Instead of a sine curve, let's try using a noise function that returns random but continuous numbers.
 
@@ -92,7 +92,7 @@ Sometimes I build things in the fashion of a physics simulation or a scientific 
 
 こんな感じで実験を続けていると道具箱に新しい素材が増えてくる。
 
-More I experiment, the more new materials get added to my toolbox.
+The more I experiment, the more new materials get added to my toolbox.
 
 ### Next
 

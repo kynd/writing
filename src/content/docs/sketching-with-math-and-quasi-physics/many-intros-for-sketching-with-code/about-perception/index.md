@@ -32,7 +32,8 @@ Studying perception is fascinating because every person’s experience of the wo
 > 
 > 中には「あなたなしには世界は存在しない」とか「他人を理解することは不可能だ」といった議論に発展させる人もいるかもしれませんが、そこまでは踏み込まないでおきましょう。
 
-# Colors 色
+# Colors
+# 色
 
 How we perceive and use color is shaped by many different factors.
 
@@ -52,7 +53,7 @@ Colors are also cultural and social. Despite not knowing exactly what other peop
 
 Our view on colors has also been significantly influenced and constrained by our tools. People have been working hard to reproduce and create various colors—from using plant-based dyes, to making expensive gemstones into paints, chemical and synthetic compounds, to analog and digital displays, and even nanotechnologies to create structural colors (such as iridescence). As colors became more available, they got more involved in our culture and even economies, creating trend cycles of colors to drive consumption.
 
-色に対する私たちの見方は、道具によっても大きく影響を受け、また制限されてきました。人々は様々な色を再現したり作り出したりするために懸命に努力してきました。植物を元にした染料、高価な宝石から作られた顔料、化学物質や合成化合物の開発、アナログやデジタルディスプレイの発展、そして構造色（貝殻や昆虫などに見られる、物理構造によって色が変わって見える現象）を生み出すナノテクノロジーまで。色がより身近になるにつれ、それらは文化や経済に深く組み込まれ、消費を促ながす色のトレンドサイクルを生み出すようになりました。
+色に対する私たちの見方は、道具によっても大きく影響を受け、また制限されてきました。人々は様々な色を再現したり作り出したりするために懸命に努力してきました。植物を元にした染料、高価な宝石から作られた顔料、化学物質や合成化合物の開発、アナログやデジタルディスプレイの発展、そして構造色（貝殻や昆虫などに見られる、物理構造によって色が変わって見える現象）を生み出すナノテクノロジーまで。色がより身近になるにつれ、それらは文化や経済に深く組み込まれ、消費を促す色のトレンドサイクルを生み出すようになりました。
 
 The fact that people don't see colors in the same way cannot be emphasized enough. It is estimated that [there are approximately 300 million people in the world with color vision deficiency](https://www.colourblindawareness.org/colour-blindness/). I’d even hesitate to call it a ‘deficiency’—it’s really just a different way of seeing.
 
@@ -80,7 +81,8 @@ We are only scratching the surface of this topic in [Colors and Numbers 色と�
 
 <div class="bookmark-card"><a href="https://www.amazon.com/History-Colour-How-understand-colour/dp/0711266794" target="_blank" rel="noopener" class="bookmark-link"><div class="bookmark-info"><div class="bookmark-title">The History of Colour: A Universe of Chromatic Phenomena</div><div class="bookmark-description">The History of Colour: A Universe of Chromatic Phenomena [Parkinson, Neil] on Amazon.com. *FREE* shipping on qualifying offers. The History of Colour: A Universe of Chromatic Phenomena</div><div class="bookmark-url"><img src="https://www.amazon.com/favicon.ico" class="bookmark-favicon" alt="" onerror="this.style.display='none'"><span>https://www.amazon.com/History-Colour-How-understand-colour/dp/0711266794</span></div></div><img src="https://m.media-amazon.com/images/I/51O3ck2Z1KL._BO30,255,255,255_UF900,850_SR1910,1000,0,C_ZA10,500,900,420,420,AmazonEmber,50,4,0,0_PIRIOFOURANDHALF-medium,BottomLeft,30,-20_QL100_.jpg" class="bookmark-image" alt="" loading="lazy" onerror="this.style.display='none'"></a></div>
 
-# Sound 音
+# Sound
+# 音
 
 Sound is also a wave. Unlike color, we can actually feel its frequency more directly, though we don’t always notice it as physical vibration. Lower frequencies feel “low,” and higher frequencies feel “high.” This height of sound is called pitch.
 
@@ -110,7 +112,7 @@ Both pitch and timbre are tied to the physical characteristics of the thing that
 
 Let’s take a guitar string as an example. The pitch depends on its length and weight. The longer or heavier the string, the lower the pitch. But the sound a string makes isn’t just one pure frequency. When you pluck it, the string vibrates in many ways at once. The main pitch is called the fundamental frequency, but parts of the string also vibrate in smaller sections—halves, thirds, quarters, etc. These create harmonics or overtones, which are simple multiples of the base frequency.
 
-ギターの弦を例に取りしょう。音の高さは弦の長さと重さによって決まります。弦が長いほど、また重いほど、音は低くなりますが、弦が出す音は1つの周波数だけではありません。弾かれると弦は一度に様々な形の振動を生み出します。基本となる音の高さは基本周波数と呼ばれますが、弦の各部分も小さな区分（半分、3分の1、4分の1など）で振動していて、基本周波数の単純な倍数に当たる倍音や上音と呼ばれる音を鳴らします。
+ギターの弦を例に取りましょう。音の高さは弦の長さと重さによって決まります。弦が長いほど、また重いほど、音は低くなりますが、弦が出す音は1つの周波数だけではありません。弾かれると弦は一度に様々な形の振動を生み出します。基本となる音の高さは基本周波数と呼ばれますが、弦の各部分も小さな区分（半分、3分の1、4分の1など）で振動していて、基本周波数の単純な倍数に当たる倍音や上音と呼ばれる音を鳴らします。
 
 [![](/images/when-you-pluck-on-a-string-the-string-vibrate-with-multiple.jpg "75")](/images/when-you-pluck-on-a-string-the-string-vibrate-with-multiple.jpg)
 
@@ -120,7 +122,7 @@ When you pluck on a string, the string vibrate with multiple frequencies mixed a
 
 This happens with any object, though the mix of frequencies might be a lot messier. Just like colors are usually a blend of frequencies, sounds are too. But unlike color, where a certain frequency always looks like the same hue (e.g., 440 THz light always looks red), sound doesn’t work that way. A guitar sounds like a guitar no matter what note it plays, because its timbre comes from the relationship between the overtones, not the absolute frequencies themselves. That’s why we can tell a violin from a flute, or recognize someone’s voice, or know what kind of object made a noise, based on how that sound's overtones are structured regardless of the frequency. You can sing a high note or low note, and you will still sound like you.
 
-これはどの物体でも起こるますが、周波数の混ざり方はもっとグチャグチャかもしれません。色が大抵様々な周波数の組み合わせであるように、音も同じです。ただし、色の場合は特定の周波数が常に同じ色相として見える（例えば440 THzの光は常に赤く見える）のに対し、音はそうではありません。ギターは演奏する音の高さが変わっても、常にギターらしい音色がします。これは音色が絶対的な周波数ではなく、倍音同士の関係によるものだからです。音の倍音の構造によって、周波数に関係なくバイオリンとフルートを聞き分けたり、誰かの声を認識したり、どんな物体が音を出したのかを知ることができるのです。高い音で歌っても低い音で歌っても、あなたの声はあなたらしく聞こえるでしょう。
+これはどの物体でも起こりますが、周波数の混ざり方はもっとグチャグチャかもしれません。色が大抵様々な周波数の組み合わせであるように、音も同じです。ただし、色の場合は特定の周波数が常に同じ色相として見える（例えば440 THzの光は常に赤く見える）のに対し、音はそうではありません。ギターは演奏する音の高さが変わっても、常にギターらしい音色がします。これは音色が絶対的な周波数ではなく、倍音同士の関係によるものだからです。音の倍音の構造によって、周波数に関係なくバイオリンとフルートを聞き分けたり、誰かの声を認識したり、どんな物体が音を出したのかを知ることができるのです。高い音で歌っても低い音で歌っても、あなたの声はあなたらしく聞こえるでしょう。
 
 It is interesting to think about this from an evolutionary standpoint. Our hearing has evolved to react to frequency ratios probably because that was useful in identifying different sources, people, animals, objects, etc. This sensitivity also lets us enjoy the different tones of sound and the relationships between different pitches of sound, which is known as harmony in music.
 
@@ -169,7 +171,8 @@ This can be seen in a couple of ways. Life had to survive across wildly differen
 > 
 > ここには重要なニュアンスがあります。生命は目的を持って進化するわけではありません。「キリンは高い葉を食べるために長い首を獲得した」という表現は誤解を招きます。実際には、遺伝子に何かランダムな変異が生じ、その変化がたまたま、その遺伝子が次世代に引き継がれる可能性を増やしたというのが真相に近いのです。
 
-# Resolution 解像度
+# Resolution
+# 解像度
 
 This taps into another important topic. Resolution is how detailed something can be represented or perceived.
 

@@ -8,7 +8,7 @@ Based on the presentations I gave [at jsgs-collab-2022](https://docs.google.com/
 
 幸いなことに、色々とメディアに取り上げていただいたり、展示やイベント、フリーランス的な仕事の依頼をいただいたりすることもある。
 
-For years, I have been creating digital works inspired by hand paintings and drawings. Although I draw with code, there is a strong aspect of introspection regarding the act and experience of drawing rather than the drawing itself. To borrow the words someone wrote for me, it can be described as "an exploration of the boundaries between computer algorithms, handcrafted aesthetics, and physical phenomena.”
+For years, I have been creating digital works inspired by hand paintings and drawings. Although I draw with code, there is a strong aspect of introspection regarding the act and experience of drawing rather than the drawing itself. To borrow the words someone used to describe my work, it can be described as "an exploration of the boundaries between computer algorithms, handcrafted aesthetics, and physical phenomena.”
 
 I have been fortunate to have been featured in several media outlets and have had opportunities to participate in exhibitions, events, and freelance work.
 
@@ -46,7 +46,7 @@ But to get this down to code, all of this has to be made explicit. I have to wri
 
 Another benefit, which is rather obvious, is that what is coded can actually be executed and used. This is like acquiring a new material for expression, a new brush or paint that has never existed before. Once coded, it can be changed and evolved beyond the original material by rewriting parts of it or tweaking parameters.
 
-I am not a scientist or computer graphics expert, so being scientifically accurate or technically outstanding is not very important to me, or rather, I can't. The examples that follow from here don't involve any cutting edge technology. Some specialists could snicker at them.
+I am not a scientist or computer graphics expert, so being scientifically accurate or technically outstanding is not very important to me, or rather, I can't be either. The examples that follow from here don't involve any cutting edge technology. Some specialists could snicker at them.
 
 What is important, however, is that they are interesting to me. It is not just a mere simulation of reality, it is about getting new material for expression based on what humans have been doing for a long time, trying to make something with it, and in the end, enjoying the process itself.
 

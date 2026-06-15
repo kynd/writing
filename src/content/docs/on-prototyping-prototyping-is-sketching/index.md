@@ -10,7 +10,7 @@ Originally written in English in 2020.
 > 
 > 日本語は全てAIによる翻訳です。意味が間違っていたところを数箇所直した以外は出力をそのまま使いました。
 
-This text was originally a script for a presentation with many pictures and videos of the actual projects. Since most of them were confidential, I replaced the examples with already-publicized materials and personal projects. Especially I cited multiple examples of my projects from the presentation by my teammates at the Forward Festival 2021.
+This text was originally a script for a presentation with many pictures and videos of the actual projects. Since most of them were confidential, I replaced the examples with already-publicized materials and personal projects. In particular, I drew from examples presented by my teammates at the Forward Festival 2021.
 
 このテキストは元々、多くの画像や実際のプロジェクトのビデオを含むプレゼンテーション用のスクリプトでした。しかし、そのうちのほとんどは機密情報であったため、公開されているマテリアルや個人プロジェクトの例に置き換えました。特に、Forward Festival 2021でのチームメイトのプレゼンテーションから、私のプロジェクトの複数の例を引用しました。
 
@@ -19,6 +19,7 @@ This text was originally a script for a presentation with many pictures and vide
 ---
 
 # On Prototyping
+# プロトタイピングについて
 
 I spent a good chunk of my life as a designer, and I spend a lot of time on prototyping.
 
@@ -33,6 +34,7 @@ I want to encourage designers to prototype more, and engineers to design more. S
 デザイナーにはもっとプロトタイプを、エンジニアにはもっとデザインすることを推奨したいのです。そこで、私がどのようにプロトタイプを作成しているか、いくつかメモを残すことにしました。誰かがこれを面白いと思ってくれれば幸いです。
 
 ## What are prototypes?
+## プロトタイプとは？
 
 To me, prototyping is an act of materializing unproven ideas with ingenuity, communicating, and rigorously validating the design and products.
 
@@ -49,6 +51,7 @@ Be it code, paper, or motion, whatever serves the purpose is a great prototype. 
 [![](/images/on-prototyping-prototyping-is-sketching.jpg)](/images/on-prototyping-prototyping-is-sketching.jpg)
 
 ## Prototype to sketch
+## スケッチとしてのプロトタイプ
 
 In the UX industry, the main goal of prototyping is often to validate designs. UX designers create the UI, and then UX engineers implement it to test and gather feedback.
 
@@ -63,8 +66,9 @@ UX業界では、プロトタイピングの主な目的は、多くの場合、
 A sketch for a logo design made with p5.js. p5.jsで作成したロゴデザインのスケッチ。
 
 ## I prototype because I don’t know the answer yet
+## 答えをまだ知らないからプロトタイプする
 
-We sketch when we don't know what things should look like in the end. Sketching is cheap, fast, and easy to scrap and repeat.
+We sketch when we don’t know what things should look like in the end. Sketching is cheap, fast, and easy to scrap and repeat.
 
 Even from the first stroke on the paper, I start to react to my drawing itself. The lines on the paper can guide me to decide where to put the next one. And as I go, I start to see the things I was not able to see before.
 
@@ -81,6 +85,7 @@ Sketching is most effective when I only know which direction to explore without 
 A prototype built with openFrameworks to explore and validate interaction models and physics for an operating system. [Watch this video below to see it in action](https://www.youtube.com/watch?v=Fc2RdNIE7VI&t=1106s). オペレーティングシステムのインタラクションモデルと物理演算を探求し、検証するための、openFrameworksで作られたプロトタイプです。[このビデオで動きをご覧ください](https://www.youtube.com/watch?v=Fc2RdNIE7VI&t=1106s)。
 
 ## Choosing my adventure
+## 自分で冒険を選ぶ
 
 So, I tend not to spec before I start. I use the code to figure out exactly what has to be made.
 
@@ -107,6 +112,7 @@ I sometimes do make plans though. This is a sketch for the Expression project be
 <div class="bookmark-card"><a href="https://www.creativeapplications.net/sound/expressions-paint-and-pixel-matiere-at-micro-scale/" target="_blank" rel="noopener" class="bookmark-link"><div class="bookmark-info"><div class="bookmark-title">Expressions - Paint and pixel matière at micro-scale</div><div class="bookmark-description">Created by Kynd in collaboration with Yu Miyashita (Sound), 'Expressions' is a series of artworks exploring the physicality of thick and bold paint-like dynamic constructs that emerge from illuminated digital space revealing an intricate play of shapes, light and shadow.</div><div class="bookmark-url"><img src="https://www.creativeapplications.net/wp-content/uploads/2015/03/CAN_sitelogo-55171182v1_site_icon-256x256.png" class="bookmark-favicon" alt="" onerror="this.style.display='none'"><span>https://www.creativeapplications.net/sound/expressions-paint-and-pixel-matiere-at-micro-scale/</span></div></div><img src="https://www.creativeapplications.net/wp-content/uploads/2020/04/expressions_WIP5.jpg" class="bookmark-image" alt="" loading="lazy" onerror="this.style.display='none'"></a></div>
 
 ## Prototyping can save tons of discussions
+## プロトタイピングで多くの議論を省ける
 
 Quick sketches on a whiteboard (or iPad these days) can save a lot of talking.
 
@@ -124,9 +130,10 @@ Seeing a prototype in action often communicates an idea a lot better than static
 
 [![](/images/physical-presence-is-one-of-the-hard-thing-to-evaluate-witho.jpg)](/images/physical-presence-is-one-of-the-hard-thing-to-evaluate-witho.jpg)
 
-Physical presence is one of the hard things to evaluate without actually mocking up. [See some UX design examples](https://www.youtube.com/watch?v=Fc2RdNIE7VI&t=1203s). 物理的な存在感は、実際にモックアップを作成しないと評価するのが難しいことの一つです。[UXデザインの例](https://www.youtube.com/watch?v=Fc2RdNIE7VI&t=1203s)。
+Physical presence is one of the hardest things to evaluate without actually mocking up. [See some UX design examples](https://www.youtube.com/watch?v=Fc2RdNIE7VI&t=1203s). 物理的な存在感は、実際にモックアップを作成しないと評価するのが難しいことの一つです。[UXデザインの例](https://www.youtube.com/watch?v=Fc2RdNIE7VI&t=1203s)。
 
 ## Prototypes let me exhaust possibilities very quick
+## プロトタイプで可能性を素早く網羅できる
 
 The last two points are somewhat unique to coding.
 
@@ -136,7 +143,7 @@ I’m always looking for easier and faster ways to do more with less.
 
 When I work on complex problems with a lot of permutations(which most of UX design problems are), I turn to code and have it do my job.
 
-With algorithms, It is much easier to create variations and rationalize them than by hand.
+With algorithms, it is much easier to create variations and rationalize them than by hand.
 
 最後の2点は、ややコーディングに特化したものです。
 
@@ -153,6 +160,7 @@ With algorithms, It is much easier to create variations and rationalize them tha
 Tired of drawing all the variations for different products and modes? Code them to exhaust! [See more examples in this video](https://youtu.be/Fc2RdNIE7VI?si=S-BmCJYv43akdLxJ&t=1310). 異なる製品やモードのすべてのバリエーションを描くのに疲れましたか？ 網羅するためにコード化しましょう！[このビデオでさらに多くの例がみれます](https://youtu.be/Fc2RdNIE7VI?si=S-BmCJYv43akdLxJ&t=1310)。
 
 ## Prototyping forces me to be rigorous.
+## プロトタイピングは厳密さを強いる
 
 I don’t like handwaving. I like code because it makes it harder to turn off my eyes from the important details.
 

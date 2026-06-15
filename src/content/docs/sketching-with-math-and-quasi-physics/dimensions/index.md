@@ -18,7 +18,8 @@ Dimensionality is a crucial concept in understanding how we see and picture the 
 
 次元の概念は、人が世界をどのように認識し理解するかを把握する上でとても重要です。この概念は物理的な世界だけでなく、様々な種類のデータにも適用されます。このページでは、最も単純な1次元の世界から高次元まで、順に巡っていくことにしましょう。
 
-# 1D 1次元
+# 1D
+# 1次元
 
 Imagine if the world was just a line. An object in this world is a line segment, which has only length, with no width or height. The movement is restricted to forward or backward along this line (whichever direction is considered "front").
 
@@ -34,7 +35,8 @@ The position in this world can be described by a single value. And the length is
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="wvLRYdm" data-user="kynd" data-preview="true"></p></div>
 
-# 2D 2次元
+# 2D
+# 2次元
 
 A 2D world is a plane where a position can be described by two values. Imagine two perpendicular lines—let's call them axes—with their crossing point as the origin. The first number indicates how far a point is from the origin along the first axis, while the second number represents its distance along the second axis. We often call them x-axis and y-axis, but the names can be anything. The important point is that they are perpendicular, or independent, meaning moving along one axis doesn't change the position along the other axis.
 
@@ -56,7 +58,8 @@ By the way, you can see the triangle in the demo above because you're viewing it
 > 
 > 重要なのは、空間は座標系なしでも存在するということです。座標系は単に物事を測る必要があるときに役立つ道具なのです。
 
-# Manifold 多様体
+# Manifold
+# 多様体
 
 This section is a bit of detour, but let’s pause and look at a fascinating concept: the manifold. The sections above state the 1D space is a (straight) line and the 2D is a plane. But do they have to be? Or if you are in a 2D space, how can you tell that it is really a flat plane?
 
@@ -80,7 +83,8 @@ The Flatland the Square lives in could be a sphere, torus, or any other 3D shape
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="YzodJJx" data-user="kynd" data-preview="true"></p></div>
 
-# Line Segment, Square, Cube 線分、正方形、立方体
+# Line Segment, Square, Cube
+# 線分、正方形、立方体
 
 Let's look at the relationship between different multi-dimensional worlds from a different angle. Starting with the most basic (and only) shape with finite size in 1D—a line segment—we can see how dimensions build upon each other. If you extend a line segment to the same length in a perpendicular direction, you create a fundamental 2D shape: a square.
 
@@ -98,7 +102,8 @@ Now look at the demo below. Does the last shape look like a cube to you? Maybe y
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="RwXwYrP" data-user="kynd" data-preview="true"></p></div>
 
-# 3D and Projection 1次元と投影
+# 3D and Projection
+# 3次元と投影
 
 Now we are talking about 3D. Similar to what we discussed in 1D and 2D, we can think of three axes that are crossing perpendicular to each other and express a position with three values, representing the position on each of the axes. But a problem arises when we try to draw the third axis. Because we can not have depths on a flat paper or screen, we need a trick to map a point in 3D to a position in 2D to make it “Look like 3D”. This is called “projection”.
 
@@ -116,7 +121,8 @@ The demo below uses a more common method called perspective projection, which pr
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="NWZeZRV" data-user="kynd" data-preview="true"></p></div>
 
-# Rotation 回転
+# Rotation
+# 回転
 
 We take another brief detour here. You have noticed that the cube in the demo above is spinning. Let’s take a brief look at how to rotate a point in a space.
 
@@ -130,7 +136,7 @@ In 2D space, you can use a rotation matrix to rotate a point around the origin.
 
 2次元空間では、回転行列を使って原点を中心に点を回転させることができます。
 
-<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mstyle scriptlevel="0" displaystyle="true"><mrow><mo fence="true">[</mo><mtable rowspacing="0.16em" columnalign="center" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><msup><mi>x</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><msup><mi>y</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup></mstyle></mtd></mtr></mtable><mo fence="true">]</mo></mrow><mo>=</mo><mrow><mo fence="true">[</mo><mtable rowspacing="0.16em" columnalign="center center" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mo>−</mo><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow></mstyle></mtd></mtr></mtable><mo fence="true">]</mo></mrow><mrow><mo fence="true">[</mo><mtable rowspacing="0.16em" columnalign="center" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mi>x</mi></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mi>y</mi></mstyle></mtd></mtr></mtable><mo fence="true">]</mo></mrow></mstyle></mrow><annotation encoding="application/x-tex">{\displaystyle {\begin{bmatrix}x'\\y'\end{bmatrix}} ={\begin{bmatrix}\cos \theta &amp;-\sin \theta \\\sin \theta &amp;\cos \theta \end{bmatrix}}{\begin{bmatrix}x\\y\end{bmatrix}}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.4em;vertical-align:-0.95em;"></span><span class="mord"><span class="mord"><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size3">[</span></span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.45em;"><span style="top:-3.61em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7519em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span></span></span><span style="top:-2.41em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7519em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.95em;"><span></span></span></span></span></span></span></span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size3">]</span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord"><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size3">[</span></span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.45em;"><span style="top:-3.61em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mop">cos</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">θ</span></span></span><span style="top:-2.41em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mop">sin</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">θ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.95em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:0.5em;"></span><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.45em;"><span style="top:-3.61em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">−</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop">sin</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">θ</span></span></span><span style="top:-2.41em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mop">cos</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">θ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.95em;"><span></span></span></span></span></span></span></span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size3">]</span></span></span></span><span class="mord"><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size3">[</span></span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.45em;"><span style="top:-3.61em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">x</span></span></span><span style="top:-2.41em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">y</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.95em;"><span></span></span></span></span></span></span></span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size3">]</span></span></span></span></span></span></span></span>
+${\displaystyle {\begin{bmatrix}x'\\y'\end{bmatrix}} ={\begin{bmatrix}\cos \theta &amp;-\sin \theta \\\sin \theta &amp;\cos \theta \end{bmatrix}}{\begin{bmatrix}x\\y\end{bmatrix}}}$
 
 ```jsx
 function rotate2D(point2D, angle) {
@@ -165,11 +171,12 @@ You can learn more about rotation in [Rotation and Trigonometry 回転と三角�
 
 回転についてより詳しく知りたい場合は [Rotation and Trigonometry 回転と三角関数](/rotation-and-trigonometry)を参照してください。
 
-# 4D 4次元
+# 4D
+# 4次元
 
 Finally we came to here. We’ve been building up all the way to go beyond the 3D dimension we are familiar with. In principle 4D the same as the lower dimensions we have seen. We can assume four axes that are crossing perpendicular to each other, and we express a position with four values. The problem is how to visualize a shape in the 4D space.
 
-ついにここまで来ました。お馴染みの3次元を超えるて行くために、ここまで積み上げてきたのです。原理的には、4次元もこれまで見てきたより低次元の世界と同じです。互いに垂直に交差する4つの軸を想定し、4つの値で位置を表現します。問題は、4次元空間の形をどのように可視化するかということです。
+ついにここまで来ました。お馴染みの3次元を超えて行くために、ここまで積み上げてきたのです。原理的には、4次元もこれまで見てきたより低次元の世界と同じです。互いに垂直に交差する4つの軸を想定し、4つの値で位置を表現します。問題は、4次元空間の形をどのように可視化するかということです。
 
 The solution is basically the same as the projection from 3D to 2D. We need to come up with a way to map a point in 4D to 2D, or in other words, reduce 4 numbers to 2 numbers. We can think of many ways, but because we already have a great way to project a 3D point to 2D—perspective projection—let's use it, and then do something very crude and bold: ignore the 4th number. So to project a 4D point to 2D, we take only the first 3 numbers, and project it to 2D as if it is just a 3D point. This may not sound great, because this way a point \[1, 1, 1, 1\] becomes indistinguishable from \[1, 1, 1, 0\].
 
@@ -181,7 +188,7 @@ But what if we rotate the shape? Imagine when we are rotating a 3D cube, dependi
 
 Compare the demo below with the 3D demo above. Can you see that the code structure is basically the same, but this demo just has one extra dimension—one extra number for each point?
 
-下のデモと上の3Dデモを比較してみてください。コードのの構造が基本的に同じですが、このデモには1つ追加の次元、つまり各点ごとにもうひとつ1つ追加の値があます。
+下のデモと上の3Dデモを比較してみてください。コードの構造が基本的に同じですが、このデモには1つ追加の次元、つまり各点ごとにもうひとつ1つ追加の値があます。
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="vYqqGmP" data-user="kynd" data-preview="true"></p></div>
 
@@ -201,7 +208,7 @@ Very roughly, ray marching is a technique where we mathematically define a shape
 
 Please read [Ray Marching レイマーチング](/ray-marching) to fully understand the technique and the demo.
 
-この手法とデモをより理解するためには [Ray Marching レイマーチング](/ray-marching) を呼んでください。
+この手法とデモをより理解するためには [Ray Marching レイマーチング](/ray-marching) を読んでください。
 
 The distance function is usually defined in 3D or 2D, but here it is defined in 4D. Our rays go in the 3D space, but they will hit the rotating 4D object and tell us where the surface is (or depending on how you interpret the code, you can think our rays are being rotated in 4D and hit the static 4D object). Can you imagine this in your head?
 
@@ -213,7 +220,8 @@ As opposed to the "projection" demo above, which forces any 4D points to project
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="ExBqJwa" data-user="kynd" data-preview="true"></p></div>
 
-# 5D and beyond 5次元以上の空間
+# 5D and beyond
+# 5次元以上の空間
 
 Now we understand the pattern, we can go higher up to 5D or any number of dimensions beyond. Higher dimensions may feel too abstract and like just a thought experiment, but if you think of a point in higher dimensions as a point specified by a lot of value, or a [vector](/vector), multidimensional data is everywhere. You can [think of an RGB color as a point in a 3D space](/colors-and-numbers), and statistical data consisting of 7 numbers (let's say you have data about a population and each person has 7 parameters like age, annual income, etc.), you can think of it as a point in 7-dimensional space.
 

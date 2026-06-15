@@ -45,7 +45,7 @@ In this series, I'll try compiling a code-based interpretation of category theor
 Before diving into the details, let's think a bit about what category theory is and what makes it worthwhile. I'm still a beginner who just started learning, so I can't say things like "Learn this and thank me later”. But I hope I can still share what I feel is cool.
 
 細かい内容に進む前に、圏論とは何で、その何が嬉しいのかを少し考えてみましょう。  
-私はまだ勉強を始めたばかりの初心者なので、「これを学べば捗るよ！」みたいなことは言えませが、なんだか面白いなという感覚を共有できればと思います。
+私はまだ勉強を始めたばかりの初心者なので、「これを学べば捗るよ！」みたいなことは言えませんが、なんだか面白いなという感覚を共有できればと思います。
 
 ## Extracting Structure
 ## 構造の抽出

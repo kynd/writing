@@ -6,7 +6,7 @@ Resolution is a very intriguing concept that lies between what we can express an
 
 解像度は私たちが表すことができるものと、感じとることができるものの間に位置するとても面白い概念です。
 
-The word "resolution" is most often used to mean the number of pixels in a digital image. For example, a 4K (UHD) TV has a resolution of 3840 x 2160 pixels. But the concept of resolution is not just about "digital" or "image," but covers much broader range of things.
+The word "resolution" is most often used to mean the number of pixels in a digital image. For example, a 4K (UHD) TV has a resolution of 3840 x 2160 pixels. But the concept of resolution is not just about "digital" or "image," but covers a much broader range of things.
 
 「解像度」という言葉が最もよく使われるのは、デジタル画像のピクセルの数を指す場合です。例えば、4K（UHD）テレビの解像度は3840 x 2160ピクセルです。ですが解像度の概念は「デジタル」や「画像」だけにとどまらず、ずっと幅広い範囲に当てはまります。
 
@@ -39,7 +39,7 @@ It varies from person to person and the distance at which you look at it, but in
 
 Devices like microscope or telescope can enhance our ability to distinguish the details. For example with a microscope, you can clearly see the dots of ink that comprise a print. The resolution of a microscope is usually represented by the smallest distance between two points that can still be distinguished as separate entities, and is measured in units like micrometers (µm) or nanometers (nm).
 
-顕微鏡や望遠鏡のような機器は、私たちの詳細を識別する能力を強化してくれます。例えば顕微鏡を使うと、印刷物を構成するインクの点をはっきりと見ることができます。顕微鏡の解像度は通常、マイクロメートル（µm）やナノメートル（nm）といった単位で表され、これは2つの点を別々のものとして区別できる最小距離です
+顕微鏡や望遠鏡のような機器は、私たちの詳細を識別する能力を強化してくれます。例えば顕微鏡を使うと、印刷物を構成するインクの点をはっきりと見ることができます。顕微鏡の解像度は通常、マイクロメートル（µm）やナノメートル（nm）といった単位で表され、これは2つの点を別々のものとして区別できる最小距離です。
 
 [![](/images/resolution.jpg "50")](/images/resolution.jpg)
 
@@ -82,7 +82,7 @@ As you can see, from a certain point, it becomes difficult to recognize what is 
 
 <div></div>
 
-By the way, no real pixels are actually square except for some black and white LCDs. They consist of tiny segments of red, green, and blue lights. So what we think as “pixel art” like the woods above is a idealized picture of pixels.
+By the way, no real pixels are actually square except for some black and white LCDs. They consist of tiny segments of red, green, and blue lights. So what we think of as “pixel art” like the woods above is an idealized picture of pixels.
 
 ところで、実際のピクセルは実際には正方形ではありません。ピクセルは、赤、緑、青の微細な光のセグメントから成り立っています。我々が「ピクセルアート」と呼んでいるもの、例えば上の森の画像のようなものは、ピクセルを理想化した表現です。
 
@@ -109,7 +109,7 @@ The demo below simulates CMYK printing.
 
 There is something really intriguing about how our brain always tries to compensate for the missing information. When we see a picture with low resolution, our brain tries to "make sense" of it. This ability does seem to be affected by "how" the resolution is lost. The two images below are not too different in terms of the number of divisions, i.e., how many colored cells there are, but many people would find the images on the left to be of poor quality, compared to the image on the right which appears more photorealistic and of higher quality, probably due to the more obscure shape (circle), arrangement, and some gaps between these cells.
 
-我々の脳が常に欠けている情報を補おうとするその働きには、とても惹きつけるものがあります。低解像度の画像を見ると、脳はそれを「理解しよう」と試みます。この能力は、「どのように」解像度が失われるかによって影響を受けるようです。下の2つの画像は分割の数、つまり色のついたセルの数を比べる限りさほど違いはありませんが、多くの人が左の画像を低品質と感じ、右の画像をより高品質で写真のように感じるでしょう。これれはおそらく、形（円形）の不明瞭さや配置、セル間の隙間などの要素によるものです。
+我々の脳が常に欠けている情報を補おうとするその働きには、とても惹きつけるものがあります。低解像度の画像を見ると、脳はそれを「理解しよう」と試みます。この能力は、「どのように」解像度が失われるかによって影響を受けるようです。下の2つの画像は分割の数、つまり色のついたセルの数を比べる限りさほど違いはありませんが、多くの人が左の画像を低品質と感じ、右の画像をより高品質で写真のように感じるでしょう。これはおそらく、形（円形）の不明瞭さや配置、セル間の隙間などの要素によるものです。
 
 [![](/images/resolution-2.png)](/images/resolution-2.png)
 
@@ -230,7 +230,7 @@ Many cartoon animations also employ a technique that let the viewer to anticipat
 
 It’s not always better to be realistic. Sometimes, letting the brain fill in the gaps is better than trying to draw everything in detail and having the illusion fall apart by having discrepancies here and there.
 
-リアルであることが良いとは限りません。すべてを細かく描くこうとしてつじつまが合わなくなり、化けの皮が剥がれてしまうよりも、脳に間を補完させた方が良い時もあるのです。
+リアルであることが良いとは限りません。すべてを細かく描こうとしてつじつまが合わなくなり、化けの皮が剥がれてしまうよりも、脳に間を補完させた方が良い時もあるのです。
 
 <div class="video-embed"><iframe src="https://www.youtube.com/embed/bhe7GJtwmQE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
@@ -244,7 +244,7 @@ Having discussed the aspect of time, let’s look at another time-driven art for
 ## Rhythm
 ## リズム
 
-Instead of dividing space, we can create musical rhythm by dividing time. Even within the same tempo and time signature, time can be divided differently, and the way you divide dictates the "feel" of the rhythm. Experienced musicians have a finely tuned resolution of time, meaning they can feel this division more granularly and accurately and precisely position their notes. Many players also adjust the timing slightly off from the exact timing naturally or intentionally to create add more nuances, such as heavy or bouncy rhythms.
+Instead of dividing space, we can create musical rhythm by dividing time. Even within the same tempo and time signature, time can be divided differently, and the way you divide dictates the "feel" of the rhythm. Experienced musicians have a finely tuned resolution of time, meaning they can feel this division more granularly and accurately and precisely position their notes. Many players also adjust the timing slightly off from the exact timing naturally or intentionally to add more nuances, such as heavy or bouncy rhythms.
 
 空間の代わりに時間を分割すると音楽的なリズムを作り出せます。同じテンポと拍子記号で演奏していても、さまざまな仕方で時間を分割することができ、どのように分割するかがリズムの「感じ」を決定します。経験豊富なミュージシャンは時間に対して非常に高い解像度を身につけていて、この分割をより詳細かつ正確に感じ取り、狙い通りに音を配置することができます。演奏者の多くは、自然に、あるいは意図的に、正確なタイミングから微妙にずらすことで重厚な感じや弾んだ感じといったニュアンスを加えたりもします。
 
@@ -269,7 +269,7 @@ The demo below illustrates this concept with very simple examples. You can click
 
 Switching the topic to [sound as data](/sound-visualization), we can view the resolution of time from a different angle. The majority of the sound data we hear today uses a sampling rate of 44,100 Hz (or 44.1 kHz), derived from the old standard for CDs. This means that the data divides a second into 44,100 pieces of time, capturing the pressure for each of these fragments, or samples.
 
-[データとしての音](/sound-visualization)に話題を写して、時間の解像度について異なる角度から見て見ましょう。今日耳にする音のデータの大半は、昔ながらのCDの標準に基づく44,100Hz（または44.1kHz）のサンプリングレートを用いています。これは、データが1秒間を44,100個の時間の断片に分割し、それぞれの断片、つまりサンプルごとの圧力レベルを記録するという意味です。
+[データとしての音](/sound-visualization)に話題を移して、時間の解像度について異なる角度から見てみましょう。今日耳にする音のデータの大半は、昔ながらのCDの標準に基づく44,100Hz（または44.1kHz）のサンプリングレートを用いています。これは、データが1秒間を44,100個の時間の断片に分割し、それぞれの断片、つまりサンプルごとの圧力レベルを記録するという意味です。
 
 It's interesting to think about this in analogy to pixel resolution. Both determine the fidelity to reproduce physical phenomena, but while we can directly see pixels, we never hear individual samples, nor do we directly experience the change in pressure (except for extremely low and loud sounds). Instead, we experience various qualities of sound, such as pitch or timbre. A low sampling rate largely affects the quality of the sound.Let's see (and listen to) this with examples.
 
@@ -289,7 +289,7 @@ The next demo does essentially the same thing, except it emulates a lower sampli
 
 A low sampling rate is rarely used as it not only impairs the quality of sound but also makes it impossible to reproduce the range of sound we can hear, particularly at higher frequencies. This can be easily understood if you imagine having to draw ten cycles of a wave but you can only use five points to plot. But when fidelity is not the primary goal, you may discover interesting applications for it, such as sound effectors known as [bitcrushers](https://en.wikipedia.org/wiki/Bitcrusher) that essentially employ this concept.
 
-低いサンプリングレートは音質を損なうだけでなく、人間に聞こえる範囲の音、特に高周波帯を再現することが不可能になるため、まれにしか使用されません。10周期分の波のを描きたいのに、プロットには5個の点しか使えない状況を想像すると容易に理解できるでしょう。ですが、忠実性を目指すわけでなければ、面白い用途が見かるかもしれません。例えば、この概念を基本として用いる[ビットクラッシャー](https://en.wikipedia.org/wiki/Bitcrusher)などのサウンドエフェクターがあります。
+低いサンプリングレートは音質を損なうだけでなく、人間に聞こえる範囲の音、特に高周波帯を再現することが不可能になるため、まれにしか使用されません。10周期分の波を描きたいのに、プロットには5個の点しか使えない状況を想像すると容易に理解できるでしょう。ですが、忠実性を目指すわけでなければ、面白い用途が見かるかもしれません。例えば、この概念を基本として用いる[ビットクラッシャー](https://en.wikipedia.org/wiki/Bitcrusher)などのサウンドエフェクターがあります。
 
 ## Bit depth
 ## ビット深度
@@ -307,7 +307,7 @@ A common standard is to use 16bit per sample. There are formats with higher fide
 > 
 > 
 > We associate "8-bit" with the sound and graphics of a nostalgic 20th-century gaming console vibe. This is not due to the bit depth, but because many of these consoles used 8-bit CPUs.  
-> ノスタルジックな20世紀のゲーム機の音やグラフィックのことをよく「8ビット」と呼びましが、これはビット深度ではなく、これらのコンソールの多くが8ビットCPUを使っていたためです。
+> ノスタルジックな20世紀のゲーム機の音やグラフィックのことをよく「8ビット」と呼びますが、これはビット深度ではなく、これらのコンソールの多くが8ビットCPUを使っていたためです。
 
 # Other resolutions
 # その他の解像度

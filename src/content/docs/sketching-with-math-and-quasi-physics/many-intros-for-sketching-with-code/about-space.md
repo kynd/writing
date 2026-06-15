@@ -45,7 +45,7 @@ What he is saying is that we can only measure position relative to something. Wh
 
 We want to draw stuff on a computer. To do that, we need to have three things: an origin (a reference point to measure the position relatively from), axes along which we measure distances, and a unit to define what distance corresponds to a number 1.  
 
-コンピューターで何かを描くには、3つの要素が必要です。原点（相対的な位置を測るための基準点）、距離を測る軸、そして数値の1が示す距離を定義する単位です
+コンピューターで何かを描くには、3つの要素が必要です。原点（相対的な位置を測るための基準点）、距離を測る軸、そして数値の1が示す距離を定義する単位です。
 
 In theory, you can pick them freely, but most software has its own default coordinate system. For 2D drawing, like Photoshop, Illustrator, Figma, P5.js, and openFrameworks, the origin is usually the top-left corner of a canvas, and axes are horizontal (x) and vertical (y). The unit is usually a pixel or the device unit. For example, on a Retina display Mac, 1 point corresponds to 2 or 3 (or other numbers depending on your settings) physical pixels. This factor is set so that the numbers you choose appear about the same size perceptually regardless of the actual resolution of the device.
 
@@ -117,7 +117,7 @@ Also, to make things look 3D, lighting or shading (basically the same thing — 
 > 
 > It is your choice of style though. You can choose to draw your scene flat and cartoonish.
 > 
-> とはいえスタイルの選択は自由です。漫画っぽくフラットでに描画することもできます。
+> とはいえスタイルの選択は自由です。漫画っぽくフラットに描画することもできます。
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="RwYqGyK" data-user="kynd" data-preview="true"></p></div>
 

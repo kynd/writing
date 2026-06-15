@@ -26,14 +26,14 @@ Physically, we know how humans perceive colors. We have photoreceptors called co
 
 [https://commons.wikimedia.org/wiki/File:Cone-fundamentals-with-srgb-spectrum.svg](https://commons.wikimedia.org/wiki/File:Cone-fundamentals-with-srgb-spectrum.svg)
 
-However, this model doesn't necessary explain what we actually experience. For example, the violet and red at both ends of the spectrum are actually continuous, with purple in between them. We see different brightness depending on the hue even when the amount of physical light is the same (in general, yellow looks much brighter than blue). We even associate different feelings, emotions, and meanings to the colors.
+However, this model doesn't necessarily explain what we actually experience. For example, the violet and red at both ends of the spectrum are actually continuous, with purple in between them. We see different brightness depending on the hue even when the amount of physical light is the same (in general, yellow looks much brighter than blue). We even associate different feelings, emotions, and meanings to the colors.
 
 しかし、このモデルは必ずしも実際の体験を説明してくれません。例えば、スペクトルの両端にある紫と赤は連続的につながっていて、その間に紫色が存在します。また、物理的な光量が同じでも、色相によって明るさの感じ方が異なります（一般的に、黄色は青よりもはるかに明るく見えます）。人々は、色に対して様々な感情、意味、印象を結びつけたりもします。
 
 # Color models
 # カラーモデル
 
-People have been creating different models to describe colors. These are roughly divided into two categories: ones that are mainly derived from physical properties, and ones are more based on the ways we normally describe colors.
+People have been creating different models to describe colors. These are roughly divided into two categories: ones that are mainly derived from physical properties, and ones that are more based on the ways we normally describe colors.
 
 人々は色を表現するために様々なモデルを作り出してきました。これらは大きく2つのカテゴリーに分類されます。物理的な特性に基づくものと、私たちが日常的に色を表現する方法に基づくものです。
 

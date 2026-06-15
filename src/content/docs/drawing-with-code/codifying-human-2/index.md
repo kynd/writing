@@ -18,8 +18,6 @@ This is an experiment that continues drawing indefinitely by connecting similar 
 
 [![](/images/fractal-of-doodling.png)](/images/fractal-of-doodling.png)
 
-<div></div>
-
 落書きのフラクタル。Fractal of doodling
 
 下はStable Diffusionで作ったビデオ。絵を描く過程に興味があるので、いきなり結果だけが出てもあまり面白くない（仕事ではガンガン使う）。絵を描くプロセスの中のどの部分を取り出すか、どこにらしさが潜んでいるのかといった点を考えると楽しい。

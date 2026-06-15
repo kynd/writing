@@ -805,6 +805,7 @@ const breadcrumbs = buildBreadcrumbs(filePath, allDocs);
     <div class="sidebar-backdrop" id="sidebar-backdrop"></div>
 
     <nav class="sidebar" aria-label="Site navigation">
+      <a href={base || '/'} class={`sl sidebar-home${filePath === '' ? ' current' : ''}`} style="padding-left:36px; border-bottom:1px solid #e8e8e8; margin-bottom:0.25rem">kynd.info/writing/</a>
       <Sidebar tree={tree} currentSlug={filePath} />
     </nav>
 
@@ -825,7 +826,7 @@ const breadcrumbs = buildBreadcrumbs(filePath, allDocs);
         </article>
         <footer class="site-footer">
           <div class="site-footer-left">
-            <a href={base || '/'}>Index</a>
+            <a href={base || '/'}>kynd.info/writing/</a>
             <a href={`${base}/faq`}>FAQs</a>
             <a href="https://github.com/kynd/writing/discussions" target="_blank" rel="noopener">Feedback</a>
           </div>

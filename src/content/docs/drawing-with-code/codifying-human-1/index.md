@@ -60,7 +60,7 @@ Once I have some idea of what the model could be, I put it into code and make it
 
 立体的な奥行きを鉛筆や木炭のようなトーンで表現する実験。絵の表現は必ずしもフォトリアリスティックである必要はなく、例えば形のエッジに強い線を引くだけで遠近が見えたりする。普通の3Dレンダリングとは全然違う発想で画面を作れたりする。明暗、白黒のトーンだけでもずっと遊べる。
 
-An experiment in conveying three-dimensional depth with pencil and charcoal-like tones. Drawings don’t not necessarily have to look photorealistic. For example, by simply drawing strong lines on the edge can create the illusion of depth. Completely different approach from ordinary 3D rendering can still make great pictures. Light and dark, black and white tones alone have infinite possibility to play around with.
+An experiment in conveying three-dimensional depth with pencil and charcoal-like tones. Drawings don’t necessarily have to look photorealistic. For example, by simply drawing strong lines on the edge can create the illusion of depth. Completely different approach from ordinary 3D rendering can still make great pictures. Light and dark, black and white tones alone have infinite possibility to play around with.
 
 [![](https://lh4.googleusercontent.com/fY8or-rGDeyzaygzrvguoQqZdWwwakywtIJymHe6B2uo4pY7eB0wrEv9XRMFzfGSLrsFgfY4ZNIfyehjjUiNZTxPKV_PcqpN1_NE57D5CeCFYzlPUePOHQqKu9_3pJik7R0HHx1p_4hRbvfY-vo_8T8)](https://lh4.googleusercontent.com/fY8or-rGDeyzaygzrvguoQqZdWwwakywtIJymHe6B2uo4pY7eB0wrEv9XRMFzfGSLrsFgfY4ZNIfyehjjUiNZTxPKV_PcqpN1_NE57D5CeCFYzlPUePOHQqKu9_3pJik7R0HHx1p_4hRbvfY-vo_8T8)
 
@@ -93,8 +93,6 @@ Now that I know how to draw the parts, I can combine them and draw the whole thi
 [![](https://lh5.googleusercontent.com/mrLQb38DuiwHZZLbl3XuGCHtZzTtKOqQNrm7rl5Zp22ukM5roh2HTIAfUzMx5f3t1dNwTTq7uao69f_lFlUl-FVgl0Eie6AeI--aV9RaVi55zj7Lm79KJBYJRZI08aYujM72wP1FM75Fh4X41qCDBko)](https://lh5.googleusercontent.com/mrLQb38DuiwHZZLbl3XuGCHtZzTtKOqQNrm7rl5Zp22ukM5roh2HTIAfUzMx5f3t1dNwTTq7uao69f_lFlUl-FVgl0Eie6AeI--aV9RaVi55zj7Lm79KJBYJRZI08aYujM72wP1FM75Fh4X41qCDBko)
 
 [![](https://lh5.googleusercontent.com/XOP8u9SuSDeZTNrIm7kfrYAyZwRq4jRXVeHEwEwPaQMnXgcn5j7-msrvVHwjco5mmz2p_a34i0Iz3NVv2z4HtqTveH006AV1wNFk7weu8r83E7qeLYBr79CT3ODnEEKwv2GtCv3HNV-wog-8mgYKhG4)](https://lh5.googleusercontent.com/XOP8u9SuSDeZTNrIm7kfrYAyZwRq4jRXVeHEwEwPaQMnXgcn5j7-msrvVHwjco5mmz2p_a34i0Iz3NVv2z4HtqTveH006AV1wNFk7weu8r83E7qeLYBr79CT3ODnEEKwv2GtCv3HNV-wog-8mgYKhG4)
-
-[https://www.instagram.com/p/CE641AxnUxi/](https://www.instagram.com/p/CE641AxnUxi/)
 
 パラメータやツールを切り替えて表情を変えてみる。空気感や風景を感じさせる要素を入れてみた。
 

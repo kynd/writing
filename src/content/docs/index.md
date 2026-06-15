@@ -1,5 +1,5 @@
 ---
-title: "Index"
+title: "kynd.info/writing/"
 ---
 [Drawing with code](/drawing-with-code)
 

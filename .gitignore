@@ -29,3 +29,7 @@ npm-debug.log*
 CLAUDE.md
 spelling-grammar-report.md
 src/pages/proofread.astro
+
+# Agent-powered check (temporary, delete when done)
+proofread/agent-check-strategy.md
+proofread/report.html

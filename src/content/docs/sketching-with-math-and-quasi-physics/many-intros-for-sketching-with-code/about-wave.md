@@ -29,7 +29,8 @@ A sine curve can be drawn as a result of a physical object following the [spring
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="WOepdE" data-user="kynd" data-preview="true"></p></div>
 
-# Vibration and Propagation 振動と伝搬
+# Vibration and Propagation
+# 振動と伝搬
 
 Waves propagate and spread in space. Many waves are mechanical, meaning they are caused by physical materials pushing against each other. When you pluck a guitar string, it vibrates and pushes the air around, which pushes the air next to it, and so forth. Sound is propagated across a room as oscillations of air pressure this way. Earthquakes, ocean waves, etc., all belong to this category.
 
@@ -41,7 +42,8 @@ Waves propagate and spread in space. Many waves are mechanical, meaning they are
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="abGVKep" data-user="kynd" data-preview="true"></p></div>
 
-# Light 光
+# Light
+# 光
 
 Electromagnetic waves are a different class of wave that needs no material medium at all. Electromagnetic waves have properties of both particles (photons) and waves. Light, radio, microwaves, X‑rays, etc. are the same phenomenon at different frequencies. What oscillates is simply the electric (**E**) and magnetic (**B**) fields themselves.
 
@@ -59,7 +61,7 @@ Even without a medium, electromagnetic waves still obey the same wave physics, s
 
 For example, electromagnetic waves are diffractive, meaning that they can go around behind obstacles just like waves on the surface of water. Thanks to diffraction (along with reflection and scattering) we can watch TV or use cellular phones even when there is an obstacle between the antenna and the devices.
 
-例えば、電磁波には回折性があり、水面の波のように障害物の後に回り込むことができます。この回折（と反射や散乱）のおかげで、アンテナと機器の間に障害物があっても、テレビの視聴や携帯電話の使えるのです。
+例えば、電磁波には回折性があり、水面の波のように障害物の後に回り込むことができます。この回折（と反射や散乱）のおかげで、アンテナと機器の間に障害物があっても、テレビの視聴や携帯電話が使えるのです。
 
 [What is light? 光とは何か](/what-is-light)
 
@@ -98,7 +100,8 @@ In the case of light, the frequency corresponds to the color. In sound, the freq
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="gOqypMj" data-user="kynd" data-preview="true"></p></div>
 
-# Numbers and Intervals 数と音程
+# Numbers and Intervals
+# 数と音程
 
 Musical intervals are based on frequency ratios. [The equal temperament commonly used in Western music divides an octave evenly into 12 semitones.](/pitch-and-frequency) No matter where you start on the piano keyboard, the ratio of the frequency from one note to its right neighbor (e.g., C to C#) is <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mrow><mn>1</mn><mi mathvariant="normal">/</mi><mn>12</mn></mrow></msup></mrow><annotation encoding="application/x-tex">2^{1/12}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.888em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.888em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1/12</span></span></span></span></span></span></span></span></span></span></span></span>. With the semitone as a unit, we can think of the distance between notes as a simple number relationship.
 
@@ -130,7 +133,8 @@ In the slightly more song-like example below, the chord (F major 9th) chord is r
 
 [The secrets of sound (for kids)](/the-secrets-of-sound-for-kids)
 
-# Timbre 音質
+# Timbre
+# 音質
 
 Other than the pitch and loudness, sound also has timbre, which is like the texture or color of a sound. That's how you can tell apart different sounds, like a bird chirping, car horns, or instruments like piano and trumpet.
 

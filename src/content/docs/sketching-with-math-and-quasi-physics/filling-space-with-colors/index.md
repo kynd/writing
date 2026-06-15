@@ -9,15 +9,14 @@ These are candies that have a graphic or a picture all the way through their len
 
 [![](/images/kintar-ame-akio-watanabe-cc-by-sa-3-0.jpeg "75")](/images/kintar-ame-akio-watanabe-cc-by-sa-3-0.jpeg)
 
-<div></div>
-
 _[Kintarō-ame](https://en.wikipedia.org/wiki/Rock_\(confectionery\)#/media/File:%E9%87%91%E5%A4%AA%E9%83%8E%E9%A3%B4.JPG)_ [Akio WATANABE](https://commons.wikimedia.org/w/index.php?title=User:Akio_WATANABE&action=edit&redlink=1)  [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0)
 
 When I thought about how to interpret Fangor's paintings for a digital medium, I thought about these candies—but not uniformly structured like them. What if space were filled with colors, and we could cut it with any plane to reveal different expressions? Can I embed an infinite number of Fangor's paintings into a space, and how does it feel to dwell in such a space?
 
 ファンゴルの絵画をデジタル媒体に向けて解釈する方法を考えたときに、これらのキャンディーが頭に思い浮かびました。ただし金太郎飴のように均一な構造ではありません。空間が色で満たされていて、任意の平面で切り取ることで異なる表現が現れるとしたらどうでしょう。無限のファンゴルの絵画を空間に埋め込むことができたら、そのような空間に佇んだらどんな感じがするでしょう。
 
-# Fangor ファンゴル
+# Fangor
+# ファンゴル
 
 > Wojciech Bonawentura Fangor (15 November 1922 – 25 October 2015), also known as Voy Fangor, was a Polish [painter](https://en.wikipedia.org/wiki/Painting), [graphic artist](https://en.wikipedia.org/wiki/Graphic_artist), and [sculptor](https://en.wikipedia.org/wiki/Sculpture). Described as "one of the most distinctive painters to emerge from postwar Poland", Fangor has been associated with [Op art](https://en.wikipedia.org/wiki/Op_art) and [Color field](https://en.wikipedia.org/wiki/Color_field) movements and recognized as a key figure in the history of Polish postwar [abstract art](https://en.wikipedia.org/wiki/Abstract_art). ([wikipedia](https://en.wikipedia.org/wiki/Wojciech_Fangor))
 
@@ -39,7 +38,8 @@ This year (13 July – 11 November 2024), Krupa Art Foundation is hosting a mono
 
 [Wojciech Fangor: American Dream](https://krupaartfoundation.pl/en/wojciech-fangor-wystawa/). Shot by Alicja Kielan
 
-# Field of Colors 色の場（フィールド）
+# Field of Colors
+# 色の場（フィールド）
 
 So what does it mean to fill a space with colors? Imagine every particles in the air having hues that form an endless gradient throughout this space. Or think of it like taking various colors of modeling clay, shaping them into spheres and other forms, then blending them together into one enormous, colorful volume. Any slice of this space or volume will reveal a new image.
 
@@ -81,11 +81,12 @@ It's more about my mental model. I love imagining Fangor's vibrant colors fillin
 
 This is another demo based on another of Fangor's recursive motifs—waves.
 
-下は、ファンゴルが繰り返し用いるもうひとつモチーフである波をベースにしたデモです。
+下は、ファンゴルが繰り返し用いるもうひとつのモチーフである波をベースにしたデモです。
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="vYqbXEP" data-user="kynd" data-preview="true"></p></div>
 
-# Renderings レンダリング
+# Renderings
+# レンダリング
 
 Here are some test renderings for the exhibition, including the black and white versions we couldn't use due to time constraints.
 
@@ -115,11 +116,10 @@ These works are exhibited along with the pieces by Zach Lieberman and Yoshi Sode
 
 [![](/images/kynd-waves-2-4-ph-alicja-kielan.jpg)](/images/kynd-waves-2-4-ph-alicja-kielan.jpg)
 
-<div></div>
-
 Photo by [Alicja Kielan](https://www.instagram.com/alicja.kielan/)
 
-# Slicing multi-dimensional spaces 多次元空間をスライスする
+# Slicing multi-dimensional spaces
+# 多次元空間をスライスする
 
 It's fascinating to contemplate structures in space that exist even when we can't see them. Next time you see a circle like Fangor’s, try imagining it as a sphere. Or when you see a sphere, picture it as a slice of a 4D sphere (hypersphere). To dive deeper into this topic, jump on to [Dimensions 次元](/dimensions).
 

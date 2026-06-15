@@ -20,7 +20,8 @@ Patterns are powerful vocabulary. Following patterns makes things predictable. I
 > 
 > これは [Sketching with Math and Quasi Physics](/sketching-with-math-and-quasi-physics) 上の様々なトピックについて、それぞれの間の関係や概要を示したり、新たな文脈を加えたりするためのページです。難易度順には並んでいないので、興味のある記事から自由に読んでみてください。
 
-# Repetition 繰り返し
+# Repetition
+# 繰り返し
 
 At the basis of patterns is repetition. We recognize patterns because the same thing happens again and again.
 
@@ -46,7 +47,8 @@ This can be easily expanded to repetition of continuous values.
 
 [Repetition 繰り返し](/repetition)
 
-# Sine waves サイン波
+# Sine waves
+# サイン波
 
 The sine wave is another fundamental building block for repeating patterns. A mind-blowing fact is that with an infinite set of sinusoidal waves, each with its own frequency, amplitude, and phase, you can synthesize any pattern in theory. This idea is called the Fourier series for repeating patterns and the Fourier transform for ones that don’t. They are so universal and useful that you'll bump into them in many places, such as audio and signal processing, and a whole lot of physics.
 
@@ -58,7 +60,8 @@ The sine wave is another fundamental building block for repeating patterns. A mi
 
 [Fourier Series フーリエ級数](/fourier-series)
 
-# Tiling タイリング
+# Tiling
+# タイリング
 
 Tiling is one of the most obvious visual patterns. By repeating the same elements in a space, or dividing a space based on some rules, we can create various interesting patterns that can continue forever.
 
@@ -81,7 +84,7 @@ A Voronoi diagram is a method to create more organic patterns. Cells in Voronoi 
 # Rhythm
 # リズム
 
-Instead of dividing space, we can create musical rhythm by dividing time. Even within the same tempo and time signature, time can be divided differently, and the way you divide dictates the "feel" of the rhythm. Experienced musicians have a finely tuned resolution of time, meaning they can feel this division more granularly and accurately and precisely position their notes. Many players also adjust the timing slightly off from the exact timing naturally or intentionally to create add more nuances, such as heavy or bouncy rhythms.
+Instead of dividing space, we can create musical rhythm by dividing time. Even within the same tempo and time signature, time can be divided differently, and the way you divide dictates the "feel" of the rhythm. Experienced musicians have a finely tuned resolution of time, meaning they can feel this division more granularly and accurately and precisely position their notes. Many players also adjust the timing slightly off from the exact timing naturally or intentionally to add more nuances, such as heavy or bouncy rhythms.
 
 空間の代わりに時間を分割すると音楽的なリズムを作り出せます。同じテンポと拍子記号で演奏していても、さまざまな仕方で時間を分割することができ、どのように分割するかがリズムの「感じ」を決定します。経験豊富なミュージシャンは時間に対して非常に高い解像度を身につけていて、この分割をより詳細かつ正確に感じ取り、狙い通りに音を配置することができます。演奏者の多くは、自然に、あるいは意図的に、正確なタイミングから微妙にずらすことで重厚な感じや弾んだ感じといったニュアンスを加えたりもします。
 
@@ -98,7 +101,8 @@ Instead of dividing space, we can create musical rhythm by dividing time. Even w
 > 
 > 音楽には基本的なドラムループ以外にも、さまざまな層の繰り返しがあります。頭から離れないギターリフ、フレーズのリズムやメロディのパターン、そして楽曲構造は、バース、ブリッジ、コーラスといった異なるセクションの繰り返しで形作られています。音楽にはここに書けるよりもずっと多く語れることがあります。
 
-# Randomness ランダムさ
+# Randomness
+# ランダムさ
 
 Again, nothing follows a perfectly regular pattern. Randomness is a great tool that can help make our sketches more interesting and natural. Randomness is, by definition, hard to predict, but that doesn't mean it's uncontrollable. There are many different ways to "shape" randomness for your purpose.
 
@@ -203,7 +207,7 @@ It works the other way around, too. When information is missing, like in a blurr
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="PoLZywR" data-user="kynd" data-preview="true"></p></div>
 
-Does this sounds like data compression? Yes, many technologies like ZIP, JPEG, or MP3 borrow the basically same trick. They hunt for repeated structure in data, toss the redundant bits, and keep a smaller blueprint. Decompressors rebuild the original (or close enough) by reading that blueprint plus a few rules, just like our brain filling in a pixelated image.
+Does this sound like data compression? Yes, many technologies like ZIP, JPEG, or MP3 borrow the basically same trick. They hunt for repeated structure in data, toss the redundant bits, and keep a smaller blueprint. Decompressors rebuild the original (or close enough) by reading that blueprint plus a few rules, just like our brain filling in a pixelated image.
 
 これはまるでデータ圧縮のように聞こえないでしょうか。実はその通りで、ZIP、JPEG、MP3などの多くの技術は、基本的に同じことをしています。データ内の繰り返し構造を見つけ出し、冗長な部分を取り除いて、よりコンパクトな設計図として保存します。解凍プログラムは、私たちの脳がピクセル化された画像を補完するように、その設計図とルールを基に、元のデータ（またはそれに近いもの）を再構築するのです。
 
@@ -226,7 +230,7 @@ Does this sounds like data compression? Yes, many technologies like ZIP, JPEG, o
 
 「パターン」は幅広い概念です。私たちは単純な繰り返しから始めて、ノイズに満ちた世界の認識まで見てきました。
 
-At a meta level, patterns what let us make sense of the world. They are so crucial for us to grasp and organize information. But at the same time, it is also important to remember that leaning to match on patterns can make us overlook the details that matter, sliding into stereotypes and snap judgments. We need to free ourselves from familiar patterns sometimes.
+At a meta level, patterns are what let us make sense of the world. They are so crucial for us to grasp and organize information. But at the same time, it is also important to remember that leaning to match on patterns can make us overlook the details that matter, sliding into stereotypes and snap judgments. We need to free ourselves from familiar patterns sometimes.
 
 メタレベルで見ると、パターンは私たちが世界を理解するための手段です。情報を把握し整理する上で、パターンは不可欠な存在です。しかし同時に、パターンへの依存が強すぎると、重要な細部を見落とし、ステレオタイプや性急な判断に陥りやすいことにも注意が必要です。時には、慣れ親しんだパターンから意識的に離れることも大切です。
 

@@ -5,7 +5,7 @@ import DocLayout from '../layouts/DocLayout.astro';
 export async function getStaticPaths() {
   const docs = await getCollection('docs');
 
-  return docs.map((doc) => {
+  return docs.filter((doc) => doc.id !== 'index.md').map((doc) => {
     const urlSlug = doc.slug.replace(/\/index$/, '');
     // Hierarchical path from the file system (for sidebar/breadcrumbs)
     const filePath = doc.id.replace(/\.md$/, '').replace(/\/index$/, '');

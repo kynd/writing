@@ -80,7 +80,7 @@ This is a collection of physics- and math-related sketches and snippets intended
   - [Strange Attractor ストレンジアトラクター](/strange-attractor)
   - [Physical Chaos 物理的なカオス](/physical-chaos)
   - [(Extra) Math on Chaos（さらに）カオスの数学](/extra-math-on-chaos)
-- [Reading "Attention Is All You Need"](/reading)
+- [Reading "Attention Is All You Need"](/abstract-introduction-and-background)
   - [Abstract, Introduction and Background 概要、序論と背景](/abstract-introduction-and-background)
   - [Architecture Overview アーキテクチャの概要](/architecture-overview)
   - [Attention Mechanism アテンション機構](/attention-mechanism)
