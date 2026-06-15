@@ -75,13 +75,13 @@ dot
 # Points and Arrows
 # 点と矢印
 
-To express this "relationship," category theory begins with just two tools.  
-
-この「関係」を表現するために、圏論ではたった2つの道具から始めます。
+To express this "relationship," category theory begins with just two tools.
 
 -   **Objects**: The things themselves. Since we don't care about their concrete attributes, they are represented as mere points.
 
 -   **Morphisms**: Arrows extending from point to point. They represent a specific relationship. Within a single category, all arrows represent the same relationship.
+
+この「関係」を表現するために、圏論ではたった2つの道具から始めます。
 
 -   **対象（Object）**： 対象となるものたち。ただし具体的な属性は気にしないのでただの点として表される。
 
@@ -267,13 +267,13 @@ By the way, did you notice that in all the examples above, if there is a morphis
 
 There are only two rules (axioms) for constructing a category.
 
-圏（Category）を構成するためのルール（公理）は、実はたった2つしかありません。
-
 1.  Morphisms are composable  
     When there is $A \to B$ (morphism $f$) and $B \to C$ (morphism $g$), their composition $A \to C$ (morphism $g \circ f$) exists.
 
 2.  Identity morphisms exist  
     For every object $A$, there must be an “arrow that does nothing” to itself, $id_A: A \to A$.
+
+圏（Category）を構成するためのルール（公理）は、実はたった2つしかありません。
 
 1.  射の合成 (Composition) ができる  
     $A \to B$（射 $f$）と $B \to C$（射 $g$）があるとき、それらを合成した $A \to C$（射 $g \circ f$）という矢印が必ず存在する。
