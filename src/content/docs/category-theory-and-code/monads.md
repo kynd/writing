@@ -28,9 +28,9 @@ const processImpure = (input: string): string => {
 };
 ```
 
-**Function that adds side effects as context:** $A \to \text{IO}&lt;B&gt;$
+**Function that adds side effects as context:** $A \to \text{IO}<B>$
 
-**副作用を文脈として追加する関数:** $A \to \text{IO}&lt;B&gt;$  
+**副作用を文脈として追加する関数:** $A \to \text{IO}<B>$  
 
 ```tsx
 // Pure: This function only returns a "description" of what to do.
@@ -64,19 +64,19 @@ This may sound similar to the separation of data and view in UI libraries (and i
 
 By enclosing side effects in a box called an order form (IO), we were able to protect the pure world. However, when we try to use the result of one operation to trigger the next side effect, we face a new problem.
 
--   **Step 1:** Create an order form to read a user ID $\to \text{IO&lt;string&gt;}$
+-   **Step 1:** Create an order form to read a user ID $\to \text{IO<string>}$
 
--   **Step 2:** Use that ID to create an order form to search for an address $\to \text{string} \to \text{IO&lt;Address&gt;}$
+-   **Step 2:** Use that ID to create an order form to search for an address $\to \text{string} \to \text{IO<Address>}$
 
 副作用を注文書（IO）という箱に閉じ込めることで、純粋な世界を守ることができました。しかし、ある処理の結果を使って次の副作用を起こそうとすると、新たな問題に直面します。
 
--   **Step 1:** ユーザーIDを読み取る注文書を作る $\to \text{IO&lt;string&gt;}$
+-   **Step 1:** ユーザーIDを読み取る注文書を作る $\to \text{IO<string>}$
 
--   **Step 2:** そのIDを使って、住所を検索する注文書を作る $\to \text{string} \to \text{IO&lt;Address&gt;}$
+-   **Step 2:** そのIDを使って、住所を検索する注文書を作る $\to \text{string} \to \text{IO<Address>}$
 
-If we simply connect these with `map` (the functor operation), the result becomes $\text{IO&lt;IO&lt;Address&gt;&gt;}$.
+If we simply connect these with `map` (the functor operation), the result becomes $\text{IO<IO<Address>>}$.
 
-これらを単純に `map`（関手の操作）で繋ぐと、結果は $\text{IO&lt;IO&lt;Address&gt;&gt;}$ になってしまいます。
+これらを単純に `map`（関手の操作）で繋ぐと、結果は $\text{IO<IO<Address>>}$ になってしまいます。
 
 ```tsx
 // map applies a function to the value inside the box.
