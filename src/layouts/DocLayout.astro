@@ -80,7 +80,7 @@ function buildTree(docs: typeof allDocs): TreeNode {
 
   for (const doc of docs) {
     const fp = doc.id.replace(/\.md$/, '').replace(/\/index$/, '');
-    if (fp === '') continue; // root homepage
+    if (fp === '' || fp === 'index') continue; // root homepage
     const parts = fp.split('/');
     let node = root;
     for (let i = 0; i < parts.length; i++) {
@@ -450,6 +450,8 @@ const breadcrumbs = buildBreadcrumbs(filePath, allDocs);
       margin-bottom: 2.1rem;
     }
     .prose li { margin-bottom: 0.6rem; }
+    .prose li > ul, .prose li > ol { margin-top: 0.6rem; margin-bottom: 0; }
+    .prose ol { list-style-type: '- '; }
     .katex-mathml {
       position: absolute;
       clip: rect(1px, 1px, 1px, 1px);
@@ -805,7 +807,7 @@ const breadcrumbs = buildBreadcrumbs(filePath, allDocs);
     <div class="sidebar-backdrop" id="sidebar-backdrop"></div>
 
     <nav class="sidebar" aria-label="Site navigation">
-      <a href={base || '/'} class={`sl sidebar-home${filePath === '' ? ' current' : ''}`} style="padding-left:36px; border-bottom:1px solid #e8e8e8; margin-bottom:0.25rem">kynd.info/writing/</a>
+      <a href={base || '/'} class={`sl sidebar-home${filePath === '' ? ' current' : ''}`} style="padding-left:36px; margin-bottom:0.25rem">kynd.info/writing/</a>
       <Sidebar tree={tree} currentSlug={filePath} />
     </nav>
 
