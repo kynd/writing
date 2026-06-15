@@ -31,7 +31,13 @@ $\alpha: F \to G$ が自然であるとは、圏 $\mathcal{C}$ における任�
 
 $G(f) \circ \alpha_A = \alpha_B \circ F(f)$
 
-$\begin{CD}　F(A) @>\alpha_A>> G(A) \\　@VF(f)VV @VVG(f)V \\　F(B) @>>\alpha_B> G(B)\end{CD}$
+$$
+\begin{CD}
+F(A) @>\alpha_A>> G(A) \\
+@VF(f)VV @VVG(f)V \\
+F(B) @>>\alpha_B> G(B)
+\end{CD}
+$$
 
 This means there are two routes—one from $F(f)$ to $\alpha_B$, and another from $\alpha_A$ to $G(f)$. Processing the contents first, then moving to a different world, yields the same result as moving to a different world first, then processing the contents.
 
@@ -46,7 +52,13 @@ This is too abstract, so let's look at a concrete code example. Consider the `to
 
 <table class="matrix-table"><tbody><tr><td>Symbol記号</td><td>Meaning in Category Theory</td><td>圏論での意味</td><td>Concrete Code / Type Example具体的なコード / 型の例</td></tr><tr><td>𝒞</td><td>Domain (source category)</td><td>ドメイン（元の圏）</td><td>TypeScript's type world TypeScriptの型の世界(number,string, etc.)</td></tr><tr><td>𝒟</td><td>Codomain (target category)</td><td>コドメイン（先の圏）</td><td>TypeScript's type world (※same as 𝒞 in this case)TypeScriptの型の世界（※今回は 𝒞 と同じ）</td></tr><tr><td>A</td><td>Object 1</td><td>対象1</td><td>numbertype</td></tr><tr><td>B</td><td>Object 2</td><td>対象2</td><td>stringtype</td></tr><tr><td>f</td><td>Raw morphism (function)</td><td>生身の射（関数）</td><td>toStr: (n: number) =>`Result: ${n}`</td></tr><tr><td>F</td><td>Functor 1</td><td>関手1</td><td>Option</td></tr><tr><td>G</td><td>Functor 2</td><td>関手2</td><td>Array</td></tr><tr><td>F(A)</td><td>Object mapped byF</td><td>F によって移された対象</td><td>Option<number></td></tr><tr><td>F(B)</td><td>Object mapped byF</td><td>F によって移された対象</td><td>Option<string></td></tr><tr><td>G(A)</td><td>Object mapped byG</td><td>G によって移された対象</td><td>Array<number></td></tr><tr><td>G(B)</td><td>Object mapped byG</td><td>G によって移された対象</td><td>Array<string></td></tr><tr><td>F(f)</td><td>Lifted morphism</td><td>持ち上げられた射</td><td>Option.map(toStr)</td></tr><tr><td>G(f)</td><td>Lifted morphism</td><td>持ち上げられた射</td><td>Array.map(toStr)</td></tr><tr><td>α<sub>A</sub></td><td>Component of natural transformation atA</td><td>A における自然変換の成分</td><td>optionToArray<number></td></tr><tr><td>α<sub>B</sub></td><td>Component of natural transformation atB</td><td>B における自然変換の成分</td><td>optionToArray<string></td></tr></tbody></table>
 
-$\begin{CD}　\text{Option<number>} @>{OptionToArray<number>}>> \text{Array<number>} \\　@VOption.map(toStr)VV @VVArray.map(toStr))V \\　\text{Option<text>} @>>{OptionToArray<string>}> \text{Array<text>}\end{CD}$
+$$
+\begin{CD}
+\text{Option<number>} @>{OptionToArray<number>}>> \text{Array<number>} \\
+@VOption.map(toStr)VV @VVArray.map(toStr)V \\
+\text{Option<string>} @>>{OptionToArray<string>}> \text{Array<string>}
+\end{CD}
+$$
 
 ```tsx
 // --- 1. Functions & Data ---
