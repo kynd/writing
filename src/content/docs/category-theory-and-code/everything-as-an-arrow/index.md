@@ -202,9 +202,7 @@ display(dot)
 # Propositions and Proofs
 # 命題と証明
 
-As another example, let's see the arrows as "logical proof (implies)."  
-
-もうひとつの例として、矢印を「論理的な証明（ならば）」だと考えてみます。
+As another example, let's see the arrows as "logical proof (implies)."
 
 -   **A:** Is an equilateral triangle
 
@@ -216,6 +214,8 @@ As another example, let's see the arrows as "logical proof (implies)."
 
 -   **E:** Has an axis of symmetry
 
+もうひとつの例として、矢印を「論理的な証明（ならば）」だと考えてみます。
+
 -   **A：** 正三角形である
 
 -   **B：** 三つの角が等しい
@@ -226,9 +226,7 @@ As another example, let's see the arrows as "logical proof (implies)."
 
 -   **E：** 対称軸を持つ
 
-These are connected by arrows representing mathematical proofs.  
-
-これらは数学的な証明という矢印で結ばれます。
+These are connected by arrows representing mathematical proofs.
 
 -   $A \to B$ (obvious from the definition)
 
@@ -239,6 +237,8 @@ These are connected by arrows representing mathematical proofs.
 -   $C \to D$ (from the isosceles triangle theorem)
 
 -   $C \to E$ (an isosceles triangle is symmetric about the angle bisector of the apex angle)
+
+これらは数学的な証明という矢印で結ばれます。
 
 -   $A \to B$ （定義より明らか）
 
