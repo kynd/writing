@@ -207,18 +207,23 @@ As another example, let's see the arrows as "logical proof (implies)."
 もうひとつの例として、矢印を「論理的な証明（ならば）」だと考えてみます。
 
 -   **A:** Is an equilateral triangle
--   **A：** 正三角形である
 
 -   **B:** Has three equal angles
--   **B：** 三つの角が等しい
 
 -   **C:** Has two equal angles (property of isosceles triangles)
--   **C：** 二つの角が等しい（二等辺三角形の性質）
 
 -   **D:** Has equal base angles
--   **D：** 底角が等しい
 
 -   **E:** Has an axis of symmetry
+
+-   **A：** 正三角形である
+
+-   **B：** 三つの角が等しい
+
+-   **C：** 二つの角が等しい（二等辺三角形の性質）
+
+-   **D：** 底角が等しい
+
 -   **E：** 対称軸を持つ
 
 These are connected by arrows representing mathematical proofs.  
@@ -226,18 +231,23 @@ These are connected by arrows representing mathematical proofs.
 これらは数学的な証明という矢印で結ばれます。
 
 -   $A \to B$ (obvious from the definition)
--   $A \to B$ （定義より明らか）
 
 -   $A \to C$ (if three angles are equal, then naturally two angles are also equal)
--   $A \to C$ （三つの角が等しければ、当然2つの角も等しい）
 
 -   $B \to D$ (once the angle sizes are determined, the relationship of base angles is also determined)
--   $B \to D$ （角の大きさが決まれば、底角という関係も決まる）
 
 -   $C \to D$ (from the isosceles triangle theorem)
--   $C \to D$ （二等辺三角形の定理より）
 
 -   $C \to E$ (an isosceles triangle is symmetric about the angle bisector of the apex angle)
+
+-   $A \to B$ （定義より明らか）
+
+-   $A \to C$ （三つの角が等しければ、当然2つの角も等しい）
+
+-   $B \to D$ （角の大きさが決まれば、底角という関係も決まる）
+
+-   $C \to D$ （二等辺三角形の定理より）
+
 -   $C \to E$ （二等辺三角形は頂角の二等分線で対称である）
 
 [![](/images/source-6.png "75")](/images/source-6.png)
@@ -258,13 +268,13 @@ There are only two rules (axioms) for constructing a category.
 1.  Morphisms are composable  
     When there is $A \to B$ (morphism $f$) and $B \to C$ (morphism $g$), their composition $A \to C$ (morphism $g \circ f$) exists.
 
-    射の合成 (Composition) ができる  
-    $A \to B$（射 $f$）と $B \to C$（射 $g$）があるとき、それらを合成した $A \to C$（射 $g \circ f$）という矢印が必ず存在する。
-
 2.  Identity morphisms exist  
     For every object $A$, there must be an “arrow that does nothing” to itself, $id_A: A \to A$.
 
-    恒等射 (Identity) がある  
+1.  射の合成 (Composition) ができる  
+    $A \to B$（射 $f$）と $B \to C$（射 $g$）があるとき、それらを合成した $A \to C$（射 $g \circ f$）という矢印が必ず存在する。
+
+2.  恒等射 (Identity) がある  
     すべての対象 $A$ に対して、自分自身へ戻る「なにもしない矢印」$id_A: A \to A$ が必ず存在する。
 
 > 
