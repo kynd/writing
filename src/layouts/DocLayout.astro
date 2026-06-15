@@ -708,9 +708,14 @@ const breadcrumbs = buildBreadcrumbs(filePath, allDocs);
     .prose figcaption {
       font-size: 0.8em;
       color: #666;
+      margin-top: 0.5rem;
+      margin-bottom: 2rem;
+      line-height: 1.5;
+    }
+    .prose figure img + figcaption,
+    .prose figure img + * + figcaption {
       margin-top: -2rem;
       margin-bottom: 3rem;
-      line-height: 1.5;
     }
     .prose table.matrix-table {
       width: auto;

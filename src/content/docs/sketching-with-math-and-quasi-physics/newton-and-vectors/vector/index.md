@@ -41,10 +41,10 @@ Vectors don’t always have to represent positions in space. For example, the RG
 
 ベクトルが表すものは空間上の位置だけではありません。例えば色のRGBやHSBの値も3次元のベクトルだと考えることができます。逆にどんなものでも複数の数の組からなるデータであれば空間に対応させる、またはある種の空間を考えることができて、色を空間にマップしたものは色空間と呼ばれます。色と色の間の距離や向きを考えることもできます。
 
+<figure>
 <div class="local-video-wrap"><video controls><source src="/videos/rgb2hsv.mov" type="video/mp4"><source src="/videos/rgb2hsv.mov" type="video/quicktime"></video></div>
-
-**RGB 2 HSV conversion with grid**  
-VerbaGleb, CC BY-SA 4.0 [https://creativecommons.org/licenses/by-sa/4.0](https://creativecommons.org/licenses/by-sa/4.0), via Wikimedia Commons
+<figcaption>RGB 2 HSV conversion with grid — VerbaGleb, CC BY-SA 4.0 <a href="https://creativecommons.org/licenses/by-sa/4.0">creativecommons.org/licenses/by-sa/4.0</a>, via Wikimedia Commons</figcaption>
+</figure>
 
 # Vector as an arrow
 # 矢印としてのベクトル
