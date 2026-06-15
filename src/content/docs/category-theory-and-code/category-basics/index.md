@@ -2,17 +2,15 @@
 title: "Category Basics圏の基本"
 slug: category-basics
 ---
-Let's take a closer look at the structure of categories and what they mean.  
-As a quick review, only two rules (axioms) are needed to construct a category.
-
-圏の構造やその意味について、より詳しくみていきましょう。  
-復習ですが、圏を構成するためのルール（公理）は2つしかありません。
+Let's take a closer look at the structure of categories and what they mean. As a quick review, only two rules (axioms) are needed to construct a category.
 
 1.  Composition  
     When there is $A \to B$ (morphism $f$) and $B \to C$ (morphism $g$), the composed arrow $A \to C$ (morphism $g \circ f$) must exist.
 
 2.  Identity  
     For every object $A$, there must exist an identity arrow $id_A: A \to A$ that "does nothing." Composing any morphism with an identity arrow leaves that morphism unchanged ($f \circ id_A = f$ and $id_B \circ f = f$).
+
+圏の構造やその意味について、より詳しくみていきましょう。復習ですが、圏を構成するためのルール（公理）は2つしかありません。
 
 1.  合成 (Composition)  
     $A \to B$（射 $f$）と $B \to C$（射 $g$）があるとき、それらを合成した $A \to C$（射 $g \circ f$）という矢印が存在しなければならない。
@@ -72,12 +70,13 @@ In category theory, a "diagram commutes" means that when going from one point to
   
 **Commutativity**
 
-In the diagram below, there are two routes from $A$ to $C$:  
-下の図では $A$ から $C$ へ、2つのルートがあります。
+In the diagram below, there are two routes from $A$ to $C$:
 
 1.  Morphism $h$.
 
 2.  Following morphism $f$ and morphism $g$ in sequence.
+
+下の図では $A$ から $C$ へ、2つのルートがあります。
 
 1.  射 $h$ 。
 
@@ -96,11 +95,11 @@ $h = g \circ f$ が成り立つとき、「この図式は可換である」と�
 
 Let's write a code example. Think of a process that takes a list of numbers, doubles each one, and converts the results to strings.
 
-コードで例を書いてみましょう。数値のリストを受け取り、それらを2倍にしてから文字列にするという処理を考えます。
-
 -   **Route 1 (Direct)**: A single function `h`
 
 -   **Route 2 (Composition)**: Call function `f` that `double`s and function `g` that does `to_str` in sequence
+
+コードで例を書いてみましょう。数値のリストを受け取り、それらを2倍にしてから文字列にするという処理を考えます。
 
 -   **ルート1（直接）**: 関数 `h` ひとつ
 
@@ -140,11 +139,11 @@ verifyCommutativity(10);
 
 When commutativity is guaranteed, you can confidently refactor your code.
 
-可換であることが保証されていると、安心してコードを書き換えることができます。
-
 -   **Optimization**: If step-by-step processing is slow, combine steps into a single, mathematically equivalent function `h` (Route 2 → Route 1)
 
 -   **Reusability**: Decompose the complex function `h` into reusable components `f` and `g` (Route 1 → Route 2)
+
+可換であることが保証されていると、安心してコードを書き換えることができます。
 
 -   **最適化**: ステップごとに処理すると遅いから、数学的に同等な1つの高速な関数 `h` にまとめる（ルート2 → ルート1）
 
