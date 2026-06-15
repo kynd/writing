@@ -9,9 +9,7 @@ Usually, when we try to understand something, we describe things by listing thei
 
 私たちは普段、何かを理解しようとするとき、その性質を列挙することで物事を記述しようとします。例えば水とは、水素と酸素が結びついた分子で、飲むことができて、0度で固体になり、といった具合です。
 
-In category theory, rather than looking at individual things concretely, we try to grasp the whole picture abstractly by a particular relationship among many things. For example, let's take the relationship of "being an ingredient for."
-
-圏論では一つのものを具体的にみるのではなく、沢山のものどうしのあるひとつの関係に注目することで、全体を抽象的に捉えようとします。例えば「材料になる」という関係について考えてみましょう。
+In category theory, rather than looking at individual things concretely, we try to grasp the whole picture abstractly by a particular relationship among many things. For example, let's take the relationship of "being an ingredient for." Making concrete requires water and cement, and cement requires limestone. Making bread also requires water, along with flour, yeast, and other ingredients. Let's write out these relationships with arrows.
 
 -   Limestone → Cement
 
@@ -25,9 +23,7 @@ In category theory, rather than looking at individual things concretely, we try 
 
 -   Yeast → Bread
 
-For example, making concrete requires water and cement, and cement requires limestone. Making bread also requires water, along with flour, yeast, and other ingredients. Let's write out these relationships with arrows.
-
-例えばコンクリートを作るには水とセメントが必要で、セメントを作るには石灰石が要ります。パンを作るのにも水が必要で、他には小麦粉やイーストなどが入ります。この関係を矢印で書いてみましょう。
+圏論では一つのものを具体的にみるのではなく、沢山のものどうしのあるひとつの関係に注目することで、全体を抽象的に捉えようとします。例えば「材料になる」という関係について考えてみましょう。例えばコンクリートを作るには水とセメントが必要で、セメントを作るには石灰石が要ります。パンを作るのにも水が必要で、他には小麦粉やイーストなどが入ります。この関係を矢印で書いてみましょう。
 
 -   石灰石 → セメント
 
