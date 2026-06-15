@@ -84,7 +84,7 @@ The same system of equation can be written as a matrix equation:
 
 同じ連立方程式を行列の式として表すことができます。
 
-$\begin{bmatrix} 2 &amp; 3 \\ 1 &amp; 1 \end{bmatrix}\begin{bmatrix} x \\ y \end{bmatrix} = \begin{bmatrix} 7 \\ 3 \end{bmatrix}$
+$\begin{bmatrix} 2 & 3 \\ 1 & 1 \end{bmatrix}\begin{bmatrix} x \\ y \end{bmatrix} = \begin{bmatrix} 7 \\ 3 \end{bmatrix}$
 
 or in augmented matrix form:
 
@@ -92,8 +92,8 @@ or in augmented matrix form:
 
 $\left[
 \begin{array}{cc|c}
-2 &amp; 3 &amp; 7 \\
-1 &amp; 1 &amp; 3
+2 & 3 & 7 \\
+1 & 1 & 3
 \end{array}
 \right]$
 
@@ -103,8 +103,8 @@ The numbers on the left side of the matrix represent the coefficients in the ori
 
 $\left[
 \begin{array}{cc|c}
-2 &amp; 3 &amp; 7 \\
-2 &amp; 2 &amp; 6
+2 & 3 & 7 \\
+2 & 2 & 6
 \end{array}
 \right]$
 
@@ -114,8 +114,8 @@ Then subtract the second row from the first row:
 
 $\left[
 \begin{array}{cc|c}
-2 &amp; 3 &amp; 7 \\
-0 &amp; 1 &amp; 1
+2 & 3 & 7 \\
+0 & 1 & 1
 \end{array}
 \right]$
 
@@ -144,9 +144,9 @@ This is just a different way to write the exact same process.
 > ガウス消去法の行列表現では、対角線より下のすべての要素をゼロにして下の例のような上三角行列と呼ばれる形に変換することを目指します。これは下のデモでも確認できます。  
 > 
 > $\begin{bmatrix}
-a &amp; b &amp; c \\
-0 &amp; d &amp; e \\
-0 &amp; 0 &amp; f
+a & b & c \\
+0 & d & e \\
+0 & 0 & f
 \end{bmatrix}$
 
 # Code implementation
