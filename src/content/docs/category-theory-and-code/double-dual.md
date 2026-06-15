@@ -128,12 +128,11 @@ Start with a specific vector $v = (3, 4, 5)$. No matter what computational rule 
 
 -   If a shadow-measuring $\phi_1$ comes, compute and return $\phi_1(3, 4, 5)$.
 
-  
 特定のベクトル $v = (3, 4, 5)$ をスタート地点にします。目の前に、どんな計算ルール $\phi$（測定器）が差し出されても、あなたはその $\phi$ に自分の値を代入して結果を答えることができます。
 
-  
-• 影を測る $\phi_1$ が来れば $\phi_1(3, 4, 5)$ を計算して答える。  
-• 合計金額を出す $\phi_2$ が来れば $\phi_2(3, 4, 5)$ を計算して答える。
+-   影を測る $\phi_1$ が来れば $\phi_1(3, 4, 5)$ を計算して答える。
+
+-   合計金額を出す $\phi_2$ が来れば $\phi_2(3, 4, 5)$ を計算して答える。
 
 This concept—executing $\phi$ on $v$—becomes an object in $V^{\ast\ast}$. The transformation from vector to device can be written as:
 
