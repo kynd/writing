@@ -44,7 +44,7 @@ More generally, linear mapping can be written as below. Try if you can get the t
 より一般的に、線形写像は下のように表せます。実際の数値を代入して、上の温度を変換する式が得られるか試してみましょう。
 
 $\begin{aligned}
-    y &amp;= \frac{(x - a)}{(b - a)} \times (d - c) + c
+    y &= \frac{(x - a)}{(b - a)} \times (d - c) + c
 \end{aligned}$
 
 Where:
@@ -150,7 +150,7 @@ The transformation can be written as:
 
   
 $\begin{bmatrix} x' \\ y' \\ 1 \end{bmatrix} =
-\begin{bmatrix} a &amp; b &amp; e \\ c &amp; d &amp; f \\ 0 &amp; 0 &amp; 1 \end{bmatrix}
+\begin{bmatrix} a & b & e \\ c & d & f \\ 0 & 0 & 1 \end{bmatrix}
 \begin{bmatrix} x \\ y \\ 1 \end{bmatrix}$
 
 Here, $x$ and $y$ are the original coordinates, $x′$ and $y′$ are the transformed coordinates. The 1s below the coordinates and the third row (0,0,1) under matrix may look arbitrary, but this is a trick that makes it possible to include translation as part of the transformation. This is called homogeneous coordinates.
@@ -193,7 +193,7 @@ To scale a shape by $sx$ in the x-direction and $sy$ in the y-direction:
 
 x方向に$sx$、y方向に$sy$で形状を拡大縮小する。
 
-$\begin{bmatrix} sx &amp; 0 &amp; 0 \\ 0 &amp; sy &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{bmatrix}$
+$\begin{bmatrix} sx & 0 & 0 \\ 0 & sy & 0 \\ 0 & 0 & 1 \end{bmatrix}$
 
 ### Rotation
 ### 回転
@@ -202,7 +202,7 @@ To rotate a shape by $\theta$ degrees:
 
 図形を$\theta$度回転させる。
 
-$\begin{bmatrix} \cos\theta &amp; -\sin\theta &amp; 0 \\ \sin\theta &amp; \cos\theta &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{bmatrix}$
+$\begin{bmatrix} \cos\theta & -\sin\theta & 0 \\ \sin\theta & \cos\theta & 0 \\ 0 & 0 & 1 \end{bmatrix}$
 
 ### Translation
 ### 平行移動
@@ -211,7 +211,7 @@ To move (translate) a shape by $tx$ in x and $ty$ in y:
 
 x方向に$tx$、y方向に$ty$だけ形状を移動する。
 
-$\begin{bmatrix} 1 &amp; 0 &amp; tx \\ 0 &amp; 1 &amp; ty \\ 0 &amp; 0 &amp; 1 \end{bmatrix}$
+$\begin{bmatrix} 1 & 0 & tx \\ 0 & 1 & ty \\ 0 & 0 & 1 \end{bmatrix}$
 
 ### Shear
 ### せん断
@@ -221,7 +221,7 @@ To shear the shape in the x or y direction:
 x方向またはy方向に形状をせん断（斜めに傾けるように変形）する。
 
   
-$\begin{bmatrix} 1 &amp; sh_x &amp; 0 \\ sh_y &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{bmatrix}$
+$\begin{bmatrix} 1 & sh_x & 0 \\ sh_y & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix}$
 
 Let's look at another demo. This is almost identical to the demo above, but it translates and rotates the shape instead of skewing. Can you try editing the code to use other types of transformations?
 
