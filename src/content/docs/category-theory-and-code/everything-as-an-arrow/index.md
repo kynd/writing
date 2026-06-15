@@ -112,7 +112,11 @@ There are also cases where not all elements have an ordering relationship with e
 ## Power Set with Inclusion Relation
 ## 包含関係による集合の集合（べき集合）
 
-Consider collecting all subsets of a certain set (for example, $\{a, b, c\}$). When we define the arrows as the inclusion relation ($\subseteq$), it becomes an ordered set.  
+Consider collecting all subsets of a certain set (for example, $\{a, b, c\}$). When we define the arrows as the inclusion relation ($\subseteq$), it becomes an ordered set.
+
+-   **Objects:** $\emptyset, \{a\}, \{b\}, \{a, b\} \dots$
+
+-   **Morphisms:** $A \subseteq B$ then $A \to B$
 
 ある集合（例えば $\{a, b, c\}$）のすべての部分集合を集めたものを考えます。このとき、矢印の意味を包含関係（$\subseteq$）と定義すると順序集合になります。
 
