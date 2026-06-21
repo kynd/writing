@@ -134,8 +134,8 @@ let v = sqrt(-2 * log(1 - random(1))) *
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="MmZPKQ" data-user="kynd" data-preview="true"></p></div>
 
-# ノイズ関数
 # Noise function
+# ノイズ関数
 
 Dice have no memory. The previous roll has no bearing on the next number. You can’t say, "I rolled 1 three times in a row, so it must be 1 next time too." All numbers should roll the same number of times. The next number will be 1 because there were not so many 1s today.
 
@@ -198,7 +198,7 @@ let v = noise(x) + noise(x * 4.0) * 0.5;
 
 This is just a side note, but instead of using random numbers in the gradient noise, applying regular value changes can create an interesting motion like this. The algorithm was originally designed to create unpredictable patterns, but it does not have to be used as intended.
 
-これは余談ですが、勾配ノイズでランダムな数を使う代わりに規則的な値の変化を用いるるとこんな動きになります。元々は予測不能なパターンを作るためなアルゴリズムですが、意図通りに使わなくてはならないということはありません。
+これは余談ですが、勾配ノイズでランダムな数を使う代わりに規則的な値の変化を用いるとこんな動きになります。元々は予測不能なパターンを作るためなアルゴリズムですが、意図通りに使わなくてはならないということはありません。
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="BaxRWNV" data-user="kynd" data-preview="true"></p></div>
 

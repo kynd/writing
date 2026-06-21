@@ -113,7 +113,7 @@ This is a collection of physics- and math-related sketches and snippets intended
 - [Resolution 解像度](/resolution)
 - [Dimensions 次元](/dimensions)
 - [Camera in Action 働くカメラ](/camera-in-action)
-- [Reading "Raymarching - Primitives"](/reading)
+- [Reading "Raymarching - Primitives"](/reading-raymarching-primitives)
 - [Drawing Landscape](/drawing-landscape)
 - [Reading a Noise Function](/reading-a-noise-function)
 - [Filling Space with Colors 空間を色で満たす](/filling-space-with-colors)

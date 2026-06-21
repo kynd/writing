@@ -8,7 +8,7 @@ slug: abstract-introduction-and-background
 > 
 > [元の論文はarXivから入手できます](https://arxiv.org/abs/1706.03762)。このシリーズを読み進める際は、元の論文を開いておくことをお勧めします。
 
-Let's begin with the abstract and introduction to understand what this paper is about. This is the first few sentence from the abstract.
+Let's begin with the abstract and introduction to understand what this paper is about. This is the first few sentences from the abstract.
 
 概要（abstract）と序論（introduction）から始めて、この論文が何について書かれているのかを理解しましょう。これは概要の冒頭の数文です。
 
@@ -86,13 +86,13 @@ This makes sense, right? It seems to mimic how humans read text. But as the auth
 
 -   **The Memory Fade:** In long sequences, the "memory" from the beginning of the text often gets diluted or lost by the time the model reaches the end.
 
--   **逐次処理による渋滞：** それぞれのステップが前のステップに依存するるため、モデルは単語を並列に処理できません。これにより、現代のハードウェアでのトレーニングが非常に遅くなります。
+-   **逐次処理による渋滞：** それぞれのステップが前のステップに依存するため、モデルは単語を並列に処理できません。これにより、現代のハードウェアでのトレーニングが非常に遅くなります。
 
 -   **記憶の減衰：** 長いシーケンスでは、テキストの冒頭からの「記憶」が、モデルが末尾に到達する頃にはしばしば薄まったり失われたりします。
 
-> Recurrent models typically factor computation along the symbol positions of the input and output sequences. Aligning the positions to steps in computation time, they generate a sequence of hidden states <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mi>t</mi></msub></mrow><annotation encoding="application/x-tex">h_t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">h</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2806em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">t</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>, as a function of the previous hidden state <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub></mrow><annotation encoding="application/x-tex">h_{t−1}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9028em;vertical-align:-0.2083em;"></span><span class="mord"><span class="mord mathnormal">h</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">t</span><span class="mbin mtight">−</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2083em;"><span></span></span></span></span></span></span></span></span></span> and the input for position t. This inherently sequential nature precludes parallelization within training examples, which becomes critical at longer sequence lengths, as memory constraints limit batching across examples.
+> Recurrent models typically factor computation along the symbol positions of the input and output sequences. Aligning the positions to steps in computation time, they generate a sequence of hidden states $h_t$, as a function of the previous hidden state $h_{t−1}$ and the input for position t. This inherently sequential nature precludes parallelization within training examples, which becomes critical at longer sequence lengths, as memory constraints limit batching across examples.
 
-> 再帰型モデルは通常、入出力シーケンスの記号位置に沿って計算を計算を展開する。計算時間におけるステップに各位置を整列させ、前の隠れ状態 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub></mrow><annotation encoding="application/x-tex">h_{t-1}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9028em;vertical-align:-0.2083em;"></span><span class="mord"><span class="mord mathnormal">h</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">t</span><span class="mbin mtight">−</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2083em;"><span></span></span></span></span></span></span></span></span></span> と位置 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi></mrow><annotation encoding="application/x-tex">t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6151em;"></span><span class="mord mathnormal">t</span></span></span></span> における入力の関数として、一連の隠れ状態 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mi>t</mi></msub></mrow><annotation encoding="application/x-tex">h_t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">h</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2806em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">t</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> を生成する。この本質的に逐次的な性質は、訓練例内部での並列化を不可能にする。これはシーケンス長が長くなるにつれ、メモリの制約によってサンプルをまたいだバッチ処理が制限されるため、極めて深刻な問題となる。
+> 再帰型モデルは通常、入出力シーケンスの記号位置に沿って計算を展開する。計算時間におけるステップに各位置を整列させ、前の隠れ状態 $h_{t-1}$ と位置 $t$ における入力の関数として、一連の隠れ状態 $h_t$ を生成する。この本質的に逐次的な性質は、訓練例内部での並列化を不可能にする。これはシーケンス長が長くなるにつれ、メモリの制約によってサンプルをまたいだバッチ処理が制限されるため、極めて深刻な問題となる。
 
 # Convolutional Neural Networks (CNNs)
 # 畳み込みニューラルネットワーク（CNN）
@@ -101,7 +101,7 @@ Convolutions are a mathematical operation where a kernel (a small matrix of weig
 
 畳み込みは、カーネル（重み付けの小さな行列）が入力データ上をスライドして特徴のマップを生成する数学的な演算です。これはテキストの処理では、モデルが小さな窓枠を通してテキストを見渡し、そのトークンと隣り合うトークンの重み付き和を計算する処理になります。CNNは通常、ピラミッドのように情報を処理して抽象化するので、複数層の畳み込みを用います。
 
-This can be much faster than RNNs because they can process different parts of a sentence in parallel. But the paper points a significant flaw.
+This can be much faster than RNNs because they can process different parts of a sentence in parallel. But the paper points out a significant flaw.
 
 これは文の異なる部分を並列に処理できるのでRNNよりもはるかに高速になり得ますが、論文は重大な欠陥を指摘しています。
 
@@ -138,9 +138,9 @@ Now that we've looked at the key concepts, we can understand their claim about t
 
 > Transformerは、より大幅な並列化を可能にする。
 
-In RNNs, you had to wait for token <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span> to finish before processing token <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span></span></span></span>. The Transformer processes the entire sequence in a more parallelized manner, taking full advantage of modern GPU hardware and making training significantly faster.
+In RNNs, you had to wait for token $A$ to finish before processing token $B$. The Transformer processes the entire sequence in a more parallelized manner, taking full advantage of modern GPU hardware and making training significantly faster.
 
-RNNでは、トークン<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span></span></span></span>を処理する前に、トークン<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span>の処理が完了するのを待つ必要がありました。Transformerはシーケンス全体をより並列化された方法で処理し、現代のGPUハードウェアを最大限に活用して、トレーニングを大幅に高速化します。
+RNNでは、トークン$B$を処理する前に、トークン$A$の処理が完了するのを待つ必要がありました。Transformerはシーケンス全体をより並列化された方法で処理し、現代のGPUハードウェアを最大限に活用して、トレーニングを大幅に高速化します。
 
 ## Long-Range Dependencies
 ## 長距離依存関係
@@ -161,6 +161,7 @@ As a proof of the concept, on the WMT 2014 English-to-German and English-to-Fren
 理論の実証として、WMT 2014の英語からドイツ語、英語からフランス語への翻訳タスクでTransformerは記録を更新し、それまでのモデルよりもはるかに短いトレーニング時間で、より高いスコア（BLEU）を達成しました。
 
 ## Next
+## 次へ
 
 Next, we'll go through the architecture overview.
 

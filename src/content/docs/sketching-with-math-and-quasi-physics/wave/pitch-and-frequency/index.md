@@ -14,7 +14,7 @@ A note one octave higher doubles in frequency. If the frequency is tripled and l
 
 1オクターブ上の音は周波数が2倍になります。周波数を3倍にして1オクターブ下げると5度上、もしくは半音で7つ上、つまりAから数えるとEの音、Cから数えるとGの音になります。周波数を5倍にして2オクターブ下げると、3度上、もしくは半音で4つ上、つまりAから数えるとC#、ドから数えるとEの音になります。
 
-The way how overlapping **pitches** sound is related to the ratio of frequencies, and in general, the simpler the relationship is, the less muddy it sounds (which is not good or bad by itself).
+The way overlapping **pitches** sound is related to the ratio of frequencies, and in general, the simpler the relationship is, the less muddy it sounds (which is not good or bad by itself).
 
 音程が重なった時の聞こえ方には、周波数の比が関係していて、一般にその関係が単純であればあるほど濁っていないように聞こえます（良し悪しには関係なく）。
 
@@ -54,9 +54,9 @@ While just Intonation sounds beautiful as long as it is played within a certain 
 
 純正調は一定の音階の中で演奏している限りは綺麗に音が響くのですが、曲の中で転調を行おうとすると問題が生じます。例えばある調の長2度の音から長6度の音までは完全5度になりそうですが、純正調ではその周波数の比は3/2にはなりません。
 
-From C (or you can start from any note), 5 degrees up is G, 5 degrees up is D, 5 degrees up is A..., and it comes back to C again. This is a basic concept in music theory called the circle of fifths. For example, the five degrees relationships are important when thinking about chord progressions. Also, by looking at the sequence of notes on this circle, we can find notes in common scales (for example, the sequence from F to B has all the notes in C major scale).
+From C (or you can start from any note), 5 degrees up is G, then D, then A..., and it comes back to C again. This is a basic concept in music theory called the circle of fifths. For example, the five degrees relationships are important when thinking about chord progressions. Also, by looking at the sequence of notes on this circle, we can find notes in common scales (for example, the sequence from F to B has all the notes in C major scale).
 
-Cから（どの音からはじめても良いのですが）5度上はG、その5度上はD、さらに5度上はAと上がっていくとぐるっと回って下のCに戻ってくることができます。これは五度圏（サークル・オブ・フィフス）と呼ばる音楽理論の基本的なコンセプトで、例えばコード進行を考えるときにはこの5度の関係が重要になります。またこの円の上連続する音の並びを見ると、一般的な音階に含まれる音を見つけることができます（例えばFからBまでの並びにはハ長調、Cメジャースケールの音が全て含まれています）。
+Cから（どの音からはじめても良いのですが）5度上はG、さらにD、Aと上がっていくとぐるっと回って下のCに戻ってくることができます。これは五度圏（サークル・オブ・フィフス）と呼ばれる音楽理論の基本的なコンセプトで、例えばコード進行を考えるときにはこの5度の関係が重要になります。またこの円の上連続する音の並びを見ると、一般的な音階に含まれる音を見つけることができます（例えばFからBまでの並びにはハ長調、Cメジャースケールの音が全て含まれています）。
 
 [![](/images/pitch-and-frequency-1.png "50")](/images/pitch-and-frequency-1.png)
 

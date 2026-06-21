@@ -17,7 +17,7 @@ if (uSunlightEnabled) {
 }
 ```
 
-This part calculates the contribution of the sun light. This demo uses simple diffuse and specular model to approximate the sunlight, which is a parallel light from very far away.
+This part calculates the contribution of the sunlight. This demo uses a simple diffuse and specular model to approximate the sunlight, which is a parallel light from very far away.
 
 この部分では太陽光が与える影響を計算します。太陽光は非常に遠くからの平行な光です。このデモでは、これを単純な拡散光と鏡面反射モデルを使って近似します。
 

@@ -42,7 +42,7 @@ diffuse *= ambientOcclusion;
 
 Then `ambientOcclusion` is multiplied by the diffuse. We will discuss this in detail on the next page. But roughly, ambient occlusion is about how much the surrounding geometry blocks light from reaching this point on the surface. This results in darker shading where surfaces are near other objects or in concave areas, like where a surface meets the floor or within crevices.
 
-次に、`ambientOcclusion`が拡散光に掛け合わされます。これについては次のページで詳しく説明します。簡単に言うと、アンビエントオクルージョンは、周囲の形状が、ある表面上の点に光が到達するのをどれだけ遮っているかを表します。これにって、他のオブジェクトに近い場所や凹面の領域、例えば面が床と接する場所や割れ目のような形の部分がより暗くなります。
+次に、`ambientOcclusion`が拡散光に掛け合わされます。これについては次のページで詳しく説明します。簡単に言うと、アンビエントオクルージョンは、周囲の形状が、ある表面上の点に光が到達するのをどれだけ遮っているかを表します。これによって、他のオブジェクトに近い場所や凹面の領域、例えば面が床と接する場所や割れ目のような形の部分がより暗くなります。
 
 [![](/images/sky-light.png "50")](/images/sky-light.png)
 
@@ -66,7 +66,7 @@ specular *= diffuse;
 specular *= 0.04 + 0.96 * pow(clamp(1.0 + dot(normal, rayDirection), 0.0, 1.0), 5.0);
 ```
 
-Soft shadows are also applied to the sky light by using the reflected ray as the direction of the light source: This isn't technically a shadow in ordinary sense, but rather a check to see if other objects occlude the sky's reflection. In effect, this creates a very nice effect that looks like reflections of objects. See the [Soft shadow ソフトシャドウ](/soft-shadow) page for the details of `calcSoftShadow` function.
+Soft shadows are also applied to the sky light by using the reflected ray as the direction of the light source: This isn't technically a shadow in the ordinary sense, but rather a check to see if other objects occlude the sky's reflection. In effect, this produces a very pleasing result that looks like reflections of objects. See the [Soft shadow ソフトシャドウ](/soft-shadow) page for the details of `calcSoftShadow` function.
 
 反射されたレイを光源の方向として、空の光にもソフトシャドウを適用します。これは普通に考える影というよりは、他のオブジェクトが空の反射を遮っているかどうかをチェックするものです。結果として、オブジェクトが映り込んでいるかのような非常に美しい効果が生まれます。`calcSoftShadow` 関数の詳細については、[Soft shadow ソフトシャドウ](/soft-shadow)のページをご覧ください。
 

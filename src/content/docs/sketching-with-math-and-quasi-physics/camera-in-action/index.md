@@ -4,7 +4,7 @@ slug: camera-in-action
 ---
 > 
 > 
-> On this page, I will use SDF (signed distance function) based demos based on the code from [3D Rendering with Ray Marching レイマーチングによる3Dレンダリング](/3d-rendering-with-ray-marching). The setup is quite complex compared to the other articles, but the only parts that change are the `map` function (where the 3D objects are placed in the scene) and the section after the comment `//camera setup` in the `main` function.
+> On this page, I will use SDF (signed distance function)-based demos from [3D Rendering with Ray Marching レイマーチングによる3Dレンダリング](/3d-rendering-with-ray-marching). The setup is quite complex compared to the other articles, but the only parts that change are the `map` function (where the 3D objects are placed in the scene) and the section after the comment `//camera setup` in the `main` function.
 > 
 > このページでは、[3D Rendering with Ray Marching レイマーチングによる3Dレンダリング](/3d-rendering-with-ray-marching)のコードを基にしたSDF（符号付き距離関数）ベースのデモを使います。セットアップは他の記事と比べて複雑ですが、変更が必要な箇所は`map`関数（3Dオブジェクトのシーン内配置）と`main`関数内の`//camera setup`コメント以降の部分のみです。
 > 
@@ -65,11 +65,11 @@ The distance from the focal point to the screen, wall, or the film is called the
 > 
 > 実際のカメラでは本体の大きさに制限があるので、この距離を簡単に調整したり大きく変更することができません。代わりに、レンズを使って光を屈折させることによって、同じような効果を実現しています。
 
-Note that the focal distance only makes sense in relationship with the size of screen or film. Field of view is the angle that both ends of the screen and the focal point make. If the size of the screen is <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>w</mi></mrow><annotation encoding="application/x-tex">w</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.02691em;">w</span></span></span></span> and the focal length is <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi></mrow><annotation encoding="application/x-tex">f</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span></span></span></span>, the field of view (FOV) is:
+Note that the focal distance only makes sense in relationship with the size of screen or film. Field of view is the angle that both ends of the screen and the focal point make. If the size of the screen is $w$ and the focal length is $f$, the field of view (FOV) is:
 
-焦点距離は、画面やフィルムのサイズとの関連性においてのみ意味をなします。画角とは、画面の両端と焦点が形成する角度のことです。画面の大きさを<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>w</mi></mrow><annotation encoding="application/x-tex">w</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.02691em;">w</span></span></span></span>、焦点距離を<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi></mrow><annotation encoding="application/x-tex">f</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span></span></span></span>とすると、画角（FOV）は次の式で表されます。
+焦点距離は、画面やフィルムのサイズとの関連性においてのみ意味をなします。画角とは、画面の両端と焦点が形成する角度のことです。画面の大きさを$w$、焦点距離を$f$とすると、画角（FOV）は次の式で表されます。
 
-<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable rowspacing="0.25em" columnalign="right" columnspacing=""><mtr><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow><mrow><mi mathvariant="normal">F</mi><mi mathvariant="normal">O</mi><mi mathvariant="normal">V</mi></mrow><mo>=</mo><mn>2</mn><mo>⋅</mo><mi>arctan</mi><mo>⁡</mo><mrow><mo fence="true">(</mo><mfrac><mi>w</mi><mrow><mn>2</mn><mi>f</mi></mrow></mfrac><mo fence="true">)</mo></mrow></mrow></mstyle></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{aligned} \mathrm{FOV} = 2 \cdot \arctan \left( \frac{w}{2f} \right) \end{aligned} </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.7em;vertical-align:-1.1em;"></span><span class="mord"><span class="mtable"><span class="col-align-r"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.6em;"><span style="top:-3.6em;"><span class="pstrut" style="height:3.45em;"></span><span class="mord"><span class="mord"><span class="mord mathrm" style="margin-right:0.01389em;">FOV</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mop">arctan</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size3">(</span></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.1076em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">2</span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.02691em;">w</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.8804em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size3">)</span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.1em;"><span></span></span></span></span></span></span></span></span></span></span>
+$\begin{aligned} \mathrm{FOV} = 2 \cdot \arctan \left( \dfrac{w}{2f} \right) \end{aligned} $
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="YzdbpJq" data-user="kynd" data-preview="true"></p></div>
 
@@ -154,9 +154,9 @@ vec3 cameraPosition = vec3(0.0, 0.5, 0.0);
 
 Tilt is a vertical rotation of the camera. This is effective for conveying the height of something tall like a tower, and it's often used when introducing a character to give them an overbearing impression.
 
-カメラを垂直方向に回転させる動きをティルトと呼びます。塔のような高い建物の高さを表現したり、人物を威圧的に見せるために多く使われれます。
+カメラを垂直方向に回転させる動きをティルトと呼びます。塔のような高い建物の高さを表現したり、人物を威圧的に見せるために多く使われます。
 
-In the demo below is a scrappy character made with the same shapes as in the pan example. Though it doesn't have a face or any details, the camera motion alone can make it look big and possibly angry. If you do the opposite and place the camera above and a little far from the character and make it look down, the it will appear small. Try this by tweaking the following part of the code.
+In the demo below is a scrappy character made with the same shapes as in the pan example. Though it doesn't have a face or any details, the camera motion alone can make it look big and possibly angry. If you do the opposite and place the camera above and a little far from the character and make it look down, it will appear small. Try this by tweaking the following part of the code.
 
 下のデモでは、パンの例と同じ形で雑に作ったキャラクターを用意しました。顔や細部の表現が無くても、カメラワークだけでキャラクターを大きく、怒っているかのように見せることができます。反対に、カメラを上の方に置いて少し離れた位置から見下ろすようにすると、キャラクターは小さく見えます。下の部分のコードを調整して試してみましょう。
 
@@ -197,7 +197,7 @@ Of course you can move the camera itself. In filmmaking, people use various tool
 
 The demo below is a simple example of the camera moving left and right. The scene is exactly the same as the panning example above. Compare and see how they feel different.
 
-下のデモは、カメラが単純に左右にする例です。シーンは先ほどのパンの例と全く同じです。両者を比べて、印象の違いを見てみましょう。
+下のデモは、カメラが単純に左右に動く例です。シーンは先ほどのパンの例と全く同じです。両者を比べて、印象の違いを見てみましょう。
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="ZYYydXb" data-user="kynd" data-preview="true"></p></div>
 

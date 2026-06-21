@@ -1,14 +1,14 @@
 ---
 title: "Reading “Raymarching - Primitives”"
-slug: reading
+slug: reading-raymarching-primitives
 ---
 Shaders and 3D rendering have a very steep learning curve. There isn't a common or obvious way to build knowledge step by step, and it takes learning from multiple resources and examples. Shadertoy is one of the best resources with tons of cool demos with publicly available code. However, understanding this demo code can often be daunting. There are many techniques to grasp, and it's often difficult to understand what's happening in the code at first glance.
 
 シェーダーと3Dレンダリングの学習は険しい道のりです。知識を体系的に積み上げる定番の方法はなく、多様な資料や例を参考に学ぶ必要があります。Shadertoyは最良のリソースの一つで、数多くの優れたデモがコード付きで公開されています。しかし、そのデモコードの理解は往々にして困難です。習得すべきテクニックが多岐にわたり、一見しただけではコードの動作を把握するのが難しいことも少なくありません。
 
-On this page, we take one of [the best classic demos by Inigo Quilez](https://www.shadertoy.com/view/Xds3zN) and try breaking it down step by step. This demo is more than 10 years old, but still is great for learning since it is very well structured and includes various techniques to improve the quality of rendering.
+On this page, we take one of [the best classic demos by Inigo Quilez](https://www.shadertoy.com/view/Xds3zN) and try breaking it down step by step. This demo is more than 10 years old, but is still great for learning since it is very well structured and includes various techniques to improve the quality of rendering.
 
-このページでは、[Inigo Quilezによる古典的な名作デモの1つ](https://www.shadertoy.com/view/Xds3zN)を取り上げ、段階的に解説していきます。このデモは10年以上前のものですが、よく構造化されている上に様々な技術が含まれているので、レンダリングの品質を上げるため技術を学ぶには今でもとても良い素材です。
+このページでは、[Inigo Quilezによる古典的な名作デモの1つ](https://www.shadertoy.com/view/Xds3zN)を取り上げ、段階的に解説していきます。このデモは10年以上前のものですが、よく構造化されている上に様々な技術が含まれているので、レンダリングの品質を上げるための技術を学ぶには今でもとても良い素材です。
 
 To follow the discussions, you need to understand the basics of 3D rendering with ray marching. If you're unfamiliar with ray marching, the [Projection and 3D Rendering プロジェクションと3Dレンダリング](/projection-and-3d-rendering) pages may be able to help.
 
@@ -59,7 +59,8 @@ Above is the demo ported to CodePen. The shader part is basically the same as th
 
 3.  様々なレンダリングテクニックに対してON/OFF切り替えをつけて、それぞれが最終結果にどのように貢献しているかを見ながら個別に研究できるようにしました。
 
-# The main function 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　main関数
+# The main function
+# main関数
 
 Let’s start from the `main()` function. The main function can be roughly separated into the sections below.
 

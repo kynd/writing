@@ -23,6 +23,7 @@ mat3 setCamera(in vec3 cameraPosition, in vec3 cameraTarget)
 ```
 
 # Parameters
+# パラメータ
 
 `cameraPosition`: The position of the camera in the world space.  
 `cameraTarget`: The point in space that the camera is looking at.
@@ -31,6 +32,7 @@ mat3 setCamera(in vec3 cameraPosition, in vec3 cameraTarget)
 `cameraTarget`: カメラが注視している空間上の点。
 
 # How It Works
+# 仕組み
 
 The function sets up the camera's orientation using three vectors: forward, right, and up.
 

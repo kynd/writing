@@ -43,9 +43,9 @@ Instead, we need to consider the area that each pixel covers, and give middle gr
 
 <div></div>
 
-To approximate this, we use the derivative of the pixel position and corresponding point in 3D space, i.e., how much the point in 3D changes if you move one pixel in either the x or y direction on the screen. This is what `dpdx` and `dpdy` given to the `checkersGradBox`. To get derivative between pixels, GLSL offers `dFdx()` and `dFdy()` functions, but in this demo, these are calculated from the `rayDirectionXOffset` and `rayDirectionYOffset` which represent the direction of rays for the neighboring pixels.
+To approximate this, we use the derivative of the pixel position and corresponding point in 3D space, i.e., how much the point in 3D changes if you move one pixel in either the x or y direction on the screen. This is what `dpdx` and `dpdy` given to the `checkersGradBox`. To get the derivative between pixels, GLSL offers `dFdx()` and `dFdy()` functions, but in this demo, these are calculated from the `rayDirectionXOffset` and `rayDirectionYOffset` which represent the direction of rays for the neighboring pixels.
 
-これを近似するために、ピクセル位置とそれに対応する3D空間上の点の微分、つまり画面上でxまたはy方向に1ピクセル移動した際に3D空間上の点がどれだけ変化するかの値を用います。これが`checkersGradBox`に渡される`dpdx`と`dpdy`です。ピクセル間の微分を得るために、GLSLには`dFdx()`と`dFdy()`関数を持って居ますが、このデモでは隣接するピクセルのレイの方向を表す`rayDirectionXOffset`と`rayDirectionYOffset`を使って計算しています。
+これを近似するために、ピクセル位置とそれに対応する3D空間上の点の微分、つまり画面上でxまたはy方向に1ピクセル移動した際に3D空間上の点がどれだけ変化するかの値を用います。これが`checkersGradBox`に渡される`dpdx`と`dpdy`です。ピクセル間の微分を得るために、GLSLには`dFdx()`と`dFdy()`関数を持っていますが、このデモでは隣接するピクセルのレイの方向を表す`rayDirectionXOffset`と`rayDirectionYOffset`を使って計算しています。
 
 > 
 > 
@@ -63,7 +63,7 @@ To roughly understand what the code is doing, think in this way:
 コードの動作を大まかに理解するには、以下のように考えてみましょう。
 
 - `rayDirection`と`rayDirectionXOffset`（または`YOffset`）の差は、隣接するピクセル間のレイの方向の変化を表します。
-- 遠近法を考慮するため、レイの向きy成分で割ります。yの値が小さいほどカメラがより遠くを見ていることを示し、わずかな向きの違いが3D空間では大きな違いになります。
+- 遠近法を考慮するため、レイの向きのy成分で割ります。yの値が小さいほどカメラがより遠くを見ていることを示し、わずかな向きの違いが3D空間では大きな違いになります。
 - カメラと床の間の距離を考慮するために、`cameraPosition.y`を掛けます。上記と同じく、カメラが遠くなるほど、方向の違いの影響が大きくなります。`pixelFootprintX` と `pixelFootprintY` がスクリーン上での1ピクセルの移動に対応するワールド空間での移動距離の近似になります。
 - `intersectionPoint`とこれらのオフセット値を`checkersGradBox`に渡して、ピクセルがどの色に属するかを表す0から1の範囲の浮動小数点値を取得します。（渡す前に、欲しいグリッドの大きさに合わせてスケーリングします）。
 

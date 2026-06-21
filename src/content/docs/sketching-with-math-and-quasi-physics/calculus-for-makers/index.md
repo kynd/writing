@@ -6,11 +6,11 @@ In "making" things, be it cool graphics, simulations, or tangible objects, mathe
 
 グラフィックスやシミュレーション、物理的なオブジェクトなど、何かしらものを作る際には、数学の概念がよく重要になります。しかし微分、積分、拡散などの話題に出くわすと、複雑な方程式や厳密な証明を思い出して怯んでしまうこともあるでしょう。実際、Wikipediaのページでそれらの数式を見ると、圧倒されてしまいます。
 
-The goal here is to introduce them from a different angle than ordinary math books. Especially for the purpose of creating things on a computer, you don't necessarily need to dive deep into their theoretical intricacies. More often than not, numerical methods, usually just combinations of basic additions and loops come to our rescue, providing good enough approximation and simplifying representation of these concepts.
+The goal here is to introduce them from a different angle than ordinary math books. Especially for the purpose of creating things on a computer, you don't necessarily need to dive deep into their theoretical intricacies. More often than not, numerical methods, usually just combinations of basic additions and loops come to our rescue, providing good enough approximations and simplifying the representation of these concepts.
 
 ここでは、通常の数学の教科書とは異なる視点からこれらの概念を紹介しようと思います。特にコンピュータを使ってものを作るためには、必ずしも複雑な理論に深入りする必要はありません。ほとんどの場合、基本的な足し算とループの組み合わせだけで、これらの概念を十分な精度でシンプルに表現できます。
 
-In these articles, we will discuss summation, differentiation, integration, and diffusion, trying to demystify these concepts with demos and examples. We will prioritize using the concepts to create something, rather than on their rigor, so that if you come across them, you can translate them into simple code that works.
+In these articles, we will discuss summation, differentiation, integration, and diffusion, trying to demystify these concepts with demos and examples. We will prioritize using the concepts to create something, rather than their rigor, so that if you come across them, you can translate them into simple code that works.
 
 下の記事では、総和、微分、積分、拡散についてデモや例を使ってこれらの概念を説明します。厳密さよりも、これらの概念を見かけた時にシンプルでちゃんと動くコードに変換できることを優先します。
 
@@ -19,7 +19,7 @@ In these articles, we will discuss summation, differentiation, integration, and 
 
 The summation represented by Sigma ($\\sum$) is essentially a repetition of addition. It is commonly expressed using a simple loop in code. Summation is highly useful for approximating integrals, as we will discuss later, and for other concepts like Fourier series.
 
-シグマ (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∑</mo></mrow><annotation encoding="application/x-tex">∑</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mop op-symbol small-op" style="position:relative;top:0em;">∑</span></span></span></span>) で表される総和は要は足し算の繰り返しで、コードでは大抵単純なループを使って表現できます。総和は下で取り上げる積分や、他にもフーリエ級数などを近似する時に活躍します。
+シグマ ($∑$) で表される総和は要は足し算の繰り返しで、コードでは大抵単純なループを使って表現できます。総和は下で取り上げる積分や、他にもフーリエ級数などを近似する時に活躍します。
 
 [Summation 総和](/summation)
 

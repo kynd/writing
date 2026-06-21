@@ -4,7 +4,7 @@ slug: light
 ---
 From 3D graphics to color theory, cameras and sensing mechanisms, learning about light provides a broad range of insights useful for making things.
 
-3Dグラフィックスから色彩理論、カメラやセンシングの仕組みまで、光について学ぶこと、ものづくりに役立つさまざまな知見が得られます。
+3Dグラフィックスから色彩理論、カメラやセンシングの仕組みまで、光について学ぶことで、ものづくりに役立つさまざまな知見が得られます。
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="ExezaYg" data-user="kynd" data-preview="true"></p></div>
 

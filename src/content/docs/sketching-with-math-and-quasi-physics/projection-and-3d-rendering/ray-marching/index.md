@@ -28,7 +28,7 @@ Ray marching solves this problem by reversing the direction. Instead of tracing 
 
 The method is called ray "marching" because we move points forward step by step along these rays until they hit the objects or go too far without hitting any. This trick can significantly simplify the algorithm because we don’t have to figure out different ways of detecting intersections for different shapes.
 
-この手法がレイ「マーチング（marching - 行進）」と呼ばれるのは、点をレイに沿って一歩一歩、オブジェクトに当たるか、当たらずに遠くに行きすぎるまで進めるからです。このやり方だと、形状ごとに異なる交差点検出の方法を考える必要がないので、アルゴリズムをとても簡単になります。
+この手法がレイ「マーチング（marching - 行進）」と呼ばれるのは、点をレイに沿って一歩一歩、オブジェクトに当たるか、当たらずに遠くに行きすぎるまで進めるからです。このやり方だと、形状ごとに異なる交差点検出の方法を考える必要がないので、アルゴリズムがとても簡単になります。
 
 # SDF (Signed distance functions)
 
@@ -51,7 +51,7 @@ float sdSphere( vec3 p, float s )
 }
 ```
 
-We haven't made a 3D renderer yet, so let's render it on a 2D plane by slicing it, like a CT scan.The demo below visualizes the values that this function returns. The center of the canvas corresponds to {x:0, y:0} in the 3D space, and we are slicing a sphere by moving a plane back and forth along the z-axis. The brightness of the pixel represents the return value of the function, meaning that the brighter the pixel, the further it is from the surface of the sphere. Note that inside the sphere, the values are actually negative. The yellow color represents exactly where the surface of the sphere is, where return value is 0. Slicing an SDF in this way is very useful for debugging and visualizing what is going on. We will use this technique through out the rest of the page.
+We haven't made a 3D renderer yet, so let's render it on a 2D plane by slicing it, like a CT scan. The demo below visualizes the values that this function returns. The center of the canvas corresponds to {x:0, y:0} in the 3D space, and we are slicing a sphere by moving a plane back and forth along the z-axis. The brightness of the pixel represents the return value of the function, meaning that the brighter the pixel, the further it is from the surface of the sphere. Note that inside the sphere, the values are actually negative. The yellow color represents exactly where the surface of the sphere is, where return value is 0. Slicing an SDF in this way is very useful for debugging and visualizing what is going on. We will use this technique through out the rest of the page.
 
 まだ3Dのレンダラーを作っていないので、CTスキャンのように2D平面上でスライスしてレンダリングしましょう。下のデモでは、この関数の返り値を可視化しています。キャンバスの中心を3D空間の {x:0, y:0} に対応させ、球体をz軸に沿って前後に移動することでスライスしています。ピクセルの明るさは、関数の返り値を表していて、ピクセルが明るいほど球の表面から遠いことを意味します。球の内部では実際には値が負になることに注意してください。黄色は球の表面が存在する正確な位置を示し、返り値が0であることを表します。このSDFをスライスする方法は、デバッグや実際に何が起きているのかを目で見て調べるのに非常に便利です。このテクニックはこの先でも使用します。
 
@@ -82,12 +82,12 @@ In case of perspective projection, all the rays have the same starting position,
 
 With this method, the distance often doesn't reach zero. But in practice, if the function (SDF) returns a very small value below a certain threshold, we can assume that the ray intersects with the surface of the object there.
 
-この方法では、距離はゼロに到達しないこともよく起こります。ですが実用上は、関数（SDF）がある閾値以下の非常に小さな値を返す場合、その場所でレイが物体の表面と交差すると見なすことができます
+この方法では、距離はゼロに到達しないこともよく起こります。ですが実用上は、関数（SDF）がある閾値以下の非常に小さな値を返す場合、その場所でレイが物体の表面と交差すると見なすことができます。
 
 > 
 > 
 > In this demo, the shape (sphere) is drawn in the shader, while rays are rendered using p5.js drawing functions. This may seem tricky, but note that `sdSphere` in JavaScript and GLSL is identical, and `normalizePosToScreenCrd` in JS and `screenCrdToNormalizedPos` in GLSL are the reverse of each other.  
-> このデモでは、形状（球）をシェーダーで描画し、レイをp5.jsの描画関数をでレンダリングしています。ややこしく見えるかもしれませんが、JavaScriptとGLSLの`sdSphere`が同じで、JSの`normalizePosToScreenCrd`とGLSLの`screenCrdToNormalizedPos`は互いに逆の操作だということに注目してください。
+> このデモでは、形状（球）をシェーダーで描画し、レイをp5.jsの描画関数でレンダリングしています。ややこしく見えるかもしれませんが、JavaScriptとGLSLの`sdSphere`が同じで、JSの`normalizePosToScreenCrd`とGLSLの`screenCrdToNormalizedPos`は互いに逆の操作だということに注目してください。
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="eYxYRBy" data-user="kynd" data-preview="true"></p></div>
 

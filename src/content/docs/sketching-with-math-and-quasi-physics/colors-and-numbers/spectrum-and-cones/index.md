@@ -53,7 +53,7 @@ The coverage of each of the three types of cones are shown below.
 
 **S-cones** (blue cones) short wavelengths  
 **M-cones** (green cones) medium wavelength  
-**L-cone** (red cones) long wavelength
+**L-cones** (red cones) long wavelength
 
 S錐体（青錐体）短波長  
 M錐体（緑錐体）中波長  

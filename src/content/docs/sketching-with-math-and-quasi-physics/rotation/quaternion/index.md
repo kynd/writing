@@ -15,7 +15,7 @@ This might seem like a detour, but let's take a look back at history. Humans hav
 
 Mathematicians eventually encountered the square root of -1 in the 16th century, which led to the concept of imaginary and complex numbers. Every time new kind of numbers were discovered, they must have appeared abstract and unreal, as we can imagine from the names like 'irrational' and 'imaginary' (Though 'irrational' doesn't mean a lack of rationality, it means 'can't be expressed as a ratio'.). But these numbers have proven to be very powerful and interesting, both practically and conceptually. They are necessary for describing our world too, as in general relativity or quantum physics, and in that sense, they are quite substantial too.
 
-やがて数学者たちは16世紀に-1の平方根を見つけ、虚数と複素数の概念を導き出します。新しい種類の数が発見されるたび、それらは抽象的で非現実的に見えたことでしょう。それは、Irrational やI maginary のような名前からも想像できます（ただし、Irrational は理性のないといった意味ではなく、比として表現できないという意味です）。しかし、これらの数は、実用的にも概念としても非常に強力で興味深いことが示されました。一般相対性理論や量子物理学のように、私たちの世界を説明するためにも必要なこれらの数は、その意味で非常に重要かつ実質的だと言えるでしょう。
+やがて数学者たちは16世紀に-1の平方根を見つけ、虚数と複素数の概念を導き出します。新しい種類の数が発見されるたび、それらは抽象的で非現実的に見えたことでしょう。それは、Irrational やImaginary のような名前からも想像できます（ただし、Irrational は理性のないといった意味ではなく、比として表現できないという意味です）。しかし、これらの数は、実用的にも概念としても非常に強力で興味深いことが示されました。一般相対性理論や量子物理学のように、私たちの世界を説明するためにも必要なこれらの数は、その意味で非常に重要かつ実質的だと言えるでしょう。
 
 Quaternions are a relatively recent addition to these different kinds of numbers in the 19th century. To understand them, it helps to start from complex numbers, a direct ancestor of quaternions.
 
@@ -70,6 +70,7 @@ In general, a complex number that represents a rotation is $\cos(\theta) + i \si
 > これらのグラフはPythonで作成しました。[コードはGoogle Colabにあります](https://colab.research.google.com/drive/1AnpOQRBQ3OCbxRCPODPVpd9PDwgvmy8-#scrollTo=bJ71O3-Y8qWn)。
 
 # Quaternion
+# クォータニオン
 
 To recap, a complex number is of the form $a+bi$, where $i$ is the imaginary unit defined as $i^2=-1$. A complex number can be seen as a point on a 2D plane called the complex plane.
 
@@ -79,9 +80,9 @@ Instead of just one imaginary unit, quaternions introduce three units $i$, $j$, 
 
 クォータニオンは、ただ1つの虚数単位ではなく、（実数の単位1に加えて）$i$、$j$、$k$の3つの単位を導入します。これらには互いに以下の関係があります。
 
-$i^2 = j^2 = k^2 = ijk = -1.$
+$$i^2 = j^2 = k^2 = ijk = -1$$
 
-$ij = -ji = k, jk = -kj = i, ki = -ik = j$
+$$ij = -ji = k, \quad jk = -kj = i, \quad ki = -ik = j$$
 
 And a quaternion is expressed as $a + bi + cj + dk$, where _$a$_, _$b$_, _$c$_, _$d$_, are real numbers.
 
@@ -89,16 +90,16 @@ And a quaternion is expressed as $a + bi + cj + dk$, where _$a$_, _$b$_, _$c$
 
 This is very fascinating, as these rules indicate that multiplying quaternions can move a point across different regions in 4D space, just like multiplying complex numbers does so in 2D space. But how could we actually use it in practice?
 
-これらのルールはとても面白く、クォータニオンを掛け合わせると、複素数を掛けて2D空間で行ったように、4D空間の異なる領域をに点で移動できることを示しています。しかし、実際のどのように使えるのでしょうか。
+これらのルールはとても面白く、クォータニオンを掛け合わせると、複素数を掛けて2D空間で行ったように、4D空間の異なる領域に点を移動できることを示しています。しかし、実際にどのように使えるのでしょうか。
 
 > 
 > 
 > As you can see from $ij = -ji$ and so on, quaternions are non-commutative, meaning the result will change if you change the order of operations.  
 > $ij = -ji $ などから分かるように、クォータニオンは非可換、つまり計算の順序を入れ替えると結果が変わります。
 
-Below is the demo of a quaternion in action. This looks identical to [the other demo with Rodrigues' rotation formula](https://www.notion.so/512d3509689b4e2a99142ef5a6d8970b?pvs=21), but it uses a quaternion behind the scenes. In fact, any rotation that can be expressed with Euler angles, Rodrigues’ formula (i.e., axis and angle), or a matrix can also be expressed by a quaternion.
+Below is the demo of a quaternion in action. This looks identical to [the other demo with Rodrigues' rotation formula](/rotation-and-trigonometry), but it uses a quaternion behind the scenes. In fact, any rotation that can be expressed with Euler angles, Rodrigues’ formula (i.e., axis and angle), or a matrix can also be expressed by a quaternion.
 
-下は、クォータニオンの動作のデモです。これは[ロドリゲスの回転公式を使った別のデモ](https://www.notion.so/512d3509689b4e2a99142ef5a6d8970b?pvs=21)と全く同じに見えますが、裏ではクォータニオンを使っています。実際にオイラー角やロドリゲスの公式（つまり、軸と角度）、または行列で表現できる回転は全て、クォータニオンでも表現できます。
+下は、クォータニオンの動作のデモです。これは[ロドリゲスの回転公式を使った別のデモ](/rotation-and-trigonometry)と全く同じに見えますが、裏ではクォータニオンを使っています。実際にオイラー角やロドリゲスの公式（つまり、軸と角度）、または行列で表現できる回転は全て、クォータニオンでも表現できます。
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="ZEPeOaP" data-user="kynd" data-preview="true"></p></div>
 
@@ -130,7 +131,7 @@ For example, the rotation about a normalized vector $\vec{u} = (u_x, u_y, u_z)$ 
 たとえば、正規化されたベクトル $\vec{u} = (u_x, u_y, u_z)$ を軸とした角度 $\theta$ の回転は、以下の式を使ってクォータニオン $q$ に変換できます。
 
   
-$$\alpha = \frac{\theta}{2}$$
+$$\alpha = \dfrac{\theta}{2}$$
 $$q = \cos(\alpha) + u_x \cdot \sin(\alpha) \cdot i + u_y \cdot \sin(\alpha) \cdot j + u_z \cdot \sin(\alpha) \cdot k$$
 
 This is implemented as the `setFromAxisAngle()` function.
@@ -203,7 +204,7 @@ First, convert the vector to rotate to a quaternion so that it can be multiplied
 
 We need something called the "conjugate" of the rotation quaternion. If the original rotation quaternion is $q = a + bi + cj + dk$, its conjugate is $q* = a - bi - cj - dk$, i.e., the original quaternion with the coefficients for $i$, $j$, k multiplied by -1.
 
-回転クォータニオンの「共役数」と呼ばれる数が必要になります。元の回転クォータニオンが $q = a + bi + cj + dk$ の場合、その共役数は $q* = a - bi - cj - dk$ 、つまり元のの i, j, k に -1をかけた物です。
+回転クォータニオンの「共役数」と呼ばれる数が必要になります。元の回転クォータニオンが $q = a + bi + cj + dk$ の場合、その共役数は $q* = a - bi - cj - dk$ 、つまり元の i, j, k に -1をかけた物です。
 
 ### Multiply the Quaternions
 ### クォータニオンを掛け合わせる
@@ -237,13 +238,13 @@ applyToVector(vector) {
 
 This might seem too much for just rotating a vector. But once implemented, quaternions have some great advantages over other methods.
 
-- **No Gimbal Lock**: Quaternions do not have the gimbal lock problem like [Euler angles](https://www.notion.so/0abdd8cf328b4d84b3ee027b5e6ad6ef?pvs=21).
+- **No Gimbal Lock**: Quaternions do not have the gimbal lock problem like [Euler angles](/rotation-and-trigonometry).
 - **Efficiency**: Quaternions are more memory-efficient than a matrix (4 numbers vs 9 numbers), and operations are usually cheaper too. Once calculated, a quaternion can be applied to as many vectors as you want.
 - **Interpolation and Concatenation**: Quaternions can be [interpolated](/interpolation-and-animation). This is really useful for transitioning between two orientations. Quaternions can also be concatenated, or merged together. If you want to apply multiple rotations, you can simply multiply the corresponding quaternions. The result can be stored as a single quaternion and reused.
 
 ベクトルを回転させるだけにしては大袈裟に見えますが、いったん実装するとクォータニオンは他の方法に比べてとても良い点がいくつかあります。
 
-- **ジンバルロックがない**：クォータニオンには、[オイラー角](https://www.notion.so/0abdd8cf328b4d84b3ee027b5e6ad6ef?pvs=21)のようなジンバルロックの問題がありません。
+- **ジンバルロックがない**：クォータニオンには、[オイラー角](/rotation-and-trigonometry)のようなジンバルロックの問題がありません。
 - **効率性**：クォータニオンは行列よりもメモリ効率が良く（数値4つ、数値9つ）、計算も大抵は少なく済みます。また一度クォータニオンを計算したら、同じ変換を多くのベクトルに適用することができます。
 - **補間と連結**：クォータニオンは[補間](/interpolation-and-animation)することができます。これは2つの向きの間を遷移するのにとても便利です。クォータニオンはまた、連結、または合体することもできます。複数の回転を適用したい場合は、単純に対応するクォータニオンを掛け合わせれば良いのです。掛け合わせた結果は1つのクォータニオンとして保存し、再利用することができます。
 
@@ -251,7 +252,7 @@ The last demo below shows the interpolation between quaternions. Move your mouse
 
 下はこのページの最後となる、クォータニオンの補間のデモです。マウスを動かすと、ボックスを3つの異なる姿勢の間で回転できます。クォータニオンの補間は、slerp（球面線形補間 spherical linear interpolation）と呼ばれ、下の式で定義されます。 $t$ は0と1の間の補間パラメータで、$\Omega$ はクォータニオの角度を表し、$\cos(\Omega) = q_0 \cdot  q_1$（クォータニオンのドット積）と定義されます。slerp はデモの中で`slerp()`として実装されています。
 
-$$q(t) = \frac{\sin((1 - t) \Omega)}{\sin(\Omega)} q_0 + \frac{\sin(t \Omega)}{\sin(\Omega)} q_1$$
+$$q(t) = \dfrac{\sin((1 - t) \Omega)}{\sin(\Omega)} q_0 + \dfrac{\sin(t \Omega)}{\sin(\Omega)} q_1$$
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="gOEmgBX" data-user="kynd" data-preview="true"></p></div>
 

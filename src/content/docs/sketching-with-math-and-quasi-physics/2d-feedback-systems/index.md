@@ -4,7 +4,7 @@ slug: 2d-feedback-systems
 ---
 Most physics simulations are based on the idea that if the state of a system at a particular moment can be represented as data, the next state can be calculated from that data. The next state is computed based on the data, which updates the data, and the process repeats. These types of systems are called feedback systems, as they form a loop where the system's output feeds back into its input.
 
-ほとんどの物理シミュレーションは、ある瞬間のシステムの状態をデータとして表現できれば、そのデータを使って次の状態を計算できるという考えに基づいています。データを元に次の状態を計算し、その結果を元に次の状態を計算し、と繰り返すのです。この種のシステムはフィードバックシステムと呼ばれ、システムの出力を入力に戻っていくループを形成します。
+ほとんどの物理シミュレーションは、ある瞬間のシステムの状態をデータとして表現できれば、そのデータを使って次の状態を計算できるという考えに基づいています。データを元に次の状態を計算し、その結果を元に次の状態を計算し、と繰り返すのです。この種のシステムはフィードバックシステムと呼ばれ、システムの出力が入力に戻っていくループを形成します。
 
 We briefly mentioned feedback on the image processing page. Here, we will take a closer look at it from a simulation perspective. In the Image Processing page, it was stated as follows:
 

@@ -10,7 +10,7 @@ Color perception depends on the source of electromagnetic waves (light source), 
 
 色の知覚は電磁波の発生源（光源）、電磁波を吸収、反射する物体、電磁波を捉える目やセンサー、脳やプロセッサなどの処理系などによって左右されます。色の再現も絵の具や液晶、LEDなど道具や機器の特性などに大きく依存します。
 
-As a result, many color models and theories have been devised for different conditions and purposes. They are all great, but not always intuitive. Here are some notes on what I have learned so far to help making sense of them.
+As a result, many color models and theories have been devised for different conditions and purposes. They are all great, but not always intuitive. Here are some notes on what I have learned so far to help make sense of them.
 
 その結果、さまざまな条件や目的に応じて多くのカラーモデルや理論が考案されてきました。どれも素晴らしいのですが、必ずしも直感的ではなかったりします。ここでは、自分が調べたことを書き留めて頭の中を整理していこうと思います。
 

@@ -177,7 +177,7 @@ Using this method in 3D, you can create different shapes pretty flexibly with a 
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="ZEwyLWQ" data-user="kynd" data-preview="true"></p></div>
 
-[Reading “Raymarching - Primitives”](/reading)
+[Reading “Raymarching - Primitives”](/reading-raymarching-primitives)
 
 Shaders and 3D rendering have a very steep learning curve. There isn't a common or obvious way to build knowledge step by step, and it takes learning from multiple resources and examples. Shadertoy is one of the best resources with tons of cool demos with publicly available code. However, understanding this demo code can often be daunting. There are many techniques to grasp, and it's often difficult to understand what's happening in the code at first glance.
 
@@ -187,7 +187,7 @@ There isn’t really a shortcut here (as far as I know). Studying demo codes ste
 
 （知る限り）ここに近道はありません。デモコードを一歩一歩、少しずつ学んでいくのが最も確実な方法です。下の2つのページは、学習の手助けのための試みです。
 
-[Reading “Raymarching - Primitives”](/reading)
+[Reading “Raymarching - Primitives”](/reading-raymarching-primitives)
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="dyxzyjV" data-user="kynd" data-preview="true"></p></div>
 

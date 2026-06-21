@@ -4,7 +4,7 @@ slug: reading-a-noise-function
 ---
 On this page, we are going to read a simple noise function. Noise functions are one of the most common tools in computer graphics to create complex or realistic patterns like this landscape. Because they are so common, many tools and frameworks give us various implementations of noise functions for free, and we tend to take them for granted without having to understand how they work.
 
-このページでは、シンプルなノイズ関数について解説していきます。ノイズ関数は、この風景のように複雑でリアルなパターンを生成するために使える、コンピューターグラフィックスの基本的なツールの1つです。その汎用性の高さから、多くのツールやフレームワークには様々なノイズ関数の標準で実装されていて、原理を理解しなくても当たり前のように使うことができます。
+このページでは、シンプルなノイズ関数について解説していきます。ノイズ関数は、この風景のように複雑でリアルなパターンを生成するために使える、コンピューターグラフィックスの基本的なツールの1つです。その汎用性の高さから、多くのツールやフレームワークでは様々なノイズ関数が標準で実装されていて、原理を理解しなくても当たり前のように使うことができます。
 
 [Drawing Landscape](/drawing-landscape)
 
@@ -13,7 +13,7 @@ On this page, we are going to read a simple noise function. Noise functions are 
 
 For writing this page, I asked an AI to read the example and directly quote the explanations. AI can be a great tool to help you learn, rather than a black box that makes people dumb.
 
-このページではAIにサンプルを読ませ、その説明を直接引用しました。AIは、人々を考えなくするブラックボックスではなく、学習を助ける優れたツールになり得りえます。
+このページではAIにサンプルを読ませ、その説明を直接引用しました。AIは、人々を考えなくするブラックボックスではなく、学習を助ける優れたツールになりえます。
 
 > 
 > 
@@ -22,6 +22,7 @@ For writing this page, I asked an AI to read the example and directly quote the 
 > このページ（他の記事も）は、コンピューターサイエンスの学位を持つような専門的な技術者や数学者ではなく、自分を含めた見た目やざっくりとしたプロトタイピングを優先する人向けに書かれています。
 
 # 1D noise function
+# 1Dのノイズ関数
 
 This is our sample code (written by AI as well). It is a simple [value noise function](/taming-randomness) that takes a float number as input and returns another float number.
 
@@ -111,7 +112,7 @@ It also helps to sketch on paper your understanding as you go.
 
 > This line extracts the **fractional part** of `x`. In other words, it gives you how far `x` is between the two integer lattice points:
 > 
-> <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mi>r</mi><mi>a</mi><mi>c</mi><mi>t</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mi>x</mi><mo>−</mo><mi>f</mi><mi>l</mi><mi>o</mi><mi>o</mi><mi>r</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">fract(x)=x−floor(x)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal">a</span><span class="mord mathnormal">c</span><span class="mord mathnormal">t</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal" style="margin-right:0.02778em;">oor</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mclose">)</span></span></span></span>
+> $fract(x)=x−floor(x)$
 > 
 > If `x = 3.42`:
 > 
@@ -124,7 +125,7 @@ It also helps to sketch on paper your understanding as you go.
 > 
 > この行は`x`の**小数部分**を抽出します。つまり、2つの整数格子点の間での`x`の位置を示します：
 > 
-> <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mi>r</mi><mi>a</mi><mi>c</mi><mi>t</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mi>x</mi><mo>−</mo><mi>f</mi><mi>l</mi><mi>o</mi><mi>o</mi><mi>r</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">fract(x)=x−floor(x)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal">a</span><span class="mord mathnormal">c</span><span class="mord mathnormal">t</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal" style="margin-right:0.02778em;">oor</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mclose">)</span></span></span></span>
+> $fract(x)=x−floor(x)$
 > 
 > `x = 3.42`の場合：
 > 
@@ -218,7 +219,7 @@ This line computes a **smooth interpolation weight** using a **smoothstep functi
 
 This is a classic **cubic Hermite polynomial**, often called **smoothstep**:  
 
-<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><mn>3</mn><msup><mi>f</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><msup><mi>f</mi><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">u = 3f^2 - 2f^3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">u</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.0085em;vertical-align:-0.1944em;"></span><span class="mord">3</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.0085em;vertical-align:-0.1944em;"></span><span class="mord">2</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span></span></span></span></span></span></span></span>  
+$u = 3f^2 - 2f^3$  
 
 It maps the input `f` (from 0 to 1) to another number in \[0, 1\], but with **smoothed acceleration** at the ends. That means:
 
@@ -238,7 +239,7 @@ That’s why it’s widely used in **value noise**, **animation easing**, and **
 
 これは**三次エルミート多項式**の典型的な例で、**スムースステップ**とも呼ばれています：
 
-<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><mn>3</mn><msup><mi>f</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><msup><mi>f</mi><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">u = 3f^2 - 2f^3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">u</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.0085em;vertical-align:-0.1944em;"></span><span class="mord">3</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.0085em;vertical-align:-0.1944em;"></span><span class="mord">2</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span></span></span></span></span></span></span></span>
+$u = 3f^2 - 2f^3$
 
 この関数は入力値`f`（0から1の範囲）を\[0, 1\]の範囲の別の数値に変換しますが、両端で**加速度が滑らかに変化**します。つまり：
 

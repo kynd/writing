@@ -4,20 +4,20 @@ slug: pencils-brushes-and-paints
 ---
 On this page, we will write code using physical tools like pencils, brushes, and paint as inspiration. While there are many great tools available, such as Procreate or Adobe Fresco, or you can simply ask AI to "paint like Van Gogh," I assure you that you can learn a lot and have fun by doing it yourself. By observing things and attempting to express them in code, you can develop your skills and perspective. The freedom to design your own tools can be an invaluable asset for your creativity.
 
-このページでは、鉛筆、筆、絵の具などの物理的な道具を元にしてコードを書いていきます。ProcreateやAdobe Frescoなどの優秀なツールはたくさんありますし、単にAIに「ゴッホみたいな絵を描け」と頼むこともできるのですが、自分でやってみると楽しく、多くのことを学ぶことがでるでしょう。物事を観察し、それをコードで表現しようとすることで、スキルや物の見方を身につけることができます。自分自身でツールを自由にデザインできるとは、創造性にとって貴重な資産となるでしょう。
+このページでは、鉛筆、筆、絵の具などの物理的な道具を元にしてコードを書いていきます。ProcreateやAdobe Frescoなどの優秀なツールはたくさんありますし、単にAIに「ゴッホみたいな絵を描け」と頼むこともできるのですが、自分でやってみると楽しく、多くのことを学ぶことができるでしょう。物事を観察し、それをコードで表現しようとすることで、スキルや物の見方を身につけることができます。自分自身でツールを自由にデザインできるとは、創造性にとって貴重な資産となるでしょう。
 
 > 
 > 
 > This article is a follow-up to the [Drawing with code](/drawing-with-code) presentations I gave in 2022 and 2023. This article aims to provide a quick introduction to how to implement some of the techniques discussed in the talk. I won't delve into too many details, but I will include links to relevant materials and add some technical advice at the end. Also, many examples on this page use GLSL shaders. For more information on shaders, please refer to [The Book of Shaders](https://thebookofshaders.com/) (as always).  
 >   
-> この記事は、2022年と2023年に行った[Drawing with code](/drawing-with-code)というのプレゼンテーションの補足として書いた物です。この記事では、プレゼンで扱ったいくつかのテクニックを実装する方法について、簡単に紹介します。細かな詳細には立ち入りませんが、関連資料へのリンクと最後にいくつかの技術的なアドバイスを追加しておきますので参考にしてください。また、このページの多くの例ではGLSLシェーダーを使っています。シェーダーに関する詳細は、（いつも通り）[The Book of Shaders](https://thebookofshaders.com/)を参照してください。
+> この記事は、2022年と2023年に行った[Drawing with code](/drawing-with-code)というプレゼンテーションの補足として書いた物です。この記事では、プレゼンで扱ったいくつかのテクニックを実装する方法について、簡単に紹介します。細かな詳細には立ち入りませんが、関連資料へのリンクと最後にいくつかの技術的なアドバイスを追加しておきますので参考にしてください。また、このページの多くの例ではGLSLシェーダーを使っています。シェーダーに関する詳細は、（いつも通り）[The Book of Shaders](https://thebookofshaders.com/)を参照してください。
 
 # Mimicking Pencil Drawings
 # 鉛筆画を模倣する
 
 The pencil is one of the most common drawing materials. It is easy to use even for kids, and yet it is very versatile and profound, with which an artist can spend time forever. Let's begin by replicating the texture of pencil drawings. Artists often use a technique called hatching, which involves creating shading effects by drawing closely spaced parallel or crossing lines. Why don't we start with that, because while this can be quite laborious for humans, computers are good at drawing a lot of lines without getting tired.
 
-鉛筆は最もありふれた絵を描く道具の1つです。子供でも簡単に使える一方、とても万能で奥深く、アーティストが永遠に時間を費やすことができるものでもあります。まずは鉛筆デッサンの質感を再現してみましょう。絵描きはよくハッチングという、平行または交差する線を細かく並べて陰影を作り出す技法を使います。これは人間にとっては手間のかかる仕事ですが、コンピュータなら疲れることなく、たくさんの線を疲れずに描けるので、そこから始めてみましょう。
+鉛筆は最もありふれた絵を描く道具の1つです。子供でも簡単に使える一方、とても万能で奥深く、アーティストが永遠に時間を費やすことができるものでもあります。まずは鉛筆デッサンの質感を再現してみましょう。絵描きはよくハッチングという、平行または交差する線を細かく並べて陰影を作り出す技法を使います。これは人間にとっては手間のかかる仕事ですが、コンピュータなら疲れることなく、たくさんの線を描けるので、そこから始めてみましょう。
 
 The demo below takes a photo of a forest, selects a random pixel, converts its [color to grayscale](/computing-colors), and then draws a short diagonal line at the corresponding position in the space to the right. The line is drawn from the top right to the bottom left, just as right-handed people typically do (The opposite direction is easier for left-handed people).
 
@@ -114,7 +114,7 @@ Not only placing the colors on the canvas, you can pick up the colors from the c
 
 <div></div>
 
-Or you could go off from the reality and fun and expressive. The example below uses a geometric gradient as the force map, which create a big swirl of paints.
+Or you could go off from reality and make it fun and expressive. The example below uses a geometric gradient as the force map, which create a big swirl of paints.
 
 現実から離れて楽しく創造的な方向に進むこともできます。下の例では、幾何学的なグラデーションをフォースマップ（力の向きを表したテクスチャ）に使って、大きな絵の具の渦を作り出しています。
 
@@ -135,7 +135,7 @@ You might have noticed that even when replicating the same materials like pencil
 
 Examples on this page are all made with p5.js and Codepen to skip any extra preparation, prioritizing illustrating the concept rather than the quality and performance. To improve the performance, you might want to try different environments and techniques. Here are some suggestions for the tools and techniques I use:
 
-余計な準備無しでコンセプトを説明するために、このページの全て例ではp5.jsとCodepenを使っていますが、パフォーマンスを改善するためには、異なる環境や技術を試してみることができます。以下は自分でも使っているツールとテクニックについての提案です。
+余計な準備無しでコンセプトを説明するために、このページの全ての例ではp5.jsとCodepenを使っていますが、パフォーマンスを改善するためには、異なる環境や技術を試してみることができます。以下は自分でも使っているツールとテクニックについての提案です。
 
 -   Try tools that offer more granular control over geometry and materials, such as [Three.js](https://threejs.org/), [Openframeworks](https://openframeworks.cc/), [TouchDesigner](https://derivative.ca/), or directly access WebGL/OpenGL.
 
@@ -147,7 +147,7 @@ Examples on this page are all made with p5.js and Codepen to skip any extra prep
 
 -   テクスチャやフォースマップを直接キャンバス描く代わりに、オフスクリーンレンダリングを使って見ましょう。p5.jsでは[`createGraphics()`](https://p5js.org/reference/#/p5/createGraphics) 、Openframeworksでは [`ofFbo`](https://openframeworks.cc/documentation/gl/ofFbo/) 、Three.jsでは[`WebGLRenderTarget`](https://threejs.org/docs/#api/en/renderers/WebGLRenderTarget) などが使えます。TouchDesignerでは簡単に複数のキャンバスを作成することができます。
 
--   オフスクリーンレンダリングに、浮動小数点カラーフォーマットを使って見ましょう。各カラーチャネルに浮動小数点数を使うことで、0-255の整数では失われてしまう微妙なディテールをより正確に捉えることができます。これは特に物理シミュレーションを組み込む際に重要です。[Fluid Simulation](/fluid-simulation)ページでいくつかのを見ることができます。
+-   オフスクリーンレンダリングに、浮動小数点カラーフォーマットを使って見ましょう。各カラーチャネルに浮動小数点数を使うことで、0-255の整数では失われてしまう微妙なディテールをより正確に捉えることができます。これは特に物理シミュレーションを組み込む際に重要です。[Fluid Simulation](/fluid-simulation)ページでいくつかの例を見ることができます。
 
 That’s it. Try exploring your own approaches based on the ideas we see here. Below are some more examples made using the techniques we've covered on this page combined together.
 

@@ -26,7 +26,8 @@ Convolution is an operation used in image processing and machine learning that i
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="wvYwjwe" data-user="kynd" data-preview="true"></p></div>
 
-# Deformation and Feedback 変形とフィードバック
+# Deformation and Feedback
+# 変形とフィードバック
 
 Deformation is the process of transforming an image by changing its shape or perspective. It is often used for image correction, such as fixing distortions caused by camera lenses, or to create special effects in images. Additionally, we will explore the feedback technique, which involves iteratively applying image processing to create more complex and interesting effects.
 

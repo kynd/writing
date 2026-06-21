@@ -8,7 +8,7 @@ The human brain is wired to recognize patterns. This is likely because it aids i
 
 Repeating patterns can create beautiful and intriguing textiles and ornaments, a rhythm that people can dance to. Sometimes, it is a vehicle to deliver tension and surprise in music and storytelling by breaking existing patterns. In many ways, patterns play a significant role in various art forms.
 
-パターンの繰り返しは、美しく興味深い織物や装飾品を生み出し、人々を踊らせるリズムを生み出します。時には既存のパターンを破ることが、音楽や物語に緊張感と驚き加える手段にもなります。パターンは多様な芸術の分野で多様で重要な役割を担っています。
+パターンの繰り返しは、美しく興味深い織物や装飾品を生み出し、人々を踊らせるリズムを生み出します。時には既存のパターンを破ることが、音楽や物語に緊張感と驚き加える手段にもなります。パターンは多様な芸術の分野で重要な役割を担っています。
 
 We will explore various related concepts in the following pages. The examples are not exhaustive as this is a vast topic. But I hope you'll grasp some recurring themes (which you can also call patterns) and find inspiration for creating your own patterns.
 

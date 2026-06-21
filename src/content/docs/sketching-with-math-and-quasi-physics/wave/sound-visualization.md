@@ -14,7 +14,7 @@ slug: sound-visualization
 # Characteristics of sound waves
 # 音波の特性
 
-Sound is a [wave](/wave). It starts from an object, anything from a guitar string, vocal cords, a propeller, to an popping balloon. When an object vibrates, has repetitive motion, or causes some impact, it causes the particles of the medium around it to vibrate, transferring the vibrations from one particle to the next. In air, these vibrations manifest as fluctuating air pressure; in water and solids, the particles oscillate back and forth.
+Sound is a [wave](/wave). It starts from an object, anything from a guitar string, vocal cords, a propeller, to a popping balloon. When an object vibrates, has repetitive motion, or causes some impact, it causes the particles of the medium around it to vibrate, transferring the vibrations from one particle to the next. In air, these vibrations manifest as fluctuating air pressure; in water and solids, the particles oscillate back and forth.
 
 音は[波](/wave)です。この波はギターの弦、声帯、プロペラ、または破裂する風船など、あらゆる物体から始まります。物体が振動したり、ある動きを繰り返したり、衝撃を発生させると、その周りの媒体の粒子が振動し、振動は次の粒子へと伝わっていきます。空気中では、これらの振動は気圧の変動として現れます。水や固体では、粒子は前後に振動します。
 
@@ -41,7 +41,7 @@ In a digital medium, a sound wave is represented as an array of numbers that ind
 
 デジタルの媒体では、音波は瞬間ごとの圧力を示す数値の配列として表現されます。これらの数値は「サンプル」と呼ばれます。データの品質と精度は主に、サンプリングレートとビット深度という2つ要素に依存します。サンプリングレートは1秒あたりのサンプル数を示し、ビット深度は各サンプルの解像度を決定します。たとえば、標準的なCDではサンプリングレート44,100 Hz（または44.1 kHz）、ビット深度16ビット、つまり、1秒あたりに44,100のサンプルが記録され、それぞれのサンプルは16ビットの数値で表されます。これらの標準は、人間の聴覚範囲（約20〜20,000 Hz）内の周波数を記録し、十分なダイナミックレンジ（最も静かな音と最も大きな音の差）を提供できるように設計されています。CDはもう現役を去りつつありますが、これらの標準は今も参照されています。他にも、32ビットオーディオなど、より高い再現性を持つフォーマットも存在します。
 
-On browsers, the Web Audio API provides a node called [`AnalyserNode`](https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode) that lets us to read real-time information about the currently playing sound. With its [`getFloatTimeDomainData()`](https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode/getFloatTimeDomainData) method, you can read the sound wave into a [`Float32Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array). Each value is normalized between -1 and 1.
+On browsers, the Web Audio API provides a node called [`AnalyserNode`](https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode) that lets us read real-time information about the currently playing sound. With its [`getFloatTimeDomainData()`](https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode/getFloatTimeDomainData) method, you can read the sound wave into a [`Float32Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array). Each value is normalized between -1 and 1.
 
 ブラウザ上では、Web Audio APIが提供する[`AnalyserNode`](https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode) というノードを使って再生中の音に関する情報をリアルタイムに読み取ることができます。[`getFloatTimeDomainData()`](https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode/getFloatTimeDomainData) メソッドを使用すると、音の波形を[`Float32Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array)に読み取ることができます。各値は-1から1の範囲で正規化されています。
 
@@ -83,9 +83,9 @@ Depending on your objectives or the insights you seek from the data, the raw sou
 
 A common method for calculating the loudness of a sound over a specific time period is to use the RMS (Root Mean Square). As mentioned before, each sample value ranges from -1 to +1, so simply taking the average would yield a value close to zero. Instead, the RMS method squares each sample value, which turns all values positive. Then, it averages these squared values and finally calculates the square root of this average.
 
-特定の時間帯における音の大きさを計算するには、RMS（2乗平均平方根）が一般的に用いられます。前述の通り各サンプル値は-1から+1の範囲にあるので、単純に平均を取ると値はほぼゼロになってしまいます。RMSでは各サンプルの値を2乗しすることで全ての値を正に変換した後で平均を求め、その平均の平方根を求めます。
+特定の時間帯における音の大きさを計算するには、RMS（2乗平均平方根）が一般的に用いられます。前述の通り各サンプル値は-1から+1の範囲にあるので、単純に平均を取ると値はほぼゼロになってしまいます。RMSでは各サンプルの値を2乗することで全ての値を正に変換した後で平均を求め、その平均の平方根を求めます。
 
-$\begin{aligned} \text{RMS} = \sqrt{\frac{1}{N} \sum_{i=1}^{N} x_i^2} \end{aligned}$
+$$\text{RMS} = \sqrt{\dfrac{1}{N} \sum_{i=1}^{N} x_i^2}$$
 
 $N$ is the number of samples
 
@@ -160,7 +160,7 @@ If you are interested in the implementation of FFT, [the FFT page on the Algorit
 
 もしFFTの実装に興味があれば、[Algorithm ArchiveのFFTのページ](https://www.algorithm-archive.org/contents/cooley_tukey/cooley_tukey.html)が出発点として良いかもしれません。
 
-For more a friendly yet thorough introduction to Fourier transform, I recommend "[Who Is Fourier?: A Mathematical Adventure](https://www.amazon.com/Who-Fourier-Mathematical-Transnational-College/dp/0964350408)" by Transnational College.
+For a more friendly yet thorough introduction to Fourier transform, I recommend "[Who Is Fourier?: A Mathematical Adventure](https://www.amazon.com/Who-Fourier-Mathematical-Transnational-College/dp/0964350408)" by Transnational College.
 
 より親しみやすく、かつ詳細なフーリエ変換の入門としては、Transnational Collegeの「[Who Is Fourier?: A Mathematical Adventure](https://www.amazon.com/Who-Fourier-Mathematical-Transnational-College/dp/0964350408)」がお勧めです。[日本語版もあります](https://www.amazon.co.jp/dp/4906519148/)。
 

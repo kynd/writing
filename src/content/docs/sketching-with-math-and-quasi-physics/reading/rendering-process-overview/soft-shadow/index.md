@@ -53,13 +53,13 @@ The first difference is `shadowFactor`. Instead of only checking if the ray dire
 
 The other difference is the distance we make the ray proceed. In normal ray marching, we would move the ray forward as far as possible to get to the object with shorter iterations. But that may end up skipping the point where the ray gets closest to an object without hitting it. To ensure we sample enough points in the space, `t += clamp( distance, 0.01, 0.2 );` constrains the distance the ray can go in each step. The numbers are just empirical so you can adjust them as needed.
 
-もう一つの違いは、レイが進む距離です。通常のレイマーチングでは、より少ない反復回数でオブジェクトに届くように、可能な限りレイを進めます。しかし、これではレイがオブジェクトに衝突せずに最も接近する点をスキップしてしまう可能性があります。空間内で十分なポイントをサンプリングするために、`t += clamp( distance, 0.01, 0.2 );` でステップことにレイが進める距離を制限します。この数値は経験則によるものなので、必要に応じて調整することができます。
+もう一つの違いは、レイが進む距離です。通常のレイマーチングでは、より少ない反復回数でオブジェクトに届くように、可能な限りレイを進めます。しかし、これではレイがオブジェクトに衝突せずに最も接近する点をスキップしてしまう可能性があります。空間内で十分なポイントをサンプリングするために、`t += clamp( distance, 0.01, 0.2 );` でステップごとにレイが進める距離を制限します。この数値は経験則によるものなので、必要に応じて調整することができます。
 
 [![](/images/soft-shadow-1.jpg "75")](/images/soft-shadow-1.jpg)
 
 <div></div>
 
-You can see the following page to learn more about the soft shadowing techniques.
+See the following page to learn more about the soft shadowing techniques.
 
 ソフトシャドウのテクニックについてさらに詳しく学ぶには、以下のページを見てください。
 

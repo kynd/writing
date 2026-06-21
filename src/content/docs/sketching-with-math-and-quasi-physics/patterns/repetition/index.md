@@ -4,7 +4,7 @@ slug: repetition
 ---
 At the basis of patterns is repetition. We recognize patterns because the same thing happens again and again. What "the same" means can vary to a great extent though. Sometimes it's as simple as counting numbers, 1, 2, 3, 1, 2, 3. If you think about how your days go, or seasons; no two days are exactly the same, but there is a clear sense of repetition and patterns. Some patterns are even more abstract. For example, many stories from folklore to Star Wars episodes follow similar patterns. Christopher Booker argued there are [s](https://en.wikipedia.org/wiki/The_Seven_Basic_Plots)[even basic plots in his book](https://en.wikipedia.org/wiki/The_Seven_Basic_Plots).
 
-パターンの大元には繰り返しがあります。人は同じことが何度も起こるのとパターンを認識するのです。しかし、この「同じ」が持つ意味には、非常に大きな幅があります。1, 2, 3, 1, 2, 3と数を数えるように単純な場合もあるでしょう。一方、日々の過ごし方や季節について考えたると、2つの日がまったく同じことはないのに、そこには明確な繰り返しとパターンの感覚があります。もっと抽象的なパターンもあります。たとえば、民間伝承からスターウォーズのエピソードまで、多くの物語には繰り返される類似のパターンがあります。Christopher Bookerは彼の本の中で[基本的な物語のプロットには7種類ある](https://en.wikipedia.org/wiki/The_Seven_Basic_Plots)と主張しました。
+パターンの大元には繰り返しがあります。人は同じことが何度も起こるとパターンを認識するのです。しかし、この「同じ」が持つ意味には、非常に大きな幅があります。1, 2, 3, 1, 2, 3と数を数えるように単純な場合もあるでしょう。一方、日々の過ごし方や季節について考えたると、2つの日がまったく同じことはないのに、そこには明確な繰り返しとパターンの感覚があります。もっと抽象的なパターンもあります。たとえば、民間伝承からスターウォーズのエピソードまで、多くの物語には繰り返される類似のパターンがあります。Christopher Bookerは彼の本の中で[基本的な物語のプロットには7種類ある](https://en.wikipedia.org/wiki/The_Seven_Basic_Plots)と主張しました。
 
 What we will look at on this page are the numerical and mathematical ways of creating repetitions that you can use to sketch in code, starting from the very basic 1, 2, 3, example.
 
@@ -12,25 +12,25 @@ What we will look at on this page are the numerical and mathematical ways of cre
 
 # Modulo モジュロ
 
-You can use modulo to create a repeating sequence of numbers. Modulo is basically a mathematical way of saying "count to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span> then go back to one and repeat". Think of a drum pattern in which the kick drum strikes every four beats, or the days of the week that repeat every seven days. Repeating numbers can represent different things.
+You can use modulo to create a repeating sequence of numbers. Modulo is basically a mathematical way of saying "count to $n$ then go back to one and repeat". Think of a drum pattern in which the kick drum strikes every four beats, or the days of the week that repeat every seven days. Repeating numbers can represent different things.
 
-繰り返しの数列を作るにはモジュロが使えます。モジュロは簡単にいうと「<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span>まで数えたら1に戻り繰り返す」ことを数学的に表す方法と言えます。4拍ごとのキックドラムが鳴るドラムパターンや、曜日が7日ごとに繰り返す様子を思い浮かべてください。繰り返す値はさまざまなものを表現することができます。
+繰り返しの数列を作るにはモジュロが使えます。モジュロは簡単にいうと「$n$まで数えたら1に戻り繰り返す」ことを数学的に表す方法と言えます。4拍ごとのキックドラムが鳴るドラムパターンや、曜日が7日ごとに繰り返す様子を思い浮かべてください。繰り返す値はさまざまなものを表現することができます。
 
 To calculate a modulo, you can divide a number with another number and take the remainder.
 
 モジュロを計算するには、ある数を別の数で割り、その余りを取ります。
 
-<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mspace></mspace><mspace width="0.6667em"></mspace><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">d</mi></mrow><mtext> </mtext><mtext> </mtext><mn>2</mn><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">4 \mod 2 = 0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">4</span><span class="mspace allowbreak"></span><span class="mspace" style="margin-right:0.6667em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord"><span class="mord"><span class="mord mathrm">mod</span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0</span></span></span></span>
+$4 \mod 2 = 0$
 
-<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mspace></mspace><mspace width="0.6667em"></mspace><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">d</mi></mrow><mtext> </mtext><mtext> </mtext><mn>4</mn><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">5 \mod 4 = 1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">5</span><span class="mspace allowbreak"></span><span class="mspace" style="margin-right:0.6667em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord"><span class="mord"><span class="mord mathrm">mod</span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">4</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span>
+$5 \mod 4 = 1$
 
-<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>17</mn><mspace></mspace><mspace width="0.6667em"></mspace><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">d</mi></mrow><mtext> </mtext><mtext> </mtext><mn>7</mn><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">17 \mod 7 = 3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">17</span><span class="mspace allowbreak"></span><span class="mspace" style="margin-right:0.6667em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord"><span class="mord"><span class="mord mathrm">mod</span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">7</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">3</span></span></span></span>
+$17 \mod 7 = 3$
 
-You can also imagine it as a circle like a clock. Instead of a number line extends towards infinity, you circle around and return to the same point after <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span> steps. The modulo operation relates two numbers based on their division remainder. For instance, the days of the week operate in mod 7. You can say that 8 and 15 are equivalent modulo 7, which means that the 8th and 15th of the same month fall on the same day of the week. Or, the keys on a piano are in mod 12, which means if you go up or down from a certain note (let's say C), you come to the same note after 12 half-note steps. In $a \\mod n$, $a$ is called the "dividend" and $n$ is called the "modulus".
+You can also imagine it as a circle like a clock. Instead of a number line extends towards infinity, you circle around and return to the same point after $n$ steps. The modulo operation relates two numbers based on their division remainder. For instance, the days of the week operate in mod 7. You can say that 8 and 15 are equivalent modulo 7, which means that the 8th and 15th of the same month fall on the same day of the week. Or, the keys on a piano are in mod 12, which means if you go up or down from a certain note (let's say C), you come to the same note after 12 half-note steps. In $a \\mod n$, $a$ is called the "dividend" and $n$ is called the "modulus".
 
-時計のような円を思い浮かべてもようでしょう。無限に向かって伸びていく数直線ではなく、<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span>ステップ後に同じ点に戻る円を考えます。モジュロ演算は2つの数値を、割り算の余りに基づいて関連付けます。例えば、週の曜日は mod 7 です。mod 7では8 と15 が同じ値になりますが、これは、同じ月の8日と15日が同じ曜日になることを意味します。ピアノの鍵盤はmod 12で、これはある音（例えばド）から初めて上か下に進むと半音12個で同じ音に戻ってくることを表します。
+時計のような円を思い浮かべてもいいでしょう。無限に向かって伸びていく数直線ではなく、$n$ステップ後に同じ点に戻る円を考えます。モジュロ演算は2つの数値を、割り算の余りに基づいて関連付けます。例えば、週の曜日は mod 7 です。mod 7では8 と15 が同じ値になりますが、これは、同じ月の8日と15日が同じ曜日になることを意味します。ピアノの鍵盤はmod 12で、これはある音（例えばド）から初めて上か下に進むと半音12個で同じ音に戻ってくることを表します。
 
-<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mspace></mspace><mspace width="0.6667em"></mspace><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">d</mi></mrow><mtext> </mtext><mtext> </mtext><mi>n</mi></mrow><annotation encoding="application/x-tex">a \mod n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">a</span><span class="mspace allowbreak"></span><span class="mspace" style="margin-right:0.6667em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord"><span class="mord"><span class="mord mathrm">mod</span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">n</span></span></span></span>の<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">a</span></span></span></span>は「被除数」と呼ばれ、<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span>は「除数」と呼ばれます。
+$a \mod n$の$a$は「被除数」と呼ばれ、$n$は「除数」と呼ばれます。
 
 > 
 > 
@@ -40,21 +40,21 @@ You can also imagine it as a circle like a clock. Instead of a number line exten
 
 <div></div>
 
-In Javascript, you can use `%` for modulo. For example, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mspace></mspace><mspace width="0.6667em"></mspace><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">d</mi></mrow><mtext> </mtext><mtext> </mtext><mn>2</mn></mrow><annotation encoding="application/x-tex">4 \mod 2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">4</span><span class="mspace allowbreak"></span><span class="mspace" style="margin-right:0.6667em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord"><span class="mord"><span class="mord mathrm">mod</span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">2</span></span></span></span> can be written as `4 % 2`.
+In Javascript, you can use `%` for modulo. For example, $4 \mod 2$ can be written as `4 % 2`.
 
-JavaScriptでは、`%`を使用ってモジュロを計算できます。例えば、<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mspace></mspace><mspace width="0.6667em"></mspace><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">d</mi></mrow><mtext> </mtext><mtext> </mtext><mn>2</mn></mrow><annotation encoding="application/x-tex">4 \mod 2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">4</span><span class="mspace allowbreak"></span><span class="mspace" style="margin-right:0.6667em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord"><span class="mord"><span class="mord mathrm">mod</span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">2</span></span></span></span>は`4 % 2`と書けます。
+JavaScriptでは、`%`を使ってモジュロを計算できます。例えば、$4 \mod 2$は`4 % 2`と書けます。
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="PwwgbQx" data-user="kynd" data-preview="true"></p></div>
 
 > 
 > 
-> Be careful that `%` is not exactly the same as modulo. `**%**` returns negative results for negative input numbers; for example, while <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mspace></mspace><mspace width="0.6667em"></mspace><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">d</mi></mrow><mtext> </mtext><mtext> </mtext><mn>2</mn></mrow><annotation encoding="application/x-tex"> 5 \mod 2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">5</span><span class="mspace allowbreak"></span><span class="mspace" style="margin-right:0.6667em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord"><span class="mord"><span class="mord mathrm">mod</span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">2</span></span></span></span> is 1 in math, `**-5 % 2**` returns `**-1**`. To work around this, you can either add a multiple of the modulus to the dividend to ensure it is positive, or add the modulus to the result if the initial result is negative.  
+> Be careful that `%` is not exactly the same as modulo. `%` returns negative results for negative input numbers; for example, while $5 \mod 2$ is 1 in math, `-5 % 2` returns `-1`. To work around this, you can either add a multiple of the modulus to the dividend to ensure it is positive, or add the modulus to the result if the initial result is negative.  
 >   
-> 厳密には`％`はモジュロと異なるので注意してください。`％`は負の入力に対して負の値を返します。たとえば、数学では <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mspace></mspace><mspace width="0.6667em"></mspace><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">d</mi></mrow><mtext> </mtext><mtext> </mtext><mn>2</mn></mrow><annotation encoding="application/x-tex">5 \mod 2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">5</span><span class="mspace allowbreak"></span><span class="mspace" style="margin-right:0.6667em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord"><span class="mord"><span class="mord mathrm">mod</span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">2</span></span></span></span> は1ですが、`-5 ％ 2`は `-1`を返します。被除数に除数の倍数を足して正の値にするか、結果が負の場合に除数を足すことでこれを修正することができます。
+> 厳密には`％`はモジュロと異なるので注意してください。`％`は負の入力に対して負の値を返します。たとえば、数学では $5 \mod 2$ は1ですが、`-5 ％ 2`は `-1`を返します。被除数に除数の倍数を足して正の値にするか、結果が負の場合に除数を足すことでこれを修正することができます。
 
 The demo below arranges different modulos in order from mod 1, mod 2, to mod 3, etc. The cells with a value of 0 are filled in black.
 
-以下のデモでは、mod 1、mod 2、mod 3などの異なるモジュロを順番に並べて、値が0のセルを黒で塗りつぶされています。
+以下のデモでは、mod 1、mod 2、mod 3などの異なるモジュロを順番に並べて、値が0のセルを黒で塗りつぶしています。
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="NWmbeQz" data-user="kynd" data-preview="true"></p></div>
 
@@ -80,7 +80,7 @@ or in mathematical notation, you can write this as:
 
 数学の記法では下のように書くことができます。
 
-<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>−</mo><mo stretchy="false">⌊</mo><mi>x</mi><mo stretchy="false">⌋</mo></mrow><annotation encoding="application/x-tex">x - \lfloor x \rfloor</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">⌊</span><span class="mord mathnormal">x</span><span class="mclose">⌋</span></span></span></span>
+$x - \lfloor x \rfloor$
 
 With this function, you can obtain a series of repeating numbers between 0 and 1 (0 ≤ x < 1) at any [resolution](https://codepen.io/kynd/pen/zYXwvGv?editors=0010). If you want a different range, you can easily adjust it by multiplying the number to scale, or adding a number to shift. Take a look at the graph below to see what this does.
 
@@ -129,11 +129,9 @@ The example below uses the sine function to draw a 2D pattern. It multiplies two
 
 After all, what you get from these methods are just sequences of repeating numbers, and there are infinite possibilities about how to use them. Be creative and explore different ideas.
 
-究極のところ、これらの方法は繰り返しの数列り出すだけなので、使い道にはについては無限の可能性があります。創造力を持って様々なアイデアを試してみましょう。
+究極のところ、これらの方法は繰り返しの数列を生み出すだけなので、使い道にはについては無限の可能性があります。創造力を持って様々なアイデアを試してみましょう。
 
-Just as examples, try thinking about how you could use visualize and animate following motifs.
-
-例えば、下のモチーフをどのように視覚化したり、アニメーションできるか考えてみましょう。
+Just as examples, try thinking about how you could visualize and animate the following motifs.
 
 -   A stop-frame animation or a character that repeats finite frames
 
@@ -144,6 +142,8 @@ Just as examples, try thinking about how you could use visualize and animate fol
 -   Kaleidoscopic graphics that repeat patterns around the center
 
 -   A wallpaper pattern that consists of multiple tiles
+
+例えば、下のモチーフをどのように視覚化したり、アニメーションできるか考えてみましょう。
 
 -   数フレームを繰り返すだけのコマ撮りキャラクターアニメーション
 

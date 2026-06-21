@@ -11,7 +11,7 @@ In many cases, waves are caused by physical vibrations. With string instruments 
 
 Let’s take a look at a spring as a simple model of vibration. The equation of a spring (Hooke's law) is $F=-kx$, which means that when it’s extended or compressed, a force of the object to return to its original shape is proportional to the amount of deformation. If we ignore other factors, stretching and releasing a spring will create a perpetual oscillation. And if we plot this against time, we get a sine curve. This is called simple harmonic motion.
 
-振動の簡単なモデルとしてバネをみてみましょう。バネの方程式（フックの法則）$F=-kx$ は、バネを伸ばしたり縮めたりしたときに物体が元の形に戻ろうとする力が変形された距離に比例していること示します。他の要因を無視すると、バネを伸ばして手を離せば永遠に続く振動が生まれることになります。この振動を時間軸にプロットするとサインカーブになります。これは単振動と呼ばれています。
+振動の簡単なモデルとしてバネをみてみましょう。バネの方程式（フックの法則）$F=-kx$ は、バネを伸ばしたり縮めたりしたときに物体が元の形に戻ろうとする力が変形された距離に比例していることを示します。他の要因を無視すると、バネを伸ばして手を離せば永遠に続く振動が生まれることになります。この振動を時間軸にプロットするとサインカーブになります。これは単振動と呼ばれています。
 
 Although the actual musical instruments are not as simple as this, spring is a good entry point for understanding the physics behind vibrations, such as the force of a string being pulled and returning with tension.
 
@@ -22,7 +22,7 @@ Although the actual musical instruments are not as simple as this, spring is a g
 # Wave equation
 # 波動方程式
 
-Next, let’s simulate the propagation of the vibration using the wave equation. We could use harmonic motion, but let’s use a noise function to make it slightly
+Next, let’s simulate the propagation of the vibration using the wave equation. We could use harmonic motion, but let’s use a noise function to make it slightly more interesting.
 
 次に振動が伝わる様子を波動方程式を使ってシミュレーションしてみます。単振動でも良いのですがノイズ関数を使ってもう少し面白くしてみます。
 
@@ -32,7 +32,7 @@ The one-dimensional equation of wave looks like this, with u representing the di
 
 1次元の波の方程式はこんな形で、uが波の変位を表します。左辺が時間tに関する2階微分、つまり変化量の変化量（この場合は加速度）、右辺が位置xに関する2階微分になっています。
 
-${\displaystyle {\partial ^{2}u \over \partial t^{2}}=c^{2}{\partial ^{2}u \over \partial x^{2}}}$
+$$\dfrac{\partial^2 u}{\partial t^2} = c^2 \dfrac{\partial^2 u}{\partial x^2}$$
 
 We actually don't need precise derivatives for the simulation on this page. The figure below shows how the demo is implemented. Please compare this diagram carefully with the explanation beneath. You can learn more about numerical approximation of derivatives on the [Differentiation page](/differentiation).
 
@@ -58,9 +58,9 @@ The equation can be transformed to find the value of $u$ one frame ahead in the 
 
 これを変形すると、現在わかっている全ての値から1フレーム未来($t + 1$）の$u$の値を求める形に変形することができます。
 
-$u_{t+1}\;+\:u_{t-1\;}-\;2u_t＝\;c^2(u_{x-1}\;+u_{x+1\;}-\;2u_x)$
+$$u_{t+1} + u_{t-1} - 2u_t = c^2(u_{x-1} + u_{x+1} - 2u_x)$$
 
-$u_{t+1}\;＝\;2u\;\;+\;c^2(u_{x-1}\;+u_{x+1\;}-\;2u)\;-\:u_{t-1\;} \quad| \quad u_t = u_x = u $
+$$u_{t+1} = 2u + c^2(u_{x-1} + u_{x+1} - 2u) - u_{t-1} \quad | \quad u_t = u_x = u$$
 
 Similarly in 2D:
 
@@ -74,6 +74,6 @@ Similarly in 2D:
 
 $$\dfrac{\partial^2u}{\partial t^2}=c^2\left(\dfrac{\partial^2u}{\partial x^2}\;+\;\dfrac{\partial^2u}{\partial y^2}\right)$$
 
-$\Rightarrow u_{t+1}\;＝\;2u\;\;+\;c^2(u_{x-1}\;+u_{x+1\;}+u_{y-1}\;+u_{y+1\;}-\;4u)\;-\:u_{t-1\;}$
+$$\Rightarrow u_{t+1} = 2u + c^2(u_{x-1} + u_{x+1} + u_{y-1} + u_{y+1} - 4u) - u_{t-1}$$
 
 [Sine waves and Additive Synthesis サイン波と加算合成](/sine-waves-and-additive-synthesis)

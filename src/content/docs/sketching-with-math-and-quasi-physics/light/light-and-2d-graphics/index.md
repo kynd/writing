@@ -17,8 +17,6 @@ This demo is a two-dimensional application of the [ray-marching technique](https
 
 <div></div>
 
-You can check whether a location is in shadow by extending a line from that point to a light source and seeing if the line hits another object.
-
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="ExezaYg" data-user="kynd" data-preview="true"></p></div>
 
 <div class="local-video-wrap"><video controls><source src="/videos/m_2_1.mp4" type="video/mp4"></video></div>

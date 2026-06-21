@@ -22,7 +22,7 @@ This can be written as:
 これは下のように書けます。
 
   
-$\begin{aligned} F = \frac{9}{5}C + 32 \end{aligned}$  
+$$F = \dfrac{9}{5}C + 32$$  
 
 -   $C$ is the temperature in Celsius
 
@@ -43,9 +43,7 @@ More generally, linear mapping can be written as below. Try if you can get the t
 
 より一般的に、線形写像は下のように表せます。実際の数値を代入して、上の温度を変換する式が得られるか試してみましょう。
 
-$\begin{aligned}
-    y &= \frac{(x - a)}{(b - a)} \times (d - c) + c
-\end{aligned}$
+$$y = \dfrac{(x - a)}{(b - a)} \times (d - c) + c$$
 
 Where:
 

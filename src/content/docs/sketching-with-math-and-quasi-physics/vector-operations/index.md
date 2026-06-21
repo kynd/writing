@@ -46,7 +46,7 @@ $\vec{a} + \vec{b} = (3 + 2, -1 + 1.5) = (5, 1.5)$
 # Magnitude
 # 大きさ
 
-(I[n Euclidean space](/various-distances)) The **magnitude** of a vector is the square root of each component squared and added together. This is an extension of the Pythagorean theorem to multiple dimensions. This can be thought as the length of the diagonal of a rectangle, a cuboid, or an n-dimensional cuboid with each component as a side.
+(In [Euclidean space](/various-distances)) The **magnitude** of a vector is the square root of each component squared and added together. This is an extension of the Pythagorean theorem to multiple dimensions. This can be thought as the length of the diagonal of a rectangle, a cuboid, or an n-dimensional cuboid with each component as a side.
 
 （[ユークリッド空間では](/various-distances)）ベクトルの大きさは各成分を2乗して足し合わせたものの平方根を取ります。ピタゴラスの定理を多次元に拡張した形です。成分を各辺とした長方形、直方体、n次元直方体の対角線の長さを求めるイメージです。
 
@@ -58,9 +58,11 @@ ${|\vec{v}| ={\sqrt {x^{2}+y^{2}}}}$
 
 ${|\vec{v}|={\sqrt {x^2+y^2+z^2}}}$
 
-${|\vec{v}|={\sqrt {x_1^2 + x_2^2 + x_3^2+ x_4^2 + + x_5^2+ ...}}}$
+${|\vec{v}|={\sqrt {x_1^2 + x_2^2 + x_3^2+ x_4^2 + x_5^2+ ...}}}$
 
 [![](/images/vector-operations-1.png)](/images/vector-operations-1.png)
+
+<div></div>
 
 # Scalar Multiplication
 # スカラー倍
@@ -95,7 +97,7 @@ ${\hat{v} = \vec{v} / |\vec{v}|}$
 # Dot Product
 # ドット積
 
-The **dot product**, or scalar product, is a very useful operation when studying computer graphics, physics. etc. There are two definitions below, but they are the same thing and one can be derived the from the other.
+The **dot product**, or scalar product, is a very useful operation when studying computer graphics, physics, etc. There are two definitions below, but they are the same thing and one can be derived the from the other.
 
 ドット積（スカラー積）は、コンピュータグラフィックスや物理を扱っていると必ず出くわす非常に便利な演算です。下に2種類の定義を並べますが、この2つは同じことで、一方からもう片方を導くことができます。
 
@@ -144,6 +146,8 @@ This can be read as a relationship between the components of the vectors and the
 
 [![](/images/vector-operations-3.png)](/images/vector-operations-3.png)
 
+<div></div>
+
 -   Two non-zero vectors $\vec{a}$ and $\vec{b}$ are orthogonal if and only if $\vec{a} \cdot \vec{b} = 0$
 -   If the dot product is positive, the angle between the vectors is less than 90°.
 -   If the dot product is negative, the angle between the vectors is more than 90°.
@@ -178,6 +182,8 @@ The vector returned by the cross product is the “oriented area of the parallel
 クロス積が返すベクトルは「平行四辺形の向き付き面積 」です。と言われてもよく分かりませんが、つまりこのベクトルは元の2つのベクトルに対して向きが垂直で、大きさが元のベクトルを辺とする平行四辺形の面積に等しくなります。関係のないことを2つ同時にやっている感じがしますが、実際この2つの性質は別々の場面で使われることが多いようです。
 
 [![](/images/vector-operations-4.png "75")](/images/vector-operations-4.png)
+
+<div></div>
 
 ### Algebraic definition
 ### 代数的定義

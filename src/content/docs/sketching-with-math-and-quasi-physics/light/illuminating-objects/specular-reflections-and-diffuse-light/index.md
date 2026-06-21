@@ -20,7 +20,7 @@ Reflection of light on an object can be divided into specular and diffuse. Part 
 # Conductor or dielectric
 # 導体と誘電体
 
-The relationship between specular and diffuse depends on if the material is conductor or dielectric (roughly metallic and non-metallic).
+The relationship between specular and diffuse depends on whether the material is a conductor or a dielectric (roughly metallic and non-metallic).
 
 スペキュラーとディフューズの関係は導体（Conductor）と誘電体 （Dielectric）（大雑把に金属と非金属）で異なります。
 
@@ -37,7 +37,7 @@ Conductor has no diffuse component, only specular. Also, the specular in the con
 
 Because of the classic CG technique described on the next page, specular is sometimes thought to represent bright highlights but it technically refers to the directly reflected component of light. So in the image above, all reflections on the sphere are specular. The reflection will look blurry on an unpolished surface as the light will be reflected by fine irregularities, but this is also **specular reflection** and is different from **diffuse light** that we will discuss next.
 
-次のページで説明する[古典的なCG技法](/classic-3d-rendering)のせいでスペキュラーは明るいハイライトを表現するものと思われていることがありますが、より正確には物体に当たった光が直接反射した成分を指すので、上の画像では球体に映った反射全てがスペキュラーです。表面が滑らかでなければ光は細かな凹凸に反射してぼやけて見えることになりますが、これも鏡面反射=スペキュラーで、次に見るディフーズによる拡散光とは別物です。
+次のページで説明する[古典的なCG技法](/classic-3d-rendering)のせいでスペキュラーは明るいハイライトを表現するものと思われていることがありますが、より正確には物体に当たった光が直接反射した成分を指すので、上の画像では球体に映った反射全てがスペキュラーです。表面が滑らかでなければ光は細かな凹凸に反射してぼやけて見えることになりますが、これも鏡面反射=スペキュラーで、次に見るディフューズによる拡散光とは別物です。
 
 ![](/images/a-gold-sphere-with-dull-surface-floating-in-the-sky-by-sta.jpeg "50")
 
@@ -46,7 +46,7 @@ Because of the classic CG technique described on the next page, specular is some
 ## Dielectric
 ## 誘電体
 
-Dielectrics, i.e., most materials other than metals such as plastic and paper, tend to have more diffuse than specular. The color of an object is mainly determined by this diffuse component. Dielectric specular does not have color. I.e., the spectral distribution of the reflected light remains intact. Imagine a red plastic object with a bright highlights. The red color is the diffused light, and the highlight is the specular, which will usually appear white reflecting the color of the light source.
+Dielectrics, i.e., most materials other than metals such as plastic and paper, tend to have more diffuse than specular. The color of an object is mainly determined by this diffuse component. Dielectric specular does not have color. That is, the spectral distribution of the reflected light remains intact. Imagine a red plastic object with a bright highlights. The red color is the diffused light, and the highlight is the specular, which will usually appear white reflecting the color of the light source.
 
 誘電体、つまりプラスチックや紙など金属以外のほとんどの物質ではディフューズ成分の方が多くなります。物体の色は主にこのディフューズ成分で決まります。誘電体のスペキュラーには色がつきません。つまり反射された光のスペクトル分布がそのまま残ることになります。赤いプラスチックの上に明るいハイライトが見える様子を想像してください。赤い色がディフューズ成分、ハイライトはスペキュラーなので光源の色を反映して大抵は白く見えます。
 
@@ -60,7 +60,7 @@ Like metal, plastic also reflects light from the entire surrounding area as spec
 
 > 
 > 
-> The light goes through deeper and more complex pathways in case of translucent objects like human skin. This effect is reproduced by techniques such as [Sub Surface Scattering](https://en.wikipedia.org/wiki/Subsurface_scattering).
+> The light goes through deeper and more complex pathways in the case of translucent objects like human skin. This effect is reproduced by techniques such as [Sub Surface Scattering](https://en.wikipedia.org/wiki/Subsurface_scattering).
 > 
 > 人間の肌のように半透明な物体は中に入った光がより深く複雑な経路を通ることになります。この効果は[Sub Surface Scattering](https://en.wikipedia.org/wiki/Subsurface_scattering)といった技術によって再現されます。
 

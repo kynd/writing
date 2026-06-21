@@ -59,7 +59,7 @@ float opSmoothIntersection( float d1, float d2, float k ) {
 
 To understand what these functions do, below is a graph of the `opSmoothUnion` function. It works exactly the same as the `min` function when the two input values are more than `k` units apart. However, within the range where (`d2 - d1`) is between `-k` and `k`, the shape becomes rounded.
 
-これらの関数の働きを理解するために、下の`opSmoothUnion`関数のグラフを見て見ましょう。2つの入力値が`k`単位以上離れている場合、この関数は`min`関数とまったく同じように機能しまが、(`d2 - d1`)が`-k`から`k`の間の場合、形が丸くなります。
+これらの関数の働きを理解するために、下の`opSmoothUnion`関数のグラフを見て見ましょう。2つの入力値が`k`単位以上離れている場合、この関数は`min`関数とまったく同じように機能しますが、(`d2 - d1`)が`-k`から`k`の間の場合、形が丸くなります。
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="LYqLbvy" data-user="kynd" data-preview="true"></p></div>
 

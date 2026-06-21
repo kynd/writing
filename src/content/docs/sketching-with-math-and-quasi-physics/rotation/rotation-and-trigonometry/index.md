@@ -159,7 +159,7 @@ It's crucial to understand the coordinate system used in each tool. For instance
 
 The order of rotation matters too. The demo above applies rotation around the x-axis, then around the y-axis. Try flipping the order, or add rotation around the z-axis as well, and see what happens. Euler angles also have a well-known problem called "gimbal lock". To understand this intuitively, you can think of the rotation with Euler angles as similar to a mechanical gyroscope below. Having three rings (gimbals) that can spin around their own axes allows the gyro to rotate in any direction. But when two of these gimbals align, two axes become identical and the gyro loses its freedom.
 
-回転の順序は重要です。上記のデモでは、まずx軸周り、次にy軸周りに回転します。順序を逆にしたり、z軸周りの回転を足したりして、何が起こるか試してましょう。オイラー角には「ジンバルロック」というよく知られた問題もあります。これを直感的に理解するためには、オイラー角による回転を下の機械式のジャイロのようなものだと考えることができます。3つのリング（ジンバル）がそれぞれの軸周りに回転することで、ジャイロは任意の方向に回転できます。しかし、2つのジンバルの向きが揃うと、2つの軸が重なり、ジャイロは自由度を失います。
+回転の順序は重要です。上記のデモでは、まずx軸周り、次にy軸周りに回転します。順序を逆にしたり、z軸周りの回転を足したりして、何が起こるか試してみましょう。オイラー角には「ジンバルロック」というよく知られた問題もあります。これを直感的に理解するためには、オイラー角による回転を下の機械式のジャイロのようなものだと考えることができます。3つのリング（ジンバル）がそれぞれの軸周りに回転することで、ジャイロは任意の方向に回転できます。しかし、2つのジンバルの向きが揃うと、2つの軸が重なり、ジャイロは自由度を失います。
 
 [![](/images/wikimedia.gif "50")](/images/wikimedia.gif)
 
@@ -176,20 +176,19 @@ If you want to rotate an object around an arbitrary axis, not just around the x,
 
 x、y、z軸だけでなく任意の軸の周りで物を回転させたい場合、[ロドリゲスの回転公式](https://en.wikipedia.org/wiki/Rodrigues%27_rotation_formula)を使うことができます。ベクトルまたは点$\mathbf{p}$を、[正規化された](/vector-operations)ベクトル$\mathbf{n}$で表される軸の周りで回転させた点$\mathbf{p}'$は次のように計算できます。
 
-$\mathbf{p} = (p_x, p_y, p_z)$
+$$\mathbf{p} = (p_x, p_y, p_z)$$
 
-$\mathbf{n} = (n_x, n_y, n_z)
-$
+$$\mathbf{n} = (n_x, n_y, n_z)$$
 
-$\mathbf{p'} = \mathbf{p} \cdot \cos(\theta) + (\mathbf{n} \times \mathbf{p}) \cdot \sin(\theta) + \mathbf{n} \cdot (\mathbf{n} \cdot \mathbf{p}) \cdot (1 - \cos(\theta))$
+$$\mathbf{p'} = \mathbf{p} \cdot \cos(\theta) + (\mathbf{n} \times \mathbf{p}) \cdot \sin(\theta) + \mathbf{n} \cdot (\mathbf{n} \cdot \mathbf{p}) \cdot (1 - \cos(\theta))$$
 
-This involves a lot of calculations, which is why we’d define is as a function and forget about it.
+This involves a lot of calculations, which is why we’d define it as a function and forget about it.
 
-沢山の計算が必要なので、これを関数をとして定義してから忘れてしまいましょう。
+沢山の計算が必要なので、これを関数として定義してから忘れてしまいましょう。
 
 > 
 > 
-> See [this page](/vector-operations)for the vector operations such as $\cdot$ (dot product) and $\times$(cross product).  
+> See [this page](/vector-operations) for the vector operations such as $\cdot$ (dot product) and $\times$(cross product).  
 > $\cdot$ (ドット積) 、 $\times$(クロス積)になどのベクトル演算については[このページ](/vector-operations)を参照してください。
 
 ```jsx
@@ -227,9 +226,9 @@ This is an example of the Rodrigues' rotation formula in use in GLSL. You can fi
 
 3Dの回転は行列形式でも表現できます。ベクトル演算（ドット積とクロス積）の中に隠れた数式を展開すると、ロドリゲスの回転公式は次の形で書くことができます。これは上の黄色い背景のp5.jsのデモに`rotateVectorAroundAxis2`として実装されています。
 
-$\mathbf{p} = (p_x, p_y, p_z)$
+$$\mathbf{p} = (p_x, p_y, p_z)$$
 
-$\mathbf{n} = (n_x, n_y, n_z)$
+$$\mathbf{n} = (n_x, n_y, n_z)$$
 
 $$
 \mathbf{p'} = {\scriptsize \begin{bmatrix}

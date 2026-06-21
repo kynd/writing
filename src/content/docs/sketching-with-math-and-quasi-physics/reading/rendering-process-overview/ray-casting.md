@@ -50,7 +50,7 @@ This function returns the distance between the origin of the ray and the point i
 # The intersection with the floor
 # 床との交差
 
-The intersection with the floor can be simply calculated. `(0.0-rayOrigin.y)` represents the vertical distance between the ray's origin and the floor. `0.0` might seem unnecessary, but it is representing the y position of the floor. Try changing the number to see the floor move.
+The intersection with the floor can simply be calculated. `(0.0-rayOrigin.y)` represents the vertical distance between the ray's origin and the floor. `0.0` might seem unnecessary, but it is representing the y position of the floor. Try changing the number to see the floor move.
 
 床との交差点は単純に計算できます。`(0.0-rayOrigin.y)` はレイの原点と床との垂直方向の距離を表しています。`0.0` は不要に見えるかもしれませんが、これは床のy位置を表しています。この数値を変更してみると、床を移動できます。
 
@@ -97,9 +97,9 @@ For the details of this function, look at this page.
 ## Hit check with SDF
 ## SDFによる当たり判定
 
-The `map()` function is the core of the ray marching process. This function is pretty long too, but what is inside is the repetition of the same process - calculation of the distances to the objects' surfaces using signed distance functions (SDF). It returns two values: the distance between a given point and the surface of the closest object, and the material ID for that object.
+The `map()` function is the core of the ray marching process. This function is pretty long too, but the contents are simply the same process repeated: calculating distances to object surfaces using signed distance functions (SDF). It returns two values: the distance between a given point and the surface of the closest object, and the material ID for that object.
 
-`map()`関数はレイマーチングプロセスの核です。この関数もかなり長いですが、中身は同じプロセス、符号付き距離関数（SDF）を使ったオブジェクトの表面までの距離を計算の繰り返しです。この関数は2つの値を返します。与えられた点から最も近いオブジェクトの表面までの距離と、そのオブジェクトのマテリアルIDです。
+`map()`関数はレイマーチングプロセスの核です。この関数もかなり長いですが、中身は同じプロセス、符号付き距離関数（SDF）を使ったオブジェクトの表面までの距離の計算の繰り返しです。この関数は2つの値を返します。与えられた点から最も近いオブジェクトの表面までの距離と、そのオブジェクトのマテリアルIDです。
 
 To learn about how you can define and calculate the distance with SDF, take a look at this page.
 

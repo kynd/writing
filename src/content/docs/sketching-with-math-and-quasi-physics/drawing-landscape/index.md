@@ -8,13 +8,13 @@ On this page, we will sketch a landscape like this using ray marching. Drawing s
 
 I tried to keep the code as simple as possible while maintaining a good amount of details, but this page is still quite technical. If you are not familiar with 3D rendering with the ray marching technique, I recommend reading the following pages first.
 
-十分なディテールを残しながらコードをシンプルに保つようにしましたが、それでもこのページはかなりテクニカルです。レイマーチングを使った3Dレンダリングに馴染みがない方は、まず以下のページをお読むことをお勧めします。
+十分なディテールを残しながらコードをシンプルに保つようにしましたが、それでもこのページはかなりテクニカルです。レイマーチングを使った3Dレンダリングに馴染みがない方は、まず以下のページを読むことをお勧めします。
 
 [Signed distance functions 符号付き距離関数](/signed-distance-functions)
 
 [Projection and 3D Rendering プロジェクションと3Dレンダリング](/projection-and-3d-rendering)
 
-[Reading “Raymarching - Primitives”](/reading)
+[Reading “Raymarching - Primitives”](/reading-raymarching-primitives)
 
 [![](/images/drawing-landscape.png "75")](/images/drawing-landscape.png)
 
@@ -128,7 +128,7 @@ vec3 terrain(vec2 st)
 # Ray marching
 # レイマーチング
 
-Now that we have our terrain. Let’s render it with ray marching. The basic is the same as [ray marching with SDF (Signed distance function)](/ray-marching). We shoot rays from camera, and see where they hit objects.
+Now that we have our terrain, let’s render it with ray marching. The basic is the same as [ray marching with SDF (Signed distance function)](/ray-marching). We shoot rays from camera, and see where they hit objects.
 
 地形ができたので、レイマーチングでレンダリングしましょう。基本的な手順は[SDF (Signed distance function)を使ったレイマーチング](/ray-marching)と同じです。カメラからレイを飛ばし、物体との交差を調べます。
 
@@ -194,9 +194,9 @@ The demo below renders the scene by mapping the depth (i.e., the distance from t
 # Shading
 # シェーディング
 
-Let's add lights and materials to make it more realistic. The techniques here are similar to what we covered in [Reading “Raymarching - Primitives”](/reading), but simplified - we will touch upon each one briefly. You can toggle the checkboxes in the demo below to see how each component affects the scene.
+Let's add lights and materials to make it more realistic. The techniques here are similar to what we covered in [Reading “Raymarching - Primitives”](/reading-raymarching-primitives), but simplified - we will touch upon each one briefly. You can toggle the checkboxes in the demo below to see how each component affects the scene.
 
-よりリアルな見た目にするため、ライトとマテリアルを追加しましょう。ここで使うテクニックは[Reading “Raymarching - Primitives”](/reading)で解説したものに似ていますが、簡略化しています。以下で各要素を順に説明します。下のデモではチェックボックスを切り替えることで、それぞれの要素がシーンにどう影響するかを確認できます。
+よりリアルな見た目にするため、ライトとマテリアルを追加しましょう。ここで使うテクニックは[Reading “Raymarching - Primitives”](/reading-raymarching-primitives)で解説したものに似ていますが、簡略化しています。以下で各要素を順に説明します。下のデモではチェックボックスを切り替えることで、それぞれの要素がシーンにどう影響するかを確認できます。
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="NPPWORo" data-user="kynd" data-preview="true"></p></div>
 

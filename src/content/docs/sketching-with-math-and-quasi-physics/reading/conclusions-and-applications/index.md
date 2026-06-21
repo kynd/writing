@@ -5,7 +5,7 @@ slug: conclusions-and-applications
 # Conclusions
 # 結論
 
-After explaining the architecture, the rest of the paper covers their tests and claims over a few sections. Skipping the detailed data, below are brief summary of the key points.
+After explaining the architecture, the rest of the paper covers their tests and claims over a few sections. Skipping the detailed data, below is a brief summary of the key points.
 
 アーキテクチャの説明の後、論文の残りの部分では、いくつかのセクションにわたって彼らのテストと主張が述べられています。詳細なデータは省略し、以下に要点の簡単なまとめを示します。
 
@@ -57,7 +57,7 @@ The paper concludes with a hopeful and ambitious remark. But the transformer has
 
 論文は希望に満ちた意欲的な言葉で締めくくられています。しかし、トランスフォーマーはおそらく彼らの予想をはるかに超えて成功を収めることになりました。
 
-The most famous modern LLMs, like GPT series, Claude, and Gemini are based on transformer but they use only the decoder part as generative models. Basically these models predict the next token based on all previous tokens, including user prompts, previous AI responses and other hidden contexts such as system prompts and retrieval from other sources and tools.
+The most famous modern LLMs, like GPT series, Claude, and Gemini are based on the transformer but they use only the decoder part as generative models. Basically these models predict the next token based on all previous tokens, including user prompts, previous AI responses and other hidden contexts such as system prompts and retrieval from other sources and tools.
 
 GPTシリーズ、Claude、Geminiなどの現代の最も有名なLLMはトランスフォーマーに基づいていますが、生成モデルとしてデコーダー部分のみを使用しています。これらのモデルは、ユーザープロンプト、以前のAI応答、システムプロンプトや他のソースやツールからの検索などの隠れたコンテキストを含む、前のトークンすべてに基づいて次のトークンを予測します。
 

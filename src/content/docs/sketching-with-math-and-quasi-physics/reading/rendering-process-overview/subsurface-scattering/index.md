@@ -23,7 +23,7 @@ Subsurface scattering (SSS) is a phenomenon where light goes into the surface of
 [Davepoo2014](https://commons.wikimedia.org/w/index.php?title=User:Davepoo2014&action=edit&redlink=1) [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)  
 [https://en.wikipedia.org/wiki/Subsurface\_scattering#/media/File:Skin\_Subsurface\_Scattering.jpg](https://en.wikipedia.org/wiki/Subsurface_scattering#/media/File:Skin_Subsurface_Scattering.jpg)
 
-This code doesn't precisely replicate the SSS process, but it approximates the soft glow that SSS creates around an object's contours. `dot(normal, rayDirection)` is -1 when they are in opposite directions, and 0 when they are perpendicular. This makes the `diffuse` larger in the area around the edges. Then the ambient occlusion is applied to take the occlusion by the surfaces around into account.
+This code doesn't precisely replicate the SSS process, but it approximates the soft glow that SSS creates around an object's contours. `dot(normal, rayDirection)` is -1 when they are in opposite directions, and 0 when they are perpendicular. This makes the `diffuse` larger in the area around the edges. Then the ambient occlusion is applied to account for occlusion by surrounding surfaces.
 
 このコードはSSSのプロセスを正確に再現するものではありませんが、物体の輪郭周辺にSSSが生み出す柔らかな光を模倣することで、その効果を再現しています。`dot(normal, rayDirection)`は、両者が反対方向を向いているときに-1、垂直のときに0となり、これによって、エッジ周辺の領域で`diffuse`が大きくなります。その後、周囲の表面による遮蔽を考慮するためにアンビエントオクルージョンが適用されます。
 
@@ -31,7 +31,7 @@ The last line adjusts the color and adds it to the `lighting`. `vec3(1.00, 1.00,
 
 最後の行は色を調整し、`lighting`に追加します。`vec3(1.00, 1.00, 1.00)` は何もしていませんが、この値を変更すると、人間の肌の例のように、マテリアルの内部での異なる波長の光が吸収される効果を再現することができます。
 
-This effect is subtle but adds soft lighting without making the scene too bright or washed out. In the demo, try turning the subsurface scattering on and off. Then turn everything other than the subsurface scattering to see the effect in isolation.
+This effect is subtle but adds soft lighting without making the scene too bright or washed out. In the demo, try turning the subsurface scattering on and off. Then turn everything other than the subsurface scattering off to see the effect in isolation.
 
 この効果は微細ですが、全体を明るくぼやけさせることなく、柔らかな照明を加えています。デモ上で、 Subsurface scatteringのオン/オフを切り替えてみましょう。その後、Subsurface scattering 以外のすべてをオフにして、効果を単独で確認してください。
 
