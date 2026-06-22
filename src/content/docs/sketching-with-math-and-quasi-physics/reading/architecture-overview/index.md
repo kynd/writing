@@ -30,11 +30,11 @@ The Input Embeddings are the tokens for the English text encoded as vectors. In 
 Input Embeddings は、英語のテキストのトークンをベクトルとしてエンコードしたものです。この論文では、埋め込み（Embeddings）は512次元です。元の文が次のようにトークンに分解される場合、入力は $6 \times 512$ の配列になります。
 
   
-$\text{ [ I | \_ate | \_an | \_apple | . | &lt;EOS&gt; ]}$  
+$\text{ [ I | \_ate | \_an | \_apple | . | <EOS> ]}$  
 
 The encoder takes these initial embeddings and adds Positional Encoding—information about each token's position. The gray box is the main processing component. It contains 6 identical layers, so the process repeats 6 times. The output from the first layer becomes the input for the second, and so on. Throughout this process, the encoder maintains the same shape: a $6 \times 512$ array.
 
-エンコーダーはこれらの初期埋め込みを受け取り、位置エンコーディング (各トークンの位置情報) を追加します。灰色のボックスがメイン処理コンポーネントです。これは6つの同一レイヤーで構成されているため、処理は6回繰り返されます。最初のレイヤーからの出力が2番目のレイヤーの入力となり、以降も同様に続きます。この処理全体を通じて、エンコーダーは同じ形状を維持します:$6 \times 512$の配列です。
+エンコーダーはこれらの初期埋め込みを受け取り、位置エンコーディング (各トークンの位置情報) を追加します。灰色のボックスがメイン処理コンポーネントです。これは6つの同一レイヤーで構成されているため、処理は6回繰り返されます。最初のレイヤーからの出力が2番目のレイヤーの入力となり、以降も同様に続きます。この処理全体を通じて、エンコーダーは同じ形状を維持します: $6 \times 512$ の配列です。
 
   
 The encoder’s job is to add context to each token.
@@ -66,9 +66,9 @@ The diagram may seem a little confusing because "Output Embeddings" feeds into t
 
 図では「Output Embeddings」がデコーダーに入力されているため、少し混乱するかもしれません。デコーダーは反復処理を通じて出力トークンを構築する機械だと考えてください。つまり、前の状態を受け取り、次のトークンをそれに追加していきます。ここでの Output Embeddings は、デコーダーがこれまでに生成したテキストを表しています。
 
-The output token starts with $&lt;BOS&gt;$ (beginning of sentence).
+The output token starts with $\text{<BOS>}$ (beginning of sentence).
 
-出力トークンは$&lt;BOS&gt;$（文の始まり）からスタートします。
+出力トークンは$\text{<BOS>}$（文の始まり）からスタートします。
 
 Similar to the encoder, the decoder adds positional encoding to the embeddings, then processes this through six layers. It uses Self-Attention to look at the French words it has already written to understand the flow, and Cross-Attention to look at the Encoder's output to decide the next output token.
 
@@ -78,9 +78,9 @@ After the 6th layer, the model extracts the final vector with all the necessary 
 
 6番目のレイヤーの後、モデルは直前のトークンに必要なすべての文脈を加えた最後のベクトルを取り出します。線形層（Linear layer）は、このベクトルとすべてのフランス語のボキャブラリー（こちらも512次元ベクトルとしてエンコードされています）との内積を求めて、それぞれの可能性を計算します。その後、ソフトマックス層（Softmax layer）がこれらのスコアを、合計が1になる確率に変換します。
 
-The model adds the most aligned token, in this case "J'", to the output embeddings, and feeds the new set of embeddings (now $\text{[ &lt;BOS&gt; | J' ]}$) back into the next iteration. This process repeats until $\text{&lt;EOS&gt;}$ (end of sentence) is selected to signal the end.
+The model adds the most aligned token, in this case "J'", to the output embeddings, and feeds the new set of embeddings (now $\text{[ <BOS> | J' ]}$) back into the next iteration. This process repeats until $\text{<EOS>}$ (end of sentence) is selected to signal the end.
 
-モデルは最も整合性の高いトークン、この場合は「J'」を出力埋め込みに追加し、新しい埋め込みのセット（今は$\text{[ &lt;BOS&gt; | J' ]}$）を次の反復処理にフィードバックします。このプロセスは、終了の合図として$\text{&lt;EOS&gt;}$（end of sentence）が選ばれるまで繰り返されます。
+モデルは最も整合性の高いトークン、この場合は「J'」を出力埋め込みに追加し、新しい埋め込みのセット（今は$\text{[ <BOS> | J' ]}$）を次の反復処理にフィードバックします。このプロセスは、終了の合図として$\text{<EOS>}$（end of sentence）が選ばれるまで繰り返されます。
 
 ## Next
 ## 次へ

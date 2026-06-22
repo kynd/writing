@@ -82,10 +82,12 @@ In the demos below, we will use a variation called leaky ReLU. It is very simila
 
 下のデモでは、leaky ReLU というバリエーションを使います。ReLU とよく似ていますが、負の入力に対してゼロではない、わずかな傾きを持ちます。式の中の $\alpha$ は 0.01 などの小さな数値で、これは後で説明するトレーニングで大きく役立ちます。
 
-$f(x) = \begin{cases}
-x & \text{if } x &gt; 0 \\
+$$
+f(x) = \begin{cases}
+x & \text{if } x > 0 \\
 \alpha x & \text{if } x \le 0
-\end{cases}$
+\end{cases}
+$$
 
 [![](/images/neural-network.png)](/images/neural-network.png)
 

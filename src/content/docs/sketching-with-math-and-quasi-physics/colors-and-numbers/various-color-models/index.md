@@ -65,12 +65,19 @@ Strictly speaking, the conversion looks like this for each RGB value.
 
 厳密にやるとRGBの各値について下記の様になります。
 
-$C_{sRGB} = \begin{cases} 12.92 C_{linear} (C_{linear} \le 0.0031308) \\ 1.055 C_{linear} ^ {1/2.4}(C_{linear} &gt; 0.0031308) \end{cases}$
+$$
+C_{sRGB} = \begin{cases}
+12.92 C_{linear}, & \text{if } C_{linear} \leq 0.0031308 \\
+1.055 C_{linear}^{1/2.4}, & \text{if } C_{linear} > 0.0031308
+\end{cases}
+$$
 
-$$C_{linear} = \begin{cases}
+$$
+C_{linear} = \begin{cases}
 \dfrac{C_{sRGB}}{12.92}, & \text{if } C_{sRGB} \leq 0.04045 \\
 \left(\dfrac{C_{sRGB} + 0.055}{1.055}\right)^{2.4}, & \text{if } C_{sRGB} > 0.04045
-\end{cases}$$
+\end{cases}
+$$
 
 They are often approximated by the following equations (I used this one on the demos on this page).
 
@@ -128,12 +135,14 @@ $m = \min(R, G, B)$
 
 $C = \operatorname{range}(R, G, B) = M - m$
 
-$$H' = \begin{cases}
+$$
+H' = \begin{cases}
 \text{undefined}, & \text{if } C = 0 \\
 \dfrac{G - B}{C} \mod 6, & \text{if } M = R \\
 \dfrac{B - R}{C} + 2, & \text{if } M = G \\
 \dfrac{R - G}{C} + 4, & \text{if } M = B
-\end{cases}$$
+\end{cases}
+$$
 
 $H = 60^\circ \times H'$
 

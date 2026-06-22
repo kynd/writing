@@ -38,17 +38,25 @@ $$\lambda = \lim_{n \to \infty} \dfrac{1}{n} \sum_{i=0}^{n-1} \ln |f'(x_i)|$$
 
 The derivative of the function $f(x)$ representing the system is the slope at that point. In a chaotic system, the absolute value of the derivative $|f'(x_i)|$ represents the local expansion rate—how many times two neighboring points separate after one step.
 
--   If $|f'(x_i)| &gt; 1$, the space is being stretched at that point.
--   If $|f'(x_i)| &lt; 1$, the space is contracting at that point.
+-   If $|f'(x_i)| > 1$, the space is being stretched at that point.
+-   If $|f'(x_i)| < 1$, the space is contracting at that point.
 
 系を表す関数 $f(x)$ の微分は、その点における傾きで、カオス系における微分の絶対値 $|f'(x_i)|$ は、隣り合う2点が、1ステップ後に何倍に離れるかという局所的な拡大率を意味します。
 
--   $|f'(x_i)| &gt; 1$ ならば、空間はその地点で引き伸ばされている。
--   $|f'(x_i)| &lt; 1$ ならば、空間はその地点で収縮している。
+-   $|f'(x_i)| > 1$ ならば、空間はその地点で引き伸ばされている。
+-   $|f'(x_i)| < 1$ ならば、空間はその地点で収縮している。
 
-Since stretching is a multiplication, we take the logarithm ($\ln$) to make it easier to handle, and $\lim_{n \to \infty} \frac{1}{n} \sum_{i=0}^{n-1}$ calculates the average over all points. The maximum Lyapunov exponent is the maximum value of this exponent over all time. The fact that this exponent is positive ($\lambda_{max} &gt; 0$)—meaning the system is being stretched on average—is the most important criterion for determining chaos. No matter how small the initial difference, this exponential amplification transforms it into an enormous difference that impacts the entire system in a short time.
+Since stretching is a multiplication, we take the logarithm ($\ln$) to make it easier to handle. The term below calculates the average over all points:
 
-引き伸ばしは掛け算なので、対数（$\ln$)を取ることで扱いやすくし、$\lim_{n \to \infty} \frac{1}{n} \sum_{i=0}^{n-1}$ で全ての点の平均をとります。最大リアプノフ指数（$\lambda_{max} &gt; 0$）とはこの指数の全ての時間を通じた最大値で、この指数が正である（$\lambda_{max} &gt; 0$）、つまり系全体の平均として引き伸ばされていることが、カオスの最も重要な判定基準です。どんなに小さな差異も、この指数関数的な増幅によって、短時間で系の全体を左右する巨大な差異へと変わります。
+$$\lim_{n \to \infty} \dfrac{1}{n} \sum_{i=0}^{n-1}$$
+
+The maximum Lyapunov exponent is the maximum value of this exponent over all time. The fact that this exponent is positive ($\lambda_{max} > 0$)—meaning the system is being stretched on average—is the most important criterion for determining chaos. No matter how small the initial difference, this exponential amplification transforms it into an enormous difference that impacts the entire system in a short time.
+
+引き伸ばしは掛け算なので、対数（$\ln$)を取ることで扱いやすくし、全ての点の平均をとります。
+
+$$\lim_{n \to \infty} \dfrac{1}{n} \sum_{i=0}^{n-1}$$
+
+最大リアプノフ指数（$\lambda_{max} > 0$）とはこの指数の全ての時間を通じた最大値で、この指数が正である（$\lambda_{max} > 0$）、つまり系全体の平均として引き伸ばされていることが、カオスの最も重要な判定基準です。どんなに小さな差異も、この指数関数的な増幅によって、短時間で系の全体を左右する巨大な差異へと変わります。
 
 The demo below randomly updates the Clifford attractor's parameters to draw different patterns, calculates the Lyapunov exponent, and retries when the value is low, reducing the chance of producing uninteresting patterns.
 
@@ -141,7 +149,7 @@ In chaotic systems, Pesin's formula (Pesin's Identity) connects the measure of h
 
 カオス系において、軌道がどれくらいの速さで離れていくか（リアプノフ指数）という指標と、新しい情報がどれくらいの速さで生まれるか（KSエントロピー）という指標は、ペシンの公式（Pesin's Identity）によって結ばれます。
 
-$h_{KS} \approx \sum_{\lambda_i &gt; 0} \lambda_i$  
+$h_{KS} \approx \sum_{\lambda_i > 0} \lambda_i$  
 
 In multidimensional systems, space may stretch in multiple directions. The sum of all these stretching rates (positive $\lambda$) equals the rate of information generation. When two trajectories diverge, predicting where the next point will be becomes harder. Each time space stretches by a factor of 2 ($\lambda = \log_2 2 = 1$), we lose 1 bit of certainty about the system's future—and the system generates 1 bit of new information. Think of it this way: when space doubles, we need an additional bit to record it with the same precision.
 
@@ -192,8 +200,8 @@ A map $f: X \to X$ on a state space $X$ has dense periodic orbits when it satisf
 
 状態空間 $X$ における写像 $f: X \to X$ が周期軌道の稠密性を持つとは、以下の条件を満たすことを指します。
 
-For any point $x$ in $X$ and for any arbitrarily small real number $\epsilon &gt; 0$, there exists a periodic point $p \in X$ such that $d(x, p) &lt; \epsilon$.  
-$X$ 内の任意の点 $x$ と、どんなに小さな実数 $\epsilon &gt; 0$ に対しても、ある周期点 $p \in X$ が存在し、$d(x, p) &lt; \epsilon$ である。  
+For any point $x$ in $X$ and for any arbitrarily small real number $\epsilon > 0$, there exists a periodic point $p \in X$ such that $d(x, p) < \epsilon$.  
+$X$ 内の任意の点 $x$ と、どんなに小さな実数 $\epsilon > 0$ に対しても、ある周期点 $p \in X$ が存在し、$d(x, p) < \epsilon$ である。  
 
 Here, $d(x, p)$ is the distance between $x$ and $p$, and a periodic point $p$ is a point for which there exists some positive integer $k$ such that $f^k(p) = p$.
 
@@ -209,9 +217,9 @@ This is challenging to grasp, but it means that no matter which point $x$ you ch
 > 
 > $f^k$ は時間を進めて次の位置を求める関数、ロジスティック写像やクリフォードアトラクターの1ステップに相当します。連続系では時間 $t$ だけ状態を進める演算子 $\phi_t(x)$ を考えますが、残りの内容は同じです。
 
-In mathematics, "dense" means existing closely packed without gaps. Just as you can find a rational number arbitrarily close to any point on the real number line, periodic orbits are woven throughout chaos like a mesh network. The definition's $d(x, p) &lt; \epsilon$ shows that a periodic point $p$ exists arbitrarily close to any state $x$—but this doesn't mean $x$ itself lies on a periodic orbit. This is similar to how rational numbers are dense, yet infinitely many irrational numbers are packed between them.
+In mathematics, "dense" means existing closely packed without gaps. Just as you can find a rational number arbitrarily close to any point on the real number line, periodic orbits are woven throughout chaos like a mesh network. The definition's $d(x, p) < \epsilon$ shows that a periodic point $p$ exists arbitrarily close to any state $x$—but this doesn't mean $x$ itself lies on a periodic orbit. This is similar to how rational numbers are dense, yet infinitely many irrational numbers are packed between them.
 
-数学において稠密（ちゅうみつ）とは、隙間なくびっしり存在することを指します。例えば、実数直線のどこを切ってもそのすぐ傍に有理数が見つかるように、カオスの中には規則正しい周期軌道が網の目のように張り巡らされています。定義にある $d(x, p) &lt; \epsilon$ は、状態 $x$ のどんなに近くにも周期点 $p$ があることを示していますが、$x$ そのものが周期軌道上にあるとは限りません。これは、有理数が稠密であっても、その間には無限個の無理数が埋まっていることと似ています。
+数学において稠密（ちゅうみつ）とは、隙間なくびっしり存在することを指します。例えば、実数直線のどこを切ってもそのすぐ傍に有理数が見つかるように、カオスの中には規則正しい周期軌道が網の目のように張り巡らされています。定義にある $d(x, p) < \epsilon$ は、状態 $x$ のどんなに近くにも周期点 $p$ があることを示していますが、$x$ そのものが周期軌道上にあるとは限りません。これは、有理数が稠密であっても、その間には無限個の無理数が埋まっていることと似ています。
 
 Most points in chaos, like these irrational numbers, are slightly displaced from periodic orbits and are therefore destined never to return to their starting position.
 

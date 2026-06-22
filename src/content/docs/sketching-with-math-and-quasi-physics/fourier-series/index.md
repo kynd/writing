@@ -9,10 +9,12 @@ In [Sine Waves and Additive Synthesis](/sine-waves-and-additive-synthesis), we a
 
 [サイン波と加算合成](/sine-waves-and-additive-synthesis)のページではいくつものサイン波を足し合わせて様々な形の波を作りました。例えば矩形波は下のようなサイン波の組み合わせとして表すことができます。このような級数はフーリエ級数と呼ばれています。
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 x_{\text{square}}(t) &= \dfrac{4}{\pi}\sum_{k=1}^{\infty}\dfrac{\sin\left(2\pi(2k-1)ft\right)}{2k-1} \\
 &= \dfrac{4}{\pi}\left(\sin(2\pi ft)+\dfrac{1}{3}\sin(6\pi ft)+\dfrac{1}{5}\sin(10\pi ft)+\dots\right)
-\end{aligned}$$
+\end{aligned}
+$$
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="JJPWyz" data-user="kynd" data-preview="true"></p></div>
 

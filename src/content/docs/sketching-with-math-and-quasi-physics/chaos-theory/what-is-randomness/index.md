@@ -112,17 +112,17 @@ We apply the definition of information entropy to the obtained probability distr
 
 $H(r) = - \sum_{i=1}^{K} P(B_i) \log_2 P(B_i)$
 
-Looking at the graph, in the region where $r &lt; 3.0$, the behavior converges to a single value, which means what will happen is 100% predictable. So entropy becomes 0.
+Looking at the graph, in the region where $r < 3.0$, the behavior converges to a single value, which means what will happen is 100% predictable. So entropy becomes 0.
 
-グラフをみると $r &lt; 3.0$ の領域では挙動が1つの値に収束、つまり何が起きるか100%予測できるため、エントロピーは0になります。
+グラフをみると $r < 3.0$ の領域では挙動が1つの値に収束、つまり何が起きるか100%予測できるため、エントロピーは0になります。
 
-In the range $3.0 \le r &lt; 3.57$, the values bifurcate into 2, 4, 8... Since the options are limited, entropy increases slightly but remains at a low value.
+In the range $3.0 \le r < 3.57$, the values bifurcate into 2, 4, 8... Since the options are limited, entropy increases slightly but remains at a low value.
 
-$3.0 \le r &lt; 3.57$ の間では値が2, 4, 8... と枝分かれしていきます。選択肢が限られているため、エントロピーはわずかに上昇しますが、まだ低い値です。
+$3.0 \le r < 3.57$ の間では値が2, 4, 8... と枝分かれしていきます。選択肢が限られているため、エントロピーはわずかに上昇しますが、まだ低い値です。
 
-At $r &gt; 3.57$, entropy jumps up sharply. This means the system has become extremely difficult to predict. Within this region, there are places where entropy suddenly drops (for example: $r \approx 3.83$). These are the locations where certain patterns emerge within the logistic map. This quality—neither too simple nor completely random like white noise—could be said to be one reason why chaos is worth appreciating and considering.
+At $r > 3.57$, entropy jumps up sharply. This means the system has become extremely difficult to predict. Within this region, there are places where entropy suddenly drops (for example: $r \approx 3.83$). These are the locations where certain patterns emerge within the logistic map. This quality—neither too simple nor completely random like white noise—could be said to be one reason why chaos is worth appreciating and considering.
 
-$r&gt; 3.57$ ではエントロピーが急激に跳ね上がります。これは系が非常に予測困難になったことを意味します。その中でも突然エントロピーがガクンと下がる場所があります（例: $r \approx 3.83$）。ここがロジスティック写像の中である種のパターンを生み出している場所です。単純過ぎず、しかしホワイトノイズのような完全なランダムではない性質が、カオスが鑑賞や考慮に値するひとつの理由だとも言えるでしょう。
+$r > 3.57$ ではエントロピーが急激に跳ね上がります。これは系が非常に予測困難になったことを意味します。その中でも突然エントロピーがガクンと下がる場所があります（例: $r \approx 3.83$）。ここがロジスティック写像の中である種のパターンを生み出している場所です。単純過ぎず、しかしホワイトノイズのような完全なランダムではない性質が、カオスが鑑賞や考慮に値するひとつの理由だとも言えるでしょう。
 
 # KS Entropy
 # KSエントロピー

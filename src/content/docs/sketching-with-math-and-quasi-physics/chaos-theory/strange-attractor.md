@@ -114,7 +114,7 @@ Since the velocity changes whenever the position changes even slightly, these eq
 
 位置が少しでも変わると速度も変わるのでこの式はステップごとではなく連続的な変化を示したものになります。ただし数式は連続でも、コンピュータ上では離散的なステップの繰り返しとして実装する必要があります。
 
-[Differentiation 微分](/differentiation).
+[Differentiation 微分](/differentiation)
 
 Because the Lorenz attractor is chaotic, there is no way to predict the outcome other than actually running the system, and since it is impossible to run the system with infinite precision, the only option is to approximate by calculating the movement of points in short time intervals. This demo uses Euler's method, multiplying the velocity at each step by a short time interval to move the point.
 

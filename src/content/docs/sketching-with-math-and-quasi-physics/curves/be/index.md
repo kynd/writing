@@ -215,11 +215,12 @@ If the degree is zero:
 
 次数がゼロの場合
 
-$$N_{i,0}(t) =
-\begin{cases}
+$$
+N_{i,0}(t) = \begin{cases}
 1 & \text{if } u_i \leq t < u_{i+1} \\
 0 & \text{otherwise}
-\end{cases}$$
+\end{cases}
+$$
 
 If the degree is more than zero:
 

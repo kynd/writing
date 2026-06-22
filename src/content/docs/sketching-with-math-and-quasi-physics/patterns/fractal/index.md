@@ -43,8 +43,6 @@ Let’s look at a much simpler example of fractal. The demo below draws a patter
 
 Sierpiński Carpet can be made by following the steps below infinitely.
 
-シェルピンスキーカーペットは、以下の手順を無限に続けることで作成できます。
-
 1.  Start from a square.
 
 2.  Divide the square into a 3x3 grid of smaller squares.
@@ -52,6 +50,8 @@ Sierpiński Carpet can be made by following the steps below infinitely.
 3.  Remove the tile in the center, leaving 8 smaller squares around the perimeter.
 
 4.  For all the remaining tiles, go back to the step 2 and repeat the process.
+
+シェルピンスキーカーペットは、以下の手順を無限に続けることで作成できます。
 
 1.  正方形から始めます。
 
@@ -78,8 +78,6 @@ Instead of removing the center piece, we can remove any one piece from each 3x3 
 
 The Koch curve is another example of a simple fractal shape that can be drawn by following the steps below.
 
-コッホ曲線は、別のシンプルなフラクタル形状の例で、以下の手順に従って描くことができます。
-
 1.  Start with a straight line segment.
 
 2.  Divide the line segment into three equal parts.
@@ -87,6 +85,8 @@ The Koch curve is another example of a simple fractal shape that can be drawn by
 3.  Remove the center part, then add two segments that form an equilateral triangle with the removed segment.
 
 4.  For each line segment now present, go back to step 2 and repeat the process.
+
+コッホ曲線は、別のシンプルなフラクタル形状の例で、以下の手順に従って描くことができます。
 
 1.  線分から始めます。
 
@@ -109,13 +109,13 @@ Let’s make a randomized version for the Koch curve too. This starts to look li
 
 Tree is another canonical example of fractal that can be defined by a simple set of steps to repeat.
 
-ツリー構造も、単純な手順の繰り返しで定義できる典型的なフラクタルの例です。
+1.  Start from a single branch (a line segment).
 
-1.  Start from a single branch(a line segment)
-
-2.  Add a few new branches from the tip of the branch at different angles
+2.  Add a few new branches from the tip of the branch at different angles.
 
 3.  Go back to the step 2, repeat the process for each of new branches.
+
+ツリー構造も、単純な手順の繰り返しで定義できる典型的なフラクタルの例です。
 
 1.  枝一本（線分）から始めます。
 
@@ -239,11 +239,15 @@ The complex number $c$ can be written as $x + iy$ ($i$ is the imaginary unit - S
 
 複素数$c$は$x + iy$と書くことができます（$i$は虚数単位です。複素数については[こちらのページ](/quaternion)もどうぞ）。$x$と$y$を座標と考えると、複素数を平面上の点として見ることができます。平面上から点を選んで上の式に適用してみましょう。結果が無限大に発散する場合、その複素数、つまりその点はマンデルブロ集合に属していません。結果が収束する場合、その点は集合に属しています。例として、点$(3, 2)$、つまり、$c=3+2i$ について調べてみましょう。
 
-$$z_0 = 0 \\
-z_1 = z_0^2 + c = 0^2 + 3 + 2i = 3 + 2i \\
-z_2 = z_1^2 + c = (3 + 2i)^2 + 3 + 2i = 8 + 14i \\
-z_3 = z_2^2 + c = (8 + 14i)^2 + 3 + 2i = -129 + 114i \\
-z_4 = z_3^2 + c = (-129 + 114i)^2 + 3 + 2i = 3684 - 29410i$$
+$$
+\begin{aligned}
+z_0 &= 0 \\
+z_1 &= z_0^2 + c = 0^2 + 3 + 2i = 3 + 2i \\
+z_2 &= z_1^2 + c = (3 + 2i)^2 + 3 + 2i = 8 + 14i \\
+z_3 &= z_2^2 + c = (8 + 14i)^2 + 3 + 2i = -129 + 114i \\
+z_4 &= z_3^2 + c = (-129 + 114i)^2 + 3 + 2i = 3684 - 29410i
+\end{aligned}
+$$
 
 You can see this grows very quickly. It does diverge to infinity, so the point $(3, 2)$ doesn’t belong to the set.
 

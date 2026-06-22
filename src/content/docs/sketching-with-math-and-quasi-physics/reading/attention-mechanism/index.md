@@ -52,7 +52,7 @@ Let's use the encoder as an example to examine what's happening here more concre
 
 エンコーダーを例に、ここで何が起こっているのかをより具体的に見ていきましょう。前のページと同じ入力を使います。
 
-$\text{ [ I | \_ate | \_an | \_apple | . | &lt;EOS&gt; ]}$
+$\text{ [ I | \_ate | \_an | \_apple | . | <EOS> ]}$
 
 In the encoder, we derive our three matrices from our input $X$.
 

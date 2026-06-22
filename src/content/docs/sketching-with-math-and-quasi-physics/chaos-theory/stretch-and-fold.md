@@ -10,11 +10,11 @@ Let's look back at the logistic mapping formula. There are vital concepts hidden
 
 $x_{n+1} = r x_n (1 - x_n)$
 
--   The Stretch ($r x_n$): It takes the position from the previous state ($x_n$) and stretches the space by multiplying it. In this process, the slight difference in $x$ gets exaggerated by $r$ exponentially through iterations (if $r &gt; 1$).
+-   The Stretch ($r x_n$): It takes the position from the previous state ($x_n$) and stretches the space by multiplying it. In this process, the slight difference in $x$ gets exaggerated by $r$ exponentially through iterations (if $r > 1$).
 
 -   The Fold: Multiplying by ($1-x_n$) brings the $x$ back to the \[0, 1\] range.
 
--   引き伸ばし（$r x_n$）：前の状態の位置（$x_n$）を取り、それを掛け算することで空間を引き伸ばします。このプロセスにおいて、$x$のわずかな差異が反復を通じて$r$によって指数関数的に拡大されます（$r &gt; 1$の場合）。
+-   引き伸ばし（$r x_n$）：前の状態の位置（$x_n$）を取り、それを掛け算することで空間を引き伸ばします。このプロセスにおいて、$x$のわずかな差異が反復を通じて$r$によって指数関数的に拡大されます（$r > 1$の場合）。
 
 -   折り畳み：（$1-x_n$）を掛けることで、$x$を \[0, 1\] の範囲に戻します。
 

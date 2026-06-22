@@ -109,9 +109,9 @@ The demo below shows how the softmax function works.
 
 <div class="codepen-wrap"><p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="jEreVZw" data-user="kynd" data-preview="true"></p></div>
 
-The model then chooses the token with the highest probability, feeds it back into the bottom of the decoder, and repeats the process until it generates an $\text{&lt;EOS&gt;}$ (End of Sentence) token.
+The model then chooses the token with the highest probability, feeds it back into the bottom of the decoder, and repeats the process until it generates an $\text{<EOS>}$ (End of Sentence) token.
 
-モデルは最も高い確率を持つトークンを選択し、それをデコーダの最下部に入力し、$\text{&lt;EOS&gt;}$（文末）トークンを生成するまでこのプロセスを繰り返します。
+モデルは最も高い確率を持つトークンを選択し、それをデコーダの最下部に入力し、$\text{<EOS>}$（文末）トークンを生成するまでこのプロセスを繰り返します。
 
 ## Next
 ## 次へ
