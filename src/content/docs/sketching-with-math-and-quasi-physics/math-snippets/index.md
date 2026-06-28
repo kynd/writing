@@ -25,3 +25,5 @@ This is a collection of small math snippets that I thought are interesting.
 [Non-Euclidean Spaces 非ユークリッド空間](/non-euclidean-spaces)
 
 [Gift Wrapping ギフトラッピング](/gift-wrapping)
+
+[Smoothing スムージング](/smoothing)
