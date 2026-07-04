@@ -27,3 +27,5 @@ This is a collection of small math snippets that I thought are interesting.
 [Gift Wrapping ギフトラッピング](/gift-wrapping)
 
 [Smoothing スムージング](/smoothing)
+
+[Scalar Fields スカラーフィールド](/scalar-fields)
