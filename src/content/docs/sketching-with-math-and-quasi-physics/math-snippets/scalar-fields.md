@@ -51,6 +51,6 @@ The demo below shows this process in 2D using the hyperbola $f(x,y) = y^2 - x^2 
 
 This technique was used in the music video below. More details on the process can be read at [kynd.info/geom](https://www.kynd.info/geom/).
 
-この手法は以下のミュージックビデオで使われています。制作プロセスの詳細は [kynd.info/geom](https://www.kynd.info/geom/) でご覧いただけます。
+この手法は以下のミュージックビデオで使われています。制作プロセスの詳細は [kynd.info/geom](https://www.kynd.info/geom/) で読めます。
 
 <div class="video-embed"><iframe src="https://player.vimeo.com/video/1215067660" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
