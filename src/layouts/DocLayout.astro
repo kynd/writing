@@ -799,16 +799,15 @@ const breadcrumbs = buildBreadcrumbs(filePath, allDocs);
 
     /* ── Search ───────────────────────────────────────────────────── */
     .topbar-search-wrap {
-      flex: 1;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
       display: flex;
       align-items: center;
-      padding: 0 0.5rem;
       pointer-events: all;
-      min-width: 0;
     }
     .search-input {
-      width: 100%;
-      max-width: 340px;
+      width: 280px;
       padding: 0.3rem 0.7rem;
       font-family: var(--font-body);
       font-size: 0.8rem;
@@ -822,12 +821,12 @@ const breadcrumbs = buildBreadcrumbs(filePath, allDocs);
     .search-input::placeholder { color: #bbb; }
 
     #search-view {
-      margin-left: var(--sidebar-width);
-      padding: 2.5rem 2rem 6rem;
+      width: 100%;
       max-width: 760px;
-      transition: margin-left 0.22s ease;
+      margin: 0 auto;
+      padding: 2.5rem 2rem 6rem;
     }
-    html.sidebar-open #search-view { margin-left: var(--sidebar-width); }
+    html.sidebar-open #search-view { margin: 0 auto; }
     .search-status {
       display: flex;
       align-items: center;
